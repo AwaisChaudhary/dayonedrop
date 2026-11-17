@@ -4,6 +4,7 @@ import json, html, pathlib, sys, hashlib, datetime
 
 ROOT = pathlib.Path(__file__).resolve().parent
 DOMAIN = "https://getdayonedrop.com"
+ADSENSE_CLIENT = "ca-pub-1558743317014653"  # AdSense publisher ID
 GA_ID = "G-2NJQ0RSMTP"                # Google Analytics measurement ID
 SITE = "DayOneDrop"
 PREVIEW = "--preview" in sys.argv
@@ -134,7 +135,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{asset("style.css", depth)}">
-<!-- AdSense: paste the AdSense script tag here once approved -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 </head>
 <body>
