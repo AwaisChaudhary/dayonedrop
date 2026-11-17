@@ -3,7 +3,7 @@
 import json, html, pathlib, sys, hashlib, datetime
 
 ROOT = pathlib.Path(__file__).resolve().parent
-DOMAIN = "https://dayonedrop.com"   # change once the domain is bought
+DOMAIN = "https://getdayonedrop.com"
 GA_ID = ""                          # paste the Google Analytics ID (G-XXXX) here
 SITE = "DayOneDrop"
 PREVIEW = "--preview" in sys.argv
@@ -63,7 +63,7 @@ def gcal(g):
     nxt = d + datetime.timedelta(days=1)
     from urllib.parse import quote
     return ("https://calendar.google.com/calendar/render?action=TEMPLATE&text=" + quote(g["title"] + " launches")
-            + f"&dates={d:%Y%m%d}/{nxt:%Y%m%d}&details=" + quote("Release day reminder from DayOneDrop. Dates can change, check dayonedrop.com for the latest."))
+            + f"&dates={d:%Y%m%d}/{nxt:%Y%m%d}&details=" + quote("Release day reminder from DayOneDrop. Dates can change, check getdayonedrop.com for the latest."))
 
 
 def ics(g):
