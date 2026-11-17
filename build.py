@@ -4,7 +4,7 @@ import json, html, pathlib, sys, hashlib, datetime
 
 ROOT = pathlib.Path(__file__).resolve().parent
 DOMAIN = "https://getdayonedrop.com"
-GA_ID = ""                          # paste the Google Analytics ID (G-XXXX) here
+GA_ID = "G-2NJQ0RSMTP"                # Google Analytics measurement ID
 SITE = "DayOneDrop"
 PREVIEW = "--preview" in sys.argv
 DATA = json.loads((ROOT / "assets" / "games.json").read_text())
