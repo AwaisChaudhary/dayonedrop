@@ -17,3 +17,4 @@
 - Board grew from 15 to 44 games. Added 22 dated launches (Jan-Mar 2027) and 7 confirmed-window games, each with date AND platforms matching on Game Informer's 2027 schedule plus at least one of GameSpot, GamesRadar, Shacknews, Game Rant, Loot Level Chill, Gaming Route, GameTechReport or Wikipedia. Highlights: Metroid Ravenous, Until Dawn 2, Witchbrook, Tropico 7, Warhammer 40,000: Dark Heresy, Forza Horizon 6 (PS5), Titan Quest II, Stranger Than Heaven, 007 First Light (Switch 2), Hyrule Warriors AoC DE, Pokémon Winds and Waves, Kirby and the World Beyond, Xenoblade Genesis, Spyro: A Realm Beyond, The Expanse: Osiris Reborn, Squadron 42.
 - Left out where sources disagreed: Wandering Sword (20 vs 21 Jan), Fate/Extra Record (platforms), Romancing SaGa 3 (date), FF XIV Evercold (date), Melty Blood and Rustown (one source only).
 - Platform pages, calendar, board and tools all regenerate from the data.
+- 2026-11-19: diagnostic run, push test.
