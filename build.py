@@ -131,6 +131,23 @@ NL_WELCOME = """<section><div class="wrap nl-done"><h1>You're in!</h1>
 <div class="nl-links"><a href="/calendar">Release calendar</a><a href="/games">All 2027 games</a><a href="/tools">Launch list tools</a></div></div></section>"""
 
 
+from urllib.parse import quote_plus as _qp
+AFF = {}
+def amz_slug(g):
+    """Registers /go/amz-<slug> -> Amazon search for the game on its first console platform."""
+    plat = next((x for x in g.get("platforms") or [] if x != "PC"), "")
+    AFF["amz-" + g["slug"]] = "https://www.amazon.com/s?k=" + _qp((g["title"] + " " + plat).strip()) + "&i=videogames"
+    return "amz-" + g["slug"]
+# ---- Affiliate links. Pages link to /go/<slug>; _redirects sends it to the store.
+# Until a programme approves us these are plain store URLs; when approved, replace the URL with the tracked link and rebuild.
+AFF_ATTR = 'rel="sponsored nofollow noopener" target="_blank"'
+AFF_NOTE = '<p class="aff-note">We may earn a commission if you buy through these links, at no extra cost to you.</p>'
+def go(slug): return "/go/" + slug
+def write_redirects(root):
+    lines = "".join(f"/go/{k} {v} 302\n" for k, v in AFF.items())
+    (root / "_redirects").write_text(lines)
+
+
 def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None):
     url = canon(file)
     ld = [{"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": url,
@@ -337,6 +354,7 @@ for g in featured:
     acts = ""
     if g["date"]:
         acts += f'<a class="btn sm" href="{gcal(g)}" rel="nofollow noopener" target="_blank">Add to Google Calendar</a><a class="btn line sm" href="{ics(g)}" download="{g["slug"]}.ics">Apple / Outlook</a>'
+    acts += f'<a class="btn sm" href="{go(amz_slug(g))}" {AFF_ATTR}>Pre-order on Amazon</a>'
     acts += f'<button class="btn line sm star" type="button" data-slug="{g["slug"]}" data-name="{e(g["title"])}" aria-pressed="false">☆</button><button class="btn line sm" type="button" data-copy-link>Copy link</button>'
     from urllib.parse import quote
     share = canon(f)
@@ -349,7 +367,7 @@ for g in featured:
 <div class="ticket">
 <div class="ticket-row"><div><span class="lbl">Launch</span><span class="val">{e(nice_date(g))}</span></div><div><span class="lbl">Status</span>{status_html(g)}</div></div>
 <div class="ticket-row"><div><span class="lbl">Platforms</span><span class="val">{e(plat_text(g))}</span></div><div><span class="lbl">Made by</span><span class="val">{e(g["dev"] or "TBC")}</span></div></div>
-{cd}<div class="acts">{acts}</div></div>
+{cd}<div class="acts">{acts}</div>{AFF_NOTE}</div>
 </div></div></header>
 <section><div class="wrap cols">
 <div><h2>What we know</h2><ul class="facts-list">{"".join(f"<li>{e(x)}</li>" for x in g["facts"])}</ul></div>
@@ -477,7 +495,8 @@ urls = ["index.html", "calendar.html", "games.html", "tools.html", "about.html",
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)
-(ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {DOMAIN}/sitemap.xml\n")
+(ROOT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nDisallow: /go/\n\nSitemap: {DOMAIN}/sitemap.xml\n")
 if not (ROOT / "ads.txt").exists():
     (ROOT / "ads.txt").write_text("# Replace with the line AdSense gives you, e.g. google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0\n")
 print("built", len(urls) + 1, "pages", "(preview)" if PREVIEW else "(live)")
+write_redirects(ROOT)
