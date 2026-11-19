@@ -136,12 +136,12 @@ AFF = {}
 def amz_slug(g):
     """Registers /go/amz-<slug> -> Amazon search for the game on its first console platform."""
     plat = next((x for x in g.get("platforms") or [] if x != "PC"), "")
-    AFF["amz-" + g["slug"]] = "https://www.amazon.com/s?k=" + _qp((g["title"] + " " + plat).strip()) + "&i=videogames"
+    AFF["amz-" + g["slug"]] = "https://www.amazon.com/s?k=" + _qp((g["title"] + " " + plat).strip()) + "&i=videogames&tag=purlandpaper-20"
     return "amz-" + g["slug"]
 # ---- Affiliate links. Pages link to /go/<slug>; _redirects sends it to the store.
 # Until a programme approves us these are plain store URLs; when approved, replace the URL with the tracked link and rebuild.
 AFF_ATTR = 'rel="sponsored nofollow noopener" target="_blank"'
-AFF_NOTE = '<p class="aff-note">We may earn a commission if you buy through these links, at no extra cost to you.</p>'
+AFF_NOTE = '<p class="aff-note">We may earn a commission if you buy through these links, at no extra cost to you. As an Amazon Associate we earn from qualifying purchases.</p>'
 def go(slug): return "/go/" + slug
 def write_redirects(root):
     lines = "".join(f"/go/{k} {v} 302\n" for k, v in AFF.items())
@@ -482,7 +482,7 @@ page("privacy.html", "Privacy Policy | DayOneDrop", "DayOneDrop privacy policy c
 <h2>What we collect</h2><p>Your launch list is saved only in your own browser. If you join our email list, we keep your email address with our email provider, Kit (kit.com), to send you the calendar and our updates. Every email has an unsubscribe link, and you can ask us to delete your address at any time.</p>
 <h2>Analytics</h2><p>We use Google Analytics to count visits and see which pages are popular. It uses cookies and collects information like pages viewed, approximate location and device type.</p>
 <h2>Advertising</h2><p>This site uses Google AdSense. Google and its partners use cookies to show ads based on your visits to this and other websites. You can turn off personalised ads at <a href="https://adssettings.google.com">Google Ads Settings</a>. Learn more at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
-<h2>Affiliate links</h2><p>Some links may be affiliate links. If you buy through them, we may earn a small fee at no extra cost to you.</p>
+<h2>Affiliate links</h2><p>Some links may be affiliate links. If you buy through them, we may earn a small fee at no extra cost to you. As an Amazon Associate we earn from qualifying purchases.</p>
 <h2>Contact</h2><p>Email <strong>[your email address]</strong>.</p></div></section>''')
 page("404.html", "Page not found | DayOneDrop", "This page has moved or doesn't exist.",
      f'<section><div class="wrap"><h1>Flight <span class="amber">cancelled.</span></h1><p class="lead">This page doesn\'t exist. Head back to the departures board.</p><a class="btn" href="{href("index.html", 0)}">Go to the board</a></div></section>')
