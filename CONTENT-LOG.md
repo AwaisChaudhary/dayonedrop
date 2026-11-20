@@ -18,3 +18,9 @@
 - Left out where sources disagreed: Wandering Sword (20 vs 21 Jan), Fate/Extra Record (platforms), Romancing SaGa 3 (date), FF XIV Evercold (date), Melty Blood and Rustown (one source only).
 - Platform pages, calendar, board and tools all regenerate from the data.
 - 2026-11-19: diagnostic run, push test.
+
+## 2026-11-20 09:15 PKT (manual data check; the 8:41 AM scheduled run finished without saving)
+- Added Shadow of the Road: delayed from 12 Nov 2026 to 10 Mar 2027, PC (Steam/Epic/GOG). Sources: Gematsu, Windows Central, RPGamer, CGMagazine.
+- Added Lords of the Fallen II: early 2027 (first quarter), PS5/Xbox Series X|S/PC/Switch 2. Sources: Game Informer (platforms, 2027), PC Gamer and Digital Citizen (Q1 2027).
+- Left out: Warhammer Blood Bowl (sources split between "spring 2027" and "early 2027"); The Duskbloods, Blighted, Bloodstained: The Scarlet Engagement, Dragon Ball Xenoverse 3, Rev.Noir (only "2027", no month or window yet).
+- Board: 46 games.

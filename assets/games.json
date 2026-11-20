@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "games": [
   {
    "slug": "armatus",
@@ -628,6 +628,31 @@
    "history": []
   },
   {
+   "slug": "shadow-of-the-road",
+   "title": "Shadow of the Road",
+   "platforms": [
+    "PC"
+   ],
+   "dev": "Another Angle Games (published by Owlcat Games)",
+   "genre": "Tactical RPG",
+   "page": false,
+   "facts": [
+    "Turn-based tactical RPG set in a steampunk, magic-filled feudal Japan.",
+    "Launches on PC via Steam, Epic Games Store and GOG."
+   ],
+   "history": [
+    {
+     "when": "Oct 2026",
+     "text": "Delayed from 12 November 2026 to 10 March 2027"
+    }
+   ],
+   "date": "2027-03-10",
+   "window": "",
+   "month": 3,
+   "status": "delayed",
+   "about": "Shadow of the Road is a turn-based tactical RPG from Another Angle Games, now launching on PC on 10 March 2027."
+  },
+  {
    "slug": "road-kings",
    "title": "Road Kings",
    "date": "2027-03-11",
@@ -662,6 +687,34 @@
    "month": 3,
    "status": "dated",
    "about": "The Switch 2 version of the young James Bond adventure."
+  },
+  {
+   "slug": "lords-of-the-fallen-ii",
+   "title": "Lords of the Fallen II",
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC",
+    "Switch 2"
+   ],
+   "dev": "Hexworks (CI Games)",
+   "genre": "Action RPG",
+   "page": false,
+   "facts": [
+    "Sequel to the 2023 Lords of the Fallen.",
+    "CI Games says it will launch in the first quarter of 2027."
+   ],
+   "history": [
+    {
+     "when": "Jun 2026",
+     "text": "Delayed from fall 2026 to early 2027 (first quarter)"
+    }
+   ],
+   "date": null,
+   "window": "Early 2027",
+   "month": 3,
+   "status": "delayed",
+   "about": "Lords of the Fallen II is set for early 2027 (first quarter) after moving out of fall 2026."
   },
   {
    "slug": "exodus",
