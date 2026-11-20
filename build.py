@@ -94,6 +94,15 @@ AD = '<div class="ad-slot" data-ad="{}"><!-- AdSense ad unit goes here --></div>
 NAV = [("index.html", "Departures"), ("calendar.html", "2027 Calendar"), ("games.html", "All games"), ("tools.html", "Tools")]
 
 
+MONTH_SLUGS = [m.lower() + "-2027" for m in MONTHS]
+def month_pages_list():
+    return [m for m in range(1, 13) if sum(1 for g in GAMES if g["month"] == m) >= 3]
+
+
+def month_foot(depth):
+    return "".join(f'<li><a href="{href("months/" + MONTH_SLUGS[m - 1] + ".html", depth)}">{MONTHS[m - 1]} 2027 games</a></li>' for m in month_pages_list()[:4])
+
+
 def plat_foot(depth):
     return "".join(f'<li><a href="{href("platforms/" + s2 + ".html", depth)}">{e(l2)} games</a></li>' for p2, s2, l2 in PLAT_PAGES_FOOT)
 
@@ -206,6 +215,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <p style="margin-top:12px">Every big game launch of 2027 in one place: release dates, platforms, delays and countdowns, checked against official news.</p></div>
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
+<div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
 <div><strong>Site</strong><ul><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Release dates can change; we update this site as soon as publishers announce changes. Last checked {e(UPDATED)}.</p>
@@ -316,7 +326,7 @@ def month_html(m):
     for g in games:
         name = f'<a href="{href("games/" + g["slug"] + ".html", 0)}">{e(g["title"])}</a>' if g["page"] else e(g["title"])
         items += f'<li><span class="dd">{e(short_date(g) if g["date"] else "TBC")}</span><span>{name}</span></li>'
-    return f'''<div class="month"><h3>{MONTHS[m - 1]} 2027 <small>{len(games)} game{"s" if len(games) != 1 else ""}</small></h3><div class="days">{cells}</div>{f'<ul class="mlist">{items}</ul>' if items else '<p class="muted" style="margin:10px 0 0;font-size:.9rem">No dates announced yet.</p>'}</div>'''
+    return f'''<div class="month"><h3>{(f'<a href="{href("months/" + MONTH_SLUGS[m - 1] + ".html", 0)}">{MONTHS[m - 1]} 2027</a>') if m in month_pages_list() else MONTHS[m - 1] + " 2027"} <small>{len(games)} game{"s" if len(games) != 1 else ""}</small></h3><div class="days">{cells}</div>{f'<ul class="mlist">{items}</ul>' if items else '<p class="muted" style="margin:10px 0 0;font-size:.9rem">No dates announced yet.</p>'}</div>'''
 
 cal = f'''<header class="hero"><div class="wrap"><span class="kicker">2027 calendar</span><h1>The 2027 game<br><span class="amber">release calendar.</span></h1>
 <p class="lead">Every confirmed date, month by month. Highlighted days have a launch. Games with only a season or year are listed in their likely month.</p></div></header>
@@ -449,6 +459,54 @@ for plat, slug, long in PLAT_PAGES:
          f"All {len(games)} confirmed {long} games launching in 2027, sorted by release date, with countdowns, delays and links to full guides."[:160],
          body, 1, faqs, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html")), (long + " games 2027", canon(f))])
 
+# ---------------- MONTH PAGES ----------------
+month_urls = []
+for m in month_pages_list():
+    f = "months/" + MONTH_SLUGS[m - 1] + ".html"
+    month_urls.append(f)
+    mname = MONTHS[m - 1]
+    games = [g for g in GAMES if g["month"] == m]
+    dated = [g for g in games if g["date"]]
+    loose = [g for g in games if not g["date"]]
+    def mrow(g):
+        t = f'<a href="{href("games/" + g["slug"] + ".html", 1)}">{e(g["title"])}</a>' if g["page"] else e(g["title"])
+        plats = ", ".join(g["platforms"]) or "Platforms TBC"
+        genre = (e(g["genre"]) + " · ") if g.get("genre") else ""
+        flag = ' <span class="muted">(delayed)</span>' if g["status"] == "delayed" else ""
+        return f'<div class="row"><span><strong>{t}</strong>{flag}<br><span class="muted">{genre}{e(plats)}</span></span><b>{e(nice_date(g))}</b></div>'
+    weeks = {}
+    for g in dated:
+        d = datetime.date.fromisoformat(g["date"])
+        weeks.setdefault(d.isocalendar()[1], []).append(g)
+    busiest = max(weeks.values(), key=len) if weeks else []
+    blocks = f'<div class="sec-head"><h2>Every {mname} 2027 release date</h2><span class="muted">{len(dated)} dated</span></div><div class="out" style="margin-bottom:28px">{"".join(mrow(g) for g in dated) or "<div class=empty>No exact dates yet.</div>"}</div>'
+    if loose:
+        blocks += f'<div class="sec-head"><h2>Expected in {mname}, no exact date</h2><span class="muted">{len(loose)}</span></div><div class="out" style="margin-bottom:28px">{"".join(mrow(g) for g in loose)}</div>'
+    pc = {pl: sum(1 for g in games if pl in g["platforms"]) for pl, _, _ in PLAT_PAGES}
+    platline = " · ".join(f'<a href="{href("platforms/" + s2 + ".html", 1)}">{e(l2)}</a>: {pc[p2]}' for p2, s2, l2 in PLAT_PAGES)
+    prev_next = []
+    ml = month_pages_list(); i = ml.index(m)
+    if i > 0: prev_next.append(f'<a class="btn line sm" href="{href("months/" + MONTH_SLUGS[ml[i-1] - 1] + ".html", 1)}">← {MONTHS[ml[i-1] - 1]} 2027</a>')
+    if i < len(ml) - 1: prev_next.append(f'<a class="btn line sm" href="{href("months/" + MONTH_SLUGS[ml[i+1] - 1] + ".html", 1)}">{MONTHS[ml[i+1] - 1]} 2027 →</a>')
+    body = (f'<header class="hero"><div class="wrap"><span class="kicker">{mname} 2027</span>'
+            f'<h1>{mname} 2027 game releases<br><span class="amber">{len(games)} games on the board.</span></h1>'
+            f'<p class="lead">Every video game launching in {mname} 2027 on PS5, Xbox Series X|S, PC and Switch 2, in date order. '
+            f'Each date is checked against the publisher or two trusted outlets, and we mark delays as they happen.</p>'
+            f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · Games per console: {platline}</p></div></header>'
+            f'<section><div class="wrap">{blocks}'
+            f'<p class="muted">Add any date to your calendar from the <a href="{href("calendar.html", 1)}">2027 calendar</a>, or star games on the <a href="{href("index.html", 1)}#board">departures board</a>.</p>'
+            f'<div class="btns" style="display:flex;gap:10px;flex-wrap:wrap">{"".join(prev_next)}</div></div></section>')
+    first = dated[0] if dated else None
+    big_week = (f"The busiest week has {len(busiest)} launches: " + ", ".join(g["title"] for g in busiest) + ".") if len(busiest) > 1 else f"Launches are spread across {mname}."
+    faqs = [
+        (f"What games come out in {mname} 2027?", f"{len(games)} games are on our list for {mname} 2027, including " + ", ".join(g["title"] for g in games[:5]) + ". The full list with dates and consoles is above."),
+        (f"What is the first game out in {mname} 2027?", (f"{first['title']}, on {nice_date(first)}." if first else "No exact dates are confirmed yet.")),
+        (f"What is the busiest week of {mname} 2027?", big_week),
+    ]
+    page(f, f"{mname} 2027 Game Releases: Every Date ({len(games)} Games) | DayOneDrop"[:90],
+         f"All {len(games)} video games releasing in {mname} 2027 on PS5, Xbox, PC and Switch 2, in date order with platforms and delays. Checked {UPDATED}."[:160],
+         body, 1, faqs, crumbs=[("Home", DOMAIN + "/"), ("2027 calendar", canon("calendar.html")), (f"{mname} 2027", canon(f))])
+
 # ---------------- TOOLS ----------------
 plat_links0 = " · ".join(f'<a href="{href("platforms/" + s2 + ".html", 0)}">{e(l2)} games</a>' for p2, s2, l2 in PLAT_PAGES)
 tools = f'''<header class="hero"><div class="wrap"><span class="kicker">Tools</span><h1>Plan your<br><span class="amber">2027 gaming year.</span></h1>
@@ -492,7 +550,7 @@ page("404.html", "Page not found | DayOneDrop", "This page has moved or doesn't 
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls
+urls = ["index.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)

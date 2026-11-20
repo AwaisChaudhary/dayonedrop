@@ -160,16 +160,31 @@
    "platforms": [
     "PS5"
    ],
-   "dev": "",
+   "dev": "Playground Games / Panic Button",
    "genre": "Racing",
-   "page": false,
-   "facts": [],
-   "history": [],
+   "page": true,
+   "facts": [
+    "Standard and Deluxe editions launch on PS5 on 26 January 2027.",
+    "Premium Edition owners can start five days early, on 21 January 2027.",
+    "The first paid expansion arrives at the same time on all platforms.",
+    "A disc version is planned for PS5, unlike Forza Horizon 5's digital-only PS5 launch.",
+    "The game first came out on Xbox Series X|S and PC in May 2026."
+   ],
+   "history": [
+    {
+     "when": "May 2026",
+     "text": "Released on Xbox Series X|S and PC; PS5 was promised for later in 2026."
+    },
+    {
+     "when": "October 2026",
+     "text": "PS5 date set for 26 January 2027, moving it into 2027."
+    }
+   ],
    "date": "2027-01-26",
    "window": "",
    "month": 1,
-   "status": "dated",
-   "about": "The PS5 version of the open-world racing game set in Japan."
+   "status": "delayed",
+   "about": "The PS5 version of the open-world racing game set in Japan, already out on Xbox and PC."
   },
   {
    "slug": "metroid-ravenous",
@@ -177,16 +192,26 @@
    "platforms": [
     "Switch 2"
    ],
-   "dev": "",
+   "dev": "MercurySteam / Nintendo",
    "genre": "Action adventure",
-   "page": false,
-   "facts": [],
-   "history": [],
+   "page": true,
+   "facts": [
+    "Launches 28 January 2027, only on Nintendo Switch 2.",
+    "A side-scrolling Metroid made by MercurySteam, the studio behind Metroid Dread.",
+    "Nintendo lists it at $59.99 digital in the US.",
+    "A Special Edition and new amiibo figures launch the same day."
+   ],
+   "history": [
+    {
+     "when": "September 2026",
+     "text": "Announced and dated at a Nintendo Direct."
+    }
+   ],
    "date": "2027-01-28",
    "window": "",
    "month": 1,
    "status": "dated",
-   "about": "A new Metroid adventure for Switch 2."
+   "about": "The next 2D Metroid adventure starring Samus Aran, made for Switch 2."
   },
   {
    "slug": "tropico-7",
@@ -213,16 +238,31 @@
    "platforms": [
     "PS5"
    ],
-   "dev": "",
+   "dev": "Firesprite",
    "genre": "Horror",
-   "page": false,
-   "facts": [],
-   "history": [],
+   "page": true,
+   "facts": [
+    "Launches 28 January 2027 on PS5 only.",
+    "Developed by Firesprite, with Dispatch studio AdHoc working on the story.",
+    "A new crew of ghost hunters, the Dead True team, explore an abandoned South Pacific island resort.",
+    "As in the first game, your choices decide who lives and who dies.",
+    "Standard and Digital Deluxe editions; pre-orders opened on 10 September 2026."
+   ],
+   "history": [
+    {
+     "when": "June 2026",
+     "text": "Revealed at a State of Play with a 2027 window."
+    },
+    {
+     "when": "September 2026",
+     "text": "Dated for 28 January 2027 at a State of Play."
+    }
+   ],
    "date": "2027-01-28",
    "window": "",
    "month": 1,
    "status": "dated",
-   "about": "The sequel to the choice-driven horror game Until Dawn."
+   "about": "The sequel to the choice-driven horror game Until Dawn, a PS5 exclusive from Firesprite."
   },
   {
    "slug": "warhammer-40-000-dark-heresy",
@@ -252,16 +292,30 @@
     "PC",
     "Switch 2"
    ],
-   "dev": "",
+   "dev": "Chucklefish / Robotality",
    "genre": "Life sim",
-   "page": false,
-   "facts": [],
-   "history": [],
+   "page": true,
+   "facts": [
+    "Launches 28 January 2027 on PS5, Xbox Series X|S, PC, Switch and Switch 2 on the same day.",
+    "Joins Xbox Game Pass on day one.",
+    "Up to four players can play together online.",
+    "It was first planned for 2025, then 2026, before landing on this date."
+   ],
+   "history": [
+    {
+     "when": "2025",
+     "text": "Delayed from its 2025 window into 2026."
+    },
+    {
+     "when": "October 2026",
+     "text": "Dated for 28 January 2027 at Nintendo's Indie World showcase, with PS5 added."
+    }
+   ],
    "date": "2027-01-28",
    "window": "",
    "month": 1,
-   "status": "dated",
-   "about": "A cosy life sim about studying magic in a seaside town."
+   "status": "delayed",
+   "about": "A cosy life sim about studying magic at a college in a seaside town."
   },
   {
    "slug": "elta-defy-all-gods",
@@ -315,7 +369,7 @@
    "dev": "4A Games",
    "genre": "Shooter",
    "status": "dated",
-   "page": false,
+   "page": true,
    "about": "The next chapter in the post-apocalyptic Metro shooter series, from 4A Games.",
    "history": [
     {
@@ -553,7 +607,7 @@
    "dev": "Team Ninja",
    "genre": "Action RPG",
    "status": "dated",
-   "page": false,
+   "page": true,
    "about": "The sequel to Team Ninja's fast, demanding action RPG Wo Long.",
    "facts": [
     "Team Ninja is making it and Koei Tecmo is publishing it.",

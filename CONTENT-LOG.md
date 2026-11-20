@@ -24,3 +24,9 @@
 - Added Lords of the Fallen II: early 2027 (first quarter), PS5/Xbox Series X|S/PC/Switch 2. Sources: Game Informer (platforms, 2027), PC Gamer and Digital Citizen (Q1 2027).
 - Left out: Warhammer Blood Bowl (sources split between "spring 2027" and "early 2027"); The Duskbloods, Blighted, Bloodstained: The Scarlet Engagement, Dragon Ball Xenoverse 3, Rev.Noir (only "2027", no month or window yet).
 - Board: 46 games.
+
+## 2026-11-20 17:00 PKT (manual traffic pass)
+- New month pages: /months/january-2027 ... (every month with 3+ games: Jan, Feb, Mar, Apr, Jun, Dec). Each lists every release date in order, consoles, delays, busiest week, prev/next links. Linked from calendar month headings and a new "By month" footer column. Targets "january 2027 game releases", "games coming out february 2027" etc.
+- New game guide pages: Until Dawn 2, Metroid Ravenous, Forza Horizon 6 (PS5), Witchbrook (facts from PlayStation Blog/Gematsu/Shacknews, Nintendo.com/Gematsu/GosuGamers, Playground via Gematsu/VGChartz/PSU, Chucklefish via Shacknews/Game Informer/VGChartz), plus Metro 2039 and Wo Long 2 (already had 3 facts).
+- Forza Horizon 6 PS5 and Witchbrook marked delayed (both moved from 2026 windows).
+- Bing Webmaster Tools: site verified, sitemap and 14 URLs submitted.
