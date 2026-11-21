@@ -224,3 +224,11 @@ footer a:hover { color: var(--amber); }
 .aff-links a { display: inline-block; padding: 8px 14px; border-radius: 999px; border: 1px solid currentColor; text-decoration: none; color: inherit; font-weight: 600; }
 .aff-note { font-size: .8rem; opacity: .75; margin: 8px 0 0; }
 .ticket .aff-note { padding: 0 18px 14px; }
+
+/* clash finder */
+.clash-list { margin-top: 14px; max-height: 300px; overflow-y: auto; border: 1px solid var(--rule); border-radius: 8px; background: var(--bg); padding: 6px; }
+.clash-opt { display: flex !important; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 6px; cursor: pointer; text-transform: none !important; letter-spacing: 0 !important; font-family: var(--display) !important; font-size: 0.95rem !important; color: var(--text) !important; margin: 0 !important; }
+.clash-opt:hover { background: var(--panel); }
+.clash-opt input { width: auto !important; accent-color: var(--amber); flex: none; }
+.clash-opt span:first-of-type { flex: 1; min-width: 0; }
+.out .row.hot b { color: var(--late); }

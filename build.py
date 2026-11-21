@@ -216,7 +216,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Release dates can change; we update this site as soon as publishers announce changes. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -494,7 +494,7 @@ for m in month_pages_list():
             f'Each date is checked against the publisher or two trusted outlets, and we mark delays as they happen.</p>'
             f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · Games per console: {platline}</p></div></header>'
             f'<section><div class="wrap">{blocks}'
-            f'<p class="muted">Add any date to your calendar from the <a href="{href("calendar.html", 1)}">2027 calendar</a>, or star games on the <a href="{href("index.html", 1)}#board">departures board</a>.</p>'
+            f'<p class="muted">See which weeks clash in the <a href="{href("release-clashes-2027.html", 1)}">2027 release clash finder</a>. Add any date to your calendar from the <a href="{href("calendar.html", 1)}">2027 calendar</a>, or star games on the <a href="{href("index.html", 1)}#board">departures board</a>.</p>'
             f'<div class="btns" style="display:flex;gap:10px;flex-wrap:wrap">{"".join(prev_next)}</div></div></section>')
     first = dated[0] if dated else None
     big_week = (f"The busiest week has {len(busiest)} launches: " + ", ".join(g["title"] for g in busiest) + ".") if len(busiest) > 1 else f"Launches are spread across {mname}."
@@ -507,24 +507,117 @@ for m in month_pages_list():
          f"All {len(games)} video games releasing in {mname} 2027 on PS5, Xbox, PC and Switch 2, in date order with platforms and delays. Checked {UPDATED}."[:160],
          body, 1, faqs, crumbs=[("Home", DOMAIN + "/"), ("2027 calendar", canon("calendar.html")), (f"{mname} 2027", canon(f))])
 
+# ---------------- RELEASE CLASH FINDER (22 Nov 2026) ----------------
+# Built only from dated games in games.json. Weeks run Monday to Sunday.
+def _monday(g):
+    d = datetime.date.fromisoformat(g["date"])
+    return d - datetime.timedelta(days=d.weekday())
+def _dm(d):
+    return f"{d.day} {MONTHS[d.month - 1]}"
+_wk = {}
+for _g in GAMES:
+    if _g["date"]:
+        _wk.setdefault(_monday(_g), []).append(_g)
+_clash_weeks = sorted([(k, sorted(v, key=lambda x: x["date"])) for k, v in _wk.items() if len(v) >= 2], key=lambda kv: (-len(kv[1]), kv[0]))
+_days = {}
+for _g in GAMES:
+    if _g["date"]:
+        _days.setdefault(_g["date"], []).append(_g)
+_same_days = sorted([(k, v) for k, v in _days.items() if len(v) >= 2])
+def _gname(g, depth=0):
+    return f'<a href="{href("games/" + g["slug"] + ".html", depth)}">{e(g["title"])}</a>' if g["page"] else e(g["title"])
+def _week_label(mon):
+    sun = mon + datetime.timedelta(days=6)
+    return f"{_dm(mon)} to {_dm(sun)} {sun.year}"
+def _cw_block(mon, gs):
+    rows = "".join(f'<div class="row"><span>{_gname(g)}<br><span class="muted">{e(", ".join(g["platforms"]) or "Platforms TBC")}</span></span><b>{e(nice_date(g))}</b></div>' for g in gs)
+    return (f'<div class="tool" style="margin-bottom:14px"><div class="sec-head" style="margin:0"><h3 style="margin:0;font-size:1.15rem">Week of {e(_week_label(mon))}</h3>'
+            f'<span class="mono amber">{len(gs)} games</span></div><div class="out">{rows}</div></div>')
+_top = _clash_weeks[0] if _clash_weeks else None
+_top_day = max(_same_days, key=lambda kv: len(kv[1])) if _same_days else None
+_plat_clash = []
+for _p, _s, _l in PLAT_PAGES_FOOT:
+    _pw = {}
+    for _g in GAMES:
+        if _g["date"] and _p in _g["platforms"]:
+            _pw.setdefault(_monday(_g), []).append(_g)
+    if _pw:
+        _m, _gs = max(_pw.items(), key=lambda kv: (len(kv[1]), -kv[0].toordinal()))
+        _plat_clash.append((_l, _s, _m, _gs))
+_quick = ""
+if _top:
+    _quick = (f"The most crowded week of 2027 so far is {_week_label(_top[0])}, with {len(_top[1])} launches: "
+              + ", ".join(g["title"] for g in _top[1]) + ".")
+    if _top_day:
+        _quick += f" The busiest single day is {nice_date(_top_day[1][0])}, when {len(_top_day[1])} games come out."
+_picker = "".join(f'<label class="clash-opt"><input type="checkbox" value="{e(g["slug"])}"> <span>{e(g["title"])}</span> <span class="muted mono">{e(short_date(g))}</span></label>' for g in sorted([g for g in GAMES if g["date"]], key=lambda x: x["date"]))
+clash_tool = f'''<div class="tool" id="clash-tool"><h2 style="font-size:1.5rem;margin-top:0">Do my games clash?</h2>
+<p class="muted">Tick the games you plan to buy (your ★ list is ticked for you). We show which ones land close together and how many days you get between each launch.</p>
+<label for="clash-gap">Count it as a clash if games are within</label>
+<select id="clash-gap"><option value="0">the same day</option><option value="7" selected>7 days</option><option value="14">14 days</option><option value="30">30 days</option></select>
+<div class="clash-list" role="group" aria-label="Pick games">{_picker}</div>
+<div class="btns" style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn sm" type="button" id="clash-star">Use my ★ list</button><button class="btn line sm" type="button" id="clash-clear">Clear</button></div>
+<div class="out" id="clash-out" aria-live="polite"></div></div>'''
+clash_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Clash finder</span>'
+              f'<h1>2027 release clashes:<br><span class="amber">which games launch the same week?</span></h1>'
+              f'<p class="lead">Big games landing days apart means less time to play each one and a bigger bill. Here is every crowded week of 2027, plus a checker for your own list.</p>'
+              f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · {sum(1 for g in GAMES if g["date"])} dated games</p></div></header>'
+              f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_quick)}</span></div></div>'
+              f'{clash_tool}</div></section>'
+              + AD.format("clash-mid") +
+              f'<section><div class="wrap"><div class="sec-head"><h2>Which weeks of 2027 have the most game releases?</h2><span class="muted">{len(_clash_weeks)} weeks with 2+ games</span></div>'
+              f'<p class="muted">Weeks run Monday to Sunday, busiest first.</p>'
+              + "".join(_cw_block(m, gs) for m, gs in _clash_weeks) +
+              f'<div class="sec-head" style="margin-top:28px"><h2>Which 2027 games come out on the same day?</h2><span class="muted">{len(_same_days)} days</span></div>'
+              f'<div class="out" style="margin-bottom:28px">'
+              + "".join(f'<div class="row"><span>{", ".join(_gname(g) for g in gs)}</span><b>{e(nice_date(gs[0]))}</b></div>' for _, gs in _same_days) +
+              f'</div><div class="sec-head"><h2>What is the busiest week on my console?</h2></div><div class="out" style="margin-bottom:28px">'
+              + "".join(f'<div class="row"><span><a href="{href("platforms/" + s + ".html", 0)}">{e(l)}</a>: {", ".join(e(g["title"]) for g in gs)}</span><b>{len(gs)} · {e(_dm(m))}</b></div>' for l, s, m, gs in _plat_clash) +
+              f'</div><div class="sec-head"><h2>Related tools</h2></div><ul>'
+              f'<li><a href="{href("tools.html", 0)}">What is coming to my console</a> and the busiest months chart</li>'
+              f'<li><a href="{href("delayed-games-2027.html", 0)}">Games delayed to 2027</a>: dates that already moved</li>'
+              f'<li><a href="{href("calendar.html", 0)}">The full 2027 release calendar</a> with calendar reminders</li></ul></div></section>')
+clash_faq = []
+if _top:
+    clash_faq.append(("What is the busiest week for game releases in 2027?", _quick))
+if _same_days:
+    clash_faq.append(("Which 2027 games release on the same day?", " ".join(f"{nice_date(gs[0])}: " + ", ".join(g["title"] for g in gs) + "." for _, gs in _same_days)))
+clash_faq.append(("Does a clash mean a game will be delayed?", "Not always. Publishers do sometimes move a date to avoid a bigger launch, but a clash on its own is not a delay. We only change a date when the publisher or two trusted outlets confirm it."))
+clash_faq.append(("How does the clash checker work?", "Tick the games you want and pick a gap, such as 7 days. The checker lists every pair of your games that launch within that gap and shows the days between each launch. It runs in your browser and nothing is sent anywhere."))
+page("release-clashes-2027.html", "2027 Release Clashes: Games Launching the Same Week | DayOneDrop",
+     (f"Which 2027 games launch the same week? Every crowded release week, same-day launches and a free clash checker for your list. Checked {UPDATED}.")[:160],
+     clash_body, 0, clash_faq, crumbs=[("Home", DOMAIN + "/"), ("Tools", canon("tools.html")), ("Release clashes 2027", canon("release-clashes-2027.html"))])
+
+
 # ---------------- TOOLS ----------------
 plat_links0 = " · ".join(f'<a href="{href("platforms/" + s2 + ".html", 0)}">{e(l2)} games</a>' for p2, s2, l2 in PLAT_PAGES)
+_busy_m = max(range(1, 13), key=lambda m: sum(1 for g in GAMES if g["month"] == m))
+_busy_n = sum(1 for g in GAMES if g["month"] == _busy_m)
 tools = f'''<header class="hero"><div class="wrap"><span class="kicker">Tools</span><h1>Plan your<br><span class="amber">2027 gaming year.</span></h1>
-<p class="lead">Free tools to see what's coming to your console, keep track of the games you want, and spot the busiest months.</p>
-<p class="muted" style="margin:0">Full lists: {plat_links0}</p></div></header>
-<section><div class="wrap grid" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr))">
+<p class="lead">Free tools to see what's coming to your console, keep track of the games you want, spot release clashes and find the busiest months.</p>
+<p class="muted" style="margin:0">Last checked {e(UPDATED)} · Full lists: {plat_links0}</p></div></header>
+<section><div class="wrap"><div class="out" style="margin-bottom:20px"><div class="row"><span><strong>Quick answer:</strong> we track {len(GAMES)} games for 2027. {MONTHS[_busy_m - 1]} is the busiest month with {_busy_n} launches. Pick your console below to see only your games, or use the <a href="{href("release-clashes-2027.html", 0)}">clash finder</a> to see which of them land the same week.</span></div></div></div></section>
+<section><div class="wrap grid" style="grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr))">
 <div class="tool"><h2 style="font-size:1.5rem">What's coming to my console?</h2><label for="console-pick">Your console</label>
 <select id="console-pick">{"".join(f'<option>{e(p)}</option>' for p in PLATS)}</select><div class="out" id="console-out"></div></div>
-<div class="tool"><h2 style="font-size:1.5rem">My launch list</h2><p class="muted">Games you've starred, with days left. Saved on this device.</p><div class="out" id="watch-out"></div>
+<div class="tool"><h2 style="font-size:1.5rem">What's on my launch list?</h2><p class="muted">Games you've starred, with days left. Saved on this device.</p><div class="out" id="watch-out"></div>
 <div class="btns" style="margin-top:12px"><a class="btn sm" href="{href("index.html", 0)}#board">Add games</a><button class="btn line sm" type="button" id="share-list">Share my list</button></div></div>
-<div class="tool"><h2 style="font-size:1.5rem">Busiest months of 2027</h2><p class="muted">Number of tracked launches each month.</p><div id="month-load"></div></div>
-</div></section>'''
+<div class="tool"><h2 style="font-size:1.5rem">Which months of 2027 are busiest?</h2><p class="muted">Number of tracked launches each month.</p><div id="month-load"></div></div>
+<div class="tool"><h2 style="font-size:1.5rem">Do my games clash?</h2><p class="muted">See which 2027 games launch in the same week, and check your own list for clashes.</p>
+<div class="out">{"".join(f'<div class="row"><span>Week of {e(_dm(m))}</span><b>{len(gs)} games</b></div>' for m, gs in sorted(_clash_weeks[:3], key=lambda kv: kv[0]))}</div>
+<div class="btns" style="margin-top:12px"><a class="btn sm" href="{href("release-clashes-2027.html", 0)}">Open the clash finder</a></div></div>
+</div></section>
+<section><div class="wrap"><div class="sec-head"><h2>More ways to plan</h2></div><ul>
+<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: every crowded week</li>
+<li><a href="{href("delayed-games-2027.html", 0)}">Games delayed to 2027</a></li>
+<li><a href="{href("after-gta-6.html", 0)}">What to play after GTA 6</a></li></ul></div></section>'''
 sw2 = [g["title"] for g in GAMES if "Switch 2" in g["platforms"]]
 both = [g["title"] for g in GAMES if "PS5" in g["platforms"] and "Xbox Series X|S" in g["platforms"]]
 tools_faq = [
     ("Which 2027 games are coming to Switch 2?", f"{len(sw2)} tracked 2027 games are confirmed for Switch 2, including {', '.join(sw2[:4])}. See the full Switch 2 list or use the console tool above."),
     ("Which 2027 games are on PS5 and Xbox?", f"{len(both)} tracked games are confirmed for both, including {', '.join(both[:4])}. The platform pages list them all."),
     ("Is my launch list saved?", "Yes, on this device and browser. Use Share my list to send it to a friend or open it on another device."),
+    ("Which week of 2027 has the most game releases?", _quick or "See the clash finder for every crowded week."),
 ]
 page("tools.html", "2027 Game Release Tools: Console Lineup and Launch List | DayOneDrop",
      "Free 2027 gaming tools: see every game coming to PS5, Xbox, PC or Switch 2, build a launch list with countdowns, and find the busiest release months.",
@@ -603,6 +696,7 @@ page("delayed-games-2027.html", f"Games Delayed to 2027: Every Delay and New Dat
      f"Every game delayed into 2027 or pushed later, with the new release date, what changed and which consoles. Checked {UPDATED}."[:160],
      delays_body, 0, delays_faq, crumbs=[("Home", DOMAIN + "/"), ("Delayed games 2027", canon("delayed-games-2027.html"))])
 
+
 # ---------------- ABOUT / PRIVACY / 404 ----------------
 page("about.html", "About DayOneDrop", "About DayOneDrop, an independent tracker of 2027 game release dates, and how to contact us.",
      '''<section><div class="wrap" style="max-width:760px"><h1>About <span class="amber">DayOneDrop</span></h1>
@@ -623,7 +717,7 @@ page("404.html", "Page not found | DayOneDrop", "This page has moved or doesn't 
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "after-gta-6.html", "delayed-games-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "after-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)

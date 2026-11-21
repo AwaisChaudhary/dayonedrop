@@ -35,3 +35,8 @@
 - New page /after-gta-6 "What to play after GTA 6: the big games of 2027" (10 picks from games.json, quick answer, FAQ), linked from the footer on every page. Rides the GTA 6 launch wave; NeonCoast (sister site, ~700+ visitors/day) links here from its ending, completion and footer.
 - Note: the scheduled DayOneDrop SEO runs have pushed nothing since 20 Nov 17:00 PKT (runs report success but no commit). Investigating.
 - New page /delayed-games-2027 (delay tracker built from games.json status/history; quick answer + FAQ), linked in footer and from /after-gta-6.
+
+## 2026-11-22 (scheduled SEO run)
+- New page /release-clashes-2027 "2027 release clashes: which games launch the same week?": quick answer, every Mon-Sun week with 2+ dated games (busiest first), same-day launches, busiest week per console, and an interactive "Do my games clash?" checker (tick games or load your ★ list, pick a 0/7/14/30-day gap; lists clashing pairs and days between launches). Built only from games.json dates. Targets "games releasing same day 2027", "busiest week for game releases 2027", "January 28 2027 games". Linked from footer (every page), Tools page and every month page.
+- Refreshed /tools: quick answer box, "Last checked" date, question-style H2s, new clash finder card (top 3 crowded weeks), "More ways to plan" links, extra FAQ on the busiest week. Fixed tool grid min width for narrow phones.
+- Researched but not added: Baptiste (delayed to 25 Mar 2027, Gematsu only so far, needs a second source); Fable Game Pass day one page (not enough confirmed day-one titles for a solid list yet).
