@@ -216,7 +216,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Release dates can change; we update this site as soon as publishers announce changes. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -576,6 +576,33 @@ page("after-gta-6.html", "What to Play After GTA 6: The Biggest Games of 2027 | 
      "Finished GTA 6? The biggest confirmed games coming next, in release order: Stranger Than Heaven, Forza Horizon 6, Fable, Final Fantasy VII Revelation and more.",
      after_body, 0, after_faq, crumbs=[("Home", DOMAIN + "/"), ("After GTA 6", canon("after-gta-6.html"))])
 
+
+# ---------------- DELAYED GAMES TRACKER (21 Nov 2026) ----------------
+# Built from games.json status/history only (already 2-source checked). Grows automatically as the data check marks delays.
+_delayed = sorted([g for g in GAMES if g["status"] == "delayed"], key=lambda g: (g["month"], g["date"] or "9999"))
+def _drow(g):
+    t = f'<a href="{href("games/" + g["slug"] + ".html", 0)}">{e(g["title"])}</a>' if g["page"] else e(g["title"])
+    last = (g.get("history") or [{}])[-1].get("text", "")
+    plats = ", ".join(g["platforms"]) or "Platforms TBC"
+    return f'<div class="row"><span><strong>{t}</strong><br><span class="muted">{e(last)}</span><br><span class="muted">{e(plats)}</span></span><b>{e(nice_date(g))}</b></div>'
+delays_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Delay tracker</span>'
+               f'<h1>Games delayed to 2027<br><span class="amber">{len(_delayed)} on our board.</span></h1>'
+               f'<p class="lead">Every tracked game that has slipped into 2027 or moved to a later date, with its new date and what changed. We add each delay as soon as the publisher or two trusted outlets confirm it.</p>'
+               f'<p class="muted" style="margin:0">Last checked {e(UPDATED)}</p></div></header>'
+               f'<section><div class="wrap"><div class="out" style="margin-bottom:12px"><div class="row"><span><strong>Quick answer:</strong> '
+               + (", ".join(f"{g['title']} (now {nice_date(g)})" for g in _delayed) if _delayed else "no tracked games are delayed right now") +
+               f'.</span></div></div><div class="sec-head"><h2>Every delayed game, by new date</h2><span class="muted">{len(_delayed)}</span></div>'
+               f'<div class="out" style="margin-bottom:28px">{"".join(_drow(g) for g in _delayed)}</div>'
+               f'<p class="muted">Want a heads-up before launch? Star games on the <a href="{href("index.html", 0)}#board">departures board</a> for countdowns, see the <a href="{href("calendar.html", 0)}">2027 calendar</a>, or <a href="{href("after-gta-6.html", 0)}">what to play after GTA 6</a>.</p></div></section>')
+delays_faq = [
+    ("Which games were delayed to 2027?", ("On our board: " + ", ".join(g["title"] for g in _delayed) + ".") if _delayed else "None of the games we track right now."),
+    ("Is God of War Laufey delayed?", "Yes. It was planned for February 2027 and is now dated 20 May 2027 on PS5.") if any(g["slug"] == "god-of-war-laufey" for g in _delayed) else ("How do you track delays?", "We only mark a delay when the publisher or two trusted outlets confirm the new date."),
+    ("How do you check delays?", "We only mark a game as delayed when the publisher or at least two trusted gaming news sites confirm the new date or window."),
+]
+page("delayed-games-2027.html", f"Games Delayed to 2027: Every Delay and New Date ({len(_delayed)}) | DayOneDrop"[:90],
+     f"Every game delayed into 2027 or pushed later, with the new release date, what changed and which consoles. Checked {UPDATED}."[:160],
+     delays_body, 0, delays_faq, crumbs=[("Home", DOMAIN + "/"), ("Delayed games 2027", canon("delayed-games-2027.html"))])
+
 # ---------------- ABOUT / PRIVACY / 404 ----------------
 page("about.html", "About DayOneDrop", "About DayOneDrop, an independent tracker of 2027 game release dates, and how to contact us.",
      '''<section><div class="wrap" style="max-width:760px"><h1>About <span class="amber">DayOneDrop</span></h1>
@@ -596,7 +623,7 @@ page("404.html", "Page not found | DayOneDrop", "This page has moved or doesn't 
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "after-gta-6.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "after-gta-6.html", "delayed-games-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)

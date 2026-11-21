@@ -34,3 +34,4 @@
 ## 2026-11-21 19:55 PKT (main chat)
 - New page /after-gta-6 "What to play after GTA 6: the big games of 2027" (10 picks from games.json, quick answer, FAQ), linked from the footer on every page. Rides the GTA 6 launch wave; NeonCoast (sister site, ~700+ visitors/day) links here from its ending, completion and footer.
 - Note: the scheduled DayOneDrop SEO runs have pushed nothing since 20 Nov 17:00 PKT (runs report success but no commit). Investigating.
+- New page /delayed-games-2027 (delay tracker built from games.json status/history; quick answer + FAQ), linked in footer and from /after-gta-6.
