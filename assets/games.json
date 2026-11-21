@@ -731,16 +731,25 @@
    "platforms": [
     "Switch 2"
    ],
-   "dev": "",
+   "dev": "IO Interactive",
    "genre": "Action adventure",
    "page": false,
-   "facts": [],
-   "history": [],
+   "facts": [
+    "The Switch 2 version launches 18 March 2027.",
+    "The game is already out on PS5, Xbox Series X|S and PC.",
+    "IO Interactive delayed the Switch 2 version again in September 2026 to keep refining it."
+   ],
+   "history": [
+    {
+     "when": "Sep 2026",
+     "text": "Switch 2 version delayed again, to 18 March 2027"
+    }
+   ],
    "date": "2027-03-18",
    "window": "",
    "month": 3,
-   "status": "dated",
-   "about": "The Switch 2 version of the young James Bond adventure."
+   "status": "delayed",
+   "about": "The Switch 2 version of IO Interactive's young James Bond adventure, which is already out on PS5, Xbox and PC."
   },
   {
    "slug": "lords-of-the-fallen-ii",

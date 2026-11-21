@@ -216,7 +216,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Release dates can change; we update this site as soon as publishers announce changes. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -401,13 +401,18 @@ for g in featured:
 
 # ---------------- PLATFORM PAGES ----------------
 PLAT_PAGES = PLAT_PAGES_FOOT
+# 2027 versions of games already out elsewhere: single-platform in our data but NOT exclusives (checked 22 Nov 2026).
+PORTS = {"forza-horizon-6": "Already out on Xbox Series X|S and PC since May 2026. This is the PS5 version.",
+         "007-first-light": "Already out on PS5, Xbox Series X|S and PC. This is the delayed Switch 2 version."}
+def is_excl(g, plat):
+    return g["platforms"] == [plat] and g["slug"] not in PORTS
 plat_urls = []
 
 
 def plat_row(g, depth, plat):
     t = f'<a href="{href("games/" + g["slug"] + ".html", depth)}">{e(g["title"])}</a>' if g["page"] else e(g["title"])
     others = [x for x in g["platforms"] if x != plat]
-    also = ("Only on " + plat) if not others else ("Also on " + ", ".join(others))
+    also = PORTS[g["slug"]] if g["slug"] in PORTS else ("Only on " + plat) if not others else ("Also on " + ", ".join(others))
     genre = (e(g["genre"]) + " · ") if g["genre"] else ""
     return f'<div class="row"><span><strong>{t}</strong><br><span class="muted">{genre}{e(also)}</span></span><b>{e(nice_date(g))}</b></div>'
 
@@ -417,7 +422,7 @@ for plat, slug, long in PLAT_PAGES:
     plat_urls.append(f)
     games = [g for g in GAMES if plat in g["platforms"]]
     dated = [g for g in games if g["date"]]
-    excl = [g for g in games if g["platforms"] == [plat]]
+    excl = [g for g in games if is_excl(g, plat)]
     by_month = {}
     for g in games:
         by_month.setdefault(g["month"] if g["date"] else 13, []).append(g)
@@ -442,7 +447,14 @@ for plat, slug, long in PLAT_PAGES:
             f'<p class="lead">{len(games)} confirmed {e(long)} launches so far, {len(dated)} with an exact date. '
             f'Sorted by release date and checked against official announcements.</p>'
             f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · Other consoles: {other_links}</p>{cd}</div></header>'
-            f'<section><div class="wrap">{blocks}'
+            f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {len(games)} confirmed 2027 games are coming to {e(long)}'
+            + (f', and the next one is {e(dated[0]["title"])} on {e(nice_date(dated[0]))}' if dated else '')
+            + (f'. Only on {e(long)}: {e(", ".join(g["title"] for g in excl))}.' if excl else f'. None of them are {e(long)} exclusives right now.')
+            + f'</span></div></div>{blocks}'
+            f'<div class="sec-head"><h2>What else helps plan my {e(long)} year?</h2></div><ul>'
+            f'<li><a href="{href("exclusives-2027.html", 1)}">2027 console exclusives</a> and which games skip {e(long)}</li>'
+            f'<li><a href="{href("release-clashes-2027.html", 1)}">2027 release clashes</a>: games landing the same week</li>'
+            f'<li><a href="{href("delayed-games-2027.html", 1)}">Games delayed to 2027</a></li></ul>'
             f'<p class="muted">Star games on the <a href="{href("index.html", 1)}#board">departures board</a> to build your launch list, '
             f'and every guide has one-tap calendar reminders.</p></div></section>')
     first = dated[0] if dated else None
@@ -450,10 +462,12 @@ for plat, slug, long in PLAT_PAGES:
         ex = ", ".join(g["title"] for g in excl) + (" is" if len(excl) == 1 else " are") + f" only confirmed for {long} so far."
     else:
         ex = f"None of the 2027 games we track are {long} exclusives right now."
+    skip = [g for g in GAMES if plat not in g["platforms"] and g["platforms"]]
     faqs = [
         (f"How many {long} games are coming in 2027?", f"We track {len(games)} confirmed {long} games for 2027 so far. This list grows as publishers announce dates and platforms."),
         (f"What is the next big {long} game in 2027?", (f"{first['title']} is the first dated {long} game on our list, launching {nice_date(first)}." if first else "No exact dates are confirmed yet.")),
         (f"Which 2027 games are only on {long}?", ex),
+        (f"Which 2027 games are not coming to {long}?", (f"{len(skip)} tracked games are not announced for {long}, including " + ", ".join(g["title"] for g in skip[:5]) + ". See our 2027 console exclusives page for the full list.") if skip else f"Every 2027 game we track is announced for {long}."),
     ]
     page(f, f"Every {long} Game Coming in 2027 (Release Dates) | DayOneDrop"[:90],
          f"All {len(games)} confirmed {long} games launching in 2027, sorted by release date, with countdowns, delays and links to full guides."[:160],
@@ -589,6 +603,67 @@ page("release-clashes-2027.html", "2027 Release Clashes: Games Launching the Sam
      clash_body, 0, clash_faq, crumbs=[("Home", DOMAIN + "/"), ("Tools", canon("tools.html")), ("Release clashes 2027", canon("release-clashes-2027.html"))])
 
 
+# ---------------- CONSOLE EXCLUSIVES 2027 (22 Nov 2026) ----------------
+# Built from games.json platforms (2-source checked). Ports in PORTS are listed separately so they are never called exclusives.
+_ex = {p: [g for g in GAMES if is_excl(g, p)] for p in PLATS}
+_ports = [g for g in GAMES if g["slug"] in PORTS]
+_skip = {p: [g for g in GAMES if g["platforms"] and p not in g["platforms"]] for p in PLATS}
+_all4 = [g for g in GAMES if all(p in g["platforms"] for p in PLATS)]
+_lab = {p: l for p, s2, l in PLAT_PAGES_FOOT}
+_pslug = {p: s2 for p, s2, l in PLAT_PAGES_FOOT}
+def _xrow(g, note=""):
+    return (f'<div class="row"><span><strong>{_gname(g)}</strong><br><span class="muted">{e(note or g.get("about") or "")}</span>'
+            f'<br><span class="muted">{e(g.get("genre") or "")}</span></span><b>{e(nice_date(g))}</b></div>')
+_ex_n = sum(len(v) for v in _ex.values())
+_ex_quick = (f"We count {_ex_n} console exclusives among the {len(GAMES)} games of 2027 we track. "
+             + " ".join(f"{_lab[p]}: {len(_ex[p])}" + (f" ({', '.join(g['title'] for g in _ex[p])})." if _ex[p] else ".") for p in PLATS)
+             + " Fable, made by Xbox studio Playground Games, launches on Xbox, PS5 and PC on the same day.")
+_xsec = ""
+for p in PLATS:
+    rows = "".join(_xrow(g) for g in _ex[p]) or f'<div class="row"><span>No {e(_lab[p])}-only games on our 2027 board right now.</span><b>0</b></div>'
+    _xsec += (f'<div class="sec-head"><h2>Which 2027 games are only on {e(_lab[p])}?</h2><span class="muted">{len(_ex[p])}</span></div>'
+              f'<div class="out" style="margin-bottom:28px">{rows}</div>')
+_mx = "".join(f'<tr><td class="t">{_gname(g)}</td>' + "".join(f'<td class="p">{"✓" if p in g["platforms"] else "-"}</td>' for p in PLATS) + f'<td class="d"><span>{e(short_date(g))}</span></td></tr>'
+              for g in sorted(GAMES, key=lambda x: (x["month"], x["date"] or "9999")))
+_matrix = (f'<div class="board"><div class="board-top"><span class="board-title">WHO GETS WHAT · 2027</span></div><div class="board-scroll"><table class="dep">'
+           f'<thead><tr><th>Game</th>' + "".join(f'<th>{e(p)}</th>' for p in PLATS) + '<th>Date</th></tr></thead><tbody>' + _mx + '</tbody></table></div></div>')
+_chips = "".join(f'<button class="chip" type="button" data-own="{e(p)}" aria-pressed="false">{e(p)}</button>' for p in PLATS)
+_miss_tool = (f'<div class="tool" id="miss-tool"><h2 style="font-size:1.5rem;margin-top:0">Which 2027 games will I miss?</h2>'
+              f'<p class="muted">Tap the consoles you own. We show how many of the {len(GAMES)} tracked 2027 games you can play, the ones you would miss, and which extra console would add the most.</p>'
+              f'<div class="chips" role="group" aria-label="Consoles you own" style="margin-bottom:12px">{_chips}</div>'
+              f'<div class="out" id="miss-out" aria-live="polite"></div></div>')
+excl_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Exclusives</span>'
+             f'<h1>2027 console exclusives:<br><span class="amber">which games are only on one console?</span></h1>'
+             f'<p class="lead">Every confirmed 2027 game that is only coming to PS5, Xbox, PC or Switch 2, the ports that are not really exclusives, and a checker for the games your consoles will miss.</p>'
+             f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · based on announced platforms, which can still change</p></div></header>'
+             f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_ex_quick)}</span></div></div>'
+             f'{_miss_tool}</div></section>' + AD.format("excl-mid") +
+             f'<section><div class="wrap">{_xsec}'
+             f'<div class="sec-head"><h2>Which "exclusives" are really late ports?</h2><span class="muted">{len(_ports)}</span></div>'
+             f'<p class="muted">These show up on only one console in 2027, but they are already out elsewhere.</p>'
+             f'<div class="out" style="margin-bottom:28px">{"".join(_xrow(g, PORTS[g["slug"]]) for g in _ports)}</div>'
+             f'<div class="sec-head"><h2>Which 2027 games skip each console?</h2></div><div class="out" style="margin-bottom:28px">'
+             + "".join(f'<div class="row"><span><a href="{href("platforms/" + _pslug[p] + ".html", 0)}">{e(_lab[p])}</a> misses: {e(", ".join(g["title"] for g in _skip[p][:8]))}{" and more" if len(_skip[p]) > 8 else ""}</span><b>{len(_skip[p])} games</b></div>' for p in PLATS) +
+             f'</div><div class="sec-head"><h2>Which 2027 games are on every console?</h2><span class="muted">{len(_all4)}</span></div>'
+             f'<p>{e(", ".join(g["title"] for g in _all4))}.</p>'
+             f'<div class="sec-head"><h2>Every 2027 game by console</h2></div>{_matrix}'
+             f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+             f'<li><a href="{href("tools.html", 0)}">What is coming to my console</a> and your launch list</li>'
+             f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: which games land the same week</li>'
+             f'<li><a href="{href("delayed-games-2027.html", 0)}">Games delayed to 2027</a></li></ul></div></section>')
+_cnt = {p: sum(1 for g in GAMES if p in g["platforms"]) for p in PLATS}
+excl_faq = [
+    ("What are the PS5 exclusives of 2027?", (", ".join(f"{g['title']} ({nice_date(g)})" for g in _ex["PS5"]) + " are only announced for PS5.") if _ex["PS5"] else "None on our board right now."),
+    ("Are there any Xbox exclusives in 2027?", ("Not on our board. " if not _ex["Xbox Series X|S"] else ", ".join(g["title"] for g in _ex["Xbox Series X|S"]) + ". ") + "Fable launches on Xbox Series X|S, PS5 and PC on 23 February 2027, and on Game Pass the same day."),
+    ("What are the Switch 2 exclusives of 2027?", (", ".join(f"{g['title']} ({nice_date(g)})" for g in _ex["Switch 2"]) + ".") if _ex["Switch 2"] else "None on our board right now."),
+    ("Is Forza Horizon 6 a PS5 exclusive?", "No. Forza Horizon 6 came out on Xbox Series X|S and PC in May 2026. The PS5 version launches 26 January 2027."),
+    ("Which console gets the most 2027 games?", "On our board: " + ", ".join(f"{_lab[p]} {_cnt[p]}" for p in sorted(PLATS, key=lambda q: -_cnt[q])) + "."),
+]
+page("exclusives-2027.html", "2027 Console Exclusives: PS5, Xbox, Switch 2, PC | DayOneDrop",
+     (f"Every 2027 console exclusive: PS5-only, Switch 2-only and PC-only games, which are late ports, and a checker for games your console misses. Checked {UPDATED}.")[:160],
+     excl_body, 0, excl_faq, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html")), ("Console exclusives 2027", canon("exclusives-2027.html"))])
+
+
 # ---------------- TOOLS ----------------
 plat_links0 = " · ".join(f'<a href="{href("platforms/" + s2 + ".html", 0)}">{e(l2)} games</a>' for p2, s2, l2 in PLAT_PAGES)
 _busy_m = max(range(1, 13), key=lambda m: sum(1 for g in GAMES if g["month"] == m))
@@ -610,6 +685,7 @@ tools = f'''<header class="hero"><div class="wrap"><span class="kicker">Tools</s
 <section><div class="wrap"><div class="sec-head"><h2>More ways to plan</h2></div><ul>
 <li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: every crowded week</li>
 <li><a href="{href("delayed-games-2027.html", 0)}">Games delayed to 2027</a></li>
+<li><a href="{href("exclusives-2027.html", 0)}">2027 console exclusives</a> and which games your consoles will miss</li>
 <li><a href="{href("after-gta-6.html", 0)}">What to play after GTA 6</a></li></ul></div></section>'''
 sw2 = [g["title"] for g in GAMES if "Switch 2" in g["platforms"]]
 both = [g["title"] for g in GAMES if "PS5" in g["platforms"] and "Xbox Series X|S" in g["platforms"]]
@@ -717,7 +793,7 @@ page("404.html", "Page not found | DayOneDrop", "This page has moved or doesn't 
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "after-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "after-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)

@@ -206,6 +206,36 @@
     useStars();
   }
 
+  /* exclusives: which games will I miss? */
+  var mt = $("#miss-tool");
+  if (mt) {
+    var mchips = $$("[data-own]", mt), mout = $("#miss-out"), PL = ["PS5", "Xbox Series X|S", "PC", "Switch 2"];
+    var mesc = function (t) { return String(t).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+    var mwhen = function (g) { if (!g.date) return g.window || "TBC"; var p = g.date.split("-"); return +p[2] + " " + ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][+p[1] - 1]; };
+    var KEY = "dod-own";
+    var drawMiss = function () {
+      var own = mchips.filter(function (c) { return c.getAttribute("aria-pressed") === "true"; }).map(function (c) { return c.getAttribute("data-own"); });
+      try { localStorage.setItem(KEY, JSON.stringify(own)); } catch (err) {}
+      if (!own.length) { mout.innerHTML = '<div class="empty">Tap at least one console you own.</div>'; return; }
+      var can = function (g, list) { return g.platforms.some(function (p) { return list.indexOf(p) > -1; }); };
+      var known = G.filter(function (g) { return g.platforms && g.platforms.length; });
+      var miss = known.filter(function (g) { return !can(g, own); });
+      var html = '<div class="row"><span><strong>You can play ' + (known.length - miss.length) + " of " + known.length + " tracked 2027 games</strong></span><b>" + (miss.length ? miss.length + " missed" : "All of them") + "</b></div>";
+      var best = null;
+      PL.forEach(function (p) { if (own.indexOf(p) > -1) return; var n = miss.filter(function (g) { return g.platforms.indexOf(p) > -1; }).length; if (n && (!best || n > best[1])) best = [p, n]; });
+      if (best) html += '<div class="row"><span>Best extra console for you: <strong>' + mesc(best[0]) + "</strong></span><b>+" + best[1] + " games</b></div>";
+      html += miss.map(function (g) { return '<div class="row hot"><span>' + mesc(g.title) + ' <span class="muted">on ' + mesc(g.platforms.join(", ")) + "</span></span><b>" + mesc(mwhen(g)) + "</b></div>"; }).join("");
+      mout.innerHTML = html;
+    };
+    var saved = [];
+    try { saved = JSON.parse(localStorage.getItem(KEY) || "[]") || []; } catch (err) {}
+    mchips.forEach(function (c) {
+      if (saved.indexOf(c.getAttribute("data-own")) > -1) c.setAttribute("aria-pressed", "true");
+      c.addEventListener("click", function () { c.setAttribute("aria-pressed", c.getAttribute("aria-pressed") === "true" ? "false" : "true"); drawMiss(); });
+    });
+    drawMiss();
+  }
+
   /* copy page link */
   $$("[data-copy-link]").forEach(function (b) {
     b.addEventListener("click", function () { navigator.clipboard.writeText(location.href.split("#")[0]).then(function () { toast("Link copied"); }, function () { toast("Copy blocked here"); }); });
