@@ -30,3 +30,7 @@
 - New game guide pages: Until Dawn 2, Metroid Ravenous, Forza Horizon 6 (PS5), Witchbrook (facts from PlayStation Blog/Gematsu/Shacknews, Nintendo.com/Gematsu/GosuGamers, Playground via Gematsu/VGChartz/PSU, Chucklefish via Shacknews/Game Informer/VGChartz), plus Metro 2039 and Wo Long 2 (already had 3 facts).
 - Forza Horizon 6 PS5 and Witchbrook marked delayed (both moved from 2026 windows).
 - Bing Webmaster Tools: site verified, sitemap and 14 URLs submitted.
+
+## 2026-11-21 19:55 PKT (main chat)
+- New page /after-gta-6 "What to play after GTA 6: the big games of 2027" (10 picks from games.json, quick answer, FAQ), linked from the footer on every page. Rides the GTA 6 launch wave; NeonCoast (sister site, ~700+ visitors/day) links here from its ending, completion and footer.
+- Note: the scheduled DayOneDrop SEO runs have pushed nothing since 20 Nov 17:00 PKT (runs report success but no commit). Investigating.

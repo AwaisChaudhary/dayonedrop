@@ -216,7 +216,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Release dates can change; we update this site as soon as publishers announce changes. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -530,6 +530,52 @@ page("tools.html", "2027 Game Release Tools: Console Lineup and Launch List | Da
      "Free 2027 gaming tools: see every game coming to PS5, Xbox, PC or Switch 2, build a launch list with countdowns, and find the busiest release months.",
      tools, 0, tools_faq, crumbs=[("Home", DOMAIN + "/"), ("Tools", canon("tools.html"))])
 
+
+# ---------------- WHAT TO PLAY AFTER GTA 6 (21 Nov 2026) ----------------
+# GTA 6 launched 19 Nov 2026 and is the biggest search topic in gaming; this page catches "what to play after GTA 6" / "games coming after GTA 6"
+# and points GTA players at the 2027 board. Built only from games.json facts (dates/platforms already 2-source checked). Sister site: neoncoast.org.
+AFTER_PICKS = [
+    ("stranger-than-heaven", "If you love GTA's crime stories"),
+    ("forza-horizon-6", "If you love driving around an open world"),
+    ("metro-2039", "If you want a tense shooter"),
+    ("tomb-raider-legacy-of-atlantis", "If you want a big action adventure"),
+    ("persona-4-revival", "If you want a long story with a mystery"),
+    ("fable", "If you want another huge world full of choices"),
+    ("exodus", "If you want a story-heavy sci-fi RPG"),
+    ("final-fantasy-vii-revelation", "If you want the year's biggest RPG finale"),
+    ("god-of-war-laufey", "If you want a blockbuster PlayStation exclusive"),
+    ("kingdom-hearts-iv", "If you want the long-awaited sequel"),
+]
+_gby = {g["slug"]: g for g in GAMES}
+_picks = [(_gby[s], why) for s, why in AFTER_PICKS if s in _gby]
+def _arow(g, why):
+    t = f'<a href="{href("games/" + g["slug"] + ".html", 0)}">{e(g["title"])}</a>' if g["page"] else e(g["title"])
+    plats = ", ".join(g["platforms"]) or "Platforms TBC"
+    return (f'<div class="row"><span><strong>{t}</strong><br><span class="muted">{e(why)}. {e(g.get("about") or "")}</span>'
+            f'<br><span class="muted">{e(g.get("genre") or "")} · {e(plats)}</span></span><b>{e(nice_date(g))}</b></div>')
+_first = next((g for g, _ in _picks if g["date"]), None)
+after_body = (f'<header class="hero"><div class="wrap"><span class="kicker">After GTA 6</span>'
+              f'<h1>What to play after GTA 6:<br><span class="amber">the big games of 2027.</span></h1>'
+              f'<p class="lead">Finished Leonida, or need a break? These are the biggest confirmed games coming next, in release order, with consoles and dates.</p>'
+              f'<p class="muted" style="margin:0">Last checked {e(UPDATED)}</p></div></header>'
+              f'<section><div class="wrap"><div class="out" style="margin-bottom:12px"><div class="row"><span><strong>Quick answer:</strong> the next big releases after GTA 6 are '
+              + ", ".join(f"{g['title']} ({nice_date(g)})" for g, _ in _picks[:4]) +
+              f'. The busiest stretch is February 2027.</span></div></div>'
+              f'<div class="sec-head"><h2>The next big games, in date order</h2><span class="muted">{len(_picks)} picks</span></div>'
+              f'<div class="out" style="margin-bottom:28px">{"".join(_arow(g, w) for g, w in _picks)}</div>'
+              f'<div class="sec-head"><h2>Still playing GTA 6?</h2></div>'
+              f'<p>Our sister site <a href="https://neoncoast.org/map" rel="noopener">NeonCoast</a> has an interactive GTA 6 map, a mission tracker, '
+              f'every cheat code and a "Can my PC run GTA 6?" checker. There is no GTA 6 PC release date yet.</p>'
+              f'<p class="muted">See every 2027 date on the <a href="{href("calendar.html", 0)}">2027 calendar</a> or star games on the <a href="{href("index.html", 0)}#board">departures board</a> to get countdowns.</p></div></section>')
+after_faq = [
+    ("What should I play after GTA 6?", "If you liked the crime story, look at Stranger Than Heaven from the makers of Like a Dragon. For open-world driving, Forza Horizon 6 comes to PS5. For a huge world full of choices, Fable. The full list with dates is above."),
+    ("What is the next big game after GTA 6?", (f"{_first['title']}, on {nice_date(_first)}, is the first big release on our list." if _first else "See the list above for dates.")),
+    ("Is GTA 6 coming to PC?", "Not yet. Rockstar has not announced a PC version or date. GTA 6 launched on PS5 and Xbox Series X|S on 19 November 2026."),
+]
+page("after-gta-6.html", "What to Play After GTA 6: The Biggest Games of 2027 | DayOneDrop",
+     "Finished GTA 6? The biggest confirmed games coming next, in release order: Stranger Than Heaven, Forza Horizon 6, Fable, Final Fantasy VII Revelation and more.",
+     after_body, 0, after_faq, crumbs=[("Home", DOMAIN + "/"), ("After GTA 6", canon("after-gta-6.html"))])
+
 # ---------------- ABOUT / PRIVACY / 404 ----------------
 page("about.html", "About DayOneDrop", "About DayOneDrop, an independent tracker of 2027 game release dates, and how to contact us.",
      '''<section><div class="wrap" style="max-width:760px"><h1>About <span class="amber">DayOneDrop</span></h1>
@@ -550,7 +596,7 @@ page("404.html", "Page not found | DayOneDrop", "This page has moved or doesn't 
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "after-gta-6.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)
