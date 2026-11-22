@@ -216,7 +216,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Release dates can change; we update this site as soon as publishers announce changes. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -664,6 +664,87 @@ page("exclusives-2027.html", "2027 Console Exclusives: PS5, Xbox, Switch 2, PC |
      excl_body, 0, excl_faq, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html")), ("Console exclusives 2027", canon("exclusives-2027.html"))])
 
 
+# ---------------- RPGs OF 2027 (22 Nov 2026) ----------------
+# Every tracked game whose genre includes "RPG". Built only from games.json (dates/platforms 2-source checked).
+_rpg = sorted([g for g in GAMES if "RPG" in (g.get("genre") or "")], key=lambda x: (x["month"], x["date"] or "9999"))
+_rpg_dated = [g for g in _rpg if g["date"]]
+_rpg_action = [g for g in _rpg if g.get("genre") == "Action RPG"]
+_rpg_other = [g for g in _rpg if g.get("genre") != "Action RPG"]
+_rpg_cnt = {p: [g for g in _rpg if p in g["platforms"]] for p in PLATS}
+# busiest 30-day stretch of dated RPG launches
+_rb = (0, None, [])
+for _i, _g in enumerate(_rpg_dated):
+    _s = datetime.date.fromisoformat(_g["date"])
+    _in = [x for x in _rpg_dated if 0 <= (datetime.date.fromisoformat(x["date"]) - _s).days <= 29]
+    if len(_in) > _rb[0]:
+        _rb = (len(_in), _s, _in)
+_rb_n, _rb_start, _rb_games = _rb
+_rb_end = datetime.date.fromisoformat(_rb_games[-1]["date"]) if _rb_games else None
+_rpg_months = {}
+for _g in _rpg:
+    _rpg_months.setdefault(_g["month"] if _g["date"] else 13, []).append(_g)
+def _rrow(g):
+    plats = ", ".join(g["platforms"]) or "Platforms TBC"
+    style = "action" if g.get("genre") == "Action RPG" else "other"
+    return (f'<div class="row" data-rpg-style="{style}" data-plat="{e("|".join(g["platforms"]))}"><span><strong>{_gname(g)}</strong>'
+            f'<br><span class="muted">{e(g.get("about") or "")}</span><br><span class="muted">{e(g.get("genre") or "")} · {e(plats)}</span></span>'
+            f'<b>{e(nice_date(g))}</b></div>')
+_rpg_secs = ""
+for _m in sorted(_rpg_months):
+    _lbl = f"{MONTHS[_m - 1]} 2027" if _m <= 12 else "No exact date yet"
+    _rpg_secs += (f'<div class="sec-head"><h3 style="margin:0;font-size:1.2rem">{e(_lbl)}</h3><span class="muted">{len(_rpg_months[_m])}</span></div>'
+                  f'<div class="out" style="margin-bottom:22px">{"".join(_rrow(g) for g in _rpg_months[_m])}</div>')
+_rpg_quick = (f"We track {len(_rpg)} RPGs for 2027, {len(_rpg_dated)} with an exact date. The first is {_rpg_dated[0]['title']} on {nice_date(_rpg_dated[0])}. "
+              f"The biggest crunch is {_dm(_rb_start)} to {_dm(_rb_end)} 2027, with {_rb_n} RPGs in 30 days, including "
+              + ", ".join(g["title"] for g in _rb_games[:4]) + ".") if _rpg_dated else "No dated RPGs yet."
+_rchips = ('<div class="chips" role="group" aria-label="Console" style="margin-bottom:10px"><button class="chip" type="button" data-rpg-plat="" aria-pressed="true">All consoles</button>'
+           + "".join(f'<button class="chip" type="button" data-rpg-plat="{e(p)}" aria-pressed="false">{e(p)}</button>' for p in PLATS) + '</div>'
+           '<div class="chips" role="group" aria-label="RPG style"><button class="chip" type="button" data-rpg-s="" aria-pressed="true">All RPGs</button>'
+           '<button class="chip" type="button" data-rpg-s="action" aria-pressed="false">Action RPGs</button>'
+           '<button class="chip" type="button" data-rpg-s="other" aria-pressed="false">JRPG, tactical and classic RPGs</button></div>')
+_rpg_switch = _rpg_cnt["Switch 2"]
+_rpg_only = {p: [g for g in _rpg if g["platforms"] == [p]] for p in PLATS}
+rpg_body = (f'<header class="hero"><div class="wrap"><span class="kicker">RPGs</span>'
+            f'<h1>Every RPG coming in 2027:<br><span class="amber">{len(_rpg)} games, dates and consoles.</span></h1>'
+            f'<p class="lead">2027 is packed with role-playing games: Persona 4 Revival, Fable, Final Fantasy VII Revelation, Exodus, Kingdom Hearts IV and more. Here is every one we track, in release order, with a filter for your console.</p>'
+            f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · dates confirmed by publishers or two trusted outlets</p></div></header>'
+            f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_rpg_quick)}</span></div></div>'
+            f'<div class="tool" id="rpg-tool"><h2 style="font-size:1.5rem;margin-top:0">Which 2027 RPGs can I play?</h2>'
+            f'<p class="muted">Pick your console and the kind of RPG you like. The list below updates as you tap.</p>{_rchips}'
+            f'<p class="mono amber" id="rpg-count" aria-live="polite" style="margin:12px 0 0">{len(_rpg)} RPGs</p></div></div></section>'
+            + AD.format("rpg-mid") +
+            f'<section><div class="wrap" id="rpg-list"><div class="sec-head"><h2>When do the 2027 RPGs come out?</h2><span class="muted">{len(_rpg)}</span></div>{_rpg_secs}'
+            f'<p class="empty" id="rpg-none" hidden>No tracked 2027 RPGs match that filter yet.</p></div></section>'
+            f'<section><div class="wrap">'
+            f'<div class="sec-head"><h2>When is the big RPG crunch of 2027?</h2><span class="mono amber">{_rb_n} in 30 days</span></div>'
+            f'<p>From {e(_dm(_rb_start))} to {e(_dm(_rb_end))} 2027, {_rb_n} RPGs launch. If you want to finish one before the next arrives, plan this stretch first.</p>'
+            f'<div class="out" style="margin-bottom:28px">' + "".join(f'<div class="row"><span>{_gname(g)}</span><b>{e(nice_date(g))}</b></div>' for g in _rb_games) + '</div>'
+            f'<div class="sec-head"><h2>How many 2027 RPGs are on each console?</h2></div><div class="out" style="margin-bottom:28px">'
+            + "".join(f'<div class="row"><span><a href="{href("platforms/" + _pslug[p] + ".html", 0)}">{e(_lab[p])}</a>'
+                      + (f'<br><span class="muted">Only here: {e(", ".join(g["title"] for g in _rpg_only[p]))}</span>' if _rpg_only[p] else "")
+                      + f'</span><b>{len(_rpg_cnt[p])} RPGs</b></div>' for p in sorted(PLATS, key=lambda q: -len(_rpg_cnt[q]))) +
+            f'</div><div class="sec-head"><h2>Which 2027 RPGs are action RPGs?</h2></div>'
+            f'<p><strong>Action RPGs ({len(_rpg_action)}):</strong> {e(", ".join(g["title"] for g in _rpg_action))}.</p>'
+            f'<p><strong>JRPG, tactical and classic RPGs ({len(_rpg_other)}):</strong> {e(", ".join(g["title"] for g in _rpg_other))}.</p>'
+            f'<p class="muted">Genre labels follow how each game is announced. Star the ones you want on the <a href="{href("index.html", 0)}#board">departures board</a> to get countdowns.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+            f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: check if your RPGs land the same week</li>'
+            f'<li><a href="{href("exclusives-2027.html", 0)}">2027 console exclusives</a> and which games your consoles will miss</li>'
+            f'<li><a href="{href("after-gta-6.html", 0)}">What to play after GTA 6</a></li></ul></div></section>')
+_ff = _gby.get("final-fantasy-vii-revelation") if "_gby" in globals() else next((g for g in GAMES if g["slug"] == "final-fantasy-vii-revelation"), None)
+rpg_faq = [
+    ("What RPGs are coming out in 2027?", f"We track {len(_rpg)}: " + ", ".join(f"{g['title']} ({nice_date(g)})" for g in _rpg) + "."),
+    ("What is the first big RPG of 2027?", f"{_rpg_dated[0]['title']} launches first, on {nice_date(_rpg_dated[0])}." if _rpg_dated else "None are dated yet."),
+    ("When is the busiest month for RPGs in 2027?", f"The busiest stretch is {_dm(_rb_start)} to {_dm(_rb_end)} 2027, with {_rb_n} RPGs in 30 days."),
+    ("Which 2027 RPGs are coming to Switch 2?", f"{len(_rpg_switch)} so far: " + ", ".join(g["title"] for g in _rpg_switch) + "."),
+]
+if _ff:
+    rpg_faq.append(("When does Final Fantasy VII Revelation come out?", f"{nice_date(_ff)}, on {', '.join(_ff['platforms'])}."))
+page("rpgs-2027.html", f"Every RPG Coming in 2027: Dates and Consoles ({len(_rpg)} Games) | DayOneDrop"[:90],
+     f"All {len(_rpg)} RPGs releasing in 2027, in date order: Persona 4 Revival, Fable, Final Fantasy VII Revelation and more, with a console filter. Checked {UPDATED}."[:160],
+     rpg_body, 0, rpg_faq, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html")), ("RPGs 2027", canon("rpgs-2027.html"))])
+
+
 # ---------------- TOOLS ----------------
 plat_links0 = " · ".join(f'<a href="{href("platforms/" + s2 + ".html", 0)}">{e(l2)} games</a>' for p2, s2, l2 in PLAT_PAGES)
 _busy_m = max(range(1, 13), key=lambda m: sum(1 for g in GAMES if g["month"] == m))
@@ -686,6 +767,7 @@ tools = f'''<header class="hero"><div class="wrap"><span class="kicker">Tools</s
 <li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: every crowded week</li>
 <li><a href="{href("delayed-games-2027.html", 0)}">Games delayed to 2027</a></li>
 <li><a href="{href("exclusives-2027.html", 0)}">2027 console exclusives</a> and which games your consoles will miss</li>
+<li><a href="{href("rpgs-2027.html", 0)}">Every RPG coming in 2027</a> with a console filter</li>
 <li><a href="{href("after-gta-6.html", 0)}">What to play after GTA 6</a></li></ul></div></section>'''
 sw2 = [g["title"] for g in GAMES if "Switch 2" in g["platforms"]]
 both = [g["title"] for g in GAMES if "PS5" in g["platforms"] and "Xbox Series X|S" in g["platforms"]]
@@ -730,15 +812,23 @@ after_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Afte
               f'<section><div class="wrap"><div class="out" style="margin-bottom:12px"><div class="row"><span><strong>Quick answer:</strong> the next big releases after GTA 6 are '
               + ", ".join(f"{g['title']} ({nice_date(g)})" for g, _ in _picks[:4]) +
               f'. The busiest stretch is February 2027.</span></div></div>'
-              f'<div class="sec-head"><h2>The next big games, in date order</h2><span class="muted">{len(_picks)} picks</span></div>'
+              f'<div class="sec-head"><h2>What are the next big games after GTA 6?</h2><span class="muted">{len(_picks)} picks</span></div>'
               f'<div class="out" style="margin-bottom:28px">{"".join(_arow(g, w) for g, w in _picks)}</div>'
-              f'<div class="sec-head"><h2>Still playing GTA 6?</h2></div>'
+              f'<div class="sec-head"><h2>Which of these can I play on my console?</h2></div><div class="out" style="margin-bottom:28px">'
+              + "".join(f'<div class="row"><span><a href="{href("platforms/" + s2 + ".html", 0)}">{e(l2)}</a><br><span class="muted">{e(", ".join(g["title"] for g, _ in _picks if p2 in g["platforms"]))}</span></span>'
+                        f'<b>{sum(1 for g, _ in _picks if p2 in g["platforms"])} of {len(_picks)}</b></div>' for p2, s2, l2 in PLAT_PAGES_FOOT) +
+              f'</div><div class="sec-head"><h2>Still playing GTA 6?</h2></div>'
               f'<p>Our sister site <a href="https://neoncoast.org/map" rel="noopener">NeonCoast</a> has an interactive GTA 6 map, a mission tracker, '
               f'every cheat code and a "Can my PC run GTA 6?" checker. There is no GTA 6 PC release date yet.</p>'
-              f'<p class="muted">See every 2027 date on the <a href="{href("calendar.html", 0)}">2027 calendar</a> or star games on the <a href="{href("index.html", 0)}#board">departures board</a> to get countdowns.</p></div></section>')
+              f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+              f'<li><a href="{href("rpgs-2027.html", 0)}">Every RPG coming in 2027</a>, with a console filter</li>'
+              f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: which of these land the same week</li>'
+              f'<li><a href="{href("calendar.html", 0)}">2027 release calendar</a> and the <a href="{href("index.html", 0)}#board">departures board</a> for countdowns</li></ul></div></section>')
 after_faq = [
     ("What should I play after GTA 6?", "If you liked the crime story, look at Stranger Than Heaven from the makers of Like a Dragon. For open-world driving, Forza Horizon 6 comes to PS5. For a huge world full of choices, Fable. The full list with dates is above."),
     ("What is the next big game after GTA 6?", (f"{_first['title']}, on {nice_date(_first)}, is the first big release on our list." if _first else "See the list above for dates.")),
+    ("Which games after GTA 6 are coming to PS5?", ", ".join(f"{g['title']} ({nice_date(g)})" for g, _ in _picks if "PS5" in g["platforms"]) + "."),
+    ("Is there a crime game like GTA coming in 2027?", "Stranger Than Heaven, from the Like a Dragon studio, is a crime drama dated " + (nice_date(_gby["stranger-than-heaven"]) if "stranger-than-heaven" in _gby else "for 2027") + ". It is the closest story match to GTA on our 2027 list."),
     ("Is GTA 6 coming to PC?", "Not yet. Rockstar has not announced a PC version or date. GTA 6 launched on PS5 and Xbox Series X|S on 19 November 2026."),
 ]
 page("after-gta-6.html", "What to Play After GTA 6: The Biggest Games of 2027 | DayOneDrop",
@@ -793,7 +883,7 @@ page("404.html", "Page not found | DayOneDrop", "This page has moved or doesn't 
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "after-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "after-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)

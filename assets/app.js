@@ -236,6 +236,32 @@
     drawMiss();
   }
 
+  /* RPGs 2027: console + style filter */
+  var rt = $("#rpg-tool");
+  if (rt) {
+    var rplat = "", rsty = "", rrows = $$("#rpg-list [data-rpg-style]"), rcount = $("#rpg-count"), rnone = $("#rpg-none");
+    var drawRpg = function () {
+      var n = 0;
+      rrows.forEach(function (r) {
+        var ok = (!rplat || r.getAttribute("data-plat").split("|").indexOf(rplat) > -1) && (!rsty || r.getAttribute("data-rpg-style") === rsty);
+        r.hidden = !ok; if (ok) n++;
+      });
+      $$("#rpg-list .sec-head + .out").forEach(function (box) {
+        var any = $$("[data-rpg-style]", box).some(function (r) { return !r.hidden; });
+        box.hidden = !any; var h = box.previousElementSibling; if (h && h.querySelector("h3")) h.hidden = !any;
+      });
+      rcount.textContent = n + " RPG" + (n === 1 ? "" : "s") + (rplat ? " on " + rplat : "");
+      rnone.hidden = n > 0;
+    };
+    var bind = function (attr, set) {
+      var cs = $$("[" + attr + "]", rt);
+      cs.forEach(function (c) { c.addEventListener("click", function () { cs.forEach(function (x) { x.setAttribute("aria-pressed", x === c ? "true" : "false"); }); set(c.getAttribute(attr)); drawRpg(); }); });
+    };
+    bind("data-rpg-plat", function (v) { rplat = v; });
+    bind("data-rpg-s", function (v) { rsty = v; });
+    drawRpg();
+  }
+
   /* copy page link */
   $$("[data-copy-link]").forEach(function (b) {
     b.addEventListener("click", function () { navigator.clipboard.writeText(location.href.split("#")[0]).then(function () { toast("Link copied"); }, function () { toast("Copy blocked here"); }); });
