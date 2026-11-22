@@ -86,16 +86,53 @@
     "Xbox Series X|S",
     "PC"
    ],
-   "dev": "",
+   "dev": "Ryu Ga Gotoku Studio / SEGA",
    "genre": "Action adventure",
-   "page": false,
-   "facts": [],
-   "history": [],
+   "page": true,
+   "facts": [
+    "Launches 15 January 2027 worldwide on PS5, Xbox Series X|S and PC (Steam and Microsoft Store).",
+    "Made by Ryu Ga Gotoku Studio and published by SEGA.",
+    "It is included in Xbox Game Pass, and it is an Xbox Play Anywhere game.",
+    "The story runs from 1915 to 1965 across five Japanese cities: Kokura, Kure, Osaka, Atami and Tokyo.",
+    "You play Makoto Daito, who stows away from San Francisco to Japan as a boy. The game mixes brawling with music and live shows.",
+    "Tupac Shakur appears as a character called Amaru, with his estate's permission. Snoop Dogg and Tori Kelly also voice characters.",
+    "Digital Standard and Deluxe editions, plus a physical Collector's Edition with a vinyl record and SteelBook. Pre-orders get a bonus weapon.",
+    "It is a single-player game. No Switch 2 version has been announced."
+   ],
+   "history": [
+    {
+     "when": "Dec 2023",
+     "text": "First revealed at The Game Awards as Project Century."
+    },
+    {
+     "when": "June 2025",
+     "text": "Renamed Stranger Than Heaven at the Xbox Games Showcase."
+    },
+    {
+     "when": "5 June 2026",
+     "text": "Release date of 15 January 2027 confirmed at Summer Game Fest."
+    }
+   ],
    "date": "2027-01-15",
    "window": "",
    "month": 1,
    "status": "dated",
-   "about": "A crime drama from the makers of Like a Dragon."
+   "about": "A new crime drama from Ryu Ga Gotoku Studio, the Like a Dragon team. It follows one man across five cities and fifty years of 20th-century Japan.",
+   "sources": "Gematsu, RPG Site, VGChartz, Notebookcheck",
+   "faq": [
+    [
+     "Is Stranger Than Heaven on Game Pass?",
+     "Yes. It is included in Xbox Game Pass and is an Xbox Play Anywhere game, so one purchase covers Xbox and Windows PC."
+    ],
+    [
+     "Is Stranger Than Heaven a Like a Dragon (Yakuza) game?",
+     "It is made by the same team, Ryu Ga Gotoku Studio, but it is a new story with a new hero, set between 1915 and 1965."
+    ],
+    [
+     "Is Stranger Than Heaven coming to Switch 2?",
+     "Not so far. It is announced for PS5, Xbox Series X|S and PC only."
+    ]
+   ]
   },
   {
    "slug": "tankrat",
@@ -1160,21 +1197,49 @@
    "about": "A new Kirby adventure for Switch 2."
   },
   {
-   "slug": "pok-mon-winds-and-waves",
+   "slug": "pokemon-winds-and-waves",
    "title": "Pokémon Winds and Waves",
    "platforms": [
     "Switch 2"
    ],
-   "dev": "",
+   "dev": "Game Freak / Nintendo / The Pokémon Company",
    "genre": "RPG",
-   "page": false,
-   "facts": [],
-   "history": [],
+   "page": true,
+   "facts": [
+    "Coming in 2027, with one worldwide launch day. No month or exact date has been announced yet.",
+    "Only on Nintendo Switch 2. No Switch 1 version has been announced.",
+    "These are the Generation 10 main Pokémon games, made by Game Freak.",
+    "Like other main Pokémon games there are two versions: Pokémon Winds and Pokémon Waves.",
+    "The three starters are Browt (Grass), Pombon (Fire) and Gecqua (Water).",
+    "The region is an open world of windswept islands and a wide ocean, and the reveal teased exploring underwater.",
+    "Announced at the Pokémon Presents on 27 February 2026, Pokémon Day and the series' 30th anniversary."
+   ],
+   "history": [
+    {
+     "when": "27 Feb 2026",
+     "text": "Announced for Switch 2 in 2027 at the Pokémon Presents."
+    }
+   ],
    "date": null,
    "window": "2027",
    "month": 12,
    "status": "window",
-   "about": "Two new Pokémon games for Switch 2, released the same day worldwide."
+   "about": "Pokémon Winds and Pokémon Waves are the Generation 10 Pokémon games, set on windswept islands and a huge ocean. They come only to Switch 2.",
+   "sources": "Nintendo, Gematsu, RPG Site, Nintendo Life, Game Informer",
+   "faq": [
+    [
+     "Is Pokémon Winds and Waves on the original Switch?",
+     "No. It has only been announced for Nintendo Switch 2."
+    ],
+    [
+     "What are the starters in Pokémon Winds and Waves?",
+     "Browt (Grass type), Pombon (Fire type) and Gecqua (Water type)."
+    ],
+    [
+     "What is the difference between Pokémon Winds and Pokémon Waves?",
+     "They are two versions of the same Generation 10 game, released on the same day. As in past Pokémon games, version differences have not been fully shown yet."
+    ]
+   ]
   },
   {
    "slug": "xenoblade-genesis",

@@ -77,3 +77,10 @@
   https://api.indexnow.org/indexnow?url=https%3A%2F%2Fgetdayonedrop.com%2F<page>&key=4bb4752d9cd1f0324bbb35f6c8afb9db
 - Awais approved these pings for all runs. An empty/binary response means accepted. If WebFetch is unavailable or the call is blocked, skip silently (don't retry) and list the pages under "IndexNow pending" in your CONTENT-LOG entry so the main chat can send them.
 - Key file /4bb4752d9cd1f0324bbb35f6c8afb9db.txt must stay in the site root (never delete or rename it).
+
+## 2026-11-22 (scheduled SEO run, fifth pass)
+- New guide /games/stranger-than-heaven: 15 Jan 2027, PS5/Xbox Series X|S/PC (Steam, Microsoft Store), RGG Studio/SEGA, in Game Pass + Play Anywhere, 1915-1965 across Kokura/Kure/Osaka/Atami/Tokyo, Makoto Daito, Tupac/Snoop Dogg/Tori Kelly cast, editions; history incl. Project Century (TGA 2023) and rename (Xbox Showcase June 2025). Sources: Gematsu, RPG Site, VGChartz, Notebookcheck, VGC, Pure Xbox. Added to /game-pass-2027 (now the first dated Game Pass game of 2027; not labelled "day one", only one source says so).
+- New guide /games/pokemon-winds-and-waves (slug renamed from pok-mon-winds-and-waves): 2027, no date, Switch 2 only, Gen 10, Game Freak, starters Browt/Pombon/Gecqua, islands + ocean, announced 27 Feb 2026. Sources: Nintendo, Gematsu, RPG Site, Nintendo Life, Game Informer. Targets "pokemon winds and waves release date", "is pokemon winds and waves on switch 1".
+- Both linked from footer (every page), board/games grid and month/related lists.
+- Refreshed all 14 game guide pages (template): Quick answer box, question H2s ("What do we know about X?", "Has X been delayed?", "What else launches in <month> 2027?"), optional sources line, per-game extra FAQs (games.json "faq"), linked same-month games, "Related pages and tools" (calendar, month, platform, Game Pass, RPGs, delays, clashes). Undated games get a calendar-free reminder FAQ.
+- IndexNow pending (no WebFetch in this run): /games/stranger-than-heaven, /games/pokemon-winds-and-waves, /game-pass-2027, /games/fable, /games/persona-4-revival
