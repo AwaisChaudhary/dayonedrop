@@ -216,7 +216,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Release dates can change; we update this site as soon as publishers announce changes. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -526,6 +526,7 @@ for plat, slug, long in PLAT_PAGES:
          body, 1, faqs, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html")), (long + " games 2027", canon(f))])
 
 # ---------------- MONTH PAGES ----------------
+BIG_WHY_SLUGS = {"stranger-than-heaven", "forza-horizon-6", "metroid-ravenous", "until-dawn-2", "metro-2039", "tomb-raider-legacy-of-atlantis", "persona-4-revival", "fable", "wo-long-2", "exodus", "final-fantasy-vii-revelation", "lords-of-the-fallen-ii", "spyro-a-realm-beyond", "god-of-war-laufey", "squadron-42", "kingdom-hearts-iv", "kirby-and-the-world-beyond", "pokemon-winds-and-waves", "xenoblade-genesis"}
 month_urls = []
 for m in month_pages_list():
     f = "months/" + MONTH_SLUGS[m - 1] + ".html"
@@ -545,11 +546,21 @@ for m in month_pages_list():
         d = datetime.date.fromisoformat(g["date"])
         weeks.setdefault(d.isocalendar()[1], []).append(g)
     busiest = max(weeks.values(), key=len) if weeks else []
-    blocks = f'<div class="sec-head"><h2>Every {mname} 2027 release date</h2><span class="muted">{len(dated)} dated</span></div><div class="out" style="margin-bottom:28px">{"".join(mrow(g) for g in dated) or "<div class=empty>No exact dates yet.</div>"}</div>'
+    blocks = f'<div class="sec-head"><h2>What games come out in {mname} 2027?</h2><span class="muted">{len(dated)} dated</span></div><div class="out" style="margin-bottom:28px">{"".join(mrow(g) for g in dated) or "<div class=empty>No exact dates yet.</div>"}</div>'
     if loose:
-        blocks += f'<div class="sec-head"><h2>Expected in {mname}, no exact date</h2><span class="muted">{len(loose)}</span></div><div class="out" style="margin-bottom:28px">{"".join(mrow(g) for g in loose)}</div>'
+        blocks += f'<div class="sec-head"><h2>Which {mname} 2027 games have no exact date yet?</h2><span class="muted">{len(loose)}</span></div><div class="out" style="margin-bottom:28px">{"".join(mrow(g) for g in loose)}</div>'
     pc = {pl: sum(1 for g in games if pl in g["platforms"]) for pl, _, _ in PLAT_PAGES}
     platline = " · ".join(f'<a href="{href("platforms/" + s2 + ".html", 1)}">{e(l2)}</a>: {pc[p2]}' for p2, s2, l2 in PLAT_PAGES)
+    _mbig = [g for g in games if g["slug"] in BIG_WHY_SLUGS]
+    first = dated[0] if dated else None
+    _mq = (f"{len(games)} games are set for {mname} 2027 ({len(dated)} with an exact date)"
+           + (f", starting with {first['title']} on {nice_date(first)}" if first else "")
+           + (". The big ones are " + ", ".join(f"{g['title']} ({nice_date(g)})" for g in _mbig[:5]) + "." if _mbig else "."))
+    _mwk = ""
+    if len(busiest) > 1:
+        _mwk = (f'<div class="sec-head"><h2>What is the busiest week of {mname} 2027?</h2><span class="mono amber">{len(busiest)} launches</span></div>'
+                f'<div class="out" style="margin-bottom:28px">{"".join(mrow(g) for g in busiest)}</div>')
+    _mpl = ("".join(f'<div class="row"><span><a href="{href("platforms/" + s2 + ".html", 1)}">{e(l2)}</a><br><span class="muted">{e(", ".join(g["title"] for g in games if p2 in g["platforms"]) or "Nothing yet")}</span></span><b>{pc[p2]} of {len(games)}</b></div>' for p2, s2, l2 in PLAT_PAGES))
     prev_next = []
     ml = month_pages_list(); i = ml.index(m)
     if i > 0: prev_next.append(f'<a class="btn line sm" href="{href("months/" + MONTH_SLUGS[ml[i-1] - 1] + ".html", 1)}">← {MONTHS[ml[i-1] - 1]} 2027</a>')
@@ -559,16 +570,21 @@ for m in month_pages_list():
             f'<p class="lead">Every video game launching in {mname} 2027 on PS5, Xbox Series X|S, PC and Switch 2, in date order. '
             f'Each date is checked against the publisher or two trusted outlets, and we mark delays as they happen.</p>'
             f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · Games per console: {platline}</p></div></header>'
-            f'<section><div class="wrap">{blocks}'
+            f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_mq)}</span></div></div>{blocks}{_mwk}'
+            f'<div class="sec-head"><h2>Which {mname} 2027 games are on my console?</h2></div><div class="out" style="margin-bottom:28px">{_mpl}</div>'
             f'<p class="muted">See which weeks clash in the <a href="{href("release-clashes-2027.html", 1)}">2027 release clash finder</a>. Add any date to your calendar from the <a href="{href("calendar.html", 1)}">2027 calendar</a>, or star games on the <a href="{href("index.html", 1)}#board">departures board</a>.</p>'
-            f'<div class="btns" style="display:flex;gap:10px;flex-wrap:wrap">{"".join(prev_next)}</div></div></section>')
+            f'<div class="btns" style="display:flex;gap:10px;flex-wrap:wrap">{"".join(prev_next)}</div>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+            f'<li><a href="{href("biggest-games-2027.html", 1)}">The biggest games of 2027</a>, and a shareable top list maker</li>'
+            f'<li><a href="{href("backlog-planner-2027.html", 1)}">2027 backlog planner</a>: can you finish one game before the next?</li>'
+            f'<li><a href="{href("delayed-games-2027.html", 1)}">Every delayed game of 2027</a></li></ul></div></section>')
     first = dated[0] if dated else None
     big_week = (f"The busiest week has {len(busiest)} launches: " + ", ".join(g["title"] for g in busiest) + ".") if len(busiest) > 1 else f"Launches are spread across {mname}."
     faqs = [
         (f"What games come out in {mname} 2027?", f"{len(games)} games are on our list for {mname} 2027, including " + ", ".join(g["title"] for g in games[:5]) + ". The full list with dates and consoles is above."),
         (f"What is the first game out in {mname} 2027?", (f"{first['title']}, on {nice_date(first)}." if first else "No exact dates are confirmed yet.")),
         (f"What is the busiest week of {mname} 2027?", big_week),
-    ]
+    ] + [(f"Which {mname} 2027 games are on {l2}?", (f"{pc[p2]}: " + ", ".join(g["title"] for g in games if p2 in g["platforms"]) + ".") if pc[p2] else f"None of the {mname} 2027 games we track are confirmed for {l2} yet.") for p2, s2, l2 in PLAT_PAGES if p2 in ("PS5", "Switch 2")]
     page(f, f"{mname} 2027 Game Releases: Every Date ({len(games)} Games) | DayOneDrop"[:90],
          f"All {len(games)} video games releasing in {mname} 2027 on PS5, Xbox, PC and Switch 2, in date order with platforms and delays. Checked {UPDATED}."[:160],
          body, 1, faqs, crumbs=[("Home", DOMAIN + "/"), ("2027 calendar", canon("calendar.html")), (f"{mname} 2027", canon(f))])
@@ -885,6 +901,8 @@ tools = f'''<header class="hero"><div class="wrap"><span class="kicker">Tools</s
 <div class="tool"><h2 style="font-size:1.5rem">Can I finish my games in time?</h2><p class="muted">Set your hours per week and per game. See when you finish each 2027 game and where you fall behind.</p>
 <div class="out">{"".join(f'<div class="row"><span>{e(a["title"])} → {e(b["title"])}</span><b>{dd} days</b></div>' for a, b, dd in sorted(_gaps, key=lambda x: x[2])[:3])}</div>
 <div class="btns" style="margin-top:12px"><a class="btn sm" href="{href("backlog-planner-2027.html", 0)}">Open the backlog planner</a></div></div>
+<div class="tool"><h2 style="font-size:1.5rem">What are my top games of 2027?</h2><p class="muted">Pick up to 10 of the biggest 2027 games in order. Copy a ready-to-paste list with dates, or send a link that opens your picks.</p>
+<div class="btns" style="margin-top:12px"><a class="btn sm" href="{href("biggest-games-2027.html", 0)}#top-tool">Make my top list</a></div></div>
 </div></section>
 <section><div class="wrap"><div class="sec-head"><h2>More ways to plan</h2></div><ul>
 <li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: every crowded week</li>
@@ -893,6 +911,7 @@ tools = f'''<header class="hero"><div class="wrap"><span class="kicker">Tools</s
 <li><a href="{href("exclusives-2027.html", 0)}">2027 console exclusives</a> and which games your consoles will miss</li>
 <li><a href="{href("rpgs-2027.html", 0)}">Every RPG coming in 2027</a> with a console filter</li>
 <li><a href="{href("game-pass-2027.html", 0)}">Every 2027 game on Xbox Game Pass</a>, with a Game Pass or buy checker</li>
+<li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a>, with a shareable top list maker</li>
 <li><a href="{href("after-gta-6.html", 0)}">What to play after GTA 6</a></li></ul></div></section>'''
 sw2 = [g["title"] for g in GAMES if "Switch 2" in g["platforms"]]
 both = [g["title"] for g in GAMES if "PS5" in g["platforms"] and "Xbox Series X|S" in g["platforms"]]
@@ -946,6 +965,7 @@ after_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Afte
               f'<p>Our sister site <a href="https://neoncoast.org/map" rel="noopener">NeonCoast</a> has an interactive GTA 6 map, a mission tracker, '
               f'every cheat code and a "Can my PC run GTA 6?" checker. There is no GTA 6 PC release date yet.</p>'
               f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+              f'<li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a>: the full list, plus a top list you can share</li>'
               f'<li><a href="{href("rpgs-2027.html", 0)}">Every RPG coming in 2027</a>, with a console filter</li>'
               f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: which of these land the same week</li>'
               f'<li><a href="{href("calendar.html", 0)}">2027 release calendar</a> and the <a href="{href("index.html", 0)}#board">departures board</a> for countdowns</li></ul></div></section>')
@@ -956,7 +976,7 @@ after_faq = [
     ("Is there a crime game like GTA coming in 2027?", "Stranger Than Heaven, from the Like a Dragon studio, is a crime drama dated " + (nice_date(_gby["stranger-than-heaven"]) if "stranger-than-heaven" in _gby else "for 2027") + ". It is the closest story match to GTA on our 2027 list."),
     ("Is GTA 6 coming to PC?", "Not yet. Rockstar has not announced a PC version or date. GTA 6 launched on PS5 and Xbox Series X|S on 19 November 2026."),
 ]
-page("after-gta-6.html", "What to Play After GTA 6: The Biggest Games of 2027 | DayOneDrop",
+page("after-gta-6.html", "What to Play After GTA 6: The Next Big Games (2027) | DayOneDrop",
      "Finished GTA 6? The biggest confirmed games coming next, in release order: Stranger Than Heaven, Forza Horizon 6, Fable, Final Fantasy VII Revelation and more.",
      after_body, 0, after_faq, crumbs=[("Home", DOMAIN + "/"), ("After GTA 6", canon("after-gta-6.html"))])
 
@@ -1071,6 +1091,99 @@ page("game-pass-2027.html", f"Xbox Game Pass 2027: Every Confirmed Game ({_gp_to
      gp_body, 0, gp_faq, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html")), ("Game Pass 2027", canon("game-pass-2027.html"))])
 
 
+# ---------------- BIGGEST GAMES OF 2027 (23 Nov 2026) ----------------
+# Editorial pick: new entries in major series or from major studios. Dates/platforms come from games.json only.
+BIG_WHY = {
+    "stranger-than-heaven": "A brand-new crime saga from the Like a Dragon studio, and it is in Xbox Game Pass.",
+    "forza-horizon-6": "The Japan-set racer finally reaches PS5, after launching on Xbox and PC in May 2026.",
+    "metroid-ravenous": "Nintendo's next 2D Metroid, from MercurySteam, the team that made Metroid Dread.",
+    "until-dawn-2": "The sequel to the choice-driven horror hit, and a PS5 exclusive.",
+    "metro-2039": "The next Metro shooter from 4A Games, out on PS5, Xbox and PC on the same day.",
+    "tomb-raider-legacy-of-atlantis": "A ground-up remake of Lara Croft's first adventure, also coming to Switch 2.",
+    "persona-4-revival": "A full remake of Persona 4 Golden, on every current console and in Game Pass.",
+    "fable": "Playground Games' reboot of Fable. Xbox's headline game of early 2027, and also on PS5.",
+    "wo-long-2": "Team Ninja's next hard-hitting action RPG, in Game Pass from day one.",
+    "exodus": "A big new sci-fi RPG from a studio of veteran RPG makers, where space travel ages the world around you.",
+    "final-fantasy-vii-revelation": "The last part of the Final Fantasy VII remake trilogy, now on Xbox and Switch 2 as well.",
+    "lords-of-the-fallen-ii": "The sequel to the 2023 soulslike, moved from fall 2026 to the first quarter of 2027.",
+    "spyro-a-realm-beyond": "A new Spyro the Dragon adventure, announced for Xbox Game Pass.",
+    "god-of-war-laufey": "The next main God of War, with Faye as the hero for the first time. PS5 only.",
+    "squadron-42": "The single-player campaign set in the Star Citizen universe, on PC.",
+    "kingdom-hearts-iv": "The next main Kingdom Hearts game, aiming for late 2027.",
+    "kirby-and-the-world-beyond": "A new Kirby adventure made for Switch 2.",
+    "pokemon-winds-and-waves": "The Generation 10 main Pokémon games, only on Switch 2.",
+    "xenoblade-genesis": "A new Xenoblade role-playing game for Switch 2.",
+}
+_gbs = {g["slug"]: g for g in GAMES}
+assert set(BIG_WHY) == BIG_WHY_SLUGS
+_bg = [_gbs[s] for s in BIG_WHY if s in _gbs]
+_bg.sort(key=lambda g: (g["month"], g["date"] or "9999"))
+_bg_dated = [g for g in _bg if g["date"]]
+_bg_open = [g for g in _bg if not g["date"]]
+_bg_delay = [g for g in _bg if g["status"] == "delayed"]
+def _bq(g):
+    return (g["month"] - 1) // 3 + 1
+_bg_q = {}
+for _g in _bg:
+    _bg_q.setdefault((_bq(_g) if _g["window"] != "2027" else 5), []).append(_g)
+_bg_qlab = {1: "January to March 2027 (Q1)", 2: "April to June 2027 (Q2)", 3: "July to September 2027 (Q3)", 4: "October to December 2027 (Q4)", 5: "Sometime in 2027 (no month yet)"}
+_bg_cnt = {p: [g for g in _bg if p in g["platforms"]] for p in PLATS}
+_bg_pslug = {p2: s2 for p2, s2, l2 in PLAT_PAGES_FOOT}
+_bg_plab = {p2: l2 for p2, s2, l2 in PLAT_PAGES_FOOT}
+def _bgrow(g, i=None):
+    plats = ", ".join(g["platforms"]) or "Platforms TBC"
+    flag = ' <span class="muted">(delayed)</span>' if g["status"] == "delayed" else ""
+    return (f'<div class="row" data-plat="{e("|".join(g["platforms"]))}"><span><strong>{_gname(g)}</strong>{flag}'
+            f'<br><span class="muted">{e(BIG_WHY[g["slug"]])}</span><br><span class="muted">{e(plats)}</span></span><b>{e(nice_date(g))}</b></div>')
+_bg_secs = "".join(
+    f'<div class="sec-head"><h3 style="margin:0;font-size:1.2rem">{e(_bg_qlab[q])}</h3><span class="muted">{len(_bg_q[q])}</span></div>'
+    f'<div class="out" style="margin-bottom:22px">{"".join(_bgrow(g) for g in _bg_q[q])}</div>' for q in sorted(_bg_q))
+_bg_q1 = len(_bg_q.get(1, []))
+_bg_quick = (f"The biggest games of 2027 include Persona 4 Revival ({nice_date(_gbs['persona-4-revival'])}), Fable ({nice_date(_gbs['fable'])}), "
+             f"Final Fantasy VII Revelation ({nice_date(_gbs['final-fantasy-vii-revelation'])}), God of War Laufey ({nice_date(_gbs['god-of-war-laufey'])}) "
+             f"and Pokémon Winds and Waves (2027, no date yet). {_bg_q1} of our {len(_bg)} picks land in January to March, so the first quarter is the most crowded.")
+_bg_pick = "".join(f'<label class="clash-opt"><input type="checkbox" value="{e(g["slug"])}"> <span>{e(g["title"])}</span> <span class="muted mono">{e(short_date(g) if g["date"] else g["window"])}</span></label>' for g in _bg)
+_bg_tool = f'''<div class="tool" id="top-tool"><h2 style="font-size:1.5rem;margin-top:0">Make your 2027 top list and share it</h2>
+<p class="muted">Tick the games you are most excited for, in order (your first tick is number 1, up to 10). You get a ready-to-paste list with dates and a link that opens your picks for friends.</p>
+<div class="out" id="top-shared" hidden style="margin-bottom:14px"><div class="row hot"><span><strong>Someone shared their 2027 top list with you.</strong> Their picks are ticked below. Change them to make your own.</span></div></div>
+<div class="clash-list" role="group" aria-label="Pick your top 2027 games">{_bg_pick}</div>
+<div class="btns" style="display:flex;gap:10px;flex-wrap:wrap;margin:14px 0"><button class="btn sm" type="button" id="top-copy">Copy my list</button><button class="btn line sm" type="button" id="top-link">Copy share link</button><button class="btn line sm" type="button" id="top-star">Use my ★ list</button><button class="btn line sm" type="button" id="top-clear">Clear</button></div>
+<div class="out" id="top-out" aria-live="polite"><div class="empty">Tick a game to start your list.</div></div></div>'''
+bg_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Biggest games</span>'
+           f'<h1>The biggest games of 2027:<br><span class="amber">{len(_bg)} launches to plan for.</span></h1>'
+           f'<p class="lead">The 2027 games from the biggest series and studios, in release order, with the date, the consoles and one line on why each one matters. Then make your own top list and share it.</p>'
+           f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · dates confirmed by publishers or two trusted outlets · our picks, not a sales forecast</p></div></header>'
+           f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_bg_quick)}</span></div></div>'
+           f'<div class="sec-head"><h2>When do the biggest games of 2027 come out?</h2><span class="muted">{len(_bg_dated)} dated · {len(_bg_open)} season or year only</span></div>{_bg_secs}</div></section>'
+           + AD.format("big-mid") +
+           f'<section><div class="wrap">{_bg_tool}</div></section>'
+           f'<section><div class="wrap">'
+           f'<div class="sec-head"><h2>Which of the biggest 2027 games can I play on my console?</h2></div><div class="out" style="margin-bottom:28px">'
+           + "".join(f'<div class="row"><span><a href="{href("platforms/" + _bg_pslug[p] + ".html", 0)}">{e(_bg_plab[p])}</a><br><span class="muted">Missing: {e(", ".join(g["title"] for g in _bg if p not in g["platforms"]) or "none")}</span></span><b>{len(_bg_cnt[p])} of {len(_bg)}</b></div>' for p in sorted(PLATS, key=lambda q: -len(_bg_cnt[q]))) +
+           f'</div><div class="sec-head"><h2>Which big 2027 games still have no release date?</h2><span class="muted">{len(_bg_open)}</span></div><div class="out" style="margin-bottom:28px">'
+           + "".join(f'<div class="row"><span>{_gname(g)}</span><b>{e(g["window"])}</b></div>' for g in _bg_open) +
+           f'</div><div class="sec-head"><h2>Which big 2027 games have been delayed?</h2><span class="muted">{len(_bg_delay)}</span></div><div class="out" style="margin-bottom:28px">'
+           + ("".join(f'<div class="row"><span>{_gname(g)}</span><b>{e(nice_date(g))}</b></div>' for g in _bg_delay) or '<div class="empty">None so far.</div>') +
+           f'</div><div class="sec-head"><h2>How did we pick the biggest games of 2027?</h2></div>'
+           f'<p>We picked new games from major series and big studios, plus long-awaited remakes and sequels, that are confirmed for 2027. It is our editorial list, not sales or wishlist data. Every date and console comes from the publisher or at least two trusted gaming news sites, and we update the list when a game is dated or delayed. Smaller launches are on the <a href="{href("games.html", 0)}">full 2027 games list</a>.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+           f'<li><a href="{href("backlog-planner-2027.html", 0)}">2027 backlog planner</a>: can you finish one big game before the next?</li>'
+           f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: which big games land the same week</li>'
+           f'<li><a href="{href("rpgs-2027.html", 0)}">Every RPG of 2027</a> and <a href="{href("exclusives-2027.html", 0)}">2027 console exclusives</a></li></ul></div></section>')
+bg_faq = [
+    ("What are the biggest games coming out in 2027?", "Our picks, in release order: " + ", ".join(f"{g['title']} ({nice_date(g)})" for g in _bg) + "."),
+    ("What is the first big game of 2027?", f"{_bg_dated[0]['title']}, on {nice_date(_bg_dated[0])}." if _bg_dated else "None are dated yet."),
+    ("Is GTA 6 a 2027 game?", "No. Rockstar launched GTA 6 on 19 November 2026 for PS5 and Xbox Series X|S, so it is not on our 2027 list. See our page on what to play after GTA 6."),
+    ("Which big 2027 games are on Switch 2?", f"{len(_bg_cnt['Switch 2'])} of our picks: " + ", ".join(g["title"] for g in _bg_cnt["Switch 2"]) + "."),
+    ("Which big 2027 games are PS5 exclusives?", "From our picks: " + (", ".join(g["title"] for g in _bg if g["platforms"] == ["PS5"] and g["slug"] != "forza-horizon-6") or "none") + ". Forza Horizon 6 on PS5 is a late port, not an exclusive."),
+    ("When does Pokémon Winds and Waves come out?", "Sometime in 2027 on Switch 2. No month or exact date has been announced yet."),
+]
+page("biggest-games-2027.html", f"The Biggest Games of 2027: Dates and Consoles ({len(_bg)} Games) | DayOneDrop"[:90],
+     f"The {len(_bg)} biggest games of 2027 in release order: Fable, Persona 4 Revival, Final Fantasy VII Revelation, God of War Laufey and more. Make and share your top list."[:160],
+     bg_body, 0, bg_faq, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html")), ("Biggest games of 2027", canon("biggest-games-2027.html"))],
+     extra_ld={"@context": "https://schema.org", "@type": "ItemList", "name": "The biggest games of 2027",
+               "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": g["title"] + " (" + nice_date(g) + ")"} for i, g in enumerate(_bg)]})
+
 # ---------------- ABOUT / PRIVACY / 404 ----------------
 page("about.html", "About DayOneDrop", "About DayOneDrop, an independent tracker of 2027 game release dates, and how to contact us.",
      '''<section><div class="wrap" style="max-width:760px"><h1>About <span class="amber">DayOneDrop</span></h1>
@@ -1091,7 +1204,7 @@ page("404.html", "Page not found | DayOneDrop", "This page has moved or doesn't 
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "after-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "after-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)

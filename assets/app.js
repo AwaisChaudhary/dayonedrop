@@ -326,6 +326,61 @@
     gStars();
   }
 
+  /* Biggest games 2027: ranked top list you can copy or share by link (?top=slug,slug) */
+  var tt = $("#top-tool");
+  if (tt) {
+    var tboxes = $$("input[type=checkbox]", tt), tout = $("#top-out"), tby = {}, order = [], MAXT = 10;
+    G.forEach(function (g) { tby[g.slug] = g; });
+    var valid = tboxes.map(function (b) { return b.value; });
+    var tesc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+    var MN = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    var when = function (g) { if (!g.date) return g.window || "2027"; var p = g.date.split("-"); return (+p[2]) + " " + MN[+p[1] - 1] + " " + p[0]; };
+    var base = location.origin && location.origin !== "null" ? location.origin + location.pathname : location.href.split("?")[0].split("#")[0];
+    var link = function () { return base + (order.length ? "?top=" + order.join(",") : ""); };
+    var text = function () {
+      return "My top " + order.length + " games of 2027:\n" + order.map(function (s, i) { var g = tby[s]; return (i + 1) + ". " + g.title + " (" + when(g) + ")"; }).join("\n");
+    };
+    var drawTop = function () {
+      tboxes.forEach(function (b) { b.checked = order.indexOf(b.value) > -1; });
+      if (!order.length) { tout.innerHTML = '<div class="empty">Tick a game to start your list.</div>'; }
+      else {
+        var next = null;
+        order.forEach(function (s) { var t = at(tby[s]); if (t && t > Date.now() && (!next || t < at(tby[next]))) next = s; });
+        tout.innerHTML = order.map(function (s, i) {
+          var g = tby[s];
+          return '<div class="row"><span><strong>' + (i + 1) + ".</strong> " + tesc(g.title) + '<br><span class="muted">' + tesc((g.platforms || []).join(", ") || "Platforms TBC") + "</span></span><b>" + tesc(when(g)) + "</b></div>";
+        }).join("") + (next ? '<div class="row hot"><span>First one out: <strong>' + tesc(tby[next].title) + "</strong></span><b>" + left(at(tby[next]))[0] + " days</b></div>" : "");
+      }
+      store.set("dod-top", order);
+    };
+    tboxes.forEach(function (b) {
+      b.addEventListener("change", function () {
+        var i = order.indexOf(b.value);
+        if (b.checked && i < 0) { if (order.length >= MAXT) { b.checked = false; toast("Your top list holds 10 games"); return; } order.push(b.value); }
+        if (!b.checked && i > -1) order.splice(i, 1);
+        drawTop();
+      });
+    });
+    var copy = function (s, ok) {
+      if (!order.length) { toast("Tick some games first"); return; }
+      if (navigator.clipboard) navigator.clipboard.writeText(s).then(function () { toast(ok); }, function () { toast("Copy blocked here"); }); else toast("Copy blocked here");
+    };
+    $("#top-copy").addEventListener("click", function () { copy(text() + "\n" + link(), "List copied"); });
+    $("#top-link").addEventListener("click", function () { copy(link(), "Share link copied"); });
+    $("#top-clear").addEventListener("click", function () { order = []; drawTop(); });
+    $("#top-star").addEventListener("click", function () {
+      var wl = store.get("dod-watch", []).filter(function (s) { return valid.indexOf(s) > -1; });
+      if (!wl.length) { toast("None of your ★ games are on this list yet"); return; }
+      order = wl.slice(0, MAXT); drawTop();
+    });
+    var q = /[?&]top=([^&#]*)/.exec(location.search), shared = [];
+    if (q) { try { shared = decodeURIComponent(q[1]).split(","); } catch (e2) { shared = []; } }
+    shared = shared.filter(function (s, i) { return valid.indexOf(s) > -1 && shared.indexOf(s) === i; }).slice(0, MAXT);
+    if (shared.length) { order = shared; $("#top-shared").hidden = false; }
+    else order = store.get("dod-top", []).filter(function (s) { return valid.indexOf(s) > -1; }).slice(0, MAXT);
+    drawTop();
+  }
+
   /* copy page link */
   $$("[data-copy-link]").forEach(function (b) {
     b.addEventListener("click", function () { navigator.clipboard.writeText(location.href.split("#")[0]).then(function () { toast("Link copied"); }, function () { toast("Copy blocked here"); }); });
