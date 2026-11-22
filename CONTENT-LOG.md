@@ -84,3 +84,11 @@
 - Both linked from footer (every page), board/games grid and month/related lists.
 - Refreshed all 14 game guide pages (template): Quick answer box, question H2s ("What do we know about X?", "Has X been delayed?", "What else launches in <month> 2027?"), optional sources line, per-game extra FAQs (games.json "faq"), linked same-month games, "Related pages and tools" (calendar, month, platform, Game Pass, RPGs, delays, clashes). Undated games get a calendar-free reminder FAQ.
 - IndexNow pending (no WebFetch in this run): /games/stranger-than-heaven, /games/pokemon-winds-and-waves, /game-pass-2027, /games/fable, /games/persona-4-revival
+
+## 2026-11-22 (scheduled data check, evening)
+- Checked: delays into 2027 (Game Informer, Gematsu, Shacknews, RPG Site, PC Gamer), the morning "left out" list, new 2027 window announcements.
+- Added 2 (board now 54):
+  - BECROWNED: Q1 2027 (delayed from fall 2026), PC + new PS5/Xbox Series X|S/Switch 2 versions. Gematsu, PSU; dev 13th Street Games.
+  - Honkai: Nexus Anima: spring 2027, PC (plus mobile; consoles unconfirmed). Gematsu, Automaton, Siliconera; final closed beta 25 Nov 2026.
+- Left out: Warhammer Blood Bowl (still "early 2027" PC Gamer/Wargamer vs "spring 2027" God is a Geek); Baptiste (still no second source for 25 Mar 2027; VGChartz said fall 2026); The Duskbloods, Blighted, Outward 2, Ontos (only "2027"); Anima: Song from the Abyss (only "2027").
+- No date changes for tracked games.
