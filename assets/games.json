@@ -49,16 +49,57 @@
     "PC",
     "Switch 2"
    ],
-   "dev": "",
+   "dev": "Gemdrops / Spike Chunsoft",
    "genre": "Mystery adventure",
-   "page": false,
-   "facts": [],
-   "history": [],
+   "page": true,
+   "facts": [
+    "Launches 14 January 2027 in North America and Europe.",
+    "Coming to PS5, Xbox Series X|S, Switch 2, the original Switch and PC (Steam and Epic Games Store).",
+    "Published by Spike Chunsoft and developed by Gemdrops.",
+    "It is a remake of Danganronpa 2: Goodbye Despair (2012) with two modes, both open from the start.",
+    "Original mode is the 2012 story with updated visuals and presentation.",
+    "Slayhem is a new scenario on the same island with the same cast, but the murders and culprits are completely different.",
+    "You still explore in Daily Life, collect evidence as Truth Bullets in Investigations, and argue it out in fully voiced Class Trials.",
+    "A standard physical edition (Switch 2, Switch or PS5) and a limited Psycho Tropical Vacation Package with Monokuma and Monomi figures, a hat and the soundtrack. No prices have been given."
+   ],
+   "history": [
+    {
+     "when": "Earlier",
+     "text": "First announced for a 2026 release."
+    },
+    {
+     "when": "Before Sep 2026",
+     "text": "Delayed out of 2026 into 2027."
+    },
+    {
+     "when": "9 Sep 2026",
+     "text": "Release date of 14 January 2027 and the new Slayhem mode revealed alongside a Nintendo Direct."
+    }
+   ],
    "date": "2027-01-14",
    "window": "",
    "month": 1,
-   "status": "dated",
-   "about": "A new take on the Danganronpa murder-mystery adventure."
+   "status": "delayed",
+   "about": "An expanded remake of Danganronpa 2: Goodbye Despair. It keeps the original island murder mystery and adds a brand-new scenario with different murders and culprits.",
+   "sources": "Spike Chunsoft, Gematsu, Push Square, Game Informer",
+   "faq": [
+    [
+     "Is Danganronpa 2x2 a remake?",
+     "Yes. It remakes Danganronpa 2: Goodbye Despair and adds Slayhem, a new scenario with different murders and culprits on the same island."
+    ],
+    [
+     "Do I need to play the original Danganronpa 2 first?",
+     "No. Original mode is the full 2012 story, so you can start there. Slayhem changes who dies and who did it, so it works best once you know the original."
+    ],
+    [
+     "Is Danganronpa 2x2 on Switch 1?",
+     "Yes. It is coming to the original Switch as well as Switch 2, PS5, Xbox Series X|S and PC on 14 January 2027."
+    ],
+    [
+     "Is there a Danganronpa 2x2 Japan release date?",
+     "Not on our list yet. The 14 January 2027 date is for North America and Europe."
+    ]
+   ]
   },
   {
    "slug": "ananta",

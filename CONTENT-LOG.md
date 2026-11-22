@@ -92,3 +92,10 @@
   - Honkai: Nexus Anima: spring 2027, PC (plus mobile; consoles unconfirmed). Gematsu, Automaton, Siliconera; final closed beta 25 Nov 2026.
 - Left out: Warhammer Blood Bowl (still "early 2027" PC Gamer/Wargamer vs "spring 2027" God is a Geek); Baptiste (still no second source for 25 Mar 2027; VGChartz said fall 2026); The Duskbloods, Blighted, Outward 2, Ontos (only "2027"); Anima: Song from the Abyss (only "2027").
 - No date changes for tracked games.
+
+## 2026-11-22 (scheduled SEO run, sixth pass)
+- New tool page /backlog-planner-2027 "2027 backlog planner: will you finish before the next launch?": quick answer (gaps between the 14 big dated games, from games.json), interactive planner (tick games or load your ★ list, set hours per week and your own hours per game; shows start/finish date per game, where you fall behind, date the list is clear; saved on this device), "How much time is there between the big 2027 launches?" table with hours at 5/10/20 h/week, how-to steps, FAQ JSON-LD. No playtimes published (visitor enters their own; 30 h placeholder). Targets "gaming backlog planner", "can I finish X before Y", "2027 game release gaps". Linked from footer (every page), Tools page (new card + link), clash finder, calendar and every dated game guide.
+- New guide /games/danganronpa-2x2: 14 Jan 2027 (NA/EU), PS5/Xbox Series X|S/Switch 2/Switch/PC (Steam, Epic), Gemdrops/Spike Chunsoft, Original + new Slayhem scenario, editions; marked delayed (out of 2026, Game Informer + Vandal). Sources: Spike Chunsoft press release, Gematsu, Push Square, Game Informer. Linked from footer, board/games grid, January page.
+- Refreshed /calendar: quick answer (counts, busiest month, first game, all computed), "Last checked", question H2s, launches-per-month table, computed FAQs (old FAQ hard-coded February as busiest; January is), related pages section.
+- Left out: Japan date for Danganronpa 2x2 (none found).
+- IndexNow pending (no WebFetch in this run): /backlog-planner-2027, /games/danganronpa-2x2, /calendar, /tools

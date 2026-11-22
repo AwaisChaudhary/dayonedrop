@@ -216,7 +216,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Release dates can change; we update this site as soon as publishers announce changes. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -328,19 +328,36 @@ def month_html(m):
         items += f'<li><span class="dd">{e(short_date(g) if g["date"] else "TBC")}</span><span>{name}</span></li>'
     return f'''<div class="month"><h3>{(f'<a href="{href("months/" + MONTH_SLUGS[m - 1] + ".html", 0)}">{MONTHS[m - 1]} 2027</a>') if m in month_pages_list() else MONTHS[m - 1] + " 2027"} <small>{len(games)} game{"s" if len(games) != 1 else ""}</small></h3><div class="days">{cells}</div>{f'<ul class="mlist">{items}</ul>' if items else '<p class="muted" style="margin:10px 0 0;font-size:.9rem">No dates announced yet.</p>'}</div>'''
 
+_cal_counts = {m: sum(1 for g in GAMES if g["month"] == m) for m in range(1, 13)}
+_cal_busy = max(_cal_counts, key=lambda m: _cal_counts[m])
+_cal_dated = sorted([g for g in GAMES if g["date"]], key=lambda x: x["date"])
+_cal_window = [g for g in GAMES if not g["date"]]
+_cal_quick = (f"We track {len(GAMES)} games for 2027: {len(_cal_dated)} with an exact date and {len(_cal_window)} with only a season or year. "
+              f"{MONTHS[_cal_busy - 1]} 2027 is the busiest month with {_cal_counts[_cal_busy]} launches"
+              + (f", and the first dated game is {_cal_dated[0]['title']} on {nice_date(_cal_dated[0])}." if _cal_dated else "."))
+_cal_mrows = "".join(f'<div class="row"><span>{(f'<a href="{href("months/" + MONTH_SLUGS[m - 1] + ".html", 0)}">{MONTHS[m - 1]} 2027</a>') if m in month_pages_list() else MONTHS[m - 1] + " 2027"}</span><b>{_cal_counts[m]} game{"s" if _cal_counts[m] != 1 else ""}</b></div>' for m in range(1, 13))
 cal = f'''<header class="hero"><div class="wrap"><span class="kicker">2027 calendar</span><h1>The 2027 game<br><span class="amber">release calendar.</span></h1>
-<p class="lead">Every confirmed date, month by month. Highlighted days have a launch. Games with only a season or year are listed in their likely month.</p></div></header>
-<section><div class="wrap"><div class="months">{"".join(month_html(m) for m in range(1, 13))}</div></div></section>
+<p class="lead">Every confirmed date, month by month. Highlighted days have a launch. Games with only a season or year are listed in their likely month.</p>
+<p class="muted" style="margin:0">Last checked {e(UPDATED)} · {len(_cal_dated)} exact dates</p></div></header>
+<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_cal_quick)}</span></div></div>
+<div class="sec-head"><h2>What games come out in each month of 2027?</h2></div><div class="months">{"".join(month_html(m) for m in range(1, 13))}</div></div></section>
 {AD.format("cal-mid")}
-<section><div class="wrap"><div class="sec-head"><h2>Add launches to your calendar</h2><p class="muted">One tap, and your phone reminds you on launch day.</p></div>
-<div class="out">{"".join(f'<div class="row"><span>{e(g["title"])} · <span class="muted">{e(nice_date(g))}</span></span><span class="btns"><a class="btn sm" href="{gcal(g)}" rel="nofollow noopener" target="_blank">Google Calendar</a><a class="btn line sm" href="{ics(g)}" download="{g["slug"]}.ics">Apple / Outlook</a></span></div>' for g in GAMES if g["date"])}</div></div></section>'''
+<section><div class="wrap"><div class="sec-head"><h2>How many games launch each month of 2027?</h2></div><div class="out" style="margin-bottom:28px">{_cal_mrows}</div>
+<div class="sec-head"><h2>How do I add a 2027 release date to my calendar?</h2><p class="muted">One tap, and your phone reminds you on launch day.</p></div>
+<div class="out">{"".join(f'<div class="row"><span>{e(g["title"])} · <span class="muted">{e(nice_date(g))}</span></span><span class="btns"><a class="btn sm" href="{gcal(g)}" rel="nofollow noopener" target="_blank">Google Calendar</a><a class="btn line sm" href="{ics(g)}" download="{g["slug"]}.ics">Apple / Outlook</a></span></div>' for g in _cal_dated)}</div>
+<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>
+<li><a href="{href("backlog-planner-2027.html", 0)}">2027 backlog planner</a>: will you finish each game before the next launch?</li>
+<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: which games land the same week</li>
+<li><a href="{href("delayed-games-2027.html", 0)}">Games delayed to 2027</a></li></ul></div></section>'''
 cal_faq = [
-    ("Which month has the most game releases in 2027?", "February 2027 is the busiest month so far, with several big launches within three weeks."),
+    ("Which month has the most game releases in 2027?", f"{MONTHS[_cal_busy - 1]} 2027, with {_cal_counts[_cal_busy]} tracked launches so far."),
+    ("What is the first game of 2027?", (f"{_cal_dated[0]['title']}, on {nice_date(_cal_dated[0])}." if _cal_dated else "No exact dates yet.")),
+    ("How many 2027 games have a release date?", f"{len(_cal_dated)} of the {len(GAMES)} games we track have an exact day. The rest have a season or year, such as spring 2027."),
     ("How do I get a reminder for a release date?", "Use the Google Calendar or Apple / Outlook buttons on this page. They add the launch day to your calendar for free."),
     ("Why do some games show TBC?", "Some publishers have only shared a season or a year. We add the exact day as soon as it's announced."),
 ]
 page("calendar.html", "2027 Video Game Release Calendar, Month by Month | DayOneDrop",
-     "The full 2027 video game release calendar, month by month. See every confirmed launch date and add games to Google, Apple or Outlook calendar in one tap.",
+     f"The full 2027 video game release calendar, month by month: {len(_cal_dated)} exact dates, the busiest month and one-tap Google, Apple or Outlook reminders. Checked {UPDATED}."[:160],
      cal, 0, cal_faq, crumbs=[("Home", DOMAIN + "/"), ("2027 Calendar", canon("calendar.html"))])
 
 # ---------------- GAMES INDEX ----------------
@@ -401,7 +418,8 @@ for g in featured:
     if "RPG" in g["genre"]: rel.append(("rpgs-2027.html", "Every RPG coming in 2027"))
     if g["status"] == "delayed": rel.append(("delayed-games-2027.html", "Every delayed game of 2027"))
     if g["date"]: rel.append(("release-clashes-2027.html", f"What else launches the same week as {short}?"))
-    rel_html = "".join(f'<li><a href="{href(rf, 1)}">{e(rn)}</a></li>' for rf, rn in rel[:5])
+    if g["date"]: rel.append(("backlog-planner-2027.html", f"Can I finish my backlog before {short}?"))
+    rel_html = "".join(f'<li><a href="{href(rf, 1)}">{e(rn)}</a></li>' for rf, rn in rel[:6])
     src_html = f'<p class="muted" style="margin-top:14px">Sources checked: {e(g["sources"])}.</p>' if g.get("sources") else ""
     body = f'''<header class="hero"><div class="wrap"><span class="kicker">Release guide</span>
 <div class="gp-head"><div><h1>{e(g["title"])}<br><span class="amber">release date</span></h1>
@@ -622,6 +640,7 @@ clash_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Clas
               f'</div><div class="sec-head"><h2>What is the busiest week on my console?</h2></div><div class="out" style="margin-bottom:28px">'
               + "".join(f'<div class="row"><span><a href="{href("platforms/" + s + ".html", 0)}">{e(l)}</a>: {", ".join(e(g["title"]) for g in gs)}</span><b>{len(gs)} · {e(_dm(m))}</b></div>' for l, s, m, gs in _plat_clash) +
               f'</div><div class="sec-head"><h2>Related tools</h2></div><ul>'
+              f'<li><a href="{href("backlog-planner-2027.html", 0)}">2027 backlog planner</a>: will you finish before the next launch?</li>'
               f'<li><a href="{href("tools.html", 0)}">What is coming to my console</a> and the busiest months chart</li>'
               f'<li><a href="{href("delayed-games-2027.html", 0)}">Games delayed to 2027</a>: dates that already moved</li>'
               f'<li><a href="{href("calendar.html", 0)}">The full 2027 release calendar</a> with calendar reminders</li></ul></div></section>')
@@ -779,6 +798,73 @@ page("rpgs-2027.html", f"Every RPG Coming in 2027: Dates and Consoles ({len(_rpg
      rpg_body, 0, rpg_faq, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html")), ("RPGs 2027", canon("rpgs-2027.html"))])
 
 
+# ---------------- BACKLOG PLANNER (22 Nov 2026) ----------------
+# Gaps come only from games.json dates. Playtimes are the visitor's own estimates (we publish none).
+_big = sorted([g for g in GAMES if g["page"] and g["date"]], key=lambda x: x["date"])
+_gaps = []
+for _i, _g in enumerate(_big[:-1]):
+    _n = _big[_i + 1]
+    _gaps.append((_g, _n, (datetime.date.fromisoformat(_n["date"]) - datetime.date.fromisoformat(_g["date"])).days))
+_tight = min(_gaps, key=lambda x: x[2]) if _gaps else None
+_long = max(_gaps, key=lambda x: x[2]) if _gaps else None
+_first_big = _big[0] if _big else None
+_bl_quick = ""
+if _tight and _long:
+    _tg = ("two of them launch on the same day" if _tight[2] == 0 else f"the shortest gap is {_tight[2]} day{'s' if _tight[2] != 1 else ''}")
+    _bl_quick = (f"The {len(_big)} biggest dated games of 2027 are close together: {_tg} "
+                 f"({_tight[0]['title']} and {_tight[1]['title']}, {nice_date(_tight[1])}), and the longest gap is {_long[2]} days "
+                 f"({_long[0]['title']} to {_long[1]['title']}). At 10 hours a week, a 30-hour game takes 3 weeks, so playing them back to back means launches will overlap.")
+def _hrs(days, per):
+    return round(days / 7 * per)
+_gap_rows = "".join(
+    f'<div class="row"><span>{_gname(a)} <span class="muted mono">{e(short_date(a))}</span> → {_gname(b)} <span class="muted mono">{e(short_date(b))}</span>'
+    f'<br><span class="muted">At 5 h/week: {_hrs(dd, 5)} h · 10 h/week: {_hrs(dd, 10)} h · 20 h/week: {_hrs(dd, 20)} h</span></span><b>{dd} day{"s" if dd != 1 else ""}</b></div>'
+    for a, b, dd in _gaps)
+_bl_pick = "".join(
+    f'<label class="clash-opt"><input type="checkbox" value="{e(g["slug"])}"> <span>{e(g["title"])}</span> <span class="muted mono">{e(short_date(g))}</span>'
+    f'<input class="bl-h" type="number" min="1" max="500" step="1" value="30" inputmode="numeric" aria-label="Hours you expect to spend on {e(g["title"])}" style="width:72px !important;padding:6px 8px"></label>'
+    for g in sorted([g for g in GAMES if g["date"]], key=lambda x: x["date"]))
+bl_tool = f'''<div class="tool" id="bl-tool"><h2 style="font-size:1.5rem;margin-top:0">Can I finish my games before the next one launches?</h2>
+<p class="muted">Tick the 2027 games you want (your ★ list is ticked for you), set the hours you expect each one to take, and how many hours a week you play. We line them up in launch order and show when you would finish each one and where you fall behind.</p>
+<div class="bl-grid"><div><label for="bl-week">Hours you play per week</label><input id="bl-week" type="number" min="1" max="100" value="10" inputmode="numeric"></div>
+<div><label for="bl-start">Start playing from</label><select id="bl-start"><option value="now" selected>Today</option><option value="first">The first game I tick</option></select></div></div>
+<div class="clash-list" role="group" aria-label="Pick games and hours">{_bl_pick}</div>
+<p class="muted" style="font-size:.85rem;margin:8px 0 0">Hours start at 30 as a placeholder. Change them to your own guess; we do not publish playtimes.</p>
+<div class="btns" style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn sm" type="button" id="bl-star">Use my ★ list</button><button class="btn line sm" type="button" id="bl-clear">Clear</button></div>
+<div class="out" id="bl-out" aria-live="polite"></div></div>'''
+bl_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Backlog planner</span>'
+           f'<h1>2027 backlog planner:<br><span class="amber">will you finish before the next launch?</span></h1>'
+           f'<p class="lead">2027 starts with big games days apart. Plan your hours so you are not three games behind by March.</p>'
+           f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · {sum(1 for g in GAMES if g["date"])} dated games · runs in your browser</p></div></header>'
+           f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_bl_quick)}</span></div></div>'
+           f'{bl_tool}</div></section>' + AD.format("bl-mid") +
+           f'<section><div class="wrap"><div class="sec-head"><h2>How much time is there between the big 2027 launches?</h2><span class="muted">{len(_big)} games</span></div>'
+           f'<p class="muted">Days from one big dated game to the next, and the hours that gives you at 5, 10 or 20 hours of play a week.</p>'
+           f'<div class="out" style="margin-bottom:28px">{_gap_rows}</div>'
+           f'<div class="sec-head"><h2>How do I plan a gaming backlog for 2027?</h2></div>'
+           f'<ol><li>Star the games you really plan to buy on the <a href="{href("index.html", 0)}#board">departures board</a>.</li>'
+           f'<li>Be honest about your weekly hours. Two evenings and a weekend afternoon is often 8 to 10 hours.</li>'
+           f'<li>Put your own hour guess on each game. Long RPGs take far more than a story shooter.</li>'
+           f'<li>Where the planner shows you falling behind, wait for a sale on the later game or drop one. A date change can also open space, so check the <a href="{href("delayed-games-2027.html", 0)}">delay tracker</a>.</li></ol>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+           f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: which games land the same week</li>'
+           f'<li><a href="{href("rpgs-2027.html", 0)}">Every RPG coming in 2027</a>: the long games to plan around</li>'
+           f'<li><a href="{href("calendar.html", 0)}">The full 2027 release calendar</a> with calendar reminders</li></ul></div></section>')
+bl_faq = []
+if _tight:
+    bl_faq.append(("Which big 2027 games launch closest together?", f"{_tight[0]['title']} ({nice_date(_tight[0])}) and {_tight[1]['title']} ({nice_date(_tight[1])}), {_tight[2]} day{'s' if _tight[2] != 1 else ''} apart."))
+if _first_big:
+    bl_faq.append(("What is the first big game of 2027?", f"{_first_big['title']}, on {nice_date(_first_big)}."))
+bl_faq += [
+    ("How does the backlog planner work?", "It puts your games in launch order and assumes you play one at a time. Each game starts when it launches or when you finish the one before, whichever is later. Your weekly hours decide how long each takes. It runs in your browser and saves your hours on this device only."),
+    ("Where do the hours per game come from?", "From you. Every game starts at 30 hours as a placeholder. We only list release dates we can confirm, so we do not publish playtime estimates."),
+    ("How many hours a week does the average gamer play?", "It varies a lot, so the planner lets you set your own. Try 10 hours a week as a starting point and adjust."),
+]
+page("backlog-planner-2027.html", "2027 Backlog Planner: Finish Games Before the Next Launch | DayOneDrop",
+     (f"Free 2027 backlog planner: pick your games, set your hours and see if you finish each one before the next launch. Plus the gaps between big 2027 games.")[:160],
+     bl_body, 0, bl_faq, crumbs=[("Home", DOMAIN + "/"), ("Tools", canon("tools.html")), ("Backlog planner 2027", canon("backlog-planner-2027.html"))])
+
+
 # ---------------- TOOLS ----------------
 plat_links0 = " · ".join(f'<a href="{href("platforms/" + s2 + ".html", 0)}">{e(l2)} games</a>' for p2, s2, l2 in PLAT_PAGES)
 _busy_m = max(range(1, 13), key=lambda m: sum(1 for g in GAMES if g["month"] == m))
@@ -796,9 +882,13 @@ tools = f'''<header class="hero"><div class="wrap"><span class="kicker">Tools</s
 <div class="tool"><h2 style="font-size:1.5rem">Do my games clash?</h2><p class="muted">See which 2027 games launch in the same week, and check your own list for clashes.</p>
 <div class="out">{"".join(f'<div class="row"><span>Week of {e(_dm(m))}</span><b>{len(gs)} games</b></div>' for m, gs in sorted(_clash_weeks[:3], key=lambda kv: kv[0]))}</div>
 <div class="btns" style="margin-top:12px"><a class="btn sm" href="{href("release-clashes-2027.html", 0)}">Open the clash finder</a></div></div>
+<div class="tool"><h2 style="font-size:1.5rem">Can I finish my games in time?</h2><p class="muted">Set your hours per week and per game. See when you finish each 2027 game and where you fall behind.</p>
+<div class="out">{"".join(f'<div class="row"><span>{e(a["title"])} → {e(b["title"])}</span><b>{dd} days</b></div>' for a, b, dd in sorted(_gaps, key=lambda x: x[2])[:3])}</div>
+<div class="btns" style="margin-top:12px"><a class="btn sm" href="{href("backlog-planner-2027.html", 0)}">Open the backlog planner</a></div></div>
 </div></section>
 <section><div class="wrap"><div class="sec-head"><h2>More ways to plan</h2></div><ul>
 <li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: every crowded week</li>
+<li><a href="{href("backlog-planner-2027.html", 0)}">2027 backlog planner</a>: finish each game before the next launch</li>
 <li><a href="{href("delayed-games-2027.html", 0)}">Games delayed to 2027</a></li>
 <li><a href="{href("exclusives-2027.html", 0)}">2027 console exclusives</a> and which games your consoles will miss</li>
 <li><a href="{href("rpgs-2027.html", 0)}">Every RPG coming in 2027</a> with a console filter</li>
@@ -1001,7 +1091,7 @@ page("404.html", "Page not found | DayOneDrop", "This page has moved or doesn't 
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "after-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "after-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)

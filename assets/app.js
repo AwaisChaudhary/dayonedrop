@@ -206,6 +206,47 @@
     useStars();
   }
 
+
+  /* backlog planner */
+  var bt = $("#bl-tool");
+  if (bt) {
+    var bopts = $$(".clash-opt", bt), bweek = $("#bl-week"), bstart = $("#bl-start"), bout = $("#bl-out");
+    var bBy = {}; G.forEach(function (g) { bBy[g.slug] = g; });
+    var besc = function (t) { return String(t).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+    var MN = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    var bfmt = function (ms) { var d = new Date(ms); return d.getDate() + " " + MN[d.getMonth()] + " " + d.getFullYear(); };
+    var BK = "dod-bl", saved = store.get(BK, {});
+    if (saved.week) bweek.value = saved.week;
+    bopts.forEach(function (o) { var cb = $("input[type=checkbox]", o), h = $(".bl-h", o); if (saved.h && saved.h[cb.value]) h.value = saved.h[cb.value]; });
+    var save = function () { var h = {}; bopts.forEach(function (o) { var cb = $("input[type=checkbox]", o), hi = $(".bl-h", o); if (+hi.value && +hi.value !== 30) h[cb.value] = +hi.value; }); store.set(BK, { week: +bweek.value || 10, h: h }); };
+    var drawBl = function () {
+      var per = Math.max(1, Math.min(100, +bweek.value || 10)), day = 864e5;
+      var pick = bopts.map(function (o) { var cb = $("input[type=checkbox]", o); return cb.checked ? { g: bBy[cb.value], h: Math.max(1, Math.min(500, +$(".bl-h", o).value || 30)) } : null; })
+        .filter(function (x) { return x && x.g; }).sort(function (a, b) { return at(a.g) - at(b.g); });
+      save();
+      if (!pick.length) { bout.innerHTML = '<div class="empty">Tick at least one game to build your plan.</div>'; return; }
+      var t0 = new Date(); t0.setHours(0, 0, 0, 0);
+      var cur = bstart.value === "first" ? at(pick[0].g) : t0.getTime(), behind = 0, rows = "", total = 0;
+      pick.forEach(function (p, i) {
+        var launch = at(p.g), start = Math.max(cur, launch), end = start + Math.ceil(p.h / per * 7) * day;
+        total += p.h; cur = end;
+        var nx = pick[i + 1], late = nx && end > at(nx.g);
+        if (late) behind++;
+        var wait = start > launch ? Math.round((start - launch) / day) : 0;
+        rows += '<div class="row' + (late ? " hot" : "") + '"><span><strong>' + besc(p.g.title) + '</strong> <span class="muted mono">out ' + bfmt(launch) + "</span><br><span class=\"muted\">" + p.h + " h · start " + bfmt(start) + (wait ? " (" + wait + " days after launch)" : "") +
+          (late ? " · still playing when " + besc(nx.g.title) + " launches (" + Math.round((end - at(nx.g)) / day) + " days over)" : "") + "</span></span><b>Done " + bfmt(end) + "</b></div>";
+      });
+      var head = '<div class="row' + (behind ? " hot" : "") + '"><span><strong>' + (behind ? "You fall behind " + behind + " time" + (behind > 1 ? "s" : "") : "You finish every game before the next one launches") + "</strong><br><span class=\"muted\">" + total + " hours at " + per + " h/week · list clear by " + bfmt(cur) + "</span></span><b>" + pick.length + " game" + (pick.length > 1 ? "s" : "") + "</b></div>";
+      bout.innerHTML = head + rows;
+    };
+    var bUseStars = function () { bopts.forEach(function (o) { var cb = $("input[type=checkbox]", o); cb.checked = WL.indexOf(cb.value) > -1; }); drawBl(); };
+    bt.addEventListener("input", drawBl);
+    bt.addEventListener("change", drawBl);
+    $("#bl-star").addEventListener("click", function () { bUseStars(); if (!WL.length) toast("Your ★ list is empty. Star games on the board first."); });
+    $("#bl-clear").addEventListener("click", function () { bopts.forEach(function (o) { $("input[type=checkbox]", o).checked = false; }); drawBl(); });
+    bUseStars();
+  }
+
   /* exclusives: which games will I miss? */
   var mt = $("#miss-tool");
   if (mt) {

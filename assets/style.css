@@ -233,3 +233,5 @@ footer a:hover { color: var(--amber); }
 .clash-opt span:first-of-type { flex: 1; min-width: 0; }
 .out .row.hot b { color: var(--late); }
 [hidden] { display: none !important; }
+.bl-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 12px; }
+.bl-tool-note { font-size: .85rem; }
