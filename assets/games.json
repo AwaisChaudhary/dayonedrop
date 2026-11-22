@@ -1018,6 +1018,45 @@
    "history": []
   },
   {
+   "slug": "spyro-a-realm-beyond",
+   "title": "Spyro: A Realm Beyond",
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC",
+    "Switch 2"
+   ],
+   "dev": "",
+   "genre": "Platformer",
+   "page": false,
+   "facts": [],
+   "history": [],
+   "date": null,
+   "window": "Spring 2027",
+   "month": 4,
+   "status": "window",
+   "about": "A new Spyro the Dragon adventure."
+  },
+  {
+   "slug": "the-expanse-osiris-reborn",
+   "title": "The Expanse: Osiris Reborn",
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC"
+   ],
+   "dev": "Owlcat Games",
+   "genre": "Action RPG",
+   "page": false,
+   "facts": [],
+   "history": [],
+   "date": null,
+   "window": "Spring 2027",
+   "month": 4,
+   "status": "window",
+   "about": "An action RPG from Owlcat Games set in The Expanse universe."
+  },
+  {
    "slug": "god-of-war-laufey",
    "title": "God of War: Laufey",
    "date": "2027-05-20",
@@ -1067,26 +1106,6 @@
    "about": "Hunter: The Reckoning – Deathwish is set for Mid 2027."
   },
   {
-   "slug": "spyro-a-realm-beyond",
-   "title": "Spyro: A Realm Beyond",
-   "platforms": [
-    "PS5",
-    "Xbox Series X|S",
-    "PC",
-    "Switch 2"
-   ],
-   "dev": "",
-   "genre": "Platformer",
-   "page": false,
-   "facts": [],
-   "history": [],
-   "date": null,
-   "window": "Mid 2027",
-   "month": 6,
-   "status": "window",
-   "about": "A new Spyro the Dragon adventure."
-  },
-  {
    "slug": "squadron-42",
    "title": "Squadron 42",
    "platforms": [
@@ -1102,25 +1121,6 @@
    "month": 6,
    "status": "window",
    "about": "The single-player campaign set in the Star Citizen universe."
-  },
-  {
-   "slug": "the-expanse-osiris-reborn",
-   "title": "The Expanse: Osiris Reborn",
-   "platforms": [
-    "PS5",
-    "Xbox Series X|S",
-    "PC"
-   ],
-   "dev": "",
-   "genre": "Action RPG",
-   "page": false,
-   "facts": [],
-   "history": [],
-   "date": null,
-   "window": "Mid 2027",
-   "month": 6,
-   "status": "window",
-   "about": "An action RPG from Owlcat Games set in The Expanse universe."
   },
   {
    "slug": "kingdom-hearts-iv",

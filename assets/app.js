@@ -262,6 +262,29 @@
     drawRpg();
   }
 
+  /* Game Pass 2027: Game Pass or buy? */
+  var gt = $("#gp-tool");
+  if (gt) {
+    var gboxes = $$("input[type=checkbox]", gt), gout = $("#gp-out"), gby = {};
+    G.forEach(function (g) { gby[g.slug] = g; });
+    var gesc = function (t) { return String(t).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+    var drawGp = function () {
+      var pick = gboxes.filter(function (b) { return b.checked; });
+      if (!pick.length) { gout.innerHTML = '<div class="empty">Tick the games you want to see which are on Game Pass.</div>'; return; }
+      var inGp = pick.filter(function (b) { return b.getAttribute("data-gp") === "1"; }), buy = pick.filter(function (b) { return b.getAttribute("data-gp") !== "1"; });
+      var nm = function (b) { var g = gby[b.value]; return g ? gesc(g.title) : gesc(b.value); };
+      var html = '<div class="row"><span><strong>' + inGp.length + " of " + pick.length + " on Game Pass</strong></span><b>" + buy.length + " to buy</b></div>";
+      html += inGp.map(function (b) { return '<div class="row"><span>' + nm(b) + "</span><b>Game Pass</b></div>"; }).join("");
+      html += buy.map(function (b) { return '<div class="row hot"><span>' + nm(b) + "</span><b>Buy</b></div>"; }).join("");
+      gout.innerHTML = html;
+    };
+    gboxes.forEach(function (b) { b.addEventListener("change", drawGp); });
+    var gStars = function () { var wl = store.get("dod-watch", []); if (typeof WL !== "undefined") wl = WL; gboxes.forEach(function (b) { b.checked = wl.indexOf(b.value) > -1; }); drawGp(); return wl.length; };
+    $("#gp-star").addEventListener("click", function () { if (!gStars()) toast("Your ★ list is empty. Star games on the board first."); });
+    $("#gp-clear").addEventListener("click", function () { gboxes.forEach(function (b) { b.checked = false; }); drawGp(); });
+    gStars();
+  }
+
   /* copy page link */
   $$("[data-copy-link]").forEach(function (b) {
     b.addEventListener("click", function () { navigator.clipboard.writeText(location.href.split("#")[0]).then(function () { toast("Link copied"); }, function () { toast("Copy blocked here"); }); });

@@ -216,7 +216,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Release dates can change; we update this site as soon as publishers announce changes. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -454,7 +454,9 @@ for plat, slug, long in PLAT_PAGES:
             f'<div class="sec-head"><h2>What else helps plan my {e(long)} year?</h2></div><ul>'
             f'<li><a href="{href("exclusives-2027.html", 1)}">2027 console exclusives</a> and which games skip {e(long)}</li>'
             f'<li><a href="{href("release-clashes-2027.html", 1)}">2027 release clashes</a>: games landing the same week</li>'
-            f'<li><a href="{href("delayed-games-2027.html", 1)}">Games delayed to 2027</a></li></ul>'
+            f'<li><a href="{href("delayed-games-2027.html", 1)}">Games delayed to 2027</a></li>'
+            + (f'<li><a href="{href("game-pass-2027.html", 1)}">Every 2027 game on Xbox Game Pass</a></li>' if plat in ("Xbox Series X|S", "PC") else "")
+            + '</ul>'
             f'<p class="muted">Star games on the <a href="{href("index.html", 1)}#board">departures board</a> to build your launch list, '
             f'and every guide has one-tap calendar reminders.</p></div></section>')
     first = dated[0] if dated else None
@@ -768,6 +770,7 @@ tools = f'''<header class="hero"><div class="wrap"><span class="kicker">Tools</s
 <li><a href="{href("delayed-games-2027.html", 0)}">Games delayed to 2027</a></li>
 <li><a href="{href("exclusives-2027.html", 0)}">2027 console exclusives</a> and which games your consoles will miss</li>
 <li><a href="{href("rpgs-2027.html", 0)}">Every RPG coming in 2027</a> with a console filter</li>
+<li><a href="{href("game-pass-2027.html", 0)}">Every 2027 game on Xbox Game Pass</a>, with a Game Pass or buy checker</li>
 <li><a href="{href("after-gta-6.html", 0)}">What to play after GTA 6</a></li></ul></div></section>'''
 sw2 = [g["title"] for g in GAMES if "Switch 2" in g["platforms"]]
 both = [g["title"] for g in GAMES if "PS5" in g["platforms"] and "Xbox Series X|S" in g["platforms"]]
@@ -844,23 +847,106 @@ def _drow(g):
     last = (g.get("history") or [{}])[-1].get("text", "")
     plats = ", ".join(g["platforms"]) or "Platforms TBC"
     return f'<div class="row"><span><strong>{t}</strong><br><span class="muted">{e(last)}</span><br><span class="muted">{e(plats)}</span></span><b>{e(nice_date(g))}</b></div>'
+_dl_m = {}
+for _g in _delayed:
+    _dl_m.setdefault(_g["month"], []).append(_g)
+_dl_top = max(_dl_m.items(), key=lambda kv: len(kv[1])) if _dl_m else None
+_dl_month_txt = (f"{MONTHS[_dl_top[0] - 1]} 2027, with {len(_dl_top[1])} delayed games now landing there: " + ", ".join(g["title"] for g in _dl_top[1]) + ". "
+                 "Many games that missed late 2026 moved into the first months of 2027.") if _dl_top else "No delayed games right now."
 delays_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Delay tracker</span>'
                f'<h1>Games delayed to 2027<br><span class="amber">{len(_delayed)} on our board.</span></h1>'
                f'<p class="lead">Every tracked game that has slipped into 2027 or moved to a later date, with its new date and what changed. We add each delay as soon as the publisher or two trusted outlets confirm it.</p>'
                f'<p class="muted" style="margin:0">Last checked {e(UPDATED)}</p></div></header>'
                f'<section><div class="wrap"><div class="out" style="margin-bottom:12px"><div class="row"><span><strong>Quick answer:</strong> '
                + (", ".join(f"{g['title']} (now {nice_date(g)})" for g in _delayed) if _delayed else "no tracked games are delayed right now") +
-               f'.</span></div></div><div class="sec-head"><h2>Every delayed game, by new date</h2><span class="muted">{len(_delayed)}</span></div>'
+               f'.</span></div></div><div class="sec-head"><h2>Which games have been delayed to 2027?</h2><span class="muted">{len(_delayed)}</span></div>'
                f'<div class="out" style="margin-bottom:28px">{"".join(_drow(g) for g in _delayed)}</div>'
-               f'<p class="muted">Want a heads-up before launch? Star games on the <a href="{href("index.html", 0)}#board">departures board</a> for countdowns, see the <a href="{href("calendar.html", 0)}">2027 calendar</a>, or <a href="{href("after-gta-6.html", 0)}">what to play after GTA 6</a>.</p></div></section>')
+               f'<div class="sec-head"><h2>Which delayed games are on my console?</h2></div><div class="out" style="margin-bottom:28px">'
+               + "".join(f'<div class="row"><span><a href="{href("platforms/" + s2 + ".html", 0)}">{e(l2)}</a><br><span class="muted">{e(", ".join(g["title"] for g in _delayed if p2 in g["platforms"]) or "None right now")}</span></span>'
+                         f'<b>{sum(1 for g in _delayed if p2 in g["platforms"])} delayed</b></div>' for p2, s2, l2 in PLAT_PAGES_FOOT) +
+               f'</div><div class="sec-head"><h2>Which month do most delayed games land in?</h2></div>'
+               f'<p>{e(_dl_month_txt)}</p>'
+               f'<p class="muted">Want a heads-up before launch? Star games on the <a href="{href("index.html", 0)}#board">departures board</a> for countdowns.</p>'
+               f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+               f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: did a delay push two of your games into the same week?</li>'
+               f'<li><a href="{href("calendar.html", 0)}">2027 release calendar</a></li>'
+               f'<li><a href="{href("game-pass-2027.html", 0)}">Every 2027 game on Xbox Game Pass</a></li></ul></div></section>')
 delays_faq = [
     ("Which games were delayed to 2027?", ("On our board: " + ", ".join(g["title"] for g in _delayed) + ".") if _delayed else "None of the games we track right now."),
     ("Is God of War Laufey delayed?", "Yes. It was planned for February 2027 and is now dated 20 May 2027 on PS5.") if any(g["slug"] == "god-of-war-laufey" for g in _delayed) else ("How do you track delays?", "We only mark a delay when the publisher or two trusted outlets confirm the new date."),
     ("How do you check delays?", "We only mark a game as delayed when the publisher or at least two trusted gaming news sites confirm the new date or window."),
+    ("Which month has the most delayed games?", _dl_month_txt),
+    ("Is 007 First Light delayed on Switch 2?", "Yes. The Switch 2 version of 007 First Light is now dated 18 March 2027.") if "007-first-light" in {g["slug"] for g in _delayed} else ("Can a delayed game move again?", "Yes. We update the date as soon as a new one is confirmed."),
 ]
 page("delayed-games-2027.html", f"Games Delayed to 2027: Every Delay and New Date ({len(_delayed)}) | DayOneDrop"[:90],
      f"Every game delayed into 2027 or pushed later, with the new release date, what changed and which consoles. Checked {UPDATED}."[:160],
      delays_body, 0, delays_faq, crumbs=[("Home", DOMAIN + "/"), ("Delayed games 2027", canon("delayed-games-2027.html"))])
+
+
+# ---------------- XBOX GAME PASS 2027 (22 Nov 2026) ----------------
+# Game Pass list = games named for Xbox Game Pass in 2027 by BOTH Pure Xbox (14 Jun 2026 roundup) and Digital Citizen's 2027 Game Pass table
+# (Moosa: Pure Xbox Mar + Jun 2026 and Digital Citizen prose). Magicians: The Devil's Deal left out (one source only).
+# Day one wording only where confirmed: Fable (Gematsu, RPG Site, VGChartz), Wo Long 2 (games.json fact).
+GP_TRACKED = ["persona-4-revival", "fable", "wo-long-2", "spyro-a-realm-beyond", "the-expanse-osiris-reborn"]
+GP_DAY_ONE = {"fable", "wo-long-2"}
+GP_OTHER = [("Bad Magpie", "Early 2027"), ("Join Us", "March 2027"), ("Clockwork Revolution", "Spring 2027"),
+            ("Alien Deathstorm", "2027"), ("Moosa: Dirty Fate", "2027"), ("Senua", "2027"), ("State of Decay 3", "2027"),
+            ("Valor Mortis", "2027"), ("Vivarium", "2027")]
+_gp = sorted([_gby[s] for s in GP_TRACKED if s in _gby], key=lambda g: (g["month"], g["date"] or "9999"))
+_gp_slugs = {g["slug"] for g in _gp}
+_gp_total = len(_gp) + len(GP_OTHER)
+_gp_ps5 = [g for g in _gp if "PS5" in g["platforms"]]
+_gp_dated = [g for g in _gp if g["date"]]
+_xb_buy = sorted([g for g in GAMES if g["slug"] not in _gp_slugs and ("Xbox Series X|S" in g["platforms"] or "PC" in g["platforms"])],
+                 key=lambda g: (g["month"], g["date"] or "9999"))
+def _gprow(g):
+    tag = "Game Pass day one" if g["slug"] in GP_DAY_ONE else "Announced for Game Pass"
+    return (f'<div class="row"><span><strong>{_gname(g)}</strong><br><span class="muted">{e(g.get("about") or "")}</span>'
+            f'<br><span class="muted">{e(tag)} · {e(", ".join(g["platforms"]))}</span></span><b>{e(nice_date(g))}</b></div>')
+_gp_pick = "".join(f'<label class="clash-opt"><input type="checkbox" value="{e(g["slug"])}" data-gp="{1 if g["slug"] in _gp_slugs else 0}"> <span>{e(g["title"])}</span> <span class="muted mono">{e(short_date(g))}</span></label>'
+                   for g in sorted(_gp + _xb_buy, key=lambda g: (g["month"], g["date"] or "9999")))
+_gp_quick = (f"{_gp_total} games are announced for Xbox Game Pass in 2027 so far. The first big ones are "
+             + ", ".join(f"{g['title']} ({nice_date(g)})" for g in _gp_dated[:2]) + (f" and {_gp_dated[2]['title']} ({nice_date(_gp_dated[2])})" if len(_gp_dated) > 2 else "")
+             + ". Fable and Wo Long 2 are confirmed for Game Pass on launch day.")
+gp_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Xbox Game Pass</span>'
+           f'<h1>Every 2027 game coming to<br><span class="amber">Xbox Game Pass.</span></h1>'
+           f'<p class="lead">Fable, Persona 4 Revival, Wo Long 2 and more are heading to Game Pass in 2027. Here is every confirmed game, when it arrives, '
+           f'and a quick check of which games on your list you would still need to buy.</p>'
+           f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · only games announced for Game Pass and reported by trusted outlets</p></div></header>'
+           f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_gp_quick)}</span></div></div>'
+           f'<div class="sec-head"><h2>Which dated 2027 games are on Game Pass?</h2><span class="muted">{len(_gp)}</span></div>'
+           f'<div class="out" style="margin-bottom:28px">{"".join(_gprow(g) for g in _gp)}</div>'
+           f'<div class="sec-head"><h2>What other games are coming to Game Pass in 2027?</h2><span class="muted">{len(GP_OTHER)}</span></div>'
+           f'<p class="muted">Announced for Game Pass, but without an exact date yet. We add them to the board once a date is confirmed.</p>'
+           f'<div class="out" style="margin-bottom:28px">' + "".join(f'<div class="row"><span>{e(t)}</span><b>{e(w)}</b></div>' for t, w in GP_OTHER) + '</div>'
+           f'<div class="tool" id="gp-tool"><h2 style="font-size:1.5rem;margin-top:0">Game Pass or buy? Check your 2027 list</h2>'
+           f'<p class="muted">Tick the Xbox and PC games you want (your ★ list is ticked for you). We split them into games you get with Game Pass and games you would still buy.</p>'
+           f'<div class="clash-list" role="group" aria-label="Pick games">{_gp_pick}</div>'
+           f'<div class="btns" style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn sm" type="button" id="gp-star">Use my ★ list</button><button class="btn line sm" type="button" id="gp-clear">Clear</button></div>'
+           f'<div class="out" id="gp-out" aria-live="polite"></div></div></div></section>'
+           + AD.format("gp-mid") +
+           f'<section><div class="wrap">'
+           f'<div class="sec-head"><h2>Are the 2027 Game Pass games also on PS5?</h2></div>'
+           f'<p>Yes, most of them. {len(_gp_ps5)} of the {len(_gp)} dated Game Pass games are also coming to PS5: {e(", ".join(g["title"] for g in _gp_ps5))}. '
+           f'On PlayStation you buy them; Game Pass only covers Xbox consoles, PC and cloud.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>Which big 2027 Xbox games are not on Game Pass?</h2><span class="muted">{len(_xb_buy)}</span></div>'
+           f'<p>These tracked 2027 games are coming to Xbox or PC but are not announced for Game Pass, so plan to buy them: '
+           f'{e(", ".join(g["title"] for g in _xb_buy[:14]))}{" and more" if len(_xb_buy) > 14 else ""}. Publishers can add games to Game Pass later.</p>'
+           f'<p class="muted">Which Game Pass plan gets new games on launch day can change, so check Xbox\'s own Game Pass page before you subscribe.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+           f'<li><a href="{href("platforms/xbox-series.html", 0)}">Every Xbox Series X|S game coming in 2027</a></li>'
+           f'<li><a href="{href("exclusives-2027.html", 0)}">2027 console exclusives</a>: is anything Xbox-only?</li>'
+           f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: which games land the same week</li></ul></div></section>')
+gp_faq = [
+    ("What games are coming to Xbox Game Pass in 2027?", f"{_gp_total} announced so far: " + ", ".join(g["title"] for g in _gp) + ", " + ", ".join(t for t, _ in GP_OTHER) + "."),
+    ("Is Fable on Game Pass day one?", f"Yes. Fable launches on {nice_date(_gby['fable'])} and is on Game Pass from launch day. It also comes to PS5 and PC." if "fable" in _gby else "Yes, Fable is on Game Pass from launch day."),
+    ("Is Persona 4 Revival on Game Pass?", f"Yes. Persona 4 Revival is announced for Game Pass and launches on {nice_date(_gby['persona-4-revival'])}." if "persona-4-revival" in _gby else "Yes, it is announced for Game Pass."),
+    ("What is the first Game Pass game of 2027?", f"{_gp_dated[0]['title']}, on {nice_date(_gp_dated[0])}, is the first dated one we track." if _gp_dated else "None are dated yet."),
+    ("Are Game Pass games also on PS5?", f"Many are. {', '.join(g['title'] for g in _gp_ps5)} are also coming to PS5, where you buy them."),
+]
+page("game-pass-2027.html", f"Xbox Game Pass 2027: Every Confirmed Game ({_gp_total}) | DayOneDrop"[:90],
+     f"All {_gp_total} games announced for Xbox Game Pass in 2027, with dates: Fable, Persona 4 Revival, Wo Long 2, Spyro and more. Plus a Game Pass or buy checker."[:160],
+     gp_body, 0, gp_faq, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html")), ("Game Pass 2027", canon("game-pass-2027.html"))])
 
 
 # ---------------- ABOUT / PRIVACY / 404 ----------------
@@ -883,7 +969,7 @@ page("404.html", "Page not found | DayOneDrop", "This page has moved or doesn't 
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "after-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "after-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)
