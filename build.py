@@ -216,7 +216,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Release dates can change; we update this site as soon as publishers announce changes. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -377,11 +377,15 @@ def _glink(g, depth=0):
     return f'<a href="{href("games/" + g["slug"] + ".html", depth)}">{e(g["title"])}</a>' if g["page"] else e(g["title"])
 def month_file(m):
     return "months/" + MONTH_SLUGS[m - 1] + ".html" if m in month_pages_list() else None
+BIG_WHY_SLUGS = {"stranger-than-heaven", "forza-horizon-6", "metroid-ravenous", "until-dawn-2", "metro-2039", "tomb-raider-legacy-of-atlantis", "persona-4-revival", "fable", "wo-long-2", "exodus", "final-fantasy-vii-revelation", "lords-of-the-fallen-ii", "spyro-a-realm-beyond", "god-of-war-laufey", "squadron-42", "kingdom-hearts-iv", "kirby-and-the-world-beyond", "pokemon-winds-and-waves", "xenoblade-genesis"}
+# 2027 versions of games already out elsewhere: single-platform in our data but NOT exclusives (checked 22 Nov 2026).
+PORTS = {"forza-horizon-6": "Already out on Xbox Series X|S and PC since May 2026. This is the PS5 version.",
+         "007-first-light": "Already out on PS5, Xbox Series X|S and PC. This is the delayed Switch 2 version."}
 for g in featured:
     f = "games/" + g["slug"] + ".html"
-    if g["window"] == "2027":
-        same_month = [x for x in GAMES if x["window"] == "2027" and x["slug"] != g["slug"]]
-        also_h = "What other 2027 games have no date yet?"
+    if not g["date"]:
+        same_month = [x for x in GAMES if not x["date"] and x["slug"] != g["slug"]]
+        also_h = "What other 2027 games have no exact date yet?"
     else:
         same_month = [x for x in GAMES if x["month"] == g["month"] and x["slug"] != g["slug"]]
         also_h = f"What else launches in {MONTHS[g['month'] - 1]} 2027?"
@@ -403,14 +407,18 @@ for g in featured:
     if g["date"]:
         qa = f"{g['title']} comes out on {nice_date(g)} for {plat_text(g)}."
     else:
-        qa = f"{g['title']} has no exact release date yet. It is set for {nice_date(g)} on {plat_text(g)}."
+        _w = nice_date(g)
+        _w = _w[0].lower() + _w[1:] if _w.split()[0] in ("Late", "Early", "Mid", "Spring", "Summer", "Autumn", "Fall", "Winter") else _w
+        qa = f"{g['title']} has no exact release date yet. It is set for {_w} on {plat_text(g)}."
+    if g["slug"] in PORTS:
+        qa += " " + PORTS[g["slug"]]
     if g["status"] == "delayed":
         qa += " It has been delayed before, so we watch it closely."
     if g["slug"] in GP_TRACKED_ALL:
         qa += " It is also coming to Xbox Game Pass."
     short = g["title"].split(":")[0]
     rel = [("calendar.html", "The full 2027 release calendar")]
-    rel.append((month_file(g["month"]), f"Every game coming in {MONTHS[g['month'] - 1]} 2027") if month_file(g["month"]) and g["window"] != "2027" else ("games.html", "Every tracked 2027 game"))
+    rel.append((month_file(g["month"]), f"Every game coming in {MONTHS[g['month'] - 1]} 2027") if month_file(g["month"]) and g["date"] else ("games.html", "Every tracked 2027 game"))
     for pf, pn in PLAT_LINKS:
         if pn in g["platforms"]:
             rel.append((pf, f"Every {pn} game coming in 2027")); break
@@ -445,18 +453,35 @@ for g in featured:
         (f"Who is making {g['title']}?", f"{g['title']} is made by {g['dev']}." if g["dev"] else "The developer will be listed once confirmed."),
         (f"How can I get a reminder for {g['title']}?", "Use the Add to Google Calendar or Apple / Outlook button on this page. Your calendar will remind you on launch day." if g["date"] else "Tap the ☆ button to add it to your launch list, or join our email list. We update this page the day an exact date is announced."),
     ] + [tuple(x) for x in g.get("faq", [])]
-    page(f, f"{g['title']} Release Date, Platforms and Countdown | DayOneDrop"[:90],
+    page(f, (g.get("seo_title") or f"{g['title']} Release Date, Platforms and Countdown") + " | DayOneDrop" if len((g.get("seo_title") or "")) < 76 else g["seo_title"],
          f"{g['title']} launches {nice_date(g)}. Platforms, developer, release date history and a live countdown, plus one-tap calendar reminders."[:160],
          body, 1, faqs, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html")), (g["title"], canon(f))])
 
 # ---------------- PLATFORM PAGES ----------------
 PLAT_PAGES = PLAT_PAGES_FOOT
-# 2027 versions of games already out elsewhere: single-platform in our data but NOT exclusives (checked 22 Nov 2026).
-PORTS = {"forza-horizon-6": "Already out on Xbox Series X|S and PC since May 2026. This is the PS5 version.",
-         "007-first-light": "Already out on PS5, Xbox Series X|S and PC. This is the delayed Switch 2 version."}
 def is_excl(g, plat):
     return g["platforms"] == [plat] and g["slug"] not in PORTS
 plat_urls = []
+
+
+def _plat_extra(plat, long, games, excl):
+    """Question-style summary blocks for a platform page (refresh 23 Nov 2026)."""
+    out = ""
+    ex_rows = "".join(plat_row(g, 1, plat) for g in excl) or f'<div class="empty">None right now. Every {e(long)} game we track is also announced elsewhere.</div>'
+    out += f'<div class="sec-head"><h2>Which 2027 games are only on {e(long)}?</h2><span class="muted">{len(excl)}</span></div><div class="out" style="margin-bottom:28px">{ex_rows}</div>'
+    late = [g for g in games if g["slug"] in PORTS]
+    if late:
+        out += (f'<div class="sec-head"><h2>Which games are coming to {e(long)} late?</h2><span class="muted">{len(late)}</span></div>'
+                f'<p class="muted">These are already out on other systems. The {e(long)} version lands in 2027.</p>'
+                f'<div class="out" style="margin-bottom:28px">{"".join(plat_row(g, 1, plat) for g in late)}</div>')
+    skip = [g for g in GAMES if plat not in g["platforms"] and g["platforms"] and g["slug"] not in PORTS]
+    big_skip = [g for g in skip if g["slug"] in BIG_WHY_SLUGS]
+    show = (big_skip or skip)[:8]
+    if show:
+        rows = "".join(f'<div class="row"><span><strong>{_glink(g, 1)}</strong><br><span class="muted">On {e(", ".join(g["platforms"]))}</span></span><b>{e(nice_date(g))}</b></div>' for g in show)
+        out += (f'<div class="sec-head"><h2>Which big 2027 games are not coming to {e(long)}?</h2><span class="muted">{len(skip)} in total</span></div>'
+                f'<div class="out" style="margin-bottom:28px">{rows}</div>')
+    return out
 
 
 def plat_row(g, depth, plat):
@@ -478,7 +503,7 @@ for plat, slug, long in PLAT_PAGES:
         by_month.setdefault(g["month"] if g["date"] else 13, []).append(g)
     blocks = ""
     for m, gs in sorted(by_month.items()):
-        head = "Date to be announced" if m == 13 else MONTHS[m - 1] + " 2027"
+        head = f"Which {long} games have no exact date yet?" if m == 13 else f"What is coming to {long} in {MONTHS[m - 1]} 2027?"
         n = f'{len(gs)} game{"s" if len(gs) != 1 else ""}'
         rows = "".join(plat_row(g, 1, plat) for g in gs)
         blocks += f'<div class="sec-head"><h2>{head}</h2><span class="muted">{n}</span></div><div class="out" style="margin-bottom:28px">{rows}</div>'
@@ -501,10 +526,13 @@ for plat, slug, long in PLAT_PAGES:
             + (f', and the next one is {e(dated[0]["title"])} on {e(nice_date(dated[0]))}' if dated else '')
             + (f'. Only on {e(long)}: {e(", ".join(g["title"] for g in excl))}.' if excl else f'. None of them are {e(long)} exclusives right now.')
             + f'</span></div></div>{blocks}'
+            + _plat_extra(plat, long, games, excl) +
             f'<div class="sec-head"><h2>What else helps plan my {e(long)} year?</h2></div><ul>'
             f'<li><a href="{href("exclusives-2027.html", 1)}">2027 console exclusives</a> and which games skip {e(long)}</li>'
             f'<li><a href="{href("release-clashes-2027.html", 1)}">2027 release clashes</a>: games landing the same week</li>'
             f'<li><a href="{href("delayed-games-2027.html", 1)}">Games delayed to 2027</a></li>'
+            f'<li><a href="{href("biggest-games-2027.html", 1)}">The biggest games of 2027</a></li>'
+            f'<li><a href="{href("backlog-planner-2027.html", 1)}">2027 backlog planner</a>: will you finish before the next launch?</li>'
             + (f'<li><a href="{href("game-pass-2027.html", 1)}">Every 2027 game on Xbox Game Pass</a></li>' if plat in ("Xbox Series X|S", "PC") else "")
             + '</ul>'
             f'<p class="muted">Star games on the <a href="{href("index.html", 1)}#board">departures board</a> to build your launch list, '
@@ -526,7 +554,6 @@ for plat, slug, long in PLAT_PAGES:
          body, 1, faqs, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html")), (long + " games 2027", canon(f))])
 
 # ---------------- MONTH PAGES ----------------
-BIG_WHY_SLUGS = {"stranger-than-heaven", "forza-horizon-6", "metroid-ravenous", "until-dawn-2", "metro-2039", "tomb-raider-legacy-of-atlantis", "persona-4-revival", "fable", "wo-long-2", "exodus", "final-fantasy-vii-revelation", "lords-of-the-fallen-ii", "spyro-a-realm-beyond", "god-of-war-laufey", "squadron-42", "kingdom-hearts-iv", "kirby-and-the-world-beyond", "pokemon-winds-and-waves", "xenoblade-genesis"}
 month_urls = []
 for m in month_pages_list():
     f = "months/" + MONTH_SLUGS[m - 1] + ".html"

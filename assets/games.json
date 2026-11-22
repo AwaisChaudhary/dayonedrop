@@ -943,23 +943,67 @@
    ],
    "dev": "IO Interactive",
    "genre": "Action adventure",
-   "page": false,
+   "page": true,
    "facts": [
-    "The Switch 2 version launches 18 March 2027.",
-    "The game is already out on PS5, Xbox Series X|S and PC.",
-    "IO Interactive delayed the Switch 2 version again in September 2026 to keep refining it."
+    "The Switch 2 version launches 18 March 2027. IO Interactive announced the date on 14 October 2026.",
+    "PS5, Xbox Series X|S and PC (Steam and Epic Games Store) got the game on 27 May 2026.",
+    "It is an origin story: a young James Bond as a recruit in MI6's training programme.",
+    "Developed and published by IO Interactive, the studio behind Hitman.",
+    "The Switch 2 Deluxe Edition costs $69.99 / £69.99 / €69.99 and adds four gadgets and four outfits.",
+    "Pre-ordering the Switch 2 version gives early access to a GoldenEye suit, a nod to the Nintendo 64 classic.",
+    "IO says the extra time is going into polish and performance on Switch 2."
    ],
    "history": [
     {
-     "when": "Sep 2026",
-     "text": "Switch 2 version delayed again, to 18 March 2027"
+     "when": "2025",
+     "text": "Dated for 27 March 2026 on every platform, Switch 2 included."
+    },
+    {
+     "when": "Early 2026",
+     "text": "Delayed two months to 27 May 2026 on every platform."
+    },
+    {
+     "when": "2026",
+     "text": "Switch 2 version split off and moved to summer 2026 while the other versions kept 27 May."
+    },
+    {
+     "when": "27 May 2026",
+     "text": "Launched on PS5, Xbox Series X|S and PC."
+    },
+    {
+     "when": "15 Sep 2026",
+     "text": "Switch 2 version delayed again, to March 2027, to polish performance."
+    },
+    {
+     "when": "14 Oct 2026",
+     "text": "Exact Switch 2 date set: 18 March 2027."
     }
    ],
    "date": "2027-03-18",
    "window": "",
    "month": 3,
    "status": "delayed",
-   "about": "The Switch 2 version of IO Interactive's young James Bond adventure, which is already out on PS5, Xbox and PC."
+   "about": "The Switch 2 version of IO Interactive's young James Bond origin story. The game is already out on PS5, Xbox Series X|S and PC.",
+   "sources": "Gematsu, VGC, Nintendo Life, God is a Geek, Kotaku",
+   "faq": [
+    [
+     "Is 007 First Light already out?",
+     "Yes, on PS5, Xbox Series X|S and PC since 27 May 2026. Only the Switch 2 version is still to come, on 18 March 2027."
+    ],
+    [
+     "Why was 007 First Light delayed on Switch 2?",
+     "IO Interactive said it wanted more time to polish how the game runs on Switch 2. Its technical producer said it was not because of any unexpected problem."
+    ],
+    [
+     "Is 007 First Light coming to the original Switch?",
+     "No. Only a Switch 2 version has been announced."
+    ],
+    [
+     "What is the GoldenEye suit in 007 First Light?",
+     "It is a pre-order bonus for the Switch 2 version that gives you early access to a suit inspired by GoldenEye 007 on the Nintendo 64."
+    ]
+   ],
+   "seo_title": "007 First Light Switch 2 Release Date, Delays and Countdown"
   },
   {
    "slug": "lords-of-the-fallen-ii",
@@ -1268,10 +1312,56 @@
    "dev": "Square Enix",
    "genre": "Action RPG",
    "status": "window",
-   "page": false,
-   "about": "The next main Kingdom Hearts game, aiming for late 2027.",
-   "facts": [],
-   "history": []
+   "page": true,
+   "about": "The next main Kingdom Hearts game from Square Enix. It is set for late 2027 and starts a new story, the Lost Master Arc.",
+   "facts": [
+    "Square Enix gave it a late 2027 window at Disney's D23 fan event in August 2026. There is no exact day yet.",
+    "Announced for PS5, Xbox Series X|S, PC and Nintendo Switch 2.",
+    "Co-director Tai Yasue promised it will launch in 2027, calling it \"a 100 percent thing\".",
+    "Tetsuya Nomura said talk of another delay \"is not happening\".",
+    "Coco is the first Pixar world Sora will visit in the series.",
+    "The trailer showed King Mickey, Donald, Goofy and Hades, with playable King Mickey sections.",
+    "Most of the game takes place in Quadratum, a Tokyo-like city, and it opens a new story called the Lost Master Arc.",
+    "A Kingdom Hearts animated series for Disney+ and Disney Channel is also in the works, with no date yet."
+   ],
+   "history": [
+    {
+     "when": "2022",
+     "text": "Announced at the series' 20th anniversary event."
+    },
+    {
+     "when": "June 2026",
+     "text": "First new look at the game since its reveal."
+    },
+    {
+     "when": "14 Aug 2026",
+     "text": "Late 2027 window and platforms revealed at D23, with a Coco world trailer."
+    },
+    {
+     "when": "15 Aug 2026",
+     "text": "Directors said at a D23 panel that it will not slip out of 2027."
+    }
+   ],
+   "sources": "Shacknews, PC Gamer, Kotaku, Beebom",
+   "faq": [
+    [
+     "Is Kingdom Hearts 4 coming to PS4?",
+     "No. It is announced for PS5, Xbox Series X|S, PC and Switch 2 only."
+    ],
+    [
+     "Will Kingdom Hearts 4 be delayed?",
+     "Its directors said at D23 in August 2026 that it will launch in 2027. There is still no exact day, so we watch for one."
+    ],
+    [
+     "Which Disney worlds are in Kingdom Hearts 4?",
+     "Coco is the only Disney or Pixar world confirmed so far. Hades from Hercules also appears in the trailer."
+    ],
+    [
+     "Is Kingdom Hearts 4 on Xbox and Switch 2?",
+     "Yes. Xbox Series X|S and Switch 2 versions are announced alongside PS5 and PC."
+    ]
+   ],
+   "seo_title": "Kingdom Hearts 4 Release Date, Platforms and Worlds"
   },
   {
    "slug": "kirby-and-the-world-beyond",
