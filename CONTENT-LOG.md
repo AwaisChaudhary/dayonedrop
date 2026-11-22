@@ -50,3 +50,15 @@
 - New page /rpgs-2027 "Every RPG coming in 2027": quick answer, all 18 tracked RPGs grouped by month (question H2s), interactive "Which 2027 RPGs can I play?" filter (console + action vs JRPG/tactical/classic), the busiest 30-day RPG crunch (28 Jan to 25 Feb 2027, 6 RPGs), RPG count per console with console-only RPGs, FAQ JSON-LD. Built only from games.json. Targets "upcoming RPGs 2027", "RPGs coming out 2027", "2027 JRPGs", "Switch 2 RPGs 2027" (RPG Site and Wccftech both run "RPGs of 2027" features, so demand is there). Linked from footer (every page), Tools page and /after-gta-6.
 - Refreshed /after-gta-6: question-style H2s, new "Which of these can I play on my console?" breakdown per console, two new FAQs (PS5 picks, closest crime game), related pages/tools section.
 - CSS: [hidden] now always hides (used by the RPG filter).
+
+## 2026-11-22 (scheduled data check, morning)
+- Re-checked earlier "left out" games. Added 6 (board now 52):
+  - Wandering Sword (console versions): 21 Jan 2027, PS5/Xbox Series X|S/Switch 2 (PC out since 2023). Gematsu, RPG Site, VGChartz now agree on the 21st. Marked delayed (from May 2026).
+  - Fate/Extra Record: 28 Jan 2027, PS5/Switch 2/PC, no Xbox. Gematsu, VGChartz, RPG Site, PlayStation Blog.
+  - Romancing SaGa 3: Destinies United: 4 Feb 2027 (moved up from 16 Feb), PS5/Xbox/PC/Switch 2. RPG Site, RPGamer, Siliconera, Square Enix press release.
+  - Final Fantasy XIV: Evercold: 23 Feb 2027 (delayed from January 2027; early access 19 Feb). GamesRadar, Shacknews, Siliconera.
+  - Demi and the Fractured Dream: 27 Feb 2027, PS5/Xbox/PC/Switch 2. Gematsu, Essential Japan; Annapurna site says February 2027.
+  - No Rest for the Wicked (1.0 + PS5): March 2027, PS5/PC (Xbox/Switch 2 unconfirmed). Game Informer, Gematsu, Push Square.
+- Left out: Warhammer Blood Bowl (still split "early 2027" PC Gamer vs "spring 2027" God is a Geek; no Switch 2); Baptiste (no second source for a 2027 date yet); At Fate's End, The Duskbloods, Bloodstained: The Scarlet Engagement, Blighted, Outward 2, Ontos (only "2027"); BECROWNED (Q1 2027, one source checked).
+- To re-check: Spyro: A Realm Beyond. GosuGamers (citing Xbox Wire) says spring 2027, but we list mid 2027. Needs a second source before changing.
+- No date changes for tracked window games (Lords of the Fallen II, Kingdom Hearts IV, Pokémon Winds and Waves, Kirby, Xenoblade Genesis, Squadron 42, The Expanse, Hunter: The Reckoning).
