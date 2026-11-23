@@ -671,15 +671,31 @@
    ]
   },
   {
-   "page": false,
+   "page": true,
    "facts": [
-    "New expansion for Final Fantasy XIV Online.",
-    "Early access starts 19 February 2027."
+    "Release date: Tuesday 23 February 2027.",
+    "Early access starts Friday 19 February 2027 for players who pre-order.",
+    "It was first set for January 2027. Square Enix moved it back about four weeks in October 2026.",
+    "Pre-orders opened on 4 November 2026.",
+    "It comes to every platform Final Fantasy XIV is on: PS5, PS4, Xbox Series X|S, PC and Nintendo Switch 2.",
+    "The level cap rises from 100 to 110.",
+    "Two new jobs: Bastion, a tank, and Zephyr, a ranged fighter who uses a crossbow and a bird companion.",
+    "It starts a new story arc, the Godless Realms Saga, set in a new world called the Fourth.",
+    "Combat gets two modes: Reborn keeps today's job system, Evolved puts more focus on each job's identity.",
+    "An Evangelion alliance raid series, Ghosts of Desire, is planned with studio khara."
    ],
    "history": [
     {
-     "when": "Oct 2026",
-     "text": "Delayed from January 2027 to 23 February 2027"
+     "when": "24 Apr 2026",
+     "text": "Evercold revealed at Fan Festival in Anaheim for January 2027, along with the Switch 2 version of FFXIV."
+    },
+    {
+     "when": "Late Oct 2026",
+     "text": "Fan Festival in Tokyo: date moved to 23 February 2027, early access set for 19 February, Zephyr job revealed."
+    },
+    {
+     "when": "4 Nov 2026",
+     "text": "Pre-orders opened."
     }
    ],
    "window": "",
@@ -696,7 +712,31 @@
    "genre": "MMORPG expansion",
    "date": "2027-02-23",
    "month": 2,
-   "about": "Evercold is the next Final Fantasy XIV expansion, launching 23 February 2027 after a four-week delay."
+   "about": "Evercold is the next expansion for Final Fantasy XIV Online (patch 8.0). It launches 23 February 2027 after a four-week delay, with early access from 19 February.",
+   "seo_title": "FFXIV Evercold Release Date, Early Access and New Jobs",
+   "sources": "Square Enix (via Shacknews), GamesRadar, Siliconera, Gematsu, Game Informer",
+   "faq": [
+    [
+     "When does FFXIV Evercold early access start?",
+     "Friday 19 February 2027, four days before the full launch on 23 February. You need to pre-order to get it."
+    ],
+    [
+     "Was Evercold delayed?",
+     "Yes. It was announced for January 2027 and moved to 23 February 2027 in October 2026, a delay of about four weeks."
+    ],
+    [
+     "Is Evercold on PS4 and Switch 2?",
+     "Yes. It launches on every platform Final Fantasy XIV supports, including PS4 and the new Switch 2 version."
+    ],
+    [
+     "What is the level cap in Evercold?",
+     "110, up from 100 in Dawntrail."
+    ],
+    [
+     "What are the new jobs in Evercold?",
+     "Bastion, a tank, and Zephyr, a ranged job that fights with a crossbow and a bird companion."
+    ]
+   ]
   },
   {
    "slug": "atelier-karia",
@@ -1176,16 +1216,59 @@
     "PC",
     "Switch 2"
    ],
-   "dev": "",
+   "dev": "Toys for Bob",
    "genre": "Platformer",
-   "page": false,
-   "facts": [],
-   "history": [],
+   "page": true,
+   "facts": [
+    "Release window: spring 2027. There is no exact day yet.",
+    "Announced for PS5, Xbox Series X|S, PC (Steam and Xbox app) and Nintendo Switch 2.",
+    "It will be on Xbox Game Pass Ultimate and PC Game Pass on day one.",
+    "Xbox Play Anywhere: buy it once and play on Xbox and Windows PC.",
+    "Made by Toys for Bob, the studio behind Spyro Reignited Trilogy and Skylanders. Activision publishes it.",
+    "Spyro can fly freely for the first time instead of only gliding, and still charges on the ground.",
+    "Spyro is stranded in a new world, and his trip home is blocked by an invading army called the Scavs.",
+    "Tom Kenny returns as the voice of Spyro, who gets a redesign with bigger wings.",
+    "It is the first new mainline Spyro game since The Legend of Spyro: Dawn of the Dragon in 2008."
+   ],
+   "history": [
+    {
+     "when": "7 Jun 2026",
+     "text": "Revealed at the Xbox Games Showcase with a spring 2027 window."
+    },
+    {
+     "when": "Nov 2026",
+     "text": "Still set for spring 2027. No exact date, price or editions yet."
+    }
+   ],
    "date": null,
    "window": "Spring 2027",
    "month": 4,
    "status": "window",
-   "about": "A new Spyro the Dragon adventure."
+   "about": "The first brand-new Spyro the Dragon game in about 18 years, made by Toys for Bob and published by Activision. It is set for spring 2027 with full free flight.",
+   "seo_title": "Spyro: A Realm Beyond Release Date, Platforms and Game Pass",
+   "sources": "Xbox Wire, Gematsu, VGC, Pure Xbox, Wccftech",
+   "faq": [
+    [
+     "Is Spyro: A Realm Beyond on Game Pass?",
+     "Yes. It joins Xbox Game Pass Ultimate and PC Game Pass on launch day."
+    ],
+    [
+     "Is Spyro: A Realm Beyond on PS5 and Switch 2?",
+     "Yes. It is announced for PS5, Xbox Series X|S, PC and Switch 2."
+    ],
+    [
+     "Is Spyro: A Realm Beyond on Switch 1 or PS4?",
+     "No. Only PS5, Xbox Series X|S, PC and Switch 2 are announced."
+    ],
+    [
+     "Can Spyro fly in A Realm Beyond?",
+     "Yes. It is the first Spyro game with full free flight rather than gliding."
+    ],
+    [
+     "Who is making the new Spyro game?",
+     "Toys for Bob, the studio that made Spyro Reignited Trilogy, with Activision as publisher."
+    ]
+   ]
   },
   {
    "slug": "the-expanse-osiris-reborn",

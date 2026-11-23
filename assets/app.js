@@ -381,6 +381,34 @@
     drawTop();
   }
 
+  /* all games filter (games page) */
+  var giList = $("#gi-list");
+  if (giList) {
+    var giRows = $$("[data-gi]", giList), giP = "all", giS = "all", giQ = $("#gi-q");
+    var giRun = function () {
+      var q = (giQ.value || "").trim().toLowerCase(), n = 0;
+      giRows.forEach(function (r) {
+        var ok = (giP === "all" || (r.dataset.plat || "").split("|").indexOf(giP) > -1)
+          && (giS === "all" || (giS === "delayed" ? r.dataset.st === "delayed" : (giS === "dated") === (r.dataset.dated === "1")))
+          && (!q || (r.dataset.q || "").indexOf(q) > -1);
+        r.hidden = !ok; if (ok) n++;
+      });
+      $("#gi-count").textContent = n + (n === 1 ? " game" : " games");
+      $("#gi-empty").hidden = n > 0;
+    };
+    [["#gi-plat", "p"], ["#gi-st", "s"]].forEach(function (pair) {
+      $$(pair[0] + " .chip").forEach(function (b) {
+        b.addEventListener("click", function () {
+          $$(pair[0] + " .chip").forEach(function (x) { x.setAttribute("aria-pressed", "false"); });
+          b.setAttribute("aria-pressed", "true");
+          if (pair[1] === "p") giP = b.dataset.p; else giS = b.dataset.s;
+          giRun();
+        });
+      });
+    });
+    giQ.addEventListener("input", giRun);
+  }
+
   /* copy page link */
   $$("[data-copy-link]").forEach(function (b) {
     b.addEventListener("click", function () { navigator.clipboard.writeText(location.href.split("#")[0]).then(function () { toast("Link copied"); }, function () { toast("Copy blocked here"); }); });

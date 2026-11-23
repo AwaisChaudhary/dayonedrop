@@ -216,7 +216,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Release dates can change; we update this site as soon as publishers announce changes. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -362,13 +362,55 @@ page("calendar.html", "2027 Video Game Release Calendar, Month by Month | DayOne
 
 # ---------------- GAMES INDEX ----------------
 others = [g for g in GAMES if not g["page"]]
+_gi_all = sorted(GAMES, key=lambda x: (x["date"] or "9999", x["month"] or 13, x["title"]))
+_gi_dated = [g for g in GAMES if g["date"]]
+_gi_undated = [g for g in _gi_all if not g["date"]]
+_gi_delayed = [g for g in GAMES if g["status"] == "delayed"]
+_gi_pc = {p: sum(1 for g in GAMES if p in g["platforms"]) for p, _s, _l in PLAT_PAGES_FOOT}
+_gi_all4 = [g for g in GAMES if all(p in g["platforms"] for p, _s, _l in PLAT_PAGES_FOOT)]
+_gi_quick = (f"We track {len(GAMES)} games coming in 2027: {len(_gi_dated)} have an exact release date and {len(_gi_undated)} only have a season or year. "
+             f"{len(_gi_delayed)} of them were delayed at least once, and {len(_gi_all4)} are coming to all four of PS5, Xbox Series X|S, PC and Switch 2.")
+def _gi_link(g):
+    return f'<a href="{href("games/" + g["slug"] + ".html", 0)}">{e(g["title"])}</a>' if g["page"] else e(g["title"])
+def _gi_row(g):
+    nm = f'<a href="{href("games/" + g["slug"] + ".html", 0)}"><strong>{e(g["title"])}</strong></a> <span class="muted mono">· guide</span>' if g["page"] else f'<strong>{e(g["title"])}</strong>'
+    st = "delayed" if g["status"] == "delayed" else ("dated" if g["date"] else "window")
+    return (f'<div class="row" data-gi data-plat="{e("|".join(g["platforms"]))}" data-st="{st}" data-dated="{1 if g["date"] else 0}" data-q="{e((g["title"] + " " + g["genre"] + " " + (g["dev"] or "")).lower())}">'
+            f'<span>{nm}<br><span class="muted">{e(plat_text(g))} · {e(g["genre"])}</span></span><b>{e(nice_date(g))}</b></div>')
+_gi_chips = ('<div class="chips" id="gi-plat" role="group" aria-label="Filter by console"><button class="chip" type="button" data-p="all" aria-pressed="true">All consoles</button>'
+             + "".join(f'<button class="chip" type="button" data-p="{e(p)}" aria-pressed="false">{e(p)}</button>' for p, _s, _l in PLAT_PAGES_FOOT) + '</div>'
+             '<div class="chips" id="gi-st" role="group" aria-label="Filter by date status" style="margin-top:8px"><button class="chip" type="button" data-s="all" aria-pressed="true">Any date</button>'
+             '<button class="chip" type="button" data-s="dated" aria-pressed="false">Exact date</button><button class="chip" type="button" data-s="window" aria-pressed="false">No exact date</button>'
+             '<button class="chip" type="button" data-s="delayed" aria-pressed="false">Delayed</button></div>')
 gi = f'''<header class="hero"><div class="wrap"><span class="kicker">All games</span><h1>Every 2027 launch<br><span class="amber">we're tracking.</span></h1>
-<p class="lead">Full guides for the biggest games, plus every other confirmed launch.</p></div></header>
-<section><div class="wrap"><div class="grid">{"".join(pass_card(g, 0) for g in featured)}</div></div></section>
-<section><div class="wrap"><div class="sec-head"><h2>More 2027 games</h2></div><div class="out">{"".join(f'<div class="row"><span><strong>{e(g["title"])}</strong><br><span class="muted">{e(g["about"])}</span></span><b>{e(nice_date(g))}</b></div>' for g in others)}</div></div></section>'''
-page("games.html", "All 2027 Games With Release Dates | DayOneDrop",
-     "Every 2027 game we track, with release dates, platforms and status. Guides for Fable, God of War Laufey, Final Fantasy VII Revelation, Exodus and more.",
-     gi, 0, None, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html"))])
+<p class="lead">Every confirmed 2027 game in one list, with dates, consoles and full guides for the biggest ones. Filter it to see what is coming to your console.</p>
+<p class="muted" style="margin:0">Last checked {e(UPDATED)} · {len(GAMES)} games · dates confirmed by publishers or two trusted outlets</p></div></header>
+<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_gi_quick)}</span></div></div>
+<div class="sec-head"><h2>Which 2027 games are coming to my console?</h2><p class="muted">Pick a console, a date type or type a name. Results update instantly.</p></div>
+<div class="tool"><label for="gi-q" class="sr-only">Search games</label><input id="gi-q" type="search" placeholder="Search by game, genre or studio" autocomplete="off" style="margin-bottom:10px">{_gi_chips}
+<p class="muted mono" id="gi-count" aria-live="polite" style="margin:12px 0 0">{len(GAMES)} games</p>
+<div class="out" id="gi-list">{"".join(_gi_row(g) for g in _gi_all)}</div><div class="empty" id="gi-empty" hidden>No games match. Try another console or clear the search.</div></div></div></section>
+{AD.format("games-mid")}
+<section><div class="wrap"><div class="sec-head"><h2>Which 2027 games have a full guide?</h2><p class="muted">Countdowns, delay history, platforms and FAQs.</p></div><div class="grid">{"".join(pass_card(g, 0) for g in featured)}</div></div></section>
+<section><div class="wrap"><div class="sec-head"><h2>How many 2027 games are on each console?</h2></div>
+<div class="out" style="margin-bottom:28px">{"".join(f'<div class="row"><span><a href="{href("platforms/" + s + ".html", 0)}">{e(l)}</a></span><b>{_gi_pc[p]} games</b></div>' for p, s, l in PLAT_PAGES_FOOT)}<div class="row"><span>All four consoles</span><b>{len(_gi_all4)} games</b></div></div>
+<div class="sec-head"><h2>Which 2027 games still have no exact date?</h2></div>
+<div class="out" style="margin-bottom:28px">{"".join(f'<div class="row"><span>{_gi_link(g)}</span><b>{e(nice_date(g))}</b></div>' for g in _gi_undated)}</div>
+<div class="sec-head"><h2>Related pages and tools</h2></div><ul>
+<li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a>, and make your own top list</li>
+<li><a href="{href("calendar.html", 0)}">The 2027 release calendar</a> with one-tap reminders</li>
+<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: which games land the same week</li>
+<li><a href="{href("delayed-games-2027.html", 0)}">Every game delayed into 2027</a></li></ul></div></section>'''
+gi_faq = [
+    ("How many video games are coming out in 2027?", f"We track {len(GAMES)} confirmed 2027 games so far. {len(_gi_dated)} have an exact day and {len(_gi_undated)} only a season or year. The list grows as publishers announce more."),
+    ("Which 2027 games have no release date yet?", (", ".join(g["title"] for g in _gi_undated[:8]) + (", and more." if len(_gi_undated) > 8 else ".")) if _gi_undated else "Every tracked game has an exact date."),
+    ("Which console gets the most 2027 games?", (lambda m: f"{m}, with {_gi_pc[m]} of the {len(GAMES)} games we track.")(max(_gi_pc, key=lambda k: _gi_pc[k]))),
+    ("How many 2027 games have been delayed?", f"{len(_gi_delayed)} of the games on this list were delayed at least once. The delayed games page lists each one."),
+    ("Where do your release dates come from?", "From publishers' own announcements, or from at least two trusted gaming news sites when there is no publisher post."),
+]
+page("games.html", "All 2027 Games: Release Dates and Platforms List | DayOneDrop",
+     f"Every 2027 video game we track ({len(GAMES)}), with release dates, consoles and delays. Filter by PS5, Xbox, PC or Switch 2. Checked {UPDATED}."[:160],
+     gi, 0, gi_faq, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html"))])
 
 # ---------------- GAME PAGES ----------------
 GP_TRACKED_ALL = {"stranger-than-heaven", "persona-4-revival", "fable", "wo-long-2", "spyro-a-realm-beyond", "the-expanse-osiris-reborn"}
