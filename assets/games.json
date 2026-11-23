@@ -459,16 +459,68 @@
     "Xbox Series X|S",
     "PC"
    ],
-   "dev": "",
+   "dev": "Owlcat Games",
    "genre": "RPG",
-   "page": false,
-   "facts": [],
-   "history": [],
+   "page": true,
+   "facts": [
+    "Warhammer 40,000: Dark Heresy comes out on 28 January 2027 on PS5, Xbox Series X|S and PC.",
+    "On PC it will be sold on Steam, the Epic Games Store and GOG.",
+    "A Switch 2 version is confirmed for later. Owlcat has not given it a date.",
+    "Owlcat Games, the studio behind Warhammer 40,000: Rogue Trader and the Pathfinder games, is making and publishing it.",
+    "It is a party-based, story-driven CRPG with tactical turn-based combat.",
+    "You play an acolyte of the Inquisition in the Calixis Sector, investigating crimes and heresy. Your choices change how the story plays out.",
+    "Companions include humans, abhumans, psykers, a Pariah and xenos such as a Kroot. Each one helps in fights and gives advice during investigations.",
+    "A beta is running on Steam for people who bought a Founder's Pack, Developer's Digital Pack or Collector's Edition. It closes on 7 January 2027.",
+    "Price, pre-order bonuses and Game Pass status have not been announced."
+   ],
+   "history": [
+    {
+     "when": "May 2025",
+     "text": "Announced at the Warhammer Skulls 2025 showcase."
+    },
+    {
+     "when": "Dec 2025",
+     "text": "Open alpha started for Founder's Pack owners."
+    },
+    {
+     "when": "May 2026",
+     "text": "Alpha moved into beta on Steam."
+    },
+    {
+     "when": "Nov 2026",
+     "text": "Release date set for 28 January 2027 (announced 9 November), with Switch 2 to follow later."
+    }
+   ],
    "date": "2027-01-28",
    "window": "",
    "month": 1,
    "status": "dated",
-   "about": "A story-driven RPG set in the Warhammer 40,000 universe."
+   "about": "A party-based, turn-based CRPG from the makers of Rogue Trader. You start as a lowly acolyte of the Inquisition and hunt heresy across the Calixis Sector.",
+   "seo_title": "Warhammer 40K Dark Heresy Release Date, Platforms and Beta",
+   "qa_note": "A Switch 2 version is coming later, with no date yet.",
+   "sources": "Owlcat Games announcement via Gematsu and RPG Site (9 Nov 2026), Windows Central, Wccftech",
+   "faq": [
+    [
+     "Is Warhammer 40,000: Dark Heresy coming to Switch 2?",
+     "Yes, but later. Owlcat confirmed a Switch 2 version after the 28 January 2027 launch on PS5, Xbox Series X|S and PC, with no date yet."
+    ],
+    [
+     "Is Dark Heresy turn-based?",
+     "Yes. Like Rogue Trader, it is a party-based CRPG with tactical turn-based combat."
+    ],
+    [
+     "Can I play the Dark Heresy beta?",
+     "Only on Steam, and only if you bought a Founder's Pack, Developer's Digital Pack or Collector's Edition. The beta closes on 7 January 2027."
+    ],
+    [
+     "Is Dark Heresy on Game Pass or PS4?",
+     "Neither has been announced. It is confirmed for PS5, Xbox Series X|S and PC, plus Switch 2 later."
+    ],
+    [
+     "Is Dark Heresy a sequel to Rogue Trader?",
+     "No. It is a new game from the same studio, set in the Calixis Sector, where you play a member of the Inquisition instead of a Rogue Trader."
+    ]
+   ]
   },
   {
    "slug": "witchbrook",
