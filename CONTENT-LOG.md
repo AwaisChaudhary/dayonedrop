@@ -141,3 +141,6 @@
 - New guide /games/hyrule-warriors-age-of-calamity-definitive-edition: 25 Feb 2027, Switch 2 only, Nintendo Direct 9 Sep 2026, Koei Tecmo (Omega Force)/Nintendo, 60 fps, more enemies, Calamity Mode, all Expansion Pass DLC (18 → 21 fighters), GameShare, Switch 1 owner discount (separate game, not a Switch 2 Edition), UK £49.99 / £24.99 with discount (TheSixthAxis only, labelled), FAQs incl. how physical owners claim the discount. Sources: Nintendo, Gematsu, RPG Site, GamingBolt, TheSixthAxis. Left out: US price, amiibo, physical/game-key card details (none found).
 - Refreshed /delayed-games-2027 (oldest tool page, 21 Nov): quick answer leads with count and next delayed launch, new "Which delayed game launches next?" with live countdown, "Which delayed games still have no exact date?", two new computed FAQs, backlog planner link, new meta description.
 - IndexNow pending (no WebFetch in this run): /last-gen-games-2027, /games/hyrule-warriors-age-of-calamity-definitive-edition, /delayed-games-2027, /tools, /exclusives-2027
+
+## 2026-11-23 16:40 PKT (main session)
+- IndexNow FLUSHED via Chrome (same-origin fetch on api.indexnow.org, all HTTP 200): every URL previously listed as "IndexNow pending" above is now sent. Scheduled cloud runs cannot use WebFetch without approval; keep writing "IndexNow pending: <paths>" and the main session flushes them daily.
