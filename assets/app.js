@@ -462,6 +462,50 @@
     giQ.addEventListener("input", giRun);
   }
 
+
+  /* Game Awards 2026: pick your winners (saved on device, shareable ?a=&g=) */
+  var tga = $("#tga-tool");
+  if (tga) {
+    var TK = "dod-tga-2026", tOut = $("#tga-out"), tPick = store.get(TK, {}) || {};
+    var qs = new URLSearchParams(location.search);
+    if (qs.get("a") || qs.get("g")) { tPick = { a: qs.get("a") || "", g: qs.get("g") || "" }; $("#tga-shared").hidden = false; }
+    var tSet = function () {
+      ["a", "g"].forEach(function (k) {
+        $$('input[name="tga-' + k + '"]', tga).forEach(function (r) { r.checked = r.value === tPick[k]; });
+      });
+    };
+    var tText = function () {
+      return "My Game Awards 2026 picks:\nMost Anticipated Game: " + (tPick.a || "?") + "\nGame of the Year: " + (tPick.g || "?") + "\n";
+    };
+    var tUrl = function () {
+      var u = location.href.split("?")[0].split("#")[0], q = [];
+      if (tPick.a) q.push("a=" + encodeURIComponent(tPick.a));
+      if (tPick.g) q.push("g=" + encodeURIComponent(tPick.g));
+      return u + (q.length ? "?" + q.join("&") : "");
+    };
+    var tRender = function () {
+      if (!tPick.a && !tPick.g) { tOut.innerHTML = '<div class="empty">Pick a game in each category.</div>'; return; }
+      tOut.innerHTML = "";
+      [["Most Anticipated Game", tPick.a], ["Game of the Year", tPick.g]].forEach(function (r) {
+        var d = document.createElement("div"); d.className = "row";
+        var a = document.createElement("span"); a.textContent = r[0];
+        var b = document.createElement("b"); b.textContent = r[1] || "Not picked";
+        d.appendChild(a); d.appendChild(b); tOut.appendChild(d);
+      });
+    };
+    $$('input[type="radio"]', tga).forEach(function (r) {
+      r.addEventListener("change", function () {
+        tPick[r.name === "tga-a" ? "a" : "g"] = r.value;
+        store.set(TK, tPick); tRender();
+      });
+    });
+    var tCopy = function (t, m) { navigator.clipboard.writeText(t).then(function () { toast(m); }, function () { toast("Copy blocked here"); }); };
+    $("#tga-copy").addEventListener("click", function () { tCopy(tText() + tUrl(), "Picks copied"); });
+    $("#tga-link").addEventListener("click", function () { tCopy(tUrl(), "Link copied"); });
+    $("#tga-clear").addEventListener("click", function () { tPick = {}; store.set(TK, tPick); tSet(); tRender(); });
+    tSet(); tRender();
+  }
+
   /* copy page link */
   $$("[data-copy-link]").forEach(function (b) {
     b.addEventListener("click", function () { navigator.clipboard.writeText(location.href.split("#")[0]).then(function () { toast("Link copied"); }, function () { toast("Copy blocked here"); }); });

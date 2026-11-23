@@ -2005,6 +2005,65 @@
      "Nintendo has not opened pre-orders or announced a price yet. It only lists the game for 2027."
     ]
    ]
+  },
+  {
+   "slug": "resident-evil-veronica",
+   "title": "Resident Evil Veronica",
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC",
+    "Switch 2"
+   ],
+   "dev": "Capcom",
+   "genre": "Survival horror",
+   "page": true,
+   "facts": [
+    "Resident Evil Veronica is set for 2027. Capcom has not given a month or day yet.",
+    "It is a remake of Resident Evil Code: Veronica, the 2000 survival horror game. Capcom calls it a remake of the beloved classic.",
+    "It is coming to PS5, Xbox Series X|S, Nintendo Switch 2 and PC (Steam).",
+    "Capcom announced it at Summer Game Fest on 5 June 2026.",
+    "Capcom is making and publishing it, on its own RE Engine, the same engine as the Resident Evil 2, 3 and 4 remakes.",
+    "Claire Redfield is the hero again. The story starts with her raiding an Umbrella facility in Paris while searching for her brother Chris, before she ends up on Rockfort Island.",
+    "It is nominated for Most Anticipated Game at The Game Awards 2026, held on 10 December 2026.",
+    "No price, editions or pre-orders have been announced yet."
+   ],
+   "history": [
+    {
+     "when": "5 Jun 2026",
+     "text": "Announced at Summer Game Fest for 2027 on PS5, Xbox Series X|S, Switch 2 and PC."
+    },
+    {
+     "when": "17 Nov 2026",
+     "text": "Nominated for Most Anticipated Game at The Game Awards 2026."
+    }
+   ],
+   "date": null,
+   "window": "2027",
+   "month": 12,
+   "status": "window",
+   "about": "Capcom's full remake of Resident Evil Code: Veronica, with Claire Redfield back on Rockfort Island, coming to PS5, Xbox, PC and Switch 2 in 2027.",
+   "seo_title": "Resident Evil Veronica Release Date, Platforms and Remake Details",
+   "qa_note": "It is a remake of Resident Evil Code: Veronica made by Capcom on the RE Engine.",
+   "sources": "Capcom via Gematsu (5 Jun 2026), Game Informer, Siliconera; Game Awards nomination via Kotaku, ScreenRant and Nintendo",
+   "faq": [
+    [
+     "Is Resident Evil Veronica a remake of Code: Veronica?",
+     "Yes. Capcom announced it as a remake of Resident Evil Code: Veronica, with Claire Redfield as the hero."
+    ],
+    [
+     "Is Resident Evil Veronica coming to Switch 2?",
+     "Yes. Capcom confirmed Switch 2 alongside PS5, Xbox Series X|S and PC."
+    ],
+    [
+     "Is Resident Evil Veronica on PS4 or Xbox One?",
+     "No. Only PS5, Xbox Series X|S, Switch 2 and PC have been announced."
+    ],
+    [
+     "Can I pre-order Resident Evil Veronica?",
+     "Not yet. Capcom has only said 2027 and has not announced a price or editions."
+    ]
+   ]
   }
  ]
 }
