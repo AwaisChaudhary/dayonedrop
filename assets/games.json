@@ -99,6 +99,9 @@
      "Is there a Danganronpa 2x2 Japan release date?",
      "Not on our list yet. The 14 January 2027 date is for North America and Europe."
     ]
+   ],
+   "lastgen": [
+    "Switch"
    ]
   },
   {
@@ -132,6 +135,10 @@
      "when": "Sep 2026",
      "text": "Release date set for 14 January 2027."
     }
+   ],
+   "lastgen": [
+    "PS4",
+    "Switch"
    ]
   },
   {
@@ -269,7 +276,8 @@
    "page": false,
    "facts": [
     "Pixel-art wuxia RPG that first came out on PC in 2023.",
-    "Console versions launch together on 21 January 2027."
+    "Console versions launch together on 21 January 2027.",
+    "An original Switch (Switch 1) version launches the same day."
    ],
    "history": [
     {
@@ -290,7 +298,10 @@
    "genre": "RPG",
    "date": "2027-01-21",
    "month": 1,
-   "about": "Wandering Sword, the 2023 PC wuxia RPG, arrives on PS5, Xbox Series X|S and Switch 2 on 21 January 2027."
+   "about": "Wandering Sword, the 2023 PC wuxia RPG, arrives on PS5, Xbox Series X|S and Switch 2 on 21 January 2027.",
+   "lastgen": [
+    "Switch"
+   ]
   },
   {
    "slug": "forza-horizon-6",
@@ -459,7 +470,8 @@
    "page": false,
    "facts": [
     "Full remake of the 2010 PSP RPG Fate/Extra.",
-    "No Xbox version has been announced."
+    "No Xbox version has been announced.",
+    "Also coming to PS4 and the original Switch on the same day."
    ],
    "history": [],
    "window": "",
@@ -475,7 +487,11 @@
    "genre": "JRPG",
    "date": "2027-01-28",
    "month": 1,
-   "about": "Fate/Extra Record, the long-awaited remake of Fate/Extra, launches on 28 January 2027 on PS5, Switch 2 and PC."
+   "about": "Fate/Extra Record, the long-awaited remake of Fate/Extra, launches on 28 January 2027 on PS5, Switch 2 and PC.",
+   "lastgen": [
+    "PS4",
+    "Switch"
+   ]
   },
   {
    "slug": "elta-defy-all-gods",
@@ -564,7 +580,10 @@
    "window": "",
    "month": 2,
    "status": "dated",
-   "about": "A 2D action RPG with hand-drawn art and sword combat."
+   "about": "A 2D action RPG with hand-drawn art and sword combat.",
+   "lastgen": [
+    "Switch"
+   ]
   },
   {
    "page": false,
@@ -592,7 +611,10 @@
    "genre": "JRPG",
    "date": "2027-02-04",
    "month": 2,
-   "about": "Romancing SaGa 3: Destinies United is Square Enix's full remake of the SNES-era classic, out 4 February 2027."
+   "about": "Romancing SaGa 3: Destinies United is Square Enix's full remake of the SNES-era classic, out 4 February 2027.",
+   "lastgen": [
+    "Switch"
+   ]
   },
   {
    "slug": "tomb-raider-legacy-of-atlantis",
@@ -639,7 +661,10 @@
    "window": "",
    "month": 2,
    "status": "dated",
-   "about": "Card game game launching in early 2027."
+   "about": "Card game game launching in early 2027.",
+   "lastgen": [
+    "Switch"
+   ]
   },
   {
    "slug": "persona-4-revival",
@@ -769,6 +794,9 @@
      "What are the new jobs in Evercold?",
      "Bastion, a tank, and Zephyr, a ranged job that fights with a crossbow and a bird companion."
     ]
+   ],
+   "lastgen": [
+    "PS4"
    ]
   },
   {
@@ -797,16 +825,59 @@
    "platforms": [
     "Switch 2"
    ],
-   "dev": "",
+   "dev": "Koei Tecmo (Omega Force) / Nintendo",
    "genre": "Action",
-   "page": false,
-   "facts": [],
-   "history": [],
+   "page": true,
+   "facts": [
+    "Launches 25 February 2027, only on Nintendo Switch 2.",
+    "Announced at the Nintendo Direct on 9 September 2026; pre-orders opened the same day.",
+    "Made by Koei Tecmo (Omega Force) and published by Nintendo.",
+    "Runs at 60 frames per second with a higher resolution and more enemies on screen than the Switch 1 game.",
+    "New Calamity Mode: tougher, more numerous enemies and much weaker healing items.",
+    "Includes all Expansion Pass content, taking the playable cast from 18 to 21 fighters.",
+    "GameShare: one copy lets a friend join split-screen on one console, on a second console nearby, or online through GameChat.",
+    "Switch 1 owners can buy the Switch 2 version at a discount on the eShop and carry their save data over. It is a separate game, not a Switch 2 Edition upgrade pack.",
+    "UK price: £49.99, or £24.99 with the Switch 1 owner discount (TheSixthAxis). No US price was given in the sources we checked."
+   ],
+   "history": [
+    {
+     "when": "20 Nov 2020",
+     "text": "Original Hyrule Warriors: Age of Calamity launched on Switch."
+    },
+    {
+     "when": "9 Sep 2026",
+     "text": "Definitive Edition announced for Switch 2 with a 25 February 2027 date."
+    }
+   ],
    "date": "2027-02-25",
    "window": "",
    "month": 2,
    "status": "dated",
-   "about": "An expanded Switch 2 edition of the Zelda action game."
+   "about": "A Switch 2 version of the 2020 Zelda musou game, set 100 years before Breath of the Wild. It adds 60 fps, more enemies on screen, a harder Calamity Mode and all the Expansion Pass DLC.",
+   "sources": "Nintendo, Gematsu, RPG Site, GamingBolt, TheSixthAxis",
+   "seo_title": "Hyrule Warriors: Age of Calamity Definitive Edition Release Date",
+   "faq": [
+    [
+     "Is Hyrule Warriors: Age of Calamity Definitive Edition a free upgrade?",
+     "No. It is a separate Switch 2 game. If you own the Switch 1 version you get a discount on the digital Switch 2 version through the eShop, and your save carries over."
+    ],
+    [
+     "How do I get the Switch 1 owner discount with a physical copy?",
+     "Nintendo says to insert the game card into a Switch 2, update the game, start it and choose Proceed to Nintendo eShop from the main menu. You need an internet connection. Digital owners get the discount on their Nintendo Account automatically."
+    ],
+    [
+     "Does the Definitive Edition include the DLC?",
+     "Yes. All Expansion Pass content is included, so there are 21 playable fighters instead of 18."
+    ],
+    [
+     "Is it on the original Switch?",
+     "No. The Definitive Edition is only for Switch 2. The original 2020 game stays on Switch 1."
+    ],
+    [
+     "Does it run at 60 fps?",
+     "Yes. Nintendo and the press coverage say it runs at 60 fps on Switch 2 with more enemies on screen."
+    ]
+   ]
   },
   {
    "page": false,
@@ -833,7 +904,10 @@
    "genre": "Action adventure",
    "date": "2027-02-27",
    "month": 2,
-   "about": "Demi and the Fractured Dream is an action adventure from Yarn Owl, now set for 27 February 2027."
+   "about": "Demi and the Fractured Dream is an action adventure from Yarn Owl, now set for 27 February 2027.",
+   "lastgen": [
+    "Switch"
+   ]
   },
   {
    "slug": "eternal-anima",
@@ -873,7 +947,10 @@
    "page": false,
    "about": "The next co-op puzzle adventure in the Trine series.",
    "facts": [],
-   "history": []
+   "history": [],
+   "lastgen": [
+    "Switch"
+   ]
   },
   {
    "slug": "wo-long-2",
@@ -1108,6 +1185,9 @@
      "when": "Oct 2026",
      "text": "Release date set for 18 March 2027."
     }
+   ],
+   "lastgen": [
+    "Switch"
    ]
   },
   {
@@ -1305,7 +1385,7 @@
    "facts": [
     "New entry in the Melty Blood 2D fighting series.",
     "Published by Aniplex.",
-    "Out on 22 April 2027 on PS5, Switch 2 and PC (also PS4, Xbox One and Switch)."
+    "Out on 22 April 2027 on PS5, Switch 2 and PC (also PS4 and Switch)."
    ],
    "history": [
     {
@@ -1316,6 +1396,10 @@
      "when": "Sep 2026",
      "text": "Release date set for 22 April 2027."
     }
+   ],
+   "lastgen": [
+    "PS4",
+    "Switch"
    ]
   },
   {
@@ -1399,6 +1483,44 @@
      "Toys for Bob, the studio that made Spyro Reignited Trilogy, with Activision as publisher."
     ]
    ]
+  },
+  {
+   "slug": "mega-man-dual-override",
+   "title": "Mega Man: Dual Override",
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC",
+    "Switch 2"
+   ],
+   "lastgen": [
+    "PS4",
+    "Xbox One",
+    "Switch"
+   ],
+   "dev": "Capcom",
+   "genre": "Action platformer",
+   "page": false,
+   "facts": [
+    "A new mainline Mega Man game from Capcom, announced at The Game Awards 2025.",
+    "Coming to PS5, Xbox Series X|S, Switch 2 and PC, and also to PS4, Xbox One and the original Switch.",
+    "Set for spring 2027; no exact date yet."
+   ],
+   "history": [
+    {
+     "when": "Dec 2025",
+     "text": "Announced at The Game Awards for 2027."
+    },
+    {
+     "when": "Sep 2026",
+     "text": "Window narrowed to spring 2027."
+    }
+   ],
+   "date": null,
+   "window": "Spring 2027",
+   "month": 4,
+   "status": "window",
+   "about": "Capcom's new Mega Man action platformer, out in spring 2027 on new and last-gen consoles."
   },
   {
    "slug": "the-expanse-osiris-reborn",

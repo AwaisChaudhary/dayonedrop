@@ -277,6 +277,34 @@
     drawMiss();
   }
 
+  /* last-gen 2027: do I need to upgrade? */
+  var lt = $("#lg-tool");
+  if (lt) {
+    var lchips = $$("[data-lg]", lt), lout = $("#lg-out");
+    var lesc = function (t) { return String(t).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+    var lwhen = function (g) { if (!g.date) return g.window || "TBC"; var p = g.date.split("-"); return +p[2] + " " + ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"][+p[1] - 1]; };
+    var lsort = function (a, b) { return (a.month - b.month) || String(a.date || "9999").localeCompare(String(b.date || "9999")); };
+    var drawLg = function (chip) {
+      lchips.forEach(function (c) { c.setAttribute("aria-pressed", c === chip ? "true" : "false"); });
+      if (!chip) { lout.innerHTML = '<div class="empty">Tap the console you have.</div>'; return; }
+      var k = chip.getAttribute("data-lg"), nw = chip.getAttribute("data-new"), nm = chip.getAttribute("data-name");
+      store.set("dod-lg", k);
+      var all = G.filter(function (g) { return g.platforms && g.platforms.length; }).sort(lsort);
+      var can = all.filter(function (g) { return (g.lastgen || []).indexOf(k) > -1; });
+      var miss = all.filter(function (g) { return (g.lastgen || []).indexOf(k) < 0; });
+      var onNew = miss.filter(function (g) { return g.platforms.indexOf(nw) > -1; }).length;
+      var html = '<div class="row"><span><strong>' + can.length + " of " + all.length + " tracked 2027 games come to " + lesc(nm) + "</strong></span><b>" + miss.length + " missed</b></div>";
+      html += '<div class="row"><span>Upgrading to <strong>' + lesc(nw) + "</strong> adds</span><b>+" + onNew + " games</b></div>";
+      html += can.map(function (g) { return '<div class="row"><span>' + lesc(g.title) + ' <span class="muted">also on ' + lesc(g.platforms.join(", ")) + "</span></span><b>" + lesc(lwhen(g)) + "</b></div>"; }).join("");
+      var big = miss.filter(function (g) { return g.page; }).slice(0, 8);
+      if (big.length) html += '<div class="row hot"><span>You would miss: ' + lesc(big.map(function (g) { return g.title; }).join(", ")) + (miss.length > big.length ? " and more" : "") + "</span><b>" + miss.length + "</b></div>";
+      lout.innerHTML = html;
+    };
+    lchips.forEach(function (c) { c.addEventListener("click", function () { drawLg(c); }); });
+    var lsaved = store.get("dod-lg", "");
+    drawLg(lchips.filter(function (c) { return c.getAttribute("data-lg") === lsaved; })[0] || null);
+  }
+
   /* RPGs 2027: console + style filter */
   var rt = $("#rpg-tool");
   if (rt) {

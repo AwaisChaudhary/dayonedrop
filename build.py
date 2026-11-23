@@ -216,7 +216,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Release dates can change; we update this site as soon as publishers announce changes. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -788,7 +788,8 @@ excl_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Exclu
              f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
              f'<li><a href="{href("tools.html", 0)}">What is coming to my console</a> and your launch list</li>'
              f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: which games land the same week</li>'
-             f'<li><a href="{href("delayed-games-2027.html", 0)}">Games delayed to 2027</a></li></ul></div></section>')
+             f'<li><a href="{href("delayed-games-2027.html", 0)}">Games delayed to 2027</a></li>'
+             f'<li><a href="{href("last-gen-games-2027.html", 0)}">2027 games still coming to PS4, Xbox One and Switch 1</a></li></ul></div></section>')
 _cnt = {p: sum(1 for g in GAMES if p in g["platforms"]) for p in PLATS}
 excl_faq = [
     ("What are the PS5 exclusives of 2027?", (", ".join(f"{g['title']} ({nice_date(g)})" for g in _ex["PS5"]) + " are only announced for PS5.") if _ex["PS5"] else "None on our board right now."),
@@ -950,6 +951,69 @@ page("backlog-planner-2027.html", "2027 Backlog Planner: Finish Games Before the
      bl_body, 0, bl_faq, crumbs=[("Home", DOMAIN + "/"), ("Tools", canon("tools.html")), ("Backlog planner 2027", canon("backlog-planner-2027.html"))])
 
 
+# ---------------- LAST-GEN: 2027 GAMES ON PS4, XBOX ONE AND SWITCH 1 (23 Nov 2026) ----------------
+# games.json "lastgen" = last-gen versions confirmed by the publisher or 2+ trusted outlets (checked 23 Nov 2026:
+# Gematsu, RPG Site, Siliconera, Nintendo Everything, Nintendo Life, Game Informer, Push Square, official stores).
+# Left out: Melty Blood Xbox One (Gematsu lists it, Shacknews does not), Grave Seasons Switch 1 (wording unclear).
+LG_PLATS = [("PS4", "PS4", "PS5"), ("Xbox One", "Xbox One", "Xbox Series X|S"), ("Switch", "Switch 1", "Switch 2")]
+_lgk = lambda g: (g["month"], g["date"] or "9999")
+_lg = sorted([g for g in GAMES if g.get("lastgen")], key=_lgk)
+_lg_on = {k: [g for g in _lg if k in g["lastgen"]] for k, _, _ in LG_PLATS}
+_lg_big_miss = [g for g in sorted(GAMES, key=_lgk) if g["slug"] in BIG_WHY_SLUGS and not g.get("lastgen")]
+def _lgrow(g):
+    old = ", ".join(n for k, n, _ in LG_PLATS if k in g.get("lastgen", []))
+    return (f'<div class="row"><span><strong>{_gname(g)}</strong><br><span class="muted">{e(g.get("about") or "")}</span>'
+            f'<br><span class="muted">Old consoles: {e(old)} · New: {e(", ".join(g["platforms"]))}</span></span><b>{e(nice_date(g))}</b></div>')
+_lg_quick = (f"{len(_lg)} of the {len(GAMES)} games of 2027 we track are also coming to a last-gen console: "
+             + ", ".join(f"{len(_lg_on[k])} on {n}" for k, n, _ in LG_PLATS[:-1]) + f" and {len(_lg_on[LG_PLATS[-1][0]])} on {LG_PLATS[-1][1]}"
+             + ". Most are smaller RPGs, remakes and ports. The biggest 2027 games, such as "
+             + ", ".join(g["title"] for g in _lg_big_miss[:2]) + f" and {_lg_big_miss[2]['title']}, are not coming to PS4, Xbox One or Switch 1.")
+_lg_secs = ""
+for k, n, new in LG_PLATS:
+    rows = "".join(_lgrow(g) for g in _lg_on[k]) or f'<div class="row"><span>No 2027 games on our board are confirmed for {e(n)}.</span><b>0</b></div>'
+    _lg_secs += (f'<div class="sec-head"><h2>Which 2027 games are coming to {e(n)}?</h2><span class="muted">{len(_lg_on[k])}</span></div>'
+                 f'<div class="out" style="margin-bottom:28px">{rows}</div>')
+_lg_tbl = "".join(f'<tr><td class="t">{_gname(g)}</td>' + "".join(f'<td class="p">{"✓" if k in g["lastgen"] else "-"}</td>' for k, _, _ in LG_PLATS)
+                  + f'<td class="d"><span>{e(short_date(g))}</span></td></tr>' for g in _lg)
+_lg_matrix = (f'<div class="board"><div class="board-top"><span class="board-title">LAST-GEN · 2027</span></div><div class="board-scroll"><table class="dep">'
+              f'<thead><tr><th>Game</th>' + "".join(f'<th>{e(n)}</th>' for _, n, _ in LG_PLATS) + '<th>Date</th></tr></thead><tbody>' + _lg_tbl + '</tbody></table></div></div>')
+_lg_chips = "".join(f'<button class="chip" type="button" data-lg="{e(k)}" data-new="{e(new)}" data-name="{e(n)}" aria-pressed="false">{e(n)}</button>' for k, n, new in LG_PLATS)
+lg_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Old consoles</span>'
+           f'<h1>2027 games on PS4, Xbox One<br><span class="amber">and the original Switch.</span></h1>'
+           f'<p class="lead">Still on a PS4, Xbox One or Switch 1? Here is every 2027 game confirmed for your console, the big ones you will miss, '
+           f'and a quick check of whether it is time to upgrade.</p>'
+           f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · only versions confirmed by the publisher or two trusted outlets</p></div></header>'
+           f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_lg_quick)}</span></div></div>'
+           f'<div class="tool" id="lg-tool"><h2 style="font-size:1.5rem;margin-top:0">Do I need to upgrade for 2027?</h2>'
+           f'<p class="muted">Tap the old console you have. We show the 2027 games you can still play on it, the tracked games you would miss, and how many of those the newer console in the same family gets.</p>'
+           f'<div class="chips" role="group" aria-label="Your console" style="margin-bottom:12px">{_lg_chips}</div>'
+           f'<div class="out" id="lg-out" aria-live="polite"></div></div></div></section>' + AD.format("lastgen-mid") +
+           f'<section><div class="wrap">{_lg_secs}'
+           f'<div class="sec-head"><h2>Which big 2027 games are not coming to old consoles?</h2><span class="muted">{len(_lg_big_miss)}</span></div>'
+           f'<div class="out" style="margin-bottom:28px">' + "".join(f'<div class="row"><span>{_gname(g)}<br><span class="muted">{e(", ".join(g["platforms"]))}</span></span><b>{e(nice_date(g))}</b></div>' for g in _lg_big_miss) + '</div>'
+           f'<div class="sec-head"><h2>Can I play the old version on a new console?</h2></div>'
+           f'<p>Usually, yes. PS5 plays almost all PS4 games, Xbox Series X|S plays Xbox One games, and Switch 2 plays most Switch 1 games. '
+           f'So buying a last-gen version is not wasted if you upgrade later. But a free upgrade to the new-console version is not automatic: some publishers give one, some sell a discounted upgrade, and some ask you to buy again. '
+           f'Check the store page before you buy.</p>'
+           f'<p class="muted">Example: Hyrule Warriors: Age of Calamity owners on Switch 1 get a discount on the separate Switch 2 Definitive Edition rather than a free upgrade. See the <a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", 0)}">guide</a>.</p>'
+           f'<div class="sec-head"><h2>Every 2027 last-gen version at a glance</h2></div>{_lg_matrix}'
+           f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+           f'<li><a href="{href("exclusives-2027.html", 0)}">2027 console exclusives</a> and which games your new consoles will miss</li>'
+           f'<li><a href="{href("platforms/switch-2.html", 0)}">Every Switch 2 game coming in 2027</a> and <a href="{href("platforms/ps5.html", 0)}">every PS5 game</a></li>'
+           f'<li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a></li></ul></div></section>')
+lg_faq = [
+    ("Which 2027 games are coming to PS4?", (", ".join(f"{g['title']} ({nice_date(g)})" for g in _lg_on["PS4"]) + ".") if _lg_on["PS4"] else "None on our board."),
+    ("Are any 2027 games coming to the original Switch?", f"Yes, {len(_lg_on['Switch'])} on our board, including " + ", ".join(g["title"] for g in _lg_on["Switch"][:6]) + "."),
+    ("Are any 2027 games coming to Xbox One?", (", ".join(g["title"] for g in _lg_on["Xbox One"]) + " is confirmed for Xbox One. Almost every other 2027 game is Xbox Series X|S only.") if _lg_on["Xbox One"] else "None confirmed on our board."),
+    ("Is GTA 6 on PS4 or Xbox One?", "No. Rockstar has only announced GTA 6 for PS5 and Xbox Series X|S."),
+    ("Is Pokémon Winds and Waves on Switch 1?", "No. It is only announced for Switch 2."),
+    ("Is Final Fantasy XIV Evercold on PS4?", "Yes. The Evercold expansion comes to every platform Final Fantasy XIV is on, PS4 included."),
+]
+page("last-gen-games-2027.html", f"2027 Games on PS4, Xbox One and Switch 1: Full List ({len(_lg)}) | DayOneDrop"[:90],
+     f"Every 2027 game confirmed for PS4, Xbox One or the original Switch, the big games old consoles miss, and an upgrade checker. Checked {UPDATED}."[:160],
+     lg_body, 0, lg_faq, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html")), ("Last-gen games 2027", canon("last-gen-games-2027.html"))])
+
+
 # ---------------- TOOLS ----------------
 plat_links0 = " · ".join(f'<a href="{href("platforms/" + s2 + ".html", 0)}">{e(l2)} games</a>' for p2, s2, l2 in PLAT_PAGES)
 _busy_m = max(range(1, 13), key=lambda m: sum(1 for g in GAMES if g["month"] == m))
@@ -981,6 +1045,7 @@ tools = f'''<header class="hero"><div class="wrap"><span class="kicker">Tools</s
 <li><a href="{href("rpgs-2027.html", 0)}">Every RPG coming in 2027</a> with a console filter</li>
 <li><a href="{href("game-pass-2027.html", 0)}">Every 2027 game on Xbox Game Pass</a>, with a Game Pass or buy checker</li>
 <li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a>, with a shareable top list maker</li>
+<li><a href="{href("last-gen-games-2027.html", 0)}">2027 games on PS4, Xbox One and Switch 1</a>, with a do-I-need-to-upgrade check</li>
 <li><a href="{href("after-gta-6.html", 0)}">What to play after GTA 6</a></li></ul></div></section>'''
 sw2 = [g["title"] for g in GAMES if "Switch 2" in g["platforms"]]
 both = [g["title"] for g in GAMES if "PS5" in g["platforms"] and "Xbox Series X|S" in g["platforms"]]
@@ -1064,25 +1129,40 @@ for _g in _delayed:
 _dl_top = max(_dl_m.items(), key=lambda kv: len(kv[1])) if _dl_m else None
 _dl_month_txt = (f"{MONTHS[_dl_top[0] - 1]} 2027, with {len(_dl_top[1])} delayed games now landing there: " + ", ".join(g["title"] for g in _dl_top[1]) + ". "
                  "Many games that missed late 2026 moved into the first months of 2027.") if _dl_top else "No delayed games right now."
+_dl_today = datetime.date.fromisoformat(UPDATED)
+_dl_dated = [g for g in _delayed if g["date"] and datetime.date.fromisoformat(g["date"]) >= _dl_today]
+_dl_loose = [g for g in _delayed if not g["date"]]
+_dl_next = _dl_dated[0] if _dl_dated else None
+_dl_next_html = ((f'<div class="sec-head"><h2>Which delayed game launches next?</h2></div>'
+                  f'<div class="out" style="margin-bottom:12px">{_drow(_dl_next)}</div>'
+                  f'<div class="cdw" style="margin-bottom:28px"><span class="lbl">Countdown to {e(_dl_next["title"])}</span><div class="cd" data-countdown="{_dl_next["date"]}">'
+                  '<div class="cd-unit"><span class="flaps" data-u="0"></span><span>Days</span></div><div class="cd-unit"><span class="flaps" data-u="1"></span><span>Hrs</span></div>'
+                  '<div class="cd-unit"><span class="flaps" data-u="2"></span><span>Min</span></div><div class="cd-unit"><span class="flaps" data-u="3"></span><span>Sec</span></div></div></div>') if _dl_next else "")
+_dl_loose_html = ((f'<div class="sec-head"><h2>Which delayed games still have no exact date?</h2><span class="muted">{len(_dl_loose)}</span></div>'
+                   f'<p class="muted">These were pushed back to a window, not a day. A window is the most likely place for another slip, so we check them on every data run.</p>'
+                   f'<div class="out" style="margin-bottom:28px">{"".join(_drow(g) for g in _dl_loose)}</div>') if _dl_loose else "")
 delays_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Delay tracker</span>'
                f'<h1>Games delayed to 2027<br><span class="amber">{len(_delayed)} on our board.</span></h1>'
                f'<p class="lead">Every tracked game that has slipped into 2027 or moved to a later date, with its new date and what changed. We add each delay as soon as the publisher or two trusted outlets confirm it.</p>'
                f'<p class="muted" style="margin:0">Last checked {e(UPDATED)}</p></div></header>'
-               f'<section><div class="wrap"><div class="out" style="margin-bottom:12px"><div class="row"><span><strong>Quick answer:</strong> '
+               f'<section><div class="wrap"><div class="out" style="margin-bottom:12px"><div class="row"><span><strong>Quick answer:</strong> {len(_delayed)} games on our 2027 board have been delayed' + (f", and {_dl_next['title']} ({nice_date(_dl_next)}) is the next to launch" if _dl_next else "") + '. The full list: '
                + (", ".join(f"{g['title']} (now {nice_date(g)})" for g in _delayed) if _delayed else "no tracked games are delayed right now") +
                f'.</span></div></div><div class="sec-head"><h2>Which games have been delayed to 2027?</h2><span class="muted">{len(_delayed)}</span></div>'
                f'<div class="out" style="margin-bottom:28px">{"".join(_drow(g) for g in _delayed)}</div>'
                f'<div class="sec-head"><h2>Which delayed games are on my console?</h2></div><div class="out" style="margin-bottom:28px">'
                + "".join(f'<div class="row"><span><a href="{href("platforms/" + s2 + ".html", 0)}">{e(l2)}</a><br><span class="muted">{e(", ".join(g["title"] for g in _delayed if p2 in g["platforms"]) or "None right now")}</span></span>'
                          f'<b>{sum(1 for g in _delayed if p2 in g["platforms"])} delayed</b></div>' for p2, s2, l2 in PLAT_PAGES_FOOT) +
-               f'</div><div class="sec-head"><h2>Which month do most delayed games land in?</h2></div>'
+               f'</div>' + _dl_next_html + _dl_loose_html + f'<div class="sec-head"><h2>Which month do most delayed games land in?</h2></div>'
                f'<p>{e(_dl_month_txt)}</p>'
                f'<p class="muted">Want a heads-up before launch? Star games on the <a href="{href("index.html", 0)}#board">departures board</a> for countdowns.</p>'
                f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
                f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: did a delay push two of your games into the same week?</li>'
                f'<li><a href="{href("calendar.html", 0)}">2027 release calendar</a></li>'
+               f'<li><a href="{href("backlog-planner-2027.html", 0)}">2027 backlog planner</a>: use the extra time a delay gives you</li>'
                f'<li><a href="{href("game-pass-2027.html", 0)}">Every 2027 game on Xbox Game Pass</a></li></ul></div></section>')
 delays_faq = [
+    ("Which delayed game comes out next?", f"{_dl_next['title']}, on {nice_date(_dl_next)}." if _dl_next else "None of the delayed games we track has an upcoming exact date."),
+    ("Which delayed games still have no release date?", (", ".join(f"{g['title']} ({nice_date(g)})" for g in _dl_loose) + ".") if _dl_loose else "All delayed games we track have an exact date now."),
     ("Which games were delayed to 2027?", ("On our board: " + ", ".join(g["title"] for g in _delayed) + ".") if _delayed else "None of the games we track right now."),
     ("Is God of War Laufey delayed?", "Yes. It was planned for February 2027 and is now dated 20 May 2027 on PS5.") if any(g["slug"] == "god-of-war-laufey" for g in _delayed) else ("How do you track delays?", "We only mark a delay when the publisher or two trusted outlets confirm the new date."),
     ("How do you check delays?", "We only mark a game as delayed when the publisher or at least two trusted gaming news sites confirm the new date or window."),
@@ -1090,7 +1170,7 @@ delays_faq = [
     ("Is 007 First Light delayed on Switch 2?", "Yes. The Switch 2 version of 007 First Light is now dated 18 March 2027.") if "007-first-light" in {g["slug"] for g in _delayed} else ("Can a delayed game move again?", "Yes. We update the date as soon as a new one is confirmed."),
 ]
 page("delayed-games-2027.html", f"Games Delayed to 2027: Every Delay and New Date ({len(_delayed)}) | DayOneDrop"[:90],
-     f"Every game delayed into 2027 or pushed later, with the new release date, what changed and which consoles. Checked {UPDATED}."[:160],
+     f"Every game delayed into 2027 or pushed later: the new date, what changed, which delayed game is next and which still have no date. Checked {UPDATED}."[:160],
      delays_body, 0, delays_faq, crumbs=[("Home", DOMAIN + "/"), ("Delayed games 2027", canon("delayed-games-2027.html"))])
 
 
@@ -1273,7 +1353,7 @@ page("404.html", "Page not found | DayOneDrop", "This page has moved or doesn't 
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "after-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "after-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "last-gen-games-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)
