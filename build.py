@@ -216,7 +216,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Release dates can change; we update this site as soon as publishers announce changes. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -459,7 +459,7 @@ PORTS = {"forza-horizon-6": "Already out on Xbox Series X|S and PC since May 202
 for g in featured:
     f = "games/" + g["slug"] + ".html"
     if not g["date"]:
-        same_month = [x for x in GAMES if not x["date"] and x["slug"] != g["slug"]]
+        same_month = sorted([x for x in GAMES if not x["date"] and x["slug"] != g["slug"]], key=lambda x: x["month"])
         also_h = "What other 2027 games have no exact date yet?"
     else:
         same_month = [x for x in GAMES if x["month"] == g["month"] and x["slug"] != g["slug"]]
@@ -805,13 +805,39 @@ _miss_tool = (f'<div class="tool" id="miss-tool"><h2 style="font-size:1.5rem;mar
               f'<p class="muted">Tap the consoles you own. We show how many of the {len(GAMES)} tracked 2027 games you can play, the ones you would miss, and which extra console would add the most.</p>'
               f'<div class="chips" role="group" aria-label="Consoles you own" style="margin-bottom:12px">{_chips}</div>'
               f'<div class="out" id="miss-out" aria-live="polite"></div></div>')
+# Refresh 24 Nov 2026: next exclusive countdown, per-console counts, undated exclusives, guides.
+_ex_all = sorted([g for p in PLATS for g in _ex[p]], key=lambda x: (x["date"] or "9999", x["month"]))
+_ex_dated = [g for g in _ex_all if g["date"] and g["date"] >= UPDATED]
+_ex_undated = [g for g in _ex_all if not g["date"]]
+_ex_guides = [g for g in _ex_all if g["page"]]
+_ex_next = _ex_dated[0] if _ex_dated else None
+_ex_next_html = ""
+if _ex_next:
+    _ex_next_html = (f'<div class="sec-head"><h2>Which 2027 exclusive comes out next?</h2><span class="muted">{e(_lab[_ex_next["platforms"][0]])} only</span></div>'
+        f'<div class="tool" style="margin-bottom:28px"><p style="margin-top:0"><strong>{_gname(_ex_next)}</strong> launches {e(nice_date(_ex_next))} on {e(_lab[_ex_next["platforms"][0]])} only.</p>'
+        f'<div class="cdw"><span class="lbl">Countdown to launch</span><div class="cd" data-countdown="{_ex_next["date"]}">'
+        '<div class="cd-unit"><span class="flaps" data-u="0"></span><span>Days</span></div><div class="cd-unit"><span class="flaps" data-u="1"></span><span>Hrs</span></div>'
+        '<div class="cd-unit"><span class="flaps" data-u="2"></span><span>Min</span></div><div class="cd-unit"><span class="flaps" data-u="3"></span><span>Sec</span></div></div></div>'
+        + ('<p class="muted" style="margin-bottom:0">After that: ' + ", ".join(f'{_gname(g)} ({e(short_date(g))}, {e(_lab[g["platforms"][0]])})' for g in _ex_dated[1:4]) + '.</p>' if len(_ex_dated) > 1 else '')
+        + '</div>')
+_ex_next_html += ('<div class="sec-head"><h2>How many exclusives does each console get in 2027?</h2></div><div class="out" style="margin-bottom:28px">'
+    + "".join(f'<div class="row"><span><a href="{href("platforms/" + _pslug[p] + ".html", 0)}">{e(_lab[p])}</a>: {len([g for g in _ex[p] if g["date"]])} dated, {len([g for g in _ex[p] if not g["date"]])} with no exact date</span><b>{len(_ex[p])}</b></div>' for p in PLATS)
+    + '</div>')
+if _ex_undated:
+    _ex_next_html += (f'<div class="sec-head"><h2>Which 2027 exclusives have no release date yet?</h2><span class="muted">{len(_ex_undated)}</span></div>'
+        '<div class="out" style="margin-bottom:28px">' + "".join(_xrow(g, f'{_lab[g["platforms"][0]]} only. {g.get("about") or ""}') for g in _ex_undated) + '</div>')
+if _ex_guides:
+    _ex_next_html += ('<div class="sec-head"><h2>Which exclusives have a full release guide?</h2></div><ul style="margin-bottom:28px">'
+        + "".join(f'<li>{_gname(g)}: {e(nice_date(g))}, {e(_lab[g["platforms"][0]])} only</li>' for g in _ex_guides) + '</ul>')
+if _ex_next:
+    _ex_quick += f" The next exclusive to launch is {_ex_next['title']} on {nice_date(_ex_next)}."
 excl_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Exclusives</span>'
              f'<h1>2027 console exclusives:<br><span class="amber">which games are only on one console?</span></h1>'
              f'<p class="lead">Every confirmed 2027 game that is only coming to PS5, Xbox, PC or Switch 2, the ports that are not really exclusives, and a checker for the games your consoles will miss.</p>'
              f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · based on announced platforms, which can still change</p></div></header>'
              f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_ex_quick)}</span></div></div>'
              f'{_miss_tool}</div></section>' + AD.format("excl-mid") +
-             f'<section><div class="wrap">{_xsec}'
+             f'<section><div class="wrap">{_ex_next_html}{_xsec}'
              f'<div class="sec-head"><h2>Which "exclusives" are really late ports?</h2><span class="muted">{len(_ports)}</span></div>'
              f'<p class="muted">These show up on only one console in 2027, but they are already out elsewhere.</p>'
              f'<div class="out" style="margin-bottom:28px">{"".join(_xrow(g, PORTS[g["slug"]]) for g in _ports)}</div>'
@@ -819,18 +845,22 @@ excl_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Exclu
              + "".join(f'<div class="row"><span><a href="{href("platforms/" + _pslug[p] + ".html", 0)}">{e(_lab[p])}</a> misses: {e(", ".join(g["title"] for g in _skip[p][:8]))}{" and more" if len(_skip[p]) > 8 else ""}</span><b>{len(_skip[p])} games</b></div>' for p in PLATS) +
              f'</div><div class="sec-head"><h2>Which 2027 games are on every console?</h2><span class="muted">{len(_all4)}</span></div>'
              f'<p>{e(", ".join(g["title"] for g in _all4))}.</p>'
-             f'<div class="sec-head"><h2>Every 2027 game by console</h2></div>{_matrix}'
+             f'<div class="sec-head"><h2>Which consoles is every 2027 game on?</h2></div>{_matrix}'
              f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
              f'<li><a href="{href("tools.html", 0)}">What is coming to my console</a> and your launch list</li>'
              f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: which games land the same week</li>'
              f'<li><a href="{href("delayed-games-2027.html", 0)}">Games delayed to 2027</a></li>'
-             f'<li><a href="{href("last-gen-games-2027.html", 0)}">2027 games still coming to PS4, Xbox One and Switch 1</a></li></ul></div></section>')
+             f'<li><a href="{href("last-gen-games-2027.html", 0)}">2027 games still coming to PS4, Xbox One and Switch 1</a></li>'
+             f'<li><a href="{href("platforms/switch-2.html", 0)}">Every Switch 2 game coming in 2027</a></li>'
+             f'<li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a></li></ul></div></section>')
 _cnt = {p: sum(1 for g in GAMES if p in g["platforms"]) for p in PLATS}
 excl_faq = [
     ("What are the PS5 exclusives of 2027?", (", ".join(f"{g['title']} ({nice_date(g)})" for g in _ex["PS5"]) + " are only announced for PS5.") if _ex["PS5"] else "None on our board right now."),
     ("Are there any Xbox exclusives in 2027?", ("Not on our board. " if not _ex["Xbox Series X|S"] else ", ".join(g["title"] for g in _ex["Xbox Series X|S"]) + ". ") + "Fable launches on Xbox Series X|S, PS5 and PC on 23 February 2027, and on Game Pass the same day."),
     ("What are the Switch 2 exclusives of 2027?", (", ".join(f"{g['title']} ({nice_date(g)})" for g in _ex["Switch 2"]) + ".") if _ex["Switch 2"] else "None on our board right now."),
     ("Is Forza Horizon 6 a PS5 exclusive?", "No. Forza Horizon 6 came out on Xbox Series X|S and PC in May 2026. The PS5 version launches 26 January 2027."),
+    ("Which 2027 exclusive comes out first?", (f"{_ex_next['title']} on {nice_date(_ex_next)}, only on {_lab[_ex_next['platforms'][0]]}." if _ex_next else "None with a date right now.")),
+    ("Which 2027 exclusives have no exact release date?", (", ".join(f"{g['title']} ({nice_date(g)}, {_lab[g['platforms'][0]]})" for g in _ex_undated) + ".") if _ex_undated else "Every exclusive on our board has a date."),
     ("Which console gets the most 2027 games?", "On our board: " + ", ".join(f"{_lab[p]} {_cnt[p]}" for p in sorted(PLATS, key=lambda q: -_cnt[q])) + "."),
 ]
 page("exclusives-2027.html", "2027 Console Exclusives: PS5, Xbox, Switch 2, PC | DayOneDrop",

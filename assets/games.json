@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "games": [
   {
    "slug": "armatus",
@@ -1861,16 +1861,52 @@
    "platforms": [
     "Switch 2"
    ],
-   "dev": "",
-   "genre": "Platformer",
-   "page": false,
-   "facts": [],
-   "history": [],
+   "dev": "HAL Laboratory / Nintendo",
+   "genre": "3D platformer",
+   "page": true,
+   "facts": [
+    "Kirby and the World Beyond is set for spring 2027. Nintendo has not given an exact day yet.",
+    "It is only announced for Nintendo Switch 2. No version for the original Switch has been announced.",
+    "Nintendo revealed it as the final announcement of the Nintendo Direct on 9 September 2026.",
+    "It is the second full 3D Kirby game, after Kirby and the Forgotten Land (Switch, 2022).",
+    "Nintendo describes it as free exploration of a large world. You can roam open areas instead of only following set levels.",
+    "Copy Abilities are back and are used to get around: bomb jumps, climbing trees with a sword and racing across fields are all shown.",
+    "The story: rescue a girl with mysterious powers from King Dedede. In the trailer Kirby cuts through the sky to reveal a new land behind a wall.",
+    "It arrives in the year of Kirby's 35th anniversary (the first game came out in 1992).",
+    "HAL Laboratory, the studio behind every main Kirby game, is listed as developer. Nintendo publishes it."
+   ],
+   "history": [
+    {
+     "when": "9 Sep 2026",
+     "text": "Revealed at the end of the Nintendo Direct for spring 2027 on Switch 2."
+    }
+   ],
    "date": null,
-   "window": "2027",
-   "month": 12,
+   "window": "Spring 2027",
+   "month": 4,
    "status": "window",
-   "about": "A new Kirby adventure for Switch 2."
+   "about": "The second full 3D Kirby adventure after Kirby and the Forgotten Land, with free exploration of a large world, coming to Switch 2 in spring 2027.",
+   "seo_title": "Kirby and the World Beyond Release Date, Switch 2 and Story",
+   "qa_note": "It is only announced for Switch 2, not the original Switch.",
+   "sources": "Nintendo via Gematsu (9 Sep 2026), Nintendo Life, VGC, GamesRadar, Game Informer",
+   "faq": [
+    [
+     "Is Kirby and the World Beyond on the original Switch?",
+     "No. It is only announced for Nintendo Switch 2."
+    ],
+    [
+     "Is Kirby and the World Beyond open world?",
+     "Nintendo calls it free exploration of a large world, so you can roam big open areas. It has not used the words \"open world\", and how open it is will be clearer closer to launch."
+    ],
+    [
+     "Is it a sequel to Kirby and the Forgotten Land?",
+     "It is a new game, not a direct sequel. It is the second full 3D Kirby adventure after Forgotten Land."
+    ],
+    [
+     "How much will Kirby and the World Beyond cost?",
+     "Nintendo has not announced a price yet. We add it here as soon as it is official."
+    ]
+   ]
   },
   {
    "slug": "pokemon-winds-and-waves",
@@ -1923,16 +1959,52 @@
    "platforms": [
     "Switch 2"
    ],
-   "dev": "",
+   "dev": "Monolith Soft / Nintendo",
    "genre": "RPG",
-   "page": false,
-   "facts": [],
-   "history": [],
+   "page": true,
+   "facts": [
+    "Xenoblade Genesis is set for 2027. Nintendo has not given a month or day yet.",
+    "It is a Nintendo Switch 2 exclusive. Nintendo's own store page calls it that.",
+    "Nintendo announced it at the Nintendo Direct on 9 June 2026.",
+    "Monolith Soft, the studio behind every Xenoblade Chronicles game, is making it. Nintendo publishes it.",
+    "Nintendo calls it \"a new beginning\" for the Xenoblade series. No link to the characters or worlds of Xenoblade 1, 2 or 3 has been announced.",
+    "Its world revolves around Anima, a force that warriors called Vesselai can use. Battles in its history were decided by Anima and the Vesselai.",
+    "Vesselai train at an academy called Leukos and use a Crystone, set into weapons such as swords, to boost their powers.",
+    "Switch 2 Editions of Xenoblade Chronicles 1, 2 and 3 were announced on the same day, so you can catch up on Switch 2 first.",
+    "No price, editions or pre-orders have been announced yet."
+   ],
+   "history": [
+    {
+     "when": "9 Jun 2026",
+     "text": "Announced at the Nintendo Direct for 2027, Switch 2 only."
+    }
+   ],
    "date": null,
    "window": "2027",
    "month": 12,
    "status": "window",
-   "about": "A new Xenoblade role-playing game for Switch 2."
+   "about": "A new beginning for the Xenoblade series from Monolith Soft, set in a brand-new world, coming only to Switch 2 in 2027.",
+   "seo_title": "Xenoblade Genesis Release Date, Switch 2 and Story Details",
+   "qa_note": "It is a Switch 2 exclusive and starts a new story, so you do not need to have played the earlier games.",
+   "sources": "Nintendo (official store page), Gematsu (9 Jun 2026), RPG Site, Game Informer, Siliconera",
+   "faq": [
+    [
+     "Is Xenoblade Genesis a Switch 2 exclusive?",
+     "Yes. It is only coming to Nintendo Switch 2, and Nintendo's store lists it as a Switch 2 exclusive."
+    ],
+    [
+     "Do I need to play the other Xenoblade games first?",
+     "Nintendo calls it a new beginning for the series and no story link to Xenoblade 1, 2 or 3 has been announced, so it should work as a starting point."
+    ],
+    [
+     "Who is making Xenoblade Genesis?",
+     "Monolith Soft, the Nintendo-owned studio behind the Xenoblade Chronicles games."
+    ],
+    [
+     "Can I pre-order Xenoblade Genesis?",
+     "Nintendo has not opened pre-orders or announced a price yet. It only lists the game for 2027."
+    ]
+   ]
   }
  ]
 }
