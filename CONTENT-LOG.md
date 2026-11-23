@@ -1,5 +1,7 @@
 > **DEMAND QUEUE (24 Nov, Awais: "make these Hot Property... look what customers are searching and add that")**: BEFORE any other work, every run builds the top OPEN item in DEMAND.md (real Google autocomplete searches with no dedicated page yet), then marks it DONE with the URL. One focused page per real search question beats a paragraph inside a big page. Facts rules unchanged (2+ sources). The daily 06:40 demand radar refreshes DEMAND.md.
 
+**24 Nov 02:20 PKT (main session): NEW /games-like-gta-6** (demand radar #1: 'games like gta 6' + ps5/pc/android/roblox/better than). 11 console/PC picks, phone picks (GTA Trilogy on Netflix Games, Bully), Roblox (Jailbreak, Emergency Hamburg, Southwest Florida), 2027 link-out. Sources: Red Bull, Beebom, Green Man Gaming, Gaming.net, Sportskeeda, Pro Game Guides. Linked from footer + /after-gta-6; NeonCoast links in. IndexNow pending: /games-like-gta-6, /after-gta-6
+
 # DayOneDrop content log
 
 ## 2026-11-18 (launch)
