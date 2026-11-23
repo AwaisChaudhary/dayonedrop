@@ -149,3 +149,12 @@
 - New guide /games/titan-quest-ii (title "Titan Quest 2 Release Date, Price and PS5/Xbox Launch"): 1.0 on 19 Jan 2027 leaving Early Access (PC since 1 Aug 2025), PS5/Xbox Series X|S same day, Steam + Epic, Grimlore Games/THQ Nordic, price $49.99/€49.99 PC and $59.99/€59.99 consoles, masteries + Rituals, pre-order bonuses teased; FAQs. Sources: THQ Nordic via Gematsu, RPG Site, Famitsu, PSU, VGChartz. Left out: Japanese PS5 date ("later", Famitsu only), specific 1.0 content (not announced). Targets "titan quest 2 release date", "titan quest 2 ps5", "titan quest 2 price".
 - Refreshed /rpgs-2027: new "Which 2027 RPGs have been delayed?", "Which are on Xbox Game Pass?", "Which are on PS4 or Switch 1?" sections, three matching computed FAQs, related links to genre page, backlog planner, Game Pass and last-gen pages.
 - IndexNow pending (no WebFetch in this run): /games-by-genre-2027, /games/titan-quest-ii, /rpgs-2027, /tools
+
+## 2026-11-23 (scheduled data check, evening)
+- Checked: "delayed to 2027" news, 2027 date announcements (Gematsu, VGChartz, Time Extension), earlier "left out" list, every window game (Lords of the Fallen II, No Rest for the Wicked, Becrowned, The Expanse: Osiris Reborn, Hunter: The Reckoning – Deathwish, Squadron 42). All unchanged.
+- Added 2 (board now 61):
+  - Spyder: Agent 8: 11 Feb 2027, PS5/Xbox Series X|S/PC/Switch 2 (also Switch), PQube. Publisher announcement via Gematsu (Oct 2026), Switch 2 listing on Nintendo eShop, PQube news page.
+  - Psikyo Memories: 18 Feb 2027, PS5/Switch 2, Edia. Gematsu, Time Extension, Vandal, Final Weapon.
+- Left out: Warhammer Blood Bowl (still "early 2027" vs "spring 2027"); Bloodstained: The Scarlet Engagement, The Duskbloods, Blighted, Ontos (only "2027"); Mr. Magpie's Harmless Card Game (Gematsu says "early 2027", 18 Feb only on small sites); My Arms Are Longer Now (11 Mar 2027 on VGChartz only); Seeker Eye (Japan-only date); Acts of Blood (single source).
+- No date changes for tracked games.
+- IndexNow pending (no WebFetch in this run): /calendar, /games, /months/february-2027

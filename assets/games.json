@@ -655,6 +655,42 @@
    ]
   },
   {
+   "slug": "spyder-agent-8",
+   "title": "Spyder: Agent 8",
+   "date": "2027-02-11",
+   "window": "",
+   "month": 2,
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC",
+    "Switch 2"
+   ],
+   "dev": "PQube (publisher)",
+   "genre": "Stealth adventure",
+   "status": "dated",
+   "page": false,
+   "about": "A retro-futuristic stealth and puzzle adventure published by PQube, out on 11 February 2027.",
+   "facts": [
+    "Retro-futuristic stealth adventure with puzzles.",
+    "Published by PQube.",
+    "Out on 11 February 2027 on PS5, Xbox Series X|S, Switch 2 and PC (also Switch)."
+   ],
+   "history": [
+    {
+     "when": "Jun 2026",
+     "text": "Announced for PS5, Xbox Series X|S, Switch and PC."
+    },
+    {
+     "when": "Oct 2026",
+     "text": "Switch 2 version added; release date set for 11 February 2027."
+    }
+   ],
+   "lastgen": [
+    "Switch"
+   ]
+  },
+  {
    "slug": "tomb-raider-legacy-of-atlantis",
    "title": "Tomb Raider: Legacy of Atlantis",
    "date": "2027-02-12",
@@ -735,6 +771,37 @@
     {
      "when": "Sep 2026",
      "text": "Switch 2 version announced for 20 May 2027."
+    }
+   ]
+  },
+  {
+   "slug": "psikyo-memories",
+   "title": "Psikyo Memories",
+   "date": "2027-02-18",
+   "window": "",
+   "month": 2,
+   "platforms": [
+    "PS5",
+    "Switch 2"
+   ],
+   "dev": "Edia",
+   "genre": "Shoot 'em up collection",
+   "status": "dated",
+   "page": false,
+   "about": "A collection of classic Psikyo arcade shoot 'em ups from Edia, out on 18 February 2027.",
+   "facts": [
+    "Collection of classic Psikyo arcade shoot 'em ups.",
+    "Announced by Edia at Tokyo Game Show 2026.",
+    "Out on 18 February 2027 on PS5 and Switch 2, with physical editions."
+   ],
+   "history": [
+    {
+     "when": "Sep 2026",
+     "text": "Announced for PS5 and Switch 2."
+    },
+    {
+     "when": "Oct 2026",
+     "text": "Release date set for 18 February 2027."
     }
    ]
   },
