@@ -120,3 +120,15 @@
 - Both linked from footer (every page), board/games grid and related lists; dev for Spyro filled in (Toys for Bob).
 - Refreshed /games (All games, oldest page without a quick answer): new title/description, Quick answer (counts computed), Last checked, new interactive filter (console chips, exact date / no date / delayed, search by game, genre or studio; app.js), every game in one date-sorted list with platforms and genre, "How many 2027 games are on each console?", "Which 2027 games still have no exact date?", related pages, FAQ JSON-LD (5 computed FAQs; page had none).
 - IndexNow pending (no WebFetch in this run): /games/final-fantasy-xiv-evercold, /games/spyro-a-realm-beyond, /games
+
+## 2026-11-23 (scheduled data check, morning)
+- Checked: Game Informer 2027 and Shacknews 2027 calendars (GameSpot page failed to load), "delayed to 2027" news, earlier "left out" list, window games.
+- Added 4 (board now 58):
+  - Terranigma: 14 Jan 2027, PS5/Xbox Series X|S/PC/Switch 2 (also PS4/Switch). Gematsu, RPG Site, Siliconera, VGChartz, Game Informer.
+  - The Apothecary Diaries: The False Imperial Brother: 18 Mar 2027, PS5/PC/Switch 2 (also Switch), Koei Tecmo. Game Informer, Nintendo Everything, Inven Global, Final Weapon.
+  - Baptiste: 25 Mar 2027 (delayed from fall 2026), PS5/Xbox Series X|S/Switch 2/PC. Developer/publisher announcement (Digital Dreams, Firenut Games) reported by Gematsu 20 Nov 2026.
+  - Melty Blood: Twi-Lumina: 22 Apr 2027, PS5/PC/Switch 2 (also PS4/Xbox One/Switch), Aniplex. Gematsu, Automaton, Game Informer, Shacknews.
+- Verified: Fate/Extra Record Switch 2 version confirmed (Gematsu, RPG Site, VGChartz), kept. Persona 4 Revival Switch 2 still 20 May 2027 (already in facts). Lords of the Fallen II still Q1 2027.
+- Left out: Warhammer Blood Bowl (still "early 2027" PC Gamer/Wargamer/games.gg vs "spring 2027" God is a Geek; no exact month); Pokémon Winds and Waves delay from Nov 2026 (rumour only, already listed as 2027); Forge of the Fae (March 2027 on Gematsu, but Game Informer lists it TBA, PC only); Caladrius 2/Dark Element 27 Jan 2027 (one headline only); The Duskbloods (still only "2027"); smaller PC/indie titles only on one calendar (Calx, Lelu, Usual June, Prison of Husks, Everything is Crab, Mr Magpie's Harmless Card Game, The Road of Dust and Sorrow, My Arms Are Longer Now, Super Battle Golf, Trainwatch, ReVamp, Pony Island 2) — re-check later. ReVamp date differs (25 vs 27 Mar).
+- No date changes for tracked games.
+- IndexNow pending (no WebFetch in this run): /calendar, /games, /months/january-2027, /months/march-2027, /months/april-2027

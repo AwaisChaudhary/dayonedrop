@@ -102,6 +102,39 @@
    ]
   },
   {
+   "slug": "terranigma",
+   "title": "Terranigma",
+   "date": "2027-01-14",
+   "window": "",
+   "month": 1,
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC",
+    "Switch 2"
+   ],
+   "dev": "Square Enix",
+   "genre": "RPG",
+   "status": "dated",
+   "page": false,
+   "about": "The 1995 Super Nintendo action RPG returns on modern consoles and PC on 14 January 2027, its first official release in North America.",
+   "facts": [
+    "Action RPG first released on the Super Famicom/SNES in 1995.",
+    "Out on 14 January 2027 on PS5, Xbox Series X|S, Switch 2 and PC (also PS4 and Switch).",
+    "Physical editions were announced alongside the date."
+   ],
+   "history": [
+    {
+     "when": "Aug 2026",
+     "text": "Announced for modern platforms for early 2027."
+    },
+    {
+     "when": "Sep 2026",
+     "text": "Release date set for 14 January 2027."
+    }
+   ]
+  },
+  {
    "slug": "ananta",
    "title": "Ananta",
    "platforms": [
@@ -1046,6 +1079,71 @@
    "seo_title": "007 First Light Switch 2 Release Date, Delays and Countdown"
   },
   {
+   "slug": "the-apothecary-diaries-the-false-imperial-brother",
+   "title": "The Apothecary Diaries: The False Imperial Brother",
+   "date": "2027-03-18",
+   "window": "",
+   "month": 3,
+   "platforms": [
+    "PS5",
+    "PC",
+    "Switch 2"
+   ],
+   "dev": "Koei Tecmo",
+   "genre": "Adventure",
+   "status": "dated",
+   "page": false,
+   "about": "The first console game based on The Apothecary Diaries light novels: an original mystery story with Maomao, out on 18 March 2027.",
+   "facts": [
+    "Based on The Apothecary Diaries light novels and anime.",
+    "Original story supervised by the series author.",
+    "Out on 18 March 2027 on PS5, Switch 2 and PC (also Switch)."
+   ],
+   "history": [
+    {
+     "when": "Sep 2026",
+     "text": "Announced for early 2027."
+    },
+    {
+     "when": "Oct 2026",
+     "text": "Release date set for 18 March 2027."
+    }
+   ]
+  },
+  {
+   "slug": "baptiste",
+   "title": "Baptiste",
+   "date": "2027-03-25",
+   "window": "",
+   "month": 3,
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC",
+    "Switch 2"
+   ],
+   "dev": "Digital Dreams, Firenut Games",
+   "genre": "Horror",
+   "status": "delayed",
+   "page": false,
+   "about": "A psychological horror game seen through the eyes of a child, haunted by a cursed doll. It moved from fall 2026 to 25 March 2027.",
+   "facts": [
+    "Psychological horror played from a child's point of view.",
+    "Coming to PS5, Xbox Series X|S, Switch 2 and PC (Steam).",
+    "Release date is 25 March 2027, after a delay from fall 2026."
+   ],
+   "history": [
+    {
+     "when": "Aug 2026",
+     "text": "Set for fall 2026 on PS5, Xbox Series X|S, Switch 2 and PC."
+    },
+    {
+     "when": "Nov 2026",
+     "text": "Delayed from fall 2026 to 25 March 2027."
+    }
+   ]
+  },
+  {
    "slug": "lords-of-the-fallen-ii",
    "title": "Lords of the Fallen II",
    "platforms": [
@@ -1185,6 +1283,38 @@
     {
      "when": "2026",
      "text": "Release date set for 8 April 2027."
+    }
+   ]
+  },
+  {
+   "slug": "melty-blood-twi-lumina",
+   "title": "Melty Blood: Twi-Lumina",
+   "date": "2027-04-22",
+   "window": "",
+   "month": 4,
+   "platforms": [
+    "PS5",
+    "PC",
+    "Switch 2"
+   ],
+   "dev": "French-Bread, Type-Moon (Aniplex)",
+   "genre": "Fighting",
+   "status": "dated",
+   "page": false,
+   "about": "A new 2D fighter in the Melty Blood series from Aniplex, out on 22 April 2027.",
+   "facts": [
+    "New entry in the Melty Blood 2D fighting series.",
+    "Published by Aniplex.",
+    "Out on 22 April 2027 on PS5, Switch 2 and PC (also PS4, Xbox One and Switch)."
+   ],
+   "history": [
+    {
+     "when": "May 2026",
+     "text": "Announced for early 2027."
+    },
+    {
+     "when": "Sep 2026",
+     "text": "Release date set for 22 April 2027."
     }
    ]
   },
