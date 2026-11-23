@@ -216,7 +216,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Release dates can change; we update this site as soon as publishers announce changes. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -843,6 +843,9 @@ _rchips = ('<div class="chips" role="group" aria-label="Console" style="margin-b
            '<button class="chip" type="button" data-rpg-s="other" aria-pressed="false">JRPG, tactical and classic RPGs</button></div>')
 _rpg_switch = _rpg_cnt["Switch 2"]
 _rpg_only = {p: [g for g in _rpg if g["platforms"] == [p]] for p in PLATS}
+_rpg_del = [g for g in _rpg if g["status"] == "delayed"]
+_rpg_gp = [g for g in _rpg if g["slug"] in GP_TRACKED_ALL]
+_rpg_lg = [g for g in _rpg if g.get("lastgen")]
 rpg_body = (f'<header class="hero"><div class="wrap"><span class="kicker">RPGs</span>'
             f'<h1>Every RPG coming in 2027:<br><span class="amber">{len(_rpg)} games, dates and consoles.</span></h1>'
             f'<p class="lead">2027 is packed with role-playing games: Persona 4 Revival, Fable, Final Fantasy VII Revelation, Exodus, Kingdom Hearts IV and more. Here is every one we track, in release order, with a filter for your console.</p>'
@@ -866,7 +869,16 @@ rpg_body = (f'<header class="hero"><div class="wrap"><span class="kicker">RPGs</
             f'<p><strong>Action RPGs ({len(_rpg_action)}):</strong> {e(", ".join(g["title"] for g in _rpg_action))}.</p>'
             f'<p><strong>JRPG, tactical and classic RPGs ({len(_rpg_other)}):</strong> {e(", ".join(g["title"] for g in _rpg_other))}.</p>'
             f'<p class="muted">Genre labels follow how each game is announced. Star the ones you want on the <a href="{href("index.html", 0)}#board">departures board</a> to get countdowns.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Which 2027 RPGs have been delayed?</h2><span class="muted">{len(_rpg_del)}</span></div>'
+            f'<div class="out" style="margin-bottom:28px">' + ("".join(f'<div class="row"><span>{_gname(g)}</span><b>{e(nice_date(g))}</b></div>' for g in _rpg_del) or '<div class="empty">No delayed RPGs.</div>') + '</div>'
+            f'<div class="sec-head"><h2>Which 2027 RPGs are on Xbox Game Pass?</h2><span class="muted">{len(_rpg_gp)}</span></div>'
+            f'<div class="out" style="margin-bottom:28px">' + ("".join(f'<div class="row"><span>{_gname(g)}</span><b>{e(nice_date(g))}</b></div>' for g in _rpg_gp) or '<div class="empty">None announced yet.</div>') + '</div>'
+            f'<div class="sec-head"><h2>Which 2027 RPGs are on PS4 or Switch 1?</h2><span class="muted">{len(_rpg_lg)}</span></div>'
+            f'<div class="out" style="margin-bottom:28px">' + ("".join(f'<div class="row"><span>{_gname(g)}<br><span class="muted">Also on {e(", ".join("Switch 1" if x == "Switch" else x for x in g["lastgen"]))}</span></span><b>{e(nice_date(g))}</b></div>' for g in _rpg_lg) or '<div class="empty">None confirmed.</div>') + '</div>'
             f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+            f'<li><a href="{href("games-by-genre-2027.html", 0)}">2027 games by genre</a>: horror, shooters, platformers and more</li>'
+            f'<li><a href="{href("backlog-planner-2027.html", 0)}">2027 backlog planner</a>: can you finish one RPG before the next?</li>'
+            f'<li><a href="{href("game-pass-2027.html", 0)}">Every 2027 Game Pass game</a> and <a href="{href("last-gen-games-2027.html", 0)}">2027 games on PS4 and Switch 1</a></li>'
             f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: check if your RPGs land the same week</li>'
             f'<li><a href="{href("exclusives-2027.html", 0)}">2027 console exclusives</a> and which games your consoles will miss</li>'
             f'<li><a href="{href("after-gta-6.html", 0)}">What to play after GTA 6</a></li></ul></div></section>')
@@ -877,11 +889,95 @@ rpg_faq = [
     ("When is the busiest month for RPGs in 2027?", f"The busiest stretch is {_dm(_rb_start)} to {_dm(_rb_end)} 2027, with {_rb_n} RPGs in 30 days."),
     ("Which 2027 RPGs are coming to Switch 2?", f"{len(_rpg_switch)} so far: " + ", ".join(g["title"] for g in _rpg_switch) + "."),
 ]
+rpg_faq += [
+    ("Which 2027 RPGs have been delayed?", (f"{len(_rpg_del)}: " + ", ".join(f"{g['title']} (now {nice_date(g)})" for g in _rpg_del) + ".") if _rpg_del else "None so far."),
+    ("Which 2027 RPGs are on Xbox Game Pass?", (", ".join(g["title"] for g in _rpg_gp) + ".") if _rpg_gp else "None announced yet."),
+    ("Which 2027 RPGs can I play on PS4 or the original Switch?", (", ".join(g["title"] + " (" + ", ".join("Switch 1" if x == "Switch" else x for x in g["lastgen"]) + ")" for g in _rpg_lg) + ".") if _rpg_lg else "None confirmed yet."),
+]
 if _ff:
     rpg_faq.append(("When does Final Fantasy VII Revelation come out?", f"{nice_date(_ff)}, on {', '.join(_ff['platforms'])}."))
 page("rpgs-2027.html", f"Every RPG Coming in 2027: Dates and Consoles ({len(_rpg)} Games) | DayOneDrop"[:90],
      f"All {len(_rpg)} RPGs releasing in 2027, in date order: Persona 4 Revival, Fable, Final Fantasy VII Revelation and more, with a console filter. Checked {UPDATED}."[:160],
      rpg_body, 0, rpg_faq, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html")), ("RPGs 2027", canon("rpgs-2027.html"))])
+
+
+# ---------------- 2027 GAMES BY GENRE (23 Nov 2026) ----------------
+# Groups every tracked game by its announced genre label (games.json "genre"). First matching group wins.
+GENRE_GROUPS = [
+    ("horror", "Horror", "horror games", lambda s: "horror" in s),
+    ("shooter", "Shooters", "shooters", lambda s: "shooter" in s),
+    ("rpg", "RPGs", "RPGs", lambda s: "rpg" in s),
+    ("platformer", "Platformers and Metroidvanias", "platformers", lambda s: "platformer" in s or "metroidvania" in s),
+    ("action", "Action and adventure", "action and adventure games", lambda s: s in ("action", "action adventure", "adventure", "mystery adventure")),
+    ("sim", "Sims, strategy and racing", "sims, strategy and racing games", lambda s: any(k in s for k in ("sim", "builder", "racing", "strategy"))),
+    ("other", "Fighting, card and other games", "fighting, card and other games", lambda s: True),
+]
+def _genre_key(g):
+    s = (g.get("genre") or "").lower()
+    for k, _, _, f in GENRE_GROUPS:
+        if f(s):
+            return k
+    return "other"
+_gsort = lambda x: (x["month"], x["date"] or "9999")
+_gen = {k: sorted([g for g in GAMES if _genre_key(g) == k], key=_gsort) for k, _, _, _ in GENRE_GROUPS}
+_gen = {k: v for k, v in _gen.items() if v}
+_gen_meta = {k: (n, low) for k, n, low, _ in GENRE_GROUPS}
+_gen_rank = sorted(_gen, key=lambda k: -len(_gen[k]))
+def _gen_first(k):
+    d = [g for g in _gen[k] if g["date"]]
+    return d[0] if d else None
+_gen_quick = (f"We track {len(GAMES)} games for 2027. The biggest genre is {_gen_meta[_gen_rank[0]][1]} ({len(_gen[_gen_rank[0]])}), then "
+              + ", ".join(f"{_gen_meta[k][1]} ({len(_gen[k])})" for k in _gen_rank[1:4]) + ".")
+if "horror" in _gen:
+    _gen_quick += f" There are {len(_gen['horror'])} horror games, starting with {_gen_first('horror')['title']} on {nice_date(_gen_first('horror'))}." if _gen_first("horror") else ""
+def _genrow(g):
+    return (f'<div class="row" data-genre="{_genre_key(g)}" data-plat="{e("|".join(g["platforms"]))}"><span><strong>{_gname(g)}</strong>'
+            f'<br><span class="muted">{e(g["genre"])} · {e(", ".join(g["platforms"]) or "Platforms TBC")}</span></span><b>{e(nice_date(g))}</b></div>')
+_gen_secs = ""
+for _k in _gen:
+    _n, _low = _gen_meta[_k]
+    _f = _gen_first(_k)
+    _lead = f'The first is {_gname(_f)} on {e(nice_date(_f))}.' if _f else "None has an exact date yet."
+    _extra = f' See <a href="{href("rpgs-2027.html", 0)}">every RPG of 2027</a> for the full RPG guide.' if _k == "rpg" else ""
+    _gen_secs += (f'<div class="gen-sec" data-gsec="{_k}"><div class="sec-head"><h2 id="{_k}">What {e(_low)} come out in 2027?</h2><span class="muted">{len(_gen[_k])}</span></div>'
+                  f'<p class="muted">{_lead}{_extra}</p><div class="out" style="margin-bottom:26px">{"".join(_genrow(g) for g in _gen[_k])}</div></div>')
+_gchips = ('<div class="chips" role="group" aria-label="Genre" style="margin-bottom:10px"><button class="chip" type="button" data-gen-g="" aria-pressed="true">All genres</button>'
+           + "".join(f'<button class="chip" type="button" data-gen-g="{k}" aria-pressed="false">{e(_gen_meta[k][0])}</button>' for k in _gen) + '</div>'
+           '<div class="chips" role="group" aria-label="Console"><button class="chip" type="button" data-gen-p="" aria-pressed="true">All consoles</button>'
+           + "".join(f'<button class="chip" type="button" data-gen-p="{e(p)}" aria-pressed="false">{e(p)}</button>' for p in PLATS) + '</div>')
+_gen_tbl = ('<div style="overflow-x:auto"><table class="gen-table" style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr><th style="text-align:left;padding:6px">Genre</th>'
+            + "".join(f'<th style="padding:6px">{e(p)}</th>' for p in PLATS) + '</tr></thead><tbody>'
+            + "".join(f'<tr><td style="padding:6px;border-top:1px solid var(--rule)"><a href="#{k}">{e(_gen_meta[k][0])}</a></td>'
+                      + "".join(f'<td style="padding:6px;text-align:center;border-top:1px solid var(--rule)" class="mono">{sum(1 for g in _gen[k] if p in g["platforms"])}</td>' for p in PLATS) + '</tr>' for k in _gen)
+            + '</tbody></table></div>')
+_gen_top = {p: max(_gen, key=lambda k: sum(1 for g in _gen[k] if p in g["platforms"])) for p in PLATS}
+gen_body = (f'<header class="hero"><div class="wrap"><span class="kicker">By genre</span>'
+            f'<h1>2027 games by genre:<br><span class="amber">horror, shooters, RPGs and more.</span></h1>'
+            f'<p class="lead">Looking for a scary game, a new shooter or a platformer to play in 2027? Every game we track, sorted by genre, in release order, with a filter for your console.</p>'
+            f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · {len(GAMES)} games · dates confirmed by publishers or two trusted outlets</p></div></header>'
+            f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_gen_quick)}</span></div></div>'
+            f'<div class="tool" id="gen-tool"><h2 style="font-size:1.5rem;margin-top:0">Which 2027 games match what I like?</h2>'
+            f'<p class="muted">Tap a genre and your console. The lists below update as you tap, and your choice is remembered on this device.</p>{_gchips}'
+            f'<p class="mono amber" id="gen-count" aria-live="polite" style="margin:12px 0 0">{len(GAMES)} games</p></div></div></section>'
+            + AD.format("genre-mid") +
+            f'<section><div class="wrap" id="gen-list">{_gen_secs}<p class="empty" id="gen-none" hidden>No tracked 2027 games match that yet. Try another console or genre.</p></div></section>'
+            f'<section><div class="wrap"><div class="sec-head"><h2>Which genre has the most 2027 games on my console?</h2></div>'
+            f'<p class="muted">Number of tracked 2027 games in each genre, per console.</p>{_gen_tbl}'
+            f'<ul style="margin-top:16px">' + "".join(f'<li><a href="{href("platforms/" + _pslug[p] + ".html", 0)}">{e(_lab[p])}</a>: most games are {e(_gen_meta[_gen_top[p]][1])}.</li>' for p in PLATS) + '</ul>'
+            f'<p class="muted">Genre labels follow how each game is announced by its publisher. A game sits in one group only.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+            f'<li><a href="{href("rpgs-2027.html", 0)}">Every RPG coming in 2027</a>, with action RPG and JRPG filters</li>'
+            f'<li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a> and a shareable top list maker</li>'
+            f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: do your picks land the same week?</li>'
+            f'<li><a href="{href("backlog-planner-2027.html", 0)}">2027 backlog planner</a>: finish one before the next arrives</li></ul></div></section>')
+gen_faq = [("What genre has the most games in 2027?", _gen_quick)]
+for _k in _gen:
+    _n, _low = _gen_meta[_k]
+    gen_faq.append((f"What {_low} are coming out in 2027?", f"We track {len(_gen[_k])}: " + ", ".join(f"{g['title']} ({nice_date(g)})" for g in _gen[_k]) + "."))
+gen_faq.append(("Which genre has the most 2027 games on Switch 2?", f"{_gen_meta[_gen_top['Switch 2']][0]}, with {sum(1 for g in _gen[_gen_top['Switch 2']] if 'Switch 2' in g['platforms'])} games."))
+page("games-by-genre-2027.html", "2027 Games by Genre: Horror, Shooters, RPGs and More | DayOneDrop",
+     f"Every 2027 game sorted by genre: horror games, shooters, RPGs, platformers, action and sims, with dates, consoles and a genre filter. Checked {UPDATED}."[:160],
+     gen_body, 0, gen_faq, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html")), ("2027 games by genre", canon("games-by-genre-2027.html"))])
 
 
 # ---------------- BACKLOG PLANNER (22 Nov 2026) ----------------
@@ -1036,6 +1132,9 @@ tools = f'''<header class="hero"><div class="wrap"><span class="kicker">Tools</s
 <div class="btns" style="margin-top:12px"><a class="btn sm" href="{href("backlog-planner-2027.html", 0)}">Open the backlog planner</a></div></div>
 <div class="tool"><h2 style="font-size:1.5rem">What are my top games of 2027?</h2><p class="muted">Pick up to 10 of the biggest 2027 games in order. Copy a ready-to-paste list with dates, or send a link that opens your picks.</p>
 <div class="btns" style="margin-top:12px"><a class="btn sm" href="{href("biggest-games-2027.html", 0)}#top-tool">Make my top list</a></div></div>
+<div class="tool"><h2 style="font-size:1.5rem">What 2027 games match my taste?</h2><p class="muted">Filter every 2027 game by genre and console: horror, shooters, RPGs, platformers and more.</p>
+<div class="out">{"".join(f'<div class="row"><span>{e(_gen_meta[k][0])}</span><b>{len(_gen[k])} games</b></div>' for k in _gen_rank[:3])}</div>
+<div class="btns" style="margin-top:12px"><a class="btn sm" href="{href("games-by-genre-2027.html", 0)}">Open the genre finder</a></div></div>
 </div></section>
 <section><div class="wrap"><div class="sec-head"><h2>More ways to plan</h2></div><ul>
 <li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: every crowded week</li>
@@ -1043,6 +1142,7 @@ tools = f'''<header class="hero"><div class="wrap"><span class="kicker">Tools</s
 <li><a href="{href("delayed-games-2027.html", 0)}">Games delayed to 2027</a></li>
 <li><a href="{href("exclusives-2027.html", 0)}">2027 console exclusives</a> and which games your consoles will miss</li>
 <li><a href="{href("rpgs-2027.html", 0)}">Every RPG coming in 2027</a> with a console filter</li>
+<li><a href="{href("games-by-genre-2027.html", 0)}">2027 games by genre</a>: horror, shooters, platformers and more</li>
 <li><a href="{href("game-pass-2027.html", 0)}">Every 2027 game on Xbox Game Pass</a>, with a Game Pass or buy checker</li>
 <li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a>, with a shareable top list maker</li>
 <li><a href="{href("last-gen-games-2027.html", 0)}">2027 games on PS4, Xbox One and Switch 1</a>, with a do-I-need-to-upgrade check</li>
@@ -1353,7 +1453,7 @@ page("404.html", "Page not found | DayOneDrop", "This page has moved or doesn't 
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "after-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "last-gen-games-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "after-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)

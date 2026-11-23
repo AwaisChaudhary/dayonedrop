@@ -331,6 +331,31 @@
     drawRpg();
   }
 
+  /* 2027 games by genre: genre + console filter */
+  var gnt = $("#gen-tool");
+  if (gnt) {
+    var gsel = store.get("dod-gen", { g: "", p: "" }) || { g: "", p: "" };
+    var grows = $$("#gen-list [data-genre]"), gcount = $("#gen-count"), gnone = $("#gen-none");
+    var drawGen = function () {
+      var n = 0;
+      grows.forEach(function (r) {
+        var ok = (!gsel.p || r.getAttribute("data-plat").split("|").indexOf(gsel.p) > -1) && (!gsel.g || r.getAttribute("data-genre") === gsel.g);
+        r.hidden = !ok; if (ok) n++;
+      });
+      $$("#gen-list [data-gsec]").forEach(function (sec) {
+        sec.hidden = !$$("[data-genre]", sec).some(function (r) { return !r.hidden; });
+      });
+      $$("[data-gen-g]", gnt).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-gen-g") === gsel.g ? "true" : "false"); });
+      $$("[data-gen-p]", gnt).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-gen-p") === gsel.p ? "true" : "false"); });
+      gcount.textContent = n + " game" + (n === 1 ? "" : "s") + (gsel.p ? " on " + gsel.p : "");
+      gnone.hidden = n > 0;
+      store.set("dod-gen", gsel);
+    };
+    $$("[data-gen-g]", gnt).forEach(function (c) { c.addEventListener("click", function () { gsel.g = c.getAttribute("data-gen-g"); drawGen(); }); });
+    $$("[data-gen-p]", gnt).forEach(function (c) { c.addEventListener("click", function () { gsel.p = c.getAttribute("data-gen-p"); drawGen(); }); });
+    drawGen();
+  }
+
   /* Game Pass 2027: Game Pass or buy? */
   var gt = $("#gp-tool");
   if (gt) {

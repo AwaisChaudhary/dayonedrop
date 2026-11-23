@@ -241,16 +241,54 @@
     "Xbox Series X|S",
     "PC"
    ],
-   "dev": "",
+   "dev": "Grimlore Games / THQ Nordic",
    "genre": "Action RPG",
-   "page": false,
-   "facts": [],
-   "history": [],
+   "page": true,
+   "facts": [
+    "Titan Quest II leaves Early Access and fully launches on 19 January 2027.",
+    "It launches the same day on PS5, Xbox Series X|S and PC (Steam and Epic Games Store). The console versions are new; Early Access was PC only.",
+    "Grimlore Games, the studio behind SpellForce 3, is making it. THQ Nordic is publishing it.",
+    "Early Access on PC started on 1 August 2025, about a year and a half before the full launch.",
+    "Price: $49.99 / €49.99 on PC, $59.99 / €59.99 on PS5 and Xbox Series X|S.",
+    "Version 1.0 adds new content on top of Early Access, but THQ Nordic has not listed exactly what yet. More lands and features are promised after launch.",
+    "You build a hybrid class by combining two masteries, and set the challenge with Rituals.",
+    "A pre-order with bonuses has been teased but not detailed yet."
+   ],
+   "history": [
+    {
+     "when": "Aug 2025",
+     "text": "Early Access opened on PC (Steam and Epic)."
+    },
+    {
+     "when": "Sep 2026",
+     "text": "Full release dated for 19 January 2027, with PS5 and Xbox Series X|S versions on the same day."
+    }
+   ],
    "date": "2027-01-19",
    "window": "",
    "month": 1,
    "status": "dated",
-   "about": "The full 1.0 release of the mythic action RPG sequel."
+   "about": "The full 1.0 release of the Greek-myth action RPG sequel, leaving PC Early Access and arriving on PS5 and Xbox Series X|S the same day.",
+   "seo_title": "Titan Quest 2 Release Date, Price and PS5/Xbox Launch",
+   "sources": "THQ Nordic announcement via Gematsu (23 Sep 2026), RPG Site, Famitsu, PSU, VGChartz",
+   "faq": [
+    [
+     "Is Titan Quest 2 coming to PS5 and Xbox?",
+     "Yes. The PS5 and Xbox Series X|S versions launch on 19 January 2027, the same day as the full PC release."
+    ],
+    [
+     "How much does Titan Quest 2 cost?",
+     "$49.99 / €49.99 on PC and $59.99 / €59.99 on PS5 and Xbox Series X|S."
+    ],
+    [
+     "Is Titan Quest 2 still in Early Access?",
+     "Yes, on PC until 19 January 2027. That day it leaves Early Access as version 1.0."
+    ],
+    [
+     "Is Titan Quest 2 on Switch 2 or Game Pass?",
+     "Neither has been announced. It is confirmed for PS5, Xbox Series X|S and PC only."
+    ]
+   ]
   },
   {
    "slug": "arizona-sunshine",
