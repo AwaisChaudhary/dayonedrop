@@ -132,7 +132,7 @@ NAV = [("index.html", "Departures"), ("calendar.html", "2027 Calendar"), ("games
 
 MONTH_SLUGS = [m.lower() + "-2027" for m in MONTHS]
 def month_pages_list():
-    return [m for m in range(1, 13) if sum(1 for g in GAMES if g["month"] == m) >= 3]
+    return [m for m in range(1, 13) if sum(1 for g in GAMES if g["month"] == m and (g["date"] or (g["window"] and g["window"] != "2027"))) >= 3]
 
 
 def month_foot(depth):
@@ -753,6 +753,33 @@ for m in month_pages_list():
     page(f, f"Games Coming Out in {mname} 2027 ({len(games)} Games): Dates and Consoles | DayOneDrop"[:90],
          f"All {len(games)} video games releasing in {mname} 2027 on PS5, Xbox, PC and Switch 2, in date order with platforms and delays. Checked {UPDATED}."[:160],
          body, 1, faqs, crumbs=[("Home", DOMAIN + "/"), ("2027 calendar", canon("calendar.html")), (f"{mname} 2027", canon(f))])
+
+# ---------------- LATER 2027 HUB (25 Nov 2026): covers Jul-Dec + undated, replaces thin month pages ----------------
+_late = [g for g in GAMES if g["month"] >= 5 and g["month"] not in month_pages_list()]
+_late.sort(key=lambda g: (0 if g["date"] else 1, g["date"] or "", g["month"], g["title"]))
+_l_dated = [g for g in _late if g["date"]]
+_l_win = [g for g in _late if not g["date"] and g["window"] and g["window"] != "2027"]
+_l_tba = [g for g in _late if not g["date"] and (not g["window"] or g["window"] == "2027")]
+def _lsec(h, gs, note):
+    if not gs: return ""
+    return f'<div class="sec-head"><h2>{h}</h2></div><p class="muted">{note}</p><div class="board">' + "".join(mrow(g) for g in gs) + '</div>'
+_lbody = (f'<section><div class="wrap" style="max-width:860px"><h1>Games Coming Out Later in 2027: May to December</h1>'
+    f'<p class="lede">Most 2027 dates announced so far sit in the first four months. Here is everything after that: {len(_l_dated)} dated game{"s" if len(_l_dated)!=1 else ""}, '
+    f'{len(_l_win)} with a season or window, and {len(_l_tba)} confirmed only for "2027". No game has an exact July, August, September, October or November 2027 date yet; '
+    f'publishers usually fill those months at summer showcases (Summer Game Fest, Xbox Games Showcase, gamescom). We add each date the day it is announced.</p>'
+    + _lsec("Dated games, May to December 2027", _l_dated, "Exact release dates confirmed by the publisher.")
+    + _lsec("Games with a 2027 window", _l_win, "A season or half-year has been given, but no day.")
+    + _lsec("Confirmed for 2027, date TBA", _l_tba, "Announced for 2027 with no month. These are the most likely to slip into 2028.")
+    + f'<div class="sec-head"><h2>Earlier in 2027</h2></div><ul>' + "".join(f'<li><a href="{href("months/" + MONTH_SLUGS[m - 1] + ".html", 0)}">Games coming out in {MONTHS[m - 1]} 2027</a></li>' for m in month_pages_list())
+    + f'<li><a href="{href("calendar.html", 0)}">Full 2027 release calendar</a></li><li><a href="{href("delayed-games-2027.html", 0)}">Games delayed to 2027</a></li></ul></div></section>')
+_lfaq = [
+    ("Are there any games coming out in July to November 2027?", "Not with exact dates yet. As of " + UPDATED + ", no game we track has a confirmed day between July and November 2027. " + (", ".join(g["title"] for g in _l_win[:4]) + " have windows that may land there." if _l_win else "")),
+    ("Which 2027 games have no release date yet?", (", ".join(g["title"] for g in _l_tba) + " are confirmed for 2027 with no month.") if _l_tba else "Every tracked game has at least a window."),
+    ("When will later 2027 dates be announced?", "Most are revealed at June showcases (Summer Game Fest, Xbox Games Showcase) and at gamescom in August. Fall dates are often set by then."),
+]
+page("later-2027.html", f"Games Coming Out Later in 2027 (May–Dec, TBA): All {len(_late)} | DayOneDrop",
+     f"Every game coming out later in 2027: {len(_l_dated)} dated, {len(_l_win)} with a window and {len(_l_tba)} TBA, plus which have no July–November date yet. Updated {UPDATED}."[:160],
+     _lbody, 0, _lfaq, crumbs=[("Home", DOMAIN + "/"), ("Later 2027 games", canon("later-2027.html"))])
 
 # ---------------- RELEASE CLASH FINDER (22 Nov 2026) ----------------
 # Built only from dated games in games.json. Weeks run Monday to Sunday.
@@ -2165,7 +2192,7 @@ page("404.html", "Page not found | DayOneDrop", "This page has moved or doesn't 
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "new-games-this-week.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "new-games-this-week.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "calendar.html", "later-2027.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)
