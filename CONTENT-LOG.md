@@ -243,3 +243,10 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - /games: "Upcoming Games 2027: All 73 Release Dates, Month by Month". Platform pages: "Upcoming PS5 Games 2027: All 58 Release Dates (Month by Month)".
 - Laufey history fixed: Jul 2026 dated 16 Feb (SDCC); 4 Nov 2026 delayed to 20 May (Game Informer, Kotaku).
 - About page rebuilt: who runs it, two-source editorial policy, sources, corrections, funding disclosure, internal links. Removed the "[your email address]" placeholder (privacy.html still has one: needs Awais's contact email).
+
+## 25 Nov 2026 (01:45–02:20 PKT) — senior SEO pass, part 2
+- Contact: awaiskaramat@hotmail.com on About/Privacy + footer corrections line linking #editorial policy.
+- Keyword Planner (US): "ps5 game release dates", "new xbox releases", "video game release dates" 1k–10k, low comp → platform titles now "<Console> Game Release Dates 2027: All N Upcoming Games".
+- New /later-2027 hub (May–Dec dated, windows, TBA + FAQ on Jul–Nov). Retired thin June and placeholder December month pages; build now 301s every month without a page to /later-2027.
+- Speed (PSI mobile /platforms/ps5 was 65, FCP 4.7s, CLS 0.136): inlined CSS, non-blocking Google Fonts, inline game data cut to 7 fields (−40KB/page). Re-test tomorrow.
+- IndexNow 200 for all changed URLs. GSC request-indexing quota exhausted today; retry tomorrow.
