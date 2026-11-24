@@ -1,3 +1,11 @@
+## COMPETITOR WATCH 24 Nov 2026 (vs GamesRadar release-dates hub upd. 23 Nov; gameinformer.com/2027 and GameSpot did not load this run)
+We have 25 game pages, 7 month pages (Jan-Jun, Dec 2027), 4 platforms, 12 list pages.
+1. GAP: dated Q1 2027 games GamesRadar lists that we have NO entry for: Outward 2 (early access 8 Feb), Among Us Story: On Guard (17 Feb), Pony Island 2: Panda Circus (27 Apr). Plan: add to data with 2-source dates. (Armatus, Ananta, Elta, Muramasa, Romancing SaGa 3, Tag Force GX, Gundam Rogue Orbit, Grave Seasons, Apothecary Diaries are in data but have no game page: give the biggest 3 pages.)
+2. GAP: "2027, no date" games missing from our data: Marvel 1943: Rise of Hydra, The Wolf Among Us 2, Guild Wars 3, Dragon Ball Xenoverse 3, Monster Hunter Wilds expansion, Witcher 3 expansion, WoW: The Last Titan, Virtua Fighter (new), Kena: Scars of Kosmora, Heroes of Might and Magic 3 remake. Plan: verify each "2027" with publisher + 1 outlet; add with "2027 (no date)" confidence; skip if only rumour.
+3. GAP: month pages Jul-Nov 2027 + a "2027 TBC" page and 2028 page. Plan: build.py month pages for every month 2027 (thin months: show TBC block + link); /games-2028.
+4. GAP: per-platform dates (e.g. a game later on Switch 2). Plan: add optional per-platform date field; show on game + platform pages.
+5. BETTER-THAN-THEM: GamesRadar is one long unfilterable article with no history. Ours: filter by platform/genre/date confidence (dated/month/window/TBC) + a "delay history" line per game (every slip with date) + per-game .ics reminder. We already have delayed-games-2027 and calendar; join them.
+
 # DayOneDrop demand queue (Google autocomplete, 24 Nov 2026)
 ## RADAR 24 Nov 06:45 PKT — NEW top OPEN items
 R1. DONE 24 Nov https://getdayonedrop.com/games-december-2026 (scheduled run). 'games coming out december 2026' (+ps5/xbox/switch 2 variants, 'big games coming out in december 2026', 'what games come out in december'): high demand NOW. Page /games-december-2026 (confirmed dates only, 2+ sources) linking into the 2027 board ('what's next in January 2027').
