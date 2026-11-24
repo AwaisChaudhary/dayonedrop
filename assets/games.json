@@ -2224,6 +2224,38 @@
      "text": "Delayed from 2026 to 2027."
     }
    ]
+  },
+  {
+   "slug": "ontos",
+   "title": "Ontos",
+   "date": null,
+   "window": "2027",
+   "month": 12,
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC"
+   ],
+   "dev": "Frictional Games",
+   "genre": "Sci-fi horror",
+   "status": "delayed",
+   "page": false,
+   "about": "The next horror game from Frictional Games, the studio behind Amnesia and SOMA, now coming in 2027.",
+   "facts": [
+    "Made by Frictional Games, the studio behind Amnesia: The Dark Descent and SOMA.",
+    "Coming to PS5, Xbox Series X|S and PC in 2027. No month yet.",
+    "Announced at The Game Awards 2025 for 2026, then delayed to 2027 in July 2026."
+   ],
+   "history": [
+    {
+     "when": "Dec 2025",
+     "text": "Announced at The Game Awards 2025 for 2026."
+    },
+    {
+     "when": "Jul 2026",
+     "text": "Delayed from 2026 to 2027."
+    }
+   ]
   }
  ]
 }

@@ -220,7 +220,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Release dates can change; we update this site as soon as publishers announce changes. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -737,12 +737,21 @@ for _p, _s, _l in PLAT_PAGES_FOOT:
     if _pw:
         _m, _gs = max(_pw.items(), key=lambda kv: (len(kv[1]), -kv[0].toordinal()))
         _plat_clash.append((_l, _s, _m, _gs))
+# Refresh 24 Nov 2026: big-game clashes (games with a full guide) and quiet gaps
+_bigd = sorted([g for g in GAMES if g["page"] and g["date"]], key=lambda x: x["date"])
+def _dd(a, b): return (datetime.date.fromisoformat(b["date"]) - datetime.date.fromisoformat(a["date"])).days
+_big_pairs = [(a, b2, _dd(a, b2)) for i, a in enumerate(_bigd) for b2 in _bigd[i + 1:] if _dd(a, b2) <= 7]
+_alld = sorted([g for g in GAMES if g["date"]], key=lambda x: x["date"])
+_gaps_all = sorted([(a, b2, _dd(a, b2)) for a, b2 in zip(_alld, _alld[1:])], key=lambda x: -x[2])
+_gaps_big = sorted([(a, b2, _dd(a, b2)) for a, b2 in zip(_bigd, _bigd[1:])], key=lambda x: -x[2])
 _quick = ""
 if _top:
     _quick = (f"The most crowded week of 2027 so far is {_week_label(_top[0])}, with {len(_top[1])} launches: "
               + ", ".join(g["title"] for g in _top[1]) + ".")
     if _top_day:
         _quick += f" The busiest single day is {nice_date(_top_day[1][0])}, when {len(_top_day[1])} games come out."
+    if _big_pairs:
+        _quick += f" {len(_big_pairs)} pairs of big games launch within a week of each other, such as {_big_pairs[0][0]['title']} and {_big_pairs[0][1]['title']}."
 _picker = "".join(f'<label class="clash-opt"><input type="checkbox" value="{e(g["slug"])}"> <span>{e(g["title"])}</span> <span class="muted mono">{e(short_date(g))}</span></label>' for g in sorted([g for g in GAMES if g["date"]], key=lambda x: x["date"]))
 clash_tool = f'''<div class="tool" id="clash-tool"><h2 style="font-size:1.5rem;margin-top:0">Do my games clash?</h2>
 <p class="muted">Tick the games you plan to buy (your ★ list is ticked for you). We show which ones land close together and how many days you get between each launch.</p>
@@ -766,8 +775,17 @@ clash_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Clas
               + "".join(f'<div class="row"><span>{", ".join(_gname(g) for g in gs)}</span><b>{e(nice_date(gs[0]))}</b></div>' for _, gs in _same_days) +
               f'</div><div class="sec-head"><h2>What is the busiest week on my console?</h2></div><div class="out" style="margin-bottom:28px">'
               + "".join(f'<div class="row"><span><a href="{href("platforms/" + s + ".html", 0)}">{e(l)}</a>: {", ".join(e(g["title"]) for g in gs)}</span><b>{len(gs)} · {e(_dm(m))}</b></div>' for l, s, m, gs in _plat_clash) +
-              f'</div><div class="sec-head"><h2>Related tools</h2></div><ul>'
+              f'</div><div class="sec-head"><h2>Which big 2027 games launch within a week of each other?</h2><span class="muted">{len(_big_pairs)} pairs</span></div>'
+              f'<p class="muted">Big games here means games with a full DayOneDrop release guide. Days between the two launches on the right.</p><div class="out" style="margin-bottom:28px">'
+              + ("".join(f'<div class="row"><span>{_gname(a)} ({e(short_date(a))}) and {_gname(b2)} ({e(short_date(b2))})</span><b>{"same day" if d == 0 else str(d) + (" day" if d == 1 else " days")}</b></div>' for a, b2, d in _big_pairs) or '<div class="empty">No big games launch within a week of each other yet.</div>') +
+              f'</div><div class="sec-head"><h2>When is the quietest stretch of 2027?</h2></div>'
+              f'<p class="muted">The longest waits between one dated launch and the next. Good windows to catch up on your backlog.</p><div class="out" style="margin-bottom:12px">'
+              + "".join(f'<div class="row"><span>{_gname(a)} ({e(short_date(a))}) → {_gname(b2)} ({e(short_date(b2))})</span><b>{d} days</b></div>' for a, b2, d in _gaps_all[:3]) +
+              f'</div><p class="muted">Between big games only, the longest wait is ' + (f'{e(str(_gaps_big[0][2]))} days, from {_gname(_gaps_big[0][0])} to {_gname(_gaps_big[0][1])}' if _gaps_big else 'not known yet') + '.</p>'
+              f'<div class="sec-head" style="margin-top:28px"><h2>Related tools</h2></div><ul>'
               f'<li><a href="{href("backlog-planner-2027.html", 0)}">2027 backlog planner</a>: will you finish before the next launch?</li>'
+              f'<li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a>, ranked, with a top list maker</li>'
+              f'<li><a href="{href("horror-games-2027.html", 0)}">Every horror game of 2027</a>, with a console filter</li>'
               f'<li><a href="{href("tools.html", 0)}">What is coming to my console</a> and the busiest months chart</li>'
               f'<li><a href="{href("delayed-games-2027.html", 0)}">Games delayed to 2027</a>: dates that already moved</li>'
               f'<li><a href="{href("calendar.html", 0)}">The full 2027 release calendar</a> with calendar reminders</li></ul></div></section>')
@@ -776,10 +794,14 @@ if _top:
     clash_faq.append(("What is the busiest week for game releases in 2027?", _quick))
 if _same_days:
     clash_faq.append(("Which 2027 games release on the same day?", " ".join(f"{nice_date(gs[0])}: " + ", ".join(g["title"] for g in gs) + "." for _, gs in _same_days)))
+if _big_pairs:
+    clash_faq.append(("Which big 2027 games come out in the same week?", " ".join(f"{a['title']} ({nice_date(a)}) and {b2['title']} ({nice_date(b2)})." for a, b2, d in _big_pairs)))
+if _gaps_all:
+    clash_faq.append(("When is the quietest time for new games in 2027?", f"The longest wait between dated launches is {_gaps_all[0][2]} days, from {_gaps_all[0][0]['title']} ({nice_date(_gaps_all[0][0])}) to {_gaps_all[0][1]['title']} ({nice_date(_gaps_all[0][1])}). Dates later in 2027 are still being announced, so this can shrink."))
 clash_faq.append(("Does a clash mean a game will be delayed?", "Not always. Publishers do sometimes move a date to avoid a bigger launch, but a clash on its own is not a delay. We only change a date when the publisher or two trusted outlets confirm it."))
 clash_faq.append(("How does the clash checker work?", "Tick the games you want and pick a gap, such as 7 days. The checker lists every pair of your games that launch within that gap and shows the days between each launch. It runs in your browser and nothing is sent anywhere."))
 page("release-clashes-2027.html", "2027 Release Clashes: Games Launching the Same Week | DayOneDrop",
-     (f"Which 2027 games launch the same week? Every crowded release week, same-day launches and a free clash checker for your list. Checked {UPDATED}.")[:160],
+     (f"Which 2027 games launch the same week? Crowded weeks, big-game clashes, the quietest gaps and a free clash checker for your list. Checked {UPDATED}.")[:160],
      clash_body, 0, clash_faq, crumbs=[("Home", DOMAIN + "/"), ("Tools", canon("tools.html")), ("Release clashes 2027", canon("release-clashes-2027.html"))])
 
 
@@ -1010,7 +1032,7 @@ for _k in _gen:
     _n, _low = _gen_meta[_k]
     _f = _gen_first(_k)
     _lead = f'The first is {_gname(_f)} on {e(nice_date(_f))}.' if _f else "None has an exact date yet."
-    _extra = f' See <a href="{href("rpgs-2027.html", 0)}">every RPG of 2027</a> for the full RPG guide.' if _k == "rpg" else ""
+    _extra = f' See <a href="{href("rpgs-2027.html", 0)}">every RPG of 2027</a> for the full RPG guide.' if _k == "rpg" else (f' See <a href="{href("horror-games-2027.html", 0)}">every horror game of 2027</a> for countdowns and delays.' if _k == "horror" else "")
     _gen_secs += (f'<div class="gen-sec" data-gsec="{_k}"><div class="sec-head"><h2 id="{_k}">What {e(_low)} come out in 2027?</h2><span class="muted">{len(_gen[_k])}</span></div>'
                   f'<p class="muted">{_lead}{_extra}</p><div class="out" style="margin-bottom:26px">{"".join(_genrow(g) for g in _gen[_k])}</div></div>')
 _gchips = ('<div class="chips" role="group" aria-label="Genre" style="margin-bottom:10px"><button class="chip" type="button" data-gen-g="" aria-pressed="true">All genres</button>'
@@ -1050,6 +1072,92 @@ gen_faq.append(("Which genre has the most 2027 games on Switch 2?", f"{_gen_meta
 page("games-by-genre-2027.html", "2027 Games by Genre: Horror, Shooters, RPGs and More | DayOneDrop",
      f"Every 2027 game sorted by genre: horror games, shooters, RPGs, platformers, action and sims, with dates, consoles and a genre filter. Checked {UPDATED}."[:160],
      gen_body, 0, gen_faq, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html")), ("2027 games by genre", canon("games-by-genre-2027.html"))])
+
+
+# ---------------- HORROR GAMES 2027 (24 Nov 2026) ----------------
+# Built from games.json: genre contains "horror". Horror-adjacent picks are listed by slug and labelled.
+# Neverway sits in HORROR_EXTRA because it is on PC and Switch 1 only (not a console we track); 2027 window from Gematsu + RPGFan (Aug 2026).
+HORROR_ADJ = {"grave-seasons": "A farming life sim with a dark mystery underneath. GamesRadar lists it with upcoming horror games.",
+              "state-of-decay-3": "Open-world zombie survival with community building. More survival than scares."}
+HORROR_EXTRA = [("Neverway", "Coldblood Inc", "Horror life sim RPG, delayed from October 2026", "PC, Switch 1", "2027")]
+_hor = sorted([g for g in GAMES if "horror" in (g.get("genre") or "").lower()], key=lambda x: (x["month"], x["date"] or "9999"))
+_hor_adj = [g for g in GAMES if g["slug"] in HORROR_ADJ]
+_hor_dated = [g for g in _hor if g["date"]]
+_hor_undated = [g for g in _hor if not g["date"]]
+_hor_delayed = [g for g in _hor if g["status"] == "delayed"]
+_hor_next = _hor_dated[0] if _hor_dated else None
+_hor_p = {p: [g for g in _hor if p in g["platforms"]] for p in PLATS}
+_hor_all = [g for g in _hor if all(p in g["platforms"] for p in PLATS)]
+_hor_ex = [g for g in _hor if len(g["platforms"]) == 1]
+def _and(xs): return xs[0] if len(xs) == 1 else ', '.join(xs[:-1]) + ' and ' + xs[-1]
+_hor_quick = (f"We track {len(_hor)} horror games for 2027. "
+              + (f"The first is {_hor_next['title']} on {nice_date(_hor_next)}" + (f", then {_hor_dated[1]['title']} on {nice_date(_hor_dated[1])}" if len(_hor_dated) > 1 else "") + ". " if _hor_next else "")
+              + (f"{_and([g['title'] for g in _hor_undated])} {'are' if len(_hor_undated) > 1 else 'is'} due in 2027 with no exact date yet." if _hor_undated else ""))
+def _hrow(g, note=""):
+    return (f'<div class="row" data-hplat="{e("|".join(g["platforms"]))}" data-hdated="{1 if g["date"] else 0}" data-slug="{e(g["slug"])}"><span><strong>{_gname(g)}</strong>'
+            f'<br><span class="muted">{e(note or g.get("about") or g["genre"])}</span>'
+            f'<br><span class="muted">{e(g["genre"])} · {e(g.get("dev") or "Studio TBC")} · {e(", ".join(g["platforms"]) or "Platforms TBC")}</span></span><b>{e(nice_date(g))}</b></div>')
+_hchips = ('<div class="chips" role="group" aria-label="Console"><button class="chip" type="button" data-hor-p="" aria-pressed="true">All consoles</button>'
+           + "".join(f'<button class="chip" type="button" data-hor-p="{e(p)}" aria-pressed="false">{e(p)}</button>' for p in PLATS) + '</div>'
+           '<div class="chips" role="group" aria-label="Date" style="margin-top:10px"><button class="chip" type="button" data-hor-d="" aria-pressed="true">Any date</button>'
+           '<button class="chip" type="button" data-hor-d="1" aria-pressed="false">Exact date only</button></div>')
+_hor_tbl = ('<div style="overflow-x:auto"><table class="gen-table" style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr><th style="text-align:left;padding:6px">Console</th><th style="padding:6px">Horror games</th><th style="text-align:left;padding:6px">First one</th></tr></thead><tbody>'
+            + "".join(f'<tr><td style="padding:6px;border-top:1px solid var(--rule)"><a href="{href("platforms/" + _pslug[p] + ".html", 0)}">{e(_lab[p])}</a></td>'
+                      f'<td style="padding:6px;text-align:center;border-top:1px solid var(--rule)" class="mono">{len(_hor_p[p])}</td>'
+                      f'<td style="padding:6px;border-top:1px solid var(--rule)">{e(next((g["title"] + " (" + nice_date(g) + ")" for g in _hor_p[p] if g["date"]), "No exact date yet"))}</td></tr>' for p in PLATS)
+            + '</tbody></table></div>')
+_hor_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Horror</span>'
+             f'<h1>Horror games coming in 2027:<br><span class="amber">every date, every console.</span></h1>'
+             f'<p class="lead">Every scary game we track for 2027, from Until Dawn 2 to the Resident Evil Code: Veronica remake, in release order, with a console filter and a countdown to the next one.</p>'
+             f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · {len(_hor)} horror games · dates confirmed by publishers or two trusted outlets</p></div></header>'
+             f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_hor_quick)}</span></div></div>'
+             f'<div class="tool" id="hor-tool"><h2 style="font-size:1.5rem;margin-top:0">Which 2027 horror games can I play on my console?</h2>'
+             f'<p class="muted">Tap your console. The list updates, the countdown jumps to the next horror launch you can play, and your choice is remembered on this device.</p>{_hchips}'
+             f'<div class="out" id="hor-next" style="margin-top:14px" aria-live="polite"></div>'
+             f'<p class="mono amber" id="hor-count" aria-live="polite" style="margin:12px 0 0">{len(_hor)} games</p>'
+             f'<div class="btns" style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn sm" type="button" id="hor-add">Add these to my ★ list</button>'
+             f'<a class="btn line sm" href="{href("release-clashes-2027.html", 0)}">Check them for clashes</a></div></div></div></section>'
+             + AD.format("horror-mid") +
+             f'<section><div class="wrap"><div class="sec-head"><h2>What horror games come out in 2027?</h2><span class="muted">{len(_hor)}</span></div>'
+             f'<p class="muted">In release order. Games with only a year sit at the end.</p>'
+             f'<div class="out" id="hor-list" style="margin-bottom:10px">{"".join(_hrow(g) for g in _hor)}</div><p class="empty" id="hor-none" hidden>No tracked 2027 horror games match that yet. Try another console.</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>What is the next horror game to come out?</h2></div>'
+             + (f'<p>{_gname(_hor_next)} is next, on {e(nice_date(_hor_next))} ({e(", ".join(_hor_next["platforms"]))}). {e(_hor_next.get("about") or "")}</p>'
+                f'<div class="cdw"><span class="lbl">Countdown to launch</span><div class="cd" data-countdown="{_hor_next["date"]}">'
+                '<div class="cd-unit"><span class="flaps" data-u="0"></span><span>Days</span></div><div class="cd-unit"><span class="flaps" data-u="1"></span><span>Hrs</span></div>'
+                '<div class="cd-unit"><span class="flaps" data-u="2"></span><span>Min</span></div><div class="cd-unit"><span class="flaps" data-u="3"></span><span>Sec</span></div></div></div>' if _hor_next else '<p>No 2027 horror game has an exact date yet.</p>')
+             + f'<div class="sec-head" style="margin-top:28px"><h2>How many 2027 horror games are on PS5, Xbox, PC and Switch 2?</h2></div>{_hor_tbl}'
+             + (f'<p style="margin-top:14px">On every console we track: {", ".join(_gname(g) for g in _hor_all)}.</p>' if _hor_all else "")
+             + (f'<p>On one console only: ' + ", ".join(f'{_gname(g)} ({e(g["platforms"][0])})' for g in _hor_ex) + '.</p>' if _hor_ex else "")
+             + f'<div class="sec-head" style="margin-top:28px"><h2>Which horror games were delayed to 2027?</h2><span class="muted">{len(_hor_delayed)}</span></div>'
+             f'<div class="out" style="margin-bottom:10px">' + "".join(f'<div class="row"><span><strong>{_gname(g)}</strong><br><span class="muted">{e(g["history"][-1]["when"] + ": " + g["history"][-1]["text"]) if g.get("history") else ""}</span></span><b>{e(nice_date(g))}</b></div>' for g in _hor_delayed) + '</div>'
+             f'<p class="muted">See <a href="{href("delayed-games-2027.html", 0)}">every game delayed to 2027</a> for all genres.</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>Is the Resident Evil Code: Veronica remake coming in 2027?</h2></div>'
+             f'<p>Yes. Capcom announced <a href="{href("games/resident-evil-veronica.html", 0)}">Resident Evil Veronica</a> at Summer Game Fest on 5 June 2026 for 2027 on PS5, Xbox Series X|S, Switch 2 and PC. Capcom has not given a month or day yet, so treat any exact date you see as a guess until Capcom confirms it.</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>When does Until Dawn 2 come out?</h2></div>'
+             f'<p>Until Dawn 2 launches on 28 January 2027 on PS5 only. Firesprite is making it, and as in the first game your choices decide who lives and who dies.</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>Which 2027 games are close to horror?</h2></div>'
+             f'<p class="muted">Not horror games first, but worth a look if you like dark settings. They are not counted above.</p>'
+             f'<div class="out" style="margin-bottom:10px">{"".join(_hrow(g, HORROR_ADJ[g["slug"]]) for g in _hor_adj)}</div>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>Which 2027 horror games are not on new consoles?</h2></div>'
+             f'<div class="out" style="margin-bottom:10px">' + "".join(f'<div class="row"><span><strong>{e(t)}</strong><br><span class="muted">{e(gn)} · {e(dv)} · {e(pl)}</span></span><b>{e(w)}</b></div>' for t, dv, gn, pl, w in HORROR_EXTRA) + '</div>'
+             f'<p class="muted">Not on our board because it is not announced for PS5, Xbox Series X|S or Switch 2. Source: Gematsu and RPGFan, August 2026.</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+             f'<li><a href="{href("games-by-genre-2027.html", 0)}">2027 games by genre</a>: shooters, RPGs, platformers and more</li>'
+             f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: do your picks land the same week?</li>'
+             f'<li><a href="{href("games/resident-evil-veronica.html", 0)}">Resident Evil Veronica release date and platforms</a></li>'
+             f'<li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a></li></ul></div></section>')
+hor_faq = [("What horror games are coming out in 2027?", f"We track {len(_hor)}: " + ", ".join(f"{g['title']} ({nice_date(g)})" for g in _hor) + ".")]
+if _hor_next:
+    hor_faq.append(("What is the first horror game of 2027?", f"{_hor_next['title']}, on {nice_date(_hor_next)} for {', '.join(_hor_next['platforms'])}."))
+for _p in PLATS:
+    hor_faq.append((f"What horror games are coming to {_lab[_p]} in 2027?", (f"{len(_hor_p[_p])}: " + ", ".join(f"{g['title']} ({nice_date(g)})" for g in _hor_p[_p]) + ".") if _hor_p[_p] else "None confirmed yet."))
+hor_faq.append(("Is Resident Evil Veronica out in 2027?", "Yes, Capcom says 2027 on PS5, Xbox Series X|S, Switch 2 and PC. No month or day has been announced."))
+if _hor_delayed:
+    hor_faq.append(("Which horror games were delayed to 2027?", ", ".join(g["title"] for g in _hor_delayed) + "."))
+page("horror-games-2027.html", f"Horror Games Coming Out in 2027: Dates and Consoles ({len(_hor)} Games) | DayOneDrop"[:90],
+     f"Every horror game coming in 2027: Until Dawn 2, Resident Evil Veronica, Ontos and more, with dates, PS5/Xbox/PC/Switch 2 filter and countdown. Checked {UPDATED}."[:160],
+     _hor_body, 0, hor_faq, crumbs=[("Home", DOMAIN + "/"), ("2027 games by genre", canon("games-by-genre-2027.html")), ("Horror games 2027", canon("horror-games-2027.html"))])
 
 
 # ---------------- BACKLOG PLANNER (22 Nov 2026) ----------------
@@ -1215,6 +1323,7 @@ tools = f'''<header class="hero"><div class="wrap"><span class="kicker">Tools</s
 <li><a href="{href("exclusives-2027.html", 0)}">2027 console exclusives</a> and which games your consoles will miss</li>
 <li><a href="{href("rpgs-2027.html", 0)}">Every RPG coming in 2027</a> with a console filter</li>
 <li><a href="{href("games-by-genre-2027.html", 0)}">2027 games by genre</a>: horror, shooters, platformers and more</li>
+<li><a href="{href("horror-games-2027.html", 0)}">Every horror game of 2027</a>, with a console filter and countdown</li>
 <li><a href="{href("game-pass-2027.html", 0)}">Every 2027 game on Xbox Game Pass</a>, with a Game Pass or buy checker</li>
 <li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a>, with a shareable top list maker</li>
 <li><a href="{href("last-gen-games-2027.html", 0)}">2027 games on PS4, Xbox One and Switch 1</a>, with a do-I-need-to-upgrade check</li>
@@ -1807,7 +1916,7 @@ page("404.html", "Page not found | DayOneDrop", "This page has moved or doesn't 
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)

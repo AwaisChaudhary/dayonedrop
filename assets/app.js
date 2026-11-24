@@ -356,6 +356,39 @@
     drawGen();
   }
 
+  /* Horror games 2027: console + date filter, next launch, add to list */
+  var hot = $("#hor-tool");
+  if (hot) {
+    var hsel = store.get("dod-hor", { p: "", d: "" }) || { p: "", d: "" };
+    var hrows = $$("#hor-list [data-hplat]"), hcount = $("#hor-count"), hnone = $("#hor-none"), hnext = $("#hor-next");
+    var hesc = function (t) { return String(t).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+    var hshown = [];
+    var drawHor = function () {
+      hshown = [];
+      hrows.forEach(function (r) {
+        var ok = (!hsel.p || r.getAttribute("data-hplat").split("|").indexOf(hsel.p) > -1) && (!hsel.d || r.getAttribute("data-hdated") === "1");
+        r.hidden = !ok; if (ok) hshown.push(r.getAttribute("data-slug"));
+      });
+      $$("[data-hor-p]", hot).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-hor-p") === hsel.p ? "true" : "false"); });
+      $$("[data-hor-d]", hot).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-hor-d") === hsel.d ? "true" : "false"); });
+      hcount.textContent = hshown.length + " horror game" + (hshown.length === 1 ? "" : "s") + (hsel.p ? " on " + hsel.p : "");
+      hnone.hidden = hshown.length > 0;
+      var now = Date.now(), nx = G.filter(function (g) { return hshown.indexOf(g.slug) > -1 && g.date && at(g) > now; }).sort(function (a, b) { return at(a) - at(b); })[0];
+      hnext.innerHTML = nx ? '<div class="row"><span>Next horror launch' + (hsel.p ? " on " + hesc(hsel.p) : "") + ": <strong>" + hesc(nx.title) + "</strong></span><b>" + left(at(nx))[0] + " days</b></div>"
+        : '<div class="empty">No dated horror game coming up for this choice yet.</div>';
+      store.set("dod-hor", hsel);
+    };
+    $$("[data-hor-p]", hot).forEach(function (c) { c.addEventListener("click", function () { hsel.p = c.getAttribute("data-hor-p"); drawHor(); }); });
+    $$("[data-hor-d]", hot).forEach(function (c) { c.addEventListener("click", function () { hsel.d = c.getAttribute("data-hor-d"); drawHor(); }); });
+    var hadd = $("#hor-add");
+    if (hadd) hadd.addEventListener("click", function () {
+      var before = WL.length;
+      WL = Array.from(new Set(WL.concat(hshown))); store.set("dod-watch", WL); syncStars();
+      toast((WL.length - before) + " games added to your ★ list");
+    });
+    drawHor();
+  }
+
   /* Game Pass 2027: Game Pass or buy? */
   var gt = $("#gp-tool");
   if (gt) {
