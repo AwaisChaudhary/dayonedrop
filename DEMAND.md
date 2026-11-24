@@ -21,3 +21,11 @@ Build top-down; mark DONE + URL. Facts: publisher or 2+ trusted outlets.
 3. OPEN genre x platform 2027 lists: ps5 sports games 2027 (soccer, golf, racing), xbox racing games 2027, fighting games 2027, marvel games 2027, switch 2 mario games 2027, rumored switch 2 games 2027 (clearly labelled).
 4. OPEN 'xbox games showcase 2027' (date if announced, what to expect, past showcases).
 5. OPEN 'anticipated ps5 games 2027' / 'top xbox games 2027' ranked list pages.
+
+## Keyword Planner (US, 25 Nov 2026) — Google Ads acct 877-540-2315, ads paused, $0 spend
+Seeds: upcoming games 2027, ps5 games 2027, game release dates. Volumes are ranges (no spend).
+- ps5 game release dates 1k–10k, Low comp -> /platforms/ps5 (already pos 8.8)
+- ps5 new releases / ps5 releases 1k–10k -> /platforms/ps5
+- new xbox releases 1k–10k -> /platforms/xbox-series
+- video game release dates 1k–10k, game release dates 100–1k -> home /games
+- nintendo switch 2 release date 10k–100k (hardware, out of scope)
