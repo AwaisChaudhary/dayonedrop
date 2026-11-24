@@ -13,7 +13,7 @@ R2. OPEN Month pages: 'games coming out in january 2027', 'february 2027' (check
 R3. OPEN Sports games 2027 (ps5 soccer / golf / sports games 2027) and horror games 2027 -> genre pages (games-by-genre has filter; give sports + horror their own URLs).
 R4. OPEN Xbox Games Showcase 2027 (date expectations, labelled unconfirmed until Microsoft announces) + 'xbox exclusive games 2027' (exclusives-2027 covers? make sure title says Xbox).
 R5. DONE 24 Nov https://getdayonedrop.com/after-gta-6 (sections added). 'will there be gta 7', 'rockstar after gta 6', 'rdr3 after gta 6' -> sections on /after-gta-6 (facts only, rumours labelled).
-R6. OPEN 'games better than gta 6', 'upcoming games like gta 6' -> FAQs on /games-like-gta-6.
+R6. DONE 24 Nov https://getdayonedrop.com/games-like-gta-6 (scheduled run). 'games better than gta 6', 'upcoming games like gta 6' -> FAQs on /games-like-gta-6.
 
 Build top-down; mark DONE + URL. Facts: publisher or 2+ trusted outlets.
 1. DONE 24 Nov 02:20 https://getdayonedrop.com/games-like-gta-6 (main session). /games-like-gta-6 (HUGE: 'games like gta 6', 'for ps5', 'for pc', 'for android', 'roblox games like gta 6', 'coming out', 'better than gta 6', 'similar games'): open-world crime/action games out now + coming 2027, platform filter chips, why each is similar. Link from neoncoast.org (ask NeonCoast run to add a link in its footer/ending page).

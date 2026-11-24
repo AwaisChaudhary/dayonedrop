@@ -220,7 +220,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Release dates can change; we update this site as soon as publishers announce changes. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -1520,17 +1520,17 @@ page("after-gta-6.html", "What to Play After GTA 6: The Next Big Games (2027) | 
 # Green Man Gaming, Gaming.net, Sportskeeda, Pro Game Guides (2+ lists per pick); platforms as sold today. Sister site link: neoncoast.org.
 LIKE_GTA = [
     # (title, platforms, why, tags)
-    ("Grand Theft Auto V", "PS5, Xbox Series X|S, PS4, Xbox One, PC", "The closest thing to GTA 6: Rockstar's last crime epic, three playable criminals, a huge city and GTA Online. Also the only Rockstar GTA on PC right now.", "ps5 pc xbox"),
-    ("Red Dead Redemption 2", "PS4, Xbox One, PC (plays on PS5 and Xbox Series X|S)", "Same studio, same level of detail. A Wild West outlaw story with the most alive open world of the last generation.", "ps5 pc xbox"),
-    ("Cyberpunk 2077", "PS5, Xbox Series X|S, PC, Switch 2", "A neon city full of gangs, cars and side jobs, played in first person with RPG choices. Night City feels the most like Vice City's energy.", "ps5 pc xbox switch"),
-    ("Mafia: The Old Country", "PS5, Xbox Series X|S, PC", "A cinematic, story-first mob game set in 1900s Sicily. Less sandbox than GTA, more crime drama.", "ps5 pc xbox"),
-    ("Mafia: Definitive Edition", "PS4, Xbox One, PC (plays on PS5 and Xbox Series X|S)", "A remake of the 1930s gangster classic: tommy guns, old cars and a tight crime story.", "ps5 pc xbox"),
-    ("Sleeping Dogs: Definitive Edition", "PS4, Xbox One, PC", "GTA in Hong Kong: an undercover cop inside a triad, with martial-arts fights, night markets and car chases.", "pc xbox ps4"),
-    ("Watch Dogs 2", "PS4, Xbox One, PC", "Open-world San Francisco where you hack the city instead of only shooting it. Lighter and funnier than GTA.", "pc xbox ps4"),
-    ("Yakuza 0", "PS4, Xbox One, PC", "A 1980s Japanese crime drama with street brawls and hours of side stories. The Like a Dragon series is the GTA of Japan.", "pc xbox ps4"),
-    ("L.A. Noire", "PS4, Xbox One, Switch, PC", "Rockstar-published 1940s detective game: solve crimes in a recreated Los Angeles instead of committing them.", "pc xbox switch ps4"),
-    ("Just Cause 3", "PS4, Xbox One, PC", "Pure open-world chaos: grappling hooks, wingsuits and explosions. Great if GTA's rampages are your favourite part.", "pc xbox ps4"),
-    ("Crimson Desert", "PS5, Xbox Series X|S, PC", "A huge 2026 open world to explore. Fantasy, not crime, but the same feeling of freedom and discovery.", "ps5 pc xbox"),
+    ("Grand Theft Auto V", "PS5, Xbox Series X|S, PS4, Xbox One, PC", "The closest thing to GTA 6: Rockstar's last crime epic, three playable criminals, a huge city and GTA Online. Also the only Rockstar GTA on PC right now.", "ps5 pc xbox", "crime chaos cars"),
+    ("Red Dead Redemption 2", "PS4, Xbox One, PC (plays on PS5 and Xbox Series X|S)", "Same studio, same level of detail. A Wild West outlaw story with the most alive open world of the last generation.", "ps5 pc xbox", "detail story"),
+    ("Cyberpunk 2077", "PS5, Xbox Series X|S, PC, Switch 2", "A neon city full of gangs, cars and side jobs, played in first person with RPG choices. Night City feels the most like Vice City's energy.", "ps5 pc xbox switch", "rpg crime cars"),
+    ("Mafia: The Old Country", "PS5, Xbox Series X|S, PC", "A cinematic, story-first mob game set in 1900s Sicily. Less sandbox than GTA, more crime drama.", "ps5 pc xbox", "crime story"),
+    ("Mafia: Definitive Edition", "PS4, Xbox One, PC (plays on PS5 and Xbox Series X|S)", "A remake of the 1930s gangster classic: tommy guns, old cars and a tight crime story.", "ps5 pc xbox", "crime story cars"),
+    ("Sleeping Dogs: Definitive Edition", "PS4, Xbox One, PC", "GTA in Hong Kong: an undercover cop inside a triad, with martial-arts fights, night markets and car chases.", "pc xbox ps4", "crime cars"),
+    ("Watch Dogs 2", "PS4, Xbox One, PC", "Open-world San Francisco where you hack the city instead of only shooting it. Lighter and funnier than GTA.", "pc xbox ps4", "chaos cars"),
+    ("Yakuza 0", "PS4, Xbox One, PC", "A 1980s Japanese crime drama with street brawls and hours of side stories. The Like a Dragon series is the GTA of Japan.", "pc xbox ps4", "crime story"),
+    ("L.A. Noire", "PS4, Xbox One, Switch, PC", "Rockstar-published 1940s detective game: solve crimes in a recreated Los Angeles instead of committing them.", "pc xbox switch ps4", "story detail cars"),
+    ("Just Cause 3", "PS4, Xbox One, PC", "Pure open-world chaos: grappling hooks, wingsuits and explosions. Great if GTA's rampages are your favourite part.", "pc xbox ps4", "chaos"),
+    ("Crimson Desert", "PS5, Xbox Series X|S, PC", "A huge 2026 open world to explore. Fantasy, not crime, but the same feeling of freedom and discovery.", "ps5 pc xbox", "detail rpg"),
 ]
 LIKE_MOBILE = [
     ("Grand Theft Auto: The Trilogy (Netflix Games)", "Android, iPhone and iPad (free with a Netflix subscription)", "GTA III, Vice City and San Andreas on your phone. Vice City is the original Miami-style GTA that GTA 6 returns to."),
@@ -1541,30 +1541,61 @@ LIKE_ROBLOX = [
     ("Emergency Hamburg", "City roleplay in Hamburg: be a police officer, firefighter, medic, driver or criminal."),
     ("Southwest Florida", "Florida city roleplay based around Bonita Springs, with jobs, cars and police. The closest Roblox setting to GTA 6's Leonida."),
 ]
-_like_rows = "".join(f'<div class="row"><span><strong>{e(t)}</strong><br><span class="muted">{e(w)}</span><br><span class="muted">{e(pl)}</span></span></div>' for t, pl, w, _ in LIKE_GTA)
-def _plat_list(tag): return ", ".join(t for t, pl, w, tg in LIKE_GTA if tag in tg.split())
+_LIKE_LABEL = {"crime": "Crime story", "chaos": "Open-world chaos", "cars": "Cars and chases", "story": "Big story", "detail": "Detailed world", "rpg": "RPG choices"}
+_like_rows = "".join(f'<div class="row" data-lp="{e(x[3])}" data-ll="{e(x[4])}"><span><strong>{e(x[0])}</strong><br><span class="muted">{e(x[2])}</span><br><span class="muted">{e(x[1])}</span>'
+                     f'<br><span class="muted mono" style="font-size:.78rem">{e(" · ".join(_LIKE_LABEL[k] for k in x[4].split()))}</span></span></div>' for x in LIKE_GTA)
+def _plat_list(tag): return ", ".join(x[0] for x in LIKE_GTA if tag in x[3].split())
+_like_chips = ('<div class="chips" role="group" aria-label="Platform"><button class="chip" type="button" data-like-p="" aria-pressed="true">Any platform</button>'
+               + "".join(f'<button class="chip" type="button" data-like-p="{k}" aria-pressed="false">{l}</button>' for k, l in [("ps5", "PS5"), ("xbox", "Xbox"), ("pc", "PC"), ("switch", "Switch / Switch 2"), ("ps4", "PS4")]) + '</div>'
+               '<div class="chips" role="group" aria-label="What you liked" style="margin-top:10px"><button class="chip" type="button" data-like-l="" aria-pressed="true">Anything</button>'
+               + "".join(f'<button class="chip" type="button" data-like-l="{k}" aria-pressed="false">{e(l)}</button>' for k, l in _LIKE_LABEL.items()) + '</div>')
+# "Is there a game better than GTA 6?" (demand radar R6): honest per-taste comparison, no scores
+LIKE_BETTER = [
+    ("A slower, more detailed world", "Red Dead Redemption 2", "Same studio. Hunting, camp life and an outlaw story told over dozens of hours."),
+    ("More choices and character builds", "Cyberpunk 2077", "You build your character and pick how missions go. GTA 6 has a fixed story."),
+    ("A tighter crime story", "Mafia: The Old Country", "Shorter and more cinematic, with no sandbox padding."),
+    ("More side stories and fist fights", "Yakuza 0", "Hours of strange side stories and a brawler combat system."),
+    ("Bigger explosions", "Just Cause 3", "Grappling hook, wingsuit and destruction everywhere."),
+    ("Playing on PC today", "Grand Theft Auto V", "GTA 6 has no PC version yet. GTA V is on PC now, with GTA Online."),
+]
+_like_soon = [g for g in GAMES if g["slug"] in ("stranger-than-heaven", "forza-horizon-6", "fable")]
+_like_soon.sort(key=lambda g: (g["date"] or "9999"))
 like_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Games like GTA 6</span>'
              f'<h1>Games like GTA 6:<br><span class="amber">what to play next.</span></h1>'
              f'<p class="lead">Open-world crime games you can play right now on PS5, Xbox, PC, phones and Roblox, plus the 2027 games coming next.</p>'
              f'<p class="muted" style="margin:0">Last checked {e(UPDATED)}</p></div></header>'
              f'<section><div class="wrap"><div class="out" style="margin-bottom:12px"><div class="row"><span><strong>Quick answer:</strong> the best games like GTA 6 are '
              f'GTA V and Red Dead Redemption 2 (same studio), Cyberpunk 2077, Mafia: The Old Country and Sleeping Dogs. On phones, play the GTA Trilogy on Netflix Games; '
-             f'on Roblox, try Jailbreak. GTA 6 itself is not on PC yet.</span></div></div>'
+             f'on Roblox, try Jailbreak. GTA 6 itself is not on PC yet. The next GTA-style game is Stranger Than Heaven, a crime drama due in 2027.</span></div></div>'
+             f'<div class="tool" id="like-tool" style="margin-bottom:24px"><h2 style="font-size:1.5rem;margin-top:0">Which game like GTA 6 should I play?</h2>'
+             f'<p class="muted">Pick your platform and the part of GTA 6 you liked most. The list below narrows to matching games, and your choice is remembered on this device.</p>{_like_chips}'
+             f'<p class="mono amber" id="like-count" aria-live="polite" style="margin:12px 0 0">{len(LIKE_GTA)} games</p></div>'
              f'<div class="sec-head"><h2>What are the best games like GTA 6?</h2><span class="muted">{len(LIKE_GTA)} picks</span></div>'
-             f'<div class="out" style="margin-bottom:28px">{_like_rows}</div>'
-             f'<div class="sec-head"><h2>Games like GTA 6 on PS5</h2></div><p>{e(_plat_list("ps5"))}.</p>'
-             f'<div class="sec-head"><h2>Games like GTA 6 on PC</h2></div><p>{e(_plat_list("pc"))}. GTA 6 has no PC version or date yet, so GTA V is the closest Rockstar game you can play on PC.</p>'
-             f'<div class="sec-head"><h2>Games like GTA 6 on Xbox</h2></div><p>{e(_plat_list("xbox"))}.</p>'
-             f'<div class="sec-head"><h2>Games like GTA 6 for Android and iPhone</h2></div><div class="out" style="margin-bottom:28px">'
+             f'<div class="out" id="like-list" style="margin-bottom:10px">{_like_rows}</div><p class="empty" id="like-none" hidden>No pick matches both. Try "Anything" or another platform.</p>'
+             f'<div style="margin-bottom:28px"></div>'
+             f'<div class="sec-head"><h2>What games are like GTA 6 on PS5?</h2></div><p>{e(_plat_list("ps5"))}.</p>'
+             f'<div class="sec-head"><h2>What games are like GTA 6 on PC?</h2></div><p>{e(_plat_list("pc"))}. GTA 6 has no PC version or date yet, so GTA V is the closest Rockstar game you can play on PC.</p>'
+             f'<div class="sec-head"><h2>What games are like GTA 6 on Xbox?</h2></div><p>{e(_plat_list("xbox"))}.</p>'
+             f'<div class="sec-head"><h2>Are there games like GTA 6 for Android and iPhone?</h2></div><div class="out" style="margin-bottom:28px">'
              + "".join(f'<div class="row"><span><strong>{e(t)}</strong><br><span class="muted">{e(w)}</span><br><span class="muted">{e(pl)}</span></span></div>' for t, pl, w in LIKE_MOBILE) +
-             f'</div><div class="sec-head"><h2>Roblox games like GTA 6 (free)</h2></div><div class="out" style="margin-bottom:28px">'
+             f'</div><div class="sec-head"><h2>What are the best free Roblox games like GTA 6?</h2></div><div class="out" style="margin-bottom:28px">'
              + "".join(f'<div class="row"><span><strong>{e(t)}</strong><br><span class="muted">{e(w)}</span></span><b>Free</b></div>' for t, w in LIKE_ROBLOX) +
-             f'</div><div class="sec-head"><h2>Games like GTA 6 coming out in 2027</h2></div>'
-             f'<p>The closest 2027 match is <strong>Stranger Than Heaven</strong>, a crime drama from the Like a Dragon studio. See every confirmed date on '
+             f'</div><div class="sec-head"><h2>Is there a game better than GTA 6?</h2></div>'
+             f'<p>No game has a bigger, busier modern city than Leonida, but some do one thing better. Pick by what you want more of:</p>'
+             f'<div style="overflow-x:auto;margin-bottom:28px"><table class="gen-table" style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr><th style="text-align:left;padding:6px">If you want</th><th style="text-align:left;padding:6px">Play</th><th style="text-align:left;padding:6px">Why</th></tr></thead><tbody>'
+             + "".join(f'<tr><td style="padding:6px;border-top:1px solid var(--rule)">{e(a)}</td><td style="padding:6px;border-top:1px solid var(--rule)"><strong>{e(b)}</strong></td><td style="padding:6px;border-top:1px solid var(--rule)">{e(c)}</td></tr>' for a, b, c in LIKE_BETTER) +
+             f'</tbody></table></div>'
+             f'<div class="sec-head"><h2>What upcoming games are like GTA 6?</h2><span class="muted">confirmed dates</span></div>'
+             f'<div class="out" style="margin-bottom:12px">' + "".join(_arow(g, w) for g, w in [(g, {"stranger-than-heaven": "Closest crime story", "forza-horizon-6": "Open-world driving", "fable": "Huge open world full of choices"}[g["slug"]]) for g in _like_soon]) + '</div>'
+             f'<p style="margin-bottom:28px">No other open-world crime game is dated for 2027 yet. Rockstar has not announced its next game. More picks with dates: '
              f'<a href="{href("after-gta-6.html", 0)}">what to play after GTA 6</a> and the <a href="{href("biggest-games-2027.html", 0)}">biggest games of 2027</a>.</p>'
              f'<div class="sec-head"><h2>Still playing GTA 6?</h2></div>'
              f'<p>Our sister site <a href="https://neoncoast.org/map" rel="noopener">NeonCoast</a> has the interactive GTA 6 map, every cheat code, '
-             f'<a href="https://neoncoast.org/best-early-cars" rel="noopener">the best early cars</a> and a 100% checklist.</p></div></section>')
+             f'<a href="https://neoncoast.org/best-early-cars" rel="noopener">the best early cars</a> and a 100% checklist.</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+             f'<li><a href="{href("after-gta-6.html", 0)}">What to play after GTA 6</a>: the next big releases in date order</li>'
+             f'<li><a href="{href("games-december-2026.html", 0)}">Games coming out in December 2026</a>, with a console filter</li>'
+             f'<li><a href="{href("backlog-planner-2027.html", 0)}">2027 backlog planner</a>: what you can finish before each launch</li></ul></div></section>')
 like_faq = [
     ("What is the best game like GTA 6?", "GTA V is the closest: same studio, same kind of crime story and open city. If you have played it, try Red Dead Redemption 2 for Rockstar's detail, or Cyberpunk 2077 for a modern neon city."),
     ("What games are like GTA 6 on PC?", _plat_list("pc") + ". GTA 6 is not on PC yet."),
@@ -1572,9 +1603,12 @@ like_faq = [
     ("Are there games like GTA 6 for Android?", "Yes. The GTA Trilogy (GTA III, Vice City and San Andreas) is on Android and iPhone through Netflix Games, and Bully: Anniversary Edition is on both phones."),
     ("What are the best Roblox games like GTA 6?", "Jailbreak, Emergency Hamburg and Southwest Florida. All three are free open-world roleplay games with cars, jobs and police."),
     ("Is there a game better than GTA 6?", "That depends on what you like. Red Dead Redemption 2 has deeper detail, Cyberpunk 2077 has more RPG choices and Yakuza 0 has more side stories. None has a bigger modern city than GTA 6's Leonida."),
+    ("What upcoming games are like GTA 6?", "; ".join(f"{g['title']} ({nice_date(g)}, {', '.join(g['platforms'])})" for g in _like_soon) + ". Stranger Than Heaven, a crime drama from the Like a Dragon studio, is the closest match."),
+    ("Is there a GTA-style game coming in 2027?", "Stranger Than Heaven is the closest: a 20th-century Japanese crime drama from Ryu Ga Gotoku Studio. No other open-world crime game has a 2027 date yet."),
+    ("What game like GTA 6 can I play on Switch?", _plat_list("switch") + ". GTA 6 is not on Switch 2."),
 ]
 page("games-like-gta-6.html", "Games Like GTA 6: Best Picks for PS5, PC, Android and Roblox | DayOneDrop",
-     "The best games like GTA 6 to play now: GTA V, Red Dead Redemption 2, Cyberpunk 2077, Mafia and Sleeping Dogs, plus picks for PC, Android and Roblox.",
+     "Games like GTA 6 to play now, by platform and taste: GTA V, Red Dead 2, Cyberpunk 2077, Mafia. Plus: is any game better than GTA 6, and what's coming next.",
      like_body, 0, like_faq, crumbs=[("Home", DOMAIN + "/"), ("Games like GTA 6", canon("games-like-gta-6.html"))])
 
 

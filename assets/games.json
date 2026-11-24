@@ -2205,24 +2205,72 @@
     "Switch 2"
    ],
    "dev": "FromSoftware / Nintendo",
-   "genre": "Action",
+   "genre": "Multiplayer action",
    "status": "delayed",
-   "page": false,
-   "about": "FromSoftware's multiplayer vampire action game, a Switch 2 exclusive, now coming in 2027.",
+   "page": true,
+   "about": "FromSoftware's online PvPvE action game for up to 8 players, starring blood-powered Bloodsworn, coming only to Switch 2 in 2027.",
    "facts": [
-    "Multiplayer action game from FromSoftware.",
-    "Switch 2 exclusive, published by Nintendo.",
-    "Delayed from 2026 to 2027 so the team can adjust game rules and balancing."
+    "The Duskbloods is now set for 2027. FromSoftware has not given a month or day.",
+    "It was planned for 2026. FromSoftware announced the delay on the game's X account on 29 October 2026, saying it needed time for \"final adjustments to game rules and balancing\".",
+    "It is a Nintendo Switch 2 exclusive, made by FromSoftware (Elden Ring, Bloodborne) in partnership with Nintendo.",
+    "Hidetaka Miyazaki, FromSoftware's president, is the director.",
+    "It is an online multiplayer game. Miyazaki calls it PvPvE: up to 8 players fight enemies and each other in the same match.",
+    "Most matches are last player standing. Some instead have players team up against a powerful boss, and Victory Points can be earned without direct combat.",
+    "You play as one of the Bloodsworn, people who gained superhuman powers from special blood. There are over a dozen characters to choose from, and every one has a ranged attack.",
+    "Maps have no fixed era. Nintendo has shown Gothic and Victorian-style places set near the end of the early modern period.",
+    "A Closed Network Test ran on Switch 2 from 21 to 23 August 2026 (US time). It needed an approved application and a Nintendo Switch Online membership.",
+    "No price, editions or pre-orders have been announced yet."
    ],
    "history": [
     {
-     "when": "Apr 2025",
-     "text": "Announced as a Switch 2 exclusive for 2026."
+     "when": "3 Apr 2025",
+     "text": "Announced in the Nintendo Switch 2 Direct as a Switch 2 exclusive for 2026."
     },
     {
-     "when": "Oct 2026",
-     "text": "Delayed from 2026 to 2027."
+     "when": "4 Apr 2025",
+     "text": "Nintendo's Creator's Voice interview with Miyazaki explains the PvPvE matches and the Bloodsworn."
+    },
+    {
+     "when": "Jun 2026",
+     "text": "Closed Network Test announced at the June Nintendo Direct."
+    },
+    {
+     "when": "21-23 Aug 2026",
+     "text": "Closed Network Test on Switch 2 for selected Nintendo Switch Online members."
+    },
+    {
+     "when": "29 Oct 2026",
+     "text": "Delayed from 2026 to 2027 for final adjustments to rules and balancing."
     }
+   ],
+   "seo_title": "The Duskbloods Release Date, Delay to 2027 and Switch 2 Details",
+   "qa_note": "It was planned for 2026, but FromSoftware moved it to 2027 on 29 October 2026 to finish adjusting its game rules and balance. It is an online PvPvE game for up to 8 players.",
+   "sources": "FromSoftware (official X post, via Shacknews 29 Oct 2026), Nintendo Creator's Voice interview (via RPG Site), VGC, Game Informer, GamingBolt, Kotaku",
+   "faq": [
+    [
+     "Why was The Duskbloods delayed?",
+     "FromSoftware said it needed more time for final adjustments to the game rules and balancing, after its August 2026 network test. It moved the game from 2026 to 2027."
+    ],
+    [
+     "Is The Duskbloods coming to PS5, Xbox or PC?",
+     "No. It is only announced for Nintendo Switch 2, and FromSoftware and Nintendo call it a Switch 2 exclusive."
+    ],
+    [
+     "Is The Duskbloods Bloodborne 2?",
+     "No. It is a new game with its own Bloodsworn characters. Like Bloodborne it has Gothic and Victorian-style settings and firearms, but it is an online PvPvE game, not a single-player sequel."
+    ],
+    [
+     "Does The Duskbloods have single player?",
+     "No single-player mode has been announced. Miyazaki describes it as an online multiplayer focused game, and says FromSoftware will still make single-player games."
+    ],
+    [
+     "How many players can play The Duskbloods?",
+     "Up to 8 players in one online match."
+    ],
+    [
+     "Do I need Nintendo Switch Online to play The Duskbloods?",
+     "The 2026 network test needed Nintendo Switch Online. Nintendo has not said yet whether the full game will, but online play on Switch 2 normally does."
+    ]
    ]
   },
   {

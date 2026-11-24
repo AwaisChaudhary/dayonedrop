@@ -389,6 +389,28 @@
     drawHor();
   }
 
+  /* Games like GTA 6: platform + taste picker */
+  var lkt = $("#like-tool");
+  if (lkt) {
+    var lsel = store.get("dod-like", { p: "", l: "" }) || { p: "", l: "" };
+    var lrows = $$("#like-list [data-lp]"), lcount = $("#like-count"), lnone = $("#like-none");
+    var drawLike = function () {
+      var n = 0;
+      lrows.forEach(function (r) {
+        var ok = (!lsel.p || r.getAttribute("data-lp").split(" ").indexOf(lsel.p) > -1) && (!lsel.l || r.getAttribute("data-ll").split(" ").indexOf(lsel.l) > -1);
+        r.hidden = !ok; if (ok) n++;
+      });
+      $$("[data-like-p]", lkt).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-like-p") === lsel.p ? "true" : "false"); });
+      $$("[data-like-l]", lkt).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-like-l") === lsel.l ? "true" : "false"); });
+      lcount.textContent = n + " game" + (n === 1 ? "" : "s") + " match";
+      lnone.hidden = n > 0;
+      store.set("dod-like", lsel);
+    };
+    $$("[data-like-p]", lkt).forEach(function (c) { c.addEventListener("click", function () { lsel.p = c.getAttribute("data-like-p"); drawLike(); }); });
+    $$("[data-like-l]", lkt).forEach(function (c) { c.addEventListener("click", function () { lsel.l = c.getAttribute("data-like-l"); drawLike(); }); });
+    drawLike();
+  }
+
   /* Game Pass 2027: Game Pass or buy? */
   var gt = $("#gp-tool");
   if (gt) {
