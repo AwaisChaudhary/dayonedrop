@@ -244,6 +244,13 @@
     bt.addEventListener("change", drawBl);
     $("#bl-star").addEventListener("click", function () { bUseStars(); if (!WL.length) toast("Your ★ list is empty. Star games on the board first."); });
     $("#bl-clear").addEventListener("click", function () { bopts.forEach(function (o) { $("input[type=checkbox]", o).checked = false; }); drawBl(); });
+    var blw = $$("[data-blw]", bt);
+    var markW = function () { blw.forEach(function (c) { c.setAttribute("aria-pressed", String(+c.getAttribute("data-blw") === +bweek.value)); }); };
+    blw.forEach(function (c) { c.addEventListener("click", function () { bweek.value = c.getAttribute("data-blw"); markW(); drawBl(); }); });
+    bweek.addEventListener("input", markW);
+    var bbig = $("#bl-big");
+    if (bbig) bbig.addEventListener("click", function () { bopts.forEach(function (o) { $("input[type=checkbox]", o).checked = o.hasAttribute("data-big"); }); drawBl(); });
+    markW();
     bUseStars();
   }
 

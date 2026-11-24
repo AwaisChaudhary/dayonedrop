@@ -148,16 +148,75 @@
     "PS5",
     "PC"
    ],
-   "dev": "",
+   "dev": "Naked Rain / NetEase Games",
    "genre": "Action RPG",
-   "page": false,
-   "facts": [],
-   "history": [],
+   "page": true,
+   "facts": [
+    "Launches 15 January 2027 worldwide on PS5, PC, iOS and Android.",
+    "The date was announced with a trailer at Gamescom Opening Night Live in August 2026.",
+    "On PC you can play through Steam or the game's own launcher.",
+    "It is free-to-play. The developers said at Tokyo Game Show 2025 that there is no character gacha: you unlock characters by playing.",
+    "Made by Naked Rain, a NetEase studio with teams in Hangzhou and Montreal. NetEase Games publishes it.",
+    "Set in fictional cities inspired by Shanghai, Hangzhou and Tokyo. The first city is Nova City; a second city was shown with the date trailer.",
+    "You play a content creator who builds influence while helping keep the city safe.",
+    "Combat is martial arts mixed with the environment and improvised weapons.",
+    "You get around by car, motorbike, helicopter, boat and glider, and can switch between several playable characters.",
+    "Over 17 million players pre-registered across more than 110 countries and regions.",
+    "No Xbox or Switch 2 version has been announced."
+   ],
+   "history": [
+    {
+     "when": "Aug 2023",
+     "text": "First revealed as Project Mugen."
+    },
+    {
+     "when": "Dec 2024",
+     "text": "Renamed Ananta with a new trailer."
+    },
+    {
+     "when": "Sep 2025",
+     "text": "At Tokyo Game Show the developers said there would be no character gacha."
+    },
+    {
+     "when": "Aug 2026",
+     "text": "Release date of 15 January 2027 announced at Gamescom Opening Night Live, with 17 million pre-registrations."
+    }
+   ],
    "date": "2027-01-15",
    "window": "",
    "month": 1,
    "status": "dated",
-   "about": "A free-to-play open-world city adventure, also coming to phones."
+   "about": "A free-to-play open-world city game from Naked Rain and NetEase. You play a content creator in a modern city, fighting with martial arts and anything you can pick up.",
+   "free": true,
+   "seo_title": "Ananta Release Date: Jan 15, 2027 (PS5, PC, Mobile), Free-to-Play Details",
+   "qa_note": "It is free-to-play and also launches on iPhone and Android the same day. No Xbox or Switch 2 version has been announced.",
+   "sources": "RPG Site (25 Aug 2026), GamingBolt (25 Aug 2026), PocketGamer.biz (27 Aug 2026), PC Gamer guide (28 Aug 2026)",
+   "faq": [
+    [
+     "Is Ananta free to play?",
+     "Yes. Ananta is free-to-play on PS5, PC, iPhone and Android. The developers have said characters are unlocked by playing, not through a gacha."
+    ],
+    [
+     "Is Ananta coming to Xbox or Switch 2?",
+     "Not so far. It is announced for PS5, PC, iOS and Android only."
+    ],
+    [
+     "Is Ananta on Steam?",
+     "Yes. On PC it is coming to Steam, and it also has its own launcher."
+    ],
+    [
+     "Is Ananta a gacha game?",
+     "Not for characters. At Tokyo Game Show 2025 the team said there is no character gacha. How paid cosmetics will be sold has not been fully explained yet."
+    ],
+    [
+     "Is Ananta like GTA?",
+     "Partly. It is a modern open city with cars, helicopters and fights, but it is not a crime game: you play a content creator, and combat is martial arts. See our games like GTA 6 page for closer matches."
+    ],
+    [
+     "When was Ananta announced?",
+     "It was first shown in August 2023 as Project Mugen and renamed Ananta in December 2024. The 15 January 2027 date was announced in August 2026."
+    ]
+   ]
   },
   {
    "slug": "stranger-than-heaven",
