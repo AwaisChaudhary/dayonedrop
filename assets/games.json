@@ -374,6 +374,44 @@
    "about": "The PS5 version of the open-world racing game set in Japan, already out on Xbox and PC."
   },
   {
+   "slug": "caladrius-2-dark-element",
+   "title": "Caladrius 2/Dark Element",
+   "date": "2027-01-27",
+   "window": "",
+   "month": 1,
+   "platforms": [
+    "PS5",
+    "PC"
+   ],
+   "dev": "Moss",
+   "genre": "Shoot 'em up",
+   "status": "delayed",
+   "page": false,
+   "about": "Moss's sequel to the side-scrolling shooter Caladrius, now out on 27 January 2027 after a short delay.",
+   "facts": [
+    "Side-scrolling shoot 'em up sequel to Caladrius from Moss.",
+    "Delayed from 10 December 2026 to 27 January 2027.",
+    "Coming to PS5 and PC (also Switch)."
+   ],
+   "history": [
+    {
+     "when": "Aug 2026",
+     "text": "Announced for PS5, Switch and PC."
+    },
+    {
+     "when": "Sep 2026",
+     "text": "Release date set for 10 December 2026."
+    },
+    {
+     "when": "Nov 2026",
+     "text": "Delayed from 10 December 2026 to 27 January 2027."
+    }
+   ],
+   "lastgen": [
+    "Switch"
+   ]
+  },
+  {
    "slug": "metroid-ravenous",
    "title": "Metroid Ravenous",
    "platforms": [
@@ -853,6 +891,39 @@
     },
     {
      "when": "Oct 2026",
+     "text": "Release date set for 18 February 2027."
+    }
+   ]
+  },
+  {
+   "slug": "mr-magpies-harmless-card-game",
+   "title": "Mr. Magpie's Harmless Card Game",
+   "date": "2027-02-18",
+   "window": "",
+   "month": 2,
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC",
+    "Switch 2"
+   ],
+   "dev": "Behaviour Interactive / Gambit Digital (publishers)",
+   "genre": "Deckbuilder",
+   "status": "dated",
+   "page": false,
+   "about": "A dark, comic deckbuilding card game with Minesweeper-style puzzles, out on 18 February 2027.",
+   "facts": [
+    "Deckbuilding card game mixed with Minesweeper-style puzzles.",
+    "Published by Behaviour Interactive and Gambit Digital, with Matt Mercer voicing Mr. Magpie.",
+    "Out on 18 February 2027 on PS5, Xbox Series X|S, Switch 2 and PC."
+   ],
+   "history": [
+    {
+     "when": "Oct 2026",
+     "text": "PS5, Xbox Series X|S and Switch 2 versions announced for early 2027."
+    },
+    {
+     "when": "Nov 2026",
      "text": "Release date set for 18 February 2027."
     }
    ]
@@ -1524,6 +1595,37 @@
    ]
   },
   {
+   "slug": "psycho-dead",
+   "title": "Psycho Dead",
+   "date": "2027-04-15",
+   "window": "",
+   "month": 4,
+   "platforms": [
+    "PS5",
+    "PC"
+   ],
+   "dev": "Moon Catalyst",
+   "genre": "Survival horror",
+   "status": "dated",
+   "page": false,
+   "about": "A third-person survival horror game about a psychic girl escaping a research lab, out on 15 April 2027.",
+   "facts": [
+    "Third-person survival horror with psychic powers.",
+    "Made by Moon Catalyst.",
+    "Out on 15 April 2027 on PS5 and PC."
+   ],
+   "history": [
+    {
+     "when": "Jun 2026",
+     "text": "Set for winter 2026."
+    },
+    {
+     "when": "Nov 2026",
+     "text": "Release date set for 15 April 2027."
+    }
+   ]
+  },
+  {
    "slug": "melty-blood-twi-lumina",
    "title": "Melty Blood: Twi-Lumina",
    "date": "2027-04-22",
@@ -1724,6 +1826,59 @@
    "about": "Honkai: Nexus Anima is HoYoverse's open-world creature-collecting game, due in spring 2027 on PC (and mobile)."
   },
   {
+   "slug": "kirby-and-the-world-beyond",
+   "title": "Kirby and the World Beyond",
+   "platforms": [
+    "Switch 2"
+   ],
+   "dev": "HAL Laboratory / Nintendo",
+   "genre": "3D platformer",
+   "page": true,
+   "facts": [
+    "Kirby and the World Beyond is set for spring 2027. Nintendo has not given an exact day yet.",
+    "It is only announced for Nintendo Switch 2. No version for the original Switch has been announced.",
+    "Nintendo revealed it as the final announcement of the Nintendo Direct on 9 September 2026.",
+    "It is the second full 3D Kirby game, after Kirby and the Forgotten Land (Switch, 2022).",
+    "Nintendo describes it as free exploration of a large world. You can roam open areas instead of only following set levels.",
+    "Copy Abilities are back and are used to get around: bomb jumps, climbing trees with a sword and racing across fields are all shown.",
+    "The story: rescue a girl with mysterious powers from King Dedede. In the trailer Kirby cuts through the sky to reveal a new land behind a wall.",
+    "It arrives in the year of Kirby's 35th anniversary (the first game came out in 1992).",
+    "HAL Laboratory, the studio behind every main Kirby game, is listed as developer. Nintendo publishes it."
+   ],
+   "history": [
+    {
+     "when": "9 Sep 2026",
+     "text": "Revealed at the end of the Nintendo Direct for spring 2027 on Switch 2."
+    }
+   ],
+   "date": null,
+   "window": "Spring 2027",
+   "month": 4,
+   "status": "window",
+   "about": "The second full 3D Kirby adventure after Kirby and the Forgotten Land, with free exploration of a large world, coming to Switch 2 in spring 2027.",
+   "seo_title": "Kirby and the World Beyond Release Date, Switch 2 and Story",
+   "qa_note": "It is only announced for Switch 2, not the original Switch.",
+   "sources": "Nintendo via Gematsu (9 Sep 2026), Nintendo Life, VGC, GamesRadar, Game Informer",
+   "faq": [
+    [
+     "Is Kirby and the World Beyond on the original Switch?",
+     "No. It is only announced for Nintendo Switch 2."
+    ],
+    [
+     "Is Kirby and the World Beyond open world?",
+     "Nintendo calls it free exploration of a large world, so you can roam big open areas. It has not used the words \"open world\", and how open it is will be clearer closer to launch."
+    ],
+    [
+     "Is it a sequel to Kirby and the Forgotten Land?",
+     "It is a new game, not a direct sequel. It is the second full 3D Kirby adventure after Forgotten Land."
+    ],
+    [
+     "How much will Kirby and the World Beyond cost?",
+     "Nintendo has not announced a price yet. We add it here as soon as it is official."
+    ]
+   ]
+  },
+  {
    "slug": "god-of-war-laufey",
    "title": "God of War: Laufey",
    "date": "2027-05-20",
@@ -1854,59 +2009,6 @@
     ]
    ],
    "seo_title": "Kingdom Hearts 4 Release Date, Platforms and Worlds"
-  },
-  {
-   "slug": "kirby-and-the-world-beyond",
-   "title": "Kirby and the World Beyond",
-   "platforms": [
-    "Switch 2"
-   ],
-   "dev": "HAL Laboratory / Nintendo",
-   "genre": "3D platformer",
-   "page": true,
-   "facts": [
-    "Kirby and the World Beyond is set for spring 2027. Nintendo has not given an exact day yet.",
-    "It is only announced for Nintendo Switch 2. No version for the original Switch has been announced.",
-    "Nintendo revealed it as the final announcement of the Nintendo Direct on 9 September 2026.",
-    "It is the second full 3D Kirby game, after Kirby and the Forgotten Land (Switch, 2022).",
-    "Nintendo describes it as free exploration of a large world. You can roam open areas instead of only following set levels.",
-    "Copy Abilities are back and are used to get around: bomb jumps, climbing trees with a sword and racing across fields are all shown.",
-    "The story: rescue a girl with mysterious powers from King Dedede. In the trailer Kirby cuts through the sky to reveal a new land behind a wall.",
-    "It arrives in the year of Kirby's 35th anniversary (the first game came out in 1992).",
-    "HAL Laboratory, the studio behind every main Kirby game, is listed as developer. Nintendo publishes it."
-   ],
-   "history": [
-    {
-     "when": "9 Sep 2026",
-     "text": "Revealed at the end of the Nintendo Direct for spring 2027 on Switch 2."
-    }
-   ],
-   "date": null,
-   "window": "Spring 2027",
-   "month": 4,
-   "status": "window",
-   "about": "The second full 3D Kirby adventure after Kirby and the Forgotten Land, with free exploration of a large world, coming to Switch 2 in spring 2027.",
-   "seo_title": "Kirby and the World Beyond Release Date, Switch 2 and Story",
-   "qa_note": "It is only announced for Switch 2, not the original Switch.",
-   "sources": "Nintendo via Gematsu (9 Sep 2026), Nintendo Life, VGC, GamesRadar, Game Informer",
-   "faq": [
-    [
-     "Is Kirby and the World Beyond on the original Switch?",
-     "No. It is only announced for Nintendo Switch 2."
-    ],
-    [
-     "Is Kirby and the World Beyond open world?",
-     "Nintendo calls it free exploration of a large world, so you can roam big open areas. It has not used the words \"open world\", and how open it is will be clearer closer to launch."
-    ],
-    [
-     "Is it a sequel to Kirby and the Forgotten Land?",
-     "It is a new game, not a direct sequel. It is the second full 3D Kirby adventure after Forgotten Land."
-    ],
-    [
-     "How much will Kirby and the World Beyond cost?",
-     "Nintendo has not announced a price yet. We add it here as soon as it is official."
-    ]
-   ]
   },
   {
    "slug": "pokemon-winds-and-waves",
@@ -2063,6 +2165,64 @@
      "Can I pre-order Resident Evil Veronica?",
      "Not yet. Capcom has only said 2027 and has not announced a price or editions."
     ]
+   ]
+  },
+  {
+   "slug": "state-of-decay-3",
+   "title": "State of Decay 3",
+   "date": null,
+   "window": "2027",
+   "month": 12,
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC"
+   ],
+   "dev": "Undead Labs / Xbox Game Studios",
+   "genre": "Survival",
+   "status": "window",
+   "page": false,
+   "about": "Undead Labs' open-world zombie survival sequel, coming to Xbox, PC and PS5 in 2027.",
+   "facts": [
+    "Open-world zombie survival with community building and co-op.",
+    "Made by Undead Labs, published by Xbox Game Studios.",
+    "Coming in 2027 to Xbox Series X|S, PC and PS5. No month yet."
+   ],
+   "history": [
+    {
+     "when": "Jun 2026",
+     "text": "PS5 version announced; launch set for 2027."
+    }
+   ]
+  },
+  {
+   "slug": "the-duskbloods",
+   "title": "The Duskbloods",
+   "date": null,
+   "window": "2027",
+   "month": 12,
+   "platforms": [
+    "Switch 2"
+   ],
+   "dev": "FromSoftware / Nintendo",
+   "genre": "Action",
+   "status": "delayed",
+   "page": false,
+   "about": "FromSoftware's multiplayer vampire action game, a Switch 2 exclusive, now coming in 2027.",
+   "facts": [
+    "Multiplayer action game from FromSoftware.",
+    "Switch 2 exclusive, published by Nintendo.",
+    "Delayed from 2026 to 2027 so the team can adjust game rules and balancing."
+   ],
+   "history": [
+    {
+     "when": "Apr 2025",
+     "text": "Announced as a Switch 2 exclusive for 2026."
+    },
+    {
+     "when": "Oct 2026",
+     "text": "Delayed from 2026 to 2027."
+    }
    ]
   }
  ]

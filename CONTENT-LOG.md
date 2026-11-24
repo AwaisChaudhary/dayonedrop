@@ -189,3 +189,16 @@
 - Refreshed /after-gta-6 (demand radar R5): quick answer mentions December 2026, new "What comes out before 2027, in December 2026?", "Will there be a GTA 7?" (not announced), "What is Rockstar making after GTA 6?" (nothing announced; no RDR3/Bully 2/L.A. Noire sequel confirmed), "Is GTA 6 coming to PC?" (no; Take-Two gave no PC date in Nov 2026 earnings; GTA 5 PC April 2015, RDR2 PC Nov 2019), 3 new FAQs, new meta description. Left out: Zelnick "next GTA won't take 13 years" remarks (only Insider Gaming/TweakTown/blogs found; re-check IGN/VGC).
 - DEMAND.md R1 and R5 can be marked DONE.
 - IndexNow pending (no WebFetch in this run): /games-december-2026, /after-gta-6, /months/january-2027, /tools
+
+## 2026-11-24 (scheduled data check, morning)
+- Checked: "delayed to 2027" news, Gematsu release-date tag (19-24 Nov), earlier "left out" list, window games (Lords of the Fallen II Q1, Spyro spring, Mega Man: Dual Override spring, The Expanse spring, Kingdom Hearts IV late 2027, Pokémon Winds and Waves 2027). All unchanged.
+- Added 5 (board now 67):
+  - Caladrius 2/Dark Element: 27 Jan 2027 (delayed from 10 Dec 2026), PS5/PC (also Switch), Moss. Gematsu (dated Sep, delay 19 Nov 2026), Final Weapon.
+  - Mr. Magpie's Harmless Card Game: 18 Feb 2027, PS5/Xbox Series X|S/Switch 2/PC, Behaviour Interactive/Gambit Digital. Publisher date via Gematsu (20 Nov 2026), platforms via Gematsu Oct 2026.
+  - Psycho Dead: 15 Apr 2027, PS5/PC, Moon Catalyst. Developer announcement via Gematsu (20 Nov 2026); earlier "winter" plan via Gematsu Jun 2026.
+  - State of Decay 3: 2027, Xbox Series X|S/PC/PS5, Undead Labs. Gematsu, VGC, GamesRadar, Shacknews. Moved from the Game Pass "other" list to tracked Game Pass games.
+  - The Duskbloods: 2027 (delayed from 2026), Switch 2 exclusive, FromSoftware/Nintendo. Game Informer, Kotaku, Shacknews, Siliconera. Added as "2027" like Pokémon/Xenoblade/RE Veronica.
+- Fixed order: Kirby and the World Beyond (month 4) was listed after late-2027 games; games re-sorted by month, then date.
+- Left out: Warhammer Blood Bowl (still "early 2027" PC Gamer vs "spring 2027" God is a Geek); Acts of Blood (PC only, spring 2027, Gematsu only); Goodbye Seoul (PC only, early 2027); Magical Girl Taboo Village (PC/Switch 1, "2027"); Temtem: Swarm Switch 1 port; Dual Orb Collection (Switch 1 only); Bloodstained: The Scarlet Engagement, Blighted, Ontos (only "2027", re-check); smaller one-calendar indies from earlier notes.
+- No date changes for tracked games.
+- IndexNow pending (no WebFetch in this run): /calendar, /games, /delayed-games-2027, /game-pass-2027, /platforms/switch-2, /months/january-2027, /months/february-2027, /months/april-2027

@@ -450,7 +450,7 @@ page("games.html", "All 2027 Games: Release Dates and Platforms List | DayOneDro
      gi, 0, gi_faq, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html"))])
 
 # ---------------- GAME PAGES ----------------
-GP_TRACKED_ALL = {"stranger-than-heaven", "persona-4-revival", "fable", "wo-long-2", "spyro-a-realm-beyond", "the-expanse-osiris-reborn"}
+GP_TRACKED_ALL = {"stranger-than-heaven", "persona-4-revival", "fable", "wo-long-2", "spyro-a-realm-beyond", "the-expanse-osiris-reborn", "state-of-decay-3"}
 PLAT_LINKS = [("platforms/" + s2 + ".html", p2) for p2, s2, l2 in PLAT_PAGES_FOOT]
 def _glink(g, depth=0):
     return f'<a href="{href("games/" + g["slug"] + ".html", depth)}">{e(g["title"])}</a>' if g["page"] else e(g["title"])
@@ -1535,7 +1535,7 @@ page("delayed-games-2027.html", f"Games Delayed to 2027: Every Delay and New Dat
 GP_TRACKED = sorted(GP_TRACKED_ALL)
 GP_DAY_ONE = {"fable", "wo-long-2"}
 GP_OTHER = [("Bad Magpie", "Early 2027"), ("Join Us", "March 2027"), ("Clockwork Revolution", "Spring 2027"),
-            ("Alien Deathstorm", "2027"), ("Moosa: Dirty Fate", "2027"), ("Senua", "2027"), ("State of Decay 3", "2027"),
+            ("Alien Deathstorm", "2027"), ("Moosa: Dirty Fate", "2027"), ("Senua", "2027"),
             ("Valor Mortis", "2027"), ("Vivarium", "2027")]
 _gp = sorted([_gby[s] for s in GP_TRACKED if s in _gby], key=lambda g: (g["month"], g["date"] or "9999"))
 _gp_slugs = {g["slug"] for g in _gp}
