@@ -216,3 +216,10 @@
 - Refreshed /games-like-gta-6 (demand radar R6): new "Which game like GTA 6 should I play?" picker (platform + what you liked: crime story, chaos, cars, big story, detailed world, RPG choices; saved on device; app.js), tags on every pick, question-style H2s, new "Is there a game better than GTA 6?" table (by taste, no scores), "What upcoming games are like GTA 6?" (Stranger Than Heaven, Forza Horizon 6 PS5, Fable from games.json), quick answer names the next GTA-style game, 3 new FAQs (upcoming, GTA-style 2027, Switch), related links (after GTA 6, December 2026, backlog planner), new meta description.
 - DEMAND.md R6 can be marked DONE.
 - IndexNow pending (no WebFetch in this run): /games/the-duskbloods, /games-like-gta-6, /platforms/switch-2, /exclusives-2027
+
+## 2026-11-24 (scheduled data check, evening)
+- Checked: "delayed to 2027" news, Gematsu headlines 22-24 Nov, earlier "left out" list (Blood Bowl, Bloodstained, At Fate's End, Acts of Blood, Magical Girl Taboo Village). No date changes for tracked games.
+- Added 2 "2027"-only delayed games (board now 70), matching how The Duskbloods/Ontos are listed:
+  - Bloodstained: The Scarlet Engagement: 2027 (delayed from 2026, 26 Aug 2026), PS5/Xbox Series X|S/PC, ArtPlay/505 Games. Gematsu, VGC, GamesRadar, RPG Site (delay); Gematsu + Siliconera (platforms).
+  - At Fate's End: 2027 (delayed from 2026, 6 Oct 2026), PS5/Xbox Series X|S/PC, Thunder Lotus, Game Pass. Gematsu + PC Gamer (delay); Gematsu, PlayStation Store, Xbox Store, VGChartz (platforms). Not added to the Game Pass page list (that list uses its own two-source rule).
+- Left out: Warhammer Blood Bowl (still "early 2027" PC Gamer vs "spring 2027" God is a Geek); Threads of Time (summer 2027, Switch 2/Xbox/PC, Gematsu only so far); Acts of Blood (PC only); Magical Girl Taboo Village (PC/Switch 1); Pokémon Winds and Waves "November 2027" (rumour only); Sperm Adventure Become (press release only).
