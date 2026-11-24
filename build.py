@@ -190,7 +190,8 @@ AFF_NOTE = '<p class="aff-note">We may earn a commission if you buy through thes
 def go(slug): return "/go/" + slug
 def write_redirects(root):
     lines = "".join(f"/go/{k} {v} 302\n" for k, v in AFF.items())
-    (root / "_redirects").write_text(lines)
+    _retired = "".join(f"/months/{m}-2027 /later-2027 301\n/months/{m}-2027.html /later-2027 301\n" for m in [x.lower() for x in MONTHS] if (MONTHS.index(m.capitalize()) + 1) not in month_pages_list())
+    (root / "_redirects").write_text(_retired + lines)
 
 
 def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None):
