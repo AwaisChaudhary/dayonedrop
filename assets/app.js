@@ -594,4 +594,50 @@
   $$("[data-copy-link]").forEach(function (b) {
     b.addEventListener("click", function () { navigator.clipboard.writeText(location.href.split("#")[0]).then(function () { toast("Link copied"); }, function () { toast("Copy blocked here"); }); });
   });
+
+  /* new games this week: live week labels, console filter */
+  var wkt = $("#wk-tool");
+  if (wkt) {
+    var wp = store.get("dod-wk", ""), wnow = new Date(), wpad = function (n) { return (n < 10 ? "0" : "") + n; };
+    var wiso = function (d) { return d.getFullYear() + "-" + wpad(d.getMonth() + 1) + "-" + wpad(d.getDate()); };
+    var wtoday = wiso(wnow), wmon = new Date(wnow.getFullYear(), wnow.getMonth(), wnow.getDate() - ((wnow.getDay() + 6) % 7));
+    var wthis = wiso(wmon), wnext = wiso(new Date(wmon.getFullYear(), wmon.getMonth(), wmon.getDate() + 7));
+    var wblocks = $$("#wk-list .wk");
+    $$("[data-wk-date]").forEach(function (r) { if (r.getAttribute("data-wk-date") <= wtoday) { var w = $(".wk-when", r); if (w) w.textContent = "Out now"; } });
+    var wnames = function (all) { var big = all.filter(function (r) { return r.hasAttribute("data-big"); }), rows = big.length ? big : all; return rows.slice(0, 4).map(function (r) { return $("strong", r).textContent; }).join(", ") + (all.length > Math.min(4, rows.length) ? " and " + (all.length - Math.min(4, rows.length)) + " more" : ""); }, _wn = function (rows) { return rows.slice(0, 4).map(function (r) { return $("strong", r).textContent; }).join(", ") + (rows.length > 4 ? " and " + (rows.length - 4) + " more" : ""); };
+    var drawWk = function () {
+      var next = null, thisRows = [], nextRows = [];
+      wblocks.forEach(function (b) {
+        var st = b.getAttribute("data-wk-start"), en = b.getAttribute("data-wk-end"), n = 0;
+        b.hidden = en < wtoday;
+        var lbl = $(".wk-lbl", b); if (lbl) lbl.textContent = st === wthis ? "This week · " : st === wnext ? "Next week · " : "";
+        $$("[data-wk-date]", b).forEach(function (r) {
+          var ok = !wp || (wp === "big" ? r.hasAttribute("data-big") : r.getAttribute("data-plat").split("|").indexOf(wp) > -1);
+          r.hidden = !ok; r.classList.remove("hot");
+          if (ok) {
+            n++;
+            if (!next && r.getAttribute("data-wk-date") > wtoday) next = r;
+            if (st === wthis && r.getAttribute("data-wk-date") >= wtoday) thisRows.push(r);
+            if (st === wnext) nextRows.push(r);
+          }
+        });
+        var nn = $(".wk-n", b); if (nn) nn.textContent = n;
+        var none = $(".wk-none", b); if (none) none.hidden = n > 0 || !$("[data-wk-date]", b);
+      });
+      if (next) next.classList.add("hot");
+      $$("[data-wk-p]", wkt).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-wk-p") === wp ? "true" : "false"); });
+      var on = wp && wp !== "big" ? " on " + wp : wp === "big" ? " (big releases)" : "";
+      $("#wk-count").textContent = "This week: " + thisRows.length + " left" + on + " · Next week: " + nextRows.length;
+      var nx = $("#wk-next");
+      if (next) {
+        var days = Math.round((new Date(next.getAttribute("data-wk-date") + "T00:00:00") - new Date(wtoday + "T00:00:00")) / 864e5);
+        nx.textContent = "Next up: " + $("strong", next).textContent + " in " + days + " day" + (days === 1 ? "" : "s") + ".";
+      } else nx.textContent = "Nothing else is dated yet for that choice.";
+      var q = $("#wk-quick");
+      if (q && !wp) q.textContent = (thisRows.length ? "This week " + thisRows.length + " tracked game" + (thisRows.length === 1 ? " still comes" : "s still come") + " out: " + wnames(thisRows) + "." : "No tracked games come out for the rest of this week.") +
+        (nextRows.length ? " Next week brings " + nextRows.length + ": " + wnames(nextRows) + "." : " Next week has no tracked launches.");
+    };
+    $$("[data-wk-p]", wkt).forEach(function (c) { c.addEventListener("click", function () { wp = c.getAttribute("data-wk-p"); store.set("dod-wk", wp); drawWk(); }); });
+    drawWk();
+  }
 })();

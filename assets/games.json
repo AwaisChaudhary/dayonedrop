@@ -745,6 +745,36 @@
    ]
   },
   {
+   "slug": "outward-2",
+   "title": "Outward 2",
+   "date": "2027-02-08",
+   "window": "",
+   "month": 2,
+   "platforms": [
+    "PC"
+   ],
+   "dev": "Nine Dots Studio",
+   "genre": "Survival RPG",
+   "status": "delayed",
+   "page": false,
+   "about": "Nine Dots Studio's open-world survival RPG sequel, starting Steam Early Access on 8 February 2027 after a delay from 2026.",
+   "facts": [
+    "Sequel to the 2019 survival RPG Outward from Nine Dots Studio.",
+    "Launches in Early Access on PC (Steam) on 8 February 2027.",
+    "Delayed from 2026 into 2027 less than a month before its planned launch."
+   ],
+   "history": [
+    {
+     "when": "Jun 2026",
+     "text": "Early Access delayed from 2026 into 2027."
+    },
+    {
+     "when": "Oct 2026",
+     "text": "Early Access date set for 8 February 2027."
+    }
+   ]
+  },
+  {
    "slug": "spyder-agent-8",
    "title": "Spyder: Agent 8",
    "date": "2027-02-11",
@@ -826,6 +856,41 @@
    "month": 2,
    "status": "dated",
    "about": "Card game game launching in early 2027.",
+   "lastgen": [
+    "Switch"
+   ]
+  },
+  {
+   "slug": "among-us-story-on-guard",
+   "title": "Among Us Story: On Guard",
+   "date": "2027-02-17",
+   "window": "",
+   "month": 2,
+   "platforms": [
+    "Switch 2",
+    "PC"
+   ],
+   "dev": "Innersloth",
+   "genre": "Mystery adventure",
+   "status": "dated",
+   "page": false,
+   "about": "A single-player Among Us murder mystery from Innersloth: you play a Guard rooting out the Impostor. Out 17 February 2027.",
+   "facts": [
+    "Single-player story game set in the Among Us universe, from Innersloth.",
+    "You play a Guard who has to find the Impostor.",
+    "Launches 17 February 2027 on Switch 2, Switch, PC, iOS and Android.",
+    "A playable PC demo is out on Steam."
+   ],
+   "history": [
+    {
+     "when": "Jun 2026",
+     "text": "Revealed at Summer Game Fest."
+    },
+    {
+     "when": "Oct 2026",
+     "text": "Release date set for 17 February 2027."
+    }
+   ],
    "lastgen": [
     "Switch"
    ]
@@ -1679,6 +1744,36 @@
    "about": "A new game launching on 27 April 2027.",
    "facts": [],
    "history": []
+  },
+  {
+   "slug": "pony-island-2-panda-circus",
+   "title": "Pony Island 2: Panda Circus",
+   "date": "2027-04-27",
+   "window": "",
+   "month": 4,
+   "platforms": [
+    "PC"
+   ],
+   "dev": "Daniel Mullins Games",
+   "genre": "Puzzle adventure",
+   "status": "dated",
+   "page": false,
+   "about": "The genre-twisting sequel to Pony Island from Daniel Mullins, the maker of Inscryption. Out on PC on 27 April 2027.",
+   "facts": [
+    "Sequel to Pony Island (2016) from Daniel Mullins Games, the studio behind Inscryption.",
+    "Launches on PC on 27 April 2027 (28 April in Japan).",
+    "Release date announced at gamescom 2026."
+   ],
+   "history": [
+    {
+     "when": "Dec 2023",
+     "text": "Announced for PC."
+    },
+    {
+     "when": "Aug 2026",
+     "text": "Release date set for 27 April 2027."
+    }
+   ]
   },
   {
    "slug": "spyro-a-realm-beyond",

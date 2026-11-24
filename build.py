@@ -220,7 +220,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("new-games-this-week.html", depth)}">New games this week</a></li><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Release dates can change; we update this site as soon as publishers announce changes. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -450,7 +450,7 @@ page("games.html", "All 2027 Games: Release Dates and Platforms List | DayOneDro
      gi, 0, gi_faq, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html"))])
 
 # ---------------- GAME PAGES ----------------
-GP_TRACKED_ALL = {"stranger-than-heaven", "persona-4-revival", "fable", "wo-long-2", "spyro-a-realm-beyond", "the-expanse-osiris-reborn", "state-of-decay-3"}
+GP_TRACKED_ALL = {"stranger-than-heaven", "persona-4-revival", "fable", "wo-long-2", "spyro-a-realm-beyond", "the-expanse-osiris-reborn", "state-of-decay-3", "at-fates-end"}
 PLAT_LINKS = [("platforms/" + s2 + ".html", p2) for p2, s2, l2 in PLAT_PAGES_FOOT]
 def _glink(g, depth=0):
     return f'<a href="{href("games/" + g["slug"] + ".html", depth)}">{e(g["title"])}</a>' if g["page"] else e(g["title"])
@@ -1328,6 +1328,7 @@ tools = f'''<header class="hero"><div class="wrap"><span class="kicker">Tools</s
 <li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a>, with a shareable top list maker</li>
 <li><a href="{href("last-gen-games-2027.html", 0)}">2027 games on PS4, Xbox One and Switch 1</a>, with a do-I-need-to-upgrade check</li>
 <li><a href="{href("game-awards-2026.html", 0)}">The Game Awards 2026</a>: Most Anticipated nominees, their 2027 dates and a winner predictor</li>
+<li><a href="{href("new-games-this-week.html", 0)}">New games coming out this week</a>: every launch grouped Monday to Sunday, with a console filter</li>
 <li><a href="{href("games-december-2026.html", 0)}">Games coming out in December 2026</a>, with a console filter and live "out now" marks</li>
 <li><a href="{href("after-gta-6.html", 0)}">What to play after GTA 6</a></li></ul></div></section>'''
 sw2 = [g["title"] for g in GAMES if "Switch 2" in g["platforms"]]
@@ -1425,6 +1426,7 @@ dec_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Decemb
             f'<p class="muted"><a href="{href("months/january-2027.html", 0)}">See every January 2027 game →</a></p>'
             f'<p class="muted">Not on the list? We only add a December game once two trusted calendars agree on the date or the publisher confirms it. Smaller PC and mobile releases are left out.</p>'
             f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+            f'<li><a href="{href("new-games-this-week.html", 0)}">New games this week</a>: the same launches grouped Monday to Sunday</li>'
             f'<li><a href="{href("game-awards-2026.html", 0)}">The Game Awards 2026</a> on 10 December: how to watch, the 2027 nominees and a winner predictor</li>'
             f'<li><a href="{href("after-gta-6.html", 0)}">What to play after GTA 6</a>: the next big games of 2027</li>'
             f'<li><a href="{href("months/january-2027.html", 0)}">January 2027 game releases</a> and the full <a href="{href("calendar.html", 0)}">2027 calendar</a></li>'
@@ -1594,6 +1596,7 @@ like_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Games
              f'<a href="https://neoncoast.org/best-early-cars" rel="noopener">the best early cars</a> and a 100% checklist.</p>'
              f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
              f'<li><a href="{href("after-gta-6.html", 0)}">What to play after GTA 6</a>: the next big releases in date order</li>'
+             f'<li><a href="{href("new-games-this-week.html", 0)}">New games this week</a>, week by week</li>'
              f'<li><a href="{href("games-december-2026.html", 0)}">Games coming out in December 2026</a>, with a console filter</li>'
              f'<li><a href="{href("backlog-planner-2027.html", 0)}">2027 backlog planner</a>: what you can finish before each launch</li></ul></div></section>')
 like_faq = [
@@ -1674,6 +1677,7 @@ page("delayed-games-2027.html", f"Games Delayed to 2027: Every Delay and New Dat
 # ---------------- XBOX GAME PASS 2027 (22 Nov 2026) ----------------
 # Game Pass list = games named for Xbox Game Pass in 2027 by BOTH Pure Xbox (14 Jun 2026 roundup) and Digital Citizen's 2027 Game Pass table
 # (Moosa: Pure Xbox Mar + Jun 2026 and Digital Citizen prose). Magicians: The Devil's Deal left out (one source only).
+# At Fate's End added 24 Nov 2026: Xbox Wire (Jun 2025 reveal) + Pure Xbox (Oct 2026 delay: 'still coming to Game Pass').
 # Day one wording only where confirmed: Fable (Gematsu, RPG Site, VGChartz), Wo Long 2 (games.json fact).
 GP_TRACKED = sorted(GP_TRACKED_ALL)
 GP_DAY_ONE = {"fable", "wo-long-2"}
@@ -1693,16 +1697,42 @@ def _gprow(g):
             f'<br><span class="muted">{e(tag)} · {e(", ".join(g["platforms"]))}</span></span><b>{e(nice_date(g))}</b></div>')
 _gp_pick = "".join(f'<label class="clash-opt"><input type="checkbox" value="{e(g["slug"])}" data-gp="{1 if g["slug"] in _gp_slugs else 0}"> <span>{e(g["title"])}</span> <span class="muted mono">{e(short_date(g))}</span></label>'
                    for g in sorted(_gp + _xb_buy, key=lambda g: (g["month"], g["date"] or "9999")))
+# Refresh 24 Nov 2026: next Game Pass launch, month-by-month table, delayed Game Pass games
+_gp_up = [g for g in _gp_dated if g["date"] >= UPDATED]
+_gp_n = _gp_up[0] if _gp_up else None
+_gp_next_html = ""
+if _gp_n:
+    _gp_next_html = (f'<div class="sec-head"><h2>Which Game Pass game comes out next?</h2></div>'
+                     f'<p>{_gname(_gp_n)} on {e(nice_date(_gp_n))}' + (", on Game Pass from launch day" if _gp_n["slug"] in GP_DAY_ONE else ", announced for Game Pass") + '.'
+                     + (" After that: " + e(", ".join(f"{g['title']} ({nice_date(g)})" for g in _gp_up[1:4])) + "." if len(_gp_up) > 1 else "") + '</p>'
+                     f'<div class="cdw" style="margin-bottom:28px"><span class="lbl">Countdown to {e(_gp_n["title"])}</span><div class="cd" data-countdown="{_gp_n["date"]}">'
+                     '<div class="cd-unit"><span class="flaps" data-u="0"></span><span>Days</span></div><div class="cd-unit"><span class="flaps" data-u="1"></span><span>Hrs</span></div>'
+                     '<div class="cd-unit"><span class="flaps" data-u="2"></span><span>Min</span></div><div class="cd-unit"><span class="flaps" data-u="3"></span><span>Sec</span></div></div></div>')
+_gp_bym = {}
+for _g in _gp:
+    _gp_bym.setdefault(_g["month"] if _g["date"] else 13, []).append(_g)
+_gp_mtbl = ('<div style="overflow-x:auto"><table class="gen-table" style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr><th style="text-align:left;padding:6px">When</th><th style="padding:6px">Games</th><th style="text-align:left;padding:6px">Which ones</th></tr></thead><tbody>'
+            + "".join(f'<tr><td style="padding:6px;border-top:1px solid var(--rule)">{e(MONTHS[m - 1] + " 2027" if m < 13 else "No exact date yet")}</td><td class="mono" style="padding:6px;text-align:center;border-top:1px solid var(--rule)">{len(gs)}</td>'
+                      f'<td style="padding:6px;border-top:1px solid var(--rule)">{e(", ".join(g["title"] + ("" if g["date"] else " (" + g["window"] + ")") for g in gs))}</td></tr>' for m, gs in sorted(_gp_bym.items()))
+            + '</tbody></table></div>')
+_gp_del = [g for g in _gp if g["status"] == "delayed" or any("elay" in h.get("text", "") for h in g.get("history") or [])]
+_gp_extra = (f'<div class="sec-head" style="margin-top:28px"><h2>When does each Game Pass game arrive in 2027?</h2></div>{_gp_mtbl}'
+             f'<p class="muted" style="margin-top:8px">The eight announced games without even a month (Senua, Vivarium and others) are listed above under "What other games are coming".</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>Which 2027 Game Pass games were delayed?</h2><span class="muted">{len(_gp_del)}</span></div>'
+             + (f'<div class="out" style="margin-bottom:12px">' + "".join(f'<div class="row"><span><strong>{_gname(g)}</strong><br><span class="muted">{e(next((h["text"] for h in reversed(g.get("history") or []) if "elay" in h.get("text", "")), "Delayed"))}</span></span><b>{e(nice_date(g))}</b></div>' for g in _gp_del) + '</div>' if _gp_del else '<p>None so far.</p>')
+             + f'<p class="muted">A delay does not take a game off Game Pass. Every game above is still announced for the service. Full delay history: <a href="{href("delayed-games-2027.html", 0)}">games delayed to 2027</a>.</p>')
 _gp_quick = (f"{_gp_total} games are announced for Xbox Game Pass in 2027 so far. The first big ones are "
              + ", ".join(f"{g['title']} ({nice_date(g)})" for g in _gp_dated[:2]) + (f" and {_gp_dated[2]['title']} ({nice_date(_gp_dated[2])})" if len(_gp_dated) > 2 else "")
-             + ". Fable and Wo Long 2 are confirmed for Game Pass on launch day.")
+             + ". Fable and Wo Long 2 are confirmed for Game Pass on launch day."
+             + (f" The next Game Pass launch is {_gp_n['title']} on {nice_date(_gp_n)}." if _gp_n else ""))
 gp_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Xbox Game Pass</span>'
            f'<h1>Every 2027 game coming to<br><span class="amber">Xbox Game Pass.</span></h1>'
            f'<p class="lead">Fable, Persona 4 Revival, Wo Long 2 and more are heading to Game Pass in 2027. Here is every confirmed game, when it arrives, '
            f'and a quick check of which games on your list you would still need to buy.</p>'
            f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · only games announced for Game Pass and reported by trusted outlets</p></div></header>'
            f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_gp_quick)}</span></div></div>'
-           f'<div class="sec-head"><h2>Which dated 2027 games are on Game Pass?</h2><span class="muted">{len(_gp)}</span></div>'
+           + _gp_next_html +
+           f'<div class="sec-head"><h2>Which 2027 games are on Game Pass?</h2><span class="muted">{len(_gp)}</span></div>'
            f'<div class="out" style="margin-bottom:28px">{"".join(_gprow(g) for g in _gp)}</div>'
            f'<div class="sec-head"><h2>What other games are coming to Game Pass in 2027?</h2><span class="muted">{len(GP_OTHER)}</span></div>'
            f'<p class="muted">Announced for Game Pass, but without an exact date yet. We add them to the board once a date is confirmed.</p>'
@@ -1721,7 +1751,9 @@ gp_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Xbox Ga
            f'<p>These tracked 2027 games are coming to Xbox or PC but are not announced for Game Pass, so plan to buy them: '
            f'{e(", ".join(g["title"] for g in _xb_buy[:14]))}{" and more" if len(_xb_buy) > 14 else ""}. Publishers can add games to Game Pass later.</p>'
            f'<p class="muted">Which Game Pass plan gets new games on launch day can change, so check Xbox\'s own Game Pass page before you subscribe.</p>'
+           + _gp_extra +
            f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+           f'<li><a href="{href("new-games-this-week.html", 0)}">New games this week</a>, week by week, with an Xbox filter</li>'
            f'<li><a href="{href("platforms/xbox-series.html", 0)}">Every Xbox Series X|S game coming in 2027</a></li>'
            f'<li><a href="{href("exclusives-2027.html", 0)}">2027 console exclusives</a>: is anything Xbox-only?</li>'
            f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: which games land the same week</li></ul></div></section>')
@@ -1730,11 +1762,127 @@ gp_faq = [
     ("Is Fable on Game Pass day one?", f"Yes. Fable launches on {nice_date(_gby['fable'])} and is on Game Pass from launch day. It also comes to PS5 and PC." if "fable" in _gby else "Yes, Fable is on Game Pass from launch day."),
     ("Is Persona 4 Revival on Game Pass?", f"Yes. Persona 4 Revival is announced for Game Pass and launches on {nice_date(_gby['persona-4-revival'])}." if "persona-4-revival" in _gby else "Yes, it is announced for Game Pass."),
     ("What is the first Game Pass game of 2027?", f"{_gp_dated[0]['title']}, on {nice_date(_gp_dated[0])}, is the first dated one we track." if _gp_dated else "None are dated yet."),
+    ("Is At Fate's End on Game Pass?", "Yes. Thunder Lotus's At Fate's End is still coming to Game Pass after its delay to 2027. It has no exact date yet."),
+    ("Which Game Pass game comes out next?", (f"{_gp_n['title']} on {nice_date(_gp_n)}." + (" After that: " + ", ".join(f"{g['title']} ({nice_date(g)})" for g in _gp_up[1:3]) + "." if len(_gp_up) > 1 else "")) if _gp_n else "None are dated yet."),
     ("Are Game Pass games also on PS5?", f"Many are. {', '.join(g['title'] for g in _gp_ps5)} are also coming to PS5, where you buy them."),
 ]
 page("game-pass-2027.html", f"Xbox Game Pass 2027: Every Confirmed Game ({_gp_total}) | DayOneDrop"[:90],
      f"All {_gp_total} games announced for Xbox Game Pass in 2027, with dates: Fable, Persona 4 Revival, Wo Long 2, Spyro and more. Plus a Game Pass or buy checker."[:160],
      gp_body, 0, gp_faq, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html")), ("Game Pass 2027", canon("game-pass-2027.html"))])
+
+
+# ---------------- NEW GAMES THIS WEEK (24 Nov 2026) ----------------
+# Week-by-week release schedule (Monday to Sunday) from DEC26 + dated games.json games. Build-time text uses the build date;
+# app.js (#wk-tool) re-works out "this week" / "next week" in the reader's own time, so the page stays right between builds.
+_WK_DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+_wk_items = []
+for _x in DEC26:
+    _wk_items.append({"date": _x[0], "title": _x[1], "plats": _x[2], "big": bool(_x[6]), "name": e(_x[1]), "note": _x[4] or _dkind[_x[7]]})
+for _g in GAMES:
+    if _g["date"]:
+        _wk_items.append({"date": _g["date"], "title": _g["title"], "plats": _g["platforms"], "big": bool(_g["page"] or _g["slug"] in BIG_WHY_SLUGS),
+                          "name": _gname(_g), "note": _g["genre"] + (" · delayed" if _g["status"] == "delayed" else "")})
+_wk_items.sort(key=lambda x: (x["date"], not x["big"], x["title"]))
+def _wk_mon(ds):
+    d = datetime.date.fromisoformat(ds)
+    return d - datetime.timedelta(days=d.weekday())
+_wk_today = datetime.date.fromisoformat(UPDATED)
+_wk_this = _wk_today - datetime.timedelta(days=_wk_today.weekday())
+_wk_last = _wk_mon(_wk_items[-1]["date"])
+_wk_map = {}
+for _x in _wk_items:
+    _wk_map.setdefault(_wk_mon(_x["date"]), []).append(_x)
+_wk_list = []
+_m = _wk_this
+while _m <= _wk_last:
+    _wk_list.append((_m, _wk_map.get(_m, [])))
+    _m += datetime.timedelta(days=7)
+def _wk_lab(mon):
+    sun = mon + datetime.timedelta(days=6)
+    return f"{_dm(mon)} to {_dm(sun)} {sun.year}"
+def _wk_dayname(ds): return _WK_DAYS[datetime.date.fromisoformat(ds).weekday()]
+def _wk_row(x):
+    return (f'<div class="row" data-wk-date="{x["date"]}" data-plat="{e("|".join(x["plats"]))}"{" data-big=\"1\"" if x["big"] else ""}>'
+            f'<span><strong>{x["name"]}</strong>{" <span class=\"muted\">· big release</span>" if x["big"] else ""}'
+            f'<br><span class="muted">{e(x["note"])} · {e(", ".join(x["plats"]))}</span></span>'
+            f'<b><span class="wk-when">{e(_wk_dayname(x["date"])[:3])} {e(_dm(datetime.date.fromisoformat(x["date"])))}</span></b></div>')
+def _wk_block(mon, xs):
+    end = mon + datetime.timedelta(days=6)
+    lab = "This week" if mon == _wk_this else "Next week" if mon == _wk_this + datetime.timedelta(days=7) else ""
+    rows = "".join(_wk_row(x) for x in xs) or '<div class="empty">No tracked launches this week.</div>'
+    return (f'<div class="tool wk" data-wk-start="{mon.isoformat()}" data-wk-end="{end.isoformat()}" style="margin-bottom:14px">'
+            f'<div class="sec-head" style="margin:0"><h3 style="margin:0;font-size:1.15rem">Week of {e(_wk_lab(mon))}</h3>'
+            f'<span class="mono amber"><span class="wk-lbl">{lab}</span>{" · " if lab else ""}<span class="wk-n">{len(xs)}</span> game{"s" if len(xs) != 1 else ""}</span></div>'
+            f'<div class="out">{rows}</div><p class="empty wk-none" hidden>Nothing for that console this week.</p></div>')
+_wk_now = _wk_map.get(_wk_this, [])
+_wk_now_left = [x for x in _wk_now if x["date"] >= UPDATED]
+_wk_next = _wk_map.get(_wk_this + datetime.timedelta(days=7), [])
+_wk_future = [(m, xs) for m, xs in _wk_list if xs]
+_wk_busy = sorted(_wk_future, key=lambda kv: (-len(kv[1]), kv[0]))[:6]
+_wk_nextbig = next((x for x in _wk_items if x["big"] and x["date"] >= UPDATED), None)
+_wk_dow = {}
+for _x in _wk_items:
+    _wk_dow[_wk_dayname(_x["date"])] = _wk_dow.get(_wk_dayname(_x["date"]), 0) + 1
+_wk_dow_sorted = sorted(_wk_dow.items(), key=lambda kv: -kv[1])
+_wk_quiet = [m for m, xs in _wk_list if not any(x["big"] for x in xs)]
+def _wk_names(xs, n=4):
+    big = [x for x in xs if x["big"]] or xs
+    out = ", ".join(x["title"] for x in big[:n])
+    return out + (f" and {len(xs) - min(n, len(big))} more" if len(xs) > min(n, len(big)) else "")
+if _wk_now_left:
+    _wk_q1 = f"This week ({_wk_lab(_wk_this)}) {len(_wk_now_left)} tracked game{'s' if len(_wk_now_left) != 1 else ''} still come{'s' if len(_wk_now_left) == 1 else ''} out: {_wk_names(_wk_now_left)}."
+else:
+    _wk_q1 = f"No tracked games come out for the rest of this week ({_wk_lab(_wk_this)})."
+_wk_q2 = (f" Next week ({_wk_lab(_wk_this + datetime.timedelta(days=7))}) brings {len(_wk_next)}: {_wk_names(_wk_next)}." if _wk_next else " Next week has no tracked launches.")
+_wk_quick = _wk_q1 + _wk_q2
+_wk_chips = ('<div class="chips" role="group" aria-label="Console"><button class="chip" type="button" data-wk-p="" aria-pressed="true">All consoles</button>'
+             + "".join(f'<button class="chip" type="button" data-wk-p="{e(p)}" aria-pressed="false">{e(p)}</button>' for p in PLATS)
+             + '<button class="chip" type="button" data-wk-p="big" aria-pressed="false">Big releases only</button></div>')
+_wk_busy_tbl = ('<div style="overflow-x:auto"><table class="gen-table" style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr><th style="text-align:left;padding:6px">Week</th><th style="padding:6px">Games</th><th style="text-align:left;padding:6px">Biggest launches</th></tr></thead><tbody>'
+                + "".join(f'<tr><td style="padding:6px;border-top:1px solid var(--rule)">{e(_wk_lab(m))}</td><td class="mono" style="padding:6px;text-align:center;border-top:1px solid var(--rule)">{len(xs)}</td>'
+                          f'<td style="padding:6px;border-top:1px solid var(--rule)">{e(_wk_names(xs, 3))}</td></tr>' for m, xs in _wk_busy) + '</tbody></table></div>')
+_wk_dow_rows = "".join(f'<div class="row"><span>{e(d)}</span><b>{n} launch{"es" if n != 1 else ""}</b></div>' for d, n in _wk_dow_sorted)
+wk_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Week by week</span>'
+           f'<h1>New games coming out<br><span class="amber">this week and next.</span></h1>'
+           f'<p class="lead">Every confirmed game launch on PS5, Xbox Series X|S, PC and Switch 2, grouped Monday to Sunday from now until {e(_dm(_wk_last + datetime.timedelta(days=6)))} {(_wk_last + datetime.timedelta(days=6)).year}. '
+           f'"This week" moves on by itself, so you can bookmark this page and check it every Monday.</p>'
+           f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · {len(_wk_items)} dated launches · each date confirmed by the publisher or two trusted outlets</p></div></header>'
+           f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> <span id="wk-quick">{e(_wk_quick)}</span></span></div></div>'
+           f'<div class="tool" id="wk-tool"><h2 style="font-size:1.5rem;margin-top:0">What games come out this week on my console?</h2>'
+           f'<p class="muted">Tap your console. Past weeks are hidden, games already out are marked "Out now" and the next launch is highlighted. Your choice is remembered on this device.</p>{_wk_chips}'
+           f'<p class="mono amber" id="wk-count" aria-live="polite" style="margin:12px 0 0">{len(_wk_items)} games</p><p class="muted" id="wk-next" style="margin:6px 0 0"></p></div></div></section>'
+           + AD.format("wk-mid") +
+           f'<section><div class="wrap"><div class="sec-head"><h2>What games are coming out week by week?</h2><span class="muted">{len(_wk_list)} weeks</span></div>'
+           f'<div id="wk-list">{"".join(_wk_block(m, xs) for m, xs in _wk_list)}</div>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>When is the next big release?</h2></div>'
+           + (f'<p>{_wk_nextbig["name"]} on {e(_wk_dayname(_wk_nextbig["date"]))} {e(nice_date({"date": _wk_nextbig["date"], "window": ""}))} ({e(", ".join(_wk_nextbig["plats"]))}).</p>'
+              f'<div class="cdw"><span class="lbl">Countdown to {e(_wk_nextbig["title"])}</span><div class="cd" data-countdown="{_wk_nextbig["date"]}">'
+              '<div class="cd-unit"><span class="flaps" data-u="0"></span><span>Days</span></div><div class="cd-unit"><span class="flaps" data-u="1"></span><span>Hrs</span></div>'
+              '<div class="cd-unit"><span class="flaps" data-u="2"></span><span>Min</span></div><div class="cd-unit"><span class="flaps" data-u="3"></span><span>Sec</span></div></div></div>' if _wk_nextbig else '<p>No big release is dated yet.</p>')
+           + f'<div class="sec-head" style="margin-top:28px"><h2>Which weeks are the busiest?</h2></div>{_wk_busy_tbl}'
+           f'<p class="muted" style="margin-top:8px">Planning around a crowded week? The <a href="{href("release-clashes-2027.html", 0)}">release clash checker</a> shows which of your own games land close together.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>What day of the week do new games come out?</h2></div>'
+           f'<p>Mostly {e(_wk_dow_sorted[0][0])}s and {e(_wk_dow_sorted[1][0])}s. Of the {len(_wk_items)} dated launches on this page, {_wk_dow_sorted[0][1]} land on a {e(_wk_dow_sorted[0][0])} and {_wk_dow_sorted[1][1]} on a {e(_wk_dow_sorted[1][0])}. '
+           f'Digital versions usually unlock at midnight local time or at a set global time, so check the store page for the exact hour.</p>'
+           f'<div class="out" style="margin-bottom:28px">{_wk_dow_rows}</div>'
+           f'<div class="sec-head"><h2>Which weeks have no big releases?</h2><span class="muted">{len(_wk_quiet)} of {len(_wk_list)}</span></div>'
+           f'<p>{len(_wk_quiet)} of the next {len(_wk_list)} weeks have no big launch, which makes them good weeks to catch up on your backlog. The <a href="{href("backlog-planner-2027.html", 0)}">backlog planner</a> works out what you can finish before each launch.</p>'
+           f'<p class="muted">Not on the list? We add a game once its exact day is confirmed. Games with only a month or season (like Spyro: A Realm Beyond in spring 2027) are on the <a href="{href("calendar.html", 0)}">2027 calendar</a> and move here when they get a date.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+           f'<li><a href="{href("games-december-2026.html", 0)}">Games coming out in December 2026</a>, with the busiest day and Christmas gap</li>'
+           f'<li><a href="{href("months/january-2027.html", 0)}">January 2027 game releases</a> and the full <a href="{href("calendar.html", 0)}">2027 calendar</a></li>'
+           f'<li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a></li>'
+           f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clash checker</a></li></ul></div></section>')
+wk_faq = [
+    ("What games come out this week?", _wk_q1 + " This page updates the week on its own, so it is always the current week when you open it."),
+    ("What games come out next week?", _wk_q2.strip()),
+    ("What day do new video games come out?", f"Most launch on a {_wk_dow_sorted[0][0]} or {_wk_dow_sorted[1][0]}: {_wk_dow_sorted[0][1]} and {_wk_dow_sorted[1][1]} of the {len(_wk_items)} dated launches we track."),
+    ("What is the busiest week for game releases coming up?", f"{_wk_lab(_wk_busy[0][0])}, with {len(_wk_busy[0][1])} launches including {_wk_names(_wk_busy[0][1], 3)}." if _wk_busy else "No week has more than one launch yet."),
+    ("When is the next big game release?", (f"{_wk_nextbig['title']} on {nice_date({'date': _wk_nextbig['date'], 'window': ''})}." if _wk_nextbig else "No big release is dated yet.")),
+]
+page("new-games-this-week.html", "New Games Coming Out This Week and Next (Week by Week) | DayOneDrop",
+     f"New games coming out this week and next on PS5, Xbox, PC and Switch 2: every confirmed launch grouped Monday to Sunday, with console filter and countdowns."[:160],
+     wk_body, 0, wk_faq, crumbs=[("Home", DOMAIN + "/"), ("2027 calendar", canon("calendar.html")), ("New games this week", canon("new-games-this-week.html"))])
 
 
 # ---------------- THE GAME AWARDS 2026 (24 Nov 2026) ----------------
@@ -1950,7 +2098,7 @@ page("404.html", "Page not found | DayOneDrop", "This page has moved or doesn't 
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "new-games-this-week.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)
