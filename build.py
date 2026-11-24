@@ -37,6 +37,8 @@ def canon(page):
     return DOMAIN + ("/" if page == "index.html" else "/" + page[:-5])
 
 
+_INLINE_CSS = (pathlib.Path(__file__).resolve().parent / "assets" / "style.css").read_text()
+
 def asset(name, depth):
     return ("../" * depth if PREVIEW else "/") + "assets/" + name + "?v=" + v(name)
 
@@ -226,8 +228,8 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <meta name="theme-color" content="#0c0d10">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230c0d10'/%3E%3Crect x='5' y='7' width='9' height='18' rx='2' fill='%2323272f'/%3E%3Crect x='18' y='7' width='9' height='18' rx='2' fill='%23ffc629'/%3E%3Crect x='4' y='15.5' width='24' height='1' fill='%23000'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{asset("style.css", depth)}">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"></noscript>
+<style>{_INLINE_CSS}</style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={ADSENSE_CLIENT}" crossorigin="anonymous"></script>
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 </head>
@@ -255,7 +257,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Every date is checked against the publisher or platform holder plus a second trusted source (<a href="{href("about.html", depth)}#editorial">editorial policy</a>). Spotted an error? Email <a href="mailto:awaiskaramat@hotmail.com">awaiskaramat@hotmail.com</a>. Last checked {e(UPDATED)}.</p>
 </div></footer>
-<script>window.DOD={json.dumps({"games": GAMES})};</script>
+<script>window.DOD={json.dumps({"games": [{k: g.get(k) for k in ("slug","title","platforms","date","window","month","page")} for g in GAMES]}, ensure_ascii=False, separators=(",", ":"))};</script>
 <script src="{asset("app.js", depth)}"></script>
 </body>
 </html>
