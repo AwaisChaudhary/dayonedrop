@@ -2145,7 +2145,7 @@ page("about.html", "About DayOneDrop: How We Track 2027 Release Dates | DayOneDr
 <li><strong>Delays kept, not hidden.</strong> When a game slips we keep the old date in its history, with when and why it moved, so you can see how reliable each date has been.</li>
 <li><strong>Checked daily.</strong> We re-check the list every day and after every big showcase. Each page shows when it was last checked.</li>
 </ul>
-<h2>Corrections</h2><p>If a date is wrong or out of date, tell us through the email sign-up form (reply to any of our emails) and include a link to the announcement. We fix confirmed mistakes the same day and note the change in the game's history.</p>
+<h2>Corrections</h2><p>If a date is wrong or out of date, email <a href="mailto:awaiskaramat@hotmail.com">awaiskaramat@hotmail.com</a> with a link to the announcement. We fix confirmed mistakes the same day and note the change in the game's history.</p>
 <h2>How the site is funded</h2><p>DayOneDrop is free. Some pages may show ads, and some store buttons may be affiliate links, which can earn us a small fee at no cost to you. Ads and links never change a date, a ranking or what we say about a game. See our <a href="{href("privacy.html", 0)}">privacy policy</a>.</p>
 <h2>Useful pages</h2><ul><li><a href="{href("games.html", 0)}">All 2027 games, month by month</a></li><li><a href="{href("calendar.html", 0)}">2027 release calendar</a></li><li><a href="{href("delayed-games-2027.html", 0)}">Every delayed 2027 game</a></li><li><a href="{href("new-games-this-week.html", 0)}">New games this week</a></li></ul>
 <p class="muted">Game names and artwork belong to their owners. Last checked {UPDATED}.</p></div></section>''')
@@ -2155,7 +2155,7 @@ page("privacy.html", "Privacy Policy | DayOneDrop", "DayOneDrop privacy policy c
 <h2>Analytics</h2><p>We use Google Analytics to count visits and see which pages are popular. It uses cookies and collects information like pages viewed, approximate location and device type.</p>
 <h2>Advertising</h2><p>This site uses Google AdSense. Google and its partners use cookies to show ads based on your visits to this and other websites. You can turn off personalised ads at <a href="https://adssettings.google.com">Google Ads Settings</a>. Learn more at <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
 <h2>Affiliate links</h2><p>Some links may be affiliate links. If you buy through them, we may earn a small fee at no extra cost to you. As an Amazon Associate we earn from qualifying purchases.</p>
-<h2>Contact</h2><p>Email <strong>[your email address]</strong>.</p></div></section>''')
+<h2>Contact</h2><p>Email <a href="mailto:awaiskaramat@hotmail.com">awaiskaramat@hotmail.com</a>.</p></div></section>''')
 page("404.html", "Page not found | DayOneDrop", "This page has moved or doesn't exist.",
      f'<section><div class="wrap"><h1>Flight <span class="amber">cancelled.</span></h1><p class="lead">This page doesn\'t exist. Head back to the departures board.</p><a class="btn" href="{href("index.html", 0)}">Go to the board</a></div></section>')
 
