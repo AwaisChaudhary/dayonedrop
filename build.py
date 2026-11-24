@@ -632,8 +632,8 @@ for plat, slug, long in PLAT_PAGES:
         (f"Which 2027 games are only on {long}?", ex),
         (f"Which 2027 games are not coming to {long}?", (f"{len(skip)} tracked games are not announced for {long}, including " + ", ".join(g["title"] for g in skip[:5]) + ". See our 2027 console exclusives page for the full list.") if skip else f"Every 2027 game we track is announced for {long}."),
     ]
-    page(f, f"Every {long} Game Coming in 2027 (Release Dates) | DayOneDrop"[:90],
-         f"All {len(games)} confirmed {long} games launching in 2027, sorted by release date, with countdowns, delays and links to full guides."[:160],
+    page(f, f"{long} Games 2027: All {len(games)} Release Dates in Order | DayOneDrop"[:90],
+         f"{long} games 2027: all {len(games)} confirmed games coming out in 2027, in release date order, with countdowns, delays, exclusives and links to full guides."[:160],
          body, 1, faqs, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html")), (long + " games 2027", canon(f))])
 
 # ---------------- MONTH PAGES ----------------
