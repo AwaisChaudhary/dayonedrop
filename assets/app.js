@@ -506,6 +506,35 @@
     tSet(); tRender();
   }
 
+  /* December 2026: console filter + out-now marks */
+  var dct = $("#dec-tool");
+  if (dct) {
+    var dp = store.get("dod-dec", ""), drows = $$("#dec-list [data-dec-date]"), dnow = new Date(), dpad = function (n) { return (n < 10 ? "0" : "") + n; };
+    var dtoday = dnow.getFullYear() + "-" + dpad(dnow.getMonth() + 1) + "-" + dpad(dnow.getDate());
+    $$("[data-dec-date]").forEach(function (r) {
+      if (r.getAttribute("data-dec-date") <= dtoday) { var w = $(".dec-when", r); if (w) w.textContent = "Out now"; }
+    });
+    var drawDec = function () {
+      var n = 0, next = null;
+      drows.forEach(function (r) {
+        var ok = !dp || (dp === "big" ? r.hasAttribute("data-big") : r.getAttribute("data-plat").split("|").indexOf(dp) > -1);
+        r.hidden = !ok; r.classList.remove("hot");
+        if (ok) { n++; if (!next && r.getAttribute("data-dec-date") > dtoday) next = r; }
+      });
+      if (next) next.classList.add("hot");
+      $$("[data-dec-p]", dct).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-dec-p") === dp ? "true" : "false"); });
+      $("#dec-count").textContent = n + " game" + (n === 1 ? "" : "s") + (dp && dp !== "big" ? " on " + dp : "");
+      var nx = $("#dec-next");
+      if (next) {
+        var days = Math.round((new Date(next.getAttribute("data-dec-date") + "T00:00:00") - new Date(dtoday + "T00:00:00")) / 864e5);
+        nx.textContent = "Next up: " + $("strong", next).textContent + " in " + days + " day" + (days === 1 ? "" : "s") + ".";
+      } else nx.textContent = dtoday > "2026-12-31" ? "December 2026 is over. See January 2027 below." : "Everything on this list is out now.";
+      $("#dec-none").hidden = n > 0;
+    };
+    $$("[data-dec-p]", dct).forEach(function (c) { c.addEventListener("click", function () { dp = c.getAttribute("data-dec-p"); store.set("dod-dec", dp); drawDec(); }); });
+    drawDec();
+  }
+
   /* copy page link */
   $$("[data-copy-link]").forEach(function (b) {
     b.addEventListener("click", function () { navigator.clipboard.writeText(location.href.split("#")[0]).then(function () { toast("Link copied"); }, function () { toast("Copy blocked here"); }); });

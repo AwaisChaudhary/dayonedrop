@@ -220,7 +220,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Release dates can change; we update this site as soon as publishers announce changes. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -673,6 +673,7 @@ for m in month_pages_list():
     _mpl = ("".join(f'<div class="row"><span><a href="{href("platforms/" + s2 + ".html", 1)}">{e(l2)}</a><br><span class="muted">{e(", ".join(g["title"] for g in games if p2 in g["platforms"]) or "Nothing yet")}</span></span><b>{pc[p2]} of {len(games)}</b></div>' for p2, s2, l2 in PLAT_PAGES))
     prev_next = []
     ml = month_pages_list(); i = ml.index(m)
+    if m == 1: prev_next.append(f'<a class="btn line sm" href="{href("games-december-2026.html", 1)}">← December 2026</a>')
     if i > 0: prev_next.append(f'<a class="btn line sm" href="{href("months/" + MONTH_SLUGS[ml[i-1] - 1] + ".html", 1)}">← {MONTHS[ml[i-1] - 1]} 2027</a>')
     if i < len(ml) - 1: prev_next.append(f'<a class="btn line sm" href="{href("months/" + MONTH_SLUGS[ml[i+1] - 1] + ".html", 1)}">{MONTHS[ml[i+1] - 1]} 2027 →</a>')
     body = (f'<header class="hero"><div class="wrap"><span class="kicker">{mname} 2027</span>'
@@ -1218,6 +1219,7 @@ tools = f'''<header class="hero"><div class="wrap"><span class="kicker">Tools</s
 <li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a>, with a shareable top list maker</li>
 <li><a href="{href("last-gen-games-2027.html", 0)}">2027 games on PS4, Xbox One and Switch 1</a>, with a do-I-need-to-upgrade check</li>
 <li><a href="{href("game-awards-2026.html", 0)}">The Game Awards 2026</a>: Most Anticipated nominees, their 2027 dates and a winner predictor</li>
+<li><a href="{href("games-december-2026.html", 0)}">Games coming out in December 2026</a>, with a console filter and live "out now" marks</li>
 <li><a href="{href("after-gta-6.html", 0)}">What to play after GTA 6</a></li></ul></div></section>'''
 sw2 = [g["title"] for g in GAMES if "Switch 2" in g["platforms"]]
 both = [g["title"] for g in GAMES if "PS5" in g["platforms"] and "Xbox Series X|S" in g["platforms"]]
@@ -1230,6 +1232,107 @@ tools_faq = [
 page("tools.html", "2027 Game Release Tools: Console Lineup and Launch List | DayOneDrop",
      "Free 2027 gaming tools: see every game coming to PS5, Xbox, PC or Switch 2, build a launch list with countdowns, and find the busiest release months.",
      tools, 0, tools_faq, crumbs=[("Home", DOMAIN + "/"), ("Tools", canon("tools.html"))])
+
+
+# ---------------- DECEMBER 2026 (24 Nov 2026, demand radar R1: "games coming out december 2026") ----------------
+# Only games on 2+ of: VGC, Game Informer, GamesRadar+ and Wikipedia 2026 calendars, plus publisher/news confirmation for the big ones
+# (Gematsu, RPG Site, Nintendo Life, Push Square, Shacknews, Time Extension, Koei Tecmo, Ubisoft, Epic Games Store news). Checked 24 Nov 2026.
+# Left out (one calendar only or unclear): Ravenswatch S2 (18 Dec), Silver Palace (14 Dec), Coral Island S2 (7 Dec), Ancestors S2/PS5/XSX (8 Dec),
+# The Road of Dust and Sorrow (3 Dec on 2 calendars but listed for 2027 elsewhere), Rayman Origins Enhanced (GI only).
+# (date, title, platforms on our 4 consoles, also-on, genre, note, big, kind)
+DEC26 = [
+    ("2026-12-01", "Hela", ["PS5", "Xbox Series X|S", "PC", "Switch 2"], "", "Co-op adventure", "A small mouse on a big adventure.", False, "new"),
+    ("2026-12-02", "The Ascent: Ultimate Edition", ["Switch 2"], "", "Action RPG", "Switch 2 version of the 2021 cyberpunk shooter.", False, "port"),
+    ("2026-12-03", "Dragon Quest Monsters: The Withered World", ["PS5", "Xbox Series X|S", "PC", "Switch 2"], "Switch", "Monster-taming RPG", "Square Enix's next Dragon Quest Monsters, with over 500 monsters to recruit.", True, "new"),
+    ("2026-12-03", "Rayman Legends Retold", ["PS5", "Xbox Series X|S", "PC", "Switch 2"], "", "Platformer", "Ubisoft's remake of Rayman Legends. Delayed to 3 December.", True, "remake"),
+    ("2026-12-03", "Thief: The Dark Project Remastered", ["PS5", "Xbox Series X|S", "PC", "Switch 2"], "PS4, Xbox One, Switch", "Stealth", "Nightdive's remaster of the 1998 stealth classic.", True, "remake"),
+    ("2026-12-03", "Warhammer 40,000: Dawn of War IV", ["PC"], "", "Real-time strategy", "The return of the Dawn of War strategy series. Delayed to 3 December.", True, "new"),
+    ("2026-12-03", "Xenoblade Chronicles 3: Nintendo Switch 2 Edition", ["Switch 2"], "", "RPG", "The upgraded Switch 2 version of Xenoblade Chronicles 3.", True, "port"),
+    ("2026-12-03", "Edge of Memories", ["PS5", "Xbox Series X|S", "PC"], "", "Action RPG", "Delayed from 5 November to 3 December.", False, "new"),
+    ("2026-12-03", "Aeterna Lucis", ["PS5", "Xbox Series X|S", "PC"], "PS4, Xbox One, Switch", "Metroidvania", "Also on Switch 1, not listed for Switch 2.", False, "new"),
+    ("2026-12-03", "Eriksholm: The Stolen Dream", ["Switch 2"], "", "Stealth", "Switch 2 version of the 2025 stealth game.", False, "port"),
+    ("2026-12-04", "Monster Hunter Wilds", ["Switch 2"], "", "Action RPG", "Capcom's 2025 hit arrives on Switch 2, with local and cross-platform play.", True, "port"),
+    ("2026-12-07", "Stronghold 4 (Early Access)", ["PC"], "", "Strategy", "Castle-building strategy in Early Access.", False, "early"),
+    ("2026-12-08", "Guns of Eschaton", ["PS5", "Xbox Series X|S", "PC"], "", "", "", False, "new"),
+    ("2026-12-10", "Attack on Titan 3", ["PS5", "Xbox Series X|S", "PC", "Switch 2"], "", "Action", "Koei Tecmo's third Attack on Titan game, out the same day as The Game Awards.", True, "new"),
+    ("2026-12-10", "Professor Layton and the New World of Steam", ["Switch 2", "PS5", "PC"], "Switch", "Puzzle adventure", "The first new Layton game in over ten years, and the series' first time on PlayStation.", True, "new"),
+    ("2026-12-10", "Stage Tour", ["PS5", "Xbox Series X|S", "PC", "Switch 2"], "", "", "", False, "new"),
+    ("2026-12-11", "Path of Exile 2 (1.0)", ["PS5", "Xbox Series X|S", "PC"], "", "Action RPG", "The full 1.0 launch after Early Access. Free to play.", True, "early"),
+]
+DEC26.sort(key=lambda x: x[0])
+_dkind = {"new": "New game", "port": "New console version", "remake": "Remake / remaster", "early": "Full launch / Early Access"}
+_dbig = [x for x in DEC26 if x[6]]
+_dcnt = {p: [x for x in DEC26 if p in x[2]] for p in PLATS}
+_dday = {}
+for _x in DEC26: _dday.setdefault(_x[0], []).append(_x)
+_dbusy = max(_dday.items(), key=lambda kv: len(kv[1]))
+_dlast = DEC26[-1]
+def _dnice(d): return nice_date({"date": d, "window": ""})
+def _drowd(x):
+    d, t, pl, also, gen, note, big, kind = x
+    meta = " · ".join(v for v in [gen, ", ".join(pl) + (f" (also {also})" if also else ""), _dkind[kind]] if v)
+    star = ' <span class="muted">· big release</span>' if big else ""
+    return (f'<div class="row" data-dec-date="{d}" data-plat="{e("|".join(pl))}"{" data-big=\"1\"" if big else ""}><span><strong>{e(t)}</strong>{star}'
+            + (f'<br><span class="muted">{e(note)}</span>' if note else "")
+            + f'<br><span class="muted">{e(meta)}</span></span><b><span class="dec-when">{e(_dnice(d))}</span></b></div>')
+_dquick = (f"{len(DEC26)} confirmed games come out in December 2026. The biggest are Dragon Quest Monsters: The Withered World and Rayman Legends Retold (3 December), "
+           f"Monster Hunter Wilds on Switch 2 (4 December), Attack on Titan 3 and Professor Layton and the New World of Steam (10 December) and the Path of Exile 2 1.0 launch (11 December). "
+           f"The busiest day is {_dnice(_dbusy[0])[:-5]} with {len(_dbusy[1])} launches, and the month goes quiet after {_dnice(_dlast[0])[:-5]}.")
+_dchips = ('<div class="chips" role="group" aria-label="Console"><button class="chip" type="button" data-dec-p="" aria-pressed="true">All consoles</button>'
+           + "".join(f'<button class="chip" type="button" data-dec-p="{e(p)}" aria-pressed="false">{e(p)}</button>' for p in PLATS)
+           + '<button class="chip" type="button" data-dec-p="big" aria-pressed="false">Big releases only</button></div>')
+_dtbl = ('<div style="overflow-x:auto"><table class="gen-table" style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr><th style="text-align:left;padding:6px">Console</th><th style="padding:6px">December 2026 games</th><th style="text-align:left;padding:6px">Biggest one</th></tr></thead><tbody>'
+         + "".join(f'<tr><td style="padding:6px;border-top:1px solid var(--rule)">{e(p)}</td><td class="mono" style="padding:6px;text-align:center;border-top:1px solid var(--rule)">{len(_dcnt[p])}</td>'
+                   f'<td style="padding:6px;border-top:1px solid var(--rule)">{e(next((x[1] for x in _dcnt[p] if x[6]), "-"))}</td></tr>' for p in PLATS) + '</tbody></table></div>')
+_dremake = [x for x in DEC26 if x[7] in ("port", "remake")]
+_ddelay = [x for x in DEC26 if "Delayed" in x[5]]
+_jan = sorted([g for g in GAMES if g["month"] == 1 and g["date"]], key=lambda g: g["date"])
+dec_body = (f'<header class="hero"><div class="wrap"><span class="kicker">December 2026</span>'
+            f'<h1>Games coming out in December 2026:<br><span class="amber">{len(DEC26)} launches before 2027.</span></h1>'
+            f'<p class="lead">Every confirmed video game release for December 2026 on PS5, Xbox Series X|S, PC and Switch 2, in date order. Games that are already out get marked as you scroll the month.</p>'
+            f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · each date is on at least two trusted release calendars or confirmed by the publisher</p></div></header>'
+            f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_dquick)}</span></div></div>'
+            f'<div class="tool" id="dec-tool"><h2 style="font-size:1.5rem;margin-top:0">What comes out in December 2026 on my console?</h2>'
+            f'<p class="muted">Tap your console. Released games are marked "Out now", and the next launch is highlighted. Your choice is remembered on this device.</p>{_dchips}'
+            f'<p class="mono amber" id="dec-count" aria-live="polite" style="margin:12px 0 0">{len(DEC26)} games</p><p class="muted" id="dec-next" style="margin:6px 0 0"></p></div></div></section>'
+            + AD.format("dec-mid") +
+            f'<section><div class="wrap"><div class="sec-head"><h2>What games come out in December 2026?</h2><span class="muted">{len(DEC26)}</span></div>'
+            f'<div class="out" id="dec-list" style="margin-bottom:8px">{"".join(_drowd(x) for x in DEC26)}</div>'
+            f'<p class="empty" id="dec-none" hidden>No December 2026 games for that console. Try another one.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>What are the biggest games of December 2026?</h2><span class="muted">{len(_dbig)}</span></div>'
+            f'<div class="out" style="margin-bottom:28px">{"".join(_drowd(x) for x in _dbig)}</div>'
+            f'<div class="sec-head"><h2>What is the busiest day in December 2026?</h2><span class="mono amber">{len(_dbusy[1])} launches</span></div>'
+            f'<p>{e(_dnice(_dbusy[0]))} is the busiest day of the month: ' + e(", ".join(x[1] for x in _dbusy[1])) + '.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>How many December 2026 games are on each console?</h2></div>{_dtbl}'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Which December 2026 games were delayed?</h2><span class="muted">{len(_ddelay)}</span></div>'
+            f'<div class="out" style="margin-bottom:28px">{"".join(_drowd(x) for x in _ddelay)}</div>'
+            f'<div class="sec-head"><h2>Which December 2026 games are remakes or new versions?</h2><span class="muted">{len(_dremake)}</span></div>'
+            f'<p>' + e(", ".join(x[1] for x in _dremake)) + '. If you already own the original, check each store for an upgrade price before you buy.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Are there any big games out at Christmas 2026?</h2></div>'
+            f'<p>No big confirmed launches land between {e(_dnice(_dlast[0])[:-5])} and the end of the year in the release calendars we checked. Publishers rarely launch in the last two weeks of December, '
+            f'so the Christmas gap is the time to catch up on GTA 6 (out since 19 November 2026) and the early-December releases above.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>What comes out next, in January 2027?</h2><span class="muted">{len(_jan)} dated</span></div>'
+            f'<div class="out" style="margin-bottom:12px">' + "".join(f'<div class="row"><span>{_gname(g)}<br><span class="muted">{e(", ".join(g["platforms"]))}</span></span><b>{e(nice_date(g))}</b></div>' for g in _jan[:6]) + '</div>'
+            f'<p class="muted"><a href="{href("months/january-2027.html", 0)}">See every January 2027 game →</a></p>'
+            f'<p class="muted">Not on the list? We only add a December game once two trusted calendars agree on the date or the publisher confirms it. Smaller PC and mobile releases are left out.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+            f'<li><a href="{href("game-awards-2026.html", 0)}">The Game Awards 2026</a> on 10 December: how to watch, the 2027 nominees and a winner predictor</li>'
+            f'<li><a href="{href("after-gta-6.html", 0)}">What to play after GTA 6</a>: the next big games of 2027</li>'
+            f'<li><a href="{href("months/january-2027.html", 0)}">January 2027 game releases</a> and the full <a href="{href("calendar.html", 0)}">2027 calendar</a></li>'
+            f'<li><a href="{href("backlog-planner-2027.html", 0)}">2027 backlog planner</a>: finish your December games before 2027 starts</li></ul></div></section>')
+dec_faq = [
+    ("What games come out in December 2026?", _dquick),
+    ("What is the biggest game coming out in December 2026?", "Dragon Quest Monsters: The Withered World (3 December), Monster Hunter Wilds on Switch 2 (4 December), Professor Layton and the New World of Steam and Attack on Titan 3 (both 10 December) and the Path of Exile 2 1.0 launch (11 December) are the biggest."),
+    ("What games come out on PS5 in December 2026?", f"{len(_dcnt['PS5'])}: " + ", ".join(f"{x[1]} ({_dnice(x[0])[:-5]})" for x in _dcnt["PS5"]) + "."),
+    ("What Switch 2 games come out in December 2026?", f"{len(_dcnt['Switch 2'])}: " + ", ".join(f"{x[1]} ({_dnice(x[0])[:-5]})" for x in _dcnt["Switch 2"]) + "."),
+    ("What Xbox games come out in December 2026?", f"{len(_dcnt['Xbox Series X|S'])}: " + ", ".join(f"{x[1]} ({_dnice(x[0])[:-5]})" for x in _dcnt["Xbox Series X|S"]) + "."),
+    ("Is Monster Hunter Wilds coming to Switch 2?", "Yes. Capcom released the date in the September 2026 Nintendo Direct: 4 December 2026, with local and cross-platform play."),
+    ("Is Professor Layton and the New World of Steam on PS5?", "Yes. It launches on 10 December 2026 on Switch 2, Switch, PS5 and PC."),
+    ("Are any big games coming out at Christmas 2026?", f"No. The last notable confirmed release is {_dlast[1]} on {_dnice(_dlast[0])}. The next wave starts in January 2027."),
+]
+page("games-december-2026.html", f"Games Coming Out in December 2026 ({len(DEC26)} Releases) | DayOneDrop",
+     f"Every confirmed game coming out in December 2026 on PS5, Xbox, PC and Switch 2: Dragon Quest Monsters, Monster Hunter Wilds Switch 2, Layton, Attack on Titan 3."[:160],
+     dec_body, 0, dec_faq, crumbs=[("Home", DOMAIN + "/"), ("2027 calendar", canon("calendar.html")), ("December 2026 games", canon("games-december-2026.html"))])
 
 
 # ---------------- WHAT TO PLAY AFTER GTA 6 (21 Nov 2026) ----------------
@@ -1261,13 +1364,25 @@ after_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Afte
               f'<p class="muted" style="margin:0">Last checked {e(UPDATED)}</p></div></header>'
               f'<section><div class="wrap"><div class="out" style="margin-bottom:12px"><div class="row"><span><strong>Quick answer:</strong> the next big releases after GTA 6 are '
               + ", ".join(f"{g['title']} ({nice_date(g)})" for g, _ in _picks[:4]) +
-              f'. The busiest stretch is February 2027.</span></div></div>'
+              f'. The busiest stretch is February 2027. Before that, December 2026 brings {len(DEC26)} smaller launches, led by Monster Hunter Wilds on Switch 2 and Professor Layton.</span></div></div>'
               f'<div class="sec-head"><h2>What are the next big games after GTA 6?</h2><span class="muted">{len(_picks)} picks</span></div>'
               f'<div class="out" style="margin-bottom:28px">{"".join(_arow(g, w) for g, w in _picks)}</div>'
               f'<div class="sec-head"><h2>Which of these can I play on my console?</h2></div><div class="out" style="margin-bottom:28px">'
               + "".join(f'<div class="row"><span><a href="{href("platforms/" + s2 + ".html", 0)}">{e(l2)}</a><br><span class="muted">{e(", ".join(g["title"] for g, _ in _picks if p2 in g["platforms"]))}</span></span>'
                         f'<b>{sum(1 for g, _ in _picks if p2 in g["platforms"])} of {len(_picks)}</b></div>' for p2, s2, l2 in PLAT_PAGES_FOOT) +
-              f'</div><div class="sec-head"><h2>Still playing GTA 6?</h2></div>'
+              f'</div><div class="sec-head"><h2>What comes out before 2027, in December 2026?</h2><span class="muted">{len(_dbig)} big ones</span></div>'
+              f'<div class="out" style="margin-bottom:12px">' + "".join(f'<div class="row"><span><strong>{e(x[1])}</strong><br><span class="muted">{e(", ".join(x[2]))}</span></span><b>{e(_dnice(x[0]))}</b></div>' for x in _dbig) + '</div>'
+              f'<p class="muted" style="margin-bottom:28px">All {len(DEC26)} December launches, with a console filter: <a href="{href("games-december-2026.html", 0)}">games coming out in December 2026</a>.</p>'
+              f'<div class="sec-head"><h2>Will there be a GTA 7?</h2></div>'
+              f'<p>Not announced. Rockstar and Take-Two have not named a GTA 7, a date or a setting. GTA 6 itself took over ten years after GTA 5 (2013), so any sequel is many years away. '
+              f'Anything you read about GTA 7 right now is a rumour.</p>'
+              f'<div class="sec-head" style="margin-top:28px"><h2>What is Rockstar making after GTA 6?</h2></div>'
+              f'<p>Rockstar has not announced its next game. There is no confirmed Red Dead Redemption 3, Bully 2 or L.A. Noire sequel. For now its focus is GTA 6 and its online mode. '
+              f'We will add Rockstar\'s next game to the board the day it is announced with a date.</p>'
+              f'<div class="sec-head" style="margin-top:28px"><h2>Is GTA 6 coming to PC?</h2></div>'
+              f'<p>No PC version has been announced. GTA 6 launched on PS5 and Xbox Series X|S on 19 November 2026, and Take-Two did not give a PC date in its November 2026 earnings. '
+              f'Past Rockstar games reached PC later: GTA 5 (2013) reached PC in April 2015, and Red Dead Redemption 2 (October 2018) in November 2019.</p>'
+              f'<div class="sec-head" style="margin-top:28px"><h2>Still playing GTA 6?</h2></div>'
               f'<p>Our sister site <a href="https://neoncoast.org/map" rel="noopener">NeonCoast</a> has an interactive GTA 6 map, a mission tracker, '
               f'every cheat code and a "Can my PC run GTA 6?" checker. There is no GTA 6 PC release date yet.</p>'
               f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
@@ -1281,10 +1396,13 @@ after_faq = [
     ("What is the next big game after GTA 6?", (f"{_first['title']}, on {nice_date(_first)}, is the first big release on our list." if _first else "See the list above for dates.")),
     ("Which games after GTA 6 are coming to PS5?", ", ".join(f"{g['title']} ({nice_date(g)})" for g, _ in _picks if "PS5" in g["platforms"]) + "."),
     ("Is there a crime game like GTA coming in 2027?", "Stranger Than Heaven, from the Like a Dragon studio, is a crime drama dated " + (nice_date(_gby["stranger-than-heaven"]) if "stranger-than-heaven" in _gby else "for 2027") + ". It is the closest story match to GTA on our 2027 list."),
+    ("Will there be a GTA 7?", "Rockstar has not announced GTA 7. There is no date, setting or official confirmation, so any GTA 7 news right now is a rumour."),
+    ("What is Rockstar's next game after GTA 6?", "Rockstar has not announced one. Red Dead Redemption 3 and other sequels are unconfirmed."),
+    ("What games come out after GTA 6 in December 2026?", f"{len(DEC26)} confirmed games, including Dragon Quest Monsters: The Withered World (3 December), Monster Hunter Wilds on Switch 2 (4 December), Professor Layton and the New World of Steam (10 December) and the Path of Exile 2 1.0 launch (11 December)."),
     ("Is GTA 6 coming to PC?", "Not yet. Rockstar has not announced a PC version or date. GTA 6 launched on PS5 and Xbox Series X|S on 19 November 2026."),
 ]
 page("after-gta-6.html", "What to Play After GTA 6: The Next Big Games (2027) | DayOneDrop",
-     "Finished GTA 6? The biggest confirmed games coming next, in release order: Stranger Than Heaven, Forza Horizon 6, Fable, Final Fantasy VII Revelation and more.",
+     "Finished GTA 6? The big games coming next, from December 2026 into 2027, plus: will there be a GTA 7, what Rockstar does next and GTA 6 on PC.",
      after_body, 0, after_faq, crumbs=[("Home", DOMAIN + "/"), ("After GTA 6", canon("after-gta-6.html"))])
 
 
@@ -1689,7 +1807,7 @@ page("404.html", "Page not found | DayOneDrop", "This page has moved or doesn't 
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "calendar.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)
