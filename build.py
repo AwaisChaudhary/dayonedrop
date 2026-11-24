@@ -55,6 +55,37 @@ def short_date(g):
     return f"{d.day:02d} {MONTHS[d.month - 1][:3].upper()}"
 
 
+
+def _plat_short(g):
+    m = {"PS5": "PS5", "Xbox Series X|S": "Xbox", "PC": "PC", "Switch 2": "Switch 2", "Switch": "Switch", "PS4": "PS4", "Xbox One": "Xbox One"}
+    ps = [m.get(p, p) for p in (g.get("platforms") or [])]
+    ps = list(dict.fromkeys(ps))
+    return ", ".join(ps[:3]) + (" +more" if len(ps) > 3 else "")
+
+
+def _us_date(g):
+    if not g["date"]:
+        return g["window"]
+    d = datetime.date.fromisoformat(g["date"])
+    return f"{MONTHS[d.month - 1][:3]} {d.day}, {d.year}"
+
+
+def _ctr_title(g):
+    # CTR rewrite 25 Nov 2026: the date itself in the title (searchers want the answer), platforms in brackets.
+    ps = _plat_short(g)
+    t = f"{g['title']} Release Date: {_us_date(g)}" + (f" ({ps})" if ps else "")
+    if len(t) > 62:
+        t = f"{g['title']} Release Date: {_us_date(g)}"
+    if len(t) > 62:
+        t = f"{g['title']} Release Date"
+    return t
+
+
+def _ctr_desc(g):
+    lead = (f"{g['title']} comes out {nice_date(g)}" + (f" on {plat_text(g)}" if g.get("platforms") else "") + ".")
+    tail = " Delayed once: full date history." if g["status"] == "delayed" else " Live countdown, date history and a free calendar reminder."
+    return lead + tail
+
 def tile_color(slug):
     h = int(hashlib.md5(slug.encode()).hexdigest()[:6], 16)
     palette = ["#ffc629", "#6ec1ff", "#ff8f5e", "#b9f27c", "#ff6fa3", "#c7a6ff"]
@@ -445,8 +476,8 @@ gi_faq = [
     ("How many 2027 games have been delayed?", f"{len(_gi_delayed)} of the games on this list were delayed at least once. The delayed games page lists each one."),
     ("Where do your release dates come from?", "From publishers' own announcements, or from at least two trusted gaming news sites when there is no publisher post."),
 ]
-page("games.html", "All 2027 Games: Release Dates and Platforms List | DayOneDrop",
-     f"Every 2027 video game we track ({len(GAMES)}), with release dates, consoles and delays. Filter by PS5, Xbox, PC or Switch 2. Checked {UPDATED}."[:160],
+page("games.html", f"Upcoming Games 2027: All {len(GAMES)} Release Dates, Month by Month | DayOneDrop",
+     f"Every game coming out in 2027 ({len(GAMES)}) with its release date, consoles and delays, month by month. Filter by PS5, Xbox, PC or Switch 2. Checked {UPDATED}."[:160],
      gi, 0, gi_faq, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html"))])
 
 # ---------------- GAME PAGES ----------------
@@ -536,8 +567,8 @@ for g in featured:
         (f"Who is making {g['title']}?", f"{g['title']} is made by {g['dev']}." if g["dev"] else "The developer will be listed once confirmed."),
         (f"How can I get a reminder for {g['title']}?", "Use the Add to Google Calendar or Apple / Outlook button on this page. Your calendar will remind you on launch day." if g["date"] else "Tap the ☆ button to add it to your launch list, or join our email list. We update this page the day an exact date is announced."),
     ] + [tuple(x) for x in g.get("faq", [])]
-    page(f, (g.get("seo_title") or f"{g['title']} Release Date, Platforms and Countdown") + " | DayOneDrop" if len((g.get("seo_title") or "")) < 76 else g["seo_title"],
-         f"{g['title']} launches {nice_date(g)}. Platforms, developer, release date history and a live countdown, plus one-tap calendar reminders."[:160],
+    page(f, (g.get("seo_title") or _ctr_title(g)) + " | DayOneDrop" if len((g.get("seo_title") or "")) < 76 else g["seo_title"],
+         _ctr_desc(g)[:160],
          body, 1, faqs, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html")), (g["title"], canon(f))])
 
 # ---------------- PLATFORM PAGES ----------------
@@ -632,8 +663,8 @@ for plat, slug, long in PLAT_PAGES:
         (f"Which 2027 games are only on {long}?", ex),
         (f"Which 2027 games are not coming to {long}?", (f"{len(skip)} tracked games are not announced for {long}, including " + ", ".join(g["title"] for g in skip[:5]) + ". See our 2027 console exclusives page for the full list.") if skip else f"Every 2027 game we track is announced for {long}."),
     ]
-    page(f, f"{long} Games 2027: All {len(games)} Release Dates in Order | DayOneDrop"[:90],
-         f"{long} games 2027: all {len(games)} confirmed games coming out in 2027, in release date order, with countdowns, delays, exclusives and links to full guides."[:160],
+    page(f, f"Upcoming {long} Games 2027: All {len(games)} Release Dates (Month by Month) | DayOneDrop"[:90],
+         f"Every {long} game coming out in 2027 ({len(games)}), month by month with exact release dates, exclusives, delays and countdowns. Updated {UPDATED}."[:160],
          body, 1, faqs, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html")), (long + " games 2027", canon(f))])
 
 # ---------------- MONTH PAGES ----------------
@@ -2100,11 +2131,24 @@ page("game-awards-2026.html", "The Game Awards 2026: Date, How to Watch and the 
      tga_body, 0, tga_faq, crumbs=[("Home", DOMAIN + "/"), ("Biggest games of 2027", canon("biggest-games-2027.html")), ("The Game Awards 2026", canon("game-awards-2026.html"))])
 
 # ---------------- ABOUT / PRIVACY / 404 ----------------
-page("about.html", "About DayOneDrop", "About DayOneDrop, an independent tracker of 2027 game release dates, and how to contact us.",
-     '''<section><div class="wrap" style="max-width:760px"><h1>About <span class="amber">DayOneDrop</span></h1>
-<p>DayOneDrop tracks the release dates of the biggest games of 2027 in one simple board, with countdowns, delay tracking and calendar reminders.</p>
-<h2>How we check dates</h2><p>We only list a date when publishers or at least two trusted gaming news sites confirm it. Games with only a season or year are marked as scheduled, and delays are marked clearly.</p>
-<h2>Contact</h2><p>Spotted a wrong date? Email <strong>[your email address]</strong>.</p></div></section>''')
+_ab_n = len(GAMES); _ab_d = sum(1 for g in GAMES if g["date"]); _ab_del = sum(1 for g in GAMES if g["status"] == "delayed")
+page("about.html", "About DayOneDrop: How We Track 2027 Release Dates | DayOneDrop",
+     f"DayOneDrop is an independent tracker of {_ab_n} games coming in 2027. How we check every release date, how fast we update delays, our sources and how to report a mistake.",
+     f'''<section><div class="wrap" style="max-width:760px"><h1>About <span class="amber">DayOneDrop</span></h1>
+<p>DayOneDrop is an independent website that tracks release dates for the games coming out in 2027. Right now we follow <strong>{_ab_n} games</strong>: {_ab_d} with an exact date, the rest with a season or year, and {_ab_del} that have already been delayed. Every game has its own page with the date, platforms, developer, a live countdown and its full date history.</p>
+<h2>Who runs DayOneDrop</h2><p>DayOneDrop is a small independent publisher that also runs the GTA 6 guide <a href="https://neoncoast.org/" rel="noopener">NeonCoast</a>. We are not owned by, paid by or linked to any game publisher, platform holder or store.</p>
+<h2>How we check every date (editorial policy)</h2>
+<ul>
+<li><strong>Two-source rule.</strong> A date goes on the site only when the publisher or developer announces it, or at least two trusted gaming news outlets report it.</li>
+<li><strong>Official sources first.</strong> We check publisher announcements, the PlayStation Blog, Xbox Wire, Nintendo Directs, Steam pages and official social accounts. News outlets we use include IGN, GameSpot, Gematsu, Game Informer, Push Square and Eurogamer.</li>
+<li><strong>No rumours as facts.</strong> Leaks and retailer listings are never shown as release dates. A game with only a year or season is marked as a window, not given a made-up day.</li>
+<li><strong>Delays kept, not hidden.</strong> When a game slips we keep the old date in its history, with when and why it moved, so you can see how reliable each date has been.</li>
+<li><strong>Checked daily.</strong> We re-check the list every day and after every big showcase. Each page shows when it was last checked.</li>
+</ul>
+<h2>Corrections</h2><p>If a date is wrong or out of date, tell us through the email sign-up form (reply to any of our emails) and include a link to the announcement. We fix confirmed mistakes the same day and note the change in the game's history.</p>
+<h2>How the site is funded</h2><p>DayOneDrop is free. Some pages may show ads, and some store buttons may be affiliate links, which can earn us a small fee at no cost to you. Ads and links never change a date, a ranking or what we say about a game. See our <a href="{href("privacy.html", 0)}">privacy policy</a>.</p>
+<h2>Useful pages</h2><ul><li><a href="{href("games.html", 0)}">All 2027 games, month by month</a></li><li><a href="{href("calendar.html", 0)}">2027 release calendar</a></li><li><a href="{href("delayed-games-2027.html", 0)}">Every delayed 2027 game</a></li><li><a href="{href("new-games-this-week.html", 0)}">New games this week</a></li></ul>
+<p class="muted">Game names and artwork belong to their owners. Last checked {UPDATED}.</p></div></section>''')
 page("privacy.html", "Privacy Policy | DayOneDrop", "DayOneDrop privacy policy covering cookies, Google AdSense, Google Analytics and affiliate links.",
      f'''<section><div class="wrap" style="max-width:760px"><h1>Privacy policy</h1><p>Last updated: {e(UPDATED)}.</p>
 <h2>What we collect</h2><p>Your launch list is saved only in your own browser. If you join our email list, we keep your email address with our email provider, Kit (kit.com), to send you the calendar and our updates. Every email has an unsubscribe link, and you can ask us to delete your address at any time.</p>

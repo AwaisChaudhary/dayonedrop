@@ -236,3 +236,10 @@
 - Note: months/june-2027.html is a stale file from 22 Nov (June now has <3 games so build.py no longer generates it; not in sitemap). Left in place (no rm); consider a redirect to /calendar.
 - DEMAND.md R2 can be marked DONE.
 - IndexNow pending (no WebFetch in this run): /games/state-of-decay-3, /months/january-2027, /months/february-2027, /months/march-2027, /months/april-2027, /months/december-2027, /game-pass-2027
+
+## 25 Nov 2026 01:45 PKT: senior SEO pass, part 1 (main chat)
+GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 240 at 14.8; game pages Until Dawn 2, Persona 4 Revival, Metro 2039, God of War Laufey at 9 to 14 with 0 clicks (CTR problem).
+- CTR rewrite of every game page title: the date in the title, e.g. "Until Dawn 2 Release Date: Jan 28, 2027 (PS5)". Descriptions lead with date + platforms.
+- /games: "Upcoming Games 2027: All 73 Release Dates, Month by Month". Platform pages: "Upcoming PS5 Games 2027: All 58 Release Dates (Month by Month)".
+- Laufey history fixed: Jul 2026 dated 16 Feb (SDCC); 4 Nov 2026 delayed to 20 May (Game Informer, Kotaku).
+- About page rebuilt: who runs it, two-source editorial policy, sources, corrections, funding disclosure, internal links. Removed the "[your email address]" placeholder (privacy.html still has one: needs Awais's contact email).
