@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "games": [
   {
    "slug": "armatus",
@@ -2276,18 +2276,72 @@
    "dev": "Undead Labs / Xbox Game Studios",
    "genre": "Survival",
    "status": "window",
-   "page": false,
-   "about": "Undead Labs' open-world zombie survival sequel, coming to Xbox, PC and PS5 in 2027.",
+   "page": true,
+   "about": "Undead Labs' open-world zombie survival sequel with four-player co-op, coming to PS5, Xbox Series X|S and PC in 2027.",
    "facts": [
-    "Open-world zombie survival with community building and co-op.",
-    "Made by Undead Labs, published by Xbox Game Studios.",
-    "Coming in 2027 to Xbox Series X|S, PC and PS5. No month yet."
+    "State of Decay 3 is set for 2027. No month or day has been announced.",
+    "It is coming to PS5, Xbox Series X|S and PC (Steam and Microsoft Store). It is the first State of Decay game on a PlayStation console.",
+    "No PS4 or Xbox One version has been announced.",
+    "It is made by Undead Labs, the studio behind State of Decay 1 and 2, and published by Xbox Game Studios.",
+    "You build and protect a community of survivors in a world hit by the blood plague, years after the outbreak. You can claim more than one settlement, craft homemade explosives and recruit enclaves of other survivors.",
+    "Permadeath is back: when a survivor dies, they are gone for good.",
+    "It has online co-op for up to four players. Friends can join your save even when you are not playing.",
+    "Undead Labs calls it its largest map ever. No size has been given.",
+    "Plague Hearts now work as a network, so clearing the weaker ones first makes the main Heart easier. Xbox has also shown tough, dungeon-like Plague Nest areas.",
+    "Microsoft announced in July 2026 that Undead Labs is leaving Xbox for a new owner that has not been named. Xbox said in August 2026 that the game is still coming to Game Pass and Xbox Play Anywhere.",
+    "A closed beta is planned before the end of 2026. Sign-ups are on the official State of Decay website.",
+    "No price, editions or pre-orders have been announced yet."
    ],
    "history": [
     {
-     "when": "Jun 2026",
-     "text": "PS5 version announced; launch set for 2027."
+     "when": "Jul 2020",
+     "text": "Announced at the Xbox Games Showcase for Xbox Series X|S and PC."
+    },
+    {
+     "when": "7 Jun 2026",
+     "text": "Gameplay reveal at the Xbox Games Showcase. PS5 version announced and launch set for 2027."
+    },
+    {
+     "when": "6 Jul 2026",
+     "text": "Undead Labs to leave Xbox for a new owner. Reports say Game Pass is no longer required by contract."
+    },
+    {
+     "when": "26 Aug 2026",
+     "text": "Xbox Wire: closed beta before the end of 2026, still coming to Game Pass, still 2027."
+    },
+    {
+     "when": "28 Aug 2026",
+     "text": "Hands-on co-op previews at gamescom 2026."
     }
+   ],
+   "seo_title": "State of Decay 3 Release Date, PS5, Co-op and Game Pass Details",
+   "qa_note": "It has online co-op for up to four players, and a closed beta is planned before the end of 2026.",
+   "sources": "Xbox Wire (26 Aug 2026) via Pure Xbox, Gematsu, VGC, Game Informer (gamescom 2026 preview), Push Square, GamesRadar+, Windows Central",
+   "faq": [
+    [
+     "Is State of Decay 3 coming to PS5?",
+     "Yes. The PS5 version was announced at the Xbox Games Showcase on 7 June 2026, and it launches in 2027 alongside Xbox Series X|S and PC."
+    ],
+    [
+     "Is State of Decay 3 still on Xbox Game Pass?",
+     "Yes, as of the latest official word. After Undead Labs' sale was announced in July 2026, reports said Game Pass was no longer required by contract, but Xbox said on 26 August 2026 that the game is still coming to Game Pass and Xbox Play Anywhere."
+    ],
+    [
+     "Does State of Decay 3 have co-op?",
+     "Yes. Online co-op for up to four players, and friends can drop into your save even when you are not online. Undead Labs says single player is still a main focus."
+    ],
+    [
+     "Is State of Decay 3 coming to PS4 or Xbox One?",
+     "No. Only PS5, Xbox Series X|S and PC have been announced."
+    ],
+    [
+     "How do I join the State of Decay 3 beta?",
+     "Sign up on the official State of Decay website. Undead Labs plans the closed beta before the end of 2026 and has not said which platforms or dates yet."
+    ],
+    [
+     "Who owns Undead Labs now?",
+     "Microsoft announced in July 2026 that Undead Labs is leaving Xbox for a new owner. The buyer has not been named publicly yet. Xbox Game Studios is still listed as the publisher."
+    ]
    ]
   },
   {

@@ -590,6 +590,37 @@
     drawDec();
   }
 
+  /* month pages: console filter, next launch, add matches to the star list */
+  var mot = $("#mo-tool");
+  if (mot) {
+    var mp = store.get("dod-mo", ""), mrows = $$("#mo-list [data-mo-slug]"), mshown = [];
+    var drawMo = function () {
+      mshown = []; var now = Date.now(), nx = null, nxd = 0;
+      mrows.forEach(function (r) {
+        var ok = !mp || (mp === "big" ? r.hasAttribute("data-mo-big") : r.getAttribute("data-mo-plat").split("|").indexOf(mp) > -1);
+        r.hidden = !ok; r.classList.remove("hot");
+        if (ok) {
+          mshown.push(r.getAttribute("data-mo-slug"));
+          var ds = r.getAttribute("data-mo-date"), t = ds ? at({ date: ds }) : 0;
+          if (t && t > now && (!nx || t < nxd)) { nx = r; nxd = t; }
+        }
+      });
+      if (nx) nx.classList.add("hot");
+      $$("[data-mo-p]", mot).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-mo-p") === mp ? "true" : "false"); });
+      $("#mo-count").textContent = mshown.length + " game" + (mshown.length === 1 ? "" : "s") + (mp && mp !== "big" ? " on " + mp : mp === "big" ? " (big releases)" : "");
+      $("#mo-next").textContent = nx ? "First up: " + $("strong", nx).textContent + " in " + left(nxd)[0] + " days." : (mshown.length ? "No upcoming exact date in this list." : "");
+      $("#mo-none").hidden = mshown.length > 0;
+      $("#mo-add").disabled = !mshown.length;
+    };
+    $$("[data-mo-p]", mot).forEach(function (c) { c.addEventListener("click", function () { mp = c.getAttribute("data-mo-p"); store.set("dod-mo", mp); drawMo(); }); });
+    $("#mo-add").addEventListener("click", function () {
+      var before = WL.length;
+      WL = Array.from(new Set(WL.concat(mshown))); store.set("dod-watch", WL); syncStars();
+      toast((WL.length - before) + " games added to your ★ list");
+    });
+    drawMo();
+  }
+
   /* copy page link */
   $$("[data-copy-link]").forEach(function (b) {
     b.addEventListener("click", function () { navigator.clipboard.writeText(location.href.split("#")[0]).then(function () { toast("Link copied"); }, function () { toast("Copy blocked here"); }); });
