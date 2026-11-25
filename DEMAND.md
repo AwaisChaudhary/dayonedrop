@@ -1,3 +1,11 @@
+## COMPETITOR WATCH 25 Nov 2026 (vs gameinformer.com/2027 + /2026, GamesRadar release dates upd. 23 Nov)
+We have 79 games in data (was 74), 28 game pages, 4 month pages for 2027 (Jan-Apr) + Dec 2026, 4 platforms, ~20 list pages.
+1. DONE 25 Nov (competitor watch): added 5 dated games both Game Informer and GamesRadar list: Usual June (20 Jan), Everything is Crab (26 Jan, Switch 2), Prison of Husks (27 Jan), My Arms Are Longer Now (11 Mar), Super Battle Golf (25 Mar, Switch 2). Platforms = only those both lists agree on.
+2. GAP: Game Informer-only dated 2027 games (need a 2nd source before adding): Calx (21 Jan), Lelu (21 Jan), Temtem: Swarm (21 Jan, Switch 1), Sovereign Tower (14 Jan), Polyaris (19 Jan), Grindworm (18 Jan), Trainwatch (10 Mar), ReVamp (25 Mar), Rustown (30 Jun), The Road of Dust and Sorrow (19 Feb; GamesRadar has it as 3 Dec 2026: conflict, check publisher).
+3. GAP: month pages stop at April 2027; GI already has dated May (God of War Laufey 20 May, Persona 4 Revival Switch 2 20 May) and June (Rustown 30 Jun). Plan: build May-Dec 2027 month pages now (thin months show 'TBC' block + count), GamesRadar/GI both have 'TBC 2027' lists of ~150 titles: add a /tbc-2027 'no date yet' page from our data.
+4. GAP: GI and GamesRadar both mark Early Access and DLC/ports separately ([Early Access], Switch 2 ports like 007 First Light). Plan: 'type' tag (new game / early access / port / DLC) + filter chip on /games and month pages.
+5. BETTER-THAN-THEM: neither list is filterable or personal (GI = plain list, GamesRadar = one long article). Ours: 'My 2027' watchlist with per-game .ics reminders + delay alerts ('this game moved' badge from history), filter by platform+type+month. Ship the type chip and a 'moved since you saved it' badge on /backlog-planner-2027.
+
 ## RADAR 25 Nov 06:45 PKT (Google autocomplete, US)
 D1. DONE 25 Nov https://getdayonedrop.com/xbox-games-showcase-2027 'xbox games showcase 2027' (xbox games 2027 #5) -> /xbox-games-showcase-2027 (date window, what to expect, games confirmed so far; update live in June).
 D2. OPEN 'ps5 sports games 2027' / 'ps5 soccer games 2027' -> /sports-games-2027 (genre page; also a competitor gap).

@@ -2609,6 +2609,95 @@
      "text": "Delayed from 2026 to 2027."
     }
    ]
+  },
+  {
+   "slug": "usual-june",
+   "title": "Usual June",
+   "platforms": [
+    "PC"
+   ],
+   "dev": "",
+   "genre": "Action",
+   "page": false,
+   "facts": [],
+   "history": [],
+   "date": "2027-01-20",
+   "window": "",
+   "month": 1,
+   "status": "dated",
+   "about": "An action game from indie publisher Finji, dated for PC."
+  },
+  {
+   "slug": "everything-is-crab",
+   "title": "Everything is Crab",
+   "platforms": [
+    "Switch 2"
+   ],
+   "dev": "",
+   "genre": "Roguelite",
+   "page": false,
+   "facts": [],
+   "history": [],
+   "date": "2027-01-26",
+   "window": "",
+   "month": 1,
+   "status": "dated",
+   "about": "An evolution roguelite where every path leads to becoming a crab, coming to Switch 2."
+  },
+  {
+   "slug": "prison-of-husks",
+   "title": "Prison of Husks",
+   "platforms": [
+    "PS5",
+    "PC"
+   ],
+   "dev": "",
+   "genre": "",
+   "page": false,
+   "facts": [],
+   "history": [],
+   "date": "2027-01-27",
+   "window": "",
+   "month": 1,
+   "status": "dated",
+   "about": "Game with a confirmed release date in 2027."
+  },
+  {
+   "slug": "my-arms-are-longer-now",
+   "title": "My Arms Are Longer Now",
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "Switch 2",
+    "PC"
+   ],
+   "dev": "",
+   "genre": "",
+   "page": false,
+   "facts": [],
+   "history": [],
+   "date": "2027-03-11",
+   "window": "",
+   "month": 3,
+   "status": "dated",
+   "about": "Game with a confirmed release date in 2027."
+  },
+  {
+   "slug": "super-battle-golf",
+   "title": "Super Battle Golf",
+   "platforms": [
+    "Switch 2"
+   ],
+   "dev": "",
+   "genre": "Sports",
+   "page": false,
+   "facts": [],
+   "history": [],
+   "date": "2027-03-25",
+   "window": "",
+   "month": 3,
+   "status": "dated",
+   "about": "The chaotic multiplayer golf game comes to Switch 2."
   }
  ]
 }
