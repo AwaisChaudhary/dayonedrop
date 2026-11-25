@@ -1,3 +1,10 @@
+## DEMAND RUN 26 Nov 2026 (scheduled, demand-first)
+Evidence: GI + GamesRadar both keep "TBC 2027 / no date" lists of ~150 titles (competitor gap 3, 25 Nov); "<game> countdown" / "how many days until <game>" is a standing query pattern for every dated game (our game pages have timers but no single shareable tool); "games coming out december 2026" (radar R1) peaks now, a week before December.
+N1. DONE 26 Nov https://getdayonedrop.com/games-without-release-date-2027 : every 2027 game with no exact day, console + season filter, add to list, "when could they get a date" table.
+N2. DONE 26 Nov https://getdayonedrop.com/countdown : live shareable countdown tool (?g=slug) for every dated game, days-to-go lists, month table.
+N3. DONE 26 Nov (refresh) https://getdayonedrop.com/games-december-2026 : first-week H2, PS4/Xbox One/Switch 1 versions, free-to-play, Steam Winter Sale.
+G4 NOTE 26 Nov: Game Pass monthly lists checked (Pure Xbox 3 Nov, 14 Nov, 17 Nov; GGRecon 2 Nov). Single-source and conflicting tiers (FM27 Premium yes/no; 14 leaving "15 Nov" vs "early November"); wave 2 article could not be read. Build /game-pass-this-month right after Xbox Wire posts December wave 1 (~1-2 Dec) with Pure Xbox + Windows Central/Xbox Wire. Pure Xbox "confirmed so far" for December: Hela (1 Dec), Dumpster Gang (PC 3 Dec), Freestyle Football 2 (3 Dec), A Game About Digging A Hole Together (4 Dec), There Are No Ghosts At The Grand (PC EA, Dec TBD) - needs 2nd source.
+
 ## NEW CATEGORIES (Keyword Planner, worldwide, 25 Nov 2026; Awais: "do the same for DayOneDrop")
 DayOneDrop is a release-date site, so expand to every "what's new / when is it out" calendar gamers search:
 G1. DONE 25 Nov /ps-plus-monthly-games — RECURRING: after the last-Wednesday reveal each month, update PSP in build.py (2+ sources). ("ps plus monthly games" 100k-1M, +900%). UPDATE monthly: last Wednesday reveal, first Tuesday release; keep a month-by-month archive table.

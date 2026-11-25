@@ -254,7 +254,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("new-games-this-week.html", depth)}">New games this week</a></li><li><a href="{href("later-2027.html", depth)}">Games later in 2027 (May–Dec)</a></li><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/state-of-decay-3.html", depth)}">State of Decay 3</a></li><li><a href="{href("games/lords-of-the-fallen-ii.html", depth)}">Lords of the Fallen 2</a></li><li><a href="{href("games/squadron-42.html", depth)}">Squadron 42</a></li><li><a href="{href("games/ananta.html", depth)}">Ananta (free-to-play)</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("ps-plus-monthly-games.html", depth)}">PS Plus monthly games</a></li><li><a href="{href("epic-free-games.html", depth)}">Epic free games this week</a></li><li><a href="{href("steam-sale-dates.html", depth)}">Steam sale dates 2026-2027</a></li><li><a href="{href("nintendo-direct.html", depth)}">Next Nintendo Direct</a></li><li><a href="{href("xbox-games-showcase-2027.html", depth)}">Xbox Games Showcase 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("new-games-this-week.html", depth)}">New games this week</a></li><li><a href="{href("later-2027.html", depth)}">Games later in 2027 (May–Dec)</a></li><li><a href="{href("games-without-release-date-2027.html", depth)}">2027 games with no release date</a></li><li><a href="{href("countdown.html", depth)}">Game release countdown</a></li><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/state-of-decay-3.html", depth)}">State of Decay 3</a></li><li><a href="{href("games/lords-of-the-fallen-ii.html", depth)}">Lords of the Fallen 2</a></li><li><a href="{href("games/squadron-42.html", depth)}">Squadron 42</a></li><li><a href="{href("games/ananta.html", depth)}">Ananta (free-to-play)</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("ps-plus-monthly-games.html", depth)}">PS Plus monthly games</a></li><li><a href="{href("epic-free-games.html", depth)}">Epic free games this week</a></li><li><a href="{href("steam-sale-dates.html", depth)}">Steam sale dates 2026-2027</a></li><li><a href="{href("nintendo-direct.html", depth)}">Next Nintendo Direct</a></li><li><a href="{href("xbox-games-showcase-2027.html", depth)}">Xbox Games Showcase 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Every date is checked against the publisher or platform holder plus a second trusted source (<a href="{href("about.html", depth)}#editorial">editorial policy</a>). Spotted an error? Email <a href="mailto:awaiskaramat@hotmail.com">awaiskaramat@hotmail.com</a>. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -1469,6 +1469,8 @@ tools = f'''<header class="hero"><div class="wrap"><span class="kicker">Tools</s
 <div class="btns" style="margin-top:12px"><a class="btn sm" href="{href("games-by-genre-2027.html", 0)}">Open the genre finder</a></div></div>
 </div></section>
 <section><div class="wrap"><div class="sec-head"><h2>More ways to plan</h2></div><ul>
+<li><a href="{href("countdown.html", 0)}">Game release countdown</a>: a live, shareable timer for any dated 2027 game</li>
+<li><a href="{href("games-without-release-date-2027.html", 0)}">2027 games with no release date yet</a>, by console and season</li>
 <li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: every crowded week</li>
 <li><a href="{href("backlog-planner-2027.html", 0)}">2027 backlog planner</a>: finish each game before the next launch</li>
 <li><a href="{href("delayed-games-2027.html", 0)}">Games delayed to 2027</a></li>
@@ -1551,6 +1553,9 @@ _dtbl = ('<div style="overflow-x:auto"><table class="gen-table" style="width:100
 _dremake = [x for x in DEC26 if x[7] in ("port", "remake")]
 _ddelay = [x for x in DEC26 if "Delayed" in x[5]]
 _jan = sorted([g for g in GAMES if g["month"] == 1 and g["date"]], key=lambda g: g["date"])
+_dwk1 = [x for x in DEC26 if x[0] <= "2026-12-06"]
+_dold = [x for x in DEC26 if x[3]]
+_dfree = [x for x in DEC26 if "free to play" in x[5].lower()]
 dec_body = (f'<header class="hero"><div class="wrap"><span class="kicker">December 2026</span>'
             f'<h1>Games coming out in December 2026:<br><span class="amber">{len(DEC26)} launches before 2027.</span></h1>'
             f'<p class="lead">Every confirmed video game release for December 2026 on PS5, Xbox Series X|S, PC and Switch 2, in date order. Games that are already out get marked as you scroll the month.</p>'
@@ -1572,6 +1577,16 @@ dec_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Decemb
             f'<div class="out" style="margin-bottom:28px">{"".join(_drowd(x) for x in _ddelay)}</div>'
             f'<div class="sec-head"><h2>Which December 2026 games are remakes or new versions?</h2><span class="muted">{len(_dremake)}</span></div>'
             f'<p>' + e(", ".join(x[1] for x in _dremake)) + '. If you already own the original, check each store for an upgrade price before you buy.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>What games come out in the first week of December 2026?</h2><span class="muted">{len(_dwk1)}</span></div>'
+            f'<p>Tuesday 1 to Sunday 6 December is the busiest week of the month, with {len(_dwk1)} launches, {len([x for x in _dwk1 if x[6]])} of them big releases:</p>'
+            f'<div class="out" style="margin-bottom:28px">{"".join(_drowd(x) for x in _dwk1)}</div>'
+            f'<div class="sec-head"><h2>Which December 2026 games are also on PS4, Xbox One or Switch 1?</h2><span class="muted">{len(_dold)}</span></div>'
+            f'<div class="out" style="margin-bottom:8px">' + "".join(f'<div class="row"><span><strong>{e(x[1])}</strong><br><span class="muted">Also on {e(x[3])}</span></span><b>{e(_dnice(x[0])[:-5])}</b></div>' for x in _dold) + '</div>'
+            f'<p class="muted" style="margin-bottom:28px">Still on an older console in 2027? See <a href="{href("last-gen-games-2027.html", 0)}">2027 games on PS4 and Switch 1</a>.</p>'
+            f'<div class="sec-head"><h2>Are any December 2026 games free to play?</h2></div>'
+            f'<p>Yes: ' + e(", ".join(f"{x[1]} ({_dnice(x[0])[:-5]})" for x in _dfree)) + '. For free games to keep, see <a href="' + href("epic-free-games.html", 0) + '">Epic free games this week</a> (in recent years Epic has given away a free game every day over the holidays; the 2026 event is not announced yet) and the <a href="' + href("ps-plus-monthly-games.html", 0) + '">PS Plus monthly games</a>.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>When is the Steam Winter Sale 2026?</h2></div>'
+            f'<p>17 December 2026 to 4 January 2027, per Valve\'s published schedule, so most December PC releases will get their first discount within weeks. Live timer on our <a href="{href("steam-sale-dates.html", 0)}">Steam sale dates</a> page.</p>'
             f'<div class="sec-head" style="margin-top:28px"><h2>Are there any big games out at Christmas 2026?</h2></div>'
             f'<p>No big confirmed launches land between {e(_dnice(_dlast[0])[:-5])} and the end of the year in the release calendars we checked. Publishers rarely launch in the last two weeks of December, '
             f'so the Christmas gap is the time to catch up on GTA 6 (out since 19 November 2026) and the early-December releases above.</p>'
@@ -1584,7 +1599,8 @@ dec_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Decemb
             f'<li><a href="{href("game-awards-2026.html", 0)}">The Game Awards 2026</a> on 10 December: how to watch, the 2027 nominees and a winner predictor</li>'
             f'<li><a href="{href("after-gta-6.html", 0)}">What to play after GTA 6</a>: the next big games of 2027</li>'
             f'<li><a href="{href("months/january-2027.html", 0)}">January 2027 game releases</a> and the full <a href="{href("calendar.html", 0)}">2027 calendar</a></li>'
-            f'<li><a href="{href("backlog-planner-2027.html", 0)}">2027 backlog planner</a>: finish your December games before 2027 starts</li></ul></div></section>')
+            f'<li><a href="{href("backlog-planner-2027.html", 0)}">2027 backlog planner</a>: finish your December games before 2027 starts</li>'
+            f'<li><a href="{href("countdown.html", 0)}">Game release countdown</a>: a live timer for any game</li></ul></div></section>')
 dec_faq = [
     ("What games come out in December 2026?", _dquick),
     ("What is the biggest game coming out in December 2026?", "Dragon Quest Monsters: The Withered World (3 December), Monster Hunter Wilds on Switch 2 (4 December), Professor Layton and the New World of Steam and Attack on Titan 3 (both 10 December) and the Path of Exile 2 1.0 launch (11 December) are the biggest."),
@@ -1593,9 +1609,11 @@ dec_faq = [
     ("What Xbox games come out in December 2026?", f"{len(_dcnt['Xbox Series X|S'])}: " + ", ".join(f"{x[1]} ({_dnice(x[0])[:-5]})" for x in _dcnt["Xbox Series X|S"]) + "."),
     ("Is Monster Hunter Wilds coming to Switch 2?", "Yes. Capcom released the date in the September 2026 Nintendo Direct: 4 December 2026, with local and cross-platform play."),
     ("Is Professor Layton and the New World of Steam on PS5?", "Yes. It launches on 10 December 2026 on Switch 2, Switch, PS5 and PC."),
+    ("What games come out the first week of December 2026?", f"{len(_dwk1)} games from 1 to 6 December: " + ", ".join(f"{x[1]} ({_dnice(x[0])[:-5]})" for x in _dwk1) + "."),
+    ("Are any December 2026 games on PS4 or Switch 1?", ", ".join(f"{x[1]} (also on {x[3]})" for x in _dold) + "."),
     ("Are any big games coming out at Christmas 2026?", f"No. The last notable confirmed release is {_dlast[1]} on {_dnice(_dlast[0])}. The next wave starts in January 2027."),
 ]
-page("games-december-2026.html", f"Games Coming Out in December 2026 ({len(DEC26)} Releases) | DayOneDrop",
+page("games-december-2026.html", f"Games Coming Out in December 2026: All {len(DEC26)} Releases by Date and Console | DayOneDrop",
      f"Every confirmed game coming out in December 2026 on PS5, Xbox, PC and Switch 2: Dragon Quest Monsters, Monster Hunter Wilds Switch 2, Layton, Attack on Titan 3."[:160],
      dec_body, 0, dec_faq, crumbs=[("Home", DOMAIN + "/"), ("2027 calendar", canon("calendar.html")), ("December 2026 games", canon("games-december-2026.html"))])
 
@@ -2717,11 +2735,156 @@ page("nintendo-direct.html", "Next Nintendo Direct: Date, Last Direct and Switch
      f"When is the next Nintendo Direct? Not announced yet. The last was {_xs_day(_nd_last[0])}. Every 2026 Direct, and the {len(_sw_und)} Switch 2 2027 games still without a date."[:160],
      nd_body, 0, nd_faq, crumbs=[("Home", DOMAIN + "/"), ("Switch 2 games", canon("platforms/switch-2.html")), ("Nintendo Direct", canon("nintendo-direct.html"))])
 
+# ---------------- 2027 GAMES WITH NO RELEASE DATE (26 Nov 2026; competitor gap: GI + GamesRadar "TBC 2027" lists) ----------------
+_TD = datetime.date.fromisoformat(UPDATED)
+_nd_g = sorted([g for g in GAMES if not g["date"]], key=lambda g: (g["month"], g["title"]))
+def _nd_bk(g):
+    m = g["month"]
+    if g.get("window", "").strip() == "2027": return "any"
+    return "spring" if m <= 4 else ("mid" if m <= 8 else "late")
+_NDBK = {"spring": "Jan to Apr 2027 (spring)", "mid": "May to Aug 2027 (mid-year)", "late": "Late 2027", "any": "Just “2027”"}
+_nd_by = {k: [g for g in _nd_g if _nd_bk(g) == k] for k in _NDBK}
+_nd_big = [g for g in _nd_g if g["page"]]
+_nd_del = [g for g in _nd_g if g["status"] == "delayed"]
+_nd_pc = {p: [g for g in _nd_g if p in g["platforms"]] for p in PLATS}
+def _tbrow(g):
+    return (f'<div class="row" data-plat="{e("|".join(g["platforms"]))}" data-bk="{_nd_bk(g)}" data-slug="{e(g["slug"])}"><span><strong>{_gname(g)}</strong>'
+            f'<br><span class="muted">{e(", ".join(g["platforms"]))} · {e(g.get("genre") or "")} · {e(g.get("dev") or "Studio TBC")}'
+            + (' · delayed' if g["status"] == "delayed" else "") + f'</span></span><b>{e(g.get("window") or "2027")}</b></div>')
+_tb_quick = (f"{len(_nd_g)} of the {len(GAMES)} games we track for 2027 have no exact release date yet. "
+             f"{len(_nd_by['spring'])} are due in spring (January to April), {len(_nd_by['mid'])} around mid-2027, {len(_nd_by['late'])} late in 2027 and {len(_nd_by['any'])} just say “2027”. "
+             "The biggest without a day are Kingdom Hearts IV (late 2027), Pokémon Winds and Waves, Resident Evil Veronica, State of Decay 3, The Duskbloods and Xenoblade Genesis.")
+_tb_chips = ('<div class="chips" role="group" aria-label="Console" style="margin-bottom:8px"><button class="chip" type="button" data-tb-p="" aria-pressed="true">All consoles</button>'
+             + "".join(f'<button class="chip" type="button" data-tb-p="{e(p)}" aria-pressed="false">{e(p)}</button>' for p in PLATS) + '</div>'
+             '<div class="chips" role="group" aria-label="Timing"><button class="chip" type="button" data-tb-b="" aria-pressed="true">Any time</button>'
+             + "".join(f'<button class="chip" type="button" data-tb-b="{k}" aria-pressed="false">{e(v)}</button>' for k, v in _NDBK.items()) + '</div>')
+_tc = 'style="padding:6px;border-top:1px solid var(--rule)"'
+_tb_tbl = ('<div style="overflow-x:auto"><table class="gen-table" style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr><th style="text-align:left;padding:6px">Console</th>'
+           '<th style="padding:6px">No exact date</th><th style="text-align:left;padding:6px">Biggest one</th></tr></thead><tbody>'
+           + "".join(f'<tr><td {_tc}>{e(p)}</td><td class="mono" {_tc[:-1]};text-align:center">{len(_nd_pc[p])}</td><td {_tc}>{e(next((g["title"] for g in _nd_pc[p] if g["page"]), "-"))}</td></tr>' for p in PLATS)
+           + '</tbody></table></div>')
+_tb_shows = [
+    ("10 December 2026", "The Game Awards 2026", "Confirmed. Publishers often use the show to give 2027 dates."),
+    ("December 2026", "Lords of the Fallen II exact date", "CI Games says the exact April 2027 day comes in December (via Gematsu, eTeknix)."),
+    ("Late January 2027", "Xbox Developer Direct", "Not announced. The last two aired on 23 January 2025 and 22 January 2026."),
+    ("Any time", "Nintendo Direct", "Not announced. Nintendo confirms a Direct a day or two ahead."),
+    ("Early June 2027", "Xbox Games Showcase", "Not announced. Our estimate from 2023 to 2026, when every show aired on a Sunday between 7 and 11 June."),
+]
+_tb_stbl = ('<div style="overflow-x:auto"><table class="gen-table" style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr><th style="text-align:left;padding:6px">When</th>'
+            '<th style="text-align:left;padding:6px">Show or news</th><th style="text-align:left;padding:6px">Status</th></tr></thead><tbody>'
+            + "".join(f'<tr><td {_tc} class="mono">{e(a)}</td><td {_tc}>{e(b)}</td><td {_tc}>{e(c)}</td></tr>' for a, b, c in _tb_shows) + '</tbody></table></div>')
+def _tb_sec(k, h):
+    gs = _nd_by[k]
+    return (f'<div class="sec-head" style="margin-top:28px"><h2>{e(h)}</h2><span class="muted">{len(gs)}</span></div>'
+            f'<div class="out" style="margin-bottom:10px">{"".join(_tbrow(g) for g in gs) or "<div class=empty>None right now.</div>"}</div>')
+tb_body = (f'<header class="hero"><div class="wrap"><span class="kicker">No date yet</span>'
+           f'<h1>2027 games with no release date:<br><span class="amber">{len(_nd_g)} still waiting.</span></h1>'
+           f'<p class="lead">Every game confirmed for 2027 that still has no exact launch day, with the season or month the publisher has given, the consoles, and when each one could get its date.</p>'
+           f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · a game moves to the main board the day its date is confirmed</p></div></header>'
+           f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_tb_quick)}</span></div></div>'
+           f'<div class="tool" id="tb-tool"><h2 style="font-size:1.5rem;margin-top:0">Which undated 2027 games are coming to my console?</h2>'
+           f'<p class="muted">Pick a console and a time of year, then save the games to your ★ list. When one of them gets a date, it shows up on your list with a countdown. Your choice is remembered on this device.</p>{_tb_chips}'
+           f'<p class="mono amber" id="tb-count" aria-live="polite" style="margin:12px 0 0">{len(_nd_g)} games</p>'
+           f'<div class="out" id="tb-list" style="margin-top:12px">{"".join(_tbrow(g) for g in _nd_g)}</div><p class="empty" id="tb-none" hidden>No undated 2027 games match that. Try another console or time.</p>'
+           f'<div class="btns" style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn sm" type="button" id="tb-add">Add these to my ★ list</button>'
+           f'<a class="btn line sm" href="{href("calendar.html", 0)}">Games with a date: 2027 calendar</a></div></div></div></section>'
+           + AD.format("tb-mid") +
+           f'<section><div class="wrap"><div class="sec-head"><h2>Which big 2027 games have no release date yet?</h2><span class="muted">{len(_nd_big)}</span></div>'
+           f'<div class="out" style="margin-bottom:10px">{"".join(_tbrow(g) for g in _nd_big)}</div>'
+           f'<p class="muted">Each of these has a full guide with everything confirmed so far. Tap a name to open it.</p>'
+           + _tb_sec("spring", "Which 2027 games are due in spring but have no day yet?")
+           + _tb_sec("mid", "Which 2027 games are due around mid-2027?")
+           + _tb_sec("late", "Which games are due late in 2027?")
+           + _tb_sec("any", "Which games only say “2027”?")
+           + f'<div class="sec-head" style="margin-top:28px"><h2>Which undated 2027 games have been delayed?</h2><span class="muted">{len(_nd_del)}</span></div>'
+           f'<div class="out" style="margin-bottom:10px">{"".join(_tbrow(g) for g in _nd_del)}</div>'
+           f'<p class="muted">Every slip, with dates and sources, is on the <a href="{href("delayed-games-2027.html", 0)}">delayed games of 2027</a> page.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>How many undated 2027 games are on each console?</h2></div>{_tb_tbl}'
+           f'<div class="sec-head" style="margin-top:28px"><h2>When could these games get a release date?</h2></div>'
+           f'<p>Most 2027 dates are announced at a showcase or in a publisher earnings report. These are the next chances:</p>{_tb_stbl}'
+           f'<p class="muted" style="margin-top:10px">A season like “spring 2027” is the publisher’s own wording. We never guess a day: a game only gets one here when the publisher, or two trusted outlets, confirm it.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+           f'<li><a href="{href("calendar.html", 0)}">2027 release calendar</a>: every game that already has a date</li>'
+           f'<li><a href="{href("later-2027.html", 0)}">Games later in 2027 (May to December)</a></li>'
+           f'<li><a href="{href("countdown.html", 0)}">Game release countdown</a>: a live timer for any dated 2027 game</li>'
+           f'<li><a href="{href("game-awards-2026.html", 0)}">The Game Awards 2026</a>, the next show where 2027 dates could drop</li></ul></div></section>')
+tb_faq = [
+    ("Which 2027 games don't have a release date yet?", _tb_quick),
+    ("Does Kingdom Hearts 4 have a release date?", "No. Square Enix has said late 2027 but has not given a day."),
+    ("Which 2027 Switch 2 games have no release date?", f"{len(_nd_pc['Switch 2'])}: " + ", ".join(f"{g['title']} ({g.get('window') or '2027'})" for g in _nd_pc["Switch 2"]) + "."),
+    ("Which 2027 PS5 games have no release date?", f"{len(_nd_pc['PS5'])}: " + ", ".join(f"{g['title']} ({g.get('window') or '2027'})" for g in _nd_pc["PS5"]) + "."),
+    ("When will undated 2027 games get release dates?", "The next chances are The Game Awards on 10 December 2026, an Xbox Developer Direct (usually late January), any Nintendo Direct, and the summer showcases in June 2027."),
+    ("What does 'spring 2027' mean for a release date?", "It is the publisher's own window, usually March to May. The exact day is still to come, so it can still move."),
+]
+page("games-without-release-date-2027.html", f"2027 Games With No Release Date Yet: All {len(_nd_g)}, by Console and Season | DayOneDrop",
+     f"{len(_nd_g)} games are confirmed for 2027 with no exact date: Kingdom Hearts 4, Pokémon Winds and Waves, RE Veronica and more. Filter by console and season."[:160],
+     tb_body, 0, tb_faq, crumbs=[("Home", DOMAIN + "/"), ("2027 calendar", canon("calendar.html")), ("No release date yet", canon("games-without-release-date-2027.html"))])
+
+# ---------------- GAME RELEASE COUNTDOWN TOOL (26 Nov 2026) ----------------
+_cd_up = sorted([g for g in GAMES if g["date"] and g["date"] >= UPDATED], key=lambda g: (g["date"], g["title"]))
+_cd_big = [g for g in _cd_up if g["page"]]
+def _cd_days(g): return (datetime.date.fromisoformat(g["date"]) - _TD).days
+_cd_first = _cd_up[0]
+_cd_firstbig = _cd_big[0] if _cd_big else _cd_first
+_cd_quick = (f"The next 2027 game on our board is {_cd_first['title']} on {nice_date(_cd_first)}, {_cd_days(_cd_first)} days from {nice_date({'date': UPDATED, 'window': ''})}. "
+             f"The next big one is {_cd_firstbig['title']} on {nice_date(_cd_firstbig)} ({_cd_days(_cd_firstbig)} days). Pick any game below for a live timer to launch day in your own time zone.")
+_cd_opts = "".join(f'<option value="{e(g["slug"])}">{e(g["title"])} ({e(short_date(g))})</option>' for g in _cd_up)
+def _cdrow(g):
+    return (f'<div class="row" data-cd-date="{g["date"]}"><span><strong>{_gname(g)}</strong><br><span class="muted">{e(nice_date(g))} · {e(", ".join(g["platforms"]))}</span></span>'
+            f'<b class="cd-days">{_cd_days(g)} days</b></div>')
+_cd_ms = collections.OrderedDict()
+for g in _cd_up: _cd_ms.setdefault(g["date"][:7], []).append(g)
+_cd_mtbl = ('<div style="overflow-x:auto"><table class="gen-table" style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr><th style="text-align:left;padding:6px">Month</th>'
+            '<th style="padding:6px">Games</th><th style="text-align:left;padding:6px">First launch</th><th style="padding:6px">Days to go</th></tr></thead><tbody>'
+            + "".join(f'<tr><td {_tc}>{e(MONTHS[int(k[5:]) - 1])} {k[:4]}</td><td class="mono" {_tc[:-1]};text-align:center">{len(v)}</td><td {_tc}>{e(v[0]["title"])}</td><td class="mono" {_tc[:-1]};text-align:center">{_cd_days(v[0])}</td></tr>' for k, v in _cd_ms.items())
+            + '</tbody></table></div>')
+cd_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Tool · live countdown</span>'
+           f'<h1>Game release countdown:<br><span class="amber">how long until launch day?</span></h1>'
+           f'<p class="lead">A live split-flap timer for any dated game of 2027, down to the second, in your own time zone. Pick a game, then copy the link to share that countdown.</p>'
+           f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · {len(_cd_up)} dated games · timers count to midnight local time on release day</p></div></header>'
+           f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_cd_quick)}</span></div></div>'
+           f'<div class="tool" id="cd-tool"><h2 style="font-size:1.5rem;margin-top:0">How many days until my game comes out?</h2>'
+           f'<label for="cd-pick">Choose a game</label> <select id="cd-pick" style="max-width:100%">{_cd_opts}</select>'
+           f'<div class="next-drop" style="margin-top:16px"><span class="next-label">Countdown to</span><div class="next-title"><span class="flaps" id="cd-title"></span></div>'
+           f'<span class="muted" id="cd-date"></span><div class="cd" id="cd-cd" role="timer">'
+           f'<div class="cd-unit"><span class="flaps" data-u="0"></span><span>Days</span></div><div class="cd-unit"><span class="flaps" data-u="1"></span><span>Hours</span></div>'
+           f'<div class="cd-unit"><span class="flaps" data-u="2"></span><span>Mins</span></div><div class="cd-unit"><span class="flaps" data-u="3"></span><span>Secs</span></div></div>'
+           f'<div class="btns" style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn sm" type="button" id="cd-copy">Copy link to this countdown</button>'
+           f'<a class="btn line sm" id="cd-gcal" href="#" rel="nofollow noopener" target="_blank">Add to Google Calendar</a>'
+           f'<a class="btn line sm" id="cd-guide" href="#" hidden data-base="{"games/" if PREVIEW else "/games/"}" data-ext="{".html" if PREVIEW else ""}">Game guide</a>'
+           f'<button class="btn line sm" type="button" id="cd-star">☆ Add to my list</button></div></div></div></div></section>'
+           + AD.format("cd-mid") +
+           f'<section><div class="wrap"><div class="sec-head"><h2>What is the next game coming out?</h2></div>'
+           f'<div class="out" style="margin-bottom:10px">{"".join(_cdrow(g) for g in _cd_up[:8])}</div>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>How many days until the big games of 2027?</h2><span class="muted">{len(_cd_big)}</span></div>'
+           f'<div class="out" style="margin-bottom:10px">{"".join(_cdrow(g) for g in _cd_big)}</div>'
+           f'<p class="muted">Day counts update live on this page. Games with only a season or “2027” have no timer yet: see <a href="{href("games-without-release-date-2027.html", 0)}">2027 games with no release date</a>.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>How far away is each month of releases?</h2></div>{_cd_mtbl}'
+           f'<div class="sec-head" style="margin-top:28px"><h2>What time does the countdown end?</h2></div>'
+           f'<p>At midnight on release day in your own time zone, which is when most digital games unlock on console stores. Some PC games and global launches unlock at a fixed time instead (for example 6pm in the UK), so check the game guide for the exact unlock time when the publisher gives one.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>Can I share a countdown?</h2></div>'
+           f'<p>Yes. Pick a game and tap “Copy link to this countdown”. The link opens this page with that game already selected, so friends see the same timer in their own time zone.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+           f'<li><a href="{href("release-clashes-2027.html", 0)}">Release clash finder</a>: are two of your games too close together?</li>'
+           f'<li><a href="{href("backlog-planner-2027.html", 0)}">2027 backlog planner</a>: can you finish your games before the next one?</li>'
+           f'<li><a href="{href("new-games-this-week.html", 0)}">New games this week</a> and the full <a href="{href("calendar.html", 0)}">2027 calendar</a></li>'
+           f'<li><a href="{href("tools.html", 0)}">Every DayOneDrop tool</a></li></ul></div></section>')
+cd_faq = [
+    ("What is the next game coming out?", f"{_cd_first['title']} on {nice_date(_cd_first)}."),
+    ("How many days until the next big 2027 game?", f"{_cd_days(_cd_firstbig)} days from {nice_date({'date': UPDATED, 'window': ''})}: {_cd_firstbig['title']} launches on {nice_date(_cd_firstbig)}."),
+    ("When does the countdown end?", "At midnight on release day in your own time zone. Some games unlock at a fixed global time instead; the game guide says when the publisher confirms one."),
+    ("Can I share a game countdown?", "Yes. Pick the game and tap 'Copy link to this countdown'. The link opens with that game selected."),
+    ("Is there a countdown for games without a date?", "No. A timer starts only when the publisher confirms an exact day. Undated 2027 games are listed on our 'no release date yet' page."),
+]
+page("countdown.html", "Game Release Countdown 2027: Live Timer to Launch Day for Every Upcoming Game | DayOneDrop",
+     f"Live countdown to every dated 2027 game: days, hours and seconds to launch in your time zone. Next up: {_cd_first['title']} ({short_date(_cd_first)}). Share any timer."[:160],
+     cd_body, 0, cd_faq, crumbs=[("Home", DOMAIN + "/"), ("Tools", canon("tools.html")), ("Release countdown", canon("countdown.html"))])
+
 # ---------------- SEO files ----------------
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "steam-sale-dates.html", "nintendo-direct.html", "ps-plus-monthly-games.html", "epic-free-games.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "new-games-this-week.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "xbox-games-showcase-2027.html", "calendar.html", "later-2027.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "countdown.html", "games-without-release-date-2027.html", "steam-sale-dates.html", "nintendo-direct.html", "ps-plus-monthly-games.html", "epic-free-games.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "new-games-this-week.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "xbox-games-showcase-2027.html", "calendar.html", "later-2027.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)

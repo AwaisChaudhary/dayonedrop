@@ -450,6 +450,79 @@
     drawNd();
   }
 
+
+  /* 2027 games with no release date: console + timing filter, add to list */
+  var tbt = $("#tb-tool");
+  if (tbt) {
+    var tsel = store.get("dod-tb", { p: "", b: "" }) || { p: "", b: "" };
+    var trows = $$("#tb-list [data-bk]"), tshown = [];
+    var drawTb = function () {
+      tshown = [];
+      trows.forEach(function (r) {
+        var ok = (!tsel.p || r.getAttribute("data-plat").split("|").indexOf(tsel.p) > -1) && (!tsel.b || r.getAttribute("data-bk") === tsel.b);
+        r.hidden = !ok; if (ok) tshown.push(r.getAttribute("data-slug"));
+      });
+      $$("[data-tb-p]", tbt).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-tb-p") === tsel.p ? "true" : "false"); });
+      $$("[data-tb-b]", tbt).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-tb-b") === tsel.b ? "true" : "false"); });
+      $("#tb-count").textContent = tshown.length + " game" + (tshown.length === 1 ? "" : "s") + " with no exact date" + (tsel.p ? " on " + tsel.p : "");
+      $("#tb-none").hidden = tshown.length > 0;
+      store.set("dod-tb", tsel);
+    };
+    $$("[data-tb-p]", tbt).forEach(function (c) { c.addEventListener("click", function () { tsel.p = c.getAttribute("data-tb-p"); drawTb(); }); });
+    $$("[data-tb-b]", tbt).forEach(function (c) { c.addEventListener("click", function () { tsel.b = c.getAttribute("data-tb-b"); drawTb(); }); });
+    $("#tb-add").addEventListener("click", function () {
+      var before = WL.length;
+      WL = Array.from(new Set(WL.concat(tshown))); store.set("dod-watch", WL); syncStars();
+      toast((WL.length - before) + " games added to your ★ list");
+    });
+    drawTb();
+  }
+
+  /* release countdown tool: any dated game, shareable ?g=slug */
+  var cdt = $("#cd-tool");
+  if (cdt) {
+    var pick = $("#cd-pick"), cdTimer = null, cur = null;
+    var bys = {}; G.forEach(function (g) { bys[g.slug] = g; });
+    var want = (location.search.match(/[?&]g=([a-z0-9-]+)/) || [])[1];
+    if (want && bys[want] && $('option[value="' + want + '"]', pick)) pick.value = want;
+    else { var nx = G.filter(function (g) { return g.date && at(g) > Date.now(); }).sort(function (a, b) { return at(a) - at(b); })[0]; if (nx && $('option[value="' + nx.slug + '"]', pick)) pick.value = nx.slug; }
+    var units = $$("#cd-cd [data-u]");
+    var tickCd = function () {
+      if (!cur) return;
+      var ms = at(cur), v = left(ms);
+      units.forEach(function (u) { flap(u, pad(v[+u.dataset.u], u.dataset.u === "0" ? 3 : 2)); });
+      if (ms - Date.now() > 0) cdTimer = setTimeout(tickCd, 1000);
+      else $("#cd-date").textContent = "Out now";
+    };
+    var showCd = function () {
+      cur = bys[pick.value]; if (!cur) return;
+      clearTimeout(cdTimer);
+      flap($("#cd-title"), cur.title.length > 22 ? cur.title.split(":")[0].slice(0, 22) : cur.title, { stagger: true });
+      $("#cd-date").textContent = new Date(at(cur)).toLocaleDateString(undefined, { weekday: "long", day: "numeric", month: "long", year: "numeric" }) + " · " + cur.platforms.join(", ");
+      var d = cur.date.replace(/-/g, ""), nd = new Date(at(cur) + 864e5), d2 = nd.getFullYear() + pad(nd.getMonth() + 1) + pad(nd.getDate());
+      $("#cd-gcal").href = "https://calendar.google.com/calendar/render?action=TEMPLATE&text=" + encodeURIComponent(cur.title + " launches") + "&dates=" + d + "/" + d2;
+      var gl = $("#cd-guide"); gl.hidden = !cur.page; if (cur.page) gl.href = gl.dataset.base + cur.slug + gl.dataset.ext;
+      $("#cd-star").textContent = WL.indexOf(cur.slug) > -1 ? "★ On my list" : "☆ Add to my list";
+      try { history.replaceState(null, "", location.pathname + "?g=" + cur.slug); } catch (e) {}
+      tickCd();
+    };
+    pick.addEventListener("change", showCd);
+    $("#cd-copy").addEventListener("click", function () {
+      var u = location.origin + location.pathname + "?g=" + (cur ? cur.slug : "");
+      if (navigator.clipboard) navigator.clipboard.writeText(u).then(function () { toast("Countdown link copied"); }, function () { toast(u); }); else toast(u);
+    });
+    $("#cd-star").addEventListener("click", function () {
+      if (!cur) return; var i = WL.indexOf(cur.slug);
+      if (i > -1) WL.splice(i, 1); else WL.push(cur.slug);
+      store.set("dod-watch", WL); syncStars(); showCd(); toast(i > -1 ? "Removed from your list" : "Added to your list");
+    });
+    $$("[data-cd-date]").forEach(function (r) {
+      var ms = at({ date: r.getAttribute("data-cd-date") }), n = Math.ceil((ms - Date.now()) / 864e5), b = $(".cd-days", r);
+      if (b) b.textContent = n > 1 ? n + " days" : n === 1 ? "Tomorrow" : n === 0 ? "Today" : "Out now";
+    });
+    showCd();
+  }
+
   /* Steam sale dates: live status + countdown + type filter */
   var sst = $("#ss-tool");
   if (sst) {
