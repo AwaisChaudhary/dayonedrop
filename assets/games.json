@@ -2148,16 +2148,70 @@
    "platforms": [
     "PC"
    ],
-   "dev": "",
+   "dev": "Cloud Imperium Games",
    "genre": "Space shooter",
-   "page": false,
-   "facts": [],
-   "history": [],
+   "page": true,
+   "facts": [
+    "Squadron 42 is set for Q2 2027, which means April, May or June 2027. No exact day has been announced.",
+    "It was planned for 2026. Cloud Imperium had aimed for late 2026, around its yearly in-game IAE event.",
+    "Chris Roberts announced the delay in a Letter From the Chairman in late August 2026. He said he did not want to launch the game into the \"attention buzz saw\" of GTA 6.",
+    "It is a PC game. No PS5 or Xbox version has been announced.",
+    "A Steam page went live in October 2026, so you can wishlist it there.",
+    "It is a single-player, story-driven campaign. You play a rookie combat pilot in the United Empire of Earth (UEE) Navy.",
+    "It is set in the same universe as Star Citizen and is pitched as a spiritual successor to Wing Commander.",
+    "The performance-capture cast includes Mark Hamill, Gary Oldman, Henry Cavill and Gillian Anderson.",
+    "Original backers and long-time content creators were invited to play it on 9 and 10 October 2026.",
+    "No price, editions or pre-orders have been announced yet."
+   ],
+   "history": [
+    {
+     "when": "Oct 2024",
+     "text": "Cloud Imperium sets a 2026 release at CitizenCon 2024."
+    },
+    {
+     "when": "Aug 2026",
+     "text": "Delayed from 2026 to Q2 2027. Chris Roberts names GTA 6 as the reason."
+    },
+    {
+     "when": "Oct 2026",
+     "text": "Steam page goes live. Backers and creators get a hands-on on 9 and 10 October."
+    }
+   ],
    "date": null,
-   "window": "Mid 2027",
+   "window": "Q2 2027",
    "month": 6,
-   "status": "window",
-   "about": "The single-player campaign set in the Star Citizen universe."
+   "status": "delayed",
+   "about": "Cloud Imperium Games' single-player space combat campaign set in the Star Citizen universe, now aimed at April to June 2027 on PC.",
+   "no_preorder": true,
+   "seo_title": "Squadron 42 Release Date: Q2 2027 (PC), GTA 6 Delay and Steam Details",
+   "qa_note": "It was delayed from 2026 so it would not launch next to GTA 6, and it now has a Steam page.",
+   "faq": [
+    [
+     "Why was Squadron 42 delayed to 2027?",
+     "Chris Roberts said he did not want the game to launch into the \"attention buzz saw\" of GTA 6, which comes out in November 2026. The game moved from a 2026 target to Q2 2027."
+    ],
+    [
+     "Is Squadron 42 coming to PS5 or Xbox?",
+     "No console version has been announced. Squadron 42 is a PC game for now."
+    ],
+    [
+     "Is Squadron 42 on Steam?",
+     "Yes. Its Steam page went live in October 2026, so you can wishlist it there. Pre-orders have not opened."
+    ],
+    [
+     "Is Squadron 42 multiplayer?",
+     "No. It is a single-player story campaign. Star Citizen is the separate online game set in the same universe."
+    ],
+    [
+     "Who is in the cast of Squadron 42?",
+     "The announced performance-capture cast includes Mark Hamill, Gary Oldman, Henry Cavill and Gillian Anderson."
+    ],
+    [
+     "Does Squadron 42 have an exact release date?",
+     "Not yet. Cloud Imperium has only given the Q2 2027 window, which runs from April to June 2027. We update this page as soon as a day is announced."
+    ]
+   ],
+   "sources": "Roberts Space Industries Letter From the Chairman via GamingBolt (28 Aug 2026) and TechSpot, Power Up Gaming (11 Oct 2026), PC Games Hardware, Dexerto, 80.lv"
   },
   {
    "slug": "showa-american-story",
