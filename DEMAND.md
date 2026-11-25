@@ -1,3 +1,11 @@
+## RADAR 25 Nov 06:45 PKT (Google autocomplete, US)
+D1. OPEN 'xbox games showcase 2027' (xbox games 2027 #5) -> /xbox-games-showcase-2027 (date window, what to expect, games confirmed so far; update live in June).
+D2. OPEN 'ps5 sports games 2027' / 'ps5 soccer games 2027' -> /sports-games-2027 (genre page; also a competitor gap).
+D3. OPEN 'games coming out in 2027 february' -> ensure /months/february-2027 title leads with 'Games Coming Out in February 2027'.
+D4. OPEN 'games like gta 6 for ps5' / 'games better than gta 6' -> H2s on /games-like-gta-6.
+D5. OPEN 'after gta 6 will there be gta 7' -> FAQ + H2 on /after-gta-6.
+Covered: exclusives-2027 (PS5/Xbox/Switch 2 exclusives), games-like-gta-6, platform pages, later-2027.
+
 ## COMPETITOR WATCH 24 Nov 2026 (vs GamesRadar release-dates hub upd. 23 Nov; gameinformer.com/2027 and GameSpot did not load this run)
 We have 25 game pages, 7 month pages (Jan-Jun, Dec 2027), 4 platforms, 12 list pages.
 1. GAP: dated Q1 2027 games GamesRadar lists that we have NO entry for: Outward 2 (early access 8 Feb), Among Us Story: On Guard (17 Feb), Pony Island 2: Panda Circus (27 Apr). Plan: add to data with 2-source dates. (Armatus, Ananta, Elta, Muramasa, Romancing SaGa 3, Tag Force GX, Gundam Rogue Orbit, Grave Seasons, Apothecary Diaries are in data but have no game page: give the biggest 3 pages.)
