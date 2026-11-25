@@ -1,3 +1,13 @@
+## NEW CATEGORIES (Keyword Planner, worldwide, 25 Nov 2026; Awais: "do the same for DayOneDrop")
+DayOneDrop is a release-date site, so expand to every "what's new / when is it out" calendar gamers search:
+G1. DONE 25 Nov /ps-plus-monthly-games ("ps plus monthly games" 100k-1M, +900%). UPDATE monthly: last Wednesday reveal, first Tuesday release; keep a month-by-month archive table.
+G2. OPEN /epic-free-games ("epic free games" 10k-100k): this week's free game + next week's, every Thursday 4 pm UK; December mystery games. Update weekly.
+G3. OPEN /nintendo-direct ("nintendo direct" 100k-1M): next Direct (only when Nintendo announces), every past Direct with what it revealed, linked to Switch 2 2027 games.
+G4. OPEN /game-pass-this-month (complements /game-pass-2027, "game pass games" 10k-100k): games joining and leaving this month.
+G5. OPEN NEW VERTICAL /movies-2027 ("upcoming movies 2027" 10k-100k, +900% YoY) + /new-tv-shows ("new tv shows" 100k-1M): only after G2-G4; same calendar format (title, date, where to watch), facts from studio/streamer announcements only.
+G6. OPEN /anime-release-dates ("anime release dates" 1k-10k): winter 2027 season. Lower priority.
+G7. OPEN /steam-sale-dates ("steam sale dates" 1k-10k): Winter Sale + 2027 sale/fest calendar from Steamworks' published dates.
+
 ## COMPETITOR WATCH 25 Nov 2026 (vs gameinformer.com/2027 + /2026, GamesRadar release dates upd. 23 Nov)
 We have 79 games in data (was 74), 28 game pages, 4 month pages for 2027 (Jan-Apr) + Dec 2026, 4 platforms, ~20 list pages.
 1. DONE 25 Nov (competitor watch): added 5 dated games both Game Informer and GamesRadar list: Usual June (20 Jan), Everything is Crab (26 Jan, Switch 2), Prison of Husks (27 Jan), My Arms Are Longer Now (11 Mar), Super Battle Golf (25 Mar, Switch 2). Platforms = only those both lists agree on.
