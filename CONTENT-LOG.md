@@ -268,3 +268,4 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - Added 1 (board now 74): Showa American Story, 28 Oct 2027 (delayed from 2026), PS5/PC, NEKCOM Games. Studio announcement via Game Informer + Automaton West (24 Nov 2026).
 - Left out: Warhammer Blood Bowl (still "early 2027" PC Gamer/games.gg vs "spring 2027" God is a Geek); Pokémon Winds and Waves delay to Nov 2027 (rumour only: Centro Leaks via Vice); Mercenaries Grace PC "early 2027" (PC-only 2027 part, Gematsu only); Showa American Story publisher (4Divinity per Game Informer only).
 - IndexNow pending (no WebFetch in this run): /calendar, /games, /delayed-games-2027, /later-2027, /months/april-2027, /platforms/ps5, /platforms/pc
+- IndexNow FLUSHED 25 Nov 09:35 PKT (daily traffic run): all pending URLs since last flush, 200 OK (DOD 34, NC 51, Padel 18, Pitchside 1).
