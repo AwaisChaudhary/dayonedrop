@@ -1,5 +1,5 @@
 ## RADAR 25 Nov 06:45 PKT (Google autocomplete, US)
-D1. OPEN 'xbox games showcase 2027' (xbox games 2027 #5) -> /xbox-games-showcase-2027 (date window, what to expect, games confirmed so far; update live in June).
+D1. DONE 25 Nov https://getdayonedrop.com/xbox-games-showcase-2027 'xbox games showcase 2027' (xbox games 2027 #5) -> /xbox-games-showcase-2027 (date window, what to expect, games confirmed so far; update live in June).
 D2. OPEN 'ps5 sports games 2027' / 'ps5 soccer games 2027' -> /sports-games-2027 (genre page; also a competitor gap).
 D3. OPEN 'games coming out in 2027 february' -> ensure /months/february-2027 title leads with 'Games Coming Out in February 2027'.
 D4. OPEN 'games like gta 6 for ps5' / 'games better than gta 6' -> H2s on /games-like-gta-6.

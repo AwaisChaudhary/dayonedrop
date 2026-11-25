@@ -396,6 +396,34 @@
     drawHor();
   }
 
+  /* Xbox Games Showcase 2027: undated / dated + Game Pass filter, add to list */
+  var xst = $("#xs-tool");
+  if (xst) {
+    var xsel = store.get("dod-xs", { d: "0", gp: "" }) || { d: "0", gp: "" };
+    var xrows = $$("#xs-list [data-xsd]"), xcount = $("#xs-count"), xnone = $("#xs-none"), xshown = [];
+    var drawXs = function () {
+      xshown = [];
+      xrows.forEach(function (r) {
+        var ok = (xsel.d === "" || r.getAttribute("data-xsd") === xsel.d) && (!xsel.gp || r.getAttribute("data-xsgp") === "1");
+        r.hidden = !ok; if (ok) xshown.push(r.getAttribute("data-slug"));
+      });
+      $$("[data-xs-d]", xst).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-xs-d") === xsel.d ? "true" : "false"); });
+      $$("[data-xs-gp]", xst).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-xs-gp") === xsel.gp ? "true" : "false"); });
+      xcount.textContent = xshown.length + " Xbox game" + (xshown.length === 1 ? "" : "s") + (xsel.d === "0" ? " with no exact date" : xsel.d === "1" ? " with a date" : "") + (xsel.gp ? " on Game Pass" : "");
+      xnone.hidden = xshown.length > 0;
+      store.set("dod-xs", xsel);
+    };
+    $$("[data-xs-d]", xst).forEach(function (c) { c.addEventListener("click", function () { xsel.d = c.getAttribute("data-xs-d"); drawXs(); }); });
+    $$("[data-xs-gp]", xst).forEach(function (c) { c.addEventListener("click", function () { xsel.gp = c.getAttribute("data-xs-gp"); drawXs(); }); });
+    var xadd = $("#xs-add");
+    if (xadd) xadd.addEventListener("click", function () {
+      var before = WL.length;
+      WL = Array.from(new Set(WL.concat(xshown))); store.set("dod-watch", WL); syncStars();
+      toast((WL.length - before) + " games added to your ★ list");
+    });
+    drawXs();
+  }
+
   /* Games like GTA 6: platform + taste picker */
   var lkt = $("#like-tool");
   if (lkt) {

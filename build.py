@@ -254,7 +254,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("new-games-this-week.html", depth)}">New games this week</a></li><li><a href="{href("later-2027.html", depth)}">Games later in 2027 (May–Dec)</a></li><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/state-of-decay-3.html", depth)}">State of Decay 3</a></li><li><a href="{href("games/ananta.html", depth)}">Ananta (free-to-play)</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("new-games-this-week.html", depth)}">New games this week</a></li><li><a href="{href("later-2027.html", depth)}">Games later in 2027 (May–Dec)</a></li><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/state-of-decay-3.html", depth)}">State of Decay 3</a></li><li><a href="{href("games/ananta.html", depth)}">Ananta (free-to-play)</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("xbox-games-showcase-2027.html", depth)}">Xbox Games Showcase 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Every date is checked against the publisher or platform holder plus a second trusted source (<a href="{href("about.html", depth)}#editorial">editorial policy</a>). Spotted an error? Email <a href="mailto:awaiskaramat@hotmail.com">awaiskaramat@hotmail.com</a>. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -592,6 +592,9 @@ def _plat_extra(plat, long, games, excl):
         out += (f'<div class="sec-head"><h2>Which games are coming to {e(long)} late?</h2><span class="muted">{len(late)}</span></div>'
                 f'<p class="muted">These are already out on other systems. The {e(long)} version lands in 2027.</p>'
                 f'<div class="out" style="margin-bottom:28px">{"".join(plat_row(g, 1, plat) for g in late)}</div>')
+    if plat == "Xbox Series X|S":
+        out += (f'<div class="sec-head"><h2>When is the next Xbox Games Showcase?</h2></div>'
+                f'<p>Microsoft has not announced the 2027 show yet. Every showcase since 2023 aired on a Sunday in early June. See <a href="{href("xbox-games-showcase-2027.html", 1)}">Xbox Games Showcase 2027</a> for past dates and the Xbox games still waiting for a release date.</p>')
     skip = [g for g in GAMES if plat not in g["platforms"] and g["platforms"] and g["slug"] not in PORTS]
     big_skip = [g for g in skip if g["slug"] in BIG_WHY_SLUGS]
     show = (big_skip or skip)[:8]
@@ -1128,6 +1131,12 @@ _gen_tbl = ('<div style="overflow-x:auto"><table class="gen-table" style="width:
                       + "".join(f'<td style="padding:6px;text-align:center;border-top:1px solid var(--rule)" class="mono">{sum(1 for g in _gen[k] if p in g["platforms"])}</td>' for p in PLATS) + '</tr>' for k in _gen)
             + '</tbody></table></div>')
 _gen_top = {p: max(_gen, key=lambda k: sum(1 for g in _gen[k] if p in g["platforms"])) for p in PLATS}
+def _and(xs): return xs[0] if len(xs) == 1 else ', '.join(xs[:-1]) + ' and ' + xs[-1]
+_gen_next = {k: next((g for g in _gen[k] if g["date"] and g["date"] >= UPDATED), None) for k in _gen}
+_gen_und = {k: [g for g in _gen[k] if not g["date"]] for k in _gen}
+_race = [g for g in GAMES if "racing" in (g.get("genre") or "").lower() or "truck" in (g.get("genre") or "").lower()]
+_sport_race = ("we track " + _and([f'{_gname(g)} ({e(nice_date(g))}, {e(", ".join(g["platforms"]))})' for g in _race]) + ".") if _race else "nothing is dated yet."
+_gen_quick += f" No sports game (FIFA/FC, Madden, NBA 2K) has a 2027 date yet."
 gen_body = (f'<header class="hero"><div class="wrap"><span class="kicker">By genre</span>'
             f'<h1>2027 games by genre:<br><span class="amber">horror, shooters, RPGs and more.</span></h1>'
             f'<p class="lead">Looking for a scary game, a new shooter or a platformer to play in 2027? Every game we track, sorted by genre, in release order, with a filter for your console.</p>'
@@ -1142,7 +1151,18 @@ gen_body = (f'<header class="hero"><div class="wrap"><span class="kicker">By gen
             f'<p class="muted">Number of tracked 2027 games in each genre, per console.</p>{_gen_tbl}'
             f'<ul style="margin-top:16px">' + "".join(f'<li><a href="{href("platforms/" + _pslug[p] + ".html", 0)}">{e(_lab[p])}</a>: most games are {e(_gen_meta[_gen_top[p]][1])}.</li>' for p in PLATS) + '</ul>'
             f'<p class="muted">Genre labels follow how each game is announced by its publisher. A game sits in one group only.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>What is the next game in each genre?</h2></div>'
+            f'<div style="overflow-x:auto"><table class="gen-table" style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr><th style="text-align:left;padding:6px">Genre</th><th style="text-align:left;padding:6px">Next game</th><th style="text-align:left;padding:6px">Date</th></tr></thead><tbody>'
+            + "".join(f'<tr><td style="padding:6px;border-top:1px solid var(--rule)"><a href="#{k}">{e(_gen_meta[k][0])}</a></td><td style="padding:6px;border-top:1px solid var(--rule)">{_gname(_gen_next[k]) if _gen_next[k] else "No exact date yet"}</td><td style="padding:6px;border-top:1px solid var(--rule)" class="mono">{e(short_date(_gen_next[k])) if _gen_next[k] else "-"}</td></tr>' for k in _gen)
+            + '</tbody></table></div>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Which 2027 games have no exact date yet, by genre?</h2></div><ul>'
+            + "".join(f'<li>{e(_gen_meta[k][0])}: {", ".join(_gname(g) for g in _gen_und[k])}</li>' for k in _gen if _gen_und[k]) + '</ul>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Are there any sports games coming out in 2027?</h2></div>'
+            f'<p>Not yet. No 2027 sports game (football, soccer, basketball, golf) has been announced with a release date. EA\'s current editions came out in 2026: College Football 27 on 9 July 2026 (PS5, Xbox Series X|S, PC) and EA Sports FC 27 on 25 September 2026 (also on Switch 2). The yearly 2027 editions are normally revealed a few months before launch, so expect news in spring and summer 2027.</p>'
+            f'<p>For racing and driving games, {_sport_race}</p>'
             f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+            f'<li><a href="{href("horror-games-2027.html", 0)}">Every horror game of 2027</a>, with a console filter and countdown</li>'
+            f'<li><a href="{href("xbox-games-showcase-2027.html", 0)}">Xbox Games Showcase 2027</a>: which Xbox games still need a date</li>'
             f'<li><a href="{href("rpgs-2027.html", 0)}">Every RPG coming in 2027</a>, with action RPG and JRPG filters</li>'
             f'<li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a> and a shareable top list maker</li>'
             f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: do your picks land the same week?</li>'
@@ -1151,9 +1171,11 @@ gen_faq = [("What genre has the most games in 2027?", _gen_quick)]
 for _k in _gen:
     _n, _low = _gen_meta[_k]
     gen_faq.append((f"What {_low} are coming out in 2027?", f"We track {len(_gen[_k])}: " + ", ".join(f"{g['title']} ({nice_date(g)})" for g in _gen[_k]) + "."))
+gen_faq.append(("Are there any sports games coming out in 2027?", "None with a 2027 date yet. College Football 27 (9 July 2026) and EA Sports FC 27 (25 September 2026) are the current editions; the 2027 editions have not been announced."))
+gen_faq.append(("What is the next 2027 game in each genre?", "; ".join(f"{_gen_meta[k][0]}: {_gen_next[k]['title']} ({nice_date(_gen_next[k])})" for k in _gen if _gen_next[k]) + "."))
 gen_faq.append(("Which genre has the most 2027 games on Switch 2?", f"{_gen_meta[_gen_top['Switch 2']][0]}, with {sum(1 for g in _gen[_gen_top['Switch 2']] if 'Switch 2' in g['platforms'])} games."))
-page("games-by-genre-2027.html", "2027 Games by Genre: Horror, Shooters, RPGs and More | DayOneDrop",
-     f"Every 2027 game sorted by genre: horror games, shooters, RPGs, platformers, action and sims, with dates, consoles and a genre filter. Checked {UPDATED}."[:160],
+page("games-by-genre-2027.html", "Upcoming Games 2027 by Genre: Horror, Shooters, RPGs, Sports | DayOneDrop",
+     f"Every 2027 game by genre: horror, shooters, RPGs, platformers, racing and sims, the next game in each genre, and are there sports games in 2027? Checked {UPDATED}."[:160],
      gen_body, 0, gen_faq, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html")), ("2027 games by genre", canon("games-by-genre-2027.html"))])
 
 
@@ -1880,6 +1902,7 @@ gp_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Xbox Ga
            f'<li><a href="{href("new-games-this-week.html", 0)}">New games this week</a>, week by week, with an Xbox filter</li>'
            f'<li><a href="{href("platforms/xbox-series.html", 0)}">Every Xbox Series X|S game coming in 2027</a></li>'
            f'<li><a href="{href("exclusives-2027.html", 0)}">2027 console exclusives</a>: is anything Xbox-only?</li>'
+           f'<li><a href="{href("xbox-games-showcase-2027.html", 0)}">Xbox Games Showcase 2027</a>: likely date and games still without one</li>'
            f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: which games land the same week</li></ul></div></section>')
 gp_faq = [
     ("What games are coming to Xbox Game Pass in 2027?", f"{_gp_total} announced so far: " + ", ".join(g["title"] for g in _gp) + ", " + ", ".join(t for t, _ in GP_OTHER) + "."),
@@ -2231,11 +2254,101 @@ page("privacy.html", "Privacy Policy | DayOneDrop", "DayOneDrop privacy policy c
 page("404.html", "Page not found | DayOneDrop", "This page has moved or doesn't exist.",
      f'<section><div class="wrap"><h1>Flight <span class="amber">cancelled.</span></h1><p class="lead">This page doesn\'t exist. Head back to the departures board.</p><a class="btn" href="{href("index.html", 0)}">Go to the board</a></div></section>')
 
+
+
+# ---------------- XBOX GAMES SHOWCASE 2027 (25 Nov 2026) ----------------
+# Past show dates: Xbox Wire (2025, 2026), VGC, Gematsu, Windows Central, GamingBolt, Pure Xbox. 2023/2024 well reported (Xbox Wire recaps).
+# 2027 show NOT announced as of the check date: the "likely" window is our estimate from the pattern, labelled as such.
+XS_PAST = [("2026", "2026-06-07", "Gears of War: E-Day Direct"), ("2025", "2025-06-08", "The Outer Worlds 2 Direct"),
+           ("2024", "2024-06-09", "Call of Duty: Black Ops 6 Direct"), ("2023", "2023-06-11", "Starfield Direct")]
+XS_DEVDIRECT = [("2026", "2026-01-22"), ("2025", "2025-01-23")]
+_WD = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+def _xs_day(d):
+    x = datetime.date.fromisoformat(d)
+    return f"{_WD[x.weekday()]} {x.day} {x.strftime('%B')} {x.year}"
+_xs_sun = [datetime.date(2027, 6, d) for d in range(1, 15) if datetime.date(2027, 6, d).weekday() == 6]
+_xs_sun_txt = " or ".join(f"Sunday {d.day} June 2027" for d in _xs_sun)
+_xb = sorted([g for g in GAMES if "Xbox Series X|S" in g["platforms"]], key=lambda x: (x["month"], x["date"] or "9999"))
+_xb_und = [g for g in _xb if not g["date"]]
+_xb_dated = [g for g in _xb if g["date"]]
+_xb_pre = [g for g in _xb_dated if g["date"] < "2027-06-06"]
+_xb_pre_big = [g for g in _xb_pre if g["page"] or g["slug"] in GP_TRACKED_ALL]
+_xb_gp = [g for g in _xb if g["slug"] in GP_TRACKED_ALL]
+_xb_only = [g for g in _xb if g["platforms"] == ["Xbox Series X|S"] or set(g["platforms"]) <= {"Xbox Series X|S", "PC"}]
+_xb_big_und = [g for g in _xb_und if g["page"]]
+_xs_quick = (f"Microsoft has not announced the Xbox Games Showcase 2027 yet. The last four showcases (2023 to 2026) all aired on a Sunday in early June, between 7 and 11 June, "
+             f"so {_xs_sun_txt} is the likely slot. That is our estimate, not a confirmed date. "
+             f"{len(_xb_und)} of the {len(_xb)} Xbox games we track for 2027 still have no exact date.")
+def _xsrow(g):
+    gp = g["slug"] in GP_TRACKED_ALL
+    tags = []
+    if gp: tags.append("Game Pass day one" if g["slug"] in GP_DAY_ONE else "Announced for Game Pass")
+    if "PS5" in g["platforms"]: tags.append("also on PS5")
+    return (f'<div class="row" data-xsd="{1 if g["date"] else 0}" data-xsgp="{1 if gp else 0}" data-slug="{e(g["slug"])}"><span><strong>{_gname(g)}</strong>'
+            f'<br><span class="muted">{e(g.get("genre") or "")} · {e(g.get("dev") or "Studio TBC")}' + (f' · {e(", ".join(tags))}' if tags else "") + f'</span></span><b>{e(nice_date(g))}</b></div>')
+_xs_tbl = ('<div style="overflow-x:auto"><table class="gen-table" style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr>'
+           '<th style="text-align:left;padding:6px">Year</th><th style="text-align:left;padding:6px">Showcase date</th><th style="text-align:left;padding:6px">Followed by</th></tr></thead><tbody>'
+           + "".join(f'<tr><td style="padding:6px;border-top:1px solid var(--rule)" class="mono">{y}</td><td style="padding:6px;border-top:1px solid var(--rule)">{e(_xs_day(d))}</td>'
+                     f'<td style="padding:6px;border-top:1px solid var(--rule)">{e(dr)}</td></tr>' for y, d, dr in XS_PAST)
+           + f'<tr><td style="padding:6px;border-top:1px solid var(--rule)" class="mono">2027</td><td style="padding:6px;border-top:1px solid var(--rule)">Not announced (likely early June)</td><td style="padding:6px;border-top:1px solid var(--rule)">Not announced</td></tr>'
+           + '</tbody></table></div>')
+_xs_chips = ('<div class="chips" role="group" aria-label="Date"><button class="chip" type="button" data-xs-d="0" aria-pressed="true">No exact date yet</button>'
+             '<button class="chip" type="button" data-xs-d="1" aria-pressed="false">Already dated</button><button class="chip" type="button" data-xs-d="" aria-pressed="false">All</button></div>'
+             '<div class="chips" role="group" aria-label="Game Pass" style="margin-top:10px"><button class="chip" type="button" data-xs-gp="" aria-pressed="true">Any</button>'
+             '<button class="chip" type="button" data-xs-gp="1" aria-pressed="false">Game Pass only</button></div>')
+xs_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Xbox</span>'
+           f'<h1>Xbox Games Showcase 2027:<br><span class="amber">when is it, and what still needs a date?</span></h1>'
+           f'<p class="lead">The likely date of the June 2027 Xbox show, every past showcase date, and the Xbox games due in 2027 that are still waiting for a release date.</p>'
+           f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · we update this page when Microsoft announces the show</p></div></header>'
+           f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_xs_quick)}</span></div></div>'
+           f'<div class="tool" id="xs-tool"><h2 style="font-size:1.5rem;margin-top:0">Which 2027 Xbox games could get a date at the showcase?</h2>'
+           f'<p class="muted">Games announced for Xbox Series X|S in 2027 without an exact day are the ones most likely to get one. Tap to switch the list, then save the games you care about to your ★ list. Your choice is remembered on this device.</p>{_xs_chips}'
+           f'<p class="mono amber" id="xs-count" aria-live="polite" style="margin:12px 0 0">{len(_xb_und)} games</p>'
+           f'<div class="out" id="xs-list" style="margin-top:12px">{"".join(_xsrow(g) for g in _xb)}</div><p class="empty" id="xs-none" hidden>No tracked Xbox games match that yet.</p>'
+           f'<div class="btns" style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn sm" type="button" id="xs-add">Add these to my ★ list</button>'
+           f'<a class="btn line sm" href="{href("platforms/xbox-series.html", 0)}">All Xbox release dates</a></div></div></div></section>'
+           + AD.format("xs-mid") +
+           f'<section><div class="wrap"><div class="sec-head"><h2>When is the Xbox Games Showcase 2027?</h2></div>'
+           f'<p>Not announced yet. Microsoft usually confirms the date in late March or early April: the 2026 show was announced on 30 March 2026 for 7 June. '
+           f'Going by the last four years, the 2027 show will most likely air on {e(_xs_sun_txt)}. Treat any exact date you see before Microsoft posts it on Xbox Wire as a guess.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>When were the past Xbox Games Showcases?</h2></div>{_xs_tbl}'
+           f'<p class="muted" style="margin-top:10px">Every show since 2023 aired on a Sunday, with a deep-dive Direct on one big game straight after. Sources: Xbox Wire, VGC, Gematsu, Windows Central.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>Will there be an Xbox Developer Direct in January 2027?</h2></div>'
+           f'<p>Not announced yet. Xbox held a Developer Direct in late January in both 2025 ({e(_xs_day("2025-01-23"))}) and 2026 ({e(_xs_day("2026-01-22"))}), and announced the 2026 one in December 2025. If the pattern holds, expect news in December 2026, but nothing is confirmed.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>Which big Xbox games already have a date before June 2027?</h2><span class="muted">{len(_xb_pre_big)} of {len(_xb_pre)}</span></div>'
+           f'<p class="muted">These launch before the likely showcase weekend, so they will already be out (or nearly out) when the show airs.</p>'
+           f'<div class="out" style="margin-bottom:10px">' + "".join(_xsrow(g) for g in _xb_pre_big) + '</div>'
+           f'<p class="muted">Showing the big ones and Game Pass games. See <a href="{href("platforms/xbox-series.html", 0)}">every Xbox Series X|S game of 2027</a> for all {len(_xb_dated)} dated games.</p>'
+           + (f'<div class="sec-head" style="margin-top:28px"><h2>Which big 2027 Xbox games still have no release date?</h2><span class="muted">{len(_xb_big_und)}</span></div>'
+              f'<div class="out" style="margin-bottom:10px">' + "".join(_xsrow(g) for g in _xb_big_und) + '</div>' if _xb_big_und else "")
+           + f'<div class="sec-head" style="margin-top:28px"><h2>Which Game Pass games are due in 2027?</h2><span class="muted">{len(_xb_gp)} tracked</span></div>'
+           f'<div class="out" style="margin-bottom:10px">' + "".join(_xsrow(g) for g in _xb_gp) + '</div>'
+           f'<p class="muted">Also announced for Game Pass with only a window: {e(", ".join(f"{t} ({w})" for t, w in GP_OTHER))}. Full list on the <a href="{href("game-pass-2027.html", 0)}">Game Pass 2027 page</a>.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>Are Xbox games still coming to PS5 in 2027?</h2></div>'
+           f'<p>Yes. Of the {len(_xb)} Xbox games we track for 2027, {sum(1 for g in _xb if "PS5" in g["platforms"])} are also announced for PS5, including Fable and State of Decay 3. '
+           f'Only {len(_xb_only)} are on Xbox and PC only. See <a href="{href("exclusives-2027.html", 0)}">2027 console exclusives</a> for the full split.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+           f'<li><a href="{href("game-pass-2027.html", 0)}">Every Xbox Game Pass game of 2027</a>, with the next one to launch</li>'
+           f'<li><a href="{href("platforms/xbox-series.html", 0)}">Xbox Series X|S release dates 2027</a>, month by month</li>'
+           f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: check your ★ list for games that land the same week</li>'
+           f'<li><a href="{href("game-awards-2026.html", 0)}">The Game Awards 2026</a>: the next big show where 2027 dates could appear</li></ul></div></section>')
+xs_faq = [
+    ("When is the Xbox Games Showcase 2027?", f"Microsoft has not announced it. The 2023 to 2026 shows all aired on a Sunday between 7 and 11 June, so {_xs_sun_txt} is likely, but that is an estimate."),
+    ("When was the Xbox Games Showcase 2026?", "Sunday 7 June 2026, followed by the Gears of War: E-Day Direct. Microsoft announced the date on 30 March 2026."),
+    ("When does Microsoft announce the Xbox Games Showcase date?", "Usually in spring. The 2026 date was announced on 30 March 2026, about ten weeks before the show."),
+    ("Will there be an Xbox Developer Direct in January 2027?", "Not announced. Xbox held one on 23 January 2025 and 22 January 2026."),
+    ("Which 2027 Xbox games have no release date yet?", (", ".join(f"{g['title']} ({nice_date(g)})" for g in _xb_und) + ".") if _xb_und else "Every tracked Xbox game has a date."),
+    ("Which 2027 Xbox games are on Game Pass?", ", ".join(f"{g['title']} ({nice_date(g)})" for g in _xb_gp) + "."),
+]
+page("xbox-games-showcase-2027.html", "Xbox Games Showcase 2027: Likely Date, Past Shows and Games Without a Date | DayOneDrop",
+     f"When is the Xbox Games Showcase 2027? Not announced yet: likely early June. Every past show date, plus the {len(_xb_und)} Xbox 2027 games still without a date. Checked {UPDATED}."[:160],
+     xs_body, 0, xs_faq, crumbs=[("Home", DOMAIN + "/"), ("Xbox Series X|S games", canon("platforms/xbox-series.html")), ("Xbox Games Showcase 2027", canon("xbox-games-showcase-2027.html"))])
+
 # ---------------- SEO files ----------------
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "new-games-this-week.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "calendar.html", "later-2027.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "new-games-this-week.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "xbox-games-showcase-2027.html", "calendar.html", "later-2027.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)
