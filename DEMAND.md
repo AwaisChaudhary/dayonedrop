@@ -1,7 +1,7 @@
 ## NEW CATEGORIES (Keyword Planner, worldwide, 25 Nov 2026; Awais: "do the same for DayOneDrop")
 DayOneDrop is a release-date site, so expand to every "what's new / when is it out" calendar gamers search:
-G1. DONE 25 Nov /ps-plus-monthly-games ("ps plus monthly games" 100k-1M, +900%). UPDATE monthly: last Wednesday reveal, first Tuesday release; keep a month-by-month archive table.
-G2. DONE 25 Nov /epic-free-games (weekly Thursday update scheduled) ("epic free games" 10k-100k): this week's free game + next week's, every Thursday 4 pm UK; December mystery games. Update weekly.
+G1. DONE 25 Nov /ps-plus-monthly-games — RECURRING: after the last-Wednesday reveal each month, update PSP in build.py (2+ sources). ("ps plus monthly games" 100k-1M, +900%). UPDATE monthly: last Wednesday reveal, first Tuesday release; keep a month-by-month archive table.
+G2. DONE 25 Nov /epic-free-games — RECURRING: the first DayOneDrop run after 16:00 UTC every Thursday must update the EPIC list in build.py (now->past, next->now, add the newly announced next week; 2+ sources) and IndexNow the page. ("epic free games" 10k-100k): this week's free game + next week's, every Thursday 4 pm UK; December mystery games. Update weekly.
 G3. OPEN /nintendo-direct ("nintendo direct" 100k-1M): next Direct (only when Nintendo announces), every past Direct with what it revealed, linked to Switch 2 2027 games.
 G4. OPEN /game-pass-this-month (complements /game-pass-2027, "game pass games" 10k-100k): games joining and leaving this month.
 G5. OPEN NEW VERTICAL /movies-2027 ("upcoming movies 2027" 10k-100k, +900% YoY) + /new-tv-shows ("new tv shows" 100k-1M): only after G2-G4; same calendar format (title, date, where to watch), facts from studio/streamer announcements only.
