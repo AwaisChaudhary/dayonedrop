@@ -254,7 +254,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("new-games-this-week.html", depth)}">New games this week</a></li><li><a href="{href("later-2027.html", depth)}">Games later in 2027 (May–Dec)</a></li><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/state-of-decay-3.html", depth)}">State of Decay 3</a></li><li><a href="{href("games/lords-of-the-fallen-ii.html", depth)}">Lords of the Fallen 2</a></li><li><a href="{href("games/squadron-42.html", depth)}">Squadron 42</a></li><li><a href="{href("games/ananta.html", depth)}">Ananta (free-to-play)</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("ps-plus-monthly-games.html", depth)}">PS Plus monthly games</a></li><li><a href="{href("epic-free-games.html", depth)}">Epic free games this week</a></li><li><a href="{href("xbox-games-showcase-2027.html", depth)}">Xbox Games Showcase 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("new-games-this-week.html", depth)}">New games this week</a></li><li><a href="{href("later-2027.html", depth)}">Games later in 2027 (May–Dec)</a></li><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/state-of-decay-3.html", depth)}">State of Decay 3</a></li><li><a href="{href("games/lords-of-the-fallen-ii.html", depth)}">Lords of the Fallen 2</a></li><li><a href="{href("games/squadron-42.html", depth)}">Squadron 42</a></li><li><a href="{href("games/ananta.html", depth)}">Ananta (free-to-play)</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("ps-plus-monthly-games.html", depth)}">PS Plus monthly games</a></li><li><a href="{href("epic-free-games.html", depth)}">Epic free games this week</a></li><li><a href="{href("steam-sale-dates.html", depth)}">Steam sale dates 2026-2027</a></li><li><a href="{href("nintendo-direct.html", depth)}">Next Nintendo Direct</a></li><li><a href="{href("xbox-games-showcase-2027.html", depth)}">Xbox Games Showcase 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Every date is checked against the publisher or platform holder plus a second trusted source (<a href="{href("about.html", depth)}#editorial">editorial policy</a>). Spotted an error? Email <a href="mailto:awaiskaramat@hotmail.com">awaiskaramat@hotmail.com</a>. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -595,6 +595,12 @@ def _plat_extra(plat, long, games, excl):
     if plat == "Xbox Series X|S":
         out += (f'<div class="sec-head"><h2>When is the next Xbox Games Showcase?</h2></div>'
                 f'<p>Microsoft has not announced the 2027 show yet. Every showcase since 2023 aired on a Sunday in early June. See <a href="{href("xbox-games-showcase-2027.html", 1)}">Xbox Games Showcase 2027</a> for past dates and the Xbox games still waiting for a release date.</p>')
+    if plat == "PC":
+        out += (f'<div class="sec-head"><h2>When is the next Steam sale?</h2></div>'
+                f'<p>The Steam Winter Sale 2026 runs 17 December 2026 to 4 January 2027, then the Spring Sale is 18 to 25 March and the Summer Sale 24 June to 8 July 2027. See <a href="{href("steam-sale-dates.html", 1)}">every Steam sale date</a> with a live countdown and the 2027 PC games that launch during a sale.</p>')
+    if plat == "Switch 2":
+        out += (f'<div class="sec-head"><h2>When is the next Nintendo Direct?</h2></div>'
+                f'<p>Nintendo has not announced it yet; the last full Direct was on 9 September 2026. See <a href="{href("nintendo-direct.html", 1)}">Nintendo Direct</a> for every 2026 show and the Switch 2 games still waiting for a date.</p>')
     skip = [g for g in GAMES if plat not in g["platforms"] and g["platforms"] and g["slug"] not in PORTS]
     big_skip = [g for g in skip if g["slug"] in BIG_WHY_SLUGS]
     show = (big_skip or skip)[:8]
@@ -1476,6 +1482,8 @@ tools = f'''<header class="hero"><div class="wrap"><span class="kicker">Tools</s
 <li><a href="{href("game-awards-2026.html", 0)}">The Game Awards 2026</a>: Most Anticipated nominees, their 2027 dates and a winner predictor</li>
 <li><a href="{href("new-games-this-week.html", 0)}">New games coming out this week</a>: every launch grouped Monday to Sunday, with a console filter</li>
 <li><a href="{href("games-december-2026.html", 0)}">Games coming out in December 2026</a>, with a console filter and live "out now" marks</li>
+<li><a href="{href("steam-sale-dates.html", 0)}">Steam sale dates</a>: countdown to the next Steam sale, every 2027 sale and fest</li>
+<li><a href="{href("nintendo-direct.html", 0)}">Next Nintendo Direct</a>: every 2026 Direct and the Switch 2 games still without a date</li>
 <li><a href="{href("after-gta-6.html", 0)}">What to play after GTA 6</a></li></ul></div></section>'''
 sw2 = [g["title"] for g in GAMES if "Switch 2" in g["platforms"]]
 both = [g["title"] for g in GAMES if "PS5" in g["platforms"] and "Xbox Series X|S" in g["platforms"]]
@@ -2492,6 +2500,7 @@ ep_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Epic Ga
     f'<div class="sec-head" style="margin-top:28px"><h2>More free and subscription games</h2></div><ul>'
     f'<li><a href="{href("ps-plus-monthly-games.html", 0)}">PS Plus monthly games</a>: December 2026</li>'
     f'<li><a href="{href("game-pass-2027.html", 0)}">Xbox Game Pass 2027</a></li>'
+    f'<li><a href="{href("steam-sale-dates.html", 0)}">Steam sale dates</a>: Winter Sale 17 Dec to 4 Jan, with a countdown</li>'
     f'<li><a href="{href("platforms/pc.html", 0)}">Every PC game coming in 2027</a></li>'
     f'<li><a href="{href("new-games-this-week.html", 0)}">New games this week</a></li></ul></div></section>')
 ep_faq = [
@@ -2505,11 +2514,214 @@ page("epic-free-games.html", "Epic Free Games This Week (and Next Week): Every F
      f"Epic Games Store free games this week: {_ep_now[2]} until {_ep_now[1]}." + (f" Next: {_ep_next[0][2]}." if _ep_next else "") + " Plus the swap time in your time zone."[:160],
      ep_body, 0, ep_faq, crumbs=[("Home", DOMAIN + "/"), ("Epic free games", canon("epic-free-games.html"))])
 
+
+# ---------------- STEAM SALE DATES (DEMAND.md G7: "steam sale dates" 1k-10k; 25 Nov 2026) ----------------
+# Valve's Steamworks schedule (posted 15 Jul 2026, updated 6 Nov 2026) via PC Gamer (15 Jul 2026 + sale-dates guide), Notebookcheck and GamesRadar+.
+# Second half of 2027 (Autumn + Winter Sale 2027) NOT announced yet: add when Valve posts it (2+ sources).
+STEAM = [  # (name, start, end, kind) kind: sale | next | fest. End date = last day listed by Valve.
+    ("Steam Winter Sale 2026", "2026-12-17", "2027-01-04", "sale"),
+    ("Desktop Companion Fest", "2027-01-14", "2027-01-18", "fest"),
+    ("Shop Keeper Fest", "2027-01-25", "2027-02-01", "fest"),
+    ("Sheep Fest", "2027-02-04", "2027-02-08", "fest"),
+    ("Couch Co-Op Fest", "2027-02-08", "2027-02-15", "fest"),
+    ("Steam Next Fest: February 2027", "2027-02-22", "2027-03-01", "next"),
+    ("Rhythm Fest", "2027-03-08", "2027-03-15", "fest"),
+    ("Steam Spring Sale 2027", "2027-03-18", "2027-03-25", "sale"),
+    ("Dinos vs. Robots Fest", "2027-03-29", "2027-04-05", "fest"),
+    ("Racing Fest", "2027-04-12", "2027-04-19", "fest"),
+    ("Witch Fest", "2027-04-22", "2027-04-26", "fest"),
+    ("Fighting Fest", "2027-04-26", "2027-05-03", "fest"),
+    ("Real-Time Strategy Fest", "2027-05-10", "2027-05-17", "fest"),
+    ("Mountaineering Fest", "2027-05-31", "2027-06-03", "fest"),
+    ("Steam Next Fest: June 2027", "2027-06-14", "2027-06-21", "next"),
+    ("Steam Summer Sale 2027", "2027-06-24", "2027-07-08", "sale"),
+]
+STEAM_PAST = [("Steam Autumn Sale 2026", "2026-10-01", "2026-10-08", "sale"), ("Steam Scream V Fest", "2026-10-26", "2026-11-02", "fest"),
+              ("Auto-Battler RPG Fest", "2026-11-16", "2026-11-23", "fest")]
+_SS_KIND = {"sale": "Big seasonal sale", "next": "Next Fest (free demos)", "fest": "Themed fest"}
+def _pt_utc_hour(d):
+    """10 am Pacific in UTC: 17:00 during US daylight time (2nd Sun Mar to 1st Sun Nov), else 18:00."""
+    mar = datetime.date(d.year, 3, 8); mar += datetime.timedelta(days=(6 - mar.weekday()) % 7)
+    nov = datetime.date(d.year, 11, 1); nov += datetime.timedelta(days=(6 - nov.weekday()) % 7)
+    return 17 if mar <= d < nov else 18
+def _ss_iso(ds):
+    d = datetime.date.fromisoformat(ds)
+    return f"{ds}T{_pt_utc_hour(d):02d}:00:00Z"
+def _ss_nice(ds):
+    d = datetime.date.fromisoformat(ds)
+    return f"{_WD[d.weekday()][:3]} {d.day} {d.strftime('%b')}" + ("" if d.year == 2027 else f" {d.year}")
+def _ss_gcal(n, a, b):
+    from urllib.parse import quote
+    da, db = datetime.date.fromisoformat(a), datetime.date.fromisoformat(b) + datetime.timedelta(days=1)
+    return ("https://calendar.google.com/calendar/render?action=TEMPLATE&text=" + quote(n) + f"&dates={da:%Y%m%d}/{db:%Y%m%d}&details="
+            + quote("Steam event dates from Valve's schedule, via DayOneDrop (getdayonedrop.com/steam-sale-dates). Usually starts 10 am Pacific."))
+_ss_today = datetime.date.fromisoformat(UPDATED)
+_ss_up = [x for x in STEAM if datetime.date.fromisoformat(x[2]) >= _ss_today]
+_ss_next_sale = [x for x in _ss_up if x[3] == "sale"][0]
+_ss_sales = [x for x in STEAM if x[3] == "sale"]
+_ss_nf = [x for x in STEAM if x[3] == "next"]
+_ss_days = (datetime.date.fromisoformat(_ss_next_sale[1]) - _ss_today).days
+_ss_len = lambda x: (datetime.date.fromisoformat(x[2]) - datetime.date.fromisoformat(x[1])).days + 1
+_ss_pc = sorted([g for g in GAMES if "PC" in g["platforms"] and g["date"]], key=lambda g: g["date"])
+_ss_clash = [(x, [g for g in _ss_pc if x[1] <= g["date"] <= x[2]]) for x in STEAM]
+_ss_clash = [(x, gs) for x, gs in _ss_clash if gs]
+_ss_quick = (f"The next big Steam sale is the {_ss_next_sale[0]}: {_ss_nice(_ss_next_sale[1])} to {_ss_nice(_ss_next_sale[2])} 2027 ({_ss_len(_ss_next_sale)} days). "
+             f"In 2027 Valve has set the Spring Sale for 18 to 25 March and the Summer Sale for 24 June to 8 July, with Next Fest on 22 February and 14 June. "
+             f"The 2027 Autumn and Winter Sale dates are not announced yet.")
+def _ss_row(x, past=False):
+    n, a, b, k = x
+    return (f'<div class="row" data-ss-k="{k}" data-ss-s="{_ss_iso(a)}" data-ss-e="{_ss_iso(b)}"><span style="min-width:0"><strong>{e(n)}</strong><br>'
+            f'<span class="muted">{e(_SS_KIND[k])} · {_ss_len(x)} days</span><br><span class="muted mono ss-st" style="font-size:.78rem">{"Ended" if past else ""}</span></span>'
+            f'<span style="text-align:right;flex-shrink:0;max-width:48%"><b style="white-space:normal">{e(_ss_nice(a))} – {e(_ss_nice(b))}</b>'
+            + ("" if past else f'<br><a class="muted" style="font-size:.8rem" href="{_ss_gcal(n, a, b)}" rel="nofollow noopener" target="_blank">+ Google Calendar</a>') + '</span></div>')
+_ss_tcell = 'style="padding:6px;border-top:1px solid var(--rule)"'
+_ss_tbl = ('<div style="overflow-x:auto"><table class="gen-table" style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr>'
+           '<th style="text-align:left;padding:6px">Event</th><th style="text-align:left;padding:6px">Starts</th><th style="text-align:left;padding:6px">Ends</th><th style="text-align:left;padding:6px">Type</th></tr></thead><tbody>'
+           + "".join(f'<tr><td {_ss_tcell}>{e(n)}</td><td {_ss_tcell} class="mono">{e(_ss_nice(a))}</td><td {_ss_tcell} class="mono">{e(_ss_nice(b))}</td><td {_ss_tcell}>{e(_SS_KIND[k])}</td></tr>' for n, a, b, k in STEAM)
+           + f'<tr><td {_ss_tcell}>Steam Autumn Sale 2027</td><td {_ss_tcell}>Not announced</td><td {_ss_tcell}>–</td><td {_ss_tcell}>Big seasonal sale</td></tr>'
+           + f'<tr><td {_ss_tcell}>Steam Winter Sale 2027</td><td {_ss_tcell}>Not announced</td><td {_ss_tcell}>–</td><td {_ss_tcell}>Big seasonal sale</td></tr>'
+           + '</tbody></table></div>')
+_ss_chips = ('<div class="chips" role="group" aria-label="Event type"><button class="chip" type="button" data-ss-f="" aria-pressed="true">Everything</button>'
+             '<button class="chip" type="button" data-ss-f="sale" aria-pressed="false">Big sales only</button>'
+             '<button class="chip" type="button" data-ss-f="next" aria-pressed="false">Next Fest</button>'
+             '<button class="chip" type="button" data-ss-f="fest" aria-pressed="false">Themed fests</button></div>')
+ss_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Steam</span>'
+           f'<h1>Steam sale dates:<br><span class="amber">when is the next Steam sale?</span></h1>'
+           f'<p class="lead">Every Steam sale and fest Valve has scheduled, from the Winter Sale 2026 to the Summer Sale 2027, with a live countdown in your time zone and calendar links.</p>'
+           f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · dates from Valve\'s Steamworks schedule</p></div></header>'
+           f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_ss_quick)}</span></div></div>'
+           f'<div class="tool" id="ss-tool"><h2 style="font-size:1.5rem;margin-top:0">How long until the next Steam sale?</h2>'
+           f'<p class="mono amber" id="ss-cd" aria-live="polite" style="font-size:1.1rem;margin:0 0 4px">The {e(_ss_next_sale[0])} starts in {_ss_days} days.</p>'
+           f'<p class="muted" id="ss-cd2" style="margin:0 0 14px"></p>'
+           f'<p class="muted">Pick what you care about. Each event is marked on now, starting soon or ended as you read, and your choice is remembered on this device.</p>{_ss_chips}'
+           f'<p class="mono amber" id="ss-count" aria-live="polite" style="margin:12px 0 0">{len(STEAM)} events</p>'
+           f'<div class="out" id="ss-list" style="margin-top:12px">{"".join(_ss_row(x) for x in STEAM)}</div><p class="empty" id="ss-none" hidden>Nothing of that type is scheduled yet.</p></div></div></section>'
+           + AD.format("ss-mid") +
+           f'<section><div class="wrap"><div class="sec-head"><h2>When is the Steam Winter Sale 2026?</h2></div>'
+           f'<p>Thursday 17 December 2026 to Monday 4 January 2027: {_ss_len(STEAM[0])} days. Steam sales usually start and end at 10 am Pacific (6 pm UK, 11 pm in Pakistan); Valve\'s schedule lists dates only, so the countdown above uses that usual time.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>What are all the Steam sale dates for 2027?</h2><span class="muted">January to July</span></div>{_ss_tbl}'
+           f'<p class="muted" style="margin-top:10px">Valve publishes its schedule in halves. The January to July 2027 events were posted in July 2026; the second half of 2027 usually follows later. Sources: Steamworks via PC Gamer, Notebookcheck and GamesRadar+.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>When is the Steam Spring Sale 2027?</h2></div>'
+           f'<p>Thursday 18 March to Thursday 25 March 2027 ({_ss_len(_ss_sales[1])} days).</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>When is the Steam Summer Sale 2027?</h2></div>'
+           f'<p>Thursday 24 June to Thursday 8 July 2027 ({_ss_len(_ss_sales[2])} days), straight after the June Next Fest.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>When is Steam Next Fest 2027?</h2></div>'
+           f'<p>Twice so far: 22 February to 1 March 2027, and 14 to 21 June 2027. Next Fest is a week of free demos for games that are not out yet, not a discount sale.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>When are the Steam Autumn Sale and Winter Sale 2027?</h2></div>'
+           f'<p>Not announced. For reference, the 2026 Autumn Sale ran 1 to 8 October 2026 and the 2026 Winter Sale runs 17 December to 4 January. We add the 2027 dates as soon as Valve posts them.</p>'
+           + (f'<div class="sec-head" style="margin-top:28px"><h2>Which new PC games launch during a Steam sale or fest?</h2><span class="muted">{sum(len(gs) for x, gs in _ss_clash)} games</span></div>'
+              f'<p class="muted">Dated 2027 PC games from our tracker whose launch day falls inside a Steam event. New launches are rarely discounted in their first week, but they get extra store traffic.</p>'
+              f'<div class="out" style="margin-bottom:10px">' + "".join(f'<div class="row"><span><strong>{_gname(g)}</strong><br><span class="muted">During {e(x[0])}</span></span><b>{e(nice_date(g))}</b></div>' for x, gs in _ss_clash for g in gs) + '</div>' if _ss_clash else "")
+           + f'<div class="sec-head" style="margin-top:28px"><h2>Which Steam sales and fests already happened in late 2026?</h2></div>'
+           f'<div class="out" style="margin-bottom:10px">{"".join(_ss_row(x, True) for x in STEAM_PAST)}</div>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+           f'<li><a href="{href("epic-free-games.html", 0)}">Epic free games this week</a>, updated every Thursday</li>'
+           f'<li><a href="{href("platforms/pc.html", 0)}">Every PC game coming in 2027</a>, month by month</li>'
+           f'<li><a href="{href("new-games-this-week.html", 0)}">New games this week</a></li>'
+           f'<li><a href="{href("backlog-planner-2027.html", 0)}">2027 backlog planner</a>: what you can finish before each launch</li></ul></div></section>')
+ss_faq = [
+    ("When is the next Steam sale?", f"The {_ss_next_sale[0]}, from {_ss_nice(_ss_next_sale[1])} to {_ss_nice(_ss_next_sale[2])} 2027."),
+    ("When is the Steam Winter Sale 2026?", "17 December 2026 to 4 January 2027. Steam sales usually start at 10 am Pacific (6 pm UK)."),
+    ("When is the Steam Summer Sale 2027?", "24 June to 8 July 2027, according to Valve's published schedule."),
+    ("When is the Steam Spring Sale 2027?", "18 to 25 March 2027."),
+    ("When is Steam Next Fest 2027?", "22 February to 1 March 2027 and 14 to 21 June 2027."),
+    ("When is the Steam Autumn Sale 2027?", "Valve has not announced it yet. The 2026 Autumn Sale ran 1 to 8 October 2026."),
+    ("What time does the Steam sale start?", "Usually 10 am Pacific, which is 1 pm Eastern, 6 pm UK and 11 pm Pakistan time. Valve's schedule lists only the dates."),
+]
+page("steam-sale-dates.html", "Steam Sale Dates 2026-2027: Winter Sale, Spring Sale, Summer Sale and Next Fest | DayOneDrop",
+     f"Next Steam sale: {_ss_next_sale[0]}, {_ss_nice(_ss_next_sale[1])} – {_ss_nice(_ss_next_sale[2])} 2027. Every 2027 Steam sale and fest date with a live countdown."[:160],
+     ss_body, 0, ss_faq, crumbs=[("Home", DOMAIN + "/"), ("PC games", canon("platforms/pc.html")), ("Steam sale dates", canon("steam-sale-dates.html"))])
+
+# ---------------- NINTENDO DIRECT (DEMAND.md G3: "nintendo direct" 100k-1M; 25 Nov 2026) ----------------
+# Past Directs: Game Informer, GamesRadar+, GameSpot, Nintendo Life (Jun + Sep 2026); Pocket Tactics + Nintendo Life (Feb 2026 Partner Showcase).
+# Only list 2027 games that are already in games.json (2-source checked). UPDATE when Nintendo announces the next Direct.
+ND_NEXT = None  # e.g. ("2027-02-10", "Nintendo Direct", "about 40 minutes", "7 am PT") once Nintendo announces it
+ND_PAST = [  # (date, type, length, 2027 slugs shown, other headline news)
+    ("2026-09-09", "Nintendo Direct", "about 45 minutes",
+     ["metroid-ravenous", "danganronpa-2x2", "tomb-raider-legacy-of-atlantis", "romancing-saga-3-destinies-united", "hyrule-warriors-age-of-calamity-definitive-edition",
+      "eternal-anima", "final-fantasy-vii-revelation", "persona-4-revival", "kirby-and-the-world-beyond", "mega-man-dual-override"],
+     "Also: Professor Layton and the New World of Steam dated for 10 December 2026 and a free Mario Kart World update. It came a day after the Zelda 40th anniversary Direct (8 September)."),
+    ("2026-06-09", "Nintendo Direct", "about 50 minutes",
+     ["xenoblade-genesis", "muramasa-revenant-blades", "atelier-karia", "kingdom-hearts-iv", "the-duskbloods"],
+     "Also: the Legend of Zelda: Ocarina of Time remake for Switch 2, Fire Emblem: Fortune's Weave, Splatoon Raiders, Rhythm Heaven Groove and Star Fox."),
+    ("2026-02-05", "Nintendo Direct Partner Showcase", "third-party games only", [],
+     "Third-party news only, including Resident Evil Requiem, Pragmata and Final Fantasy VII Rebirth for Switch 2. No 2027 dates."),
+]
+_GBS = {g["slug"]: g for g in GAMES}
+_sw = sorted([g for g in GAMES if "Switch 2" in g["platforms"]], key=lambda x: (x["month"], x["date"] or "9999"))
+_sw_und = [g for g in _sw if not g["date"]]
+_sw_big = [g for g in _sw if g["page"]]
+_nd_last = ND_PAST[0]
+_nd_full = [x for x in ND_PAST if x[1] == "Nintendo Direct"]
+_nd_since = (datetime.date.fromisoformat(UPDATED) - datetime.date.fromisoformat(_nd_last[0])).days
+_nd_quick = ((f"The next Nintendo Direct is on {_xs_day(ND_NEXT[0])} at {ND_NEXT[3]}." if ND_NEXT else
+              "Nintendo has not announced the next Nintendo Direct. Nintendo usually confirms a Direct only a day or two before it airs. ")
+             + f"The last full Direct was on {_xs_day(_nd_last[0])} ({_nd_since} days ago), and it dated Switch 2 games like Metroid: Ravenous (28 January 2027). "
+             f"{len(_sw_und)} of the {len(_sw)} Switch 2 games we track for 2027 still have no exact date.")
+def _ndrow(g):
+    return (f'<div class="row" data-ndd="{1 if g["date"] else 0}" data-slug="{e(g["slug"])}"><span><strong>{_gname(g)}</strong>'
+            f'<br><span class="muted">{e(g.get("genre") or "")} · {e(g.get("dev") or "Studio TBC")}' + (' · Switch 2 only' if g["platforms"] == ["Switch 2"] else "") + f'</span></span><b>{e(nice_date(g))}</b></div>')
+_nd_tc = 'style="padding:6px;border-top:1px solid var(--rule);vertical-align:top"'
+_nd_tbl = ('<div style="overflow-x:auto"><table class="gen-table" style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr>'
+           '<th style="text-align:left;padding:6px">Date</th><th style="text-align:left;padding:6px">Show</th><th style="text-align:left;padding:6px">2027 games shown</th></tr></thead><tbody>'
+           + "".join(f'<tr><td {_nd_tc} class="mono">{e(_xs_day(d))}</td><td {_nd_tc}>{e(t)}<br><span class="muted">{e(ln)}</span></td>'
+                     f'<td {_nd_tc}>{e(", ".join(_GBS[s]["title"] for s in sl if s in _GBS) or "None")}</td></tr>' for d, t, ln, sl, o in ND_PAST)
+           + '</tbody></table></div>')
+def _nd_sec(x):
+    d, t, ln, sl, o = x
+    gs = [_GBS[s] for s in sl if s in _GBS]
+    mon = datetime.date.fromisoformat(d).strftime("%B %Y")
+    return (f'<div class="sec-head" style="margin-top:28px"><h2>What 2027 games were shown at the {e(mon)} {e(t)}?</h2><span class="muted">{len(gs)}</span></div>'
+            + (f'<div class="out" style="margin-bottom:10px">{"".join(_ndrow(g) for g in gs)}</div>' if gs else "")
+            + f'<p class="muted">{e(o)} Dates shown are the current ones from our tracker.</p>')
+_nd_chips = ('<div class="chips" role="group" aria-label="Date"><button class="chip" type="button" data-nd-d="0" aria-pressed="true">No exact date yet</button>'
+             '<button class="chip" type="button" data-nd-d="1" aria-pressed="false">Already dated</button><button class="chip" type="button" data-nd-d="" aria-pressed="false">All</button></div>')
+nd_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Nintendo</span>'
+           f'<h1>Nintendo Direct:<br><span class="amber">when is the next one?</span></h1>'
+           f'<p class="lead">The next Nintendo Direct date (as soon as Nintendo confirms it), every 2026 Direct and what it showed, and the Switch 2 games of 2027 still waiting for a date.</p>'
+           f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · we update this page the day a Direct is announced</p></div></header>'
+           f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_nd_quick)}</span></div></div>'
+           f'<div class="tool" id="nd-tool"><h2 style="font-size:1.5rem;margin-top:0">Which Switch 2 games could get a date at the next Direct?</h2>'
+           f'<p class="muted">Switch 2 games announced for 2027 without an exact day are the most likely to get one. Switch the list, then save the games you care about to your ★ list. Your choice is remembered on this device.</p>{_nd_chips}'
+           f'<p class="mono amber" id="nd-count" aria-live="polite" style="margin:12px 0 0">{len(_sw_und)} games</p>'
+           f'<div class="out" id="nd-list" style="margin-top:12px">{"".join(_ndrow(g) for g in _sw)}</div><p class="empty" id="nd-none" hidden>No tracked Switch 2 games match that yet.</p>'
+           f'<div class="btns" style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn sm" type="button" id="nd-add">Add these to my ★ list</button>'
+           f'<a class="btn line sm" href="{href("platforms/switch-2.html", 0)}">All Switch 2 release dates</a></div></div></div></section>'
+           + AD.format("nd-mid") +
+           f'<section><div class="wrap"><div class="sec-head"><h2>When is the next Nintendo Direct?</h2></div>'
+           + (f'<p><strong>{e(_xs_day(ND_NEXT[0]))}</strong>, {e(ND_NEXT[3])}: a {e(ND_NEXT[1])}, {e(ND_NEXT[2])}.</p>' if ND_NEXT else
+              f'<p>Not announced. Nintendo normally reveals a Direct only a day or two ahead, on its social channels and the Nintendo Today app, so any date you see earlier is a rumour. '
+              f'In 2026 the full Directs aired in June and September, with a third-party Partner Showcase in February.</p>')
+           + f'<div class="sec-head" style="margin-top:28px"><h2>When was the last Nintendo Direct?</h2></div>'
+           f'<p>{e(_xs_day(_nd_last[0]))}: a full {e(_nd_last[1])} lasting {e(_nd_last[2])}. Every big Direct of 2026:</p>{_nd_tbl}'
+           f'<p class="muted" style="margin-top:10px">Smaller shows (Indie World, single-game Directs like Splatoon Raiders and the Zelda 40th anniversary Direct) are left out of the table. Sources: Game Informer, GamesRadar+, GameSpot, Nintendo Life.</p>'
+           + "".join(_nd_sec(x) for x in ND_PAST[:2])
+           + (f'<div class="sec-head" style="margin-top:28px"><h2>Which big Switch 2 games of 2027 have no release date yet?</h2><span class="muted">{len([g for g in _sw_und if g["page"]])}</span></div>'
+              f'<div class="out" style="margin-bottom:10px">' + "".join(_ndrow(g) for g in _sw_und if g["page"]) + '</div>')
+           + f'<div class="sec-head" style="margin-top:28px"><h2>Will there be a Nintendo Direct in December?</h2></div>'
+           f'<p>Nothing is announced. The next confirmed showcase is The Game Awards on 10 December 2026, where Nintendo games often appear. See our <a href="{href("game-awards-2026.html", 0)}">Game Awards 2026 page</a> for the nominees and the 2027 games in Most Anticipated.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+           f'<li><a href="{href("platforms/switch-2.html", 0)}">Every Switch 2 game coming in 2027</a>, month by month</li>'
+           f'<li><a href="{href("exclusives-2027.html", 0)}">2027 console exclusives</a>, including Switch 2 only games</li>'
+           f'<li><a href="{href("xbox-games-showcase-2027.html", 0)}">Xbox Games Showcase 2027</a>: the likely date and past shows</li>'
+           f'<li><a href="{href("last-gen-games-2027.html", 0)}">2027 games still coming to Switch 1</a></li></ul></div></section>')
+nd_faq = [
+    ("When is the next Nintendo Direct?", (f"{_xs_day(ND_NEXT[0])} at {ND_NEXT[3]}." if ND_NEXT else "Nintendo has not announced it. Nintendo usually confirms a Direct only a day or two before it airs.")),
+    ("When was the last Nintendo Direct?", f"{_xs_day(_nd_last[0])}. It lasted {_nd_last[2]} and dated Switch 2 games including Metroid: Ravenous, Danganronpa 2x2 and Hyrule Warriors: Age of Calamity Definitive Edition."),
+    ("How many Nintendo Directs were there in 2026?", "Two full Nintendo Directs (9 June and 9 September) and a Partner Showcase (5 February), plus smaller shows such as Indie World and single-game Directs."),
+    ("What was announced at the September 2026 Nintendo Direct?", "2027 dates for Metroid: Ravenous (28 January), Danganronpa 2x2 (14 January), Tomb Raider: Legacy of Atlantis, Hyrule Warriors: Age of Calamity Definitive Edition (25 February), Final Fantasy VII Revelation (8 April) and the Switch 2 version of Persona 4 Revival (20 May), plus Kirby and the World Beyond for spring 2027."),
+    ("Which Switch 2 games of 2027 have no date yet?", ", ".join(f"{g['title']} ({nice_date(g)})" for g in _sw_und) + "."),
+    ("Is there a Nintendo Direct in December 2026?", "None is announced. The Game Awards on 10 December 2026 is the next confirmed show."),
+]
+page("nintendo-direct.html", "Next Nintendo Direct: Date, Last Direct and Switch 2 Games Still Without a Date | DayOneDrop",
+     f"When is the next Nintendo Direct? Not announced yet. The last was {_xs_day(_nd_last[0])}. Every 2026 Direct, and the {len(_sw_und)} Switch 2 2027 games still without a date."[:160],
+     nd_body, 0, nd_faq, crumbs=[("Home", DOMAIN + "/"), ("Switch 2 games", canon("platforms/switch-2.html")), ("Nintendo Direct", canon("nintendo-direct.html"))])
+
 # ---------------- SEO files ----------------
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "ps-plus-monthly-games.html", "epic-free-games.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "new-games-this-week.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "xbox-games-showcase-2027.html", "calendar.html", "later-2027.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "steam-sale-dates.html", "nintendo-direct.html", "ps-plus-monthly-games.html", "epic-free-games.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "new-games-this-week.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "xbox-games-showcase-2027.html", "calendar.html", "later-2027.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)

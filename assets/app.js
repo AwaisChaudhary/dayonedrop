@@ -424,6 +424,61 @@
     drawXs();
   }
 
+  /* Nintendo Direct: Switch 2 2027 games undated / dated, add to list */
+  var ndt = $("#nd-tool");
+  if (ndt) {
+    var nsel = store.get("dod-nd", { d: "0" }) || { d: "0" };
+    var nrows = $$("#nd-list [data-ndd]"), ncount = $("#nd-count"), nnone = $("#nd-none"), nshown = [];
+    var drawNd = function () {
+      nshown = [];
+      nrows.forEach(function (r) {
+        var ok = nsel.d === "" || r.getAttribute("data-ndd") === nsel.d;
+        r.hidden = !ok; if (ok) nshown.push(r.getAttribute("data-slug"));
+      });
+      $$("[data-nd-d]", ndt).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-nd-d") === nsel.d ? "true" : "false"); });
+      ncount.textContent = nshown.length + " Switch 2 game" + (nshown.length === 1 ? "" : "s") + (nsel.d === "0" ? " with no exact date" : nsel.d === "1" ? " with a date" : "");
+      nnone.hidden = nshown.length > 0;
+      store.set("dod-nd", nsel);
+    };
+    $$("[data-nd-d]", ndt).forEach(function (c) { c.addEventListener("click", function () { nsel.d = c.getAttribute("data-nd-d"); drawNd(); }); });
+    var nadd = $("#nd-add");
+    if (nadd) nadd.addEventListener("click", function () {
+      var before = WL.length;
+      WL = Array.from(new Set(WL.concat(nshown))); store.set("dod-watch", WL); syncStars();
+      toast((WL.length - before) + " games added to your ★ list");
+    });
+    drawNd();
+  }
+
+  /* Steam sale dates: live status + countdown + type filter */
+  var sst = $("#ss-tool");
+  if (sst) {
+    var ssel = store.get("dod-ss", { f: "" }) || { f: "" };
+    var srows = $$("#ss-list [data-ss-k]"), scount = $("#ss-count"), snone = $("#ss-none"), scd = $("#ss-cd"), scd2 = $("#ss-cd2");
+    var span = function (ms) { var h = Math.floor(ms / 36e5), m = Math.floor(ms % 36e5 / 6e4); return Math.floor(h / 24) + "d " + (h % 24) + "h " + m + "m"; };
+    var when = function (d) { return d.toLocaleString([], { weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit" }); };
+    var info = function (r) { var s = new Date(r.getAttribute("data-ss-s")), e = new Date(r.getAttribute("data-ss-e")); return { s: s, e: e, n: r.querySelector("strong").textContent, k: r.getAttribute("data-ss-k") }; };
+    var drawSs = function () {
+      var now = Date.now(), n = 0, nextSale = null, nextAny = null;
+      srows.forEach(function (r) {
+        var x = info(r), st = r.querySelector(".ss-st");
+        var live = now >= x.s && now < x.e, past = now >= x.e;
+        if (st) st.textContent = past ? "Ended" : live ? "On now · ends in " + span(x.e - now) : "Starts in " + span(x.s - now) + " · " + when(x.s) + " your time";
+        if (!past) { if (!nextAny) nextAny = x; if (x.k === "sale" && !nextSale) nextSale = x; }
+        var ok = (!ssel.f || x.k === ssel.f) && !past;
+        r.hidden = !ok; if (ok) n++;
+      });
+      if (scd && nextSale) scd.textContent = (now >= nextSale.s ? "The " + nextSale.n + " is on now: ends in " + span(nextSale.e - now) : "The " + nextSale.n + " starts in " + span(nextSale.s - now)) + ".";
+      if (scd2 && nextAny) scd2.textContent = (nextAny === nextSale ? "Starts " : "Next event of any kind: " + nextAny.n + ", ") + when(nextAny.s) + " your time (10 am Pacific).";
+      $$("[data-ss-f]", sst).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-ss-f") === ssel.f ? "true" : "false"); });
+      scount.textContent = n + " upcoming event" + (n === 1 ? "" : "s");
+      snone.hidden = n > 0;
+      store.set("dod-ss", ssel);
+    };
+    $$("[data-ss-f]", sst).forEach(function (c) { c.addEventListener("click", function () { ssel.f = c.getAttribute("data-ss-f"); drawSs(); }); });
+    drawSs(); setInterval(drawSs, 30000);
+  }
+
   /* Games like GTA 6: platform + taste picker */
   var lkt = $("#like-tool");
   if (lkt) {
