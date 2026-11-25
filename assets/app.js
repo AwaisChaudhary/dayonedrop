@@ -559,6 +559,7 @@
     var TK = "dod-tga-2026", tOut = $("#tga-out"), tPick = store.get(TK, {}) || {};
     var qs = new URLSearchParams(location.search);
     if (qs.get("a") || qs.get("g")) { tPick = { a: qs.get("a") || "", g: qs.get("g") || "" }; $("#tga-shared").hidden = false; }
+    if (tPick.g === "Phantom Blade 0") tPick.g = "Phantom Blade Zero";
     var tSet = function () {
       ["a", "g"].forEach(function (k) {
         $$('input[name="tga-' + k + '"]', tga).forEach(function (r) { r.checked = r.value === tPick[k]; });
@@ -706,4 +707,29 @@
     $$("[data-wk-p]", wkt).forEach(function (c) { c.addEventListener("click", function () { wp = c.getAttribute("data-wk-p"); store.set("dod-wk", wp); drawWk(); }); });
     drawWk();
   }
+})();
+
+/* Game Awards nominee search (25 Nov 2026) */
+(function () {
+  var box = document.getElementById("tga-find");
+  if (!box) return;
+  var q = document.getElementById("tga-q"), out = document.getElementById("tga-find-out");
+  var cats = Array.prototype.slice.call(box.querySelectorAll(".tga-cat"));
+  var base = out.textContent;
+  function run() {
+    var t = (q.value || "").trim().toLowerCase(), shown = 0;
+    cats.forEach(function (c) {
+      var rows = Array.prototype.slice.call(c.querySelectorAll(".row")), hit = 0;
+      rows.forEach(function (r) {
+        var m = !t || (r.getAttribute("data-n") || "").indexOf(t) > -1;
+        r.classList.toggle("hot", !!t && m);
+        r.hidden = !!t && !m;
+        if (m) hit++;
+      });
+      c.hidden = !!t && !hit;
+      if (t && hit) shown++;
+    });
+    out.textContent = !t ? base : (shown ? "Found in " + shown + " categor" + (shown === 1 ? "y" : "ies") + "." : "No nominee matches that. Check the spelling or try part of the name.");
+  }
+  q.addEventListener("input", run);
 })();

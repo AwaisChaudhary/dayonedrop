@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Builds DayOneDrop. Run `python3 build.py` for the live site (clean URLs) or `python3 build.py --preview` for local files."""
-import json, html, pathlib, sys, hashlib, datetime
+import json, html, pathlib, sys, hashlib, datetime, collections
 import pathlib as _pl, sys as _sy
 _sy.path.insert(0, str(_pl.Path(__file__).resolve().parent / "tools"))
 from og import og_image
@@ -254,7 +254,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("new-games-this-week.html", depth)}">New games this week</a></li><li><a href="{href("later-2027.html", depth)}">Games later in 2027 (May–Dec)</a></li><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/state-of-decay-3.html", depth)}">State of Decay 3</a></li><li><a href="{href("games/ananta.html", depth)}">Ananta (free-to-play)</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("xbox-games-showcase-2027.html", depth)}">Xbox Games Showcase 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("new-games-this-week.html", depth)}">New games this week</a></li><li><a href="{href("later-2027.html", depth)}">Games later in 2027 (May–Dec)</a></li><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/state-of-decay-3.html", depth)}">State of Decay 3</a></li><li><a href="{href("games/lords-of-the-fallen-ii.html", depth)}">Lords of the Fallen 2</a></li><li><a href="{href("games/ananta.html", depth)}">Ananta (free-to-play)</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("xbox-games-showcase-2027.html", depth)}">Xbox Games Showcase 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Every date is checked against the publisher or platform holder plus a second trusted source (<a href="{href("about.html", depth)}#editorial">editorial policy</a>). Spotted an error? Email <a href="mailto:awaiskaramat@hotmail.com">awaiskaramat@hotmail.com</a>. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -2041,7 +2041,36 @@ TGA_DATE = "2026-12-10"
 TGA_ANTICIPATED = ["fable", "final-fantasy-vii-revelation", "god-of-war-laufey", "resident-evil-veronica", "the-witcher-4"]
 TGA_EXTRA = {"the-witcher-4": {"title": "The Witcher 4", "platforms": [], "dev": "CD Projekt Red",
              "when": "2028 (target)", "note": "CD Projekt said in August 2026 it is targeting 2028, so it is not a 2027 game."}}
-TGA_GOTY = ["007 First Light", "Control Resonant", "Grand Theft Auto 6", "Phantom Blade 0", "Resident Evil Requiem", "The Legend of Zelda: Ocarina of Time"]
+TGA_GOTY = ["007 First Light", "Control Resonant", "Grand Theft Auto 6", "Phantom Blade Zero", "Resident Evil Requiem", "The Legend of Zelda: Ocarina of Time"]
+
+TGA_CATS = [  # official list 17 Nov 2026, cross-checked Gematsu + Push Square
+    ("Game of the Year", TGA_GOTY),
+    ("Best Game Direction", ["Control Resonant", "Grand Theft Auto 6", "Phantom Blade Zero", "Pragmata", "Resident Evil Requiem"]),
+    ("Best Narrative", ["007 First Light", "The Blood of Dawnwalker", "Control Resonant", "Grand Theft Auto 6", "Resident Evil Requiem"]),
+    ("Best Art Direction", ["Control Resonant", "Grand Theft Auto 6", "Mouse: P.I. for Hire", "The Legend of Zelda: Ocarina of Time", "Phantom Blade Zero"]),
+    ("Best Score and Music", ["Ace Combat 8: Wings of Theve", "Grand Theft Auto 6", "Mixtape", "The Legend of Zelda: Ocarina of Time", "Phantom Blade Zero"]),
+    ("Best Audio Design", ["Ace Combat 8: Wings of Theve", "Control Resonant", "Grand Theft Auto 6", "Resident Evil Requiem", "Star Wars: Galactic Racer"]),
+    ("Best Performance", ["Angela Sant'Albano (Resident Evil Requiem)", "Liam McIntyre (Marvel's Wolverine)", "Manni L. Perez (Grand Theft Auto 6)", "Patrick Gibson (007 First Light)", "Rahul Kohli (Saros)"]),
+    ("Innovation in Accessibility", ["Assassin's Creed Black Flag Resynced", "Forza Horizon 6", "Gears of War: E-Day", "Marvel's Wolverine", "Rhythm Heaven Groove"]),
+    ("Games for Impact", ["Big Walk", "Cairn", "Forever Ago", "Life is Strange: Reunion", "Lily's World XD", "Mixtape"]),
+    ("Best Ongoing Game", ["Arc Raiders", "Final Fantasy XIV", "Fortnite", "No Man's Sky", "The Witcher 3: Wild Hunt"]),
+    ("Best Community Support", ["Crimson Desert", "Helldivers 2", "No Man's Sky", "The Witcher 3: Wild Hunt", "Warframe"]),
+    ("Best Independent Game", ["Big Walk", "Cairn", "Denshattack!", "Mewgenics", "Mina the Hollower"]),
+    ("Best Debut Indie Game", ["Dressmaker", "Esoteric Ebb", "Orbitals", "Replaced", "Silver Pines"]),
+    ("Best Mobile Game", ["Arknights: Endfield", "Monster Hunter Outlanders", "Neverness to Everness", "Pokémon Champions", "Where Winds Meet"]),
+    ("Best VR / AR Game", ["Forefront", "Into the Radius 2", "Little Nightmares VR: Altered Echoes", "Teenage Mutant Ninja Turtles: Empire City", "Thief VR: Legacy of Shadow"]),
+    ("Best Action Game", ["Ace Combat 8: Wings of Theve", "Gears of War: E-Day", "Onimusha: Way of the Sword", "Phantom Blade Zero", "Saros"]),
+    ("Best Action / Adventure Game", ["007 First Light", "Control Resonant", "Grand Theft Auto 6", "Pragmata", "Resident Evil Requiem", "The Legend of Zelda: Ocarina of Time"]),
+    ("Best Role-Playing Game", ["The Blood of Dawnwalker", "Final Fantasy Resonance", "Fire Emblem: Fortune's Weave", "Monster Hunter Stories 3: Twisted Reflection", "Trails in the Sky 2nd Chapter"]),
+    ("Best Fighting Game", ["2XKO", "Avatar Legends: The Fighting Game", "Invincible VS", "Marvel Tokon: Fighting Souls", "My Hero Academia: All's Justice"]),
+    ("Best Family Game", ["Big Walk", "LEGO Batman: Legacy of the Dark Knight", "Nintendo Switch Sports Resort", "Pokémon Pokopia", "Yoshi and the Mysterious Book"]),
+    ("Best Sim / Strategy Game", ["Mewgenics", "Planet Zoo 2", "Pokémon Pokopia", "Slay the Spire 2", "Star Wars Zero Company"]),
+    ("Best Sports / Racing Game", ["EA Sports FC 27", "Forza Horizon 6", "Nintendo Switch Sports Resort", "Screamer", "Star Wars: Galactic Racer"]),
+    ("Best Multiplayer Game", ["Big Walk", "Call of Duty: Modern Warfare 4", "Gears of War: E-Day", "Marathon", "Meccha Chameleon", "Orbitals"]),
+    ("Best Adaptation", ["Cyberpunk: Edgerunners 2", "Fallout (Season 2)", "Mortal Kombat II", "Resident Evil", "The Super Mario Galaxy Movie"]),
+    ("Most Anticipated Game", ["Fable", "Final Fantasy VII Revelation", "God of War Laufey", "Resident Evil Veronica", "The Witcher 4"]),
+]
+TGA_VOTE_END = "9 December 2026, 6pm PT (9pm ET)"
 
 # ---------------- BIGGEST GAMES OF 2027 (23 Nov 2026) ----------------
 # Editorial pick: new entries in major series or from major studios. Dates/platforms come from games.json only.
@@ -2057,7 +2086,7 @@ BIG_WHY = {
     "wo-long-2": "Team Ninja's next hard-hitting action RPG, in Game Pass from day one.",
     "exodus": "A big new sci-fi RPG from a studio of veteran RPG makers, where space travel ages the world around you.",
     "final-fantasy-vii-revelation": "The last part of the Final Fantasy VII remake trilogy, now on Xbox and Switch 2 as well.",
-    "lords-of-the-fallen-ii": "The sequel to the 2023 soulslike, moved from fall 2026 to the first quarter of 2027.",
+    "lords-of-the-fallen-ii": "The sequel to the 2023 soulslike, now set for April 2027 after two delays, and coming to Switch 2 and Steam.",
     "spyro-a-realm-beyond": "A new Spyro the Dragon adventure, announced for Xbox Game Pass.",
     "god-of-war-laufey": "The next main God of War, with Faye as the hero for the first time. PS5 only.",
     "squadron-42": "The single-player campaign set in the Star Citizen universe, on PC.",
@@ -2163,7 +2192,7 @@ _tga_names = [g["title"] for g in _tga_g]
 _tga_quick = (f"The Game Awards 2026 is on Thursday 10 December 2026, live from the Peacock Theater in Los Angeles. "
               f"Four of the five Most Anticipated Game nominees are 2027 games: "
               + ", ".join(f"{g['title']} ({nice_date(g) if g['date'] else 'no date yet'})" for g in sorted(_tga_g, key=lambda g: g["date"] or "9999"))
-              + ". The fifth, The Witcher 4, is targeting 2028.")
+              + ". The fifth, The Witcher 4, is targeting 2028. Grand Theft Auto 6 leads the nominations with 8, and fan voting closes on " + TGA_VOTE_END + ".")
 _tga_plat = {p: [g["title"] for g in _tga_g if p in g["platforms"]] for p in PLATS}
 _tga_opts_a = "".join(f'<label class="clash-opt"><input type="radio" name="tga-a" value="{e(n)}"> <span>{e(n)}</span></label>' for n in _tga_names + ["The Witcher 4"])
 _tga_opts_g = "".join(f'<label class="clash-opt"><input type="radio" name="tga-g" value="{e(n)}"> <span>{e(n)}</span></label>' for n in TGA_GOTY)
@@ -2175,6 +2204,28 @@ _tga_tool = f'''<div class="tool" id="tga-tool"><h2 style="font-size:1.5rem;marg
 <div role="radiogroup" aria-label="Game of the Year pick"><label>Game of the Year</label>{_tga_opts_g}</div></div>
 <div class="btns" style="display:flex;gap:10px;flex-wrap:wrap;margin:14px 0"><button class="btn sm" type="button" id="tga-copy">Copy my picks</button><button class="btn line sm" type="button" id="tga-link">Copy share link</button><button class="btn line sm" type="button" id="tga-clear">Clear</button></div>
 <div class="out" id="tga-out" aria-live="polite"><div class="empty">Pick a game in each category.</div></div></div>'''
+import re as _re
+def _tga_key(n):
+    m = _re.search(r"\(([^)]+)\)$", n)
+    return m.group(1) if m and not n.startswith("Fallout") else n
+_tga_count = collections.Counter(_tga_key(n) for _, ns in TGA_CATS for n in ns)
+_tga_cats_of = collections.defaultdict(list)
+for _c, _ns in TGA_CATS:
+    for _n in _ns: _tga_cats_of[_tga_key(_n)].append(_c)
+_tga_top = sorted(_tga_count.items(), key=lambda x: (-x[1], x[0]))
+_tga_top = [x for x in _tga_top if x[1] >= 4]
+_tga_2027 = {_gbs[k]["title"]: _gbs[k] for k in _gbs}
+_tga_on_board = [(n, _tga_2027[n]) for n in _tga_count if n in _tga_2027]
+_tga_top_rows = "".join(f'<div class="row"><span><strong>{e(n)}</strong><br><span class="muted">{e(", ".join(_tga_cats_of[n]))}</span></span><b>{c}</b></div>' for n, c in _tga_top)
+_tga_all = "".join(
+    f'<div class="tga-cat" data-names="{e(" | ".join(ns).lower())}"><h3 style="font-size:1.05rem;margin:18px 0 6px">{e(c)}</h3><div class="out">'
+    + "".join(f'<div class="row" data-n="{e(n.lower())}"><span>{e(n)}</span><b>{_tga_count[_tga_key(n)]} nom{"s" if _tga_count[_tga_key(n)] != 1 else ""}</b></div>' for n in ns)
+    + '</div></div>' for c, ns in TGA_CATS)
+_tga_find = (f'<div class="tool" id="tga-find"><h2 style="font-size:1.5rem;margin-top:0">What is my favourite game nominated for?</h2>'
+    f'<p class="muted">Type a game, actor or show. We show every category it is up for and hide the rest.</p>'
+    f'<label for="tga-q">Search the nominees</label><input id="tga-q" type="search" placeholder="e.g. Forza, Big Walk, Wolverine" autocomplete="off" style="width:100%;max-width:420px">'
+    f'<p class="muted" id="tga-find-out" aria-live="polite" style="margin:10px 0 0">{len(TGA_CATS)} categories · {sum(len(ns) for _, ns in TGA_CATS)} nominations</p>'
+    f'<div id="tga-cats">{_tga_all}</div></div>')
 tga_body = (f'<header class="hero"><div class="wrap"><span class="kicker">The Game Awards 2026</span>'
     f'<h1>The Game Awards 2026:<br><span class="amber">the 2027 games up for Most Anticipated.</span></h1>'
     f'<p class="lead">When the show is, how to watch it, and when every Most Anticipated Game nominee actually comes out. Then pick your winners and share them.</p>'
@@ -2189,7 +2240,11 @@ tga_body = (f'<header class="hero"><div class="wrap"><span class="kicker">The Ga
     f'<div class="row"><span>Start time<br><span class="muted">Not confirmed by the show when we checked. See thegameawards.com.</span></span><b>TBC</b></div>'
     f'<div class="row"><span>Free streams</span><b>YouTube, Twitch</b></div>'
     f'<div class="row"><span>Also streaming on</span><b>Disney+, Roblox (18+)</b></div>'
-    f'<div class="row"><span>Nominees announced</span><b>17 Nov 2026</b></div></div>'
+    f'<div class="row"><span>Nominees announced</span><b>17 Nov 2026</b></div>'
+    f'<div class="row"><span>Fan voting closes<br><span class="muted">Vote in every category at thegameawards.com</span></span><b>9 Dec, 6pm PT</b></div></div>'
+    f'<div class="sec-head"><h2>Which game has the most nominations at The Game Awards 2026?</h2><span class="muted">4 or more</span></div>'
+    f'<div class="out" style="margin-bottom:12px">{_tga_top_rows}</div>'
+    f'<p class="muted" style="margin-bottom:28px">Grand Theft Auto 6 leads with 8. Control Resonant and Resident Evil Requiem have 6 each, and Phantom Blade Zero has 5. Acting nominations count for the actor\'s game. Esports and creator awards are not counted.</p>'
     f'<div class="sec-head"><h2>Which games are nominated for Most Anticipated Game?</h2><span class="muted">5 nominees · 4 in 2027</span></div>'
     f'<div class="out" style="margin-bottom:28px">{_tga_rows}</div>'
     f'<div class="sec-head"><h2>Which Most Anticipated nominee comes out first?</h2></div>'
@@ -2203,6 +2258,9 @@ tga_body = (f'<header class="hero"><div class="wrap"><span class="kicker">The Ga
     f'<div class="sec-head"><h2>Which games are nominated for Game of the Year?</h2><span class="muted">{len(TGA_GOTY)}</span></div><div class="out" style="margin-bottom:12px">'
     + "".join(f'<div class="row"><span>{e(n)}</span><b>Nominee</b></div>' for n in TGA_GOTY) +
     f'</div><p class="muted" style="margin-bottom:28px">Game of the Year is for games released in 2026. Only 007 First Light has a 2027 date on our board: its delayed <a href="{href("games/007-first-light.html", 0)}">Switch 2 version</a>.</p>'
+    f'{_tga_find}'
+    f'<div class="sec-head" style="margin-top:28px"><h2>How do I vote at The Game Awards 2026?</h2></div>'
+    f'<p style="margin-bottom:28px">Fans can vote in every category on the official site, thegameawards.com, until {e(TGA_VOTE_END)}. The fan vote counts for 10% of the result. The other 90% comes from a jury of more than 160 media and creator outlets.</p>'
     f'<div class="sec-head"><h2>Which Most Anticipated nominees can I play on my console?</h2></div><div class="out" style="margin-bottom:28px">'
     + "".join(f'<div class="row"><span><a href="{href("platforms/" + _bg_pslug[p] + ".html", 0)}">{e(_bg_plab[p])}</a><br><span class="muted">{e(", ".join(_tga_plat[p]) or "None of them")}</span></span><b>{len(_tga_plat[p])} of {len(_tga_g)}</b></div>' for p in sorted(PLATS, key=lambda q: -len(_tga_plat[q]))) +
     f'</div><div class="sec-head"><h2>Will 2027 games get new release dates at the show?</h2></div>'
@@ -2212,7 +2270,8 @@ tga_body = (f'<header class="hero"><div class="wrap"><span class="kicker">The Ga
     f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
     f'<li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a>, with a shareable top list maker</li>'
     f'<li><a href="{href("games/resident-evil-veronica.html", 0)}">Resident Evil Veronica</a> release date and remake details</li>'
-    f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: which nominees share a launch week with other games</li></ul></div></section>')
+    f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: which nominees share a launch week with other games</li>'
+    f'<li><a href="{href("games/forza-horizon-6.html", 0)}">Forza Horizon 6 on PS5</a>: a nominee with a 2027 release</li></ul></div></section>')
 tga_faq = [
     ("When is The Game Awards 2026?", "Thursday 10 December 2026, live from the Peacock Theater in Los Angeles."),
     ("How can I watch The Game Awards 2026?", "It streams free on YouTube and Twitch, and this year also on Disney+ and inside Roblox (Roblox viewers must be 18 or older)."),
@@ -2220,9 +2279,12 @@ tga_faq = [
     ("What are the Most Anticipated Game nominees at The Game Awards 2026?", "Fable, Final Fantasy VII Revelation, God of War Laufey, Resident Evil Veronica and The Witcher 4."),
     ("When do the Most Anticipated nominees come out?", "; ".join(f"{g['title']}: {nice_date(g)}" for g in sorted(_tga_g, key=lambda g: g["date"] or "9999")) + "; The Witcher 4: targeting 2028."),
     ("What are the Game of the Year nominees for 2026?", ", ".join(TGA_GOTY[:-1]) + " and " + TGA_GOTY[-1] + "."),
+    ("Which game has the most nominations at The Game Awards 2026?", "Grand Theft Auto 6, with 8. Control Resonant and Resident Evil Requiem have 6 each, and Phantom Blade Zero has 5."),
+    ("How do I vote for The Game Awards 2026?", "Vote in every category on thegameawards.com until " + TGA_VOTE_END + ". Fans decide 10% of the result and a jury of more than 160 outlets decides 90%."),
+    ("Is Forza Horizon 6 nominated at The Game Awards 2026?", "Yes, twice: Best Sports / Racing Game and Innovation in Accessibility. Its PS5 version comes out on " + nice_date(_gbs["forza-horizon-6"]) + "."),
 ]
-page("game-awards-2026.html", "The Game Awards 2026: Date, How to Watch and the 2027 Nominees | DayOneDrop",
-     "The Game Awards 2026 is on 10 December. See the Most Anticipated Game nominees, when each comes out in 2027, how to watch, and pick your winners.",
+page("game-awards-2026.html", "The Game Awards 2026 Nominees: Full List, Most Nominated, How to Vote and Watch | DayOneDrop",
+     "Every Game Awards 2026 nominee by category (GTA 6 leads with 8), a nominee search, how to vote before 9 December, how to watch on 10 December, and when the Most Anticipated games come out.",
      tga_body, 0, tga_faq, crumbs=[("Home", DOMAIN + "/"), ("Biggest games of 2027", canon("biggest-games-2027.html")), ("The Game Awards 2026", canon("game-awards-2026.html"))])
 
 # ---------------- ABOUT / PRIVACY / 404 ----------------

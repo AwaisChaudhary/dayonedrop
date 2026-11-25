@@ -1817,27 +1817,83 @@
    ],
    "dev": "Hexworks (CI Games)",
    "genre": "Action RPG",
-   "page": false,
+   "page": true,
    "facts": [
-    "Sequel to the 2023 Lords of the Fallen.",
-    "CI Games says it will launch in April 2027, with the exact date due in December 2026.",
-    "Coming to PS5, Xbox Series X|S, Switch 2 and PC (Steam and Epic Games Store)."
+    "Lords of the Fallen II is set for April 2027. CI Games says the exact day will be announced in December 2026.",
+    "It has been delayed twice: from fall 2026 to the first quarter of 2027 (June 2026), then to April 2027 (November 2026).",
+    "It is coming to PS5, Xbox Series X|S, Switch 2 and PC. On PC it will be on both Steam and the Epic Games Store.",
+    "It is no longer an Epic Games Store exclusive. CI Games ended its 2024 publishing deal with Epic in spring 2026, which opened the way to Steam.",
+    "It is the first Lords of the Fallen game on a Nintendo console. CI Games says the Switch 2 version runs on Unreal Engine 5 and targets a stable 30 frames per second.",
+    "It is made by Hexworks and published by CI Games. The game director is James Lowe.",
+    "It is the sequel to the 2023 Lords of the Fallen. You again move between two worlds, Axiom (the living) and Umbral (the dead), using the Umbral lamp.",
+    "CI Games promises faster combat, more build options, brutal executions and dismemberment, more varied areas with their own enemy groups, and bigger boss fights.",
+    "Online co-op with shared progression is planned for launch.",
+    "No Xbox Game Pass deal, price, editions or pre-orders have been announced. Wishlists are open on every platform."
    ],
    "history": [
     {
-     "when": "Jun 2026",
+     "when": "Aug 2025",
+     "text": "First trailer at gamescom Opening Night Live, with a 2026 launch for PS5, Xbox Series X|S and PC."
+    },
+    {
+     "when": "Dec 2025",
+     "text": "First gameplay shown at The Game Awards 2025."
+    },
+    {
+     "when": "May 2026",
+     "text": "CI Games ends its publishing deal with Epic, so the game is no longer an Epic exclusive on PC."
+    },
+    {
+     "when": "9 Jun 2026",
+     "text": "Switch 2 version and Steam confirmed in a Nintendo Direct. Launch still set for fall 2026."
+    },
+    {
+     "when": "23 Jun 2026",
      "text": "Delayed from fall 2026 to early 2027 (first quarter)"
     },
     {
-     "when": "Nov 2026",
-     "text": "Delayed from early 2027 (first quarter) to April 2027"
+     "when": "24 Nov 2026",
+     "text": "Delayed from early 2027 (first quarter) to April 2027. Exact date due in December."
     }
    ],
    "date": null,
    "window": "April 2027",
    "month": 4,
    "status": "delayed",
-   "about": "Lords of the Fallen II is now set for April 2027 after slipping from the first quarter; CI Games plans to give the exact day in December."
+   "about": "Lords of the Fallen II, the sequel to the 2023 soulslike, is now set for April 2027 on PS5, Xbox Series X|S, Switch 2 and PC, with the exact day due in December 2026.",
+   "seo_title": "Lords of the Fallen 2 Release Date: April 2027 (PS5, Xbox, Switch 2, PC), Delay and Steam Details",
+   "qa_note": "CI Games says the exact day will be announced in December 2026, and on PC it is coming to Steam as well as the Epic Games Store.",
+   "sources": "CI Games CEO Marek Tyminski via Gematsu and eTeknix (24 Nov 2026), Gematsu, PC Gamer, Kotaku and Game Informer (June 2026 delay), Lords of the Fallen official site and Gematsu (Switch 2, 9 Jun 2026), GamesRadar+ and Wccftech (Epic deal ended, May 2026)",
+   "faq": [
+    [
+     "When will Lords of the Fallen 2 get an exact release date?",
+     "CI Games says it will announce the exact day in December 2026. For now the launch is set for April 2027."
+    ],
+    [
+     "Why was Lords of the Fallen 2 delayed?",
+     "In June 2026 CI Games said feedback from its test team showed ways to improve the game that needed more polishing time, and that early 2027 kept it away from a very crowded holiday season. No new reason was given for the move to April 2027."
+    ],
+    [
+     "Is Lords of the Fallen 2 on Steam?",
+     "Yes. CI Games ended its publishing deal with Epic in 2026, so on PC it is coming to both Steam and the Epic Games Store."
+    ],
+    [
+     "Is Lords of the Fallen 2 coming to Switch 2?",
+     "Yes. The Switch 2 version was announced in a Nintendo Direct on 9 June 2026. It is the first Lords of the Fallen game on a Nintendo console and targets 30 frames per second."
+    ],
+    [
+     "Is Lords of the Fallen 2 on Xbox Game Pass?",
+     "Not announced. No Game Pass deal has been confirmed for the sequel so far."
+    ],
+    [
+     "Does Lords of the Fallen 2 have co-op?",
+     "Yes. CI Games says online co-op with shared progression is planned for launch."
+    ],
+    [
+     "Is Lords of the Fallen 2 coming to PS4 or Xbox One?",
+     "No. Only PS5, Xbox Series X|S, Switch 2 and PC have been announced."
+    ]
+   ]
   },
   {
    "slug": "spyro-a-realm-beyond",
