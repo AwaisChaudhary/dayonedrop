@@ -261,3 +261,10 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - Refreshed /games-by-genre-2027 (built 23 Nov, never refreshed; demand radar D2/R3 sports half): new title "Upcoming Games 2027 by Genre: Horror, Shooters, RPGs, Sports", new "What is the next game in each genre?" table, "Which 2027 games have no exact date yet, by genre?", "Are there any sports games coming out in 2027?" (none dated; College Football 27 9 Jul 2026 per PSU + VGChartz; EA Sports FC 27 25 Sep 2026 per PSU + Worthplaying/Notebookcheck; racing: Forza Horizon 6 PS5, Road Kings), quick answer adds sports line, 2 new FAQs, related links to horror + Xbox showcase pages. No separate sports page: nothing dated, would be thin.
 - Checked: The Game Awards 2026 start time still not given by a trusted outlet (left TBC).
 - IndexNow pending (no WebFetch in this run): /xbox-games-showcase-2027, /games-by-genre-2027, /game-pass-2027, /platforms/xbox-series
+
+## 2026-11-25 (scheduled data check, morning)
+- Checked: "delayed to 2027" news (past 2 months), Gematsu headlines 24-25 Nov, earlier "left out" list (Warhammer Blood Bowl, Threads of Time, Pokémon Winds and Waves), window games.
+- Changed: Lords of the Fallen II moved from "Early 2027" (Q1) to April 2027, status delayed, exact date due in December. CI Games CEO Marek Tyminski on X via Gematsu + eTeknix (24 Nov 2026).
+- Added 1 (board now 74): Showa American Story, 28 Oct 2027 (delayed from 2026), PS5/PC, NEKCOM Games. Studio announcement via Game Informer + Automaton West (24 Nov 2026).
+- Left out: Warhammer Blood Bowl (still "early 2027" PC Gamer/games.gg vs "spring 2027" God is a Geek); Pokémon Winds and Waves delay to Nov 2027 (rumour only: Centro Leaks via Vice); Mercenaries Grace PC "early 2027" (PC-only 2027 part, Gematsu only); Showa American Story publisher (4Divinity per Game Informer only).
+- IndexNow pending (no WebFetch in this run): /calendar, /games, /delayed-games-2027, /later-2027, /months/april-2027, /platforms/ps5, /platforms/pc

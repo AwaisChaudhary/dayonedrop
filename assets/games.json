@@ -1576,34 +1576,6 @@
    ]
   },
   {
-   "slug": "lords-of-the-fallen-ii",
-   "title": "Lords of the Fallen II",
-   "platforms": [
-    "PS5",
-    "Xbox Series X|S",
-    "PC",
-    "Switch 2"
-   ],
-   "dev": "Hexworks (CI Games)",
-   "genre": "Action RPG",
-   "page": false,
-   "facts": [
-    "Sequel to the 2023 Lords of the Fallen.",
-    "CI Games says it will launch in the first quarter of 2027."
-   ],
-   "history": [
-    {
-     "when": "Jun 2026",
-     "text": "Delayed from fall 2026 to early 2027 (first quarter)"
-    }
-   ],
-   "date": null,
-   "window": "Early 2027",
-   "month": 3,
-   "status": "delayed",
-   "about": "Lords of the Fallen II is set for early 2027 (first quarter) after moving out of fall 2026."
-  },
-  {
    "page": false,
    "facts": [
     "The 1.0 release follows PC early access and brings the PS5 version.",
@@ -1833,6 +1805,39 @@
      "text": "Release date set for 27 April 2027."
     }
    ]
+  },
+  {
+   "slug": "lords-of-the-fallen-ii",
+   "title": "Lords of the Fallen II",
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC",
+    "Switch 2"
+   ],
+   "dev": "Hexworks (CI Games)",
+   "genre": "Action RPG",
+   "page": false,
+   "facts": [
+    "Sequel to the 2023 Lords of the Fallen.",
+    "CI Games says it will launch in April 2027, with the exact date due in December 2026.",
+    "Coming to PS5, Xbox Series X|S, Switch 2 and PC (Steam and Epic Games Store)."
+   ],
+   "history": [
+    {
+     "when": "Jun 2026",
+     "text": "Delayed from fall 2026 to early 2027 (first quarter)"
+    },
+    {
+     "when": "Nov 2026",
+     "text": "Delayed from early 2027 (first quarter) to April 2027"
+    }
+   ],
+   "date": null,
+   "window": "April 2027",
+   "month": 4,
+   "status": "delayed",
+   "about": "Lords of the Fallen II is now set for April 2027 after slipping from the first quarter; CI Games plans to give the exact day in December."
   },
   {
    "slug": "spyro-a-realm-beyond",
@@ -2097,6 +2102,37 @@
    "month": 6,
    "status": "window",
    "about": "The single-player campaign set in the Star Citizen universe."
+  },
+  {
+   "slug": "showa-american-story",
+   "title": "Showa American Story",
+   "date": "2027-10-28",
+   "window": "",
+   "month": 10,
+   "platforms": [
+    "PS5",
+    "PC"
+   ],
+   "dev": "NEKCOM Games",
+   "genre": "Action RPG",
+   "status": "delayed",
+   "page": false,
+   "about": "An action RPG set in a strange alternate 1980s America seen through Japanese pop culture, now out on 28 October 2027 after a delay from 2026.",
+   "facts": [
+    "Action RPG made by NEKCOM Games.",
+    "Out on 28 October 2027 on PS5 and PC (Steam).",
+    "The studio says the core content is finished and the extra time goes to polish."
+   ],
+   "history": [
+    {
+     "when": "Nov 2025",
+     "text": "Delayed from 2025 to 2026"
+    },
+    {
+     "when": "Nov 2026",
+     "text": "Delayed from 2026 to 28 October 2027"
+    }
+   ]
   },
   {
    "slug": "kingdom-hearts-iv",
