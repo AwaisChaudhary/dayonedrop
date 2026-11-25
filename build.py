@@ -2435,14 +2435,14 @@ page("xbox-games-showcase-2027.html", "Xbox Games Showcase 2027: Likely Date, Pa
 
 # ---------------- PS PLUS MONTHLY GAMES (Keyword Planner worldwide 25 Nov 2026: "ps plus monthly games" 100k-1M, +900% 3-month, low comp) ----------------
 PSP = [  # month, games (title, platforms), claim window. Sources: PlayStation Blog via Worthplaying 28 Oct 2026, Exputer, Tech Insider.
-    ("December 2026", [], "Tuesday 1 December 2026 to early January 2027"),
+    ("December 2026", [("Tony Hawk's Pro Skater 3+4", "PS5, PS4"), ("Dragon Ball Xenoverse 2", "PS5, PS4"), ("Amnesia: The Bunker", "PS4 / PS5")], "1 December 2026 to 4 January 2027"),
     ("November 2026", [("Dead Island 2", "PS5, PS4"), ("Tomb Raider IV–VI Remastered", "PS5, PS4"), ("Monster Train 2", "PS5")], "3 to 30 November 2026"),
     ("October 2026", [("F1 25", "PS5"), ("Hunt: Showdown 1896", "PS5"), ("Earth Defense Force: World Brothers 2", "PS5, PS4")], "October to 2 November 2026"),
 ]
 _psp_rows = "".join(f"<tr><td>{m}</td><td>{', '.join(f'{e(t)} <span class=muted>({pl})</span>' for t, pl in g) if g else '<strong>Revealed on Wednesday 25 November</strong> (usually about 4:30 pm UK, 9:30 pm PKT, 11:30 am ET)'}</td><td>{w}</td></tr>" for m, g, w in PSP)
-psp_body = (f'<header class="hero"><div class="wrap"><span class="kicker">PlayStation Plus</span><h1>PS Plus monthly games:<br><span class="amber">December 2026.</span></h1>'
+psp_body = (f'<header class="hero"><div class="wrap"><span class="kicker">PlayStation Plus</span><h1>PS Plus December 2026:<br><span class="amber">Tony Hawk 3+4, Xenoverse 2, Amnesia.</span></h1>'
     f'<p class="lead">The free games every PS Plus member can claim each month, when the next ones are revealed, and how long you have to add them to your library.</p></div></header>'
-    f'<section style="padding-top:10px"><div class="wrap"><div class="tool"><p><strong>Quick answer:</strong> December 2026\'s PS Plus monthly games are revealed on <strong>Wednesday 25 November</strong> and can be claimed from <strong>Tuesday 1 December</strong>. November\'s games, <strong>Dead Island 2, Tomb Raider IV–VI Remastered and Monster Train 2</strong>, can be added until <strong>Monday 30 November</strong>. Sony usually reveals the monthly games on the last Wednesday of the month and releases them on the first Tuesday of the next.</p>'
+    f'<section style="padding-top:10px"><div class="wrap"><div class="tool"><p><strong>Quick answer:</strong> December 2026\'s PS Plus monthly games are <strong>Tony Hawk\'s Pro Skater 3+4, Dragon Ball Xenoverse 2 and Amnesia: The Bunker</strong>, claimable from <strong>Tuesday 1 December 2026 to Monday 4 January 2027</strong>. PS Plus Extra also adds Dynasty Warriors: Origins in December. November\'s games, <strong>Dead Island 2, Tomb Raider IV–VI Remastered and Monster Train 2</strong>, can be added until <strong>Monday 30 November</strong>. Sony usually reveals the monthly games on the last Wednesday of the month and releases them on the first Tuesday of the next.</p>'
     f'<p id="psp-cd" class="muted" aria-live="polite"></p></div></div></section>'
     f'<script>(function(){{var t=Date.UTC(2026,11,1,0,0),el=document.getElementById("psp-cd");function f(){{var d=t-Date.now();if(d<=0){{el.textContent="December\'s monthly games unlock today or are already out: check the PlayStation Plus tab.";return}}var h=Math.floor(d/36e5);el.textContent=Math.ceil(h/24)+" day"+(Math.ceil(h/24)==1?"":"s")+" until December\'s games unlock on Tuesday 1 December (the exact hour varies by region).";}}f();setInterval(f,60000)}})();</script>'
     f'<section><div class="wrap"><div class="sec-head"><h2>PS Plus monthly games, month by month</h2></div>'
@@ -2461,14 +2461,14 @@ psp_body = (f'<header class="hero"><div class="wrap"><span class="kicker">PlaySt
     f'<li><a href="{href("games-december-2026.html", 0)}">Games coming out in December 2026</a></li>'
     f'<li><a href="{href("new-games-this-week.html", 0)}">New games this week</a></li></ul></div></section>')
 psp_faq = [
-    ("What are the PS Plus games for December 2026?", "They're revealed on Wednesday 25 November 2026 and can be claimed from Tuesday 1 December. This page is updated as soon as Sony announces them."),
+    ("What are the PS Plus games for December 2026?", "Tony Hawk's Pro Skater 3+4, Dragon Ball Xenoverse 2 and Amnesia: The Bunker, announced on the PlayStation Blog on 25 November 2026. Claim them from 1 December 2026 to 4 January 2027."),
     ("What are the PS Plus games for November 2026?", "Dead Island 2 (PS5, PS4), Tomb Raider IV–VI Remastered (PS5, PS4) and Monster Train 2 (PS5), claimable from 3 to 30 November 2026."),
     ("When are PS Plus monthly games announced?", "Usually on the last Wednesday of the month, on the PlayStation Blog, often around 4:30 pm UK time."),
     ("When do new PS Plus games come out?", "On the first Tuesday of the month. The previous month's games can be claimed until then."),
     ("Do I keep PS Plus games forever?", "You keep claimed monthly games for as long as you have an active PS Plus subscription of any tier."),
 ]
-page("ps-plus-monthly-games.html", "PS Plus Monthly Games December 2026: Reveal Date, November Games + Claim Deadline | DayOneDrop"[:100],
-     "PS Plus monthly games for December 2026: revealed 25 November, claim from 1 December. November's games (Dead Island 2, Tomb Raider IV-VI, Monster Train 2) until 30 November.",
+page("ps-plus-monthly-games.html", "PS Plus December 2026 Games: Tony Hawk 3+4, Dragon Ball Xenoverse 2, Amnesia | DayOneDrop",
+     "PS Plus December 2026 monthly games: Tony Hawk's Pro Skater 3+4, Dragon Ball Xenoverse 2 and Amnesia: The Bunker, 1 Dec to 4 Jan. November's games until 30 November.",
      psp_body, 0, psp_faq, crumbs=[("Home", DOMAIN + "/"), ("PS Plus monthly games", canon("ps-plus-monthly-games.html"))])
 
 # ---------------- EPIC FREE GAMES (Keyword Planner worldwide 25 Nov 2026: "epic free games" 10k-100k, low comp). UPDATE EVERY THURSDAY after 16:00 UTC. ----------------
