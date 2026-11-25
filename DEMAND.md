@@ -17,6 +17,14 @@ W5. OPEN tech releases people track: /gaming-hardware-2027 (consoles, handhelds,
 W6. OPEN tools across categories: "release calendar" with filters (games / movies / TV), .ics calendar export, "what's out this weekend" page.
 Weekly (Mondays) the demand radar checks Keyword Planner volumes for new categories; build those with 10k+ searches first.
 
+## DEMAND RUN 26 Nov 2026 (scheduled, second pass)
+Evidence: "fighting games 2027" (queue item 3 / R3) + Virtua Fighter Crossroads, Xenoverse 3, DCKO, Toshinden all announced for 2027 (VGC, Gematsu, PS Blog, Bandai Namco, Kotaku, Gamereactor); "injustice 3" PAA/rumour searches (PC Gamer, GamesRadar reports). "what time does the game awards start" / "game awards disney plus": Disney press release 12 Nov gave 7:30pm ET (GamingTrend, GGRecon, Pocket Tactics); show is 14 days away so this query peaks now.
+N4. DONE 26 Nov https://getdayonedrop.com/fighting-games-2027 : console filter tool, countdown, Xenoverse 3 / Virtua Fighter / Injustice 3 / Toshinden H2s. Added Dragon Ball Xenoverse 3 + Toshinden Collection to games.json (board 83).
+N5. DONE 26 Nov (refresh) https://getdayonedrop.com/game-awards-2026 : start time 7:30pm ET, "what time in my time zone" tool + 9-zone table, exact-time countdown, Google Calendar, Disney+ H2.
+N6. OPEN /sports-games-2027: still thin (only Super Battle Golf + racing dated). Wait for MLB The Show 27 / EA Sports 2027 announcements (usually Jan-Mar); add Golf With Your Friends 2 if dated 2027 by 2 sources.
+N7. OPEN data: Acts of Blood delayed to spring 2027 (Niche Gamer only so far) - needs 2nd trusted source. Netcode Warriors PS5 2027 (Gematsu 11/2026) - check genre/platforms.
+N8. OPEN after TGA (11 Dec): /game-awards-2026 winners + every 2027 date/premiere announced on the night (same-night update; highest-traffic day of the month).
+
 ## DEMAND RUN 26 Nov 2026 (scheduled, demand-first)
 Evidence: GI + GamesRadar both keep "TBC 2027 / no date" lists of ~150 titles (competitor gap 3, 25 Nov); "<game> countdown" / "how many days until <game>" is a standing query pattern for every dated game (our game pages have timers but no single shareable tool); "games coming out december 2026" (radar R1) peaks now, a week before December.
 N1. DONE 26 Nov https://getdayonedrop.com/games-without-release-date-2027 : every 2027 game with no exact day, console + season filter, add to list, "when could they get a date" table.

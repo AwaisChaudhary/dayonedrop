@@ -58,6 +58,16 @@
     tick();
   }
   $$("[data-countdown]").forEach(function (root) { countdown(root, at({ date: root.dataset.countdown })); });
+  $$("[data-countdown-at]").forEach(function (root) { var t = Date.parse(root.getAttribute("data-countdown-at")); if (!isNaN(t)) countdown(root, t); });
+  /* local start time for a fixed instant (e.g. The Game Awards) */
+  $$("[data-tga-local]").forEach(function (el) {
+    var t = new Date(el.getAttribute("data-tga-local"));
+    if (isNaN(t.getTime())) return;
+    try {
+      var tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
+      el.textContent = t.toLocaleString([], { weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit" }) + (tz ? " (" + tz.replace(/_/g, " ") + ")" : "");
+    } catch (e) {}
+  });
 
   /* home: next drop */
   var nd = $("#next-drop");
@@ -394,6 +404,32 @@
       toast((WL.length - before) + " games added to your ★ list");
     });
     drawHor();
+  }
+
+  /* Fighting games 2027: console filter, add to list */
+  var fgt = $("#fg-tool");
+  if (fgt) {
+    var fsel = store.get("dod-fg", { p: "" }) || { p: "" };
+    var frows = $$("#fg-list [data-fplat]"), fcount = $("#fg-count"), fnone = $("#fg-none"), fshown = [];
+    var drawFg = function () {
+      fshown = [];
+      frows.forEach(function (r) {
+        var ok = !fsel.p || r.getAttribute("data-fplat").split("|").indexOf(fsel.p) > -1;
+        r.hidden = !ok; if (ok) fshown.push(r.getAttribute("data-slug"));
+      });
+      $$("[data-fg-p]", fgt).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-fg-p") === fsel.p ? "true" : "false"); });
+      fcount.textContent = fshown.length + " fighting game" + (fshown.length === 1 ? "" : "s") + (fsel.p ? " on " + fsel.p : "");
+      fnone.hidden = fshown.length > 0;
+      store.set("dod-fg", fsel);
+    };
+    $$("[data-fg-p]", fgt).forEach(function (c) { c.addEventListener("click", function () { fsel.p = c.getAttribute("data-fg-p"); drawFg(); }); });
+    var fadd = $("#fg-add");
+    if (fadd) fadd.addEventListener("click", function () {
+      var before = WL.length;
+      WL = Array.from(new Set(WL.concat(fshown))); store.set("dod-watch", WL); syncStars();
+      toast((WL.length - before) + " games added to your ★ list");
+    });
+    drawFg();
   }
 
   /* Xbox Games Showcase 2027: undated / dated + Game Pass filter, add to list */

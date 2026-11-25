@@ -254,7 +254,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("new-games-this-week.html", depth)}">New games this week</a></li><li><a href="{href("later-2027.html", depth)}">Games later in 2027 (May–Dec)</a></li><li><a href="{href("games-without-release-date-2027.html", depth)}">2027 games with no release date</a></li><li><a href="{href("countdown.html", depth)}">Game release countdown</a></li><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/state-of-decay-3.html", depth)}">State of Decay 3</a></li><li><a href="{href("games/lords-of-the-fallen-ii.html", depth)}">Lords of the Fallen 2</a></li><li><a href="{href("games/squadron-42.html", depth)}">Squadron 42</a></li><li><a href="{href("games/ananta.html", depth)}">Ananta (free-to-play)</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("ps-plus-monthly-games.html", depth)}">PS Plus monthly games</a></li><li><a href="{href("epic-free-games.html", depth)}">Epic free games this week</a></li><li><a href="{href("steam-sale-dates.html", depth)}">Steam sale dates 2026-2027</a></li><li><a href="{href("nintendo-direct.html", depth)}">Next Nintendo Direct</a></li><li><a href="{href("xbox-games-showcase-2027.html", depth)}">Xbox Games Showcase 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("new-games-this-week.html", depth)}">New games this week</a></li><li><a href="{href("later-2027.html", depth)}">Games later in 2027 (May–Dec)</a></li><li><a href="{href("games-without-release-date-2027.html", depth)}">2027 games with no release date</a></li><li><a href="{href("countdown.html", depth)}">Game release countdown</a></li><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("fighting-games-2027.html", depth)}">Fighting games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/state-of-decay-3.html", depth)}">State of Decay 3</a></li><li><a href="{href("games/lords-of-the-fallen-ii.html", depth)}">Lords of the Fallen 2</a></li><li><a href="{href("games/squadron-42.html", depth)}">Squadron 42</a></li><li><a href="{href("games/ananta.html", depth)}">Ananta (free-to-play)</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("ps-plus-monthly-games.html", depth)}">PS Plus monthly games</a></li><li><a href="{href("epic-free-games.html", depth)}">Epic free games this week</a></li><li><a href="{href("steam-sale-dates.html", depth)}">Steam sale dates 2026-2027</a></li><li><a href="{href("nintendo-direct.html", depth)}">Next Nintendo Direct</a></li><li><a href="{href("xbox-games-showcase-2027.html", depth)}">Xbox Games Showcase 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Every date is checked against the publisher or platform holder plus a second trusted source (<a href="{href("about.html", depth)}#editorial">editorial policy</a>). Spotted an error? Email <a href="mailto:awaiskaramat@hotmail.com">awaiskaramat@hotmail.com</a>. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -1124,7 +1124,7 @@ for _k in _gen:
     _n, _low = _gen_meta[_k]
     _f = _gen_first(_k)
     _lead = f'The first is {_gname(_f)} on {e(nice_date(_f))}.' if _f else "None has an exact date yet."
-    _extra = f' See <a href="{href("rpgs-2027.html", 0)}">every RPG of 2027</a> for the full RPG guide.' if _k == "rpg" else (f' See <a href="{href("horror-games-2027.html", 0)}">every horror game of 2027</a> for countdowns and delays.' if _k == "horror" else "")
+    _extra = f' See <a href="{href("rpgs-2027.html", 0)}">every RPG of 2027</a> for the full RPG guide.' if _k == "rpg" else (f' See <a href="{href("horror-games-2027.html", 0)}">every horror game of 2027</a> for countdowns and delays.' if _k == "horror" else (f' See <a href="{href("fighting-games-2027.html", 0)}">every fighting game of 2027</a>, including Virtua Fighter Crossroads and DCKO.' if _k == "other" else ""))
     _gen_secs += (f'<div class="gen-sec" data-gsec="{_k}"><div class="sec-head"><h2 id="{_k}">What {e(_low)} come out in 2027?</h2><span class="muted">{len(_gen[_k])}</span></div>'
                   f'<p class="muted">{_lead}{_extra}</p><div class="out" style="margin-bottom:26px">{"".join(_genrow(g) for g in _gen[_k])}</div></div>')
 _gchips = ('<div class="chips" role="group" aria-label="Genre" style="margin-bottom:10px"><button class="chip" type="button" data-gen-g="" aria-pressed="true">All genres</button>'
@@ -1168,6 +1168,7 @@ gen_body = (f'<header class="hero"><div class="wrap"><span class="kicker">By gen
             f'<p>For racing and driving games, {_sport_race}</p>'
             f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
             f'<li><a href="{href("horror-games-2027.html", 0)}">Every horror game of 2027</a>, with a console filter and countdown</li>'
+            f'<li><a href="{href("fighting-games-2027.html", 0)}">Every fighting game of 2027</a>: Melty Blood, Xenoverse 3, Virtua Fighter</li>'
             f'<li><a href="{href("xbox-games-showcase-2027.html", 0)}">Xbox Games Showcase 2027</a>: which Xbox games still need a date</li>'
             f'<li><a href="{href("rpgs-2027.html", 0)}">Every RPG coming in 2027</a>, with action RPG and JRPG filters</li>'
             f'<li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a> and a shareable top list maker</li>'
@@ -1255,6 +1256,7 @@ _hor_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Horro
              f'<p class="muted">Not on our board because it is not announced for PS5, Xbox Series X|S or Switch 2. Source: Gematsu and RPGFan, August 2026.</p>'
              f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
              f'<li><a href="{href("games-by-genre-2027.html", 0)}">2027 games by genre</a>: shooters, RPGs, platformers and more</li>'
+             f'<li><a href="{href("fighting-games-2027.html", 0)}">Fighting games of 2027</a>, with a console filter</li>'
              f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: do your picks land the same week?</li>'
              f'<li><a href="{href("games/resident-evil-veronica.html", 0)}">Resident Evil Veronica release date and platforms</a></li>'
              f'<li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a></li></ul></div></section>')
@@ -1269,6 +1271,88 @@ if _hor_delayed:
 page("horror-games-2027.html", f"Horror Games Coming Out in 2027: Dates and Consoles ({len(_hor)} Games) | DayOneDrop"[:90],
      f"Every horror game coming in 2027: Until Dawn 2, Resident Evil Veronica, Ontos and more, with dates, PS5/Xbox/PC/Switch 2 filter and countdown. Checked {UPDATED}."[:160],
      _hor_body, 0, hor_faq, crumbs=[("Home", DOMAIN + "/"), ("2027 games by genre", canon("games-by-genre-2027.html")), ("Horror games 2027", canon("horror-games-2027.html"))])
+
+
+# ---------------- FIGHTING GAMES 2027 (26 Nov 2026) ----------------
+# Built from games.json: genre contains "fighting". FG_EXTRA = 2027 fighting games not on our console board:
+# Virtua Fighter Crossroads: RGG Studio / SEGA, "2027" (VGC + Gematsu, 5 Jun 2026); platforms not confirmed in SEGA's reveal text (WorthPlaying lists PS5/Xbox/PC), so not on the board.
+# DCKO: Drop Fake / WB Games, free-to-play mobile 2v2 tag fighter, 2027 (Kotaku 20 Jul 2026 + Gamereactor 21 Jul 2026).
+# Injustice 3: NOT announced (PC Gamer / GamesRadar report it in development). Labelled as a rumour only.
+FG_EXTRA = [
+    ("Virtua Fighter Crossroads", "RGG Studio (Like a Dragon team) / SEGA", "The sixth main Virtua Fighter: a story-driven game with four heroes, group brawls and boss fights, plus a Versus mode with local and online play.", "Consoles and PC not confirmed by SEGA yet", "2027"),
+    ("DCKO", "Drop Fake / Warner Bros. Games", "A free-to-play 2-on-2 tag fighter with Batman, Superman, Wonder Woman and Constantine. Pre-registration is open.", "iOS and Android (mobile only)", "2027"),
+]
+_fg = sorted([g for g in GAMES if "fighting" in (g.get("genre") or "").lower()], key=lambda x: (x["month"], x["date"] or "9999"))
+_fg_dated = [g for g in _fg if g["date"]]
+_fg_undated = [g for g in _fg if not g["date"]]
+_fg_next = _fg_dated[0] if _fg_dated else None
+_fg_p = {p: [g for g in _fg if p in g["platforms"]] for p in PLATS}
+_fg_total = len(_fg) + len(FG_EXTRA)
+_fg_quick = (f"We track {_fg_total} fighting games for 2027. "
+             + (f"The only one with an exact date so far is {_fg_next['title']} on {nice_date(_fg_next)}. " if len(_fg_dated) == 1 else (f"The first is {_fg_next['title']} on {nice_date(_fg_next)}. " if _fg_next else ""))
+             + f"{_and([g['title'] for g in _fg_undated] + [x[0] for x in FG_EXTRA])} are all due in 2027 with no day yet. Injustice 3 has not been announced.")
+def _fgrow(g):
+    return (f'<div class="row" data-fplat="{e("|".join(g["platforms"]))}" data-fdated="{1 if g["date"] else 0}" data-slug="{e(g["slug"])}"><span><strong>{_gname(g)}</strong>'
+            f'<br><span class="muted">{e(g.get("about") or g["genre"])}</span>'
+            f'<br><span class="muted">{e(g.get("dev") or "Studio TBC")} · {e(", ".join(g["platforms"]))}'
+            + (f' · also {e(", ".join(g["lastgen"]))}' if g.get("lastgen") else "") + f'</span></span><b>{e(nice_date(g))}</b></div>')
+_fchips = ('<div class="chips" role="group" aria-label="Console"><button class="chip" type="button" data-fg-p="" aria-pressed="true">All consoles</button>'
+           + "".join(f'<button class="chip" type="button" data-fg-p="{e(p)}" aria-pressed="false">{e(p)}</button>' for p in PLATS) + '</div>')
+_fg_tbl = ('<div style="overflow-x:auto"><table class="gen-table" style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr><th style="text-align:left;padding:6px">Console</th><th style="padding:6px">Fighting games</th><th style="text-align:left;padding:6px">Which ones</th></tr></thead><tbody>'
+           + "".join(f'<tr><td style="padding:6px;border-top:1px solid var(--rule)"><a href="{href("platforms/" + _pslug[p] + ".html", 0)}">{e(_lab[p])}</a></td>'
+                     f'<td style="padding:6px;text-align:center;border-top:1px solid var(--rule)" class="mono">{len(_fg_p[p])}</td>'
+                     f'<td style="padding:6px;border-top:1px solid var(--rule)">{e(", ".join(g["title"] for g in _fg_p[p]) or "None confirmed yet")}</td></tr>' for p in PLATS)
+           + '</tbody></table></div>')
+_fg_cd = (f'<div class="cdw"><span class="lbl">Countdown to {e(_fg_next["title"])}</span><div class="cd" data-countdown="{_fg_next["date"]}">'
+          '<div class="cd-unit"><span class="flaps" data-u="0"></span><span>Days</span></div><div class="cd-unit"><span class="flaps" data-u="1"></span><span>Hrs</span></div>'
+          '<div class="cd-unit"><span class="flaps" data-u="2"></span><span>Min</span></div><div class="cd-unit"><span class="flaps" data-u="3"></span><span>Sec</span></div></div></div>') if _fg_next else ""
+_fg_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Fighting games</span>'
+            f'<h1>Fighting games coming in 2027:<br><span class="amber">every date, every console.</span></h1>'
+            f'<p class="lead">Every fighting game confirmed for 2027, from Melty Blood: Twi-Lumina to Dragon Ball Xenoverse 3 and the new Virtua Fighter, with a console filter, a countdown and what is still only a rumour.</p>'
+            f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · {_fg_total} fighting games · dates and consoles from publishers or two trusted outlets</p></div></header>'
+            f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_fg_quick)}</span></div></div>'
+            f'<div class="tool" id="fg-tool"><h2 style="font-size:1.5rem;margin-top:0">Which 2027 fighting games can I play on my console?</h2>'
+            f'<p class="muted">Tap your console. The list below updates, and your choice is remembered on this device. Add the lot to your ★ list to get countdowns and delay news on the board.</p>{_fchips}'
+            f'<p class="mono amber" id="fg-count" aria-live="polite" style="margin:12px 0 0">{len(_fg)} games</p>'
+            f'<div class="btns" style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn sm" type="button" id="fg-add">Add these to my ★ list</button>'
+            f'<a class="btn line sm" href="{href("countdown.html", 0)}">Make a countdown</a></div></div></div></section>'
+            + AD.format("fg-mid") +
+            f'<section><div class="wrap"><div class="sec-head"><h2>What fighting games come out in 2027?</h2><span class="muted">{len(_fg)} on consoles we track</span></div>'
+            f'<p class="muted">In release order. Games with only a year sit at the end.</p>'
+            f'<div class="out" id="fg-list" style="margin-bottom:10px">{"".join(_fgrow(g) for g in _fg)}</div><p class="empty" id="fg-none" hidden>No tracked 2027 fighting game is confirmed for that console yet.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Which other fighting games are coming in 2027?</h2><span class="muted">{len(FG_EXTRA)}</span></div>'
+            f'<p class="muted">Confirmed for 2027 but not on our console board: one has no confirmed platforms yet, the other is mobile only.</p>'
+            f'<div class="out" style="margin-bottom:10px">' + "".join(f'<div class="row"><span><strong>{e(t)}</strong><br><span class="muted">{e(ab)}</span><br><span class="muted">{e(dv)} · {e(pl)}</span></span><b>{e(w)}</b></div>' for t, dv, ab, pl, w in FG_EXTRA) + '</div>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>What is the next fighting game to come out?</h2></div>'
+            + (f'<p>{_gname(_fg_next)} is next, on {e(nice_date(_fg_next))} for {e(", ".join(_fg_next["platforms"]))}' + (f' (and {e(", ".join(_fg_next["lastgen"]))})' if _fg_next.get("lastgen") else "") + f'. {e(_fg_next.get("about") or "")}</p>{_fg_cd}' if _fg_next else '<p>No 2027 fighting game has an exact date yet.</p>')
+            + f'<div class="sec-head" style="margin-top:28px"><h2>When does Dragon Ball Xenoverse 3 come out?</h2></div>'
+            f'<p>In 2027. Bandai Namco revealed it in April 2026 for PS5, Xbox Series X|S and PC (Steam), and its European site lists late 2027. No day has been announced and no Switch 2 version has been confirmed. It is set in a new world in Age 1000, with West City as the hub and original characters drawn by Akira Toriyama.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Is the new Virtua Fighter coming out in 2027?</h2></div>'
+            f'<p>Yes. SEGA and RGG Studio, the team behind Like a Dragon, named it Virtua Fighter Crossroads at Summer Game Fest on 5 June 2026 and said it launches in 2027. It is the sixth main Virtua Fighter, but it plays differently: a story campaign with four heroes, fights against groups and bosses, plus a Versus mode for local and online matches. SEGA has not listed the consoles in its reveal, so we will add it to the board once it does.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Is Injustice 3 coming out in 2027?</h2></div>'
+            f'<p>Not officially. Warner Bros. and NetherRealm have not announced Injustice 3. PC Gamer and GamesRadar+ have reported signs that NetherRealm is working on it, and Ed Boon has said another Mortal Kombat is also planned, but neither game has a name, platforms or a year. The only DC fighting game confirmed for 2027 is DCKO, a free-to-play mobile game from a new studio, Drop Fake.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Are there any retro fighting game collections in 2027?</h2></div>'
+            f'<p>Yes: Toshinden Collection brings the first three PS1 Battle Arena Toshinden games to PS5, Switch 2 and PC (Steam) in 2027, with same-screen multiplayer. Edia announced it at Tokyo Game Show 2026.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>How many 2027 fighting games are on PS5, Xbox, PC and Switch 2?</h2></div>{_fg_tbl}'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Which fighting games are up for an award this year?</h2></div>'
+            f'<p>The Best Fighting Game nominees at <a href="{href("game-awards-2026.html", 0)}">The Game Awards 2026</a> (10 December) are 2XKO, Avatar Legends: The Fighting Game, Invincible VS, Marvel Tokon: Fighting Souls and My Hero Academia: All\'s Justice. They are all 2026 games, so they are not on this list.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+            f'<li><a href="{href("games-by-genre-2027.html", 0)}">2027 games by genre</a>: horror, shooters, RPGs and more</li>'
+            f'<li><a href="{href("games-without-release-date-2027.html", 0)}">2027 games with no release date yet</a>, by console and season</li>'
+            f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: do your picks land the same week?</li>'
+            f'<li><a href="{href("countdown.html", 0)}">Game release countdown</a> for any dated 2027 game</li></ul></div></section>')
+fg_faq = [("What fighting games are coming out in 2027?", f"We track {_fg_total}: " + ", ".join(f"{g['title']} ({nice_date(g)})" for g in _fg) + ", " + ", ".join(f"{x[0]} ({x[4]})" for x in FG_EXTRA) + "."),
+          ("When does Dragon Ball Xenoverse 3 come out?", "In 2027 on PS5, Xbox Series X|S and PC. Bandai Namco's European site says late 2027. No exact date yet."),
+          ("Is Virtua Fighter Crossroads coming out in 2027?", "Yes. SEGA and RGG Studio say 2027. The consoles have not been confirmed in SEGA's reveal yet."),
+          ("Is Injustice 3 announced?", "No. There are reports that NetherRealm is working on it, but Warner Bros. has not announced it, so there is no date or platform."),
+          ("Is DCKO on PS5 or Xbox?", "No. DCKO is a free-to-play DC tag fighter for iOS and Android only, due in 2027.")]
+if _fg_next:
+    fg_faq.insert(1, ("What is the first fighting game of 2027?", f"{_fg_next['title']}, on {nice_date(_fg_next)} for {', '.join(_fg_next['platforms'])}."))
+for _p in ("Switch 2", "PS5"):
+    fg_faq.append((f"What fighting games are coming to {_lab[_p]} in 2027?", (", ".join(f"{g['title']} ({nice_date(g)})" for g in _fg_p[_p]) + ".") if _fg_p[_p] else "None confirmed yet."))
+page("fighting-games-2027.html", "Fighting Games Coming Out in 2027: Dates and Consoles | DayOneDrop",
+     f"Every fighting game coming in 2027: Melty Blood: Twi-Lumina ({nice_date(_fg_next) if _fg_next else 'TBC'}), Dragon Ball Xenoverse 3, Virtua Fighter Crossroads and more, with a console filter.",
+     _fg_body, 0, fg_faq, crumbs=[("Home", DOMAIN + "/"), ("2027 games by genre", canon("games-by-genre-2027.html")), ("Fighting games 2027", canon("fighting-games-2027.html"))])
 
 
 # ---------------- BACKLOG PLANNER (22 Nov 2026) ----------------
@@ -1478,6 +1562,7 @@ tools = f'''<header class="hero"><div class="wrap"><span class="kicker">Tools</s
 <li><a href="{href("rpgs-2027.html", 0)}">Every RPG coming in 2027</a> with a console filter</li>
 <li><a href="{href("games-by-genre-2027.html", 0)}">2027 games by genre</a>: horror, shooters, platformers and more</li>
 <li><a href="{href("horror-games-2027.html", 0)}">Every horror game of 2027</a>, with a console filter and countdown</li>
+<li><a href="{href("fighting-games-2027.html", 0)}">Every fighting game of 2027</a>, with a console filter and countdown</li>
 <li><a href="{href("game-pass-2027.html", 0)}">Every 2027 game on Xbox Game Pass</a>, with a Game Pass or buy checker</li>
 <li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a>, with a shareable top list maker</li>
 <li><a href="{href("last-gen-games-2027.html", 0)}">2027 games on PS4, Xbox One and Switch 1</a>, with a do-I-need-to-upgrade check</li>
@@ -2081,7 +2166,8 @@ page("new-games-this-week.html", "New Games Coming Out This Week and Next (Week 
 # Nominees: Kotaku (17 Nov 2026) and ScreenRant (17 Nov 2026) list the same five Most Anticipated nominees; Nintendo's own post confirms the
 # Switch ones (FFVII Revelation, RE Veronica) and three GOTY nominees. Date/venue: thegameawards.com (2 Feb 2026), Nintendo Life (Peacock Theater).
 # Streams: Shacknews (13 Nov 2026: YouTube, Twitch, Roblox 18+, Disney+), Disney+ also GGRecon / Pocket Tactics. Start time NOT confirmed by a trusted
-# outlet when checked, so we do not print one. Witcher 4: CD Projekt "targeting" 2028 (TechRadar, 25 Aug 2026), so it is not on our 2027 board.
+# outlet when checked (24 Nov). 26 Nov: start time 7:30pm ET / 4:30pm PT from Disney's press release (via GamingTrend 12 Nov) + GGRecon + Pocket Tactics (13 Nov);
+# Roblox is Shacknews-only, so kept as "reported". Disney+ needs a subscription (implied by Shacknews + Pocket Tactics); YouTube/Twitch stay free. Witcher 4: CD Projekt "targeting" 2028 (TechRadar, 25 Aug 2026), so it is not on our 2027 board.
 TGA_DATE = "2026-12-10"
 TGA_ANTICIPATED = ["fable", "final-fantasy-vii-revelation", "god-of-war-laufey", "resident-evil-veronica", "the-witcher-4"]
 TGA_EXTRA = {"the-witcher-4": {"title": "The Witcher 4", "platforms": [], "dev": "CD Projekt Red",
@@ -2116,6 +2202,8 @@ TGA_CATS = [  # official list 17 Nov 2026, cross-checked Gematsu + Push Square
     ("Most Anticipated Game", ["Fable", "Final Fantasy VII Revelation", "God of War Laufey", "Resident Evil Veronica", "The Witcher 4"]),
 ]
 TGA_VOTE_END = "9 December 2026, 6pm PT (9pm ET)"
+TGA_START_UTC = "2026-12-11T00:30:00Z"  # 7:30pm ET / 4:30pm PT on 10 Dec
+TGA_ZONES = [("Los Angeles (PT)", "4:30pm Thu 10 Dec"), ("New York (ET)", "7:30pm Thu 10 Dec"), ("London (GMT)", "12:30am Fri 11 Dec"), ("Paris, Berlin (CET)", "1:30am Fri 11 Dec"), ("Dubai (GST)", "4:30am Fri 11 Dec"), ("Karachi, Lahore (PKT)", "5:30am Fri 11 Dec"), ("India (IST)", "6:00am Fri 11 Dec"), ("Tokyo (JST)", "9:30am Fri 11 Dec"), ("Sydney (AEDT)", "11:30am Fri 11 Dec")]
 
 # ---------------- BIGGEST GAMES OF 2027 (23 Nov 2026) ----------------
 # Editorial pick: new entries in major series or from major studios. Dates/platforms come from games.json only.
@@ -2234,7 +2322,8 @@ _tga_rows = "".join(
 _w4 = TGA_EXTRA["the-witcher-4"]
 _tga_rows += f'<div class="row"><span><strong>The Witcher 4</strong><br><span class="muted">{e(_w4["dev"])} · {e(_w4["note"])}</span></span><b>{e(_w4["when"])}</b></div>'
 _tga_names = [g["title"] for g in _tga_g]
-_tga_quick = (f"The Game Awards 2026 is on Thursday 10 December 2026, live from the Peacock Theater in Los Angeles. "
+_tga_quick = (f"The Game Awards 2026 starts at 7:30pm ET / 4:30pm PT on Thursday 10 December 2026 (12:30am UK time on Friday 11 December), live from the Peacock Theater in Los Angeles. "
+              f"It streams free on YouTube and Twitch and, for the first time, on Disney+. "
               f"Four of the five Most Anticipated Game nominees are 2027 games: "
               + ", ".join(f"{g['title']} ({nice_date(g) if g['date'] else 'no date yet'})" for g in sorted(_tga_g, key=lambda g: g["date"] or "9999"))
               + ". The fifth, The Witcher 4, is targeting 2028. Grand Theft Auto 6 leads the nominations with 8, and fan voting closes on " + TGA_VOTE_END + ".")
@@ -2275,18 +2364,28 @@ tga_body = (f'<header class="hero"><div class="wrap"><span class="kicker">The Ga
     f'<h1>The Game Awards 2026:<br><span class="amber">the 2027 games up for Most Anticipated.</span></h1>'
     f'<p class="lead">When the show is, how to watch it, and when every Most Anticipated Game nominee actually comes out. Then pick your winners and share them.</p>'
     f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · nominees from the official list announced 17 November 2026</p>'
-    f'<div class="cdw" style="margin-top:18px;max-width:520px"><span class="lbl">Countdown to show day (10 Dec 2026)</span><div class="cd" data-countdown="{TGA_DATE}">'
+    f'<div class="cdw" style="margin-top:18px;max-width:520px"><span class="lbl">Countdown to the show (7:30pm ET, 10 Dec 2026)</span><div class="cd" data-countdown-at="{TGA_START_UTC}">'
     f'<div class="cd-unit"><span class="flaps" data-u="0"></span><span>Days</span></div><div class="cd-unit"><span class="flaps" data-u="1"></span><span>Hrs</span></div>'
     f'<div class="cd-unit"><span class="flaps" data-u="2"></span><span>Min</span></div><div class="cd-unit"><span class="flaps" data-u="3"></span><span>Sec</span></div></div></div></div></header>'
     f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_tga_quick)}</span></div></div>'
     f'<div class="sec-head"><h2>When is The Game Awards 2026 and how can I watch it?</h2></div><div class="out" style="margin-bottom:28px">'
     f'<div class="row"><span>Date</span><b>Thu 10 Dec 2026</b></div>'
     f'<div class="row"><span>Venue</span><b>Peacock Theater, Los Angeles</b></div>'
-    f'<div class="row"><span>Start time<br><span class="muted">Not confirmed by the show when we checked. See thegameawards.com.</span></span><b>TBC</b></div>'
+    f'<div class="row"><span>Start time</span><b>7:30pm ET / 4:30pm PT</b></div>'
+    f'<div class="row"><span>UK start time</span><b>12:30am Fri 11 Dec</b></div>'
     f'<div class="row"><span>Free streams</span><b>YouTube, Twitch</b></div>'
-    f'<div class="row"><span>Also streaming on</span><b>Disney+, Roblox (18+)</b></div>'
+    f'<div class="row"><span>Disney+<br><span class="muted">New this year. For Disney+ subscribers, in North America and some other countries.</span></span><b>Live</b></div>'
+    f'<div class="row"><span>Roblox<br><span class="muted">Reported by Shacknews from the show\'s own post. 18 and over only.</span></span><b>Live</b></div>'
     f'<div class="row"><span>Nominees announced</span><b>17 Nov 2026</b></div>'
     f'<div class="row"><span>Fan voting closes<br><span class="muted">Vote in every category at thegameawards.com</span></span><b>9 Dec, 6pm PT</b></div></div>'
+    f'<div class="tool" id="tga-tz" style="margin-bottom:28px"><h2 style="font-size:1.5rem;margin-top:0">What time is The Game Awards 2026 in my time zone?</h2>'
+    f'<p class="muted">The show starts at 7:30pm ET on Thursday 10 December. Your device\'s clock converts it for you below, and the table covers the main time zones.</p>'
+    f'<div class="out" id="tga-tz-out" aria-live="polite" style="margin-bottom:14px"><div class="row hot" style="flex-wrap:wrap;gap:6px"><span>Start time where you are</span><b style="white-space:normal;min-width:0" data-tga-local="{TGA_START_UTC}">7:30pm ET</b></div></div>'
+    f'<div class="out">' + "".join(f'<div class="row"><span>{e(z)}</span><b>{e(t)}</b></div>' for z, t in TGA_ZONES) + '</div>'
+    f'<div class="btns" style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap"><a class="btn sm" rel="noopener" target="_blank" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=The%20Game%20Awards%202026&amp;dates=20261211T003000Z/20261211T040000Z&amp;details=Live%20on%20YouTube%2C%20Twitch%20and%20Disney%2B.%20Nominees%3A%20https%3A%2F%2Fgetdayonedrop.com%2Fgame-awards-2026&amp;location=Peacock%20Theater%2C%20Los%20Angeles">Add to Google Calendar</a></div>'
+    f'<p class="muted" style="margin:10px 0 0">The calendar entry is 3.5 hours long as a placeholder. The show has not said how long it runs.</p></div>'
+    f'<div class="sec-head"><h2>Do I need Disney+ to watch The Game Awards 2026?</h2></div>'
+    f'<p style="margin-bottom:28px">No. Disney+ is an extra way to watch this year, not the only one. The show still streams free on YouTube and Twitch. Watching on Disney+ needs a Disney+ subscription, and Disney says it is available in North America and selected other markets. Disney also says to expect "major announcements and surprises" from its own upcoming games, but it has not named them.</p>'
     f'<div class="sec-head"><h2>Which game has the most nominations at The Game Awards 2026?</h2><span class="muted">4 or more</span></div>'
     f'<div class="out" style="margin-bottom:12px">{_tga_top_rows}</div>'
     f'<p class="muted" style="margin-bottom:28px">Grand Theft Auto 6 leads with 8. Control Resonant and Resident Evil Requiem have 6 each, and Phantom Blade Zero has 5. Acting nominations count for the actor\'s game. Esports and creator awards are not counted.</p>'
@@ -2309,18 +2408,21 @@ tga_body = (f'<header class="hero"><div class="wrap"><span class="kicker">The Ga
     f'<div class="sec-head"><h2>Which Most Anticipated nominees can I play on my console?</h2></div><div class="out" style="margin-bottom:28px">'
     + "".join(f'<div class="row"><span><a href="{href("platforms/" + _bg_pslug[p] + ".html", 0)}">{e(_bg_plab[p])}</a><br><span class="muted">{e(", ".join(_tga_plat[p]) or "None of them")}</span></span><b>{len(_tga_plat[p])} of {len(_tga_g)}</b></div>' for p in sorted(PLATS, key=lambda q: -len(_tga_plat[q]))) +
     f'</div><div class="sec-head"><h2>Will 2027 games get new release dates at the show?</h2></div>'
-    f'<p>The Game Awards is known for world premieres and release date news, but the show has not said which games will appear. Many 2027 games still have only a season or a year, including '
+    f'<p>The Game Awards is known for world premieres and release date news, but the show has not said which games will appear. Disney has promised announcements from its own games without naming them; some fans hope that means <a href="{href("games/kingdom-hearts-iv.html", 0)}">Kingdom Hearts 4</a> (due late 2027), but nobody has confirmed it. Many 2027 games still have only a season or a year, including '
     + ", ".join(_gname(g) for g in [x for x in GAMES if not x["date"] and x["slug"] in BIG_WHY_SLUGS][:5]) +
     f'. If any of them get a date on the night, we update the <a href="{href("index.html", 0)}">departures board</a> and the <a href="{href("calendar.html", 0)}">2027 calendar</a>.</p>'
     f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
     f'<li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a>, with a shareable top list maker</li>'
     f'<li><a href="{href("games/resident-evil-veronica.html", 0)}">Resident Evil Veronica</a> release date and remake details</li>'
     f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: which nominees share a launch week with other games</li>'
-    f'<li><a href="{href("games/forza-horizon-6.html", 0)}">Forza Horizon 6 on PS5</a>: a nominee with a 2027 release</li></ul></div></section>')
+    f'<li><a href="{href("games/forza-horizon-6.html", 0)}">Forza Horizon 6 on PS5</a>: a nominee with a 2027 release</li>'
+    f'<li><a href="{href("fighting-games-2027.html", 0)}">Fighting games of 2027</a>: what comes after this year\'s Best Fighting Game nominees</li></ul></div></section>')
 tga_faq = [
     ("When is The Game Awards 2026?", "Thursday 10 December 2026, live from the Peacock Theater in Los Angeles."),
-    ("How can I watch The Game Awards 2026?", "It streams free on YouTube and Twitch, and this year also on Disney+ and inside Roblox (Roblox viewers must be 18 or older)."),
-    ("What time does The Game Awards 2026 start?", "The show had not confirmed a start time when we checked. Check thegameawards.com closer to the day."),
+    ("How can I watch The Game Awards 2026?", "It streams free on YouTube and Twitch, and for the first time on Disney+ (for subscribers, in North America and selected other markets). Shacknews also reports a Roblox stream for players 18 and over."),
+    ("What time does The Game Awards 2026 start?", "7:30pm ET / 4:30pm PT on Thursday 10 December 2026. That is 12:30am UK time, 5:30am in Pakistan, 6am in India and 11:30am in Sydney on Friday 11 December."),
+    ("What time is The Game Awards 2026 in the UK?", "12:30am GMT on Friday 11 December 2026 (7:30pm ET on 10 December)."),
+    ("Is The Game Awards 2026 on Disney+?", "Yes, live, for the first time. You need a Disney+ subscription to watch there. It is still free on YouTube and Twitch."),
     ("What are the Most Anticipated Game nominees at The Game Awards 2026?", "Fable, Final Fantasy VII Revelation, God of War Laufey, Resident Evil Veronica and The Witcher 4."),
     ("When do the Most Anticipated nominees come out?", "; ".join(f"{g['title']}: {nice_date(g)}" for g in sorted(_tga_g, key=lambda g: g["date"] or "9999")) + "; The Witcher 4: targeting 2028."),
     ("What are the Game of the Year nominees for 2026?", ", ".join(TGA_GOTY[:-1]) + " and " + TGA_GOTY[-1] + "."),
@@ -2328,8 +2430,8 @@ tga_faq = [
     ("How do I vote for The Game Awards 2026?", "Vote in every category on thegameawards.com until " + TGA_VOTE_END + ". Fans decide 10% of the result and a jury of more than 160 outlets decides 90%."),
     ("Is Forza Horizon 6 nominated at The Game Awards 2026?", "Yes, twice: Best Sports / Racing Game and Innovation in Accessibility. Its PS5 version comes out on " + nice_date(_gbs["forza-horizon-6"]) + "."),
 ]
-page("game-awards-2026.html", "The Game Awards 2026 Nominees: Full List, Most Nominated, How to Vote and Watch | DayOneDrop",
-     "Every Game Awards 2026 nominee by category (GTA 6 leads with 8), a nominee search, how to vote before 9 December, how to watch on 10 December, and when the Most Anticipated games come out.",
+page("game-awards-2026.html", "The Game Awards 2026 Start Time, Disney+ Stream and Nominees",
+     "The Game Awards 2026 starts 7:30pm ET / 4:30pm PT on 10 Dec (12:30am UK). Your local time, Disney+, YouTube and Twitch, and every nominee (GTA 6 leads with 8).",
      tga_body, 0, tga_faq, crumbs=[("Home", DOMAIN + "/"), ("Biggest games of 2027", canon("biggest-games-2027.html")), ("The Game Awards 2026", canon("game-awards-2026.html"))])
 
 # ---------------- ABOUT / PRIVACY / 404 ----------------
@@ -2884,7 +2986,7 @@ page("countdown.html", "Game Release Countdown 2027: Live Timer to Launch Day fo
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "countdown.html", "games-without-release-date-2027.html", "steam-sale-dates.html", "nintendo-direct.html", "ps-plus-monthly-games.html", "epic-free-games.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "new-games-this-week.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "xbox-games-showcase-2027.html", "calendar.html", "later-2027.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "countdown.html", "games-without-release-date-2027.html", "steam-sale-dates.html", "nintendo-direct.html", "ps-plus-monthly-games.html", "epic-free-games.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "new-games-this-week.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "fighting-games-2027.html", "xbox-games-showcase-2027.html", "calendar.html", "later-2027.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)

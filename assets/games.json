@@ -2871,6 +2871,72 @@
      "text": "Delayed from fall 2026 to 2027."
     }
    ]
+  },
+  {
+   "slug": "dragon-ball-xenoverse-3",
+   "title": "Dragon Ball Xenoverse 3",
+   "date": null,
+   "window": "2027",
+   "month": 12,
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC"
+   ],
+   "dev": "Bandai Namco",
+   "genre": "Fighting",
+   "status": "window",
+   "page": false,
+   "about": "The next Dragon Ball Xenoverse, set in a new world in Age 1000 with West City as the hub and original characters by Akira Toriyama. Due in 2027.",
+   "facts": [
+    "Announced by Bandai Namco at Dragon Ball Games Battle Hour on 19-20 April 2026.",
+    "Planned for 2027 on PS5, Xbox Series and Steam. Bandai Namco's European site lists late 2027.",
+    "Set in Age 1000, with West City as the hub. Players join the Great Saiyan Squad."
+   ],
+   "history": [
+    {
+     "when": "Jan 2026",
+     "text": "Bandai Namco teased a Dragon Ball project called Age 1000 for 2027."
+    },
+    {
+     "when": "20 Apr 2026",
+     "text": "Revealed as Dragon Ball Xenoverse 3 for 2027 on PS5, Xbox Series and PC."
+    }
+   ],
+   "sources": "PlayStation Blog (20 Apr 2026), Bandai Namco Europe (19 Apr 2026)"
+  },
+  {
+   "slug": "toshinden-collection",
+   "title": "Toshinden Collection",
+   "date": null,
+   "window": "2027",
+   "month": 12,
+   "platforms": [
+    "PS5",
+    "Switch 2",
+    "PC"
+   ],
+   "dev": "Edia",
+   "genre": "Fighting collection",
+   "status": "window",
+   "page": false,
+   "about": "The first three PS1 Battle Arena Toshinden 3D fighting games in one collection, with same-screen multiplayer. Due worldwide in 2027.",
+   "facts": [
+    "Collects the first three Battle Arena Toshinden games, first released by Takara on PS1.",
+    "Coming in 2027 worldwide on PS5, Switch 2 and PC (Steam).",
+    "Announced by Edia at Tokyo Game Show 2026."
+   ],
+   "history": [
+    {
+     "when": "Oct 2025",
+     "text": "Edia confirmed a re-release of the first three Toshinden games."
+    },
+    {
+     "when": "17 Sep 2026",
+     "text": "Announced as Toshinden Collection for 2027 on PS5, Switch 2 and PC."
+    }
+   ],
+   "sources": "Gematsu (17 Sep 2026), PSU, VGC (27 Oct 2025)"
   }
  ]
 }
