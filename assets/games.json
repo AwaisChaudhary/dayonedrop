@@ -41,6 +41,37 @@
    "about": "A survival horror game in the BrokenLore series."
   },
   {
+   "slug": "emberville",
+   "title": "Emberville",
+   "date": "2027-01-07",
+   "window": "",
+   "month": 1,
+   "platforms": [
+    "PC"
+   ],
+   "dev": "Cygnus Cross",
+   "genre": "Action RPG",
+   "status": "delayed",
+   "page": false,
+   "about": "Cygnus Cross's pixel-art action RPG with farming, crafting and town building, starting Steam Early Access on 7 January 2027 after a last-minute delay.",
+   "facts": [
+    "Pixel-art action RPG from independent studio Cygnus Cross, who also publish it.",
+    "Starts Early Access on PC (Steam) on 7 January 2027.",
+    "Delayed one day before its planned 27 October 2026 launch to act on Steam Next Fest demo feedback.",
+    "The January build adds content first planned for the first big post-launch update."
+   ],
+   "history": [
+    {
+     "when": "Jul 2026",
+     "text": "Early Access date set for 27 October 2026."
+    },
+    {
+     "when": "Oct 2026",
+     "text": "Delayed from 27 October 2026 to 7 January 2027."
+    }
+   ]
+  },
+  {
    "slug": "danganronpa-2x2",
    "title": "Danganronpa 2x2",
    "platforms": [
@@ -350,6 +381,23 @@
    ]
   },
   {
+   "slug": "usual-june",
+   "title": "Usual June",
+   "platforms": [
+    "PC"
+   ],
+   "dev": "",
+   "genre": "Action",
+   "page": false,
+   "facts": [],
+   "history": [],
+   "date": "2027-01-20",
+   "window": "",
+   "month": 1,
+   "status": "dated",
+   "about": "An action game from indie publisher Finji, dated for PC."
+  },
+  {
    "slug": "arizona-sunshine",
    "title": "Arizona Sunshine",
    "platforms": [
@@ -433,6 +481,23 @@
    "about": "The PS5 version of the open-world racing game set in Japan, already out on Xbox and PC."
   },
   {
+   "slug": "everything-is-crab",
+   "title": "Everything is Crab",
+   "platforms": [
+    "Switch 2"
+   ],
+   "dev": "",
+   "genre": "Roguelite",
+   "page": false,
+   "facts": [],
+   "history": [],
+   "date": "2027-01-26",
+   "window": "",
+   "month": 1,
+   "status": "dated",
+   "about": "An evolution roguelite where every path leads to becoming a crab, coming to Switch 2."
+  },
+  {
    "slug": "caladrius-2-dark-element",
    "title": "Caladrius 2/Dark Element",
    "date": "2027-01-27",
@@ -469,6 +534,24 @@
    "lastgen": [
     "Switch"
    ]
+  },
+  {
+   "slug": "prison-of-husks",
+   "title": "Prison of Husks",
+   "platforms": [
+    "PS5",
+    "PC"
+   ],
+   "dev": "",
+   "genre": "",
+   "page": false,
+   "facts": [],
+   "history": [],
+   "date": "2027-01-27",
+   "window": "",
+   "month": 1,
+   "status": "dated",
+   "about": "Game with a confirmed release date in 2027."
   },
   {
    "slug": "metroid-ravenous",
@@ -1438,6 +1521,26 @@
    "history": []
   },
   {
+   "slug": "my-arms-are-longer-now",
+   "title": "My Arms Are Longer Now",
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "Switch 2",
+    "PC"
+   ],
+   "dev": "",
+   "genre": "",
+   "page": false,
+   "facts": [],
+   "history": [],
+   "date": "2027-03-11",
+   "window": "",
+   "month": 3,
+   "status": "dated",
+   "about": "Game with a confirmed release date in 2027."
+  },
+  {
    "slug": "007-first-light",
    "title": "007 First Light",
    "platforms": [
@@ -1574,6 +1677,23 @@
      "text": "Delayed from fall 2026 to 25 March 2027."
     }
    ]
+  },
+  {
+   "slug": "super-battle-golf",
+   "title": "Super Battle Golf",
+   "platforms": [
+    "Switch 2"
+   ],
+   "dev": "",
+   "genre": "Sports",
+   "page": false,
+   "facts": [],
+   "history": [],
+   "date": "2027-03-25",
+   "window": "",
+   "month": 3,
+   "status": "dated",
+   "about": "The chaotic multiplayer golf game comes to Switch 2."
   },
   {
    "page": false,
@@ -2721,93 +2841,36 @@
    ]
   },
   {
-   "slug": "usual-june",
-   "title": "Usual June",
+   "slug": "blighted",
+   "title": "Blighted",
+   "date": null,
+   "window": "2027",
+   "month": 12,
    "platforms": [
-    "PC"
-   ],
-   "dev": "",
-   "genre": "Action",
-   "page": false,
-   "facts": [],
-   "history": [],
-   "date": "2027-01-20",
-   "window": "",
-   "month": 1,
-   "status": "dated",
-   "about": "An action game from indie publisher Finji, dated for PC."
-  },
-  {
-   "slug": "everything-is-crab",
-   "title": "Everything is Crab",
-   "platforms": [
-    "Switch 2"
-   ],
-   "dev": "",
-   "genre": "Roguelite",
-   "page": false,
-   "facts": [],
-   "history": [],
-   "date": "2027-01-26",
-   "window": "",
-   "month": 1,
-   "status": "dated",
-   "about": "An evolution roguelite where every path leads to becoming a crab, coming to Switch 2."
-  },
-  {
-   "slug": "prison-of-husks",
-   "title": "Prison of Husks",
-   "platforms": [
-    "PS5",
-    "PC"
-   ],
-   "dev": "",
-   "genre": "",
-   "page": false,
-   "facts": [],
-   "history": [],
-   "date": "2027-01-27",
-   "window": "",
-   "month": 1,
-   "status": "dated",
-   "about": "Game with a confirmed release date in 2027."
-  },
-  {
-   "slug": "my-arms-are-longer-now",
-   "title": "My Arms Are Longer Now",
-   "platforms": [
-    "PS5",
-    "Xbox Series X|S",
     "Switch 2",
     "PC"
    ],
-   "dev": "",
-   "genre": "",
+   "dev": "DrinkBox Studios",
+   "genre": "Metroidvania action RPG",
+   "status": "delayed",
    "page": false,
-   "facts": [],
-   "history": [],
-   "date": "2027-03-11",
-   "window": "",
-   "month": 3,
-   "status": "dated",
-   "about": "Game with a confirmed release date in 2027."
-  },
-  {
-   "slug": "super-battle-golf",
-   "title": "Super Battle Golf",
-   "platforms": [
-    "Switch 2"
+   "about": "DrinkBox Studios' Metroidvania action RPG from the makers of Guacamelee!, playable solo or in co-op, now due in 2027 on Switch 2 and PC.",
+   "facts": [
+    "Developed and published by DrinkBox Studios, the team behind Guacamelee!.",
+    "Coming to Nintendo Switch 2 and PC (Steam).",
+    "Metroidvania action RPG that can be played alone or in co-op.",
+    "Delayed from fall 2026 to 2027; no exact date yet."
    ],
-   "dev": "",
-   "genre": "Sports",
-   "page": false,
-   "facts": [],
-   "history": [],
-   "date": "2027-03-25",
-   "window": "",
-   "month": 3,
-   "status": "dated",
-   "about": "The chaotic multiplayer golf game comes to Switch 2."
+   "history": [
+    {
+     "when": "Mar 2026",
+     "text": "Planned for fall 2026 on Switch 2 and PC."
+    },
+    {
+     "when": "Sep 2026",
+     "text": "Delayed from fall 2026 to 2027."
+    }
+   ]
   }
  ]
 }
