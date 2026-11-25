@@ -1,3 +1,13 @@
+## TOP PRIORITY: WIDER CATEGORIES (Awais 26 Nov 01:02: "DayOneDrop doesn't mean games only or PS5 only, we have plenty of room to add more stuff")
+DayOneDrop = "what's coming out and when". Build release-date hubs beyond console games, each with a calendar/table, countdowns and FAQ (facts from studios/platforms + 2 trusted outlets):
+W1. OPEN /movies-2027: upcoming movies 2027 ("upcoming movies 2027" 10k-100k, +900% YoY): dated big releases by month, where to watch (cinema/streaming), countdowns; then /movies-december-2026 for this month.
+W2. OPEN /new-tv-shows ("new tv shows" 100k-1M): shows premiering this month and next on Netflix, Disney+, Prime Video, HBO Max, Apple TV+; season dates for big returning shows.
+W3. OPEN /anime-release-dates (winter 2027 season, 1k-10k) and /new-on-netflix-this-week style pages ONLY if they can be kept fresh by the data runs.
+W4. OPEN game-adjacent: /nintendo-direct (100k-1M), /game-pass-this-month, /steam-sale-dates, /mobile-games-2027, /vr-games-2027, /board-games-2027 ("tabletop release"), /game-awards-2026 (11 Dec: nominees, how to watch, time in your zone).
+W5. OPEN tech releases people track: /gaming-hardware-2027 (consoles, handhelds, GPUs with announced dates), /iphone-release-date style pages only with official/2-source facts.
+W6. OPEN tools across categories: "release calendar" with filters (games / movies / TV), .ics calendar export, "what's out this weekend" page.
+Weekly (Mondays) the demand radar checks Keyword Planner volumes for new categories; build those with 10k+ searches first.
+
 ## DEMAND RUN 26 Nov 2026 (scheduled, demand-first)
 Evidence: GI + GamesRadar both keep "TBC 2027 / no date" lists of ~150 titles (competitor gap 3, 25 Nov); "<game> countdown" / "how many days until <game>" is a standing query pattern for every dated game (our game pages have timers but no single shareable tool); "games coming out december 2026" (radar R1) peaks now, a week before December.
 N1. DONE 26 Nov https://getdayonedrop.com/games-without-release-date-2027 : every 2027 game with no exact day, console + season filter, add to list, "when could they get a date" table.
