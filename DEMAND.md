@@ -1,7 +1,7 @@
 ## SEO PLAYBOOK — standing rules for every run (Awais 26 Nov 01:35: "do SEO like the best SEO guy in the world for all sites")
 
 ## EVENING RADAR 26 Nov 18:45 PKT (Google autocomplete US + Trends past 24h)
-- R1 OPEN 'switch 2 games black friday deals' / 'switch 2 games on sale' (autocomplete #1/#3): time-limited H2 on the Switch 2 page linking official store sales (no prices unless 2 sources), remove after Cyber Monday.
+- R1 DONE 26 Nov (H2 on /platforms/switch-2, auto-drops 5 Dec) 'switch 2 games black friday deals' / 'switch 2 games on sale' (autocomplete #1/#3): time-limited H2 on the Switch 2 page linking official store sales (no prices unless 2 sources), remove after Cyber Monday.
 - R2 OPEN 'new movies to stream / in theaters now' (#1/#4) supports the E1 movies category; start with 'movies coming out 2027'.
 
 ## NEW CATEGORY EXPANSION (Awais 26 Nov: when traffic plateaus, open new categories backed by Trends/searches; don't wait for input)
@@ -17,12 +17,19 @@ Tools in this repo: `seo_post.py` (runs at the end of build.py: sitemap = every 
 5. Links: only real editorial links via outreach batches Awais approves; build "linkable assets" (original data, free tools, maps) and list pitch targets in DEMAND for approval.
 6. Monthly: run seo_audit.py on the whole site and fix broken links, orphans, duplicate titles/descriptions, missing schema.
 
+## DEMAND RUN 26 Nov 2026 (scheduled, seventh pass, night)
+Evidence: "movies coming out january 2027" SERP = only BOM / The Numbers / Movie Insider calendars (no editorial page = gap); "games like hollow knight silksong" / "upcoming metroidvania" lists on GamesRadar+, ComicBook (x3), ScreenRant, Inverse, G2A; "switch 2 games black friday" (R1).
+N27. DONE 26 Nov https://getdayonedrop.com/movies-january-2027 (N26 next step): 6 two-schedule films, filter, countdown.
+N28. DONE 26 Nov https://getdayonedrop.com/games-like-hollow-knight : 11 picks + 2027 metroidvanias, platform/taste filter.
+N29. DONE 26 Nov R1 as an H2 on https://getdayonedrop.com/platforms/switch-2 (auto-removed after 5 Dec).
+N30. OPEN /movies-february-2027 (Ice Age 5 Feb, Narnia 12 Feb already in MOVIES; check The Numbers + BOM for a 3rd+); "games like Zelda" / "games like Stardew Valley" (Witchbrook, Grave Seasons on board) next in the games-like series.
+
 ## DEMAND RUN 26 Nov 2026 (scheduled, sixth pass, demand-first; evening)
 Evidence: "movies coming out december 2026" (N11 open; Box Office Mojo / The Numbers / GamesRadar+ December calendars all live; TheWrap + Bleeding Cool on Jumanji 3 moving to 25 Dec; "Dunesday" 18 Dec coverage). "winter 2027 anime" / "anime 2027 upcoming" (E2 open; winter 2027 season lists now up on Crank-in, Anime Eiga, Anime Corner, ComicBook.com 'returning anime winter 2027', GamesRadar+ anime schedule, giga.de, animotaku.fr).
 N23. DONE 26 Nov https://getdayonedrop.com/movies-december-2026 (N11): 10 US cinema releases (2+ schedules), type + week filter (mv-tool, stale saved filters now reset), Doomsday/Dune countdown, Christmas Day H2, "moved out of December" table (Shrek 5, Ice Age, Narnia). Refreshed /movies-2027 with a December 2026 H2 + FAQ.
 N24. DONE 26 Nov https://getdayonedrop.com/winter-2027-anime (E2 hub): 21 shows in 2+ season lists, new/returning + Netflix filter (tv-tool), Sakamoto Days S2 / One-Punch Man S3P2 / Sekiro anime / The One Piece H2s.
 N25. OPEN winter 2027 anime upkeep: add exact days + simulcast service (Crunchyroll/Netflix/HIDIVE usually announce in December) once 2 sources agree; then /spring-2027-anime (April) when season lists appear (~Feb). Single-source winter titles left out: Blue Eye Samurai S2 (GR), Bakemonogatari-series 'Karen Ogre' (CI), Shaft etc.
-N26. OPEN December 2026 streaming movies (In a Holidaze 2 Dec Netflix, The Man with the Bag 2 Dec Prime Video, Bad Day 11 Dec, Give Me Some Sugah 16 Dec, Ink, Ray Gunn) need a 2nd schedule before joining MV_DEC. /movies-january-2027 next (Children of Blood and Bone 15 Jan, Beekeeper 2 15 Jan already 2-source).
+N26. PARTLY DONE (/movies-january-2027 live 26 Nov) December 2026 streaming movies (In a Holidaze 2 Dec Netflix, The Man with the Bag 2 Dec Prime Video, Bad Day 11 Dec, Give Me Some Sugah 16 Dec, Ink, Ray Gunn) need a 2nd schedule before joining MV_DEC. /movies-january-2027 next (Children of Blood and Bone 15 Jan, Beekeeper 2 15 Jan already 2-source).
 
 ## DEMAND RUN 26 Nov 2026 (scheduled, fifth pass, demand-first; Thanksgiving, Black Friday tomorrow)
 Evidence: Black Friday week: "ps store black friday sale end date", "xbox black friday sale 2026", "nintendo eshop black friday 2026", "steam black friday sale", "epic black friday sale" (dozens of fresh explainers 13-25 Nov: Push Square, Pure Xbox, Insider Gaming, Windows Report, My Nintendo News, Digital Citizen, Beebom, games.gg). "new tv shows january 2027" / "midseason 2027 premiere dates": TVLine (ABC 6 Nov, Fox 11 Nov), TV Guide (13 Nov), TV Insider, Laughing Place all published midseason schedules. Horizon Steel Frontiers "release date": GamesRadar, GamingBolt, PSU, Wccftech say first half of 2027.

@@ -254,7 +254,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("new-games-this-week.html", depth)}">New games this week</a></li><li><a href="{href("later-2027.html", depth)}">Games later in 2027 (May–Dec)</a></li><li><a href="{href("games-without-release-date-2027.html", depth)}">2027 games with no release date</a></li><li><a href="{href("countdown.html", depth)}">Game release countdown</a></li><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("gta-6-pc-release-date.html", depth)}">GTA 6 PC release date</a></li><li><a href="{href("games-like-elden-ring.html", depth)}">Games like Elden Ring</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("fighting-games-2027.html", depth)}">Fighting games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/state-of-decay-3.html", depth)}">State of Decay 3</a></li><li><a href="{href("games/lords-of-the-fallen-ii.html", depth)}">Lords of the Fallen 2</a></li><li><a href="{href("games/squadron-42.html", depth)}">Squadron 42</a></li><li><a href="{href("games/ananta.html", depth)}">Ananta (free-to-play)</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("ps-plus-monthly-games.html", depth)}">PS Plus monthly games</a></li><li><a href="{href("epic-free-games.html", depth)}">Epic free games this week</a></li><li><a href="{href("steam-sale-dates.html", depth)}">Steam sale dates 2026-2027</a></li><li><a href="{href("black-friday-game-sales-2026.html", depth)}">Black Friday 2026 game sales</a></li><li><a href="{href("movies-2027.html", depth)}">Upcoming movies 2027</a></li><li><a href="{href("new-tv-shows-december-2026.html", depth)}">New TV shows December 2026</a></li><li><a href="{href("new-tv-shows-january-2027.html", depth)}">New TV shows January 2027</a></li><li><a href="{href("movies-december-2026.html", depth)}">Movies coming out in December 2026</a></li><li><a href="{href("winter-2027-anime.html", depth)}">Winter 2027 anime</a></li><li><a href="{href("nintendo-direct.html", depth)}">Next Nintendo Direct</a></li><li><a href="{href("xbox-games-showcase-2027.html", depth)}">Xbox Games Showcase 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("new-games-this-week.html", depth)}">New games this week</a></li><li><a href="{href("later-2027.html", depth)}">Games later in 2027 (May–Dec)</a></li><li><a href="{href("games-without-release-date-2027.html", depth)}">2027 games with no release date</a></li><li><a href="{href("countdown.html", depth)}">Game release countdown</a></li><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("gta-6-pc-release-date.html", depth)}">GTA 6 PC release date</a></li><li><a href="{href("games-like-elden-ring.html", depth)}">Games like Elden Ring</a></li><li><a href="{href("games-like-hollow-knight.html", depth)}">Games like Hollow Knight</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("fighting-games-2027.html", depth)}">Fighting games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/state-of-decay-3.html", depth)}">State of Decay 3</a></li><li><a href="{href("games/lords-of-the-fallen-ii.html", depth)}">Lords of the Fallen 2</a></li><li><a href="{href("games/squadron-42.html", depth)}">Squadron 42</a></li><li><a href="{href("games/ananta.html", depth)}">Ananta (free-to-play)</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("ps-plus-monthly-games.html", depth)}">PS Plus monthly games</a></li><li><a href="{href("epic-free-games.html", depth)}">Epic free games this week</a></li><li><a href="{href("steam-sale-dates.html", depth)}">Steam sale dates 2026-2027</a></li><li><a href="{href("black-friday-game-sales-2026.html", depth)}">Black Friday 2026 game sales</a></li><li><a href="{href("movies-2027.html", depth)}">Upcoming movies 2027</a></li><li><a href="{href("new-tv-shows-december-2026.html", depth)}">New TV shows December 2026</a></li><li><a href="{href("new-tv-shows-january-2027.html", depth)}">New TV shows January 2027</a></li><li><a href="{href("movies-december-2026.html", depth)}">Movies coming out in December 2026</a></li><li><a href="{href("winter-2027-anime.html", depth)}">Winter 2027 anime</a></li><li><a href="{href("movies-january-2027.html", depth)}">Movies coming out in January 2027</a></li><li><a href="{href("nintendo-direct.html", depth)}">Next Nintendo Direct</a></li><li><a href="{href("xbox-games-showcase-2027.html", depth)}">Xbox Games Showcase 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Every date is checked against the publisher or platform holder plus a second trusted source (<a href="{href("about.html", depth)}#editorial">editorial policy</a>). Spotted an error? Email <a href="mailto:awaiskaramat@hotmail.com">awaiskaramat@hotmail.com</a>. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -541,6 +541,7 @@ for g in featured:
     if g["slug"] in ("fable", "final-fantasy-vii-revelation", "god-of-war-laufey", "resident-evil-veronica"):  # TGA 2026 Most Anticipated nominees
         rel.insert(1, ("game-awards-2026.html", f"{short} at The Game Awards 2026: every Most Anticipated nominee"))
     if g["slug"] in ("wo-long-2", "lords-of-the-fallen-ii", "the-duskbloods"): rel.insert(1, ("games-like-elden-ring.html", "Games like Elden Ring and every 2027 soulslike"))
+    if g["slug"] in ("metroid-ravenous", "bloodstained-the-scarlet-engagement", "blighted", "mariachi-legends"): rel.insert(1, ("games-like-hollow-knight.html", "Games like Hollow Knight and every 2027 metroidvania"))
     if g["slug"] in GP_TRACKED_ALL: rel.append(("game-pass-2027.html", "Every 2027 Xbox Game Pass game"))
     if "RPG" in g["genre"]: rel.append(("rpgs-2027.html", "Every RPG coming in 2027"))
     if g["status"] == "delayed": rel.append(("delayed-games-2027.html", "Every delayed game of 2027"))
@@ -599,6 +600,11 @@ def _plat_extra(plat, long, games, excl):
     if plat == "PC":
         out += (f'<div class="sec-head"><h2>When is the next Steam sale?</h2></div>'
                 f'<p>The Steam Winter Sale 2026 runs 17 December 2026 to 4 January 2027, then the Spring Sale is 18 to 25 March and the Summer Sale 24 June to 8 July 2027. See <a href="{href("steam-sale-dates.html", 1)}">every Steam sale date</a> with a live countdown and the 2027 PC games that launch during a sale.</p>')
+    if plat == "Switch 2" and datetime.date.today() <= datetime.date(2026, 12, 5):  # time-limited (DEMAND R1 'switch 2 games black friday deals'); drops out after 5 Dec
+        out += (f'<div class="sec-head"><h2>Are Switch 2 games on sale for Black Friday?</h2></div>'
+                f'<p>Yes. In the US, Nintendo\'s Black Friday eShop sale on Switch and Switch 2 games runs until 2 December 2026, and the Switch 2 + Mario Kart World bundle is $50 off ($499) at retailers until 5 December. '
+                f'In the UK and Europe the main eShop sale ends on 29 November at 23:59, with a second batch of games on sale until 2 December. Discounts vary by game and change daily, so check the eShop. '
+                f'See <a href="{href("black-friday-game-sales-2026.html", 1)}">Black Friday 2026 game sales</a> for live "ends in" timers.</p>')
     if plat == "Switch 2":
         out += (f'<div class="sec-head"><h2>When is the next Nintendo Direct?</h2></div>'
                 f'<p>Nintendo has not announced it yet; the last full Direct was on 9 September 2026. See <a href="{href("nintendo-direct.html", 1)}">Nintendo Direct</a> for every 2026 show and the Switch 2 games still waiting for a date.</p>')
@@ -1173,6 +1179,7 @@ gen_body = (f'<header class="hero"><div class="wrap"><span class="kicker">By gen
             f'<li><a href="{href("xbox-games-showcase-2027.html", 0)}">Xbox Games Showcase 2027</a>: which Xbox games still need a date</li>'
             f'<li><a href="{href("rpgs-2027.html", 0)}">Every RPG coming in 2027</a>, with action RPG and JRPG filters</li>'
             f'<li><a href="{href("games-like-elden-ring.html", 0)}">Games like Elden Ring</a>: soulslikes out now and in 2027</li>'
+            f'<li><a href="{href("games-like-hollow-knight.html", 0)}">Games like Hollow Knight</a>: metroidvanias out now and in 2027</li>'
             f'<li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a> and a shareable top list maker</li>'
             f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: do your picks land the same week?</li>'
             f'<li><a href="{href("backlog-planner-2027.html", 0)}">2027 backlog planner</a>: finish one before the next arrives</li></ul></div></section>')
@@ -1577,6 +1584,8 @@ tools = f'''<header class="hero"><div class="wrap"><span class="kicker">Tools</s
 <li><a href="{href("new-tv-shows-december-2026.html", 0)}">New TV shows December 2026</a>: every premiere with a streaming-service filter</li>
 <li><a href="{href("new-tv-shows-january-2027.html", 0)}">New TV shows January 2027</a>: ABC and Fox midseason premieres with times and reminders</li>
 <li><a href="{href("movies-december-2026.html", 0)}">Movies coming out in December 2026</a>: filter by type and week, countdown to Avengers: Doomsday</li>
+<li><a href="{href("movies-january-2027.html", 0)}">Movies coming out in January 2027</a>: Children of Blood and Bone, The Beekeeper 2, Animal Friends</li>
+<li><a href="{href("games-like-hollow-knight.html", 0)}">Games like Hollow Knight</a>: metroidvania finder by platform, plus the 2027 metroidvanias</li>
 <li><a href="{href("winter-2027-anime.html", 0)}">Winter 2027 anime</a>: new shows and new seasons, Netflix filter</li>
 <li><a href="{href("black-friday-game-sales-2026.html", 0)}">Black Friday 2026 game sales</a>: live "ends in" timers for PS Store, Xbox, Nintendo and Epic</li>
 <li><a href="{href("gta-6-pc-release-date.html", 0)}">GTA 6 PC release date estimator</a>: when GTA 6 could reach PC, based on Rockstar's past games</li>
@@ -3132,6 +3141,7 @@ _mv_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Movies
             f'<p>Avengers: Doomsday and Dune: Part Three both open on 18 December 2026, and Jumanji 3 and Werwulf on Christmas Day. See every film, with a week filter, on <a href="{href("movies-december-2026.html", 0)}">movies coming out in December 2026</a>.</p>'
             f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
             f'<li><a href="{href("movies-december-2026.html", 0)}">Movies coming out in December 2026</a>: Avengers: Doomsday, Dune: Part Three, Jumanji 3</li>'
+            f'<li><a href="{href("movies-january-2027.html", 0)}">Movies coming out in January 2027</a>: Children of Blood and Bone, Animal Friends</li>'
             f'<li><a href="{href("winter-2027-anime.html", 0)}">Winter 2027 anime</a>: Sakamoto Days S2, One-Punch Man, The One Piece</li>'
             f'<li><a href="{href("new-tv-shows-december-2026.html", 0)}">New TV shows in December 2026</a>: Harry Potter, Emily in Paris and more</li>'
             f'<li><a href="{href("index.html", 0)}">2027 game release dates</a>: the live launch board</li>'
@@ -3219,6 +3229,7 @@ er_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Games l
            f'<li><a href="{href("games/wo-long-2.html", 0)}">Wo Long 2 release date</a></li>'
            f'<li><a href="{href("rpgs-2027.html", 0)}">Every RPG of 2027</a></li>'
            f'<li><a href="{href("games-like-gta-6.html", 0)}">Games like GTA 6</a></li>'
+           f'<li><a href="{href("games-like-hollow-knight.html", 0)}">Games like Hollow Knight and Silksong</a>: metroidvanias now and in 2027</li>'
            f'<li><a href="{href("winter-2027-anime.html", 0)}">Winter 2027 anime</a>, including the Sekiro anime, Sekiro: No Defeat</li>'
            f'<li><a href="{href("countdown.html", 0)}">Game release countdown</a></li></ul></div></section>')
 er_faq = [("What games are like Elden Ring?", "Dark Souls III, Sekiro, Bloodborne, Elden Ring Nightreign, Lies of P, Black Myth: Wukong, Lords of the Fallen, Wo Long: Fallen Dynasty, Remnant II and Hollow Knight: Silksong."),
@@ -3639,6 +3650,7 @@ _mvd_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Movie
              f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
              f'<li><a href="{href("movies-2027.html", 0)}">Upcoming movies 2027</a>: Zelda, Shrek 5, Avengers: Secret Wars</li>'
              f'<li><a href="{href("new-tv-shows-december-2026.html", 0)}">New TV shows December 2026</a>: Harry Potter, Emily in Paris</li>'
+             f'<li><a href="{href("movies-january-2027.html", 0)}">Movies coming out in January 2027</a>: Children of Blood and Bone, Animal Friends</li>'
              f'<li><a href="{href("winter-2027-anime.html", 0)}">Winter 2027 anime</a>: every January premiere</li>'
              f'<li><a href="{href("game-awards-2026.html", 0)}">The Game Awards 2026</a>: start time in your time zone</li></ul></div></section>')
 mvd_faq = [("What movies are coming out in December 2026?", _mvd_quick),
@@ -3728,6 +3740,7 @@ _an_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Anime 
             f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
             f'<li><a href="{href("new-tv-shows-january-2027.html", 0)}">New TV shows January 2027</a>: premiere dates and times</li>'
             f'<li><a href="{href("movies-december-2026.html", 0)}">Movies coming out in December 2026</a></li>'
+            f'<li><a href="{href("movies-january-2027.html", 0)}">Movies coming out in January 2027</a>: Children of Blood and Bone, Animal Friends</li>'
             f'<li><a href="{href("months/january-2027.html", 0)}">Games coming out in January 2027</a></li>'
             f'<li><a href="{href("countdown.html", 0)}">Release countdown</a> for any dated 2027 game</li></ul></div></section>')
 an_faq = [("What anime is coming out in winter 2027?", _an_quick),
@@ -3740,11 +3753,166 @@ page("winter-2027-anime.html", "Winter 2027 Anime: Every January 2027 Premiere |
      _an_body, 0, an_faq, crumbs=[("Home", DOMAIN + "/"), ("Winter 2027 anime", canon("winter-2027-anime.html"))])
 
 
+# ---------------- MOVIES JANUARY 2027 (26 Nov 2026, DEMAND N26 "movies coming out january 2027") ----------------
+# US dates checked 26 Nov 2026: The Numbers 2027 schedule + Box Office Mojo calendars (2027-01-01/15/22/29) agree on each date below.
+# Animal Friends 22 Jan also TheWrap ("pushed back 7 months to Jan 2027"); The Rescue = Brandon Sklenar western (TheWrap trailer + release-date story).
+# Karoshi: Lionsgate 29 Jan on both, but wide (The Numbers) vs limited (BOM): labelled. Angry Birds 3 shows on BOM 29 Jan but opens 23 Dec 2026 per MV_DEC: left out.
+# One schedule only (left out): Bunker, River, Fing!, Slayground, Witch on the Holy Night, Drag, Lords of War, The Third Parent, Pendulum, Cloud Girl.
+MV_JAN = [  # (title, date, studio, kind, note, where, week)
+    ("Children of Blood and Bone", "2027-01-15", "Paramount", "action", "Fantasy epic from Tomi Adeyemi's novel, directed by Gina Prince-Bythewood, with Viola Davis. Also in IMAX.", "Cinemas and IMAX", 3),
+    ("The Beekeeper 2", "2027-01-15", "Amazon MGM Studios", "action", "Jason Statham's action sequel to The Beekeeper (2024).", "Cinemas", 3),
+    ("Animal Friends", "2027-01-22", "Warner Bros.", "comedy", "Ryan Reynolds and Jason Momoa in an R-rated comedy that mixes live action and animation. Moved from June 2026.", "Cinemas", 4),
+    ("Air Bud Returns", "2027-01-22", "Cineverse", "family", "A new Air Bud film about the basketball-playing golden retriever.", "Cinemas", 4),
+    ("The Rescue", "2027-01-29", "Paramount", "action", "A modern western starring Brandon Sklenar (1923, It Ends with Us).", "Cinemas", 5),
+    ("Karoshi", "2027-01-29", "Lionsgate", "drama", "Lionsgate release. The schedules differ on size: The Numbers says wide, Box Office Mojo says limited.", "Cinemas", 5),
+]
+MVJ_KIND = [("action", "Action and fantasy"), ("comedy", "Comedy"), ("family", "Family"), ("drama", "Drama and thriller")]
+_MVJK = dict(MVJ_KIND)
+MVJ_WEEKS = [(3, "15 Jan"), (4, "22 Jan"), (5, "29 Jan")]
+def _mvj_gcal(t, d):
+    a = d.replace("-", ""); b = (datetime.date.fromisoformat(d) + datetime.timedelta(days=1)).isoformat().replace("-", "")
+    return "https://calendar.google.com/calendar/render?action=TEMPLATE&text=" + _qp(t + " in cinemas") + f"&dates={a}/{b}&details=" + _qp("US release date via getdayonedrop.com/movies-january-2027")
+def _mvjrow(m):
+    t, d, st, k, note, wh, wk = m
+    return (f'<div class="row" data-mk="{k}" data-mm="{wk}"><span><strong>{e(t)}</strong>'
+            f'<br><span class="muted">{e(note)}</span><br><span class="muted">{e(st)} · {e(_MVJK[k])} · {e(wh)} · '
+            f'<a href="{e(_mvj_gcal(t, d))}" rel="nofollow noopener" target="_blank">Add to Google Calendar</a></span></span><b>{e(_mv_nice(d))}</b></div>')
+_mvj_cb = MV_JAN[0]
+_mvj_jan_games = [g for g in GAMES if g["date"] and "2027-01-01" <= g["date"] <= "2027-01-31"]
+_mvj_feb = [m for m in MOVIES if m[1].startswith("2027-02")]
+_mvj_quick = ("The biggest movies coming out in January 2027 are Children of Blood and Bone and The Beekeeper 2, both on 15 January. "
+              "Then Animal Friends (Ryan Reynolds and Jason Momoa) and Air Bud Returns on 22 January, and The Rescue and Karoshi on 29 January. "
+              f"We list {len(MV_JAN)} US cinema releases that two release schedules date the same; no big film is dated for the first two weekends.")
+_mvj_chips = ('<div class="chips" role="group" aria-label="Type"><button class="chip" type="button" data-mv-k="" aria-pressed="true">All movies</button>'
+              + "".join(f'<button class="chip" type="button" data-mv-k="{k}" aria-pressed="false">{e(n)}</button>' for k, n in MVJ_KIND) + '</div>'
+              '<div class="chips" role="group" aria-label="Week" style="margin-top:8px"><button class="chip" type="button" data-mv-m="" aria-pressed="true">Any week</button>'
+              + "".join(f'<button class="chip" type="button" data-mv-m="{w}" aria-pressed="false">{e(l)}</button>' for w, l in MVJ_WEEKS) + '</div>')
+_mvj_tbl = ('<div style="overflow-x:auto"><table class="gen-table" style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr><th style="text-align:left;padding:6px">Friday</th><th style="text-align:left;padding:6px">Movies opening</th></tr></thead><tbody>'
+            + "".join(f'<tr><td style="padding:6px;border-top:1px solid var(--rule)" class="mono">{e(d)}</td><td style="padding:6px;border-top:1px solid var(--rule)">{e(", ".join(m[0] for m in MV_JAN if m[1] == iso) or "No big release dated")}</td></tr>'
+                      for d, iso in [("1 Jan", "2027-01-01"), ("8 Jan", "2027-01-08"), ("15 Jan", "2027-01-15"), ("22 Jan", "2027-01-22"), ("29 Jan", "2027-01-29")])
+            + '</tbody></table></div>')
+_mvj_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Movies · January 2027</span>'
+             f'<h1>Movies coming out in January 2027:<br><span class="amber">every cinema release date.</span></h1>'
+             f'<p class="lead">Children of Blood and Bone, The Beekeeper 2, Animal Friends and every other January 2027 cinema release, with a type and week filter, a countdown and a calendar reminder for each film.</p>'
+             f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · {len(MV_JAN)} movies · US dates that two release schedules agree on</p></div></header>'
+             f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_mvj_quick)}</span></div></div>'
+             f'<div class="tool" id="mv-tool"><h2 style="font-size:1.5rem;margin-top:0">What should I see at the cinema in January?</h2>'
+             f'<p class="muted">Pick a type and a week. The list below updates and your choice is remembered on this device.</p>{_mvj_chips}'
+             f'<p class="mono amber" id="mv-count" aria-live="polite" style="margin:12px 0 0">{len(MV_JAN)} movies</p></div>'
+             + _mvcd(_mvj_cb, "Countdown to Children of Blood and Bone and The Beekeeper 2") + '</div></section>'
+             + AD.format("mvj-mid") +
+             f'<section><div class="wrap"><div class="sec-head"><h2>What movies are coming out in January 2027?</h2><span class="muted">{len(MV_JAN)} in cinemas</span></div>'
+             f'<p class="muted">In release order, US dates. UK dates can be a week or two different; check your local cinema.</p>'
+             f'<div class="out" id="mv-list" style="margin-bottom:10px">{"".join(_mvjrow(m) for m in MV_JAN)}</div><p class="empty" id="mv-none" hidden>Nothing matches. Try "All movies" and "Any week".</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>When does Children of Blood and Bone come out?</h2></div>'
+             f'<p>Friday 15 January 2027 in US cinemas, including IMAX, from Paramount. It adapts Tomi Adeyemi\'s 2018 young adult fantasy novel. Gina Prince-Bythewood (The Woman King) directs and Viola Davis is in the cast.</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>When does The Beekeeper 2 come out?</h2></div>'
+             f'<p>Also Friday 15 January 2027, from Amazon MGM Studios, so it opens against Children of Blood and Bone. Jason Statham returns from the 2024 original.</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>When does Animal Friends come out?</h2></div>'
+             f'<p>22 January 2027, from Warner Bros. It stars Ryan Reynolds and Jason Momoa and mixes live action with animated animals. Warner moved it seven months, out of June 2026.</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>What family movies come out in January 2027?</h2></div>'
+             f'<p>Air Bud Returns (22 January, Cineverse) is the only family film dated so far. Animal Friends looks like a family film but is rated R. The next big animated film is Ice Age: Boiling Point on 5 February 2027.</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>Which movies open each weekend in January 2027?</h2></div>{_mvj_tbl}'
+             f'<div class="sec-head" style="margin-top:28px"><h2>What big movies come after January 2027?</h2></div>'
+             f'<p>February 2027 brings {e(_and([m[0] + " (" + _mv_nice(m[1]) + ")" for m in _mvj_feb]) if _mvj_feb else "more big releases")}. Every dated 2027 film is on <a href="{href("movies-2027.html", 0)}">upcoming movies 2027</a>.</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>What else is out in January 2027?</h2></div>'
+             f'<p>{len(_mvj_jan_games)} games on our board launch in January, including Metroid Ravenous and Forza Horizon 6 on PS5. The winter anime season and the network TV midseason premieres also start. See <a href="{href("months/january-2027.html", 0)}">games coming out in January 2027</a>, <a href="{href("new-tv-shows-january-2027.html", 0)}">new TV shows in January 2027</a> and <a href="{href("winter-2027-anime.html", 0)}">winter 2027 anime</a>.</p>'
+             f'<p class="muted">We list a film when the studio or at least two release schedules (The Numbers, Box Office Mojo, TheWrap) give the same US date. Films on one schedule only (for example Bunker, River, Slayground and Witch on the Holy Night) are left out until a second one agrees.</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+             f'<li><a href="{href("movies-december-2026.html", 0)}">Movies coming out in December 2026</a>: Avengers: Doomsday, Dune: Part Three</li>'
+             f'<li><a href="{href("movies-2027.html", 0)}">Upcoming movies 2027</a>: Zelda, Shrek 5, Avengers: Secret Wars</li>'
+             f'<li><a href="{href("new-tv-shows-january-2027.html", 0)}">New TV shows January 2027</a>: premiere dates and times</li>'
+             f'<li><a href="{href("countdown.html", 0)}">Release countdown</a> for any dated 2027 game</li></ul></div></section>')
+mvj_faq = [("What movies are coming out in January 2027?", _mvj_quick),
+           ("When does Children of Blood and Bone come out?", "15 January 2027 in US cinemas and IMAX, from Paramount."),
+           ("When does The Beekeeper 2 come out?", "15 January 2027, from Amazon MGM Studios."),
+           ("When does Animal Friends come out?", "22 January 2027, from Warner Bros. It moved from June 2026."),
+           ("When does Air Bud Returns come out?", "22 January 2027 in US cinemas, from Cineverse."),
+           ("Are there any big movies on 1 January 2027?", "No big studio film is dated for New Year's Day 2027. The first big weekend is 15 January.")]
+page("movies-january-2027.html", "Movies Coming Out in January 2027: Release Dates | DayOneDrop",
+     "Movies coming out in January 2027: Children of Blood and Bone and The Beekeeper 2 (15 Jan), Animal Friends and Air Bud Returns (22 Jan), The Rescue (29 Jan).",
+     _mvj_body, 0, mvj_faq, crumbs=[("Home", DOMAIN + "/"), ("Upcoming movies 2027", canon("movies-2027.html")), ("Movies January 2027", canon("movies-january-2027.html"))])
+
+
+# ---------------- GAMES LIKE HOLLOW KNIGHT (26 Nov 2026, demand: "games like hollow knight", "games like silksong", "upcoming metroidvania 2027") ----------------
+# Evidence: GamesRadar+ "best games like Hollow Knight", ComicBook "metroidvania games to play after Silksong" / "upcoming metroidvanias", ScreenRant, Inverse lists.
+# Out-now picks: platforms as sold (backward compatible plays noted). 2027 metroidvanias from games.json.
+LIKE_HK = [
+    # (title, platforms, why, platform tags, taste tags)
+    ("Hollow Knight: Silksong", "Switch 2, Switch, PS5, PS4, Xbox Series X|S, Xbox One, PC", "Team Cherry's 2025 sequel: faster, with Hornet's needle and silk skills, quests and an even bigger kingdom.", "switch ps5 ps4 xbox pc", "hard open fast"),
+    ("Hollow Knight", "Switch, PS4, Xbox One, PC (plays on Switch 2, PS5 and Xbox Series X|S)", "Where it started. If you came to Silksong first, the original is still one of the best maps in the genre.", "switch ps5 ps4 xbox pc", "hard open"),
+    ("Nine Sols", "PS5, PS4, Xbox Series X|S, Xbox One, Switch, PC", "A hand-drawn 'taopunk' game built on Sekiro-style parries, with tough bosses and a strong story.", "switch ps5 ps4 xbox pc", "hard fast story"),
+    ("Prince of Persia: The Lost Crown", "PS5, PS4, Xbox Series X|S, Xbox One, Switch, PC", "Ubisoft Montpellier's 2024 metroidvania: tight combat, time powers and a map you can pin screenshots to.", "switch ps5 ps4 xbox pc", "fast open"),
+    ("Metroid Dread", "Switch (plays on Switch 2)", "The 2021 2D Metroid from MercurySteam, the same studio making Metroid Ravenous for January 2027.", "switch", "fast open"),
+    ("Ori and the Will of the Wisps", "Xbox Series X|S, Xbox One, Switch, PC", "Beautiful, emotional and lighter on difficulty, with great movement and chase sequences.", "switch xbox pc", "story open"),
+    ("Blasphemous 2", "PS5, Xbox Series X|S, Switch, PC", "Dark religious art, hard bosses and three weapons to switch between.", "switch ps5 xbox pc", "hard"),
+    ("Ender Magnolia: Bloom in the Mist", "PS5, PS4, Xbox Series X|S, Switch, PC", "A sad, beautiful fantasy where you fight with spirits you free along the way.", "switch ps5 ps4 xbox pc", "story open"),
+    ("Animal Well", "PS5, Xbox Series X|S, Switch, PC", "No combat at all, just a dense pixel world full of secrets and puzzles.", "switch ps5 xbox pc", "open"),
+    ("Dead Cells", "PS4, Xbox One, Switch, PC (plays on PS5, Xbox Series X|S and Switch 2)", "Fast roguelite metroidvania: you lose everything when you die, but every run teaches you more.", "switch ps5 ps4 xbox pc", "hard fast"),
+    ("Bloodstained: Ritual of the Night", "PS4, Xbox One, Switch, PC (plays on PS5 and Xbox Series X|S)", "Koji Igarashi's Castlevania-style castle crawl. Its follow-up, The Scarlet Engagement, is due in 2027.", "switch ps5 ps4 xbox pc", "open story"),
+]
+_HK_LABEL = {"hard": "Tough bosses", "open": "Exploring", "story": "Strong story", "fast": "Fast combat"}
+_hk_rows = "".join(f'<div class="row" data-ep="{e(x[3])}" data-el="{e(x[4])}"><span><strong>{e(x[0])}</strong><br><span class="muted">{e(x[2])}</span><br><span class="muted">{e(x[1])}</span>'
+                   f'<br><span class="muted mono" style="font-size:.78rem">{e(" · ".join(_HK_LABEL[k] for k in x[4].split()))}</span></span></div>' for x in LIKE_HK)
+_hk_chips = ('<div class="chips" role="group" aria-label="Platform"><button class="chip" type="button" data-er-p="" aria-pressed="true">Any platform</button>'
+             + "".join(f'<button class="chip" type="button" data-er-p="{k}" aria-pressed="false">{l}</button>' for k, l in [("switch", "Switch / Switch 2"), ("ps5", "PS5"), ("xbox", "Xbox"), ("pc", "PC"), ("ps4", "PS4")]) + '</div>'
+             '<div class="chips" role="group" aria-label="What you liked" style="margin-top:10px"><button class="chip" type="button" data-er-l="" aria-pressed="true">Anything</button>'
+             + "".join(f'<button class="chip" type="button" data-er-l="{k}" aria-pressed="false">{e(l)}</button>' for k, l in _HK_LABEL.items()) + '</div>')
+HK_SOON_SLUGS = ["metroid-ravenous", "mariachi-legends", "bloodstained-the-scarlet-engagement", "blighted"]
+_hk_soon = sorted([g for g in GAMES if g["slug"] in HK_SOON_SLUGS], key=lambda g: (g["month"] or 13, g["date"] or "9999"))
+_hk_first = next((g for g in _hk_soon if g["date"]), None)
+_hk_mr = next((g for g in GAMES if g["slug"] == "metroid-ravenous"), None)
+def _hk_on(tag): return [x[0] for x in LIKE_HK if tag in x[3].split()]
+_hk_cd = (f'<div class="cdw"><span class="lbl">Countdown to {e(_hk_first["title"])}</span><div class="cd" data-countdown="{_hk_first["date"]}">'
+          '<div class="cd-unit"><span class="flaps" data-u="0"></span><span>Days</span></div><div class="cd-unit"><span class="flaps" data-u="1"></span><span>Hrs</span></div>'
+          '<div class="cd-unit"><span class="flaps" data-u="2"></span><span>Min</span></div><div class="cd-unit"><span class="flaps" data-u="3"></span><span>Sec</span></div></div></div>') if _hk_first else ""
+_hk_quick = ("The best games like Hollow Knight and Silksong are Nine Sols, Prince of Persia: The Lost Crown, Metroid Dread, Ori and the Will of the Wisps, Blasphemous 2 and Ender Magnolia. "
+             f"The next metroidvanias are {_and([g['title'] + ' (' + nice_date(g) + ')' for g in _hk_soon])}.")
+hk_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Games like Hollow Knight</span>'
+           f'<h1>Games like Hollow Knight and Silksong:<br><span class="amber">play now, and the 2027 metroidvanias.</span></h1>'
+           f'<p class="lead">Metroidvanias you can play today on Switch 2, PS5, Xbox and PC, filtered by what you loved about Hollow Knight, plus every metroidvania due in 2027.</p>'
+           f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · {len(LIKE_HK)} picks out now · {len(_hk_soon)} coming in 2027</p></div></header>'
+           f'<section><div class="wrap"><div class="out" style="margin-bottom:12px"><div class="row"><span><strong>Quick answer:</strong> {e(_hk_quick)}</span></div></div>'
+           f'<div class="tool" id="er-tool" style="margin-bottom:24px"><h2 style="font-size:1.5rem;margin-top:0">Which game like Hollow Knight should I play?</h2>'
+           f'<p class="muted">Pick your platform and what you liked most. Your choice is remembered on this device.</p>{_hk_chips}'
+           f'<p class="mono amber" id="er-count" aria-live="polite" style="margin:12px 0 0">{len(LIKE_HK)} games</p></div>'
+           f'<div class="sec-head"><h2>What games are like Hollow Knight?</h2><span class="muted">out now</span></div>'
+           f'<div class="out" id="er-list" style="margin-bottom:10px">{_hk_rows}</div><p class="empty" id="er-none" hidden>No pick matches both. Try "Anything".</p></div></section>'
+           + AD.format("hk-mid") +
+           f'<section><div class="wrap"><div class="sec-head"><h2>What metroidvania games are coming out in 2027?</h2><span class="muted">{len(_hk_soon)}</span></div>'
+           f'<div class="out" style="margin-bottom:10px">{"".join(_er_srow(g) for g in _hk_soon)}</div>{_hk_cd}'
+           f'<div class="sec-head" style="margin-top:28px"><h2>When does Metroid Ravenous come out?</h2></div>'
+           + (f'<p>{e(nice_date(_hk_mr))}, only on Nintendo Switch 2. It is a new side-scrolling Metroid from MercurySteam, the studio behind Metroid Dread, so it is the closest 2027 game to Hollow Knight on a Nintendo console. See the <a href="{href("games/metroid-ravenous.html", 0)}">Metroid Ravenous release date page</a>.</p>' if _hk_mr else '<p>See the Switch 2 page.</p>')
+           + f'<div class="sec-head" style="margin-top:28px"><h2>Is there a new Bloodstained game?</h2></div>'
+           f'<p>Yes. Bloodstained: The Scarlet Engagement, from Koji Igarashi\'s studio ArtPlay and 505 Games, is coming to PS5, Xbox Series X|S and PC in 2027. It was delayed from 2026 in August 2026 and has no month yet.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>Is there a co-op game like Hollow Knight?</h2></div>'
+           f'<p>Blighted, from Guacamelee! studio DrinkBox, is a metroidvania action RPG you can play alone or in co-op. It moved from fall 2026 to 2027 and is coming to Switch 2 and PC.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>What games are like Hollow Knight on Switch 2?</h2></div>'
+           f'<p>{e(_and(_hk_on("switch")))}. Switch 1 games play on Switch 2. In 2027: {e(_and([g["title"] for g in _hk_soon if "Switch 2" in g["platforms"]]))}. See every <a href="{href("platforms/switch-2.html", 0)}">Switch 2 game of 2027</a>.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>What games are like Hollow Knight on PS5 and Xbox?</h2></div>'
+           f'<p>PS5: {e(_and(_hk_on("ps5")))}. Xbox: {e(_and(_hk_on("xbox")))}. In 2027 on PS5 and Xbox: {e(_and([g["title"] for g in _hk_soon if "PS5" in g["platforms"]]))}.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>What is the hardest game like Hollow Knight?</h2></div>'
+           f'<p>Silksong itself is harder than the first game. After that, Nine Sols and Blasphemous 2 have the toughest bosses. If you want something gentler, Ori and the Will of the Wisps and Animal Well are kinder, and Animal Well has no fights at all. For 3D bosses, see <a href="{href("games-like-elden-ring.html", 0)}">games like Elden Ring</a>.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+           f'<li><a href="{href("games-like-elden-ring.html", 0)}">Games like Elden Ring</a>: soulslikes now and in 2027</li>'
+           f'<li><a href="{href("games/metroid-ravenous.html", 0)}">Metroid Ravenous release date</a></li>'
+           f'<li><a href="{href("games-by-genre-2027.html", 0)}">2027 games by genre</a></li>'
+           f'<li><a href="{href("countdown.html", 0)}">Game release countdown</a></li></ul></div></section>')
+hk_faq = [("What games are like Hollow Knight?", "Hollow Knight: Silksong, Nine Sols, Prince of Persia: The Lost Crown, Metroid Dread, Ori and the Will of the Wisps, Blasphemous 2, Ender Magnolia, Animal Well, Dead Cells and Bloodstained: Ritual of the Night."),
+          ("What metroidvania games come out in 2027?", _and([g['title'] + ' (' + nice_date(g) + ')' for g in _hk_soon]) + "."),
+          ("When does Metroid Ravenous come out?", (nice_date(_hk_mr) + ", only on Nintendo Switch 2.") if _hk_mr else "2027 on Switch 2."),
+          ("Is there a co-op metroidvania coming in 2027?", "Yes. Blighted from DrinkBox Studios can be played solo or in co-op; it is due in 2027 on Switch 2 and PC."),
+          ("What is a good game like Hollow Knight on Switch 2?", "Silksong, Nine Sols, Metroid Dread and Prince of Persia: The Lost Crown, then Metroid Ravenous in 2027.")]
+page("games-like-hollow-knight.html", "Games Like Hollow Knight & Silksong: 2027 Picks | DayOneDrop",
+     "Games like Hollow Knight and Silksong on Switch 2, PS5, Xbox and PC: Nine Sols, Lost Crown, Metroid Dread, Ori, plus 2027's Metroid Ravenous and Bloodstained.",
+     hk_body, 0, hk_faq, crumbs=[("Home", DOMAIN + "/"), ("2027 games by genre", canon("games-by-genre-2027.html")), ("Games like Hollow Knight", canon("games-like-hollow-knight.html"))])
+
+
 # ---------------- SEO files ----------------
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "movies-december-2026.html", "winter-2027-anime.html", "new-tv-shows-january-2027.html", "black-friday-game-sales-2026.html", "gta-6-pc-release-date.html", "new-tv-shows-december-2026.html", "movies-2027.html", "games-like-elden-ring.html", "countdown.html", "games-without-release-date-2027.html", "steam-sale-dates.html", "nintendo-direct.html", "ps-plus-monthly-games.html", "epic-free-games.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "new-games-this-week.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "fighting-games-2027.html", "xbox-games-showcase-2027.html", "calendar.html", "later-2027.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "movies-january-2027.html", "games-like-hollow-knight.html", "movies-december-2026.html", "winter-2027-anime.html", "new-tv-shows-january-2027.html", "black-friday-game-sales-2026.html", "gta-6-pc-release-date.html", "new-tv-shows-december-2026.html", "movies-2027.html", "games-like-elden-ring.html", "countdown.html", "games-without-release-date-2027.html", "steam-sale-dates.html", "nintendo-direct.html", "ps-plus-monthly-games.html", "epic-free-games.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "new-games-this-week.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "fighting-games-2027.html", "xbox-games-showcase-2027.html", "calendar.html", "later-2027.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)

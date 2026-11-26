@@ -940,6 +940,8 @@
   var sel = { p: "", l: "" };
   try { var sv = JSON.parse(localStorage.getItem("dod-er") || "null"); if (sv && typeof sv === "object") sel = { p: sv.p || "", l: sv.l || "" }; } catch (e) {}
   var rows = $$("#er-list [data-ep]"), cnt = document.getElementById("er-count"), none = document.getElementById("er-none");
+  if (sel.p && !t.querySelector('[data-er-p="' + sel.p + '"]')) sel.p = "";
+  if (sel.l && !t.querySelector('[data-er-l="' + sel.l + '"]')) sel.l = "";
   function draw() {
     var n = 0;
     rows.forEach(function (r) {
