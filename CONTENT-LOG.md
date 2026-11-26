@@ -369,3 +369,11 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - Links in: footer (both), /tools, /games-by-genre-2027, /games-like-elden-ring, /games-like-hollow-knight, game pages Witchbrook / Grave Seasons / Atelier Karia / Hyrule Warriors / Kirby / Xenoblade Genesis / Fable / Terranigma / Demi (related).
 - Left out: /movies-february-2027 (only 2 two-schedule films; DEMAND N34); OpenCritic "Stardew Valley returns January 2027" (unclear, single source).
 - IndexNow pending (no WebFetch in this run): /games-like-stardew-valley, /games-like-zelda, /games-by-genre-2027, /tools, /games-like-elden-ring, /games-like-hollow-knight, /games/witchbrook, /games/hyrule-warriors-age-of-calamity-definitive-edition
+
+## 2026-11-27 (scheduled SEO run, second pass, demand-first)
+- New page /games-like-pokemon "Games Like Pokémon: Monster Tamers & 2027 Releases" (DEMAND N35): 10 out-now picks with platform + taste filter (reuses #er-tool), 2027 creature collectors from games.json (Pokémon Winds and Waves, Cassette Beasts 2002, Honkai: Nexus Anima), DQM: The Withered World countdown (3 Dec 2026), H2s Winds and Waves date (leaker "late 2027" labelled rumour) / Cassette Beasts 2002 / Honkai / PS5+Xbox / Switch 2 / PC.
+- New page /games-like-minecraft "Games Like Minecraft: Sandbox Picks & 2027 Survival" (DEMAND N36): 11 picks + filter, 2027 survival/building games, A Minecraft Movie Squared countdown (23 Jul 2027, from MOVIES), H2s Minecraft 2 / Switch 2 edition (27 Oct 2026) / PS5+Xbox / free.
+- Data: Cassette Beasts 2002 (March 2027, PS5/Xbox Series X|S/PC/Switch 2, Bytten Studio; Gematsu, RPG Site, VGChartz, Niche Gamer, RPGamer). Board now 90.
+- Refreshed /rpgs-2027: monster-taming RPGs of 2027 H2 + FAQ.
+- Links in: footer (both), /tools, /games-by-genre-2027, /games-like-stardew-valley, /games/pokemon-winds-and-waves + /games/state-of-decay-3 (related), /rpgs-2027.
+- IndexNow pending (no WebFetch in this run): /games-like-pokemon, /games-like-minecraft, /rpgs-2027, /tools, /games-by-genre-2027, /games-like-stardew-valley, /games/pokemon-winds-and-waves, /games/state-of-decay-3, /months/march-2027, /calendar

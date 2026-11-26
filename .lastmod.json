@@ -1,6 +1,6 @@
 {
 "about.html": [
-"a6fdc9c0dbff7b70",
+"63a0620caf656fe9",
 "2026-11-27"
 ],
 "after-gta-6.html": [
@@ -20,7 +20,7 @@
 "2026-11-27"
 ],
 "calendar.html": [
-"7c18e7c8430f86f4",
+"5283c5eebc5f6f58",
 "2026-11-27"
 ],
 "countdown.html": [
@@ -36,7 +36,7 @@
 "2026-11-26"
 ],
 "exclusives-2027.html": [
-"16e7f625b6450192",
+"7c10f9e14255f4de",
 "2026-11-27"
 ],
 "fighting-games-2027.html": [
@@ -48,11 +48,11 @@
 "2026-11-27"
 ],
 "game-pass-2027.html": [
-"1e944db50d956205",
+"144d2a1a7d475918",
 "2026-11-27"
 ],
 "games-by-genre-2027.html": [
-"c7cb2c9d5dcab76b",
+"daa1802d3e316a76",
 "2026-11-27"
 ],
 "games-december-2026.html": [
@@ -71,8 +71,16 @@
 "9ca75d05e42e3231",
 "2026-11-27"
 ],
+"games-like-minecraft.html": [
+"80391cf3eedad1d7",
+"2026-11-27"
+],
+"games-like-pokemon.html": [
+"083b22a28153bd8f",
+"2026-11-27"
+],
 "games-like-stardew-valley.html": [
-"62aafef67619d0ee",
+"ea9d4395880e42e7",
 "2026-11-27"
 ],
 "games-like-zelda.html": [
@@ -80,15 +88,15 @@
 "2026-11-27"
 ],
 "games-without-release-date-2027.html": [
-"45c5aac92b89f5be",
+"2af91383fcee5a5b",
 "2026-11-27"
 ],
 "games.html": [
-"b6aa234b07550ddd",
+"949a7af02e24dff6",
 "2026-11-27"
 ],
 "games/007-first-light.html": [
-"ee7565ee38aa0887",
+"7a77c0438af4e43d",
 "2026-11-27"
 ],
 "games/ananta.html": [
@@ -128,15 +136,15 @@
 "2026-11-27"
 ],
 "games/kingdom-hearts-iv.html": [
-"5431cdb8de081616",
+"383144b932404e6e",
 "2026-11-27"
 ],
 "games/kirby-and-the-world-beyond.html": [
-"0ba4853af84ec3c9",
+"9d7d8d43ab9fb9e6",
 "2026-11-27"
 ],
 "games/lords-of-the-fallen-ii.html": [
-"e7f5c2f8a2f090a6",
+"2c2b66dd89b2b225",
 "2026-11-27"
 ],
 "games/metro-2039.html": [
@@ -152,23 +160,23 @@
 "2026-11-27"
 ],
 "games/pokemon-winds-and-waves.html": [
-"a92a12bf2235ec90",
+"5b7cddfbd0e87264",
 "2026-11-27"
 ],
 "games/resident-evil-veronica.html": [
-"e6cf5f858502c5da",
+"6963b477c34b423d",
 "2026-11-27"
 ],
 "games/spyro-a-realm-beyond.html": [
-"6331b09bd7618098",
+"63956d7f2aba6af6",
 "2026-11-27"
 ],
 "games/squadron-42.html": [
-"78e590024f3b3541",
+"1a32438f68874a39",
 "2026-11-27"
 ],
 "games/state-of-decay-3.html": [
-"b32baced7c78cc49",
+"3ef3bbb834895e29",
 "2026-11-27"
 ],
 "games/stranger-than-heaven.html": [
@@ -176,7 +184,7 @@
 "2026-11-27"
 ],
 "games/the-duskbloods.html": [
-"db30a68389063f1d",
+"acdc92fc64532aac",
 "2026-11-27"
 ],
 "games/titan-quest-ii.html": [
@@ -200,11 +208,11 @@
 "2026-11-27"
 ],
 "games/wo-long-2.html": [
-"f5a6f85d6c40e5ff",
+"5afb3ef4cf3ff8b4",
 "2026-11-27"
 ],
 "games/xenoblade-genesis.html": [
-"dfdb9a44b8c9d439",
+"9e062a25663d57d8",
 "2026-11-27"
 ],
 "gta-6-pc-release-date.html": [
@@ -216,11 +224,11 @@
 "2026-11-27"
 ],
 "index.html": [
-"86b435f24a757874",
+"f28a06c5c812a2a8",
 "2026-11-27"
 ],
 "last-gen-games-2027.html": [
-"55a52630fbd63396",
+"118e3bab4a898063",
 "2026-11-27"
 ],
 "later-2027.html": [
@@ -244,7 +252,7 @@
 "2026-11-27"
 ],
 "months/march-2027.html": [
-"a885f7dce972f418",
+"99d4c4dcf7fc86e7",
 "2026-11-27"
 ],
 "movies-2027.html": [
@@ -272,23 +280,23 @@
 "2026-11-27"
 ],
 "nintendo-direct.html": [
-"b823982cac6d5939",
+"5ac6d9aaa14234dd",
 "2026-11-27"
 ],
 "platforms/pc.html": [
-"63c845aa9e8dbfff",
+"4db3ce57a2b56b9f",
 "2026-11-27"
 ],
 "platforms/ps5.html": [
-"128a709be97d1a40",
+"f4358ce6b38bdbbf",
 "2026-11-27"
 ],
 "platforms/switch-2.html": [
-"397b8916d2acd868",
+"a53aaa231eab151d",
 "2026-11-27"
 ],
 "platforms/xbox-series.html": [
-"77b9e12088282ee9",
+"42824a8f8ae275d9",
 "2026-11-27"
 ],
 "privacy.html": [
@@ -304,7 +312,7 @@
 "2026-11-27"
 ],
 "rpgs-2027.html": [
-"333d2f376ec3c601",
+"0e25c4e5ae5b1acf",
 "2026-11-27"
 ],
 "steam-sale-dates.html": [
@@ -312,7 +320,7 @@
 "2026-11-27"
 ],
 "tools.html": [
-"c6858e9467850f02",
+"ff336dab1a86c7fa",
 "2026-11-27"
 ],
 "winter-2027-anime.html": [
@@ -320,7 +328,7 @@
 "2026-11-27"
 ],
 "xbox-games-showcase-2027.html": [
-"e1846168ab84a88b",
+"f50e41517a7bbad6",
 "2026-11-27"
 ]
 }

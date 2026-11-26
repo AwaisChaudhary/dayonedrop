@@ -17,6 +17,13 @@ Tools in this repo: `seo_post.py` (runs at the end of build.py: sitemap = every 
 5. Links: only real editorial links via outreach batches Awais approves; build "linkable assets" (original data, free tools, maps) and list pitch targets in DEMAND for approval.
 6. Monthly: run seo_audit.py on the whole site and fix broken links, orphans, duplicate titles/descriptions, missing schema.
 
+## DEMAND RUN 27 Nov 2026 (scheduled, demand-first; second pass)
+Evidence: "games like pokemon" (GamesRadar+ US/UK/AU, GameSpot gallery, Game Rant Metacritic list, Insider Gaming, Windows Central, TheGamer, ComicBook "Pokemon rivals 2026"); "upcoming creature collector 2027": Cassette Beasts 2002 March 2027 (Gematsu, RPG Site, VGChartz, Niche Gamer, RPGamer, Automaton); "games like minecraft" (GamesRadar+, PCGamesN, games.gg, Beebom, SVG, ComicBook "Minecraft replacement"); Minecraft Switch 2 native edition 27 Oct 2026 (Windows Central, Neowin, Thurrott).
+N35. DONE 27 Nov https://getdayonedrop.com/games-like-pokemon : 10 picks + platform/taste filter, 2027 monster tamers (Winds and Waves, Cassette Beasts 2002, Honkai: Nexus Anima), DQM Withered World countdown.
+N36. DONE 27 Nov https://getdayonedrop.com/games-like-minecraft : 11 picks + filter, 2027 survival/building games, Minecraft movie 2 (23 Jul 2027) countdown, Minecraft 2 / Switch 2 / free H2s.
+N37. DONE 27 Nov /rpgs-2027 refresh: "What monster-taming RPGs come out in 2027?" H2 + FAQ. Data: Cassette Beasts 2002 added to games.json (March 2027).
+N38. OPEN single-source creature/survival 2027: Navinosuke the Yo-kai Buster revival (Automaton, Steam 2027); "Monster Hunter meets Valheim" 2027 RPG (OpenCritic only); Tamer Town (Switch 2, ComicBook). Next games-like: "games like Animal Crossing", "games like Fortnite", "cozy games Switch 2".
+
 ## DEMAND RUN 27 Nov 2026 (scheduled, demand-first; Black Friday)
 Evidence: "games like stardew valley" (GamesRadar+ x3 regions, PC Gamer, Dot Esports, games.gg, Medium lists; PC Gamer "39 Stardew-shaped farm sims"; games.gg "best upcoming cozy games Switch 2"); "Stardew Valley 1.7 2027" (GamesRadar+, PC Gamer guide, GosuGamers, PowerUp, pcgames.de, Nov 2026); "games like zelda" / "games like breath of the wild" (GamesRadar+, Push Square, Pocket Tactics, G2A, T3, Windows Central, Den of Geek); "zelda 2027" SERP mixes movie + Hyrule Warriors news. Football Manager 27 already out 10 Nov 2026 (Gematsu, gamespress). "movies coming out february 2027": SERP is BOM / The Numbers / Movie Insider only.
 N31. DONE 27 Nov https://getdayonedrop.com/games-like-stardew-valley : 11 picks + platform/taste filter, 2027 cozy games (Emberville, Witchbrook, Atelier Karia, Grave Seasons, Neverway), Witchbrook countdown, Stardew 1.7 H2.

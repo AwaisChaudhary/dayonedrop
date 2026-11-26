@@ -1816,6 +1816,40 @@
    "about": "BECROWNED is a psychological horror game now planned for the first three months of 2027 on PC and consoles."
   },
   {
+   "slug": "cassette-beasts-2002",
+   "title": "Cassette Beasts 2002",
+   "date": null,
+   "window": "March 2027",
+   "month": 3,
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC",
+    "Switch 2"
+   ],
+   "dev": "Bytten Studio",
+   "genre": "Creature-collecting RPG",
+   "status": "window",
+   "page": false,
+   "about": "Bytten Studio's sequel to its monster-fusing creature collector, set in a remixed 2000s London called Nodnol, due in March 2027.",
+   "facts": [
+    "Sequel to Cassette Beasts (2023), the creature collector where you record monsters onto cassettes and transform into them in battle.",
+    "Coming to PS5, Xbox Series X|S, Switch 2 and PC (Steam) in March 2027; no exact day yet.",
+    "Set in Nodnol, a remixed version of 2000s London, with roughly twice as many monsters as the first game to record and fuse."
+   ],
+   "history": [
+    {
+     "when": "Jun 2026",
+     "text": "Announced for PS5, Xbox Series X|S, Switch 2 and PC."
+    },
+    {
+     "when": "Aug 2026",
+     "text": "Launch set for March 2027."
+    }
+   ],
+   "sources": "Gematsu, RPG Site, VGChartz, Niche Gamer, RPGamer"
+  },
+  {
    "slug": "exodus",
    "title": "Exodus",
    "date": "2027-04-07",
