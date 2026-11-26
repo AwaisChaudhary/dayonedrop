@@ -1722,6 +1722,40 @@
    "about": "No Rest for the Wicked's full 1.0 release, including the PS5 version, is set for March 2027."
   },
   {
+   "slug": "into-the-dead-our-darkest-days",
+   "title": "Into the Dead: Our Darkest Days",
+   "date": null,
+   "window": "March 2027",
+   "month": 3,
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC",
+    "Switch 2"
+   ],
+   "dev": "PikPok",
+   "genre": "Zombie survival",
+   "status": "window",
+   "page": false,
+   "about": "PikPok's side-on zombie survival game set in 1980s Texas, where you lead a small group of survivors between shelters. It leaves PC early access with a full 1.0 release in March 2027, arriving on consoles the same month.",
+   "facts": [
+    "Developed and published by PikPok, the studio behind the Into the Dead series.",
+    "Full 1.0 release in March 2027, ending Steam early access; no exact day yet.",
+    "Comes to PS5, Xbox Series X|S and Nintendo Switch 2 alongside the PC 1.0 launch.",
+    "Survival game about scavenging, managing a group and moving between shelters in a zombie-overrun city."
+   ],
+   "history": [
+    {
+     "when": "Apr 2025",
+     "text": "Launched in early access on PC (Steam)."
+    },
+    {
+     "when": "Aug 2026",
+     "text": "1.0 set for March 2027, with PS5, Xbox Series X|S and Switch 2 versions announced."
+    }
+   ]
+  },
+  {
    "slug": "becrowned",
    "title": "BECROWNED",
    "platforms": [
@@ -2937,6 +2971,44 @@
     }
    ],
    "sources": "Gematsu (17 Sep 2026), PSU, VGC (27 Oct 2025)"
+  },
+  {
+   "slug": "golf-with-your-friends-2",
+   "title": "Golf With Your Friends 2",
+   "date": null,
+   "window": "2027",
+   "month": 12,
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC",
+    "Switch 2"
+   ],
+   "dev": "Radical Forge / Team17",
+   "genre": "Party sports",
+   "status": "delayed",
+   "page": false,
+   "about": "The chaotic multiplayer mini-golf sequel from Radical Forge and Team17, with wild courses and friends knocking each other off the green. It slipped from fall 2026 into 2027, with no exact date yet.",
+   "facts": [
+    "Developed by Radical Forge and published by Team17.",
+    "Coming to PS5, Xbox Series X|S, Nintendo Switch 2 and PC.",
+    "Delayed from fall 2026 to 2027, announced by the game's official account on 3 November 2026; no exact date yet.",
+    "Launches as a full release on all platforms (the earlier Steam early access plan was dropped)."
+   ],
+   "history": [
+    {
+     "when": "Jul 2025",
+     "text": "Early access dropped; full release moved to 2026."
+    },
+    {
+     "when": "Apr 2026",
+     "text": "Set for fall 2026 on PS5, Xbox Series X|S, Switch 2 and PC."
+    },
+    {
+     "when": "Nov 2026",
+     "text": "Delayed from fall 2026 to 2027."
+    }
+   ]
   }
  ]
 }
