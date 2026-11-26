@@ -7,6 +7,12 @@ Tools in this repo: `seo_post.py` (runs at the end of build.py: sitemap = every 
 5. Links: only real editorial links via outreach batches Awais approves; build "linkable assets" (original data, free tools, maps) and list pitch targets in DEMAND for approval.
 6. Monthly: run seo_audit.py on the whole site and fix broken links, orphans, duplicate titles/descriptions, missing schema.
 
+## DEMAND RADAR 26 Nov 06:45 (Google autocomplete US)
+R1. OPEN /games-coming-out-february-2027 (autocomplete "games coming out in 2027 february") and monthly pages for Jan-Mar 2027 if missing.
+R2. OPEN /switch-2-games-2027 ("switch 2 games 2027", "switch 2 exclusive games 2027") with release dates + exclusives filter.
+R3. OPEN /rockstar-next-game ("after gta 6 what is rockstar's next game": confirmed facts only, clearly label rumours) + "games like gta 6 on roblox / for android / for pc" sections on /games-like-gta-6.
+R4. OPEN /new-tv-shows-december-2026 ("new tv shows december 2026") and /movies-2027 (W1) - both already queued as W-items; do W1/W2 first.
+
 ## TOP PRIORITY: WIDER CATEGORIES (Awais 26 Nov 01:02: "DayOneDrop doesn't mean games only or PS5 only, we have plenty of room to add more stuff")
 DayOneDrop = "what's coming out and when". Build release-date hubs beyond console games, each with a calendar/table, countdowns and FAQ (facts from studios/platforms + 2 trusted outlets):
 W1. OPEN /movies-2027: upcoming movies 2027 ("upcoming movies 2027" 10k-100k, +900% YoY): dated big releases by month, where to watch (cinema/streaming), countdowns; then /movies-december-2026 for this month.
