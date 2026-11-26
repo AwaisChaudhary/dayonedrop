@@ -7,6 +7,14 @@ Tools in this repo: `seo_post.py` (runs at the end of build.py: sitemap = every 
 5. Links: only real editorial links via outreach batches Awais approves; build "linkable assets" (original data, free tools, maps) and list pitch targets in DEMAND for approval.
 6. Monthly: run seo_audit.py on the whole site and fix broken links, orphans, duplicate titles/descriptions, missing schema.
 
+## DEMAND RUN 26 Nov 2026 (scheduled, third pass, demand-first)
+Evidence: W1 "upcoming movies 2027" (Keyword Planner 10k-100k, +900% YoY); Rotten Tomatoes "Most Anticipated Movies of 2027" updated 23 Nov; Disney restated Avengers: Secret Wars 17 Dec 2027 on 6 Nov (GamesRadar, ComicBookMovie); The Batman Part II moved to Feb 2028 (Variety, Empire, Kotaku) so "batman part 2 release date" now has a non-obvious answer. "games like elden ring" (evergreen, very high volume) + "upcoming soulslike games 2027" (Gematsu: Memoria Wake early 2027; Windows Central: LotF II delayed to 2027); Elden Ring Tarnished Edition on Switch 2 28 Aug 2026 (Game Informer, VGC, Nintendo Life).
+N9. DONE 26 Nov https://getdayonedrop.com/movies-2027 : 28 dated 2027 films (studio or 2+ trade outlets), type + month filter, countdowns (next film, Secret Wars, Zelda), Google Calendar per film, "moved out of 2027" table (Batman II, Gremlins 3, Miami Vice '85), same-day clashes, big games the same week as big movies.
+N10. DONE 26 Nov https://getdayonedrop.com/games-like-elden-ring : 12 out-now picks with platform + taste filter, 2027 soulslikes (Wo Long 2, No Rest for the Wicked 1.0, LotF II, The Duskbloods, Memoria Wake), Elden Ring 2 / Switch 2 / PS5 / Xbox+PC / hardest H2s. Linked from footer, LotF II, Wo Long 2, Duskbloods pages, genre page, after-gta-6, games-like-gta-6.
+N11. OPEN /movies-december-2026 + /new-tv-shows (W2): next film/TV step. Weaker-sourced 2027 films to verify before adding to MOVIES in build.py: Beekeeper 2 (15 Jan), Animal Friends (22 Jan), Thomas Crown Affair (5 Mar), Not Alone (16 Apr), Beach Read (7 May), Charlie vs the Chocolate Factory (5 Nov), Paranormal Activity 8 (22 Oct; moved from 21 May per Dread Central + The Numbers only), Fast X Part 2 (Diesel says Mar 2028).
+N12. OPEN data: Memoria Wake (early 2027, Xbox Series/PC, Team Crescendo) needs a 2nd outlet before it joins games.json; Lies of P sequel / Code Vein 2 / Phantom Blade Zero timing unchecked.
+R1/R2/R3 (radar 26 Nov 06:45) CHECKED 26 Nov: already covered by /months/february-2027 (title "Games Coming Out in February 2027"), /platforms/switch-2 (H2 "Which 2027 games are only on Nintendo Switch 2?") and /after-gta-6 (H2 "What is Rockstar making after GTA 6?"); no duplicate URLs built.
+
 ## DEMAND RADAR 26 Nov 06:45 (Google autocomplete US)
 R1. OPEN /games-coming-out-february-2027 (autocomplete "games coming out in 2027 february") and monthly pages for Jan-Mar 2027 if missing.
 R2. OPEN /switch-2-games-2027 ("switch 2 games 2027", "switch 2 exclusive games 2027") with release dates + exclusives filter.
@@ -15,7 +23,7 @@ R4. OPEN /new-tv-shows-december-2026 ("new tv shows december 2026") and /movies-
 
 ## TOP PRIORITY: WIDER CATEGORIES (Awais 26 Nov 01:02: "DayOneDrop doesn't mean games only or PS5 only, we have plenty of room to add more stuff")
 DayOneDrop = "what's coming out and when". Build release-date hubs beyond console games, each with a calendar/table, countdowns and FAQ (facts from studios/platforms + 2 trusted outlets):
-W1. OPEN /movies-2027: upcoming movies 2027 ("upcoming movies 2027" 10k-100k, +900% YoY): dated big releases by month, where to watch (cinema/streaming), countdowns; then /movies-december-2026 for this month.
+W1. DONE 26 Nov https://getdayonedrop.com/movies-2027 (movies-december-2026 still OPEN): upcoming movies 2027 ("upcoming movies 2027" 10k-100k, +900% YoY): dated big releases by month, where to watch (cinema/streaming), countdowns; then /movies-december-2026 for this month.
 W2. OPEN /new-tv-shows ("new tv shows" 100k-1M): shows premiering this month and next on Netflix, Disney+, Prime Video, HBO Max, Apple TV+; season dates for big returning shows.
 W3. OPEN /anime-release-dates (winter 2027 season, 1k-10k) and /new-on-netflix-this-week style pages ONLY if they can be kept fresh by the data runs.
 W4. OPEN game-adjacent: /nintendo-direct (100k-1M), /game-pass-this-month, /steam-sale-dates, /mobile-games-2027, /vr-games-2027, /board-games-2027 ("tabletop release"), /game-awards-2026 (11 Dec: nominees, how to watch, time in your zone).

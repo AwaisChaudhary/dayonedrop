@@ -897,3 +897,55 @@
   }
   q.addEventListener("input", run);
 })();
+
+/* Upcoming movies 2027: type + month filter */
+(function () {
+  "use strict";
+  var t = document.getElementById("mv-tool");
+  if (!t) return;
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var sel = { k: "", m: "" };
+  try { var sv = JSON.parse(localStorage.getItem("dod-mv") || "null"); if (sv && typeof sv === "object") sel = { k: sv.k || "", m: sv.m || "" }; } catch (e) {}
+  var rows = $$("#mv-list [data-mk]"), cnt = document.getElementById("mv-count"), none = document.getElementById("mv-none");
+  function draw() {
+    var n = 0;
+    rows.forEach(function (r) {
+      var ok = (!sel.k || r.getAttribute("data-mk") === sel.k) && (!sel.m || r.getAttribute("data-mm") === sel.m);
+      r.hidden = !ok; if (ok) n++;
+    });
+    $$("[data-mv-k]", t).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-mv-k") === sel.k ? "true" : "false"); });
+    $$("[data-mv-m]", t).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-mv-m") === sel.m ? "true" : "false"); });
+    cnt.textContent = n + " movie" + (n === 1 ? "" : "s");
+    none.hidden = n > 0;
+    try { localStorage.setItem("dod-mv", JSON.stringify(sel)); } catch (e) {}
+  }
+  $$("[data-mv-k]", t).forEach(function (c) { c.addEventListener("click", function () { sel.k = c.getAttribute("data-mv-k"); draw(); }); });
+  $$("[data-mv-m]", t).forEach(function (c) { c.addEventListener("click", function () { sel.m = c.getAttribute("data-mv-m"); draw(); }); });
+  draw();
+})();
+
+/* Games like Elden Ring: platform + taste filter */
+(function () {
+  "use strict";
+  var t = document.getElementById("er-tool");
+  if (!t) return;
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var sel = { p: "", l: "" };
+  try { var sv = JSON.parse(localStorage.getItem("dod-er") || "null"); if (sv && typeof sv === "object") sel = { p: sv.p || "", l: sv.l || "" }; } catch (e) {}
+  var rows = $$("#er-list [data-ep]"), cnt = document.getElementById("er-count"), none = document.getElementById("er-none");
+  function draw() {
+    var n = 0;
+    rows.forEach(function (r) {
+      var ok = (!sel.p || r.getAttribute("data-ep").split(" ").indexOf(sel.p) > -1) && (!sel.l || r.getAttribute("data-el").split(" ").indexOf(sel.l) > -1);
+      r.hidden = !ok; if (ok) n++;
+    });
+    $$("[data-er-p]", t).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-er-p") === sel.p ? "true" : "false"); });
+    $$("[data-er-l]", t).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-er-l") === sel.l ? "true" : "false"); });
+    cnt.textContent = n + " game" + (n === 1 ? "" : "s");
+    none.hidden = n > 0;
+    try { localStorage.setItem("dod-er", JSON.stringify(sel)); } catch (e) {}
+  }
+  $$("[data-er-p]", t).forEach(function (c) { c.addEventListener("click", function () { sel.p = c.getAttribute("data-er-p"); draw(); }); });
+  $$("[data-er-l]", t).forEach(function (c) { c.addEventListener("click", function () { sel.l = c.getAttribute("data-er-l"); draw(); }); });
+  draw();
+})();
