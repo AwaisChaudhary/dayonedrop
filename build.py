@@ -76,17 +76,29 @@ def _ctr_title(g):
     # CTR rewrite 25 Nov 2026: the date itself in the title (searchers want the answer), platforms in brackets.
     ps = _plat_short(g)
     t = f"{g['title']} Release Date: {_us_date(g)}" + (f" ({ps})" if ps else "")
-    if len(t) > 62:
+    if len(t) > 60:
         t = f"{g['title']} Release Date: {_us_date(g)}"
-    if len(t) > 62:
+    if len(t) > 60:
         t = f"{g['title']} Release Date"
     return t
 
 
 def _ctr_desc(g):
     lead = (f"{g['title']} comes out {nice_date(g)}" + (f" on {plat_text(g)}" if g.get("platforms") else "") + ".")
-    tail = " Delayed once: full date history." if g["status"] == "delayed" else " Live countdown, date history and a free calendar reminder."
-    return lead + tail
+    # SEO audit 27 Nov 2026: descriptions aim for 120-160 chars, cut only at sentence ends.
+    tails = [" Delayed once: see the full date history." if g["status"] == "delayed" else " Live countdown, date history and a free calendar reminder."]
+    if g["status"] == "delayed":
+        tails.append(" Live countdown and a free calendar reminder.")
+    if g.get("dev"):
+        tails.append(f" Made by {g['dev']}.")
+    tails += [" Every date is checked against two official sources.", " Updated the day anything changes."]
+    out = lead
+    for t in tails:
+        if len(out + t) <= 160:
+            out += t
+        if len(out) >= 120:
+            break
+    return out
 
 def tile_color(slug):
     h = int(hashlib.md5(slug.encode()).hexdigest()[:6], 16)
@@ -195,6 +207,11 @@ def write_redirects(root):
 
 
 def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None):
+    # SEO audit 27 Nov 2026: keep titles within 60 chars; drop the brand suffix when it would push past that.
+    if len(title) > 60 and title.endswith(" | DayOneDrop"):
+        title = title[:-len(" | DayOneDrop")]
+    if file not in NOINDEX and file not in ("404.html",) and not crumbs:
+        crumbs = [("Home", DOMAIN + "/"), (title.split(":")[0].split(" | ")[0], canon(file))] if file != "index.html" else None
     _og = og_image(file, title, DOMAIN)
     url = canon(file)
     ld = [{"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": desc, "url": url,
@@ -687,7 +704,7 @@ for plat, slug, long in PLAT_PAGES:
         (f"Which 2027 games are only on {long}?", ex),
         (f"Which 2027 games are not coming to {long}?", (f"{len(skip)} tracked games are not announced for {long}, including " + ", ".join(g["title"] for g in skip[:5]) + ". See our 2027 console exclusives page for the full list.") if skip else f"Every 2027 game we track is announced for {long}."),
     ]
-    page(f, f"{long} Game Release Dates 2027: All {len(games)} Upcoming Games | DayOneDrop",
+    page(f, f"{long} Game Release Dates 2027: All {len(games)} Games | DayOneDrop",
          f"All {len(games)} upcoming {long} games and new releases in 2027, month by month: exact release dates, exclusives, delays and countdowns. Updated {UPDATED}."[:160],
          body, 1, faqs, crumbs=[("Home", DOMAIN + "/"), ("All games", canon("games.html")), (long + " games 2027", canon(f))])
 
@@ -772,7 +789,7 @@ for m in month_pages_list():
         (f"Which {mname} 2027 games were delayed?", (f"{len(_mdel)}: " + ", ".join(g["title"] for g in _mdel) + ".") if _mdel else f"None of the {mname} 2027 games we track have been delayed so far."),
         (f"Are any {mname} 2027 games on Xbox Game Pass?", ("Yes: " + ", ".join(g["title"] for g in _mgp) + ".") if _mgp else f"None of the {mname} 2027 games we track are confirmed for Game Pass yet."),
     ] + [(f"Which {mname} 2027 games are on {l2}?", (f"{pc[p2]}: " + ", ".join(g["title"] for g in games if p2 in g["platforms"]) + ".") if pc[p2] else f"None of the {mname} 2027 games we track are confirmed for {l2} yet.") for p2, s2, l2 in PLAT_PAGES if p2 in ("PS5", "Switch 2")]
-    page(f, f"Games Coming Out in {mname} 2027 ({len(games)} Games): Dates and Consoles | DayOneDrop"[:90],
+    page(f, f"Games Coming Out in {mname} 2027: All {len(games)} Release Dates | DayOneDrop",
          f"All {len(games)} video games releasing in {mname} 2027 on PS5, Xbox, PC and Switch 2, in date order with platforms and delays. Checked {UPDATED}."[:160],
          body, 1, faqs, crumbs=[("Home", DOMAIN + "/"), ("2027 calendar", canon("calendar.html")), (f"{mname} 2027", canon(f))])
 
@@ -1292,7 +1309,7 @@ for _p in PLATS:
 hor_faq.append(("Is Resident Evil Veronica out in 2027?", "Yes, Capcom says 2027 on PS5, Xbox Series X|S, Switch 2 and PC. No month or day has been announced."))
 if _hor_delayed:
     hor_faq.append(("Which horror games were delayed to 2027?", ", ".join(g["title"] for g in _hor_delayed) + "."))
-page("horror-games-2027.html", f"Horror Games Coming Out in 2027: Dates and Consoles ({len(_hor)} Games) | DayOneDrop"[:90],
+page("horror-games-2027.html", f"Horror Games Coming Out in 2027: All {len(_hor)} Dates and Consoles | DayOneDrop",
      f"Every horror game coming in 2027: Until Dawn 2, Resident Evil Veronica, Ontos and more, with dates, PS5/Xbox/PC/Switch 2 filter and countdown. Checked {UPDATED}."[:160],
      _hor_body, 0, hor_faq, crumbs=[("Home", DOMAIN + "/"), ("2027 games by genre", canon("games-by-genre-2027.html")), ("Horror games 2027", canon("horror-games-2027.html"))])
 
@@ -1482,7 +1499,7 @@ bl_faq += [
     ("Where do the hours per game come from?", "From you. Every game starts at 30 hours as a placeholder. We only list release dates we can confirm, so we do not publish playtime estimates."),
     ("How many hours a week does the average gamer play?", "It varies a lot, so the planner lets you set your own. Try 10 hours a week as a starting point and adjust."),
 ]
-page("backlog-planner-2027.html", "2027 Backlog Planner: Can You Finish Before the Next Big Game? | DayOneDrop",
+page("backlog-planner-2027.html", "2027 Backlog Planner: Finish Before the Next Big Game?",
      (f"Free 2027 backlog planner: pick your games and weekly hours, see if you finish before each launch, the busiest month and days left before the first big game.")[:160],
      bl_body, 0, bl_faq, crumbs=[("Home", DOMAIN + "/"), ("Tools", canon("tools.html")), ("Backlog planner 2027", canon("backlog-planner-2027.html"))])
 
@@ -1745,7 +1762,7 @@ dec_faq = [
     ("Are any December 2026 games on PS4 or Switch 1?", ", ".join(f"{x[1]} (also on {x[3]})" for x in _dold) + "."),
     ("Are any big games coming out at Christmas 2026?", f"No. The last notable confirmed release is {_dlast[1]} on {_dnice(_dlast[0])}. The next wave starts in January 2027."),
 ]
-page("games-december-2026.html", f"Games Coming Out in December 2026: All {len(DEC26)} Releases by Date and Console | DayOneDrop",
+page("games-december-2026.html", f"Games Coming Out in December 2026: All {len(DEC26)} Releases",
      f"Every confirmed game coming out in December 2026 on PS5, Xbox, PC and Switch 2: Dragon Quest Monsters, Monster Hunter Wilds Switch 2, Layton, Attack on Titan 3."[:160],
      dec_body, 0, dec_faq, crumbs=[("Home", DOMAIN + "/"), ("2027 calendar", canon("calendar.html")), ("December 2026 games", canon("games-december-2026.html"))])
 
@@ -2494,7 +2511,7 @@ page("game-awards-2026.html", "The Game Awards 2026 Start Time, Disney+ Stream a
 # ---------------- ABOUT / PRIVACY / 404 ----------------
 _ab_n = len(GAMES); _ab_d = sum(1 for g in GAMES if g["date"]); _ab_del = sum(1 for g in GAMES if g["status"] == "delayed")
 page("about.html", "About DayOneDrop: How We Track 2027 Release Dates | DayOneDrop",
-     f"DayOneDrop is an independent tracker of {_ab_n} games coming in 2027. How we check every release date, how fast we update delays, our sources and how to report a mistake.",
+     f"DayOneDrop is an independent tracker of {_ab_n} games coming in 2027. How we check every date, update delays, pick sources and fix mistakes.",
      f'''<section><div class="wrap" style="max-width:760px"><h1>About <span class="amber">DayOneDrop</span></h1>
 <p>DayOneDrop is an independent website that tracks release dates for the games coming out in 2027. Right now we follow <strong>{_ab_n} games</strong>: {_ab_d} with an exact date, the rest with a season or year, and {_ab_del} that have already been delayed. Every game has its own page with the date, platforms, developer, a live countdown and its full date history.</p>
 <h2>Who runs DayOneDrop</h2><p>DayOneDrop is a small independent publisher that also runs the GTA 6 guide <a href="https://neoncoast.org/" rel="noopener">NeonCoast</a>. We are not owned by, paid by or linked to any game publisher, platform holder or store.</p>
@@ -2510,7 +2527,7 @@ page("about.html", "About DayOneDrop: How We Track 2027 Release Dates | DayOneDr
 <h2>How the site is funded</h2><p>DayOneDrop is free. Some pages may show ads, and some store buttons may be affiliate links, which can earn us a small fee at no cost to you. Ads and links never change a date, a ranking or what we say about a game. See our <a href="{href("privacy.html", 0)}">privacy policy</a>.</p>
 <h2>Useful pages</h2><ul><li><a href="{href("games.html", 0)}">All 2027 games, month by month</a></li><li><a href="{href("calendar.html", 0)}">2027 release calendar</a></li><li><a href="{href("delayed-games-2027.html", 0)}">Every delayed 2027 game</a></li><li><a href="{href("new-games-this-week.html", 0)}">New games this week</a></li></ul>
 <p class="muted">Game names and artwork belong to their owners. Last checked {UPDATED}.</p></div></section>''')
-page("privacy.html", "Privacy Policy | DayOneDrop", "DayOneDrop privacy policy covering cookies, Google AdSense, Google Analytics and affiliate links.",
+page("privacy.html", "Privacy Policy | DayOneDrop", "DayOneDrop privacy policy: what we collect, how cookies, Google AdSense, Google Analytics and affiliate links work, and how to delete your email.",
      f'''<section><div class="wrap" style="max-width:760px"><h1>Privacy policy</h1><p>Last updated: {e(UPDATED)}.</p>
 <h2>What we collect</h2><p>Your launch list is saved only in your own browser. If you join our email list, we keep your email address with our email provider, Kit (kit.com), to send you the calendar and our updates. Every email has an unsubscribe link, and you can ask us to delete your address at any time.</p>
 <h2>Analytics</h2><p>We use Google Analytics to count visits and see which pages are popular. It uses cookies and collects information like pages viewed, approximate location and device type.</p>
@@ -2606,7 +2623,7 @@ xs_faq = [
     ("Which 2027 Xbox games have no release date yet?", (", ".join(f"{g['title']} ({nice_date(g)})" for g in _xb_und) + ".") if _xb_und else "Every tracked Xbox game has a date."),
     ("Which 2027 Xbox games are on Game Pass?", ", ".join(f"{g['title']} ({nice_date(g)})" for g in _xb_gp) + "."),
 ]
-page("xbox-games-showcase-2027.html", "Xbox Games Showcase 2027: Likely Date, Past Shows and Games Without a Date | DayOneDrop",
+page("xbox-games-showcase-2027.html", "Xbox Games Showcase 2027: Likely Date and Past Shows",
      f"When is the Xbox Games Showcase 2027? Not announced yet: likely early June. Every past show date, plus the {len(_xb_und)} Xbox 2027 games still without a date. Checked {UPDATED}."[:160],
      xs_body, 0, xs_faq, crumbs=[("Home", DOMAIN + "/"), ("Xbox Series X|S games", canon("platforms/xbox-series.html")), ("Xbox Games Showcase 2027", canon("xbox-games-showcase-2027.html"))])
 
@@ -2645,8 +2662,8 @@ psp_faq = [
     ("When do new PS Plus games come out?", "On the first Tuesday of the month. The previous month's games can be claimed until then."),
     ("Do I keep PS Plus games forever?", "You keep claimed monthly games for as long as you have an active PS Plus subscription of any tier."),
 ]
-page("ps-plus-monthly-games.html", "PS Plus December 2026 Games: Tony Hawk 3+4, Dragon Ball Xenoverse 2, Amnesia | DayOneDrop",
-     "PS Plus December 2026 monthly games: Tony Hawk's Pro Skater 3+4, Dragon Ball Xenoverse 2 and Amnesia: The Bunker, 1 Dec to 4 Jan. November's games until 30 November.",
+page("ps-plus-monthly-games.html", "PS Plus December 2026 Games: Tony Hawk 3+4, Xenoverse 2",
+     "PS Plus December 2026 monthly games: Tony Hawk's Pro Skater 3+4, Dragon Ball Xenoverse 2 and Amnesia: The Bunker, 1 Dec to 4 Jan. November's games end 30 Nov.",
      psp_body, 0, psp_faq, crumbs=[("Home", DOMAIN + "/"), ("PS Plus monthly games", canon("ps-plus-monthly-games.html"))])
 
 # ---------------- EPIC FREE GAMES (Keyword Planner worldwide 25 Nov 2026: "epic free games" 10k-100k, low comp). UPDATE EVERY THURSDAY after 16:00 UTC. ----------------
@@ -2689,8 +2706,8 @@ ep_faq = [
     ("Do you keep Epic free games forever?", "Yes. Once you claim a game during its free week it stays in your Epic library."),
     ("Does Epic do mystery games in December?", "In recent years Epic has given away a free game every day over the holidays. It hasn't announced the 2026 event yet."),
 ]
-page("epic-free-games.html", "Epic Free Games This Week (and Next Week): Every Free Game, Updated Thursdays | DayOneDrop",
-     f"Epic Games Store free games this week: {_ep_now[2]} until {_ep_now[1]}." + (f" Next: {_ep_next[0][2]}." if _ep_next else "") + " Plus the swap time in your time zone."[:160],
+page("epic-free-games.html", "Epic Free Games This Week and Next: Every Free Game",
+     f"Epic Games Store free games this week: {_ep_now[2]} until {_ep_now[1]}." + (f" Next: {_ep_next[0][2]}." if _ep_next else "") + (" Plus the swap time in your time zone." if len(f"Epic Games Store free games this week: {_ep_now[2]} until {_ep_now[1]}." + (f" Next: {_ep_next[0][2]}." if _ep_next else "")) <= 122 else ""),
      ep_body, 0, ep_faq, crumbs=[("Home", DOMAIN + "/"), ("Epic free games", canon("epic-free-games.html"))])
 
 
@@ -2810,7 +2827,7 @@ ss_faq = [
     ("Is there a Steam Black Friday sale in 2026?", "No. Valve's Autumn Sale ran 1 to 8 October 2026 and the next storewide sale is the Winter Sale from 17 December. Only some publishers discount their own games for Black Friday."),
     ("What time does the Steam sale start?", "Usually 10 am Pacific, which is 1 pm Eastern, 6 pm UK and 11 pm Pakistan time. Valve's schedule lists only the dates."),
 ]
-page("steam-sale-dates.html", "Steam Sale Dates 2026-2027: Winter Sale, Spring Sale, Summer Sale and Next Fest | DayOneDrop",
+page("steam-sale-dates.html", "Steam Sale Dates 2026-2027: Winter, Spring and Summer Sales",
      f"Next Steam sale: {_ss_next_sale[0]}, {_ss_nice(_ss_next_sale[1])} – {_ss_nice(_ss_next_sale[2])} 2027. Every 2027 Steam sale and fest date with a live countdown."[:160],
      ss_body, 0, ss_faq, crumbs=[("Home", DOMAIN + "/"), ("PC games", canon("platforms/pc.html")), ("Steam sale dates", canon("steam-sale-dates.html"))])
 
@@ -2895,7 +2912,7 @@ nd_faq = [
     ("Which Switch 2 games of 2027 have no date yet?", ", ".join(f"{g['title']} ({nice_date(g)})" for g in _sw_und) + "."),
     ("Is there a Nintendo Direct in December 2026?", "None is announced. The Game Awards on 10 December 2026 is the next confirmed show."),
 ]
-page("nintendo-direct.html", "Next Nintendo Direct: Date, Last Direct and Switch 2 Games Still Without a Date | DayOneDrop",
+page("nintendo-direct.html", "Next Nintendo Direct: Date, Last Direct and Switch 2 Games",
      f"When is the next Nintendo Direct? Not announced yet. The last was {_xs_day(_nd_last[0])}. Every 2026 Direct, and the {len(_sw_und)} Switch 2 2027 games still without a date."[:160],
      nd_body, 0, nd_faq, crumbs=[("Home", DOMAIN + "/"), ("Switch 2 games", canon("platforms/switch-2.html")), ("Nintendo Direct", canon("nintendo-direct.html"))])
 
@@ -2980,7 +2997,7 @@ tb_faq = [
     ("When will undated 2027 games get release dates?", "The next chances are The Game Awards on 10 December 2026, an Xbox Developer Direct (usually late January), any Nintendo Direct, and the summer showcases in June 2027."),
     ("What does 'spring 2027' mean for a release date?", "It is the publisher's own window, usually March to May. The exact day is still to come, so it can still move."),
 ]
-page("games-without-release-date-2027.html", f"2027 Games With No Release Date Yet: All {len(_nd_g)}, by Console and Season | DayOneDrop",
+page("games-without-release-date-2027.html", f"2027 Games With No Release Date Yet: All {len(_nd_g)} by Console",
      f"{len(_nd_g)} games are confirmed for 2027 with no exact date: Kingdom Hearts 4, Pokémon Winds and Waves, RE Veronica and more. Filter by console and season."[:160],
      tb_body, 0, tb_faq, crumbs=[("Home", DOMAIN + "/"), ("2027 calendar", canon("calendar.html")), ("No release date yet", canon("games-without-release-date-2027.html"))])
 
@@ -3040,7 +3057,7 @@ cd_faq = [
     ("Can I share a game countdown?", "Yes. Pick the game and tap 'Copy link to this countdown'. The link opens with that game selected."),
     ("Is there a countdown for games without a date?", "No. A timer starts only when the publisher confirms an exact day. Undated 2027 games are listed on our 'no release date yet' page."),
 ]
-page("countdown.html", "Game Release Countdown 2027: Live Timer to Launch Day for Every Upcoming Game | DayOneDrop",
+page("countdown.html", "Game Release Countdown 2027: Live Timers for Every Game",
      f"Live countdown to every dated 2027 game: days, hours and seconds to launch in your time zone. Next up: {_cd_first['title']} ({short_date(_cd_first)}). Share any timer."[:160],
      cd_body, 0, cd_faq, crumbs=[("Home", DOMAIN + "/"), ("Tools", canon("tools.html")), ("Release countdown", canon("countdown.html"))])
 
@@ -3258,7 +3275,7 @@ er_faq = [("What games are like Elden Ring?", "Dark Souls III, Sekiro, Bloodborn
           ("Is Elden Ring on Switch 2?", "Yes. Elden Ring: Tarnished Edition launched on Switch 2 on 28 August 2026."),
           ("When does Lords of the Fallen 2 come out?", "April 2027 on PS5, Xbox Series X|S, Switch 2 and PC. CI Games says the exact day is due in December 2026.")]
 page("games-like-elden-ring.html", "Games Like Elden Ring: Best Soulslikes Now and in 2027 | DayOneDrop",
-     "Games like Elden Ring on PS5, Xbox, PC and Switch 2: Lies of P, Sekiro, Wukong and more, plus 2027 soulslikes Wo Long 2, Lords of the Fallen II and The Duskbloods.",
+     "Games like Elden Ring on PS5, Xbox, PC and Switch 2: Lies of P, Sekiro, Wukong and more, plus 2027 soulslikes Wo Long 2, Lords of the Fallen II, Duskbloods.",
      er_body, 0, er_faq, crumbs=[("Home", DOMAIN + "/"), ("2027 games by genre", canon("games-by-genre-2027.html")), ("Games like Elden Ring", canon("games-like-elden-ring.html"))])
 
 
@@ -3769,7 +3786,7 @@ an_faq = [("What anime is coming out in winter 2027?", _an_quick),
           ("When does One-Punch Man season 3 part 2 come out?", "January 2027."),
           ("Is there a Sekiro anime?", "Yes. Sekiro: No Defeat from Qzil.la is listed for winter 2027.")]
 page("winter-2027-anime.html", "Winter 2027 Anime: Every January 2027 Premiere | DayOneDrop",
-     "Winter 2027 anime: Sakamoto Days S2 (Netflix), One-Punch Man S3 part 2, Mashle S3, Shangri-La Frontier S3, The One Piece and Sekiro: No Defeat. January premieres.",
+     "Winter 2027 anime: Sakamoto Days S2 (Netflix), One-Punch Man S3 part 2, Mashle S3, Shangri-La Frontier S3, The One Piece and Sekiro: No Defeat, by date.",
      _an_body, 0, an_faq, crumbs=[("Home", DOMAIN + "/"), ("Winter 2027 anime", canon("winter-2027-anime.html"))])
 
 
