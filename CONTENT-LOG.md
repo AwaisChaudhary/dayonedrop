@@ -337,3 +337,10 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - Data: added Horizon Steel Frontiers (first half of 2027, PC + mobile, NCSOFT; GamesRadar+, GamingBolt, PSU, Wccftech). Board now 86.
 - Refreshed /steam-sale-dates: new H2 + FAQ "Is there a Steam Black Friday sale?". Links in: footer (both pages), /tools, /steam-sale-dates, /epic-free-games, /ps-plus-monthly-games, /games-december-2026, /new-tv-shows-december-2026.
 - IndexNow pending (no WebFetch in this run): /black-friday-game-sales-2026, /new-tv-shows-january-2027, /steam-sale-dates, /epic-free-games, /ps-plus-monthly-games, /games-december-2026, /new-tv-shows-december-2026, /tools, /platforms/pc, /later-2027
+
+## 2026-11-26 (scheduled data check, evening)
+- Checked: "delayed to 2027" news (past 2 months), new 2027 date announcements, earlier "left out" list (Warhammer Blood Bowl, Pokémon Winds and Waves, Acts of Blood), window games. No date changes for tracked games.
+- Added 3 (board now 89): Demon Tides, 21 Jan 2027, PS5/Switch 2 (also Switch 1; PC out since Feb 2026), Fabraz (Gematsu, Noisy Pixel, VGChartz, Final Weapon, 24 Nov 2026). Chronoscript: The Endless End, early summer 2027 (delayed from 2026), PS5/Xbox Series X|S/PC (Gematsu, Worthplaying, GamingBolt, Noisy Pixel; Xbox added Oct 2026 per Gematsu + GamingBolt + Final Weapon). Neverway, 2027 (delayed from Oct 2026), PC (+ Switch 1), Coldblood Inc. (Gematsu + RPGFan, Aug 2026).
+- Fixed ordering: Horizon Steel Frontiers (month 6) was at the end of games.json; list re-sorted by month then date.
+- Left out: Warhammer Blood Bowl (still "early 2027" PC Gamer/games.gg vs "spring 2027" God is a Geek); Pokémon Winds and Waves Nov 2027 (rumour only); Acts of Blood 2027 delay (Niche Gamer only); STARDUST: Wish of Witch Q1 2027 (platforms differ: Gematsu PS5/Switch 2 vs VGChartz Switch 2/PC); Chronoscript developer (single source).
+- IndexNow pending (no WebFetch in this run): /calendar, /games, /delayed-games-2027, /later-2027, /months/january-2027, /platforms/ps5, /platforms/xbox-series, /platforms/pc, /platforms/switch-2

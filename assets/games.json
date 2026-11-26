@@ -449,6 +449,38 @@
    ]
   },
   {
+   "slug": "demon-tides",
+   "title": "Demon Tides",
+   "date": "2027-01-21",
+   "window": "",
+   "month": 1,
+   "platforms": [
+    "PS5",
+    "Switch 2"
+   ],
+   "dev": "Fabraz",
+   "genre": "3D platformer",
+   "status": "dated",
+   "page": false,
+   "about": "Fabraz's open-sea 3D platformer, already out on PC, comes to PS5 and Switch 2 (plus the original Switch) on 21 January 2027.",
+   "facts": [
+    "Developed and published by Fabraz, the studio behind Demon Turf.",
+    "Launched on PC (Steam) in February 2026.",
+    "Console versions for PS5, Switch 2 and Switch arrive on 21 January 2027."
+   ],
+   "history": [
+    {
+     "when": "Feb 2026",
+     "text": "Launched on PC."
+    },
+    {
+     "when": "Nov 2026",
+     "text": "Console date set: 21 January 2027 on PS5, Switch 2 and Switch."
+    }
+   ],
+   "sources": "Gematsu, Noisy Pixel, VGChartz, Final Weapon (Nov 2026)"
+  },
+  {
    "slug": "forza-horizon-6",
    "title": "Forza Horizon 6",
    "platforms": [
@@ -2368,6 +2400,74 @@
    "sources": "Roberts Space Industries Letter From the Chairman via GamingBolt (28 Aug 2026) and TechSpot, Power Up Gaming (11 Oct 2026), PC Games Hardware, Dexerto, 80.lv"
   },
   {
+   "slug": "horizon-steel-frontiers",
+   "title": "Horizon Steel Frontiers",
+   "platforms": [
+    "PC"
+   ],
+   "dev": "NCSOFT (with Guerrilla)",
+   "genre": "MMORPG",
+   "page": false,
+   "facts": [
+    "NCSOFT is targeting the first half of 2027, so by the end of June 2027. No exact day has been announced.",
+    "It is an MMORPG set in Guerrilla's Horizon universe, where you hunt giant machines.",
+    "It is coming to PC and mobile. No PS5 version has been announced."
+   ],
+   "history": [
+    {
+     "when": "Nov 2025",
+     "text": "Announced by NCSOFT for PC and mobile"
+    },
+    {
+     "when": "2026",
+     "text": "NCSOFT sets the first half of 2027 after hinting at an earlier launch"
+    }
+   ],
+   "date": null,
+   "window": "First half of 2027",
+   "month": 6,
+   "status": "window",
+   "about": "Horizon Steel Frontiers is NCSOFT's Horizon MMORPG for PC and mobile, aimed at the first half of 2027.",
+   "sources": "GamesRadar+, GamingBolt, PSU, Wccftech, Game Informer"
+  },
+  {
+   "slug": "chronoscript-the-endless-end",
+   "title": "Chronoscript: The Endless End",
+   "date": null,
+   "window": "Early summer 2027",
+   "month": 6,
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC"
+   ],
+   "dev": "",
+   "genre": "Action adventure",
+   "status": "delayed",
+   "page": false,
+   "about": "A stylish exploration action game set inside a never-ending story, delayed from 2026 to early summer 2027 and now also coming to Xbox.",
+   "facts": [
+    "Delayed from 2026 to early summer 2027 to act on player feedback from the demo.",
+    "Coming to PS5 and PC (Steam); an Xbox Series X|S version was added in October 2026.",
+    "No exact release day yet."
+   ],
+   "history": [
+    {
+     "when": "Sep 2025",
+     "text": "Announced for PS5 and PC in 2026."
+    },
+    {
+     "when": "Sep 2026",
+     "text": "Delayed from 2026 to early summer 2027."
+    },
+    {
+     "when": "Oct 2026",
+     "text": "Xbox Series X|S version announced."
+    }
+   ],
+   "sources": "Gematsu, Worthplaying, GamingBolt, Noisy Pixel, Automaton West"
+  },
+  {
    "slug": "showa-american-story",
    "title": "Showa American Story",
    "date": "2027-10-28",
@@ -3011,35 +3111,36 @@
    ]
   },
   {
-   "slug": "horizon-steel-frontiers",
-   "title": "Horizon Steel Frontiers",
+   "slug": "neverway",
+   "title": "Neverway",
+   "date": null,
+   "window": "2027",
+   "month": 12,
    "platforms": [
     "PC"
    ],
-   "dev": "NCSOFT (with Guerrilla)",
-   "genre": "MMORPG",
+   "dev": "Coldblood Inc.",
+   "genre": "Horror life sim RPG",
+   "status": "delayed",
    "page": false,
+   "about": "Coldblood Inc.'s pixel-art horror life sim RPG, delayed from October 2026 to 2027 on PC (a Switch 1 version is also planned).",
    "facts": [
-    "NCSOFT is targeting the first half of 2027, so by the end of June 2027. No exact day has been announced.",
-    "It is an MMORPG set in Guerrilla's Horizon universe, where you hunt giant machines.",
-    "It is coming to PC and mobile. No PS5 version has been announced."
+    "Developed by Coldblood Inc.",
+    "Horror-tinged farming and life sim RPG in pixel art.",
+    "Delayed from October 2026 to 2027; no exact date yet.",
+    "Coming to PC (Steam) and the original Nintendo Switch."
    ],
    "history": [
     {
-     "when": "Nov 2025",
-     "text": "Announced by NCSOFT for PC and mobile"
+     "when": "2025",
+     "text": "Planned for October 2026 on PC and Switch."
     },
     {
-     "when": "2026",
-     "text": "NCSOFT sets the first half of 2027 after hinting at an earlier launch"
+     "when": "Aug 2026",
+     "text": "Delayed from October 2026 to 2027."
     }
    ],
-   "date": null,
-   "window": "First half of 2027",
-   "month": 6,
-   "status": "window",
-   "about": "Horizon Steel Frontiers is NCSOFT's Horizon MMORPG for PC and mobile, aimed at the first half of 2027.",
-   "sources": "GamesRadar+, GamingBolt, PSU, Wccftech, Game Informer"
+   "sources": "Gematsu, RPGFan (Aug 2026)"
   }
  ]
 }
