@@ -7,6 +7,15 @@ Tools in this repo: `seo_post.py` (runs at the end of build.py: sitemap = every 
 5. Links: only real editorial links via outreach batches Awais approves; build "linkable assets" (original data, free tools, maps) and list pitch targets in DEMAND for approval.
 6. Monthly: run seo_audit.py on the whole site and fix broken links, orphans, duplicate titles/descriptions, missing schema.
 
+## DEMAND RUN 26 Nov 2026 (scheduled, fourth pass, demand-first)
+Evidence: GTA 6 launched 19 Nov 2026 on PS5/Xbox Series X|S only (Dexerto, Vice, VGC 20 Nov); "gta 6 pc release date" / "is gta 6 on pc" is now the top GTA question: VGC, Vice, Yahoo Tech, Windows Forum, Shattered (25 Nov GameGPU "March 2027" claim) all published PC-date explainers this week; Take-Two CEO GTA 7 / next-project quotes (Dexerto, Tribune, IBTimes, ComicBook, Notebookcheck 19-22 Nov). W2/R4 "new tv shows december 2026" (100k-1M head term): RT (18 Nov), Deadline/Yahoo, ScreenRant, Dexerto, TVChart, OTTweek all run December 2026 premiere pages.
+N13. DONE 26 Nov https://getdayonedrop.com/gta-6-pc-release-date : quick answer (no PC date), status table, live "days PC players have waited", PC-date estimator tool (GTA IV / RDR2 / GTA V gaps + GamesBeat Q1 2027 report) with countdown, rumour table (labelled), GTA 6 Online + GTA 7 H2s, PC games to play meanwhile.
+N14. DONE 26 Nov https://getdayonedrop.com/new-tv-shows-december-2026 (W2/R4 first step): 18 premieres listed by 2+ schedules, service + type filter, Google Calendar per show, Harry Potter countdown, Netflix / other-service / final-season / week-by-week H2s. Single-source shows left out: Collect & Praise, It's Florida Man S3, Sunshine Girls, The Chosen: The Three Kings, Who the Hell is Hamish?, Fixer Upper special, NYRE.
+N15. DONE 26 Nov (refresh) https://getdayonedrop.com/after-gta-6 : R3 "rockstar next game" answered with Zelnick's launch-day GTA 7 quote, Nov earnings "next project" line, new "When does GTA 6 Online come out?" H2 + FAQ, link to PC estimator.
+R1/R2 NOTE 26 Nov: already covered. Month pages Jan-Apr 2027 exist with "Games Coming Out in <Month> 2027" titles; /platforms/switch-2 has "Which 2027 games are only on Switch 2?" exclusives section. Mark DONE.
+N16. OPEN /new-tv-shows-january-2027 (next month, same format) and keep the December page fresh (add shows once a 2nd schedule confirms).
+N17. OPEN GTA 6 follow-ups: update /gta-6-pc-release-date the day Rockstar announces PC or Online; Take-Two Q3 earnings (early Feb 2027) is the next likely official mention.
+
 ## COMPETITOR WATCH 26 Nov 2026 (vs Game Informer /2026 + /2027 lists, GamesRadar release dates upd. 25 Nov)
 We have 85 games in assets/games.json (was 79), 30 game pages, month pages Jan-Apr 2027 + Dec 2026 (DEC26 list had 21 games).
 1. DONE 26 Nov (competitor watch): /games-december-2026 was missing 8 games that Game Informer and GamesRadar both date the same: Apple Crumble, Dumpster Gang, The Journey Home (3 Dec), Acts of Blood, A Game About Digging A Hole Together, Petit Planet (4 Dec), Don't Fret (8 Dec), Hookeye (9 Dec). Added (platforms = what both agree on).
@@ -25,15 +34,15 @@ N12. OPEN data: Memoria Wake (early 2027, Xbox Series/PC, Team Crescendo) needs 
 R1/R2/R3 (radar 26 Nov 06:45) CHECKED 26 Nov: already covered by /months/february-2027 (title "Games Coming Out in February 2027"), /platforms/switch-2 (H2 "Which 2027 games are only on Nintendo Switch 2?") and /after-gta-6 (H2 "What is Rockstar making after GTA 6?"); no duplicate URLs built.
 
 ## DEMAND RADAR 26 Nov 06:45 (Google autocomplete US)
-R1. OPEN /games-coming-out-february-2027 (autocomplete "games coming out in 2027 february") and monthly pages for Jan-Mar 2027 if missing.
-R2. OPEN /switch-2-games-2027 ("switch 2 games 2027", "switch 2 exclusive games 2027") with release dates + exclusives filter.
-R3. OPEN /rockstar-next-game ("after gta 6 what is rockstar's next game": confirmed facts only, clearly label rumours) + "games like gta 6 on roblox / for android / for pc" sections on /games-like-gta-6.
+R1. DONE (month pages exist) /games-coming-out-february-2027 (autocomplete "games coming out in 2027 february") and monthly pages for Jan-Mar 2027 if missing.
+R2. DONE (covered by /platforms/switch-2) /switch-2-games-2027 ("switch 2 games 2027", "switch 2 exclusive games 2027") with release dates + exclusives filter.
+R3. DONE 26 Nov as H2s on https://getdayonedrop.com/after-gta-6 /rockstar-next-game ("after gta 6 what is rockstar's next game": confirmed facts only, clearly label rumours) + "games like gta 6 on roblox / for android / for pc" sections on /games-like-gta-6.
 R4. OPEN /new-tv-shows-december-2026 ("new tv shows december 2026") and /movies-2027 (W1) - both already queued as W-items; do W1/W2 first.
 
 ## TOP PRIORITY: WIDER CATEGORIES (Awais 26 Nov 01:02: "DayOneDrop doesn't mean games only or PS5 only, we have plenty of room to add more stuff")
 DayOneDrop = "what's coming out and when". Build release-date hubs beyond console games, each with a calendar/table, countdowns and FAQ (facts from studios/platforms + 2 trusted outlets):
 W1. DONE 26 Nov https://getdayonedrop.com/movies-2027 (movies-december-2026 still OPEN): upcoming movies 2027 ("upcoming movies 2027" 10k-100k, +900% YoY): dated big releases by month, where to watch (cinema/streaming), countdowns; then /movies-december-2026 for this month.
-W2. OPEN /new-tv-shows ("new tv shows" 100k-1M): shows premiering this month and next on Netflix, Disney+, Prime Video, HBO Max, Apple TV+; season dates for big returning shows.
+W2. PARTLY DONE 26 Nov https://getdayonedrop.com/new-tv-shows-december-2026 ; OPEN /new-tv-shows ("new tv shows" 100k-1M): shows premiering this month and next on Netflix, Disney+, Prime Video, HBO Max, Apple TV+; season dates for big returning shows.
 W3. OPEN /anime-release-dates (winter 2027 season, 1k-10k) and /new-on-netflix-this-week style pages ONLY if they can be kept fresh by the data runs.
 W4. OPEN game-adjacent: /nintendo-direct (100k-1M), /game-pass-this-month, /steam-sale-dates, /mobile-games-2027, /vr-games-2027, /board-games-2027 ("tabletop release"), /game-awards-2026 (11 Dec: nominees, how to watch, time in your zone).
 W5. OPEN tech releases people track: /gaming-hardware-2027 (consoles, handhelds, GPUs with announced dates), /iphone-release-date style pages only with official/2-source facts.

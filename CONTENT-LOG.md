@@ -322,3 +322,11 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - Left out: Warhammer Blood Bowl (still "early 2027"/Q1 vs "spring 2027"); Pokémon Winds and Waves delay to Nov 2027 (rumour only); Planet Zoo 2 (Oct 2026, not 2027); Golf With Your Friends 2 player count (12 vs 16, sources differ).
 - IndexNow pending (no WebFetch in this run): /calendar, /games, /delayed-games-2027, /later-2027, /months/march-2027, /platforms/ps5, /platforms/xbox-series, /platforms/pc, /platforms/switch-2
 - 2026-11-26 09:25 PKT IndexNow FLUSHED (daily traffic check): pending list + last 30h new pages submitted, HTTP 200.
+
+## 2026-11-26 (scheduled SEO run, fourth pass, demand-first)
+- New page /gta-6-pc-release-date "GTA 6 PC Release Date: Is GTA 6 on PC?" (GTA 6 launched 19 Nov console-only; PC question now peaks): quick answer, status table, live days-waited counter (data-since in app.js), PC estimator tool (#g6-tool: GTA IV 217 / RDR2 375 / GTA V 574 day gaps + GamesBeat Q1 2027 report) with countdown (countdowns can now be retargeted via window.DODcd), labelled rumours (GamesBeat via Vice; GameGPU via Shattered), GTA 6 Online + GTA 7 H2s, PC picks from LIKE_GTA. Sources: VGC, Vice, Dexerto (20 Nov), ComicBook (11 Nov), GTA Base (22 Nov), Shattered (25 Nov).
+- New page /new-tv-shows-december-2026 (W2/R4): 18 premieres that 2+ of Rotten Tomatoes / Deadline (Yahoo) / ScreenRant / Dexerto / Popverse date the same, service + type filter (#tv-tool), Google Calendar per show, Harry Potter (25 Dec, HBO Max) countdown.
+- Refreshed /after-gta-6: Zelnick launch-day GTA 7 quote, Nov earnings "next project", GTA 6 Online H2 + FAQ, PC estimator link.
+- Links in: footer (both pages), /tools, /after-gta-6, /games-like-gta-6, /movies-2027, /games-december-2026.
+- Left out: GTA 6 price and sales (single source / no official figure), single-source December TV shows.
+- IndexNow pending (no WebFetch in this run): /gta-6-pc-release-date, /new-tv-shows-december-2026, /after-gta-6, /tools, /games-like-gta-6, /movies-2027, /games-december-2026

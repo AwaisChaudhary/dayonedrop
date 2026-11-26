@@ -50,13 +50,18 @@
   /* countdowns */
   function countdown(root, ms) {
     var units = $$("[data-u]", root);
+    root._ms = ms;
+    if (root._on) { var v0 = left(ms); units.forEach(function (u) { flap(u, pad(v0[+u.dataset.u], u.dataset.u === "0" ? 3 : 2)); }); return; }
+    root._on = 1;
     function tick() {
-      var v = left(ms);
+      var v = left(root._ms);
       units.forEach(function (u) { flap(u, pad(v[+u.dataset.u], u.dataset.u === "0" ? 3 : 2)); });
-      if (ms - Date.now() > 0) setTimeout(tick, 1000);
+      if (root._ms - Date.now() > 0) setTimeout(tick, 1000); else root._on = 0;
     }
     tick();
   }
+  window.DODcd = function (root, iso) { countdown(root, at({ date: iso })); };
+  $$("[data-since]").forEach(function (el) { var t = at({ date: el.getAttribute("data-since") }); if (t) { var d = Math.floor((Date.now() - t) / 864e5); if (d >= 0) el.textContent = d + " day" + (d === 1 ? "" : "s"); } });
   $$("[data-countdown]").forEach(function (root) { countdown(root, at({ date: root.dataset.countdown })); });
   $$("[data-countdown-at]").forEach(function (root) { var t = Date.parse(root.getAttribute("data-countdown-at")); if (!isNaN(t)) countdown(root, t); });
   /* local start time for a fixed instant (e.g. The Game Awards) */
@@ -948,4 +953,50 @@
   $$("[data-er-p]", t).forEach(function (c) { c.addEventListener("click", function () { sel.p = c.getAttribute("data-er-p"); draw(); }); });
   $$("[data-er-l]", t).forEach(function (c) { c.addEventListener("click", function () { sel.l = c.getAttribute("data-er-l"); draw(); }); });
   draw();
+})();
+
+/* New TV shows December 2026: service + type filter */
+(function () {
+  "use strict";
+  var t = document.getElementById("tv-tool");
+  if (!t) return;
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var sel = { s: "", k: "" };
+  try { var sv = JSON.parse(localStorage.getItem("dod-tv") || "null"); if (sv && typeof sv === "object") sel = { s: sv.s || "", k: sv.k || "" }; } catch (e) {}
+  var rows = $$("#tv-list [data-ts]"), cnt = document.getElementById("tv-count"), none = document.getElementById("tv-none");
+  function draw() {
+    var n = 0;
+    rows.forEach(function (r) {
+      var ok = (!sel.s || r.getAttribute("data-ts") === sel.s) && (!sel.k || r.getAttribute("data-tk") === sel.k);
+      r.hidden = !ok; if (ok) n++;
+    });
+    $$("[data-tv-s]", t).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-tv-s") === sel.s ? "true" : "false"); });
+    $$("[data-tv-k]", t).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-tv-k") === sel.k ? "true" : "false"); });
+    cnt.textContent = n + " show" + (n === 1 ? "" : "s");
+    none.hidden = n > 0;
+    try { localStorage.setItem("dod-tv", JSON.stringify(sel)); } catch (e) {}
+  }
+  $$("[data-tv-s]", t).forEach(function (c) { c.addEventListener("click", function () { sel.s = c.getAttribute("data-tv-s"); draw(); }); });
+  $$("[data-tv-k]", t).forEach(function (c) { c.addEventListener("click", function () { sel.k = c.getAttribute("data-tv-k"); draw(); }); });
+  draw();
+})();
+
+/* GTA 6 PC release date estimator */
+(function () {
+  "use strict";
+  var t = document.getElementById("g6-tool");
+  if (!t) return;
+  var chips = Array.prototype.slice.call(t.querySelectorAll("[data-g6]"));
+  var out = document.getElementById("g6-out"), cd = document.getElementById("g6-cd");
+  var M = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  function nice(iso) { var p = iso.split("-"); return (+p[2]) + " " + M[+p[1] - 1] + " " + p[0]; }
+  function pick(c) {
+    chips.forEach(function (x) { x.setAttribute("aria-pressed", x === c ? "true" : "false"); });
+    var iso = c.getAttribute("data-g6"), g = +c.getAttribute("data-g6-g");
+    out.textContent = g ? "If GTA 6 follows " + c.getAttribute("data-g6-t") + " (" + g + " days): about " + nice(iso) : "If " + c.getAttribute("data-g6-t") + " is right: by " + nice(iso);
+    if (window.DODcd) window.DODcd(cd, iso);
+    try { localStorage.setItem("dod-g6", iso); } catch (e) {}
+  }
+  chips.forEach(function (c) { c.addEventListener("click", function () { pick(c); }); });
+  try { var sv = localStorage.getItem("dod-g6"); chips.forEach(function (c) { if (c.getAttribute("data-g6") === sv) pick(c); }); } catch (e) {}
 })();

@@ -254,7 +254,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("new-games-this-week.html", depth)}">New games this week</a></li><li><a href="{href("later-2027.html", depth)}">Games later in 2027 (May–Dec)</a></li><li><a href="{href("games-without-release-date-2027.html", depth)}">2027 games with no release date</a></li><li><a href="{href("countdown.html", depth)}">Game release countdown</a></li><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("games-like-elden-ring.html", depth)}">Games like Elden Ring</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("fighting-games-2027.html", depth)}">Fighting games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/state-of-decay-3.html", depth)}">State of Decay 3</a></li><li><a href="{href("games/lords-of-the-fallen-ii.html", depth)}">Lords of the Fallen 2</a></li><li><a href="{href("games/squadron-42.html", depth)}">Squadron 42</a></li><li><a href="{href("games/ananta.html", depth)}">Ananta (free-to-play)</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("ps-plus-monthly-games.html", depth)}">PS Plus monthly games</a></li><li><a href="{href("epic-free-games.html", depth)}">Epic free games this week</a></li><li><a href="{href("steam-sale-dates.html", depth)}">Steam sale dates 2026-2027</a></li><li><a href="{href("movies-2027.html", depth)}">Upcoming movies 2027</a></li><li><a href="{href("nintendo-direct.html", depth)}">Next Nintendo Direct</a></li><li><a href="{href("xbox-games-showcase-2027.html", depth)}">Xbox Games Showcase 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("new-games-this-week.html", depth)}">New games this week</a></li><li><a href="{href("later-2027.html", depth)}">Games later in 2027 (May–Dec)</a></li><li><a href="{href("games-without-release-date-2027.html", depth)}">2027 games with no release date</a></li><li><a href="{href("countdown.html", depth)}">Game release countdown</a></li><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("gta-6-pc-release-date.html", depth)}">GTA 6 PC release date</a></li><li><a href="{href("games-like-elden-ring.html", depth)}">Games like Elden Ring</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("fighting-games-2027.html", depth)}">Fighting games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/state-of-decay-3.html", depth)}">State of Decay 3</a></li><li><a href="{href("games/lords-of-the-fallen-ii.html", depth)}">Lords of the Fallen 2</a></li><li><a href="{href("games/squadron-42.html", depth)}">Squadron 42</a></li><li><a href="{href("games/ananta.html", depth)}">Ananta (free-to-play)</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("ps-plus-monthly-games.html", depth)}">PS Plus monthly games</a></li><li><a href="{href("epic-free-games.html", depth)}">Epic free games this week</a></li><li><a href="{href("steam-sale-dates.html", depth)}">Steam sale dates 2026-2027</a></li><li><a href="{href("movies-2027.html", depth)}">Upcoming movies 2027</a></li><li><a href="{href("new-tv-shows-december-2026.html", depth)}">New TV shows December 2026</a></li><li><a href="{href("nintendo-direct.html", depth)}">Next Nintendo Direct</a></li><li><a href="{href("xbox-games-showcase-2027.html", depth)}">Xbox Games Showcase 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Every date is checked against the publisher or platform holder plus a second trusted source (<a href="{href("about.html", depth)}#editorial">editorial policy</a>). Spotted an error? Email <a href="mailto:awaiskaramat@hotmail.com">awaiskaramat@hotmail.com</a>. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -1574,6 +1574,8 @@ tools = f'''<header class="hero"><div class="wrap"><span class="kicker">Tools</s
 <li><a href="{href("steam-sale-dates.html", 0)}">Steam sale dates</a>: countdown to the next Steam sale, every 2027 sale and fest</li>
 <li><a href="{href("nintendo-direct.html", 0)}">Next Nintendo Direct</a>: every 2026 Direct and the Switch 2 games still without a date</li>
 <li><a href="{href("movies-2027.html", 0)}">Upcoming movies 2027</a>: every big release date with type and month filters and calendar reminders</li>
+<li><a href="{href("new-tv-shows-december-2026.html", 0)}">New TV shows December 2026</a>: every premiere with a streaming-service filter</li>
+<li><a href="{href("gta-6-pc-release-date.html", 0)}">GTA 6 PC release date estimator</a>: when GTA 6 could reach PC, based on Rockstar's past games</li>
 <li><a href="{href("after-gta-6.html", 0)}">What to play after GTA 6</a></li></ul></div></section>'''
 sw2 = [g["title"] for g in GAMES if "Switch 2" in g["platforms"]]
 both = [g["title"] for g in GAMES if "PS5" in g["platforms"] and "Xbox Series X|S" in g["platforms"]]
@@ -1693,6 +1695,7 @@ dec_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Decemb
             f'<p class="muted">Not on the list? We only add a December game once two trusted calendars agree on the date or the publisher confirms it. Smaller PC and mobile releases are left out.</p>'
             f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
             f'<li><a href="{href("new-games-this-week.html", 0)}">New games this week</a>: the same launches grouped Monday to Sunday</li>'
+            f'<li><a href="{href("new-tv-shows-december-2026.html", 0)}">New TV shows in December 2026</a>: every premiere by streaming service</li>'
             f'<li><a href="{href("game-awards-2026.html", 0)}">The Game Awards 2026</a> on 10 December: how to watch, the 2027 nominees and a winner predictor</li>'
             f'<li><a href="{href("after-gta-6.html", 0)}">What to play after GTA 6</a>: the next big games of 2027</li>'
             f'<li><a href="{href("months/january-2027.html", 0)}">January 2027 game releases</a> and the full <a href="{href("calendar.html", 0)}">2027 calendar</a></li>'
@@ -1755,18 +1758,24 @@ after_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Afte
               f'<p class="muted" style="margin-bottom:28px">All {len(DEC26)} December launches, with a console filter: <a href="{href("games-december-2026.html", 0)}">games coming out in December 2026</a>.</p>'
               f'<div class="sec-head"><h2>Will there be a GTA 7?</h2></div>'
               f'<p>Not announced. Rockstar and Take-Two have not named a GTA 7, a date or a setting. GTA 6 itself took over ten years after GTA 5 (2013), so any sequel is many years away. '
+              f'Asked about GTA 7 on GTA 6\'s launch day (19 November 2026), Take-Two boss Strauss Zelnick said: "Once you get through several hundred hours of the most incredible fun you\'ve ever heard, ask the question again." '
               f'Anything you read about GTA 7 right now is a rumour.</p>'
               f'<div class="sec-head" style="margin-top:28px"><h2>What is Rockstar making after GTA 6?</h2></div>'
               f'<p>Rockstar has not announced its next game. There is no confirmed Red Dead Redemption 3, Bully 2 or L.A. Noire sequel. For now its focus is GTA 6 and its online mode. '
+              f'On Take-Two\'s November 2026 earnings call Zelnick only said Rockstar moves on to its next project after GTA 6, with no name. The most likely next release is GTA 6\'s online mode, which Rockstar has not announced; Bloomberg reported it is expected in 2027. '
               f'We will add Rockstar\'s next game to the board the day it is announced with a date.</p>'
+              f'<div class="sec-head" style="margin-top:28px"><h2>When does GTA 6 Online come out?</h2></div>'
+              f'<p>Not announced. Rockstar sold GTA 6 as a single-player game; Bloomberg and Twitch CEO Dan Clancy both point to multiplayer arriving in 2027. Until then, GTA Online (from GTA 5) keeps running.</p>'
               f'<div class="sec-head" style="margin-top:28px"><h2>Is GTA 6 coming to PC?</h2></div>'
               f'<p>No PC version has been announced. GTA 6 launched on PS5 and Xbox Series X|S on 19 November 2026, and Take-Two did not give a PC date in its November 2026 earnings. '
-              f'Past Rockstar games reached PC later: GTA 5 (2013) reached PC in April 2015, and Red Dead Redemption 2 (October 2018) in November 2019.</p>'
+              f'Past Rockstar games reached PC later: GTA 5 (2013) reached PC in April 2015, and Red Dead Redemption 2 (October 2018) in November 2019. '
+              f'Estimate it yourself with our <a href="{href("gta-6-pc-release-date.html", 0)}">GTA 6 PC release date</a> tool.</p>'
               f'<div class="sec-head" style="margin-top:28px"><h2>Still playing GTA 6?</h2></div>'
               f'<p>Our sister site <a href="https://neoncoast.org/map" rel="noopener">NeonCoast</a> has an interactive GTA 6 map, a mission tracker, '
               f'every cheat code and a "Can my PC run GTA 6?" checker. There is no GTA 6 PC release date yet.</p>'
               f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
               f'<li><a href="{href("games-like-gta-6.html", 0)}">Games like GTA 6</a> you can play right now, on every platform</li>'
+              f'<li><a href="{href("gta-6-pc-release-date.html", 0)}">GTA 6 PC release date</a>: what Rockstar said and a PC date estimator</li>'
               f'<li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a>: the full list, plus a top list you can share</li>'
               f'<li><a href="{href("rpgs-2027.html", 0)}">Every RPG coming in 2027</a>, with a console filter</li>'
               f'<li><a href="{href("games-like-elden-ring.html", 0)}">Games like Elden Ring</a> and the 2027 soulslikes</li>'
@@ -1778,7 +1787,8 @@ after_faq = [
     ("Which games after GTA 6 are coming to PS5?", ", ".join(f"{g['title']} ({nice_date(g)})" for g, _ in _picks if "PS5" in g["platforms"]) + "."),
     ("Is there a crime game like GTA coming in 2027?", "Stranger Than Heaven, from the Like a Dragon studio, is a crime drama dated " + (nice_date(_gby["stranger-than-heaven"]) if "stranger-than-heaven" in _gby else "for 2027") + ". It is the closest story match to GTA on our 2027 list."),
     ("Will there be a GTA 7?", "Rockstar has not announced GTA 7. There is no date, setting or official confirmation, so any GTA 7 news right now is a rumour."),
-    ("What is Rockstar's next game after GTA 6?", "Rockstar has not announced one. Red Dead Redemption 3 and other sequels are unconfirmed."),
+    ("What is Rockstar's next game after GTA 6?", "Rockstar has not announced one. Red Dead Redemption 3 and other sequels are unconfirmed. GTA 6's online mode is not announced either; Bloomberg reported it is expected in 2027."),
+    ("When does GTA 6 Online come out?", "Rockstar has not announced GTA 6 Online. Bloomberg reported that multiplayer is expected in 2027."),
     ("What games come out after GTA 6 in December 2026?", f"{len(DEC26)} confirmed games, including Dragon Quest Monsters: The Withered World (3 December), Monster Hunter Wilds on Switch 2 (4 December), Professor Layton and the New World of Steam (10 December) and the Path of Exile 2 1.0 launch (11 December)."),
     ("Is GTA 6 coming to PC?", "Not yet. Rockstar has not announced a PC version or date. GTA 6 launched on PS5 and Xbox Series X|S on 19 November 2026."),
 ]
@@ -1866,6 +1876,7 @@ like_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Games
              f'<a href="https://neoncoast.org/best-early-cars" rel="noopener">the best early cars</a> and a 100% checklist.</p>'
              f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
              f'<li><a href="{href("after-gta-6.html", 0)}">What to play after GTA 6</a>: the next big releases in date order</li>'
+             f'<li><a href="{href("gta-6-pc-release-date.html", 0)}">GTA 6 PC release date</a>: what is known and a PC date estimator</li>'
              f'<li><a href="{href("new-games-this-week.html", 0)}">New games this week</a>, week by week</li>'
              f'<li><a href="{href("games-december-2026.html", 0)}">Games coming out in December 2026</a>, with a console filter</li>'
              f'<li><a href="{href("games-like-elden-ring.html", 0)}">Games like Elden Ring</a>: soulslikes to play now and in 2027</li>'
@@ -3109,6 +3120,7 @@ _mv_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Movies
             f'<p class="muted">Movies within three days of a big game on our launch board, so you can plan the week.</p>'
             + ('<div class="out" style="margin-bottom:10px">' + "".join(f'<div class="row"><span><strong>{e(m[0])}</strong> ({e(_mv_nice(m[1]))}) and {_gname(g)} ({e(nice_date(g))})</span></div>' for m, g in _mv_cross) + '</div>' if _mv_cross else "<p>No big game lands within three days of a big movie yet.</p>")
             + f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+            f'<li><a href="{href("new-tv-shows-december-2026.html", 0)}">New TV shows in December 2026</a>: Harry Potter, Emily in Paris and more</li>'
             f'<li><a href="{href("index.html", 0)}">2027 game release dates</a>: the live launch board</li>'
             f'<li><a href="{href("countdown.html", 0)}">Game release countdown</a> for any dated 2027 game</li>'
             f'<li><a href="{href("biggest-games-2027.html", 0)}">Biggest games of 2027</a></li>'
@@ -3204,11 +3216,163 @@ page("games-like-elden-ring.html", "Games Like Elden Ring: Best Soulslikes Now a
      er_body, 0, er_faq, crumbs=[("Home", DOMAIN + "/"), ("2027 games by genre", canon("games-by-genre-2027.html")), ("Games like Elden Ring", canon("games-like-elden-ring.html"))])
 
 
+# ---------------- GTA 6 PC RELEASE DATE (26 Nov 2026, demand: "gta 6 pc release date", "is gta 6 on pc", "gta 6 online release date") ----------------
+# Facts: GTA 6 out 19 Nov 2026 on PS5 + Xbox Series X|S (Dexerto, Vice, VGC 20 Nov 2026). No PC version announced (VGC, Vice 20 Nov; ComicBook 11 Nov).
+# Reports: GamesBeat (4 industry sources) Q1 2027 PC target, via Vice; GameGPU March 2027 claim (Shattered 25 Nov: unconfirmed). Online: Rockstar has not announced;
+# Twitch CEO Dan Clancy to Bloomberg "next year" (GTA Base 22 Nov). Zelnick TBPN quote 19 Nov via Dexerto. Past gaps: GTA V (VGC), RDR2 (Vice, Shattered), GTA IV (Rockstar 2008).
+GTA6_OUT = datetime.date(2026, 11, 19)
+GTA_PAST = [  # (game, console date, PC date, note)
+    ("Grand Theft Auto IV", datetime.date(2008, 4, 29), datetime.date(2008, 12, 2), "PS3 and Xbox 360 first, PC seven months later."),
+    ("Red Dead Redemption 2", datetime.date(2018, 10, 26), datetime.date(2019, 11, 5), "PS4 and Xbox One first, PC just over a year later."),
+    ("Grand Theft Auto V", datetime.date(2013, 9, 17), datetime.date(2015, 4, 14), "PS3 and Xbox 360 first, then PS4 and Xbox One (18 Nov 2014), then PC."),
+]
+def _gp_nice(d): return nice_date({"date": d.isoformat(), "window": ""})
+_gp_est = [(t, (p - c).days, GTA6_OUT + datetime.timedelta(days=(p - c).days), n, c, p) for t, c, p, n in GTA_PAST]
+_gp_rows = "".join(f'<div class="row"><span><strong>{e(t)}</strong><br><span class="muted">Console {e(_gp_nice(c))} · PC {e(_gp_nice(p))} · {e(n)}</span></span><b>{gap} days</b></div>' for t, gap, est, n, c, p in _gp_est)
+_gp_chips = ('<div class="chips" role="group" aria-label="Follow which past Rockstar game">'
+             + "".join(f'<button class="chip" type="button" data-g6="{est.isoformat()}" data-g6-t="{e(t)}" data-g6-g="{gap}" aria-pressed="{"true" if i == 1 else "false"}">Like {e(t.replace("Grand Theft Auto", "GTA").replace("Red Dead Redemption", "RDR"))}</button>' for i, (t, gap, est, n, c, p) in enumerate(_gp_est))
+             + '<button class="chip" type="button" data-g6="2027-03-31" data-g6-t="the GamesBeat report (first quarter of 2027)" data-g6-g="0" aria-pressed="false">Like the Q1 2027 report</button></div>')
+_gp_pc = [x for x in LIKE_GTA if "pc" in x[3].split()]
+_gp_quick = ("GTA 6 has no PC release date. It came out on PS5 and Xbox Series X|S on 19 November 2026, and Rockstar has not announced a PC version. "
+             f"If it follows Red Dead Redemption 2's gap, PC would land around {_gp_nice(_gp_est[1][2])}; a GamesBeat report says Rockstar is aiming for early 2027, but that is not confirmed.")
+_gp_body = (f'<header class="hero"><div class="wrap"><span class="kicker">GTA 6 on PC</span>'
+            f'<h1>GTA 6 PC release date:<br><span class="amber">not announced yet.</span></h1>'
+            f'<p class="lead">What Rockstar has said, what the reports claim, and a tool that estimates when GTA 6 could reach PC based on Rockstar\'s past games.</p>'
+            f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · GTA 6 on console since {e(_gp_nice(GTA6_OUT))}</p></div></header>'
+            f'<section><div class="wrap"><div class="out" style="margin-bottom:12px"><div class="row"><span><strong>Quick answer:</strong> {e(_gp_quick)}</span></div></div>'
+            f'<div class="out" style="margin-bottom:24px">'
+            f'<div class="row"><span>Is GTA 6 out on PC?</span><b>No</b></div>'
+            f'<div class="row"><span>PC version announced?</span><b>No</b></div>'
+            f'<div class="row"><span>Out on PS5 and Xbox Series X|S</span><b>{e(_gp_nice(GTA6_OUT))}</b></div>'
+            f'<div class="row"><span>GTA 6 Online announced?</span><b>No</b></div>'
+            f'<div class="row"><span>PC players have waited</span><b class="mono" data-since="{GTA6_OUT.isoformat()}">{(_TD - GTA6_OUT).days} days</b></div></div>'
+            f'<div class="tool" id="g6-tool" style="margin-bottom:24px"><h2 style="font-size:1.5rem;margin-top:0">When could GTA 6 come to PC?</h2>'
+            f'<p class="muted">Pick a past Rockstar launch. We add its console-to-PC gap to GTA 6\'s console date. This is an estimate, not a release date.</p>{_gp_chips}'
+            f'<p class="mono amber" id="g6-out" aria-live="polite" style="margin:12px 0 6px">If GTA 6 follows Red Dead Redemption 2: about {e(_gp_nice(_gp_est[1][2]))}</p>'
+            f'<div class="cdw"><span class="lbl" id="g6-lbl">Countdown to the estimate</span><div class="cd" id="g6-cd" data-countdown="{_gp_est[1][2].isoformat()}">'
+            '<div class="cd-unit"><span class="flaps" data-u="0"></span><span>Days</span></div><div class="cd-unit"><span class="flaps" data-u="1"></span><span>Hrs</span></div>'
+            '<div class="cd-unit"><span class="flaps" data-u="2"></span><span>Min</span></div><div class="cd-unit"><span class="flaps" data-u="3"></span><span>Sec</span></div></div></div></div>'
+            f'<div class="sec-head"><h2>How long did Rockstar games take to reach PC?</h2><span class="muted">{len(GTA_PAST)} games</span></div>'
+            f'<div class="out" style="margin-bottom:28px">{_gp_rows}</div>'
+            f'<div class="sec-head"><h2>Has Rockstar said anything about GTA 6 on PC?</h2></div>'
+            f'<p>No. Rockstar\'s launch announcement and Take-Two\'s November 2026 earnings named only PS5 and Xbox Series X|S. Take-Two boss Strauss Zelnick has said Rockstar launches on console first because that is where the core GTA audience is. '
+            f'Rockstar has brought every big game since GTA IV to PC later, so a PC version is likely, but there is no official word.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>What do the GTA 6 PC rumours say?</h2></div><div class="out" style="margin-bottom:12px">'
+            f'<div class="row"><span><strong>First quarter of 2027</strong><br><span class="muted">GamesBeat, citing four industry sources (October 2026, reported by Vice). A report, not a confirmation.</span></span><b>Report</b></div>'
+            f'<div class="row"><span><strong>March 2027, with GTA 6 Online the same day</strong><br><span class="muted">A GameGPU post on 25 November 2026. It reads Take-Two financial reports and names no insider source.</span></span><b>Weak</b></div></div>'
+            f'<p class="muted" style="margin-bottom:28px">We will put the real date on the <a href="{href("index.html", 0)}#board">departures board</a> the day Rockstar announces it.</p>'
+            f'<div class="sec-head"><h2>When does GTA 6 Online come out?</h2></div>'
+            f'<p>Rockstar has not announced it. Its pre-order announcement called GTA 6 a single-player experience. Bloomberg reported that multiplayer is expected in 2027, and Twitch CEO Dan Clancy told Bloomberg he expects "an even bigger" bump "next year when they launch multiplayer". GTA Online (the GTA 5 version) is still running on PC and consoles.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Will there be a GTA 7?</h2></div>'
+            f'<p>Not announced. Asked about GTA 7 on GTA 6\'s launch day, Zelnick said: "Once you get through several hundred hours of the most incredible fun you\'ve ever heard, ask the question again." See <a href="{href("after-gta-6.html", 0)}">what Rockstar does after GTA 6</a>.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>What can I play on PC while I wait for GTA 6?</h2><span class="muted">{len(_gp_pc)}</span></div>'
+            f'<div class="out" style="margin-bottom:12px">' + "".join(f'<div class="row"><span><strong>{e(x[0])}</strong><br><span class="muted">{e(x[2])}</span></span></div>' for x in _gp_pc[:6]) + '</div>'
+            f'<p class="muted">More picks with a platform filter: <a href="{href("games-like-gta-6.html", 0)}">games like GTA 6</a>. Want to know if your PC will cope? <a href="https://neoncoast.org" rel="noopener">NeonCoast</a> has a "Can my PC run GTA 6?" checker.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+            f'<li><a href="{href("after-gta-6.html", 0)}">What to play after GTA 6</a>: the big games of 2027</li>'
+            f'<li><a href="{href("platforms/pc.html", 0)}">Every PC game coming in 2027</a></li>'
+            f'<li><a href="{href("steam-sale-dates.html", 0)}">Steam sale dates</a>: the Winter Sale starts 17 December</li>'
+            f'<li><a href="{href("countdown.html", 0)}">Game release countdown</a></li></ul></div></section>')
+gp_faq = [("Is GTA 6 out on PC?", "No. GTA 6 came out on 19 November 2026 on PS5 and Xbox Series X|S only. Rockstar has not announced a PC version."),
+          ("When is the GTA 6 PC release date?", f"There is no date. A GamesBeat report says Rockstar is aiming for the first quarter of 2027. If it follows Red Dead Redemption 2's gap of just over a year, PC would arrive around {_gp_nice(_gp_est[1][2])}."),
+          ("Will GTA 6 come to PC?", "Rockstar has not confirmed it, but every big Rockstar game since GTA IV has reached PC later: GTA IV after 7 months, Red Dead Redemption 2 after just over a year and GTA V after about 19 months."),
+          ("When does GTA 6 Online come out?", "Rockstar has not announced GTA 6 Online. Bloomberg reported that multiplayer is expected in 2027."),
+          ("Is the GTA 6 March 2027 PC date real?", "No source has confirmed it. It comes from a GameGPU post that reads Take-Two's financial reports and names no insider.")]
+page("gta-6-pc-release-date.html", "GTA 6 PC Release Date: Is GTA 6 on PC? (Nov 2026) | DayOneDrop",
+     f"GTA 6 has no PC release date: it is out on PS5 and Xbox Series X|S since 19 Nov 2026. What Rockstar said, the Q1 2027 report, and a PC date estimator.",
+     _gp_body, 0, gp_faq, crumbs=[("Home", DOMAIN + "/"), ("After GTA 6", canon("after-gta-6.html")), ("GTA 6 PC release date", canon("gta-6-pc-release-date.html"))])
+
+
+# ---------------- NEW TV SHOWS DECEMBER 2026 (26 Nov 2026, demand W2/R4: "new tv shows december 2026", "new tv shows" 100k-1M) ----------------
+# Only shows that 2+ of Rotten Tomatoes (18 Nov), Deadline/Yahoo premiere list (4 Nov), ScreenRant (11 Nov), Dexerto (9 Nov), Popverse list with the same date.
+TV_DEC = [  # (title, date, service key, kind, note)
+    ("Trinity", "2026-12-01", "netflix", "new", "New series."),
+    ("Bad Monkey, Season 2", "2026-12-02", "apple", "ret", "Vince Vaughn's Florida crime comedy returns."),
+    ("Pride and Prejudice", "2026-12-03", "netflix", "new", "New limited series of the Jane Austen novel."),
+    ("P-Valley, Season 3", "2026-12-04", "starz", "ret", "Final season."),
+    ("Only Murders in the Building, Season 6", "2026-12-08", "hulu", "ret", "The mystery comedy heads to London. One list says 6 December; three say 8 December."),
+    ("Maxton Hall: The World Between Us, Season 3", "2026-12-09", "prime", "ret", "Final season."),
+    ("Lil Kev, Season 2", "2026-12-09", "paramount", "ret", "Adult animated comedy."),
+    ("The Murder of JonBenét Ramsey", "2026-12-10", "netflix", "new", "Limited series."),
+    ("Ghosts: holiday special", "2026-12-10", "cbs", "special", "Christmas special, not a new season."),
+    ("Ted: The Animated Series", "2026-12-17", "peacock", "new", "Animated series from Seth MacFarlane's Ted."),
+    ("Unaccustomed Earth", "2026-12-17", "netflix", "new", "New drama series."),
+    ("Quiztopia", "2026-12-17", "netflix", "new", "New series."),
+    ("Beyond Society", "2026-12-18", "netflix", "new", "New docuseries."),
+    ("Frisco King", "2026-12-18", "paramount", "new", "Tulsa King spin-off."),
+    ("Emily in Paris, Season 6", "2026-12-24", "netflix", "ret", "Final season."),
+    ("Harry Potter (HBO series), Season 1", "2026-12-25", "hbo", "new", "The new TV adaptation starts with Philosopher's Stone."),
+    ("Beyond the Gates, Season 3", "2026-12-29", "cbs", "ret", "Daytime drama."),
+    ("Mayfair Witches, Season 3", "2026-12-30", "amc", "ret", "Anne Rice's witches return."),
+]
+TV_SVC = [("netflix", "Netflix"), ("hbo", "HBO Max"), ("hulu", "Hulu / Disney+"), ("prime", "Prime Video"), ("apple", "Apple TV"), ("paramount", "Paramount+"), ("peacock", "Peacock"), ("cbs", "CBS"), ("starz", "Starz"), ("amc", "AMC")]
+_TVS = dict(TV_SVC)
+_TVK = {"new": "New series", "ret": "New season", "special": "Special"}
+def _tv_gcal(t, d, s):
+    a = d.replace("-", ""); b = (datetime.date.fromisoformat(d) + datetime.timedelta(days=1)).isoformat().replace("-", "")
+    return "https://calendar.google.com/calendar/render?action=TEMPLATE&text=" + _qp(t + " on " + s) + f"&dates={a}/{b}&details=" + _qp("Premiere date via getdayonedrop.com/new-tv-shows-december-2026")
+def _tvrow(x):
+    t, d, s, k, n = x
+    return (f'<div class="row" data-ts="{s}" data-tk="{k}"><span><strong>{e(t)}</strong><br><span class="muted">{e(n)}</span><br><span class="muted">{e(_TVS[s])} · {e(_TVK[k])} · '
+            f'<a href="{e(_tv_gcal(t, d, _TVS[s]))}" rel="nofollow noopener" target="_blank">Add to Google Calendar</a></span></span><b>{e(_mv_nice(d))}</b></div>')
+_tv_used = [(k, l) for k, l in TV_SVC if any(x[2] == k for x in TV_DEC)]
+_tv_chips = ('<div class="chips" role="group" aria-label="Service"><button class="chip" type="button" data-tv-s="" aria-pressed="true">Every service</button>'
+             + "".join(f'<button class="chip" type="button" data-tv-s="{k}" aria-pressed="false">{e(l)}</button>' for k, l in _tv_used) + '</div>'
+             '<div class="chips" role="group" aria-label="Type" style="margin-top:8px"><button class="chip" type="button" data-tv-k="" aria-pressed="true">Everything</button>'
+             + "".join(f'<button class="chip" type="button" data-tv-k="{k}" aria-pressed="false">{e(l)}</button>' for k, l in _TVK.items()) + '</div>')
+def _tv_on(s): return [x for x in TV_DEC if x[2] == s]
+def _tv_names(xs): return _and([f"{x[0]} ({_mv_nice(x[1])})" for x in xs])
+_tv_hp = next(x for x in TV_DEC if x[0].startswith("Harry Potter"))
+_tv_quick = ("The biggest new TV shows in December 2026 are HBO's Harry Potter series (25 December, HBO Max), the final season of Emily in Paris (24 December, Netflix), "
+             "Netflix's Pride and Prejudice (3 December), Only Murders in the Building season 6 (8 December, Hulu) and Ted: The Animated Series (17 December, Peacock). "
+             f"We list {len(TV_DEC)} premieres in total.")
+_tv_weeks = [("1 to 7 December", "2026-12-01", "2026-12-07"), ("8 to 14 December", "2026-12-08", "2026-12-14"), ("15 to 21 December", "2026-12-15", "2026-12-21"), ("22 to 31 December", "2026-12-22", "2026-12-31")]
+_tv_body = (f'<header class="hero"><div class="wrap"><span class="kicker">TV · December 2026</span>'
+            f'<h1>New TV shows in December 2026:<br><span class="amber">every premiere date.</span></h1>'
+            f'<p class="lead">New series and returning seasons on Netflix, HBO Max, Hulu, Prime Video, Apple TV, Paramount+ and Peacock, with a filter by service and a calendar reminder for each show.</p>'
+            f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · {len(TV_DEC)} premieres</p></div></header>'
+            f'<section><div class="wrap"><div class="out" style="margin-bottom:12px"><div class="row"><span><strong>Quick answer:</strong> {e(_tv_quick)}</span></div></div>'
+            f'<div class="tool" id="tv-tool" style="margin-bottom:24px"><h2 style="font-size:1.5rem;margin-top:0">What is new on my streaming service in December?</h2>'
+            f'<p class="muted">Pick a streaming service and a type. Your choice is remembered on this device.</p>{_tv_chips}'
+            f'<p class="mono amber" id="tv-count" aria-live="polite" style="margin:12px 0 0">{len(TV_DEC)} shows</p></div>'
+            f'<div class="sec-head"><h2>What new TV shows come out in December 2026?</h2><span class="muted">in date order</span></div>'
+            f'<div class="out" id="tv-list" style="margin-bottom:10px">{"".join(_tvrow(x) for x in TV_DEC)}</div><p class="empty" id="tv-none" hidden>Nothing matches. Try "Every service".</p>'
+            f'<div class="cdw" style="margin-top:18px"><span class="lbl">Countdown to Harry Potter on HBO Max</span><div class="cd" data-countdown="{_tv_hp[1]}">'
+            '<div class="cd-unit"><span class="flaps" data-u="0"></span><span>Days</span></div><div class="cd-unit"><span class="flaps" data-u="1"></span><span>Hrs</span></div>'
+            '<div class="cd-unit"><span class="flaps" data-u="2"></span><span>Min</span></div><div class="cd-unit"><span class="flaps" data-u="3"></span><span>Sec</span></div></div></div></div></section>'
+            + AD.format("tv-mid") +
+            f'<section><div class="wrap"><div class="sec-head"><h2>When does the Harry Potter TV series come out?</h2></div>'
+            f'<p>25 December 2026 (Christmas Day) on HBO Max. The first season adapts Harry Potter and the Philosopher\'s Stone, with one book per season planned.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>What is new on Netflix in December 2026?</h2><span class="muted">{len(_tv_on("netflix"))}</span></div><p>{e(_tv_names(_tv_on("netflix")))}.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>What is new on Hulu, Prime Video, Apple TV, Paramount+ and Peacock?</h2></div><ul>'
+            + "".join(f'<li><strong>{e(l)}:</strong> {e(_tv_names(_tv_on(k)))}</li>' for k, l in _tv_used if k not in ("netflix", "cbs", "starz", "amc")) +
+            f'</ul><div class="sec-head" style="margin-top:28px"><h2>Which shows end in December 2026?</h2></div>'
+            f'<p>Final seasons: Emily in Paris season 6 (24 December), Maxton Hall season 3 (9 December) and P-Valley season 3 (4 December).</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>What is premiering each week?</h2></div><div class="out" style="margin-bottom:28px">'
+            + "".join(f'<div class="row"><span><strong>{e(w)}</strong><br><span class="muted">{e(_and([x[0] for x in TV_DEC if a <= x[1] <= b]))}</span></span><b>{sum(1 for x in TV_DEC if a <= x[1] <= b)}</b></div>' for w, a, b in _tv_weeks) +
+            f'</div><div class="sec-head"><h2>What games and movies are out in December too?</h2></div>'
+            f'<p>December 2026 also has {len(DEC26)} game launches, including Monster Hunter Wilds on Switch 2 (4 December), and The Game Awards on 10 December. See <a href="{href("games-december-2026.html", 0)}">games coming out in December 2026</a> and <a href="{href("game-awards-2026.html", 0)}">The Game Awards 2026</a>.</p>'
+            f'<p class="muted">Dates are US premiere dates. We only list a show when at least two premiere schedules (Rotten Tomatoes, Deadline, ScreenRant, Dexerto, Popverse) give the same date. Specials are marked.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+            f'<li><a href="{href("movies-2027.html", 0)}">Upcoming movies 2027</a>: Zelda, Shrek 5, Avengers: Secret Wars</li>'
+            f'<li><a href="{href("games-december-2026.html", 0)}">Games coming out in December 2026</a></li>'
+            f'<li><a href="{href("steam-sale-dates.html", 0)}">Steam Winter Sale dates</a></li>'
+            f'<li><a href="{href("tools.html", 0)}">Every DayOneDrop tool</a></li></ul></div></section>')
+tv_faq = [("What new TV shows come out in December 2026?", _tv_quick),
+          ("When does the Harry Potter TV show come out?", "25 December 2026 on HBO Max."),
+          ("When does Emily in Paris season 6 come out?", "24 December 2026 on Netflix. It is the final season."),
+          ("When is Only Murders in the Building season 6?", "8 December 2026 on Hulu (Disney+ outside the US)."),
+          ("What is new on Netflix in December 2026?", _tv_names(_tv_on("netflix")) + ".")]
+page("new-tv-shows-december-2026.html", "New TV Shows December 2026: Every Premiere Date | DayOneDrop",
+     "New TV shows in December 2026: Harry Potter (25 Dec, HBO Max), Emily in Paris S6 (24 Dec), Pride and Prejudice (3 Dec), Only Murders S6 and more by service.",
+     _tv_body, 0, tv_faq, crumbs=[("Home", DOMAIN + "/"), ("New TV shows December 2026", canon("new-tv-shows-december-2026.html"))])
+
+
 # ---------------- SEO files ----------------
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "movies-2027.html", "games-like-elden-ring.html", "countdown.html", "games-without-release-date-2027.html", "steam-sale-dates.html", "nintendo-direct.html", "ps-plus-monthly-games.html", "epic-free-games.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "new-games-this-week.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "fighting-games-2027.html", "xbox-games-showcase-2027.html", "calendar.html", "later-2027.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "gta-6-pc-release-date.html", "new-tv-shows-december-2026.html", "movies-2027.html", "games-like-elden-ring.html", "countdown.html", "games-without-release-date-2027.html", "steam-sale-dates.html", "nintendo-direct.html", "ps-plus-monthly-games.html", "epic-free-games.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "new-games-this-week.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "fighting-games-2027.html", "xbox-games-showcase-2027.html", "calendar.html", "later-2027.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)
