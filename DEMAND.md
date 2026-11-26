@@ -1,5 +1,9 @@
 ## SEO PLAYBOOK — standing rules for every run (Awais 26 Nov 01:35: "do SEO like the best SEO guy in the world for all sites")
 
+## EVENING RADAR 26 Nov 18:45 PKT (Google autocomplete US + Trends past 24h)
+- R1 OPEN 'switch 2 games black friday deals' / 'switch 2 games on sale' (autocomplete #1/#3): time-limited H2 on the Switch 2 page linking official store sales (no prices unless 2 sources), remove after Cyber Monday.
+- R2 OPEN 'new movies to stream / in theaters now' (#1/#4) supports the E1 movies category; start with 'movies coming out 2027'.
+
 ## NEW CATEGORY EXPANSION (Awais 26 Nov: when traffic plateaus, open new categories backed by Trends/searches; don't wait for input)
 Evidence = Google autocomplete 26 Nov 18:10 PKT. Each is a CATEGORY: build a hub page first, then 1-2 child pages per run. Skip if it already exists.
 - E1 OPEN Movies category: /movies-2027 hub, 'movies coming out 2027 in theaters', '... for kids', '... january' month pages (3+ dated films each; studio-confirmed dates).
