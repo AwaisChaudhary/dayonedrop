@@ -254,7 +254,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("new-games-this-week.html", depth)}">New games this week</a></li><li><a href="{href("later-2027.html", depth)}">Games later in 2027 (May–Dec)</a></li><li><a href="{href("games-without-release-date-2027.html", depth)}">2027 games with no release date</a></li><li><a href="{href("countdown.html", depth)}">Game release countdown</a></li><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("gta-6-pc-release-date.html", depth)}">GTA 6 PC release date</a></li><li><a href="{href("games-like-elden-ring.html", depth)}">Games like Elden Ring</a></li><li><a href="{href("games-like-hollow-knight.html", depth)}">Games like Hollow Knight</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("fighting-games-2027.html", depth)}">Fighting games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/state-of-decay-3.html", depth)}">State of Decay 3</a></li><li><a href="{href("games/lords-of-the-fallen-ii.html", depth)}">Lords of the Fallen 2</a></li><li><a href="{href("games/squadron-42.html", depth)}">Squadron 42</a></li><li><a href="{href("games/ananta.html", depth)}">Ananta (free-to-play)</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("ps-plus-monthly-games.html", depth)}">PS Plus monthly games</a></li><li><a href="{href("epic-free-games.html", depth)}">Epic free games this week</a></li><li><a href="{href("steam-sale-dates.html", depth)}">Steam sale dates 2026-2027</a></li><li><a href="{href("black-friday-game-sales-2026.html", depth)}">Black Friday 2026 game sales</a></li><li><a href="{href("movies-2027.html", depth)}">Upcoming movies 2027</a></li><li><a href="{href("new-tv-shows-december-2026.html", depth)}">New TV shows December 2026</a></li><li><a href="{href("new-tv-shows-january-2027.html", depth)}">New TV shows January 2027</a></li><li><a href="{href("movies-december-2026.html", depth)}">Movies coming out in December 2026</a></li><li><a href="{href("winter-2027-anime.html", depth)}">Winter 2027 anime</a></li><li><a href="{href("movies-january-2027.html", depth)}">Movies coming out in January 2027</a></li><li><a href="{href("nintendo-direct.html", depth)}">Next Nintendo Direct</a></li><li><a href="{href("xbox-games-showcase-2027.html", depth)}">Xbox Games Showcase 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("new-games-this-week.html", depth)}">New games this week</a></li><li><a href="{href("later-2027.html", depth)}">Games later in 2027 (May–Dec)</a></li><li><a href="{href("games-without-release-date-2027.html", depth)}">2027 games with no release date</a></li><li><a href="{href("countdown.html", depth)}">Game release countdown</a></li><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("gta-6-pc-release-date.html", depth)}">GTA 6 PC release date</a></li><li><a href="{href("games-like-elden-ring.html", depth)}">Games like Elden Ring</a></li><li><a href="{href("games-like-hollow-knight.html", depth)}">Games like Hollow Knight</a></li><li><a href="{href("games-like-zelda.html", depth)}">Games like Zelda</a></li><li><a href="{href("games-like-stardew-valley.html", depth)}">Games like Stardew Valley</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("fighting-games-2027.html", depth)}">Fighting games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/state-of-decay-3.html", depth)}">State of Decay 3</a></li><li><a href="{href("games/lords-of-the-fallen-ii.html", depth)}">Lords of the Fallen 2</a></li><li><a href="{href("games/squadron-42.html", depth)}">Squadron 42</a></li><li><a href="{href("games/ananta.html", depth)}">Ananta (free-to-play)</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("ps-plus-monthly-games.html", depth)}">PS Plus monthly games</a></li><li><a href="{href("epic-free-games.html", depth)}">Epic free games this week</a></li><li><a href="{href("steam-sale-dates.html", depth)}">Steam sale dates 2026-2027</a></li><li><a href="{href("black-friday-game-sales-2026.html", depth)}">Black Friday 2026 game sales</a></li><li><a href="{href("movies-2027.html", depth)}">Upcoming movies 2027</a></li><li><a href="{href("new-tv-shows-december-2026.html", depth)}">New TV shows December 2026</a></li><li><a href="{href("new-tv-shows-january-2027.html", depth)}">New TV shows January 2027</a></li><li><a href="{href("movies-december-2026.html", depth)}">Movies coming out in December 2026</a></li><li><a href="{href("winter-2027-anime.html", depth)}">Winter 2027 anime</a></li><li><a href="{href("movies-january-2027.html", depth)}">Movies coming out in January 2027</a></li><li><a href="{href("nintendo-direct.html", depth)}">Next Nintendo Direct</a></li><li><a href="{href("xbox-games-showcase-2027.html", depth)}">Xbox Games Showcase 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Every date is checked against the publisher or platform holder plus a second trusted source (<a href="{href("about.html", depth)}#editorial">editorial policy</a>). Spotted an error? Email <a href="mailto:awaiskaramat@hotmail.com">awaiskaramat@hotmail.com</a>. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -542,6 +542,8 @@ for g in featured:
         rel.insert(1, ("game-awards-2026.html", f"{short} at The Game Awards 2026: every Most Anticipated nominee"))
     if g["slug"] in ("wo-long-2", "lords-of-the-fallen-ii", "the-duskbloods"): rel.insert(1, ("games-like-elden-ring.html", "Games like Elden Ring and every 2027 soulslike"))
     if g["slug"] in ("metroid-ravenous", "bloodstained-the-scarlet-engagement", "blighted", "mariachi-legends"): rel.insert(1, ("games-like-hollow-knight.html", "Games like Hollow Knight and every 2027 metroidvania"))
+    if g["slug"] in ("witchbrook", "grave-seasons", "emberville", "atelier-karia", "neverway"): rel.insert(1, ("games-like-stardew-valley.html", "Games like Stardew Valley and every 2027 cozy game"))
+    if g["slug"] in ("hyrule-warriors-age-of-calamity-definitive-edition", "kirby-and-the-world-beyond", "xenoblade-genesis", "fable", "terranigma", "demi-and-the-fractured-dream"): rel.insert(1, ("games-like-zelda.html", "Games like Zelda, and Zelda in 2027"))
     if g["slug"] in GP_TRACKED_ALL: rel.append(("game-pass-2027.html", "Every 2027 Xbox Game Pass game"))
     if "RPG" in g["genre"]: rel.append(("rpgs-2027.html", "Every RPG coming in 2027"))
     if g["status"] == "delayed": rel.append(("delayed-games-2027.html", "Every delayed game of 2027"))
@@ -1149,7 +1151,7 @@ _gen_next = {k: next((g for g in _gen[k] if g["date"] and g["date"] >= UPDATED),
 _gen_und = {k: [g for g in _gen[k] if not g["date"]] for k in _gen}
 _race = [g for g in GAMES if "racing" in (g.get("genre") or "").lower() or "truck" in (g.get("genre") or "").lower()]
 _sport_race = ("we track " + _and([f'{_gname(g)} ({e(nice_date(g))}, {e(", ".join(g["platforms"]))})' for g in _race]) + ".") if _race else "nothing is dated yet."
-_gen_quick += f" No sports game (FIFA/FC, Madden, NBA 2K) has a 2027 date yet."
+_gen_quick += f" No yearly sports series (FC, Madden, NBA 2K) has a 2027 date yet."
 gen_body = (f'<header class="hero"><div class="wrap"><span class="kicker">By genre</span>'
             f'<h1>2027 games by genre:<br><span class="amber">horror, shooters, RPGs and more.</span></h1>'
             f'<p class="lead">Looking for a scary game, a new shooter or a platformer to play in 2027? Every game we track, sorted by genre, in release order, with a filter for your console.</p>'
@@ -1171,8 +1173,10 @@ gen_body = (f'<header class="hero"><div class="wrap"><span class="kicker">By gen
             f'<div class="sec-head" style="margin-top:28px"><h2>Which 2027 games have no exact date yet, by genre?</h2></div><ul>'
             + "".join(f'<li>{e(_gen_meta[k][0])}: {", ".join(_gname(g) for g in _gen_und[k])}</li>' for k in _gen if _gen_und[k]) + '</ul>'
             f'<div class="sec-head" style="margin-top:28px"><h2>Are there any sports games coming out in 2027?</h2></div>'
-            f'<p>Not yet. No 2027 sports game (football, soccer, basketball, golf) has been announced with a release date. EA\'s current editions came out in 2026: College Football 27 on 9 July 2026 (PS5, Xbox Series X|S, PC) and EA Sports FC 27 on 25 September 2026 (also on Switch 2). The yearly 2027 editions are normally revealed a few months before launch, so expect news in spring and summer 2027.</p>'
+            f'<p>Only party golf so far: Super Battle Golf comes to Switch 2 on 25 March 2027, and Golf With Your Friends 2 is due in 2027 with no date. No yearly sports series (football, soccer, basketball) has a 2027 edition dated yet. Football Manager 27 already came out on 10 November 2026. EA\'s current editions came out in 2026: College Football 27 on 9 July 2026 (PS5, Xbox Series X|S, PC) and EA Sports FC 27 on 25 September 2026 (also on Switch 2). The yearly 2027 editions are normally revealed a few months before launch, so expect news in spring and summer 2027.</p>'
             f'<p>For racing and driving games, {_sport_race}</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>What cozy games come out in 2027?</h2></div>'
+            f'<p>Emberville (7 January, PC Early Access), Witchbrook (28 January, every platform and Game Pass), Atelier Karia (25 February) and Grave Seasons (9 March), with the horror life sim Neverway later in 2027. Stardew Valley\'s 1.7 update is expected in 2027 with no date. See <a href="{href("games-like-stardew-valley.html", 0)}">games like Stardew Valley</a> for a cozy game finder.</p>'
             f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
             f'<li><a href="{href("horror-games-2027.html", 0)}">Every horror game of 2027</a>, with a console filter and countdown</li>'
             f'<li><a href="{href("fighting-games-2027.html", 0)}">Every fighting game of 2027</a>: Melty Blood, Xenoverse 3, Virtua Fighter</li>'
@@ -1180,6 +1184,8 @@ gen_body = (f'<header class="hero"><div class="wrap"><span class="kicker">By gen
             f'<li><a href="{href("rpgs-2027.html", 0)}">Every RPG coming in 2027</a>, with action RPG and JRPG filters</li>'
             f'<li><a href="{href("games-like-elden-ring.html", 0)}">Games like Elden Ring</a>: soulslikes out now and in 2027</li>'
             f'<li><a href="{href("games-like-hollow-knight.html", 0)}">Games like Hollow Knight</a>: metroidvanias out now and in 2027</li>'
+            f'<li><a href="{href("games-like-stardew-valley.html", 0)}">Games like Stardew Valley</a>: cozy and farming games now and in 2027</li>'
+            f'<li><a href="{href("games-like-zelda.html", 0)}">Games like Zelda</a>: adventures now and in 2027</li>'
             f'<li><a href="{href("biggest-games-2027.html", 0)}">The biggest games of 2027</a> and a shareable top list maker</li>'
             f'<li><a href="{href("release-clashes-2027.html", 0)}">2027 release clashes</a>: do your picks land the same week?</li>'
             f'<li><a href="{href("backlog-planner-2027.html", 0)}">2027 backlog planner</a>: finish one before the next arrives</li></ul></div></section>')
@@ -1187,7 +1193,8 @@ gen_faq = [("What genre has the most games in 2027?", _gen_quick)]
 for _k in _gen:
     _n, _low = _gen_meta[_k]
     gen_faq.append((f"What {_low} are coming out in 2027?", f"We track {len(_gen[_k])}: " + ", ".join(f"{g['title']} ({nice_date(g)})" for g in _gen[_k]) + "."))
-gen_faq.append(("Are there any sports games coming out in 2027?", "None with a 2027 date yet. College Football 27 (9 July 2026) and EA Sports FC 27 (25 September 2026) are the current editions; the 2027 editions have not been announced."))
+gen_faq.append(("Are there any sports games coming out in 2027?", "Only party golf so far: Super Battle Golf (25 March 2027, Switch 2) and Golf With Your Friends 2 (2027). The 2027 editions of EA Sports FC, Madden and NBA 2K have not been announced."))
+gen_faq.append(("What cozy games come out in 2027?", "Emberville (7 January, PC Early Access), Witchbrook (28 January), Atelier Karia (25 February), Grave Seasons (9 March) and Neverway (2027)."))
 gen_faq.append(("What is the next 2027 game in each genre?", "; ".join(f"{_gen_meta[k][0]}: {_gen_next[k]['title']} ({nice_date(_gen_next[k])})" for k in _gen if _gen_next[k]) + "."))
 gen_faq.append(("Which genre has the most 2027 games on Switch 2?", f"{_gen_meta[_gen_top['Switch 2']][0]}, with {sum(1 for g in _gen[_gen_top['Switch 2']] if 'Switch 2' in g['platforms'])} games."))
 page("games-by-genre-2027.html", "Upcoming Games 2027 by Genre: Horror, Shooters, RPGs, Sports | DayOneDrop",
@@ -1586,6 +1593,8 @@ tools = f'''<header class="hero"><div class="wrap"><span class="kicker">Tools</s
 <li><a href="{href("movies-december-2026.html", 0)}">Movies coming out in December 2026</a>: filter by type and week, countdown to Avengers: Doomsday</li>
 <li><a href="{href("movies-january-2027.html", 0)}">Movies coming out in January 2027</a>: Children of Blood and Bone, The Beekeeper 2, Animal Friends</li>
 <li><a href="{href("games-like-hollow-knight.html", 0)}">Games like Hollow Knight</a>: metroidvania finder by platform, plus the 2027 metroidvanias</li>
+<li><a href="{href("games-like-stardew-valley.html", 0)}">Games like Stardew Valley</a>: cozy game finder by platform, plus Witchbrook and the 2027 farm sims</li>
+<li><a href="{href("games-like-zelda.html", 0)}">Games like Zelda</a>: adventure finder by platform, plus Hyrule Warriors and the Zelda movie in 2027</li>
 <li><a href="{href("winter-2027-anime.html", 0)}">Winter 2027 anime</a>: new shows and new seasons, Netflix filter</li>
 <li><a href="{href("black-friday-game-sales-2026.html", 0)}">Black Friday 2026 game sales</a>: live "ends in" timers for PS Store, Xbox, Nintendo and Epic</li>
 <li><a href="{href("gta-6-pc-release-date.html", 0)}">GTA 6 PC release date estimator</a>: when GTA 6 could reach PC, based on Rockstar's past games</li>
@@ -3230,6 +3239,7 @@ er_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Games l
            f'<li><a href="{href("rpgs-2027.html", 0)}">Every RPG of 2027</a></li>'
            f'<li><a href="{href("games-like-gta-6.html", 0)}">Games like GTA 6</a></li>'
            f'<li><a href="{href("games-like-hollow-knight.html", 0)}">Games like Hollow Knight and Silksong</a>: metroidvanias now and in 2027</li>'
+           f'<li><a href="{href("games-like-zelda.html", 0)}">Games like Zelda</a>: open worlds and dungeons, now and in 2027</li>'
            f'<li><a href="{href("winter-2027-anime.html", 0)}">Winter 2027 anime</a>, including the Sekiro anime, Sekiro: No Defeat</li>'
            f'<li><a href="{href("countdown.html", 0)}">Game release countdown</a></li></ul></div></section>')
 er_faq = [("What games are like Elden Ring?", "Dark Souls III, Sekiro, Bloodborne, Elden Ring Nightreign, Lies of P, Black Myth: Wukong, Lords of the Fallen, Wo Long: Fallen Dynasty, Remnant II and Hollow Knight: Silksong."),
@@ -3896,6 +3906,7 @@ hk_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Games l
            f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
            f'<li><a href="{href("games-like-elden-ring.html", 0)}">Games like Elden Ring</a>: soulslikes now and in 2027</li>'
            f'<li><a href="{href("games/metroid-ravenous.html", 0)}">Metroid Ravenous release date</a></li>'
+           f'<li><a href="{href("games-like-zelda.html", 0)}">Games like Zelda</a>: dungeons and open worlds</li>'
            f'<li><a href="{href("games-by-genre-2027.html", 0)}">2027 games by genre</a></li>'
            f'<li><a href="{href("countdown.html", 0)}">Game release countdown</a></li></ul></div></section>')
 hk_faq = [("What games are like Hollow Knight?", "Hollow Knight: Silksong, Nine Sols, Prince of Persia: The Lost Crown, Metroid Dread, Ori and the Will of the Wisps, Blasphemous 2, Ender Magnolia, Animal Well, Dead Cells and Bloodstained: Ritual of the Night."),
@@ -3907,12 +3918,148 @@ page("games-like-hollow-knight.html", "Games Like Hollow Knight & Silksong: 2027
      "Games like Hollow Knight and Silksong on Switch 2, PS5, Xbox and PC: Nine Sols, Lost Crown, Metroid Dread, Ori, plus 2027's Metroid Ravenous and Bloodstained.",
      hk_body, 0, hk_faq, crumbs=[("Home", DOMAIN + "/"), ("2027 games by genre", canon("games-by-genre-2027.html")), ("Games like Hollow Knight", canon("games-like-hollow-knight.html"))])
 
+# ---------------- GAMES LIKE STARDEW VALLEY (27 Nov 2026, demand: "games like stardew valley", "cozy games 2027", "upcoming farming games") ----------------
+# Evidence: GamesRadar+ / PC Gamer / Dot Esports / games.gg "games like Stardew Valley" lists, PC Gamer "39 Stardew-shaped farm sims", games.gg upcoming cozy games.
+# Stardew 1.7: ConcernedApe says it will probably arrive in 2027 (GamesRadar+, PC Gamer guide). No date. 2027 picks from games.json.
+LIKE_SV = [
+    ("Stardew Valley", "PS4, Xbox One, Switch, PC, mobile (plays on PS5, Xbox Series X|S and Switch 2)", "Still the one to beat. Its biggest update yet, 1.7, is expected some time in 2027 (no date yet), so now is a good time to start a new farm.", "switch ps5 ps4 xbox pc", "farm town coop"),
+    ("Coral Island", "PS5, Xbox Series X|S, PC", "A tropical-island Stardew with a big cast, diving, a coral reef to restore and lots to romance.", "ps5 xbox pc", "farm town"),
+    ("Rune Factory: Guardians of Azuma", "Switch 2, Switch, PC", "Farming plus real-time combat in a Japanese-inspired world. Pick this if you liked Stardew's mines most.", "switch pc", "farm town"),
+    ("Story of Seasons: Grand Bazaar", "Switch 2, Switch, PC", "The 2025 remake of a fan-favourite Harvest Moon-style game: farm all week, then sell at the weekly market.", "switch pc", "farm town relax"),
+    ("Animal Crossing: New Horizons", "Switch (Switch 2 Edition too)", "No farm and no deadlines: build up an island at your own pace and visit friends' islands.", "switch", "town coop relax"),
+    ("Disney Dreamlight Valley", "PS5, PS4, Xbox Series X|S, Xbox One, Switch, PC", "Gardening, cooking and friendships with Disney and Pixar characters, with quests to follow.", "switch ps5 ps4 xbox pc", "farm town relax"),
+    ("Palia", "PS5, Xbox Series X|S, Switch, PC", "A free-to-play online life sim: farm, cook, fish and decorate your plot next to other players.", "switch ps5 xbox pc", "farm town coop relax"),
+    ("Fae Farm", "PS5, Xbox Series X|S, Switch, PC", "A bright, magical farm sim built for up to four players together.", "switch ps5 xbox pc", "farm town coop"),
+    ("My Time at Sandrock", "PS5, PS4, Xbox Series X|S, Xbox One, Switch, PC", "Less farming, more crafting: run a workshop and rebuild a desert town, with online co-op.", "switch ps5 ps4 xbox pc", "town coop"),
+    ("Slime Rancher 2", "PS5, Xbox Series X|S, PC", "Ranch cute slimes on a colourful island. No combat, just collecting and building.", "ps5 xbox pc", "farm relax"),
+    ("Spiritfarer", "PS4, Xbox One, Switch, PC (plays on PS5, Xbox Series X|S and Switch 2)", "A gentle boat-management game about saying goodbye, from Thunder Lotus, whose At Fate's End is due in 2027.", "switch ps5 ps4 xbox pc", "coop relax"),
+]
+_SV_LABEL = {"farm": "Farming", "town": "Town and romance", "coop": "Play together", "relax": "No pressure"}
+SV_SOON = ["emberville", "witchbrook", "atelier-karia", "grave-seasons", "neverway"]
+_sv_soon = sorted([g for g in GAMES if g["slug"] in SV_SOON], key=lambda g: (g["month"] or 13, g["date"] or "9999"))
+_sv_wb = next((g for g in GAMES if g["slug"] == "witchbrook"), None)
+_sv_gs = next((g for g in GAMES if g["slug"] == "grave-seasons"), None)
+def _sv_on(tag): return [x[0] for x in LIKE_SV if tag in x[3].split()]
+def _like_rows(lst, lab):
+    return "".join(f'<div class="row" data-ep="{e(x[3])}" data-el="{e(x[4])}"><span><strong>{e(x[0])}</strong><br><span class="muted">{e(x[2])}</span><br><span class="muted">{e(x[1])}</span>'
+                   f'<br><span class="muted mono" style="font-size:.78rem">{e(" · ".join(lab[k] for k in x[4].split()))}</span></span></div>' for x in lst)
+def _like_chips(lab, likes="What you liked"):
+    return ('<div class="chips" role="group" aria-label="Platform"><button class="chip" type="button" data-er-p="" aria-pressed="true">Any platform</button>'
+            + "".join(f'<button class="chip" type="button" data-er-p="{k}" aria-pressed="false">{l}</button>' for k, l in [("switch", "Switch / Switch 2"), ("ps5", "PS5"), ("xbox", "Xbox"), ("pc", "PC"), ("ps4", "PS4")]) + '</div>'
+            f'<div class="chips" role="group" aria-label="{e(likes)}" style="margin-top:10px"><button class="chip" type="button" data-er-l="" aria-pressed="true">Anything</button>'
+            + "".join(f'<button class="chip" type="button" data-er-l="{k}" aria-pressed="false">{e(l)}</button>' for k, l in lab.items()) + '</div>')
+def _like_cd(g):
+    return (f'<div class="cdw"><span class="lbl">Countdown to {e(g["title"])}</span><div class="cd" data-countdown="{g["date"]}">'
+            '<div class="cd-unit"><span class="flaps" data-u="0"></span><span>Days</span></div><div class="cd-unit"><span class="flaps" data-u="1"></span><span>Hrs</span></div>'
+            '<div class="cd-unit"><span class="flaps" data-u="2"></span><span>Min</span></div><div class="cd-unit"><span class="flaps" data-u="3"></span><span>Sec</span></div></div></div>') if g and g.get("date") else ""
+_sv_quick = ("The best games like Stardew Valley right now are Coral Island, Rune Factory: Guardians of Azuma, Story of Seasons: Grand Bazaar, Fae Farm, Palia and Disney Dreamlight Valley. "
+             f"The next big ones are {_and([g['title'] + ' (' + nice_date(g) + ')' for g in _sv_soon])}. Stardew's own 1.7 update is expected in 2027, with no date yet.")
+sv_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Games like Stardew Valley</span>'
+           f'<h1>Games like Stardew Valley:<br><span class="amber">cozy farm sims now, and the 2027 ones.</span></h1>'
+           f'<p class="lead">Farming and life sims to play today on Switch 2, PS5, Xbox and PC, filtered by what you love about Stardew, plus every cozy game dated for 2027.</p>'
+           f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · {len(LIKE_SV)} picks out now · {len(_sv_soon)} coming in 2027</p></div></header>'
+           f'<section><div class="wrap"><div class="out" style="margin-bottom:12px"><div class="row"><span><strong>Quick answer:</strong> {e(_sv_quick)}</span></div></div>'
+           f'<div class="tool" id="er-tool" style="margin-bottom:24px"><h2 style="font-size:1.5rem;margin-top:0">Which game like Stardew Valley should I play?</h2>'
+           f'<p class="muted">Pick your platform and what you love most. Your choice is remembered on this device.</p>{_like_chips(_SV_LABEL, "What you love")}'
+           f'<p class="mono amber" id="er-count" aria-live="polite" style="margin:12px 0 0">{len(LIKE_SV)} games</p></div>'
+           f'<div class="sec-head"><h2>What games are like Stardew Valley?</h2><span class="muted">out now</span></div>'
+           f'<div class="out" id="er-list" style="margin-bottom:10px">{_like_rows(LIKE_SV, _SV_LABEL)}</div><p class="empty" id="er-none" hidden>No pick matches both. Try "Anything".</p></div></section>'
+           + AD.format("sv-mid") +
+           f'<section><div class="wrap"><div class="sec-head"><h2>What cozy games are coming out in 2027?</h2><span class="muted">{len(_sv_soon)}</span></div>'
+           f'<div class="out" style="margin-bottom:10px">{"".join(_er_srow(g) for g in _sv_soon)}</div>{_like_cd(_sv_wb)}'
+           f'<div class="sec-head" style="margin-top:28px"><h2>When does Witchbrook come out?</h2></div>'
+           + (f'<p>{e(nice_date(_sv_wb))} on PS5, Xbox Series X|S, PC, Switch and Switch 2 on the same day, and on Xbox Game Pass from day one. Chucklefish, who published Stardew Valley on consoles, is behind it: you study magic at a college in a seaside town, with up to four players online. It slipped from 2025 and then 2026. See the <a href="{href("games/witchbrook.html", 0)}">Witchbrook release date page</a>.</p>' if _sv_wb else '')
+           + f'<div class="sec-head" style="margin-top:28px"><h2>When does Grave Seasons come out?</h2></div>'
+           + (f'<p>{e(nice_date(_sv_gs))} on PS5, Xbox Series X|S, PC and Switch, and on Game Pass (Gematsu, VGChartz). Blumhouse Games publishes it. It looks like Stardew, but a killer is loose in the village and you have to work out who it is between harvests. If that sounds fun, see <a href="{href("horror-games-2027.html", 0)}">every horror game of 2027</a>.</p>' if _sv_gs else '')
+           + f'<div class="sec-head" style="margin-top:28px"><h2>When is the Stardew Valley 1.7 update coming out?</h2></div>'
+           f'<p>There is no date. ConcernedApe (Eric Barone) has said 1.7 will be the biggest update yet and will probably come out in 2027 (GamesRadar+, PC Gamer). Haunted Chocolatier, his next game, also has no release date. We will add both to the board the day a date is announced.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>What games are like Stardew Valley on Switch 2?</h2></div>'
+           f'<p>{e(_and(_sv_on("switch")))}. Switch 1 games play on Switch 2. In 2027: {e(_and([g["title"] for g in _sv_soon if "Switch 2" in g["platforms"]]) or "Witchbrook")}. See every <a href="{href("platforms/switch-2.html", 0)}">Switch 2 game of 2027</a>.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>What games are like Stardew Valley on PS5 and Xbox?</h2></div>'
+           f'<p>PS5: {e(_and(_sv_on("ps5")))}. Xbox: {e(_and(_sv_on("xbox")))}. In 2027 on PS5 and Xbox: {e(_and([g["title"] for g in _sv_soon if "PS5" in g["platforms"]]))}.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>What is a good multiplayer game like Stardew Valley?</h2></div>'
+           f'<p>{e(_and([x[0] for x in LIKE_SV if "coop" in x[4].split()]))} all let you play with friends. Witchbrook adds online play for up to four in January 2027.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+           f'<li><a href="{href("games/witchbrook.html", 0)}">Witchbrook release date</a> and countdown</li>'
+           f'<li><a href="{href("games-like-zelda.html", 0)}">Games like Zelda</a>: adventures now and in 2027</li>'
+           f'<li><a href="{href("games-by-genre-2027.html", 0)}">2027 games by genre</a></li>'
+           f'<li><a href="{href("backlog-planner-2027.html", 0)}">2027 backlog planner</a>: finish your farm before the next one lands</li></ul></div></section>')
+sv_faq = [("What games are like Stardew Valley?", "Coral Island, Rune Factory: Guardians of Azuma, Story of Seasons: Grand Bazaar, Animal Crossing: New Horizons, Disney Dreamlight Valley, Palia, Fae Farm, My Time at Sandrock, Slime Rancher 2 and Spiritfarer."),
+          ("What cozy games come out in 2027?", _and([g['title'] + ' (' + nice_date(g) + ')' for g in _sv_soon]) + "."),
+          ("When does Witchbrook come out?", (nice_date(_sv_wb) + " on PS5, Xbox Series X|S, PC, Switch and Switch 2, and on Game Pass day one.") if _sv_wb else "2027."),
+          ("When is Stardew Valley 1.7 coming out?", "No date yet. ConcernedApe says it will probably arrive in 2027 and will be the biggest update so far."),
+          ("What is a game like Stardew Valley but with a mystery?", (f"Grave Seasons ({nice_date(_sv_gs)}): a farming life sim with a serial killer loose in the village.") if _sv_gs else "Grave Seasons, due in 2027.")]
+page("games-like-stardew-valley.html", "Games Like Stardew Valley: Cozy Picks & 2027 Farm Sims | DayOneDrop",
+     "Games like Stardew Valley on Switch 2, PS5, Xbox and PC: Coral Island, Rune Factory, Fae Farm, Palia, plus 2027's Witchbrook, Grave Seasons and Stardew 1.7.",
+     sv_body, 0, sv_faq, crumbs=[("Home", DOMAIN + "/"), ("2027 games by genre", canon("games-by-genre-2027.html")), ("Games like Stardew Valley", canon("games-like-stardew-valley.html"))])
+
+
+# ---------------- GAMES LIKE ZELDA (27 Nov 2026, demand: "games like zelda", "games like breath of the wild", "zelda 2027") ----------------
+# Evidence: GamesRadar+ "games like Zelda", Push Square "best PS5 games like Zelda", Pocket Tactics, G2A, T3, Windows Central lists; Zelda movie date already 2-source on /movies-2027.
+LIKE_ZE = [
+    ("The Legend of Zelda: Echoes of Wisdom", "Switch (plays on Switch 2)", "The 2024 top-down Zelda where you play as Zelda and solve problems by copying objects and monsters.", "switch", "puzzle"),
+    ("Immortals Fenyx Rising", "PS5, PS4, Xbox Series X|S, Xbox One, Switch, PC", "The closest thing to Breath of the Wild on PlayStation and Xbox: gliding, climbing and puzzle vaults across a Greek-myth island.", "switch ps5 ps4 xbox pc", "open puzzle"),
+    ("Genshin Impact", "PS5, PS4, Xbox Series X|S, PC, mobile", "Free-to-play open world with climbing, gliding and elemental puzzles everywhere.", "ps5 ps4 xbox pc", "open combat"),
+    ("Tunic", "PS5, PS4, Xbox Series X|S, Xbox One, Switch, PC", "A tiny fox in a classic-Zelda world, with secrets hidden in an in-game manual you piece together.", "switch ps5 ps4 xbox pc", "puzzle combat"),
+    ("Death's Door", "PS5, PS4, Xbox Series X|S, Xbox One, Switch, PC", "Short, sharp dungeon crawling as a crow, with real Zelda-style dungeons and bosses.", "switch ps5 ps4 xbox pc", "puzzle combat"),
+    ("Okami HD", "PS4, Xbox One, Switch, PC (plays on PS5, Xbox Series X|S and Switch 2)", "Capcom's painted adventure: dungeons, items and a celestial brush to draw your powers.", "switch ps5 ps4 xbox pc", "puzzle story"),
+    ("Elden Ring", "PS5, PS4, Xbox Series X|S, Xbox One, PC", "If Breath of the Wild's freedom is what you loved, this is that world with much harder fights.", "ps5 ps4 xbox pc", "open combat"),
+    ("Kena: Bridge of Spirits", "PS5, PS4, Xbox Series X|S, Xbox One, PC", "Pixar-like looks, Zelda-like temples and tiny Rot helpers that solve puzzles with you.", "ps5 ps4 xbox pc", "puzzle story combat"),
+    ("Sable", "PS5, Xbox Series X|S, Xbox One, Switch, PC", "A calm desert open world with no combat: climb, glide and explore at your own pace.", "switch ps5 xbox pc", "open story"),
+    ("Xenoblade Chronicles X: Definitive Edition", "Switch (plays on Switch 2)", "A huge alien world to explore on foot and later by mech, from the studio making Xenoblade Genesis for 2027.", "switch", "open story combat"),
+]
+_ZE_LABEL = {"open": "Open world", "puzzle": "Dungeons and puzzles", "combat": "Combat", "story": "Story"}
+ZE_SOON = ["terranigma", "fable", "hyrule-warriors-age-of-calamity-definitive-edition", "demi-and-the-fractured-dream", "kirby-and-the-world-beyond", "xenoblade-genesis", "pokemon-winds-and-waves"]
+_ze_soon = sorted([g for g in GAMES if g["slug"] in ZE_SOON], key=lambda g: (g["month"] or 13, g["date"] or "9999"))
+_ze_hw = next((g for g in GAMES if g["slug"] == "hyrule-warriors-age-of-calamity-definitive-edition"), None)
+_ze_mov = next((m for m in MOVIES if m[0] == "The Legend of Zelda"), None)
+_ze_mov_d = nice_date({"date": _ze_mov[1], "window": ""}) if _ze_mov else "2027"
+def _ze_on(tag): return [x[0] for x in LIKE_ZE if tag in x[3].split()]
+_ze_quick = ("The best games like Zelda are Immortals Fenyx Rising, Genshin Impact, Tunic, Death's Door, Okami HD and Sable, and Elden Ring if you want Breath of the Wild's freedom with harder fights. "
+             f"In 2027, Hyrule Warriors: Age of Calamity comes to Switch 2 on {nice_date(_ze_hw) if _ze_hw else '25 February'}, and the live-action Zelda movie opens on {_ze_mov_d}. No new main Zelda game has been announced.")
+ze_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Games like Zelda</span>'
+           f'<h1>Games like Zelda:<br><span class="amber">adventures to play now, and Zelda in 2027.</span></h1>'
+           f'<p class="lead">Zelda-style adventures you can play on PS5, Xbox, PC and Switch 2, filtered by what you love about Breath of the Wild or the classic dungeons, plus every 2027 game and date a Zelda fan needs.</p>'
+           f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · {len(LIKE_ZE)} picks out now · {len(_ze_soon)} coming in 2027</p></div></header>'
+           f'<section><div class="wrap"><div class="out" style="margin-bottom:12px"><div class="row"><span><strong>Quick answer:</strong> {e(_ze_quick)}</span></div></div>'
+           f'<div class="tool" id="er-tool" style="margin-bottom:24px"><h2 style="font-size:1.5rem;margin-top:0">Which game like Zelda should I play?</h2>'
+           f'<p class="muted">Pick your platform and what you love most. Your choice is remembered on this device.</p>{_like_chips(_ZE_LABEL, "What you love")}'
+           f'<p class="mono amber" id="er-count" aria-live="polite" style="margin:12px 0 0">{len(LIKE_ZE)} games</p></div>'
+           f'<div class="sec-head"><h2>What games are like Zelda?</h2><span class="muted">out now</span></div>'
+           f'<div class="out" id="er-list" style="margin-bottom:10px">{_like_rows(LIKE_ZE, _ZE_LABEL)}</div><p class="empty" id="er-none" hidden>No pick matches both. Try "Anything".</p></div></section>'
+           + AD.format("ze-mid") +
+           f'<section><div class="wrap"><div class="sec-head"><h2>What games like Zelda are coming out in 2027?</h2><span class="muted">{len(_ze_soon)}</span></div>'
+           f'<div class="out" style="margin-bottom:10px">{"".join(_er_srow(g) for g in _ze_soon)}</div>{_like_cd(_ze_hw)}'
+           f'<div class="sec-head" style="margin-top:28px"><h2>Is there a new Zelda game in 2027?</h2></div>'
+           f'<p>No new main Zelda game has been announced for 2027. The Zelda release on the 2027 calendar is Hyrule Warriors: Age of Calamity for Switch 2 ({e(nice_date(_ze_hw)) if _ze_hw else "25 February 2027"}), a 60fps version of the action spin-off set 100 years before Breath of the Wild, with all its DLC. The Switch 2 Ocarina of Time remake is already out and nominated for Game of the Year at The Game Awards 2026. See the <a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", 0)}">Hyrule Warriors release date page</a>.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>When does the Legend of Zelda movie come out?</h2></div>'
+           f'<p>{e(_ze_mov_d)}, in cinemas worldwide. It is a live-action film from Sony Pictures and Nintendo, directed by Wes Ball, with Bo Bragason as Zelda and Benjamin Evan Ainsworth as Link. It was first set for 26 March 2027, then 7 May, before moving a week earlier. More 2027 film dates are on <a href="{href("movies-2027.html", 0)}">upcoming movies 2027</a>.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>What 2027 game is most like old-school top-down Zelda?</h2></div>'
+           f'<p>Demi and the Fractured Dream (27 February 2027, from Yarn Owl and Annapurna Interactive) is a top-down action adventure, and Terranigma (14 January 2027) brings back a 1995 Super Nintendo action RPG that never had an official North American release. For 3D exploration on Switch 2, Kirby and the World Beyond (spring 2027) lets you roam a large open world.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>What games are like Zelda on PS5 and Xbox?</h2></div>'
+           f'<p>PS5: {e(_and(_ze_on("ps5")))}. Xbox: {e(_and(_ze_on("xbox")))}. In 2027, Fable (fairy-tale action RPG, {e(nice_date(next((g for g in _ze_soon if g["slug"] == "fable"), {"date": "2027-02-23", "window": ""})))}) is the big one on both.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>What games are like Zelda on Switch 2?</h2></div>'
+           f'<p>{e(_and(_ze_on("switch")))}. Switch 1 games play on Switch 2. In 2027: {e(_and([g["title"] for g in _ze_soon if "Switch 2" in g["platforms"]]))}. See every <a href="{href("platforms/switch-2.html", 0)}">Switch 2 game of 2027</a>.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+           f'<li><a href="{href("games-like-elden-ring.html", 0)}">Games like Elden Ring</a>: open worlds with harder bosses</li>'
+           f'<li><a href="{href("games-like-stardew-valley.html", 0)}">Games like Stardew Valley</a>: cozy picks and 2027 farm sims</li>'
+           f'<li><a href="{href("nintendo-direct.html", 0)}">Next Nintendo Direct</a>: where a new Zelda would be announced</li>'
+           f'<li><a href="{href("countdown.html", 0)}">Game release countdown</a></li></ul></div></section>')
+ze_faq = [("What games are like Zelda?", "Immortals Fenyx Rising, Genshin Impact, Tunic, Death's Door, Okami HD, Elden Ring, Kena: Bridge of Spirits, Sable, Xenoblade Chronicles X and Zelda: Echoes of Wisdom."),
+          ("Is there a new Zelda game coming out in 2027?", f"No new main Zelda game has been announced. Hyrule Warriors: Age of Calamity comes to Switch 2 on {nice_date(_ze_hw) if _ze_hw else '25 February 2027'}."),
+          ("When does the Zelda movie come out?", f"{_ze_mov_d}, in cinemas worldwide."),
+          ("What is a game like Breath of the Wild on PS5?", "Immortals Fenyx Rising is the closest, with Genshin Impact, Sable and Elden Ring for open-world exploration."),
+          ("What games like Zelda come out in 2027?", _and([g['title'] + ' (' + nice_date(g) + ')' for g in _ze_soon]) + ".")]
+page("games-like-zelda.html", "Games Like Zelda: Best Picks & Zelda in 2027 | DayOneDrop",
+     "Games like Zelda and Breath of the Wild on PS5, Xbox, PC and Switch 2: Immortals, Tunic, Okami, Genshin, plus Hyrule Warriors and the Zelda movie in 2027.",
+     ze_body, 0, ze_faq, crumbs=[("Home", DOMAIN + "/"), ("2027 games by genre", canon("games-by-genre-2027.html")), ("Games like Zelda", canon("games-like-zelda.html"))])
+
 
 # ---------------- SEO files ----------------
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "movies-january-2027.html", "games-like-hollow-knight.html", "movies-december-2026.html", "winter-2027-anime.html", "new-tv-shows-january-2027.html", "black-friday-game-sales-2026.html", "gta-6-pc-release-date.html", "new-tv-shows-december-2026.html", "movies-2027.html", "games-like-elden-ring.html", "countdown.html", "games-without-release-date-2027.html", "steam-sale-dates.html", "nintendo-direct.html", "ps-plus-monthly-games.html", "epic-free-games.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "new-games-this-week.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "fighting-games-2027.html", "xbox-games-showcase-2027.html", "calendar.html", "later-2027.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "games-like-stardew-valley.html", "games-like-zelda.html", "movies-january-2027.html", "games-like-hollow-knight.html", "movies-december-2026.html", "winter-2027-anime.html", "new-tv-shows-january-2027.html", "black-friday-game-sales-2026.html", "gta-6-pc-release-date.html", "new-tv-shows-december-2026.html", "movies-2027.html", "games-like-elden-ring.html", "countdown.html", "games-without-release-date-2027.html", "steam-sale-dates.html", "nintendo-direct.html", "ps-plus-monthly-games.html", "epic-free-games.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "new-games-this-week.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "fighting-games-2027.html", "xbox-games-showcase-2027.html", "calendar.html", "later-2027.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)

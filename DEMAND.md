@@ -17,12 +17,19 @@ Tools in this repo: `seo_post.py` (runs at the end of build.py: sitemap = every 
 5. Links: only real editorial links via outreach batches Awais approves; build "linkable assets" (original data, free tools, maps) and list pitch targets in DEMAND for approval.
 6. Monthly: run seo_audit.py on the whole site and fix broken links, orphans, duplicate titles/descriptions, missing schema.
 
+## DEMAND RUN 27 Nov 2026 (scheduled, demand-first; Black Friday)
+Evidence: "games like stardew valley" (GamesRadar+ x3 regions, PC Gamer, Dot Esports, games.gg, Medium lists; PC Gamer "39 Stardew-shaped farm sims"; games.gg "best upcoming cozy games Switch 2"); "Stardew Valley 1.7 2027" (GamesRadar+, PC Gamer guide, GosuGamers, PowerUp, pcgames.de, Nov 2026); "games like zelda" / "games like breath of the wild" (GamesRadar+, Push Square, Pocket Tactics, G2A, T3, Windows Central, Den of Geek); "zelda 2027" SERP mixes movie + Hyrule Warriors news. Football Manager 27 already out 10 Nov 2026 (Gematsu, gamespress). "movies coming out february 2027": SERP is BOM / The Numbers / Movie Insider only.
+N31. DONE 27 Nov https://getdayonedrop.com/games-like-stardew-valley : 11 picks + platform/taste filter, 2027 cozy games (Emberville, Witchbrook, Atelier Karia, Grave Seasons, Neverway), Witchbrook countdown, Stardew 1.7 H2.
+N32. DONE 27 Nov https://getdayonedrop.com/games-like-zelda : 10 picks + filter, 2027 Zelda-likes, "is there a new Zelda in 2027", Zelda movie H2.
+N33. DONE 27 Nov /games-by-genre-2027 refresh: "What cozy games come out in 2027?" H2 + FAQ; sports H2 corrected (Super Battle Golf 25 Mar + GWYF2 were on the board but text said "no sports game").
+N34. OPEN /movies-february-2027 still thin: only Ice Age: Boiling Point (5 Feb) and K-Pop: The Debut (26 Feb) match on The Numbers + BOM; Narnia 12 Feb (in MOVIES). Conflicts: The Nightingale (BOM 12 Feb vs TN 19 Mar), Live Like That (26 vs 27 Feb), Panic Carefully (BOM 26 Feb vs TN 9 Apr). Retry when Movie Insider loads or a 3rd film matches. Next games-like: "games like Pokémon" (Winds and Waves), "games like Minecraft", "cozy games Switch 2".
+
 ## DEMAND RUN 26 Nov 2026 (scheduled, seventh pass, night)
 Evidence: "movies coming out january 2027" SERP = only BOM / The Numbers / Movie Insider calendars (no editorial page = gap); "games like hollow knight silksong" / "upcoming metroidvania" lists on GamesRadar+, ComicBook (x3), ScreenRant, Inverse, G2A; "switch 2 games black friday" (R1).
 N27. DONE 26 Nov https://getdayonedrop.com/movies-january-2027 (N26 next step): 6 two-schedule films, filter, countdown.
 N28. DONE 26 Nov https://getdayonedrop.com/games-like-hollow-knight : 11 picks + 2027 metroidvanias, platform/taste filter.
 N29. DONE 26 Nov R1 as an H2 on https://getdayonedrop.com/platforms/switch-2 (auto-removed after 5 Dec).
-N30. OPEN /movies-february-2027 (Ice Age 5 Feb, Narnia 12 Feb already in MOVIES; check The Numbers + BOM for a 3rd+); "games like Zelda" / "games like Stardew Valley" (Witchbrook, Grave Seasons on board) next in the games-like series.
+N30. PARTLY DONE 27 Nov (Zelda + Stardew pages live; Feb movies see N34) /movies-february-2027 (Ice Age 5 Feb, Narnia 12 Feb already in MOVIES; check The Numbers + BOM for a 3rd+); "games like Zelda" / "games like Stardew Valley" (Witchbrook, Grave Seasons on board) next in the games-like series.
 
 ## DEMAND RUN 26 Nov 2026 (scheduled, sixth pass, demand-first; evening)
 Evidence: "movies coming out december 2026" (N11 open; Box Office Mojo / The Numbers / GamesRadar+ December calendars all live; TheWrap + Bleeding Cool on Jumanji 3 moving to 25 Dec; "Dunesday" 18 Dec coverage). "winter 2027 anime" / "anime 2027 upcoming" (E2 open; winter 2027 season lists now up on Crank-in, Anime Eiga, Anime Corner, ComicBook.com 'returning anime winter 2027', GamesRadar+ anime schedule, giga.de, animotaku.fr).

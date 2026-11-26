@@ -361,3 +361,11 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - Links in: footer, /tools, /games-like-elden-ring, /games-by-genre-2027, game pages Metroid Ravenous / Bloodstained / Blighted / Mariachi Legends (related), /movies-2027, /movies-december-2026, /winter-2027-anime.
 - Left out: one-schedule January films (Bunker, River, Fing!, Slayground, Witch on the Holy Night, Drag, Lords of War, The Third Parent, Pendulum, Cloud Girl); Angry Birds 3 on BOM 29 Jan (opens 23 Dec 2026).
 - IndexNow pending (no WebFetch in this run): /movies-january-2027, /games-like-hollow-knight, /platforms/switch-2, /tools, /games-like-elden-ring, /games-by-genre-2027, /movies-2027, /movies-december-2026, /winter-2027-anime, /games/metroid-ravenous
+
+## 2026-11-27 (scheduled SEO run, demand-first)
+- New page /games-like-stardew-valley "Games Like Stardew Valley: Cozy Picks & 2027 Farm Sims" (DEMAND N31): 11 out-now picks with platform + taste filter (reuses #er-tool), 2027 cozy games from games.json, Witchbrook countdown, Grave Seasons + Stardew 1.7 (no date; GamesRadar+, PC Gamer) H2s.
+- New page /games-like-zelda "Games Like Zelda: Best Picks & Zelda in 2027" (DEMAND N32): 10 picks with filter, 7 Zelda-like 2027 games, Hyrule Warriors countdown, "Is there a new Zelda game in 2027?" and Zelda movie (30 April 2027, from MOVIES) H2s.
+- Refreshed /games-by-genre-2027: cozy games 2027 H2 + FAQ; fixed sports H2/FAQ that contradicted the board (Super Battle Golf, Golf With Your Friends 2); notes FM27 out 10 Nov 2026.
+- Links in: footer (both), /tools, /games-by-genre-2027, /games-like-elden-ring, /games-like-hollow-knight, game pages Witchbrook / Grave Seasons / Atelier Karia / Hyrule Warriors / Kirby / Xenoblade Genesis / Fable / Terranigma / Demi (related).
+- Left out: /movies-february-2027 (only 2 two-schedule films; DEMAND N34); OpenCritic "Stardew Valley returns January 2027" (unclear, single source).
+- IndexNow pending (no WebFetch in this run): /games-like-stardew-valley, /games-like-zelda, /games-by-genre-2027, /tools, /games-like-elden-ring, /games-like-hollow-knight, /games/witchbrook, /games/hyrule-warriors-age-of-calamity-definitive-edition
