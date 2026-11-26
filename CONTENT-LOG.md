@@ -2,6 +2,8 @@
 
 **24 Nov 02:20 PKT (main session): NEW /games-like-gta-6** (demand radar #1: 'games like gta 6' + ps5/pc/android/roblox/better than). 11 console/PC picks, phone picks (GTA Trilogy on Netflix Games, Bully), Roblox (Jailbreak, Emergency Hamburg, Southwest Florida), 2027 link-out. Sources: Red Bull, Beebom, Green Man Gaming, Gaming.net, Sportskeeda, Pro Game Guides. Linked from footer + /after-gta-6; NeonCoast links in. IndexNow pending: /games-like-gta-6, /after-gta-6
 
+**26 Nov 2026 (competitor watch):** /games-december-2026 now lists 25 games (was 17): added Apple Crumble, Dumpster Gang, The Journey Home (3 Dec), Acts of Blood, A Game About Digging A Hole Together, Petit Planet (4 Dec), Don't Fret (8 Dec), Hookeye (9 Dec). Each is dated the same on Game Informer's 2026 list and GamesRadar+ (upd. 25 Nov); platforms only where both agree. IndexNow pending: /games-december-2026
+
 # DayOneDrop content log
 
 ## 2026-11-18 (launch)
