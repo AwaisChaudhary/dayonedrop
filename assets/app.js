@@ -964,6 +964,8 @@
   var sel = { s: "", k: "" };
   try { var sv = JSON.parse(localStorage.getItem("dod-tv") || "null"); if (sv && typeof sv === "object") sel = { s: sv.s || "", k: sv.k || "" }; } catch (e) {}
   var rows = $$("#tv-list [data-ts]"), cnt = document.getElementById("tv-count"), none = document.getElementById("tv-none");
+  if (sel.s && !t.querySelector('[data-tv-s="' + sel.s + '"]')) sel.s = "";
+  if (sel.k && !t.querySelector('[data-tv-k="' + sel.k + '"]')) sel.k = "";
   function draw() {
     var n = 0;
     rows.forEach(function (r) {
@@ -999,4 +1001,40 @@
   }
   chips.forEach(function (c) { c.addEventListener("click", function () { pick(c); }); });
   try { var sv = localStorage.getItem("dod-g6"); chips.forEach(function (c) { if (c.getAttribute("data-g6") === sv) pick(c); }); } catch (e) {}
+})();
+
+/* Black Friday 2026 game sales: region filter + live "ends in" timers */
+(function () {
+  "use strict";
+  var t = document.getElementById("bf-tool");
+  if (!t) return;
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var sel = "";
+  try { sel = localStorage.getItem("dod-bf") || ""; } catch (e) {}
+  var rows = $$("#bf-list [data-bf-r]"), after = $$("#bf-after [data-bf-r]");
+  var cnt = document.getElementById("bf-count"), none = document.getElementById("bf-none"), nx = document.getElementById("bf-next");
+  function span(ms) { var h = Math.floor(ms / 36e5), m = Math.floor(ms % 36e5 / 6e4); return (h >= 24 ? Math.floor(h / 24) + "d " : "") + (h % 24) + "h " + m + "m"; }
+  function when(d) { return d.toLocaleString([], { weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit" }); }
+  function stat(r, now) {
+    var s = new Date(r.getAttribute("data-bf-s")), e = new Date(r.getAttribute("data-bf-e")), st = r.querySelector(".bf-st");
+    var past = now >= e.getTime(), live = !past && now >= s.getTime();
+    if (st) st.textContent = past ? "Ended" : live ? "On now · ends in " + span(e - now) + " (" + when(e) + " your time)" : "Starts in " + span(s - now) + " · " + when(s) + " your time";
+    return { past: past, e: e, n: r.querySelector("strong").textContent };
+  }
+  function draw() {
+    var now = Date.now(), n = 0, first = null;
+    rows.forEach(function (r) {
+      var x = stat(r, now), reg = r.getAttribute("data-bf-r");
+      var ok = !x.past && (!sel || reg === "all" || reg === sel);
+      r.hidden = !ok; if (ok) { n++; if (!first) first = x; }
+    });
+    after.forEach(function (r) { stat(r, now); });
+    $$("[data-bf-f]", t).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-bf-f") === sel ? "true" : "false"); });
+    cnt.textContent = n + " sale" + (n === 1 ? "" : "s") + " still on";
+    none.hidden = n > 0;
+    if (nx) nx.textContent = first ? "Ending next: " + first.n + ", in " + span(first.e - now) + "." : "Every Black Friday sale here has ended.";
+    try { localStorage.setItem("dod-bf", sel); } catch (e) {}
+  }
+  $$("[data-bf-f]", t).forEach(function (c) { c.addEventListener("click", function () { sel = c.getAttribute("data-bf-f"); draw(); }); });
+  draw(); setInterval(draw, 30000);
 })();

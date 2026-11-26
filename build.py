@@ -254,7 +254,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("new-games-this-week.html", depth)}">New games this week</a></li><li><a href="{href("later-2027.html", depth)}">Games later in 2027 (May–Dec)</a></li><li><a href="{href("games-without-release-date-2027.html", depth)}">2027 games with no release date</a></li><li><a href="{href("countdown.html", depth)}">Game release countdown</a></li><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("gta-6-pc-release-date.html", depth)}">GTA 6 PC release date</a></li><li><a href="{href("games-like-elden-ring.html", depth)}">Games like Elden Ring</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("fighting-games-2027.html", depth)}">Fighting games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/state-of-decay-3.html", depth)}">State of Decay 3</a></li><li><a href="{href("games/lords-of-the-fallen-ii.html", depth)}">Lords of the Fallen 2</a></li><li><a href="{href("games/squadron-42.html", depth)}">Squadron 42</a></li><li><a href="{href("games/ananta.html", depth)}">Ananta (free-to-play)</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("ps-plus-monthly-games.html", depth)}">PS Plus monthly games</a></li><li><a href="{href("epic-free-games.html", depth)}">Epic free games this week</a></li><li><a href="{href("steam-sale-dates.html", depth)}">Steam sale dates 2026-2027</a></li><li><a href="{href("movies-2027.html", depth)}">Upcoming movies 2027</a></li><li><a href="{href("new-tv-shows-december-2026.html", depth)}">New TV shows December 2026</a></li><li><a href="{href("nintendo-direct.html", depth)}">Next Nintendo Direct</a></li><li><a href="{href("xbox-games-showcase-2027.html", depth)}">Xbox Games Showcase 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("new-games-this-week.html", depth)}">New games this week</a></li><li><a href="{href("later-2027.html", depth)}">Games later in 2027 (May–Dec)</a></li><li><a href="{href("games-without-release-date-2027.html", depth)}">2027 games with no release date</a></li><li><a href="{href("countdown.html", depth)}">Game release countdown</a></li><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("gta-6-pc-release-date.html", depth)}">GTA 6 PC release date</a></li><li><a href="{href("games-like-elden-ring.html", depth)}">Games like Elden Ring</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("fighting-games-2027.html", depth)}">Fighting games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/state-of-decay-3.html", depth)}">State of Decay 3</a></li><li><a href="{href("games/lords-of-the-fallen-ii.html", depth)}">Lords of the Fallen 2</a></li><li><a href="{href("games/squadron-42.html", depth)}">Squadron 42</a></li><li><a href="{href("games/ananta.html", depth)}">Ananta (free-to-play)</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("ps-plus-monthly-games.html", depth)}">PS Plus monthly games</a></li><li><a href="{href("epic-free-games.html", depth)}">Epic free games this week</a></li><li><a href="{href("steam-sale-dates.html", depth)}">Steam sale dates 2026-2027</a></li><li><a href="{href("black-friday-game-sales-2026.html", depth)}">Black Friday 2026 game sales</a></li><li><a href="{href("movies-2027.html", depth)}">Upcoming movies 2027</a></li><li><a href="{href("new-tv-shows-december-2026.html", depth)}">New TV shows December 2026</a></li><li><a href="{href("new-tv-shows-january-2027.html", depth)}">New TV shows January 2027</a></li><li><a href="{href("nintendo-direct.html", depth)}">Next Nintendo Direct</a></li><li><a href="{href("xbox-games-showcase-2027.html", depth)}">Xbox Games Showcase 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Every date is checked against the publisher or platform holder plus a second trusted source (<a href="{href("about.html", depth)}#editorial">editorial policy</a>). Spotted an error? Email <a href="mailto:awaiskaramat@hotmail.com">awaiskaramat@hotmail.com</a>. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -1575,6 +1575,8 @@ tools = f'''<header class="hero"><div class="wrap"><span class="kicker">Tools</s
 <li><a href="{href("nintendo-direct.html", 0)}">Next Nintendo Direct</a>: every 2026 Direct and the Switch 2 games still without a date</li>
 <li><a href="{href("movies-2027.html", 0)}">Upcoming movies 2027</a>: every big release date with type and month filters and calendar reminders</li>
 <li><a href="{href("new-tv-shows-december-2026.html", 0)}">New TV shows December 2026</a>: every premiere with a streaming-service filter</li>
+<li><a href="{href("new-tv-shows-january-2027.html", 0)}">New TV shows January 2027</a>: ABC and Fox midseason premieres with times and reminders</li>
+<li><a href="{href("black-friday-game-sales-2026.html", 0)}">Black Friday 2026 game sales</a>: live "ends in" timers for PS Store, Xbox, Nintendo and Epic</li>
 <li><a href="{href("gta-6-pc-release-date.html", 0)}">GTA 6 PC release date estimator</a>: when GTA 6 could reach PC, based on Rockstar's past games</li>
 <li><a href="{href("after-gta-6.html", 0)}">What to play after GTA 6</a></li></ul></div></section>'''
 sw2 = [g["title"] for g in GAMES if "Switch 2" in g["platforms"]]
@@ -1685,7 +1687,7 @@ dec_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Decemb
             f'<div class="sec-head"><h2>Are any December 2026 games free to play?</h2></div>'
             f'<p>Yes: ' + e(", ".join(f"{x[1]} ({_dnice(x[0])[:-5]})" for x in _dfree)) + '. For free games to keep, see <a href="' + href("epic-free-games.html", 0) + '">Epic free games this week</a> (in recent years Epic has given away a free game every day over the holidays; the 2026 event is not announced yet) and the <a href="' + href("ps-plus-monthly-games.html", 0) + '">PS Plus monthly games</a>.</p>'
             f'<div class="sec-head" style="margin-top:28px"><h2>When is the Steam Winter Sale 2026?</h2></div>'
-            f'<p>17 December 2026 to 4 January 2027, per Valve\'s published schedule, so most December PC releases will get their first discount within weeks. Live timer on our <a href="{href("steam-sale-dates.html", 0)}">Steam sale dates</a> page.</p>'
+            f'<p>17 December 2026 to 4 January 2027, per Valve\'s published schedule, so most December PC releases will get their first discount within weeks. Live timer on our <a href="{href("steam-sale-dates.html", 0)}">Steam sale dates</a> page Before that, the console Black Friday sales end between 29 November and 5 December: <a href="{href("black-friday-game-sales-2026.html", 0)}">every end date</a>.</p>'
             f'<div class="sec-head" style="margin-top:28px"><h2>Are there any big games out at Christmas 2026?</h2></div>'
             f'<p>No big confirmed launches land between {e(_dnice(_dlast[0])[:-5])} and the end of the year in the release calendars we checked. Publishers rarely launch in the last two weeks of December, '
             f'so the Christmas gap is the time to catch up on GTA 6 (out since 19 November 2026) and the early-December releases above.</p>'
@@ -2604,6 +2606,7 @@ psp_body = (f'<header class="hero"><div class="wrap"><span class="kicker">PlaySt
     f'<li><a href="{href("platforms/ps5.html", 0)}">Every PS5 game coming in 2027</a></li>'
     f'<li><a href="{href("game-pass-2027.html", 0)}">Xbox Game Pass 2027</a>: every confirmed game</li>'
     f'<li><a href="{href("games-december-2026.html", 0)}">Games coming out in December 2026</a></li>'
+    f'<li><a href="{href("black-friday-game-sales-2026.html", 0)}">PS Store Black Friday sale</a>: ends 30 November, with a live timer</li>'
     f'<li><a href="{href("new-games-this-week.html", 0)}">New games this week</a></li></ul></div></section>')
 psp_faq = [
     ("What are the PS Plus games for December 2026?", "Tony Hawk's Pro Skater 3+4, Dragon Ball Xenoverse 2 and Amnesia: The Bunker, announced on the PlayStation Blog on 25 November 2026. Claim them from 1 December 2026 to 4 January 2027."),
@@ -2646,6 +2649,7 @@ ep_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Epic Ga
     f'<li><a href="{href("ps-plus-monthly-games.html", 0)}">PS Plus monthly games</a>: December 2026</li>'
     f'<li><a href="{href("game-pass-2027.html", 0)}">Xbox Game Pass 2027</a></li>'
     f'<li><a href="{href("steam-sale-dates.html", 0)}">Steam sale dates</a>: Winter Sale 17 Dec to 4 Jan, with a countdown</li>'
+    f'<li><a href="{href("black-friday-game-sales-2026.html", 0)}">Black Friday 2026 game sales</a>: Epic\'s Premium Editions Sale ends 1 December</li>'
     f'<li><a href="{href("platforms/pc.html", 0)}">Every PC game coming in 2027</a></li>'
     f'<li><a href="{href("new-games-this-week.html", 0)}">New games this week</a></li></ul></div></section>')
 ep_faq = [
@@ -2744,6 +2748,8 @@ ss_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Steam</
            + AD.format("ss-mid") +
            f'<section><div class="wrap"><div class="sec-head"><h2>When is the Steam Winter Sale 2026?</h2></div>'
            f'<p>Thursday 17 December 2026 to Monday 4 January 2027: {_ss_len(STEAM[0])} days. Steam sales usually start and end at 10 am Pacific (6 pm UK, 11 pm in Pakistan); Valve\'s schedule lists dates only, so the countdown above uses that usual time.</p>'
+           f'<div class="sec-head" style="margin-top:28px"><h2>Is there a Steam Black Friday sale?</h2></div>'
+           f'<p>No. Valve does not hold a Black Friday sale, and the 2026 Autumn Sale already ran on 1 to 8 October. Some publishers discount their own games on Steam over Black Friday week, but the next storewide sale is the Winter Sale on 17 December. The console and Epic Black Friday sales end between 29 November and 5 December: see <a href="{href("black-friday-game-sales-2026.html", 0)}">every Black Friday 2026 game sale end date</a>.</p>'
            f'<div class="sec-head" style="margin-top:28px"><h2>What are all the Steam sale dates for 2027?</h2><span class="muted">January to July</span></div>{_ss_tbl}'
            f'<p class="muted" style="margin-top:10px">Valve publishes its schedule in halves. The January to July 2027 events were posted in July 2026; the second half of 2027 usually follows later. Sources: Steamworks via PC Gamer, Notebookcheck and GamesRadar+.</p>'
            f'<div class="sec-head" style="margin-top:28px"><h2>When is the Steam Spring Sale 2027?</h2></div>'
@@ -2771,6 +2777,7 @@ ss_faq = [
     ("When is the Steam Spring Sale 2027?", "18 to 25 March 2027."),
     ("When is Steam Next Fest 2027?", "22 February to 1 March 2027 and 14 to 21 June 2027."),
     ("When is the Steam Autumn Sale 2027?", "Valve has not announced it yet. The 2026 Autumn Sale ran 1 to 8 October 2026."),
+    ("Is there a Steam Black Friday sale in 2026?", "No. Valve's Autumn Sale ran 1 to 8 October 2026 and the next storewide sale is the Winter Sale from 17 December. Only some publishers discount their own games for Black Friday."),
     ("What time does the Steam sale start?", "Usually 10 am Pacific, which is 1 pm Eastern, 6 pm UK and 11 pm Pakistan time. Valve's schedule lists only the dates."),
 ]
 page("steam-sale-dates.html", "Steam Sale Dates 2026-2027: Winter Sale, Spring Sale, Summer Sale and Next Fest | DayOneDrop",
@@ -3354,6 +3361,7 @@ _tv_body = (f'<header class="hero"><div class="wrap"><span class="kicker">TV · 
             f'<p>December 2026 also has {len(DEC26)} game launches, including Monster Hunter Wilds on Switch 2 (4 December), and The Game Awards on 10 December. See <a href="{href("games-december-2026.html", 0)}">games coming out in December 2026</a> and <a href="{href("game-awards-2026.html", 0)}">The Game Awards 2026</a>.</p>'
             f'<p class="muted">Dates are US premiere dates. We only list a show when at least two premiere schedules (Rotten Tomatoes, Deadline, ScreenRant, Dexerto, Popverse) give the same date. Specials are marked.</p>'
             f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+            f'<li><a href="{href("new-tv-shows-january-2027.html", 0)}">New TV shows January 2027</a>: The Rookie, Baywatch, Grey\'s Anatomy</li>'
             f'<li><a href="{href("movies-2027.html", 0)}">Upcoming movies 2027</a>: Zelda, Shrek 5, Avengers: Secret Wars</li>'
             f'<li><a href="{href("games-december-2026.html", 0)}">Games coming out in December 2026</a></li>'
             f'<li><a href="{href("steam-sale-dates.html", 0)}">Steam Winter Sale dates</a></li>'
@@ -3368,11 +3376,196 @@ page("new-tv-shows-december-2026.html", "New TV Shows December 2026: Every Premi
      _tv_body, 0, tv_faq, crumbs=[("Home", DOMAIN + "/"), ("New TV shows December 2026", canon("new-tv-shows-december-2026.html"))])
 
 
+# ---------------- NEW TV SHOWS JANUARY 2027 (26 Nov 2026, DEMAND N16: "new tv shows january 2027", "midseason 2027 premiere dates") ----------------
+# ABC: TVLine (6 Nov 2026) + Laughing Place (6 Nov 2026) from ABC's midseason announcement; Fox: TVLine (11 Nov 2026) + TV Guide (13 Nov 2026).
+# The Rookie / Rookie: North / Baywatch also on TV Insider. Streaming dates on only one schedule (pogdesign) left out until a 2nd source lists them:
+# 3 Body Problem S2 (14 Jan, Netflix), Ahsoka S2 (20 Jan, Disney+), The Traitors US (14 Jan, Peacock), Blue Eye Samurai S2 (19 Jan), Your Friendly Neighborhood Spider-Man S2 (13 Jan), Mayor of Kingstown (15 Jan), Matlock (21 Jan, CBS), NCIS: Sydney (26 Jan).
+TV_JAN = [  # (title, date, network, kind, time ET, note)
+    ("Best Medicine, Season 2", "2027-01-05", "fox", "ret", "8 pm", "Josh Charles' small-town doctor comedy-drama."),
+    ("Will Trent, Season 5", "2027-01-05", "abc", "ret", "8 pm", "The GBI detective drama returns."),
+    ("Doc, Season 3", "2027-01-05", "fox", "ret", "9 pm", "Medical drama."),
+    ("High Potential, Season 3", "2027-01-05", "abc", "ret", "9 pm", "Kaitlin Olson's crime-solving single mum."),
+    ("Surviving a Scandal", "2027-01-05", "abc", "new", "10 pm", "New series."),
+    ("The Masked Singer, Season 15", "2027-01-06", "fox", "ret", "8 pm", "Reality singing contest."),
+    ("Shifting Gears, Season 3", "2027-01-06", "abc", "ret", "8 pm", "Tim Allen sitcom, two-episode premiere."),
+    ("Baywatch", "2027-01-06", "fox", "new", "9 pm", "New series: a reboot of the lifeguard drama."),
+    ("The Rookie, Season 9", "2027-01-06", "abc", "ret", "9 pm", "Nathan Fillion's police drama."),
+    ("The Rookie: North", "2027-01-06", "abc", "new", "10 pm", "New spin-off of The Rookie."),
+    ("Extracted, Season 3", "2027-01-07", "fox", "ret", "8 pm", "Two-hour survival reality premiere; moves to 9 pm from 14 January."),
+    ("9-1-1, Season 10 (midseason return)", "2027-01-07", "abc", "mid", "8 pm", "Back from the winter break."),
+    ("9-1-1: Nashville, Season 2 (midseason return)", "2027-01-07", "abc", "mid", "9 pm", "Back from the winter break."),
+    ("Grey's Anatomy, Season 23 (midseason return)", "2027-01-07", "abc", "mid", "10 pm", "Back from the winter break."),
+    ("Abbott Elementary, Season 6 (midseason return)", "2027-01-13", "abc", "mid", "8:31 pm", "Back from the winter break."),
+    ("Hell's Kitchen (new episodes)", "2027-01-14", "fox", "mid", "8 pm", "New episodes."),
+    ("Celebrity Jeopardy!, Season 5", "2027-01-29", "abc", "ret", "8 pm", "Celebrity quiz."),
+]
+_TVJS = {"abc": "ABC (Hulu next day)", "fox": "Fox (Hulu next day)"}
+_TVJK = {"new": "New series", "ret": "New season", "mid": "Midseason return"}
+def _tvj_gcal(t, d, s, tm):
+    a = d.replace("-", ""); b = (datetime.date.fromisoformat(d) + datetime.timedelta(days=1)).isoformat().replace("-", "")
+    return "https://calendar.google.com/calendar/render?action=TEMPLATE&text=" + _qp(t + " on " + s) + f"&dates={a}/{b}&details=" + _qp(f"{tm} ET. Premiere date via getdayonedrop.com/new-tv-shows-january-2027")
+def _tvjrow(x):
+    t, d, s, k, tm, n = x
+    return (f'<div class="row" data-ts="{s}" data-tk="{k}"><span><strong>{e(t)}</strong><br><span class="muted">{e(n)}</span><br><span class="muted">{e(_TVJS[s])} · {e(_TVJK[k])} · {e(tm)} ET · '
+            f'<a href="{e(_tvj_gcal(t, d, s.upper(), tm))}" rel="nofollow noopener" target="_blank">Add to Google Calendar</a></span></span><b>{e(_mv_nice(d))}</b></div>')
+_tvj_chips = ('<div class="chips" role="group" aria-label="Network"><button class="chip" type="button" data-tv-s="" aria-pressed="true">Every network</button>'
+              '<button class="chip" type="button" data-tv-s="abc" aria-pressed="false">ABC</button><button class="chip" type="button" data-tv-s="fox" aria-pressed="false">Fox</button></div>'
+              '<div class="chips" role="group" aria-label="Type" style="margin-top:8px"><button class="chip" type="button" data-tv-k="" aria-pressed="true">Everything</button>'
+              + "".join(f'<button class="chip" type="button" data-tv-k="{k}" aria-pressed="false">{e(l)}</button>' for k, l in _TVJK.items()) + '</div>')
+_tvj_new = [x for x in TV_JAN if x[3] == "new"]
+_tvj_quick = ("The first big week of January 2027 TV is 5 to 7 January: Will Trent, High Potential and Doc return on 5 January, The Rookie season 9, the new spin-off The Rookie: North and Fox's new Baywatch start on 6 January, "
+              "and 9-1-1 and Grey's Anatomy come back on 7 January. " + f"We list {len(TV_JAN)} network premieres so far, including {len(_tvj_new)} new series.")
+_tvj_days = sorted(set(x[1] for x in TV_JAN))
+_tvj_body = (f'<header class="hero"><div class="wrap"><span class="kicker">TV · January 2027</span>'
+             f'<h1>New TV shows in January 2027:<br><span class="amber">every premiere date so far.</span></h1>'
+             f'<p class="lead">Midseason premieres and returns on ABC and Fox with times, a network and type filter, and a calendar reminder for each show. Streaming dates are added once two schedules agree.</p>'
+             f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · {len(TV_JAN)} premieres</p></div></header>'
+             f'<section><div class="wrap"><div class="out" style="margin-bottom:12px"><div class="row"><span><strong>Quick answer:</strong> {e(_tvj_quick)}</span></div></div>'
+             f'<div class="tool" id="tv-tool" style="margin-bottom:24px"><h2 style="font-size:1.5rem;margin-top:0">What is back on my channel in January?</h2>'
+             f'<p class="muted">Pick a network and a type. All times are Eastern; shows stream on Hulu the next day. Your choice is remembered on this device.</p>{_tvj_chips}'
+             f'<p class="mono amber" id="tv-count" aria-live="polite" style="margin:12px 0 0">{len(TV_JAN)} shows</p></div>'
+             f'<div class="sec-head"><h2>What new TV shows come out in January 2027?</h2><span class="muted">in date order</span></div>'
+             f'<div class="out" id="tv-list" style="margin-bottom:10px">{"".join(_tvjrow(x) for x in TV_JAN)}</div><p class="empty" id="tv-none" hidden>Nothing matches. Try "Every network".</p>'
+             f'<div class="cdw" style="margin-top:18px"><span class="lbl">Countdown to The Rookie season 9 and The Rookie: North</span><div class="cd" data-countdown="2027-01-06">'
+             '<div class="cd-unit"><span class="flaps" data-u="0"></span><span>Days</span></div><div class="cd-unit"><span class="flaps" data-u="1"></span><span>Hrs</span></div>'
+             '<div class="cd-unit"><span class="flaps" data-u="2"></span><span>Min</span></div><div class="cd-unit"><span class="flaps" data-u="3"></span><span>Sec</span></div></div></div></div></section>'
+             + AD.format("tvj-mid") +
+             f'<section><div class="wrap"><div class="sec-head"><h2>When does The Rookie season 9 come out?</h2></div>'
+             f'<p>Wednesday 6 January 2027 at 9 pm ET on ABC, followed at 10 pm by the series premiere of the spin-off The Rookie: North. Both stream on Hulu the next day.</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>When does the new Baywatch come out?</h2></div>'
+             f'<p>Wednesday 6 January 2027 at 9 pm ET on Fox, straight after the season 15 premiere of The Masked Singer.</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>When do Grey\'s Anatomy and 9-1-1 come back?</h2></div>'
+             f'<p>Thursday 7 January 2027 on ABC: 9-1-1 at 8 pm, 9-1-1: Nashville at 9 pm and Grey\'s Anatomy at 10 pm ET. Abbott Elementary follows on 13 January at 8:31 pm.</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>When does High Potential season 3 start?</h2></div>'
+             f'<p>Tuesday 5 January 2027 at 9 pm ET on ABC, after Will Trent season 5 at 8 pm. ABC\'s new drama Surviving a Scandal follows at 10 pm.</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>What new series start in January 2027?</h2><span class="muted">{len(_tvj_new)}</span></div>'
+             f'<div class="out" style="margin-bottom:10px">{"".join(_tvjrow(x) for x in _tvj_new)}</div>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>What is premiering each night?</h2></div><div class="out" style="margin-bottom:28px">'
+             + "".join(f'<div class="row"><span><strong>{e(_mv_nice(d))}</strong><br><span class="muted">{e(_and([x[0] for x in TV_JAN if x[1] == d]))}</span></span><b>{sum(1 for x in TV_JAN if x[1] == d)}</b></div>' for d in _tvj_days) +
+             f'</div><div class="sec-head"><h2>What about Netflix, Disney+ and Peacock in January 2027?</h2></div>'
+             f'<p>Streaming services usually confirm January dates in December. We add a show once two premiere schedules give the same date, so check back. December\'s streaming premieres, including HBO Max\'s Harry Potter on 25 December, are on <a href="{href("new-tv-shows-december-2026.html", 0)}">new TV shows in December 2026</a>.</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>What games and movies are out in January 2027?</h2></div>'
+             f'<p>January 2027 is also busy for games, with Forza Horizon 6 on PS5 (26 January) and Metroid: Ravenous (28 January). See <a href="{href("months/january-2027.html", 0)}">games coming out in January 2027</a> and <a href="{href("movies-2027.html", 0)}">upcoming movies 2027</a>.</p>'
+             f'<p class="muted">Dates and times are US Eastern, from ABC\'s and Fox\'s midseason schedules as published by TVLine, Laughing Place and TV Guide (November 2026). Networks can still move a premiere.</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+             f'<li><a href="{href("new-tv-shows-december-2026.html", 0)}">New TV shows December 2026</a></li>'
+             f'<li><a href="{href("movies-2027.html", 0)}">Upcoming movies 2027</a> with countdowns</li>'
+             f'<li><a href="{href("months/january-2027.html", 0)}">Games coming out in January 2027</a></li>'
+             f'<li><a href="{href("tools.html", 0)}">Every DayOneDrop tool</a></li></ul></div></section>')
+tvj_faq = [("What new TV shows come out in January 2027?", _tvj_quick),
+           ("When does The Rookie season 9 premiere?", "Wednesday 6 January 2027 at 9 pm ET on ABC, with The Rookie: North at 10 pm."),
+           ("When does the Baywatch reboot premiere?", "Wednesday 6 January 2027 at 9 pm ET on Fox."),
+           ("When does Grey's Anatomy come back in 2027?", "Thursday 7 January 2027 at 10 pm ET on ABC."),
+           ("When does High Potential season 3 come out?", "Tuesday 5 January 2027 at 9 pm ET on ABC."),
+           ("When does The Masked Singer season 15 start?", "Wednesday 6 January 2027 at 8 pm ET on Fox.")]
+page("new-tv-shows-january-2027.html", "New TV Shows January 2027: Premiere Dates and Times | DayOneDrop",
+     "New TV shows January 2027: The Rookie S9 + The Rookie: North and Baywatch (6 Jan), High Potential S3 (5 Jan), Grey's Anatomy (7 Jan). Times, filter, reminders.",
+     _tvj_body, 0, tvj_faq, crumbs=[("Home", DOMAIN + "/"), ("New TV shows January 2027", canon("new-tv-shows-january-2027.html"))])
+
+
+# ---------------- BLACK FRIDAY GAME SALES 2026 (demand run 26 Nov 2026: "ps store black friday sale end date", "xbox black friday sale 2026", "nintendo eshop black friday 2026", "steam black friday sale") ----------------
+# Sources: PlayStation.com Black Friday page + Insider Gaming + God is a Geek + Push Square (PS Store 4-30 Nov, up to 75%, refresh 16 Nov, first wave ended 20 Nov);
+# Pure Xbox (19 Nov 2026, ends 2 Dec, 2,000+ games) + Windows Report + games.gg + Twisted Voxel (starts 19 Nov, up to 80%);
+# Nintendo US: Day One/playday (13 Nov) + Windows Report + Otakukart (digital 19 Nov - 2 Dec, wider sale 22 Nov - 5 Dec, $50 off Switch 2 + Mario Kart World bundle, $20 off select physical games);
+# Nintendo Europe: Nintendo UK via My Nintendo News (17 Nov 2026) + Notebookcheck DE (eShop sale ends 29 Nov 23:59 local; extra titles 19 Nov 09:00 - 2 Dec 23:59 local);
+# Epic: Epic Games Store Black Friday buyer's guide (17 Nov 2026: 17 Nov 11am ET - 1 Dec 11am ET, Premium Editions) + Digital Citizen; Epic Holiday Sale 10 Dec - 7 Jan from Epic's Q4 developer promo guide.
+# Steam: no Valve Black Friday sale (Autumn Sale ran 1-8 Oct 2026, Winter Sale 17 Dec from STEAM above). Steam Awards nomination dates single-source: left out.
+# Times: "Z" = exact UTC time given by the store; no Z = end time not given, we count to 23:59 in the reader's own time zone (store-local).
+BF = [  # (id, store, region us|eu|all, start, end, what, discount)
+    ("ps", "PlayStation Store Black Friday sale", "all", "2026-11-04T08:00:00Z", "2026-11-30T23:59:00", "PS5 and PS4 games, add-ons and PS Plus", "Up to 75% off; PS Plus 12 months up to 33% off"),
+    ("epic", "Epic Games Store Black Friday: Premium Editions Sale", "all", "2026-11-17T16:00:00Z", "2026-12-01T16:00:00Z", "Deluxe, Gold and other premium editions of PC games only", "Set by each publisher"),
+    ("nseu", "Nintendo eShop Black Friday sale (UK and Europe)", "eu", "2026-11-17T00:00:00", "2026-11-29T23:59:00", "Switch and Switch 2 games", "Varies by game"),
+    ("nseu2", "Nintendo eShop extra Black Friday titles (UK and Europe)", "eu", "2026-11-19T09:00:00", "2026-12-02T23:59:00", "A second batch of discounted eShop games", "Varies by game"),
+    ("nsus", "Nintendo Black Friday digital sale (US)", "us", "2026-11-19T00:00:00", "2026-12-02T23:59:00", "Switch and Switch 2 games on the eShop", "Varies by game"),
+    ("xbox", "Xbox Black Friday sale", "all", "2026-11-19T00:00:00", "2026-12-02T23:59:00", "2,000+ Xbox Series X|S, Xbox One and PC games and add-ons", "Up to 80% off (a few older games 90%)"),
+    ("nsus2", "Nintendo Black Friday hardware and physical game deals (US)", "us", "2026-11-22T00:00:00", "2026-12-05T23:59:00", "Switch 2 + Mario Kart World bundle and selected physical games at retailers", "$50 off the bundle ($499); $20 off selected games"),
+]
+BF_NEXT = [  # what comes after Black Friday (same format)
+    ("epichol", "Epic Games Store Holiday Sale", "all", "2026-12-10T16:00:00Z", "2027-01-07T16:00:00Z", "Base games and DLC on PC (plus the daily mystery free games)", "Set by each publisher"),
+    ("steamw", "Steam Winter Sale 2026", "all", "2026-12-17T18:00:00Z", "2027-01-04T18:00:00Z", "Storewide PC sale on Steam", "Set by each publisher"),
+]
+_bf_reg = {"all": "US, UK and Europe", "us": "US", "eu": "UK and Europe"}
+def _bf_d(s):
+    return datetime.date.fromisoformat(s[:10])
+def _bf_nice(s):
+    d = _bf_d(s); return f"{_WD[d.weekday()][:3]} {d.day} {d.strftime('%b')}" + ("" if d.year == 2026 else f" {d.year}")
+def _bf_time(s):
+    if not s.endswith("Z"): return "end time not given"
+    return {"16:00": "11 am Eastern", "18:00": "10 am Pacific", "08:00": "midnight Pacific"}.get(s[11:16], s[11:16] + " UTC")
+def _bf_row(x):
+    i, n, r, a, b, what, disc = x
+    return (f'<div class="row" data-bf-r="{r}" data-bf-s="{a}" data-bf-e="{b}"><span style="min-width:0"><strong>{e(n)}</strong><br>'
+            f'<span class="muted">{e(what)} · {e(_bf_reg[r])}</span><br><span class="muted">{e(disc)}</span><br>'
+            f'<span class="mono amber bf-st" style="font-size:.8rem"></span></span>'
+            f'<span style="text-align:right;flex-shrink:0;max-width:44%"><b style="white-space:normal">Ends {e(_bf_nice(b))}</b><br>'
+            f'<span class="muted" style="font-size:.8rem">{e(_bf_time(b))}</span></span></div>')
+_bf_today = datetime.date.fromisoformat(UPDATED)
+_bf_sorted = sorted(BF, key=lambda x: x[4][:10])
+_bf_tc = 'style="padding:6px;border-top:1px solid var(--rule);vertical-align:top"'
+_bf_tbl = ('<div style="overflow-x:auto"><table class="gen-table" style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr>'
+           '<th style="text-align:left;padding:6px">Sale</th><th style="text-align:left;padding:6px">Started</th><th style="text-align:left;padding:6px">Ends</th><th style="text-align:left;padding:6px">Discount</th></tr></thead><tbody>'
+           + "".join(f'<tr><td {_bf_tc}>{e(n)}</td><td {_bf_tc} class="mono">{e(_bf_nice(a))}</td><td {_bf_tc} class="mono">{e(_bf_nice(b))}</td><td {_bf_tc}>{e(d)}</td></tr>' for i, n, r, a, b, w, d in _bf_sorted)
+           + '</tbody></table></div>')
+_bf_quick = ("The PlayStation Store Black Friday sale ends on Monday 30 November 2026 (Cyber Monday). The Epic Games Store sale ends 1 December at 11 am Eastern, and the Xbox and US Nintendo eShop sales run until 2 December. "
+             "In the UK and Europe the main Nintendo eShop sale ends sooner, on Sunday 29 November at 23:59. Steam has no Black Friday sale: its next big sale is the Winter Sale from 17 December.")
+_bf_dec = sorted([g for g in GAMES if g["date"] and g["date"] <= "2027-01-31"], key=lambda g: g["date"])[:6]
+_bf_chips = ('<div class="chips" role="group" aria-label="Your region"><button class="chip" type="button" data-bf-f="" aria-pressed="true">All regions</button>'
+             '<button class="chip" type="button" data-bf-f="us" aria-pressed="false">I\'m in the US</button>'
+             '<button class="chip" type="button" data-bf-f="eu" aria-pressed="false">I\'m in the UK or Europe</button></div>')
+_bf_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Black Friday 2026</span>'
+            f'<h1>Black Friday 2026 game sales:<br><span class="amber">when does each one end?</span></h1>'
+            f'<p class="lead">PlayStation Store, Xbox, Nintendo eShop, Epic and Steam: start and end dates for every console and PC Black Friday sale, with a live "ends in" timer for each one in your time zone.</p>'
+            f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · dates from the stores\' own announcements, checked against 2+ outlets</p></div></header>'
+            f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_bf_quick)}</span></div></div>'
+            f'<div class="tool" id="bf-tool"><h2 style="font-size:1.5rem;margin-top:0">Which Black Friday game sale ends next?</h2>'
+            f'<p class="mono amber" id="bf-next" aria-live="polite" style="font-size:1.1rem;margin:0 0 6px">The PlayStation Store sale ends 30 November.</p>'
+            f'<p class="muted">Pick your region. Sales are sorted by end date, and each one shows a live "ends in" timer. Where a store gives no end time we count to 23:59 on the last day in your own time zone. Your choice is remembered on this device.</p>{_bf_chips}'
+            f'<p class="mono amber" id="bf-count" aria-live="polite" style="margin:12px 0 0">{len(BF)} sales</p>'
+            f'<div class="out" id="bf-list" style="margin-top:12px">{"".join(_bf_row(x) for x in _bf_sorted)}</div>'
+            f'<p class="empty" id="bf-none" hidden>Every Black Friday sale in your region has ended. The next ones are below.</p>'
+            f'<h3 style="margin-top:20px">What comes after Black Friday?</h3><div class="out" id="bf-after">{"".join(_bf_row(x) for x in BF_NEXT)}</div></div></div></section>'
+            + AD.format("bf-mid") +
+            f'<section><div class="wrap"><div class="sec-head"><h2>What are all the Black Friday 2026 game sale dates?</h2><span class="muted">{len(BF)} sales</span></div>{_bf_tbl}'
+            f'<p class="muted" style="margin-top:10px">Dates are as announced by Sony, Microsoft, Nintendo and Epic, and confirmed by at least two outlets (Push Square, Insider Gaming, God is a Geek, Pure Xbox, Windows Report, My Nintendo News, Notebookcheck, Digital Citizen). Individual game deals can end earlier than the sale itself.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>When does the PlayStation Store Black Friday sale end?</h2></div>'
+            f'<p>Monday 30 November 2026. The sale started on 4 November with up to 75% off PS5 and PS4 games. Sony refreshed it on 16 November, and the first batch of deals ended on 20 November, so check the end date on each game\'s store page. PS Plus 12-month memberships are up to 33% off. PlayStation\'s hardware deals (PS5 bundles up to $100 off, PS Portal $20 off) began on 21 November at PlayStation Direct and retailers.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>When does the Xbox Black Friday sale end?</h2></div>'
+            f'<p>Wednesday 2 December 2026. It started on 19 November with more than 2,000 games and add-ons for Xbox Series X|S, Xbox One and PC, up to 80% off (Pure Xbox found a few older games at 90%). There are no console price cuts in Microsoft\'s own sale.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>When does the Nintendo eShop Black Friday sale end?</h2></div>'
+            f'<p>It depends where you live. <strong>US:</strong> the digital sale runs 19 November to 2 December, and the wider sale (the Switch 2 + Mario Kart World bundle at $499, $50 off, and $20 off selected physical games such as Donkey Kong Bananza and Metroid Prime 4: Beyond) runs 22 November to 5 December. '
+            f'<strong>UK and Europe:</strong> the main eShop sale ends Sunday 29 November at 23:59 local time, and a second batch of games is discounted from 19 November (09:00) to 2 December (23:59).</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Is there a Steam Black Friday sale in 2026?</h2></div>'
+            f'<p>No. Valve does not run a Black Friday sale. This year\'s Steam Autumn Sale was earlier, 1 to 8 October 2026, and the next storewide sale is the Steam Winter Sale from 17 December 2026 to 4 January 2027. Some publishers still put their own discounts on Steam this week. See <a href="{href("steam-sale-dates.html", 0)}">every Steam sale date</a> with a countdown.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>When does the Epic Games Store Black Friday sale end?</h2></div>'
+            f'<p>Tuesday 1 December 2026 at 11 am Eastern (4 pm UK). It started on 17 November and only covers premium editions (Deluxe, Gold and similar), not base games. Epic\'s Holiday Sale for base games and DLC follows from 10 December to 7 January. Epic\'s weekly freebie keeps running too: <a href="{href("epic-free-games.html", 0)}">this week\'s Epic free game</a>.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Are the Black Friday sales still on for Cyber Monday?</h2></div>'
+            f'<p>Yes, all of them except Nintendo\'s main UK and Europe eShop sale. Cyber Monday is 30 November 2026, which is also the last day of the PlayStation Store sale. Xbox, Epic and Nintendo US run past it; there is no separate Cyber Monday sale on any console store.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Should I buy now or wait for the Christmas sales?</h2></div>'
+            f'<p>For PC, the Steam Winter Sale (17 December) and Epic Holiday Sale (10 December) are both coming, so there is little reason to rush. For PS5 and Switch, there is usually a smaller holiday sale in late December, but nothing has been announced yet, so treat today\'s price as the one you know. Brand-new games rarely get big Black Friday cuts: it is the best week for games from 2024 and 2025.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>What new games come out right after Black Friday?</h2></div>'
+            f'<p>December 2026 is busy with smaller launches (see <a href="{href("games-december-2026.html", 0)}">every December 2026 game</a>), and the first big 2027 games arrive in January:</p>'
+            f'<div class="out" style="margin-bottom:10px">' + "".join(f'<div class="row"><span><strong>{_gname(g)}</strong><br><span class="muted">{e(plat_text(g))}</span></span><b>{e(nice_date(g))}</b></div>' for g in _bf_dec) + '</div>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+            f'<li><a href="{href("steam-sale-dates.html", 0)}">Steam sale dates</a>: countdown to the Winter Sale and every 2027 sale</li>'
+            f'<li><a href="{href("ps-plus-monthly-games.html", 0)}">PS Plus monthly games</a>: what you get free this month</li>'
+            f'<li><a href="{href("epic-free-games.html", 0)}">Epic free games this week</a></li>'
+            f'<li><a href="{href("backlog-planner-2027.html", 0)}">2027 backlog planner</a>: how much of your sale haul you can finish before the big 2027 games</li></ul></div></section>')
+bf_faq = [("When does the PlayStation Store Black Friday sale end?", "Monday 30 November 2026. It started on 4 November with up to 75% off, and some deals ended earlier, on 20 November."),
+          ("When does the Xbox Black Friday sale end?", "Wednesday 2 December 2026. It started on 19 November with 2,000+ games up to 80% off."),
+          ("When does the Nintendo eShop Black Friday sale end?", "In the US the digital sale ends 2 December 2026 (hardware and physical deals to 5 December). In the UK and Europe the main eShop sale ends 29 November at 23:59, with a second batch to 2 December."),
+          ("Is there a Steam Black Friday sale?", "No. Valve's Autumn Sale ran 1 to 8 October 2026. The next storewide Steam sale is the Winter Sale, 17 December 2026 to 4 January 2027."),
+          ("When does the Epic Games Store Black Friday sale end?", "1 December 2026 at 11 am Eastern. It covers premium editions only. The Epic Holiday Sale runs 10 December to 7 January."),
+          ("Is there a Cyber Monday game sale?", "Not a separate one. Cyber Monday (30 November 2026) is the last day of the PlayStation Store sale; the Xbox, Epic and US Nintendo sales continue after it.")]
+page("black-friday-game-sales-2026.html", "Black Friday 2026 Game Sales: Every End Date | DayOneDrop",
+     "PS Store Black Friday 2026 sale ends 30 Nov, Epic 1 Dec, Xbox and Nintendo US 2 Dec (Nintendo UK/EU 29 Nov). No Steam Black Friday sale. Live end timers.",
+     _bf_body, 0, bf_faq, crumbs=[("Home", DOMAIN + "/"), ("Black Friday 2026 game sales", canon("black-friday-game-sales-2026.html"))])
+
+
 # ---------------- SEO files ----------------
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "gta-6-pc-release-date.html", "new-tv-shows-december-2026.html", "movies-2027.html", "games-like-elden-ring.html", "countdown.html", "games-without-release-date-2027.html", "steam-sale-dates.html", "nintendo-direct.html", "ps-plus-monthly-games.html", "epic-free-games.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "new-games-this-week.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "fighting-games-2027.html", "xbox-games-showcase-2027.html", "calendar.html", "later-2027.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "new-tv-shows-january-2027.html", "black-friday-game-sales-2026.html", "gta-6-pc-release-date.html", "new-tv-shows-december-2026.html", "movies-2027.html", "games-like-elden-ring.html", "countdown.html", "games-without-release-date-2027.html", "steam-sale-dates.html", "nintendo-direct.html", "ps-plus-monthly-games.html", "epic-free-games.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "new-games-this-week.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "fighting-games-2027.html", "xbox-games-showcase-2027.html", "calendar.html", "later-2027.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)

@@ -3009,6 +3009,37 @@
      "text": "Delayed from fall 2026 to 2027."
     }
    ]
+  },
+  {
+   "slug": "horizon-steel-frontiers",
+   "title": "Horizon Steel Frontiers",
+   "platforms": [
+    "PC"
+   ],
+   "dev": "NCSOFT (with Guerrilla)",
+   "genre": "MMORPG",
+   "page": false,
+   "facts": [
+    "NCSOFT is targeting the first half of 2027, so by the end of June 2027. No exact day has been announced.",
+    "It is an MMORPG set in Guerrilla's Horizon universe, where you hunt giant machines.",
+    "It is coming to PC and mobile. No PS5 version has been announced."
+   ],
+   "history": [
+    {
+     "when": "Nov 2025",
+     "text": "Announced by NCSOFT for PC and mobile"
+    },
+    {
+     "when": "2026",
+     "text": "NCSOFT sets the first half of 2027 after hinting at an earlier launch"
+    }
+   ],
+   "date": null,
+   "window": "First half of 2027",
+   "month": 6,
+   "status": "window",
+   "about": "Horizon Steel Frontiers is NCSOFT's Horizon MMORPG for PC and mobile, aimed at the first half of 2027.",
+   "sources": "GamesRadar+, GamingBolt, PSU, Wccftech, Game Informer"
   }
  ]
 }
