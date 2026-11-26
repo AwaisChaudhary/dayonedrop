@@ -912,6 +912,8 @@
   var sel = { k: "", m: "" };
   try { var sv = JSON.parse(localStorage.getItem("dod-mv") || "null"); if (sv && typeof sv === "object") sel = { k: sv.k || "", m: sv.m || "" }; } catch (e) {}
   var rows = $$("#mv-list [data-mk]"), cnt = document.getElementById("mv-count"), none = document.getElementById("mv-none");
+  if (sel.k && !t.querySelector('[data-mv-k="' + sel.k + '"]')) sel.k = "";
+  if (sel.m && !t.querySelector('[data-mv-m="' + sel.m + '"]')) sel.m = "";
   function draw() {
     var n = 0;
     rows.forEach(function (r) {

@@ -345,3 +345,11 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - Left out: Warhammer Blood Bowl (still "early 2027" PC Gamer/games.gg vs "spring 2027" God is a Geek); Pokémon Winds and Waves Nov 2027 (rumour only); Acts of Blood 2027 delay (Niche Gamer only); STARDUST: Wish of Witch Q1 2027 (platforms differ: Gematsu PS5/Switch 2 vs VGChartz Switch 2/PC); Chronoscript developer (single source).
 - IndexNow pending (no WebFetch in this run): /calendar, /games, /delayed-games-2027, /later-2027, /months/january-2027, /platforms/ps5, /platforms/xbox-series, /platforms/pc, /platforms/switch-2
 - 2026-11-26 18:10 PKT IndexNow FLUSHED (Chrome back): today's new pages + NeonCoast SEO-changed pages, HTTP 200.
+
+## 2026-11-26 (scheduled SEO run, sixth pass, demand-first)
+- New page /movies-december-2026 "Movies Coming Out in December 2026: Release Dates" (DEMAND N11): 10 US cinema releases dated the same by 2+ of Box Office Mojo / The Numbers / GamesRadar+ / TheWrap / Screen Daily, type + week filter (reuses #mv-tool), Avengers: Doomsday + Dune: Part Three countdown, Christmas Day H2, moved-out table (Shrek 5, Ice Age: Boiling Point, Narnia).
+- New page /winter-2027-anime "Winter 2027 Anime: Every January 2027 Premiere" (DEMAND E2 hub): 21 shows listed by 2+ season lists (Crank-in, Anime Eiga, Anime Corner, ComicBook.com, GamesRadar+), new/returning + Netflix filter (reuses #tv-tool), exact days only where 2 lists agree.
+- Refreshed /movies-2027: December 2026 H2 + FAQ, related links. app.js: #mv-tool resets stale saved filters (shared between two pages now).
+- Links in: footer (both), /tools, /movies-2027, /new-tv-shows-december-2026, /new-tv-shows-january-2027, /games-like-elden-ring (Sekiro anime).
+- Left out: single-source streaming films and anime titles (see DEMAND N25/N26); Ice Age 6 18 Dec (BOM only, conflicts).
+- IndexNow pending (no WebFetch in this run): /movies-december-2026, /winter-2027-anime, /movies-2027, /tools, /new-tv-shows-december-2026, /new-tv-shows-january-2027, /games-like-elden-ring

@@ -254,7 +254,7 @@ def page(file, title, desc, body, depth=0, faqs=None, crumbs=None, extra_ld=None
 <div><strong>Browse</strong><ul>{"".join(f'<li><a href="{href(f, depth)}">{n}</a></li>' for f, n in NAV)}</ul></div>
 <div><strong>By console</strong><ul>{plat_foot(depth)}</ul></div>
 <div><strong>By month</strong><ul>{month_foot(depth)}</ul></div>
-<div><strong>Site</strong><ul><li><a href="{href("new-games-this-week.html", depth)}">New games this week</a></li><li><a href="{href("later-2027.html", depth)}">Games later in 2027 (May–Dec)</a></li><li><a href="{href("games-without-release-date-2027.html", depth)}">2027 games with no release date</a></li><li><a href="{href("countdown.html", depth)}">Game release countdown</a></li><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("gta-6-pc-release-date.html", depth)}">GTA 6 PC release date</a></li><li><a href="{href("games-like-elden-ring.html", depth)}">Games like Elden Ring</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("fighting-games-2027.html", depth)}">Fighting games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/state-of-decay-3.html", depth)}">State of Decay 3</a></li><li><a href="{href("games/lords-of-the-fallen-ii.html", depth)}">Lords of the Fallen 2</a></li><li><a href="{href("games/squadron-42.html", depth)}">Squadron 42</a></li><li><a href="{href("games/ananta.html", depth)}">Ananta (free-to-play)</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("ps-plus-monthly-games.html", depth)}">PS Plus monthly games</a></li><li><a href="{href("epic-free-games.html", depth)}">Epic free games this week</a></li><li><a href="{href("steam-sale-dates.html", depth)}">Steam sale dates 2026-2027</a></li><li><a href="{href("black-friday-game-sales-2026.html", depth)}">Black Friday 2026 game sales</a></li><li><a href="{href("movies-2027.html", depth)}">Upcoming movies 2027</a></li><li><a href="{href("new-tv-shows-december-2026.html", depth)}">New TV shows December 2026</a></li><li><a href="{href("new-tv-shows-january-2027.html", depth)}">New TV shows January 2027</a></li><li><a href="{href("nintendo-direct.html", depth)}">Next Nintendo Direct</a></li><li><a href="{href("xbox-games-showcase-2027.html", depth)}">Xbox Games Showcase 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
+<div><strong>Site</strong><ul><li><a href="{href("new-games-this-week.html", depth)}">New games this week</a></li><li><a href="{href("later-2027.html", depth)}">Games later in 2027 (May–Dec)</a></li><li><a href="{href("games-without-release-date-2027.html", depth)}">2027 games with no release date</a></li><li><a href="{href("countdown.html", depth)}">Game release countdown</a></li><li><a href="{href("games-december-2026.html", depth)}">Games coming out in December 2026</a></li><li><a href="{href("biggest-games-2027.html", depth)}">Biggest games of 2027</a></li><li><a href="{href("after-gta-6.html", depth)}">What to play after GTA 6</a></li><li><a href="{href("games-like-gta-6.html", depth)}">Games like GTA 6</a></li><li><a href="{href("gta-6-pc-release-date.html", depth)}">GTA 6 PC release date</a></li><li><a href="{href("games-like-elden-ring.html", depth)}">Games like Elden Ring</a></li><li><a href="{href("delayed-games-2027.html", depth)}">Delayed games of 2027</a></li><li><a href="{href("release-clashes-2027.html", depth)}">2027 release clashes</a></li><li><a href="{href("exclusives-2027.html", depth)}">2027 console exclusives</a></li><li><a href="{href("rpgs-2027.html", depth)}">Every RPG of 2027</a></li><li><a href="{href("games-by-genre-2027.html", depth)}">2027 games by genre</a></li><li><a href="{href("horror-games-2027.html", depth)}">Horror games of 2027</a></li><li><a href="{href("fighting-games-2027.html", depth)}">Fighting games of 2027</a></li><li><a href="{href("game-awards-2026.html", depth)}">Game Awards 2026: 2027 nominees</a></li><li><a href="{href("games/resident-evil-veronica.html", depth)}">Resident Evil Veronica</a></li><li><a href="{href("games/kirby-and-the-world-beyond.html", depth)}">Kirby and the World Beyond</a></li><li><a href="{href("games/xenoblade-genesis.html", depth)}">Xenoblade Genesis</a></li><li><a href="{href("games/the-duskbloods.html", depth)}">The Duskbloods</a></li><li><a href="{href("games/state-of-decay-3.html", depth)}">State of Decay 3</a></li><li><a href="{href("games/lords-of-the-fallen-ii.html", depth)}">Lords of the Fallen 2</a></li><li><a href="{href("games/squadron-42.html", depth)}">Squadron 42</a></li><li><a href="{href("games/ananta.html", depth)}">Ananta (free-to-play)</a></li><li><a href="{href("games/titan-quest-ii.html", depth)}">Titan Quest II</a></li><li><a href="{href("games/warhammer-40-000-dark-heresy.html", depth)}">Warhammer 40K: Dark Heresy</a></li><li><a href="{href("game-pass-2027.html", depth)}">Xbox Game Pass 2027</a></li><li><a href="{href("ps-plus-monthly-games.html", depth)}">PS Plus monthly games</a></li><li><a href="{href("epic-free-games.html", depth)}">Epic free games this week</a></li><li><a href="{href("steam-sale-dates.html", depth)}">Steam sale dates 2026-2027</a></li><li><a href="{href("black-friday-game-sales-2026.html", depth)}">Black Friday 2026 game sales</a></li><li><a href="{href("movies-2027.html", depth)}">Upcoming movies 2027</a></li><li><a href="{href("new-tv-shows-december-2026.html", depth)}">New TV shows December 2026</a></li><li><a href="{href("new-tv-shows-january-2027.html", depth)}">New TV shows January 2027</a></li><li><a href="{href("movies-december-2026.html", depth)}">Movies coming out in December 2026</a></li><li><a href="{href("winter-2027-anime.html", depth)}">Winter 2027 anime</a></li><li><a href="{href("nintendo-direct.html", depth)}">Next Nintendo Direct</a></li><li><a href="{href("xbox-games-showcase-2027.html", depth)}">Xbox Games Showcase 2027</a></li><li><a href="{href("backlog-planner-2027.html", depth)}">2027 backlog planner</a></li><li><a href="{href("last-gen-games-2027.html", depth)}">2027 games on PS4 and Switch 1</a></li><li><a href="{href("games/hyrule-warriors-age-of-calamity-definitive-edition.html", depth)}">Hyrule Warriors: Age of Calamity DE</a></li><li><a href="{href("games/final-fantasy-xiv-evercold.html", depth)}">FFXIV Evercold</a></li><li><a href="{href("games/spyro-a-realm-beyond.html", depth)}">Spyro: A Realm Beyond</a></li><li><a href="{href("games/007-first-light.html", depth)}">007 First Light on Switch 2</a></li><li><a href="{href("games/kingdom-hearts-iv.html", depth)}">Kingdom Hearts 4</a></li><li><a href="{href("games/danganronpa-2x2.html", depth)}">Danganronpa 2x2</a></li><li><a href="{href("games/pokemon-winds-and-waves.html", depth)}">Pokémon Winds and Waves</a></li><li><a href="{href("games/stranger-than-heaven.html", depth)}">Stranger Than Heaven</a></li><li><a href="https://neoncoast.org" rel="noopener">GTA 6 map and guides (NeonCoast)</a></li><li><a href="{href("about.html", depth)}">About and contact</a></li><li><a href="{href("privacy.html", depth)}">Privacy policy</a></li></ul></div>
 </div>
 <p class="legal">DayOneDrop is an independent fan site and is not linked to any game publisher. Game names belong to their owners. Every date is checked against the publisher or platform holder plus a second trusted source (<a href="{href("about.html", depth)}#editorial">editorial policy</a>). Spotted an error? Email <a href="mailto:awaiskaramat@hotmail.com">awaiskaramat@hotmail.com</a>. Last checked {e(UPDATED)}.</p>
 </div></footer>
@@ -1576,6 +1576,8 @@ tools = f'''<header class="hero"><div class="wrap"><span class="kicker">Tools</s
 <li><a href="{href("movies-2027.html", 0)}">Upcoming movies 2027</a>: every big release date with type and month filters and calendar reminders</li>
 <li><a href="{href("new-tv-shows-december-2026.html", 0)}">New TV shows December 2026</a>: every premiere with a streaming-service filter</li>
 <li><a href="{href("new-tv-shows-january-2027.html", 0)}">New TV shows January 2027</a>: ABC and Fox midseason premieres with times and reminders</li>
+<li><a href="{href("movies-december-2026.html", 0)}">Movies coming out in December 2026</a>: filter by type and week, countdown to Avengers: Doomsday</li>
+<li><a href="{href("winter-2027-anime.html", 0)}">Winter 2027 anime</a>: new shows and new seasons, Netflix filter</li>
 <li><a href="{href("black-friday-game-sales-2026.html", 0)}">Black Friday 2026 game sales</a>: live "ends in" timers for PS Store, Xbox, Nintendo and Epic</li>
 <li><a href="{href("gta-6-pc-release-date.html", 0)}">GTA 6 PC release date estimator</a>: when GTA 6 could reach PC, based on Rockstar's past games</li>
 <li><a href="{href("after-gta-6.html", 0)}">What to play after GTA 6</a></li></ul></div></section>'''
@@ -3126,7 +3128,11 @@ _mv_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Movies
             f'<div class="sec-head" style="margin-top:28px"><h2>Which big games come out the same week as big 2027 movies?</h2></div>'
             f'<p class="muted">Movies within three days of a big game on our launch board, so you can plan the week.</p>'
             + ('<div class="out" style="margin-bottom:10px">' + "".join(f'<div class="row"><span><strong>{e(m[0])}</strong> ({e(_mv_nice(m[1]))}) and {_gname(g)} ({e(nice_date(g))})</span></div>' for m, g in _mv_cross) + '</div>' if _mv_cross else "<p>No big game lands within three days of a big movie yet.</p>")
-            + f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+            + f'<div class="sec-head" style="margin-top:28px"><h2>What movies come out before 2027, in December 2026?</h2></div>'
+            f'<p>Avengers: Doomsday and Dune: Part Three both open on 18 December 2026, and Jumanji 3 and Werwulf on Christmas Day. See every film, with a week filter, on <a href="{href("movies-december-2026.html", 0)}">movies coming out in December 2026</a>.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+            f'<li><a href="{href("movies-december-2026.html", 0)}">Movies coming out in December 2026</a>: Avengers: Doomsday, Dune: Part Three, Jumanji 3</li>'
+            f'<li><a href="{href("winter-2027-anime.html", 0)}">Winter 2027 anime</a>: Sakamoto Days S2, One-Punch Man, The One Piece</li>'
             f'<li><a href="{href("new-tv-shows-december-2026.html", 0)}">New TV shows in December 2026</a>: Harry Potter, Emily in Paris and more</li>'
             f'<li><a href="{href("index.html", 0)}">2027 game release dates</a>: the live launch board</li>'
             f'<li><a href="{href("countdown.html", 0)}">Game release countdown</a> for any dated 2027 game</li>'
@@ -3139,7 +3145,8 @@ mv_faq = [("What movies are coming out in 2027?", f"We track {len(MOVIES)} dated
           ("When does Shrek 5 come out?", "30 June 2027 in US cinemas. It moved from December 2026."),
           ("When is Spider-Man: Beyond the Spider-Verse coming out?", "18 June 2027 in US cinemas."),
           ("When does Man of Tomorrow come out?", "9 July 2027. It is James Gunn's Superman sequel."),
-          ("When does Frozen 3 come out?", "24 November 2027, Thanksgiving week in the US.")]
+          ("When does Frozen 3 come out?", "24 November 2027, Thanksgiving week in the US."),
+          ("What big movies come out in December 2026?", "Avengers: Doomsday and Dune: Part Three (18 December 2026), The Angry Birds Movie 3 (23 December), Jumanji 3 and Werwulf (25 December).")]
 page("movies-2027.html", "Upcoming Movies 2027: Release Dates for Every Big Movie | DayOneDrop",
      f"Upcoming movies 2027 release dates: Zelda (30 April), Star Wars: Starfighter, Shrek 5, Man of Tomorrow, Frozen III and Avengers: Secret Wars (17 Dec). {len(MOVIES)} films.",
      _mv_body, 0, mv_faq, crumbs=[("Home", DOMAIN + "/"), ("Upcoming movies 2027", canon("movies-2027.html"))])
@@ -3212,6 +3219,7 @@ er_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Games l
            f'<li><a href="{href("games/wo-long-2.html", 0)}">Wo Long 2 release date</a></li>'
            f'<li><a href="{href("rpgs-2027.html", 0)}">Every RPG of 2027</a></li>'
            f'<li><a href="{href("games-like-gta-6.html", 0)}">Games like GTA 6</a></li>'
+           f'<li><a href="{href("winter-2027-anime.html", 0)}">Winter 2027 anime</a>, including the Sekiro anime, Sekiro: No Defeat</li>'
            f'<li><a href="{href("countdown.html", 0)}">Game release countdown</a></li></ul></div></section>')
 er_faq = [("What games are like Elden Ring?", "Dark Souls III, Sekiro, Bloodborne, Elden Ring Nightreign, Lies of P, Black Myth: Wukong, Lords of the Fallen, Wo Long: Fallen Dynasty, Remnant II and Hollow Knight: Silksong."),
           ("What soulslike games come out in 2027?", _and([g['title'] + ' (' + nice_date(g) + ')' for g in _er_soon] + [x[0] + ' (' + x[4] + ')' for x in ER_EXTRA]) + "."),
@@ -3363,6 +3371,7 @@ _tv_body = (f'<header class="hero"><div class="wrap"><span class="kicker">TV · 
             f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
             f'<li><a href="{href("new-tv-shows-january-2027.html", 0)}">New TV shows January 2027</a>: The Rookie, Baywatch, Grey\'s Anatomy</li>'
             f'<li><a href="{href("movies-2027.html", 0)}">Upcoming movies 2027</a>: Zelda, Shrek 5, Avengers: Secret Wars</li>'
+            f'<li><a href="{href("movies-december-2026.html", 0)}">Movies coming out in December 2026</a>: Avengers: Doomsday, Dune: Part Three</li>'
             f'<li><a href="{href("games-december-2026.html", 0)}">Games coming out in December 2026</a></li>'
             f'<li><a href="{href("steam-sale-dates.html", 0)}">Steam Winter Sale dates</a></li>'
             f'<li><a href="{href("tools.html", 0)}">Every DayOneDrop tool</a></li></ul></div></section>')
@@ -3450,6 +3459,7 @@ _tvj_body = (f'<header class="hero"><div class="wrap"><span class="kicker">TV ·
              f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
              f'<li><a href="{href("new-tv-shows-december-2026.html", 0)}">New TV shows December 2026</a></li>'
              f'<li><a href="{href("movies-2027.html", 0)}">Upcoming movies 2027</a> with countdowns</li>'
+             f'<li><a href="{href("winter-2027-anime.html", 0)}">Winter 2027 anime</a>: every January anime premiere</li>'
              f'<li><a href="{href("months/january-2027.html", 0)}">Games coming out in January 2027</a></li>'
              f'<li><a href="{href("tools.html", 0)}">Every DayOneDrop tool</a></li></ul></div></section>')
 tvj_faq = [("What new TV shows come out in January 2027?", _tvj_quick),
@@ -3561,11 +3571,180 @@ page("black-friday-game-sales-2026.html", "Black Friday 2026 Game Sales: Every E
      _bf_body, 0, bf_faq, crumbs=[("Home", DOMAIN + "/"), ("Black Friday 2026 game sales", canon("black-friday-game-sales-2026.html"))])
 
 
+# ---------------- MOVIES DECEMBER 2026 (26 Nov 2026, DEMAND N11 "movies coming out december 2026") ----------------
+# US cinema dates checked 26 Nov 2026 on Box Office Mojo, The Numbers and GamesRadar+ (2+ agree); Jumanji move to 25 Dec: TheWrap + Bleeding Cool;
+# Artificial (Neon, Oscar-qualifying run): Screen Daily + TheWrap; Mr. Irrelevant (Paramount, Christmas): TheWrap + Box Office Mojo.
+# Streaming-only titles listed by one schedule (In a Holidaze, The Man with the Bag, Bad Day, Give Me Some Sugah, Ink, Ray Gunn) left out.
+MV_DEC = [  # (title, date, studio, kind, note, where, week)
+    ("Violent Night 2", "2026-12-04", "Universal", "action", "David Harbour's action Santa is back.", "Cinemas", 1),
+    ("The Debut", "2026-12-11", "A24", "drama", "Limited release on 11 December, expanding wide on 25 December.", "Cinemas (limited)", 2),
+    ("Clarissa", "2026-12-11", "Neon", "drama", "Oscar-qualifying run in a few cinemas.", "Cinemas (limited)", 2),
+    ("Avengers: Doomsday", "2026-12-18", "Disney / Marvel Studios", "hero", "Robert Downey Jr. returns as Doctor Doom. The Russo brothers direct; Avengers: Secret Wars follows on 17 December 2027.", "Cinemas", 3),
+    ("Dune: Part Three", "2026-12-18", "Warner Bros. / Legendary", "action", "Denis Villeneuve's final Dune film (Dune Messiah), the same day as Avengers: Doomsday.", "Cinemas and IMAX", 3),
+    ("The Angry Birds Movie 3", "2026-12-23", "Paramount", "anim", "The family pick for the Christmas holidays.", "Cinemas", 4),
+    ("Jumanji 3", "2026-12-25", "Sony Pictures", "action", "Dwayne Johnson, Kevin Hart, Jack Black and Karen Gillan return. Sony moved it from 11 December to Christmas Day.", "Cinemas and IMAX", 4),
+    ("Werwulf", "2026-12-25", "Focus Features", "horror", "Robert Eggers' werewolf horror set in 13th-century England.", "Cinemas", 4),
+    ("Mr. Irrelevant", "2026-12-25", "Paramount", "drama", "David Corenswet plays NFL quarterback John Tuggle, the last pick of the 1983 draft.", "Cinemas", 4),
+    ("Artificial", "2026-12-25", "Neon", "drama", "Luca Guadagnino's OpenAI drama with Andrew Garfield. A short Oscar-qualifying run first; the full release is in 2027.", "Cinemas (limited)", 4),
+]
+MVD_KIND = [("hero", "Marvel"), ("action", "Action and sci-fi"), ("anim", "Family and animated"), ("horror", "Horror"), ("drama", "Drama and awards films")]
+_MVDK = dict(MVD_KIND)
+MVD_WEEKS = [(1, "1-6 Dec"), (2, "7-13 Dec"), (3, "14-20 Dec"), (4, "21-31 Dec")]
+MVD_OUT = [("Shrek 5", "23 December 2026", "30 June 2027"), ("Ice Age: Boiling Point", "18 December 2026", "5 February 2027"),
+           ("Narnia: The Magician's Nephew", "26 November 2026 (IMAX)", "12 February 2027")]
+def _mvd_gcal(t, d):
+    a = d.replace("-", ""); b = (datetime.date.fromisoformat(d) + datetime.timedelta(days=1)).isoformat().replace("-", "")
+    return "https://calendar.google.com/calendar/render?action=TEMPLATE&text=" + _qp(t + " in cinemas") + f"&dates={a}/{b}&details=" + _qp("US release date via getdayonedrop.com/movies-december-2026")
+def _mvdrow(m):
+    t, d, st, k, note, wh, wk = m
+    return (f'<div class="row" data-mk="{k}" data-mm="{wk}"><span><strong>{e(t)}</strong>'
+            f'<br><span class="muted">{e(note)}</span><br><span class="muted">{e(st)} · {e(_MVDK[k])} · {e(wh)} · '
+            f'<a href="{e(_mvd_gcal(t, d))}" rel="nofollow noopener" target="_blank">Add to Google Calendar</a></span></span><b>{e(_mv_nice(d))}</b></div>')
+_mvd_av = next(m for m in MV_DEC if m[0] == "Avengers: Doomsday")
+_mvd_xmas = [m for m in MV_DEC if m[1] == "2026-12-25"]
+_mvd_quick = ("The biggest movies coming out in December 2026 are Avengers: Doomsday and Dune: Part Three, both on 18 December, then Jumanji 3 on Christmas Day. "
+              f"Also out: Violent Night 2 (4 December), The Angry Birds Movie 3 (23 December) and Robert Eggers' Werwulf (25 December). We list {len(MV_DEC)} US cinema releases. Shrek 5 is not one of them: it moved to 30 June 2027.")
+_mvd_chips = ('<div class="chips" role="group" aria-label="Type"><button class="chip" type="button" data-mv-k="" aria-pressed="true">All movies</button>'
+              + "".join(f'<button class="chip" type="button" data-mv-k="{k}" aria-pressed="false">{e(n)}</button>' for k, n in MVD_KIND) + '</div>'
+              '<div class="chips" role="group" aria-label="Week" style="margin-top:8px"><button class="chip" type="button" data-mv-m="" aria-pressed="true">Any week</button>'
+              + "".join(f'<button class="chip" type="button" data-mv-m="{w}" aria-pressed="false">{e(l)}</button>' for w, l in MVD_WEEKS) + '</div>')
+_mvd_dec_games = [g for g in GAMES if g["date"] and "2026-12-01" <= g["date"] <= "2026-12-31"]
+_mvd_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Movies · December 2026</span>'
+             f'<h1>Movies coming out in December 2026:<br><span class="amber">every big release date.</span></h1>'
+             f'<p class="lead">Avengers: Doomsday, Dune: Part Three, Jumanji 3 and every other big December cinema release, with a type and week filter, a countdown and a calendar reminder for each film.</p>'
+             f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · {len(MV_DEC)} movies · US cinema dates from the studios or two release schedules</p></div></header>'
+             f'<section><div class="wrap"><div class="out" style="margin-bottom:24px"><div class="row"><span><strong>Quick answer:</strong> {e(_mvd_quick)}</span></div></div>'
+             f'<div class="tool" id="mv-tool"><h2 style="font-size:1.5rem;margin-top:0">What should I see at the cinema in December?</h2>'
+             f'<p class="muted">Pick a type and a week. The list below updates and your choice is remembered on this device.</p>{_mvd_chips}'
+             f'<p class="mono amber" id="mv-count" aria-live="polite" style="margin:12px 0 0">{len(MV_DEC)} movies</p></div>'
+             + _mvcd(_mvd_av, "Countdown to Avengers: Doomsday and Dune: Part Three") + '</div></section>'
+             + AD.format("mvd-mid") +
+             f'<section><div class="wrap"><div class="sec-head"><h2>What movies are coming out in December 2026?</h2><span class="muted">{len(MV_DEC)} in cinemas</span></div>'
+             f'<p class="muted">In release order, US dates. UK dates are usually the same week; check your local cinema for limited releases.</p>'
+             f'<div class="out" id="mv-list" style="margin-bottom:10px">{"".join(_mvdrow(m) for m in MV_DEC)}</div><p class="empty" id="mv-none" hidden>Nothing matches. Try "All movies" and "Any week".</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>When does Avengers: Doomsday come out?</h2></div>'
+             f'<p>Friday 18 December 2026 in US cinemas, with most countries opening the same week. Marvel moved it there from May 2026. It is the first of two Russo brothers Avengers films; Avengers: Secret Wars follows a year later, on 17 December 2027 (see <a href="{href("movies-2027.html", 0)}">upcoming movies 2027</a>).</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>Are Avengers: Doomsday and Dune: Part Three out on the same day?</h2></div>'
+             f'<p>Yes. Both open on 18 December 2026, a double bill people call "Dunesday". Dune: Part Three adapts Dune Messiah and is Denis Villeneuve\'s last Dune film. Sony moved Jumanji 3 a week later, to 25 December, to stay clear of both.</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>What movies come out on Christmas Day 2026?</h2><span class="muted">{len(_mvd_xmas)}</span></div>'
+             f'<p>{e(_and([m[0] + " (" + m[2] + ")" for m in _mvd_xmas]))}. The Debut also goes wide that day after its 11 December limited start.</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>Which movies moved out of December 2026?</h2></div>'
+             f'<p>These were once dated for this December and now open in 2027:</p><div class="out" style="margin-bottom:10px">'
+             + "".join(f'<div class="row"><span><strong>{e(t)}</strong><br><span class="muted">Was {e(a)}</span></span><b>{e(b)}</b></div>' for t, a, b in MVD_OUT) + '</div>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>What family movies are out over Christmas 2026?</h2></div>'
+             f'<p>The Angry Birds Movie 3 (23 December) is the main animated film, and Jumanji 3 (25 December) is the family action pick. Shrek 5 and the new Ice Age are no longer in December.</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>What else is out in December 2026?</h2></div>'
+             f'<p>{len(_mvd_dec_games)} games on our board launch in December, The Game Awards are on 10 December, and HBO\'s Harry Potter series starts on 25 December. See <a href="{href("games-december-2026.html", 0)}">games coming out in December 2026</a> and <a href="{href("new-tv-shows-december-2026.html", 0)}">new TV shows in December 2026</a>.</p>'
+             f'<p class="muted">We list a film when the studio or at least two release schedules (Box Office Mojo, The Numbers, GamesRadar+, TheWrap, Screen Daily) give the same US date. Streaming-only films are left out until two schedules agree.</p>'
+             f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+             f'<li><a href="{href("movies-2027.html", 0)}">Upcoming movies 2027</a>: Zelda, Shrek 5, Avengers: Secret Wars</li>'
+             f'<li><a href="{href("new-tv-shows-december-2026.html", 0)}">New TV shows December 2026</a>: Harry Potter, Emily in Paris</li>'
+             f'<li><a href="{href("winter-2027-anime.html", 0)}">Winter 2027 anime</a>: every January premiere</li>'
+             f'<li><a href="{href("game-awards-2026.html", 0)}">The Game Awards 2026</a>: start time in your time zone</li></ul></div></section>')
+mvd_faq = [("What movies are coming out in December 2026?", _mvd_quick),
+           ("When does Avengers: Doomsday come out?", "18 December 2026 in US cinemas."),
+           ("When does Dune: Part Three come out?", "18 December 2026, the same day as Avengers: Doomsday."),
+           ("When does Jumanji 3 come out?", "25 December 2026. Sony moved it from 11 December."),
+           ("Is Shrek 5 coming out in December 2026?", "No. Shrek 5 moved to 30 June 2027."),
+           ("What movies come out on Christmas Day 2026?", _and([m[0] for m in _mvd_xmas]) + ".")]
+page("movies-december-2026.html", "Movies Coming Out in December 2026: Release Dates | DayOneDrop",
+     "Movies coming out in December 2026: Avengers: Doomsday and Dune: Part Three (18 Dec), Angry Birds 3 (23 Dec), Jumanji 3 and Werwulf (25 Dec). Filter by week.",
+     _mvd_body, 0, mvd_faq, crumbs=[("Home", DOMAIN + "/"), ("Movies December 2026", canon("movies-december-2026.html"))])
+
+
+# ---------------- WINTER 2027 ANIME (26 Nov 2026, DEMAND E2 "anime 2027 upcoming", "winter 2027 anime") ----------------
+# Each title listed for winter 2027 by 2+ of: Crank-in (season list), Anime Eiga (season list), Anime Corner, ComicBook.com, GamesRadar+ (checked 26 Nov 2026).
+# Exact days only where Crank-in and Anime Eiga both give them; Netflix only where a source names it.
+AN_W27 = [  # (title, date or "", studio, kind new|ret, service key, note)
+    ("Sakamoto Days, Season 2", "", "TMS Entertainment", "ret", "netflix", "The retired hitman action-comedy returns in January."),
+    ("One-Punch Man, Season 3 Part 2", "", "J.C.Staff", "ret", "tba", "The second half of season 3."),
+    ("Mashle: Magic and Muscles, Season 3", "", "A-1 Pictures", "ret", "tba", "The Divine Visionary final exam arc."),
+    ("Shangri-La Frontier, Season 3", "", "C2C", "ret", "tba", "The VR game anime continues."),
+    ("Golden Kamuy: final chapter", "", "Brain's Base", "ret", "tba", "The final arc, the runaway train."),
+    ("The Fable, Season 2", "2027-01-09", "Tezuka Productions", "ret", "tba", "The hitman-in-hiding story returns."),
+    ("Yaiba: Samurai Legend, Season 2", "", "WIT Studio", "ret", "tba", "The Kaguya arc."),
+    ("Akane-banashi, Season 2", "", "Zexcs", "ret", "tba", "The rakugo storyteller anime continues."),
+    ("Red Cat Ramen (Ramen Akaneko), Season 2", "", "E&H production", "ret", "tba", "The cat-run ramen shop is back."),
+    ("Marriagetoxin, Season 2", "", "Bones Film", "ret", "tba", "The assassin rom-com returns."),
+    ("Medaka Kuroiwa Is Impervious to My Charms, Season 2", "", "SynergySP", "ret", "tba", "Second season of the school rom-com."),
+    ("BanG Dream! It's MyGO!!!!! / Ave Mujica sequel", "", "TBA", "ret", "tba", "The next band story."),
+    ("The One Piece", "", "WIT Studio", "new", "netflix", "The new remake of One Piece from the start, made for Netflix."),
+    ("Sekiro: No Defeat", "", "Qzil.la", "new", "tba", "The anime of FromSoftware's Sekiro: Shadows Die Twice."),
+    ("Historie", "", "Liden Films", "new", "tba", "Hitoshi Iwaaki's (Parasyte) historical manga about Eumenes."),
+    ("Hirayasumi", "", "Production +h.", "new", "tba", "Slice-of-life manga about a laid-back man in Tokyo."),
+    ("Charisma", "2027-01-07", "Pierrot Films", "new", "tba", "New series on TBS."),
+    ("The Guy She Was Interested In Wasn't a Guy at All", "2027-01-08", "CloverWorks", "new", "tba", "Yuri rom-com from the web manga."),
+    ("Love Live! Hasunosora Girls' High School Idol Club", "", "Sublimation", "new", "tba", "Love Live! idol series."),
+    ("Spirit Circle", "", "NAGOMI × EOTA", "new", "tba", "Satoshi Mizukami's reincarnation manga."),
+    ("Mairimashita! Iruma-kun IF: Episode of Mafia", "", "NHK Enterprises", "new", "tba", "A side story of Welcome to Demon School! Iruma-kun."),
+]
+AN_SVC = [("netflix", "Netflix"), ("tba", "Streaming not announced")]
+_ANS = dict(AN_SVC)
+_ANK = {"new": "New anime", "ret": "New season"}
+def _an_gcal(t, d):
+    a = d.replace("-", ""); b = (datetime.date.fromisoformat(d) + datetime.timedelta(days=1)).isoformat().replace("-", "")
+    return "https://calendar.google.com/calendar/render?action=TEMPLATE&text=" + _qp(t + " premiere") + f"&dates={a}/{b}&details=" + _qp("Japan premiere date via getdayonedrop.com/winter-2027-anime")
+def _anrow(x):
+    t, d, st, k, s, n = x
+    cal = f' · <a href="{e(_an_gcal(t, d))}" rel="nofollow noopener" target="_blank">Add to Google Calendar</a>' if d else ""
+    return (f'<div class="row" data-ts="{s}" data-tk="{k}"><span><strong>{e(t)}</strong><br><span class="muted">{e(n)}</span><br><span class="muted">{e(st)} · {e(_ANK[k])} · {e(_ANS[s])}{cal}</span></span>'
+            f'<b>{e(_mv_nice(d)) if d else "January 2027"}</b></div>')
+_an_sorted = sorted(AN_W27, key=lambda x: (x[1] or "2027-01-99"))
+_an_dated = [x for x in AN_W27 if x[1]]
+_an_ret = [x for x in AN_W27 if x[3] == "ret"]
+_an_new = [x for x in AN_W27 if x[3] == "new"]
+_an_chips = ('<div class="chips" role="group" aria-label="Type"><button class="chip" type="button" data-tv-k="" aria-pressed="true">Everything</button>'
+             + "".join(f'<button class="chip" type="button" data-tv-k="{k}" aria-pressed="false">{e(l)}</button>' for k, l in _ANK.items()) + '</div>'
+             '<div class="chips" role="group" aria-label="Streaming" style="margin-top:8px"><button class="chip" type="button" data-tv-s="" aria-pressed="true">Any service</button>'
+             + "".join(f'<button class="chip" type="button" data-tv-s="{k}" aria-pressed="false">{e(l)}</button>' for k, l in AN_SVC) + '</div>')
+_an_quick = ("The biggest winter 2027 anime are Sakamoto Days season 2 (Netflix), One-Punch Man season 3 part 2, Mashle season 3, Shangri-La Frontier season 3 and the final chapter of Golden Kamuy. "
+             f"New shows include Netflix's One Piece remake, The One Piece, and Sekiro: No Defeat. The season starts in early January 2027; we list {len(AN_W27)} shows.")
+_an_body = (f'<header class="hero"><div class="wrap"><span class="kicker">Anime · Winter 2027</span>'
+            f'<h1>Winter 2027 anime:<br><span class="amber">every January premiere.</span></h1>'
+            f'<p class="lead">New anime and returning seasons starting in January 2027, from Sakamoto Days season 2 and One-Punch Man to The One Piece and the Sekiro anime, with a filter and calendar reminders.</p>'
+            f'<p class="muted" style="margin:0">Last checked {e(UPDATED)} · {len(AN_W27)} shows · {len(_an_ret)} returning, {len(_an_new)} new</p></div></header>'
+            f'<section><div class="wrap"><div class="out" style="margin-bottom:12px"><div class="row"><span><strong>Quick answer:</strong> {e(_an_quick)}</span></div></div>'
+            f'<div class="tool" id="tv-tool" style="margin-bottom:24px"><h2 style="font-size:1.5rem;margin-top:0">Which winter 2027 anime should I watch?</h2>'
+            f'<p class="muted">Pick new shows or new seasons, and Netflix or the rest. Your choice is remembered on this device.</p>{_an_chips}'
+            f'<p class="mono amber" id="tv-count" aria-live="polite" style="margin:12px 0 0">{len(AN_W27)} shows</p></div>'
+            f'<div class="sec-head"><h2>What anime is coming out in winter 2027?</h2><span class="muted">dated first</span></div>'
+            f'<div class="out" id="tv-list" style="margin-bottom:10px">{"".join(_anrow(x) for x in _an_sorted)}</div><p class="empty" id="tv-none" hidden>Nothing matches. Try "Everything".</p></div></section>'
+            + AD.format("an-mid") +
+            f'<section><div class="wrap"><div class="sec-head"><h2>When does the winter 2027 anime season start?</h2></div>'
+            f'<p>The first week of January 2027 in Japan. The earliest confirmed days so far: {e(_and([x[0] + " (" + _mv_nice(x[1]) + ")" for x in sorted(_an_dated, key=lambda x: x[1])]))}. Most big shows only say "January 2027" for now; we add the day once two season lists agree.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>When does Sakamoto Days season 2 come out?</h2></div>'
+            f'<p>January 2027, on Netflix worldwide, from TMS Entertainment again. No exact day yet. Season 1 aired in two parts in 2025.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>When does One-Punch Man season 3 part 2 come out?</h2></div>'
+            f'<p>January 2027, from J.C.Staff. It continues season 3 after its 2025 first half.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Is there a Sekiro anime?</h2></div>'
+            f'<p>Yes. Sekiro: No Defeat, from studio Qzil.la, is listed for winter 2027. It is based on FromSoftware\'s 2019 game. Fans of the game can also see <a href="{href("games-like-elden-ring.html", 0)}">games like Elden Ring</a> and the soulslikes coming in 2027.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>When does The One Piece remake come out?</h2></div>'
+            f'<p>The season lists put Netflix\'s The One Piece, a new adaptation from WIT Studio, in winter 2027, with no exact day yet. It retells the story from the East Blue saga.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Which anime return with a new season in winter 2027?</h2><span class="muted">{len(_an_ret)}</span></div>'
+            f'<p>{e(_and([x[0] for x in _an_ret]))}.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Where can I watch winter 2027 anime?</h2></div>'
+            f'<p>Netflix has confirmed Sakamoto Days season 2 and The One Piece. For the rest, Crunchyroll, Netflix, HIDIVE and Prime Video usually announce their simulcasts in December. We will add each one when it is announced.</p>'
+            f'<p class="muted">We list a show when at least two winter 2027 season lists (Crank-in, Anime Eiga, Anime Corner, ComicBook.com, GamesRadar+) include it. Dates are Japan TV premieres; simulcasts are usually the same day.</p>'
+            f'<div class="sec-head" style="margin-top:28px"><h2>Related pages and tools</h2></div><ul>'
+            f'<li><a href="{href("new-tv-shows-january-2027.html", 0)}">New TV shows January 2027</a>: premiere dates and times</li>'
+            f'<li><a href="{href("movies-december-2026.html", 0)}">Movies coming out in December 2026</a></li>'
+            f'<li><a href="{href("months/january-2027.html", 0)}">Games coming out in January 2027</a></li>'
+            f'<li><a href="{href("countdown.html", 0)}">Release countdown</a> for any dated 2027 game</li></ul></div></section>')
+an_faq = [("What anime is coming out in winter 2027?", _an_quick),
+          ("When does the winter 2027 anime season start?", "The first week of January 2027 in Japan."),
+          ("When does Sakamoto Days season 2 come out?", "January 2027 on Netflix. No exact day yet."),
+          ("When does One-Punch Man season 3 part 2 come out?", "January 2027."),
+          ("Is there a Sekiro anime?", "Yes. Sekiro: No Defeat from Qzil.la is listed for winter 2027.")]
+page("winter-2027-anime.html", "Winter 2027 Anime: Every January 2027 Premiere | DayOneDrop",
+     "Winter 2027 anime: Sakamoto Days S2 (Netflix), One-Punch Man S3 part 2, Mashle S3, Shangri-La Frontier S3, The One Piece and Sekiro: No Defeat. January premieres.",
+     _an_body, 0, an_faq, crumbs=[("Home", DOMAIN + "/"), ("Winter 2027 anime", canon("winter-2027-anime.html"))])
+
+
 # ---------------- SEO files ----------------
 page("thanks.html", "Check your inbox | DayOneDrop", "Confirm your email to get the free 2027 release calendar.", NL_THANKS)
 page("welcome.html", "Your 2027 release calendar | DayOneDrop", "Download your free 2027 game release calendar.", NL_WELCOME)
 
-urls = ["index.html", "new-tv-shows-january-2027.html", "black-friday-game-sales-2026.html", "gta-6-pc-release-date.html", "new-tv-shows-december-2026.html", "movies-2027.html", "games-like-elden-ring.html", "countdown.html", "games-without-release-date-2027.html", "steam-sale-dates.html", "nintendo-direct.html", "ps-plus-monthly-games.html", "epic-free-games.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "new-games-this-week.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "fighting-games-2027.html", "xbox-games-showcase-2027.html", "calendar.html", "later-2027.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
+urls = ["index.html", "movies-december-2026.html", "winter-2027-anime.html", "new-tv-shows-january-2027.html", "black-friday-game-sales-2026.html", "gta-6-pc-release-date.html", "new-tv-shows-december-2026.html", "movies-2027.html", "games-like-elden-ring.html", "countdown.html", "games-without-release-date-2027.html", "steam-sale-dates.html", "nintendo-direct.html", "ps-plus-monthly-games.html", "epic-free-games.html", "after-gta-6.html", "games-like-gta-6.html", "delayed-games-2027.html", "release-clashes-2027.html", "exclusives-2027.html", "rpgs-2027.html", "game-pass-2027.html", "backlog-planner-2027.html", "biggest-games-2027.html", "game-awards-2026.html", "games-december-2026.html", "new-games-this-week.html", "last-gen-games-2027.html", "games-by-genre-2027.html", "horror-games-2027.html", "fighting-games-2027.html", "xbox-games-showcase-2027.html", "calendar.html", "later-2027.html", "games.html", "tools.html", "about.html", "privacy.html"] + ["games/" + g["slug"] + ".html" for g in featured] + plat_urls + month_urls
 sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(
     f"  <url><loc>{canon(u)}</loc><lastmod>{UPDATED}</lastmod><changefreq>daily</changefreq><priority>{'1.0' if u == 'index.html' else '0.8'}</priority></url>\n" for u in urls) + "</urlset>\n"
 (ROOT / "sitemap.xml").write_text(sm)
