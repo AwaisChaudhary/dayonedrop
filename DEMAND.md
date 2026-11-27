@@ -17,6 +17,12 @@ Tools in this repo: `seo_post.py` (runs at the end of build.py: sitemap = every 
 5. Links: only real editorial links via outreach batches Awais approves; build "linkable assets" (original data, free tools, maps) and list pitch targets in DEMAND for approval.
 6. Monthly: run seo_audit.py on the whole site and fix broken links, orphans, duplicate titles/descriptions, missing schema.
 
+## DEMAND RUN 27 Nov 2026 (scheduled, third pass)
+Evidence: "games like animal crossing" (GamesRadar+, ComicBook, Twinfinite "upcoming games like Animal Crossing", Epic Store AC-style list, Vice "games like Pokopia"); "cozy games switch 2" (games.gg upcoming cozy Switch/Switch 2, TechRadar cozy Switch); Epic weekly swap 26 Nov (Kyber's Corner, GameGrin, The Freebie Guy, Out of Games).
+N39. DONE 27 Nov https://getdayonedrop.com/games-like-animal-crossing : 10 picks + platform/taste filter, 2027 cozy games (Witchbrook countdown), "new Animal Crossing?", "cozy Switch 2 2027" and PS5/Xbox/free H2s.
+N40. DONE 27 Nov /epic-free-games rolled forward: Bread & Fred free now until 3 Dec (+ A Tiny Sticker Tale mobile, Firestone bundle). Next week's game not yet confirmed by 2 sources: add on the next run.
+N41. OPEN next games-like: "games like Fortnite", "games like Palworld", "games like Baldur's Gate 3"; Epic holiday mystery games when announced.
+
 ## DEMAND RUN 27 Nov 2026 (scheduled, demand-first; second pass)
 Evidence: "games like pokemon" (GamesRadar+ US/UK/AU, GameSpot gallery, Game Rant Metacritic list, Insider Gaming, Windows Central, TheGamer, ComicBook "Pokemon rivals 2026"); "upcoming creature collector 2027": Cassette Beasts 2002 March 2027 (Gematsu, RPG Site, VGChartz, Niche Gamer, RPGamer, Automaton); "games like minecraft" (GamesRadar+, PCGamesN, games.gg, Beebom, SVG, ComicBook "Minecraft replacement"); Minecraft Switch 2 native edition 27 Oct 2026 (Windows Central, Neowin, Thurrott).
 N35. DONE 27 Nov https://getdayonedrop.com/games-like-pokemon : 10 picks + platform/taste filter, 2027 monster tamers (Winds and Waves, Cassette Beasts 2002, Honkai: Nexus Anima), DQM Withered World countdown.
