@@ -450,3 +450,11 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - Links in: footer, /tools, /games-by-genre-2027, /horror-games-2027, /rpgs-2027, /games-like-persona, game pages (RE Veronica, Until Dawn 2, BrokenLore, Trainwatch, Baptiste, Psycho Dead, Becrowned, FF7 Revelation, Kingdom Hearts IV, FFXIV Evercold, Xenoblade Genesis, Terranigma).
 - Checked: node --check, preview + live build, seo_audit clean, Playwright 1280/390 (no errors, no overflow, filters work).
 - IndexNow pending https://getdayonedrop.com/games-like-resident-evil https://getdayonedrop.com/games-like-final-fantasy https://getdayonedrop.com/black-friday-game-sales-2026 https://getdayonedrop.com/horror-games-2027 https://getdayonedrop.com/rpgs-2027 https://getdayonedrop.com/tools https://getdayonedrop.com/games/resident-evil-veronica https://getdayonedrop.com/games/final-fantasy-vii-revelation
+
+## 2026-11-28 (scheduled demand run)
+- NEW https://getdayonedrop.com/games-like-mass-effect : "games like mass effect" + "mass effect 5 release date". 10 picks with platform/taste filter, 2027 sci-fi RPGs from games.json (Exodus countdown, 7 Apr 2027), "Is Exodus the new Mass Effect?", Mass Effect 5 has no date, The Expanse: Osiris Reborn, Starfield on PS5 (7 Apr 2026), FAQ.
+- NEW https://getdayonedrop.com/games-like-silent-hill : "games like silent hill" + "silent hill 1 remake release date". 10 picks with filter, 2027 horror (Until Dawn 2 countdown), Townfall out 24 Sep 2026, SH1 remake no date (2027 = leak), SH2 on Xbox/Switch 2 since Nov 2025, FAQ.
+- REFRESH /horror-games-2027: "Is there a new Silent Hill game in 2027?" H2 + FAQ, link to the new page.
+- Links in: footer, /tools, /games-by-genre-2027, /horror-games-2027, /games-like-resident-evil, /games-like-cyberpunk-2077, game pages (Exodus, The Expanse, Squadron 42, Becrowned, BrokenLore, Trainwatch, Neverway).
+- Checked: node --check, preview + live build, seo_audit clean, Playwright 1280/390 (no errors, no overflow, filters work).
+- IndexNow pending https://getdayonedrop.com/games-like-mass-effect https://getdayonedrop.com/games-like-silent-hill https://getdayonedrop.com/horror-games-2027 https://getdayonedrop.com/tools https://getdayonedrop.com/games-by-genre-2027 https://getdayonedrop.com/games/exodus
