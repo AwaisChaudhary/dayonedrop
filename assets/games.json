@@ -1534,6 +1534,31 @@
    "about": "Shadow of the Road is a turn-based tactical RPG from Another Angle Games, now launching on PC on 10 March 2027."
   },
   {
+   "slug": "trainwatch",
+   "title": "Trainwatch",
+   "date": "2027-03-10",
+   "window": "",
+   "month": 3,
+   "platforms": [
+    "PC"
+   ],
+   "dev": "Harvester Games (published by 11 bit studios)",
+   "genre": "Horror",
+   "status": "dated",
+   "page": false,
+   "about": "Trainwatch is a time-management horror mystery from Harvester Games, launching on PC on 10 March 2027.",
+   "facts": [
+    "A horror mystery built around managing your time.",
+    "11 bit studios is the publisher."
+   ],
+   "history": [
+    {
+     "when": "Oct 2026",
+     "text": "Release date set for 10 March 2027."
+    }
+   ]
+  },
+  {
    "slug": "road-kings",
    "title": "Road Kings",
    "date": "2027-03-11",

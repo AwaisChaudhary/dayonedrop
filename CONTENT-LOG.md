@@ -390,3 +390,9 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - REFRESH /epic-free-games: Bread & Fred free now (26 Nov - 3 Dec), Mark of the Deep/Alien: Isolation moved to Ended; no "next" until 2 sources.
 - Checked: node --check, preview + live build, Playwright 1280/390 (no errors, no overflow), filter works.
 - IndexNow pending /games-like-animal-crossing /epic-free-games /games-by-genre-2027 /tools /games-like-stardew-valley /games-like-minecraft
+
+## 2026-11-27 (scheduled data check, morning)
+- Checked: "delayed to 2027" news (past 2 months), Game Informer /2027 + Shacknews 2027 calendars (Jan-Apr compared line by line), earlier "left out" list, window games. No date changes for tracked games (Lords of the Fallen II still April 2027, no day; Showa American Story 28 Oct 2027 and Caladrius 2 27 Jan already tracked).
+- Added 1 (board now 91): Trainwatch, 10 Mar 2027, PC, Harvester Games / 11 bit studios, time-management horror (Gematsu, Worthplaying, Niche Gamer, Game Informer + Shacknews calendars).
+- Left out: Polyaris (19 Jan 2027 PC on GI + Shacknews, but developer/genre not confirmed by a trusted source yet; re-check); Let's Build a Dungeon (early access only); ReVamp (GI 25 Mar vs Shacknews 27 Mar); Nioh 3 Xbox / Complete Edition 28 Jan 2027 (Game Informer only); Space Marine 2 Switch 2 delay to 2027 (GameWatcher only); Warhammer Blood Bowl (still "early 2027" vs "spring 2027"); Pokémon Winds and Waves Nov 2027 (rumour only); Emberville (GI 7 Jan vs Shacknews 27 Jan, ours stays 7 Jan); Wandering Sword (GI 21 Jan vs Shacknews 20 Jan, ours stays 21 Jan); Romancing SaGa 3 Shacknews still shows old 16 Feb (Gematsu confirms move-up to 4 Feb).
+- IndexNow pending (no direct WebFetch in this run): /calendar, /games, /months/march-2027, /platforms/pc, /horror-games-2027
