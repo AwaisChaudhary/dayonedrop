@@ -426,3 +426,4 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - Links in: footer, /tools, /games-by-genre-2027, /games-like-skyrim, /games-like-elden-ring, /game-awards-2026, game pages Fable / Exodus / Lords of the Fallen II / Armatus / Everything Is Crab / Mr. Magpie (related).
 - Checked: node --check, preview + live build, seo_audit clean, Playwright 1280/390 (no errors, no overflow, filters work).
 - IndexNow pending https://getdayonedrop.com/games-like-hades https://getdayonedrop.com/games-like-the-witcher-3 https://getdayonedrop.com/games/the-witcher-3-songs-of-the-past https://getdayonedrop.com/game-awards-2026 https://getdayonedrop.com/tools https://getdayonedrop.com/games-by-genre-2027 https://getdayonedrop.com/games-like-skyrim https://getdayonedrop.com/calendar
+- 2026-11-27 16:05 PKT afternoon push: IndexNow FLUSHED 22 URLs (200): all pages added since 27 Nov 00:00 PKT plus every earlier 'IndexNow pending' line.
