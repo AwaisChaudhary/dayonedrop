@@ -1,4 +1,9 @@
 ## COMPETITOR WATCH 27 Nov 2026 (vs Game Informer /2027, GamesRadar release dates (upd. 26 Oct), PC Gamer monthly tables, GameDropRadar date-change feed)
+
+## EVENING RADAR 27 Nov 2026 (18:40 PKT)
+E1. OPEN: 'switch 2 games' autocomplete #1-3 = black friday deals / black friday / on sale. /black-friday-game-sales-2026 exists: make sure it has a Switch 2 section with H2 'Switch 2 Black Friday deals' (today is Black Friday).
+E2. OPEN: 'new movies' -> to stream, in theaters now, on netflix, to watch at home; 'new tv shows' -> this week, out now, tonight. Check the movie/TV pages cover 'this week' and 'to stream' wording in titles.
+
 We have 92 tracked games (+1 today), 87 pages.
 1. DONE 27 Nov: Hark the Ghoul 21 Jan 2027 (PC/PS5/Xbox/Switch 2/Switch) added to games.json (Gematsu + RPGamer + Noisy Pixel, 26 Nov).
 2. GAP: Arthur's Tale reported moved to 2027 (GameDropRadar only). Plan: add when a 2nd trusted source confirms.
