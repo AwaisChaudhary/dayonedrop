@@ -404,3 +404,5 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - Links in: footer (both), /tools, /games-by-genre-2027, /games-like-minecraft, /after-gta-6, /rpgs-2027, game pages Dark Heresy / Shadow of the Road / Exodus / Duskbloods / GWYF2 / Super Battle Golf (related).
 - Checked: node --check, preview + live build, seo_audit clean, Playwright 1280/390 (no errors, no overflow, filter works).
 - IndexNow pending /games-like-fortnite /games-like-baldurs-gate-3 /after-gta-6 /games-by-genre-2027 /tools /rpgs-2027 /games-like-minecraft /games/warhammer-40-000-dark-heresy /games/exodus /games/the-duskbloods
+
+- 2026-11-27 09:50 PKT IndexNow FLUSHED 18 URLs (200) incl. all pages added in the last 30 h.
