@@ -458,3 +458,11 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - Links in: footer, /tools, /games-by-genre-2027, /horror-games-2027, /games-like-resident-evil, /games-like-cyberpunk-2077, game pages (Exodus, The Expanse, Squadron 42, Becrowned, BrokenLore, Trainwatch, Neverway).
 - Checked: node --check, preview + live build, seo_audit clean, Playwright 1280/390 (no errors, no overflow, filters work).
 - IndexNow pending https://getdayonedrop.com/games-like-mass-effect https://getdayonedrop.com/games-like-silent-hill https://getdayonedrop.com/horror-games-2027 https://getdayonedrop.com/tools https://getdayonedrop.com/games-by-genre-2027 https://getdayonedrop.com/games/exodus
+
+## 2026-11-28 (scheduled demand run, second pass)
+- NEW https://getdayonedrop.com/games-like-god-of-war : "games like god of war" + "god of war laufey release date". 11 picks with platform/taste filter, 9 2027 action games from games.json, Laufey countdown (20 May 2027, delayed from 16 Feb), PC / what to play first / Xbox+Switch 2 / PS5 H2s, FAQ.
+- NEW guide https://getdayonedrop.com/games/game-of-thrones-war-for-westeros : added to games.json (Early 2027, PC, RTS, PlaySide; PlaySide blog via Worthplaying + GamingBolt, Wccftech, CGMagazine, Game Informer). Board now 95.
+- REFRESH /games-like-elden-ring: "What games are like Dark Souls?" + "Will there be a Dark Souls 4?" H2s + FAQ. REFRESH /games/god-of-war-laufey: 8 facts, FAQ, seo title, sources (Game Informer, Kotaku).
+- Links in: footer, /tools, /games-by-genre-2027, /games-like-elden-ring, game pages (Laufey, Wo Long 2, Tomb Raider, Elta, Muramasa, Stranger Than Heaven).
+- Checked: node --check, preview + live build, seo_audit (only pre-existing preview-only later-2027 relative links), Playwright 1280/390 (no errors, no overflow, filter works, countdown runs).
+- IndexNow pending https://getdayonedrop.com/games-like-god-of-war https://getdayonedrop.com/games/game-of-thrones-war-for-westeros https://getdayonedrop.com/games/god-of-war-laufey https://getdayonedrop.com/games-like-elden-ring https://getdayonedrop.com/tools https://getdayonedrop.com/games-by-genre-2027 https://getdayonedrop.com/months/march-2027
