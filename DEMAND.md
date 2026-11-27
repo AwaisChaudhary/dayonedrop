@@ -1,7 +1,7 @@
 ## COMPETITOR WATCH 27 Nov 2026 (vs Game Informer /2027, GamesRadar release dates (upd. 26 Oct), PC Gamer monthly tables, GameDropRadar date-change feed)
 
 ## EVENING RADAR 27 Nov 2026 (18:40 PKT)
-E1. OPEN: 'switch 2 games' autocomplete #1-3 = black friday deals / black friday / on sale. /black-friday-game-sales-2026 exists: make sure it has a Switch 2 section with H2 'Switch 2 Black Friday deals' (today is Black Friday).
+E1. DONE 27 Nov (N61): 'switch 2 games' autocomplete #1-3 = black friday deals / black friday / on sale. /black-friday-game-sales-2026 exists: make sure it has a Switch 2 section with H2 'Switch 2 Black Friday deals' (today is Black Friday).
 E2. OPEN: 'new movies' -> to stream, in theaters now, on netflix, to watch at home; 'new tv shows' -> this week, out now, tonight. Check the movie/TV pages cover 'this week' and 'to stream' wording in titles.
 
 We have 92 tracked games (+1 today), 87 pages.
@@ -36,6 +36,13 @@ Tools in this repo: `seo_post.py` (runs at the end of build.py: sitemap = every 
 4. NEVER: stamp fake lastmod/"updated" dates, change URLs of pages that get traffic (if unavoidable, 301 in _redirects), keyword-stuff, mass-produce thin pages, buy links, swap links, or copy competitors' text/data.
 5. Links: only real editorial links via outreach batches Awais approves; build "linkable assets" (original data, free tools, maps) and list pitch targets in DEMAND for approval.
 6. Monthly: run seo_audit.py on the whole site and fix broken links, orphans, duplicate titles/descriptions, missing schema.
+
+## DEMAND RUN 27 Nov 2026 (scheduled, eighth pass, night)
+Evidence: "games like resident evil" (GamesRadar+ US/UK/AU "10 games like Resident Evil to scare you silly in 2026", SVG + AOL "5 best games like Resident Evil Requiem", Eneba, Ranker); "resident evil veronica release date" (Capcom IR 8 Jun 2026, Gematsu, Game Informer, Notebookcheck: 2027, no day; Player.One "Q1 2027" single source); "resident evil 10 release date" (GamingBolt, PSU, NoobFeed: 2029 rumour only); "games like final fantasy" (GamesRadar+ US/UK/AU, Digital Trends, GamesRadar+/TechRadar best JRPGs 2026); "ff7 revelation release date" (PlayStation Blog, Game Informer, RPG Site, Engadget: 8 Apr 2027); FF7 Rebirth Switch 2/Xbox 3 Jun 2026 (Gematsu, RPG Site); "final fantasy 17" (tease reports only); "switch 2 games black friday" (E1; Tom's Guide, GGRecon, Digital Citizen, TechRadar round-ups).
+N59. DONE 27 Nov https://getdayonedrop.com/games-like-resident-evil : 10 picks + platform/horror-type filter, 9 2027 horror games (Until Dawn 2 countdown), RE Veronica / RE10 / RE on Switch 2 / PS5+Xbox H2s.
+N60. DONE 27 Nov https://getdayonedrop.com/games-like-final-fantasy : 10 picks + filter, 9 2027 JRPGs (FF7 Revelation countdown), "play Rebirth first?", FF17 not announced, Switch 2 / PS5+Xbox H2s.
+N61. DONE 27 Nov E1: "What are the Switch 2 Black Friday deals?" H2 + FAQ on https://getdayonedrop.com/black-friday-game-sales-2026 (remove/refresh after 5 Dec).
+N62. OPEN next games-like: "games like Monster Hunter" (check 2027 hunting games first: may be thin), "games like Mass Effect" (Exodus, Expanse), "games like Valorant/Overwatch", "games like Silent Hill". RE Veronica exact date: watch TGA 11 Dec PKT.
 
 ## DEMAND RUN 27 Nov 2026 (scheduled, seventh pass, evening)
 Evidence: "games like red dead redemption 2" (GamesRadar+ US/UK, Twinfinite, Game Rant "story heavy games like RDR2", GGRecon, PowerUp "games like RDR2 on PS5" Aug 2026, G2A, Eneba); "red dead redemption 3 release date" (win.gg, NoobFeed, EGW, ExitLag, GamingBible: not announced); RDR2 PS5 upgrade (VideoGamer, Notebookcheck: rumour only); "games like cyberpunk 2077" (GamesRadar+ US/UK/AU, Eneba, Driffle "2026"); "cyberpunk 2 release date" (GamesRadar+, TechSpot, TweakTown, LevelUp "not before 2028", TechPowerUp/Wccftech analyst 2030); "games like persona 5" (GamesRadar+, Gfinity "while waiting for Persona 4 Revival", Wccftech "2027 most stacked RPG year", RPG Site 2027 list, TurnBasedLovers).
