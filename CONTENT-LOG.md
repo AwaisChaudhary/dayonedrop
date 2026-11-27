@@ -427,3 +427,10 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - Checked: node --check, preview + live build, seo_audit clean, Playwright 1280/390 (no errors, no overflow, filters work).
 - IndexNow pending https://getdayonedrop.com/games-like-hades https://getdayonedrop.com/games-like-the-witcher-3 https://getdayonedrop.com/games/the-witcher-3-songs-of-the-past https://getdayonedrop.com/game-awards-2026 https://getdayonedrop.com/tools https://getdayonedrop.com/games-by-genre-2027 https://getdayonedrop.com/games-like-skyrim https://getdayonedrop.com/calendar
 - 2026-11-27 16:05 PKT afternoon push: IndexNow FLUSHED 22 URLs (200): all pages added since 27 Nov 00:00 PKT plus every earlier 'IndexNow pending' line.
+
+## 2026-11-27 (scheduled data check, evening)
+- Checked: "delayed to 2027" news (past 2 months), Gematsu 2027 release-date news, earlier "left out" list (Polyaris, ReVamp, Warhammer Blood Bowl, Lords of the Fallen II, Space Marine 2 Switch 2, Acts of Blood), window games. No date changes for tracked games (Lords of the Fallen II still April 2027, no day).
+- Added 1 (board now 94): Gravity Circuit 2, spring 2027, PS5/PC/Switch 2 + Switch, Domesticated Ant Games / Dear Villagers, action platformer (Gematsu, Final Weapon, KeenGamer).
+- Fixed order: Hark the Ghoul and The Witcher 3: Songs of the Past were appended at the end of games.json; list re-sorted by month then date.
+- Left out: ReVamp (Gematsu + Game Informer 25 Mar 2027 vs Rogueliker + Shacknews 27 Mar; still conflicting); Polyaris (still no trusted developer/genre confirmation); Warhammer Blood Bowl ("early 2027" PC Gamer/games.gg vs "spring 2027" God is a Geek); Space Marine 2 Switch 2 and Acts of Blood 2027 (still single source).
+- Checked build: node --check, preview + live build, Playwright on index, calendar, PS5, Switch 2, April 2027 (no page errors).

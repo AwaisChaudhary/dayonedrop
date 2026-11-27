@@ -481,6 +481,39 @@
    "sources": "Gematsu, Noisy Pixel, VGChartz, Final Weapon (Nov 2026)"
   },
   {
+   "slug": "hark-the-ghoul",
+   "title": "Hark the Ghoul",
+   "date": "2027-01-21",
+   "window": "",
+   "month": 1,
+   "platforms": [
+    "PC",
+    "PS5",
+    "Xbox Series X|S",
+    "Switch 2"
+   ],
+   "lastgen": [
+    "Switch"
+   ],
+   "dev": "Deep Denizens (published by Kwalee)",
+   "genre": "Dungeon crawler RPG",
+   "status": "dated",
+   "page": false,
+   "about": "Hark the Ghoul is a gothic first-person dungeon crawler from Deep Denizens and Kwalee, out on 21 January 2027 for PC, PS5, Xbox Series X|S, Switch 2 and the original Switch.",
+   "facts": [
+    "First-person dungeon crawler with a gothic setting.",
+    "Kwalee is the publisher; Deep Denizens develops it.",
+    "Also coming to the original Nintendo Switch."
+   ],
+   "history": [
+    {
+     "when": "Nov 2026",
+     "text": "Release date set for 21 January 2027 on all five platforms."
+    }
+   ],
+   "sources": "Gematsu, RPGamer, Noisy Pixel (26 Nov 2026)"
+  },
+  {
    "slug": "forza-horizon-6",
    "title": "Forza Horizon 6",
    "platforms": [
@@ -2339,6 +2372,42 @@
    ]
   },
   {
+   "slug": "gravity-circuit-2",
+   "title": "Gravity Circuit 2",
+   "platforms": [
+    "PS5",
+    "PC",
+    "Switch 2"
+   ],
+   "lastgen": [
+    "Switch"
+   ],
+   "dev": "Domesticated Ant Games / Dear Villagers",
+   "genre": "Action platformer",
+   "page": false,
+   "facts": [
+    "Sequel to the 2023 retro action platformer Gravity Circuit, from Domesticated Ant Games and publisher Dear Villagers.",
+    "Coming to PS5, Switch 2, the original Switch and PC (Steam and Epic Games Store).",
+    "Set for spring 2027; no exact date yet. A free PC demo is out now."
+   ],
+   "history": [
+    {
+     "when": "Jun 2026",
+     "text": "Announced for 2027."
+    },
+    {
+     "when": "Oct 2026",
+     "text": "Switch 2 version added; window narrowed to spring 2027."
+    }
+   ],
+   "date": null,
+   "window": "Spring 2027",
+   "month": 4,
+   "status": "window",
+   "about": "The side-scrolling sequel to Gravity Circuit, out in spring 2027 on PS5, Switch 2 and PC.",
+   "sources": "Gematsu, Final Weapon, KeenGamer (Oct-Nov 2026)"
+  },
+  {
    "slug": "god-of-war-laufey",
    "title": "God of War: Laufey",
    "date": "2027-05-20",
@@ -3200,39 +3269,6 @@
     }
    ],
    "sources": "Gematsu, RPGFan (Aug 2026)"
-  },
-  {
-   "slug": "hark-the-ghoul",
-   "title": "Hark the Ghoul",
-   "date": "2027-01-21",
-   "window": "",
-   "month": 1,
-   "platforms": [
-    "PC",
-    "PS5",
-    "Xbox Series X|S",
-    "Switch 2"
-   ],
-   "lastgen": [
-    "Switch"
-   ],
-   "dev": "Deep Denizens (published by Kwalee)",
-   "genre": "Dungeon crawler RPG",
-   "status": "dated",
-   "page": false,
-   "about": "Hark the Ghoul is a gothic first-person dungeon crawler from Deep Denizens and Kwalee, out on 21 January 2027 for PC, PS5, Xbox Series X|S, Switch 2 and the original Switch.",
-   "facts": [
-    "First-person dungeon crawler with a gothic setting.",
-    "Kwalee is the publisher; Deep Denizens develops it.",
-    "Also coming to the original Nintendo Switch."
-   ],
-   "history": [
-    {
-     "when": "Nov 2026",
-     "text": "Release date set for 21 January 2027 on all five platforms."
-    }
-   ],
-   "sources": "Gematsu, RPGamer, Noisy Pixel (26 Nov 2026)"
   },
   {
    "slug": "the-witcher-3-songs-of-the-past",
