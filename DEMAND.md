@@ -1,3 +1,12 @@
+## COMPETITOR WATCH 27 Nov 2026 (vs Game Informer /2027, GamesRadar release dates (upd. 26 Oct), PC Gamer monthly tables, GameDropRadar date-change feed)
+We have 92 tracked games (+1 today), 87 pages.
+1. DONE 27 Nov: Hark the Ghoul 21 Jan 2027 (PC/PS5/Xbox/Switch 2/Switch) added to games.json (Gematsu + RPGamer + Noisy Pixel, 26 Nov).
+2. GAP: Arthur's Tale reported moved to 2027 (GameDropRadar only). Plan: add when a 2nd trusted source confirms.
+3. GAP: GameDropRadar has a 'dates that moved' feed. We have /delayed-games-2027. Plan: add a dated 'Date changes this week' list at the top of /delayed-games-2027 built from games.json history entries (auto, no extra data).
+4. GAP: PC Gamer has swipeable month tables; Game Informer links reviews. Plan: on each month page add 'Reviews' links once games launch (Jan 2027 first).
+5. BETTER-THAN-THEM (own): 'Date watch' - follow any game and get a one-tap .ics that updates when its date moves (calendar subscription feed per game from games.json). Nobody offers a self-updating calendar feed.
+6. The Game Awards 10 Dec: refresh /game-awards-2026 hub before then (E4) - announced 2027 dates go in games.json the same night.
+
 ## SEO PLAYBOOK — standing rules for every run (Awais 26 Nov 01:35: "do SEO like the best SEO guy in the world for all sites")
 
 ## DAILY RADAR 27 Nov 06:45 PKT (Google autocomplete US)

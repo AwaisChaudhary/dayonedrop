@@ -406,3 +406,7 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - IndexNow pending /games-like-fortnite /games-like-baldurs-gate-3 /after-gta-6 /games-by-genre-2027 /tools /rpgs-2027 /games-like-minecraft /games/warhammer-40-000-dark-heresy /games/exodus /games/the-duskbloods
 
 - 2026-11-27 09:50 PKT IndexNow FLUSHED 18 URLs (200) incl. all pages added in the last 30 h.
+
+## 2026-11-27 (competitor watch)
+- Added 1 (board now 92): Hark the Ghoul, 21 Jan 2027, PC/PS5/Xbox Series X|S/Switch 2 + Switch, Deep Denizens / Kwalee (Gematsu, RPGamer, Noisy Pixel, 26 Nov). Arthur's Tale 2027 move left out (1 source).
+- Checked: build, Playwright 1280/390 on /months/january-2027 + /calendar (no errors, no overflow).

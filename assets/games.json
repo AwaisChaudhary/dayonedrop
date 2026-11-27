@@ -3200,6 +3200,39 @@
     }
    ],
    "sources": "Gematsu, RPGFan (Aug 2026)"
+  },
+  {
+   "slug": "hark-the-ghoul",
+   "title": "Hark the Ghoul",
+   "date": "2027-01-21",
+   "window": "",
+   "month": 1,
+   "platforms": [
+    "PC",
+    "PS5",
+    "Xbox Series X|S",
+    "Switch 2"
+   ],
+   "lastgen": [
+    "Switch"
+   ],
+   "dev": "Deep Denizens (published by Kwalee)",
+   "genre": "Dungeon crawler RPG",
+   "status": "dated",
+   "page": false,
+   "about": "Hark the Ghoul is a gothic first-person dungeon crawler from Deep Denizens and Kwalee, out on 21 January 2027 for PC, PS5, Xbox Series X|S, Switch 2 and the original Switch.",
+   "facts": [
+    "First-person dungeon crawler with a gothic setting.",
+    "Kwalee is the publisher; Deep Denizens develops it.",
+    "Also coming to the original Nintendo Switch."
+   ],
+   "history": [
+    {
+     "when": "Nov 2026",
+     "text": "Release date set for 21 January 2027 on all five platforms."
+    }
+   ],
+   "sources": "Gematsu, RPGamer, Noisy Pixel (26 Nov 2026)"
   }
  ]
 }
