@@ -1,7 +1,7 @@
 ## SEO PLAYBOOK — standing rules for every run (Awais 26 Nov 01:35: "do SEO like the best SEO guy in the world for all sites")
 
 ## DAILY RADAR 27 Nov 06:45 PKT (Google autocomplete US)
-- R5 OPEN 'after gta 6': 'can you still play gta 5', 'what is rockstar's next game', 'will there be gta 7' (all in autocomplete; 'still play gta 5' 0 pages): one 'What's next after GTA 6' guide.
+- R5 DONE 27 Nov (H2 + FAQ 'Can you still play GTA 5 and GTA Online after GTA 6?' on https://getdayonedrop.com/after-gta-6 ; GTA 7 + Rockstar next game H2s already there) 'after gta 6': 'can you still play gta 5', 'what is rockstar's next game', 'will there be gta 7' (all in autocomplete; 'still play gta 5' 0 pages): one 'What's next after GTA 6' guide.
 - R6 OPEN movies category children: 'movies 2027 kids', 'movies 2027 disney', 'movies 2027 horror' (autocomplete #4/#6/#7; 0 pages) as list pages under /movies-2027 (studio-confirmed dates only).
 - R7 OPEN 'new tv shows this week' (#5): a weekly-updated 'new TV shows this week' page linked from the monthly TV pages.
 
@@ -22,11 +22,18 @@ Tools in this repo: `seo_post.py` (runs at the end of build.py: sitemap = every 
 5. Links: only real editorial links via outreach batches Awais approves; build "linkable assets" (original data, free tools, maps) and list pitch targets in DEMAND for approval.
 6. Monthly: run seo_audit.py on the whole site and fix broken links, orphans, duplicate titles/descriptions, missing schema.
 
+## DEMAND RUN 27 Nov 2026 (scheduled, fourth pass)
+Evidence: "games like fortnite" (GamesRadar+ US/UK/AU, GameSpot, Pocket Tactics, Pocket Gamer, GGRecon, VideoGamer, Digital Trends, Eneba, ExitLag 2026 guide; Escapist/G2A/GamesRadar+ battle royale lists); "games like baldur's gate 3" + "upcoming CRPG 2027" (PC Gamer "11 upcoming RPGs...BG3", ComicBook "4 upcoming CRPGs that could rival BG3", TurnBasedLovers "isometric turn-based RPGs 2027"); "larian divinity release date" (PC Gamer, PCGamesN, PSU, Beebom, GameWatcher guides); "can you still play gta 5" (radar R5; TechRadar, GamesRadar+, PCGamesN: Take-Two keeps GTA Online supported after GTA 6).
+N42. DONE 27 Nov https://getdayonedrop.com/games-like-fortnite : 12 picks (10 free) + platform/taste filter, 2027 multiplayer games (Super Battle Golf countdown, Duskbloods, GWYF2), free / Switch 2 / PS5+Xbox / building / kids H2s.
+N43. DONE 27 Nov https://getdayonedrop.com/games-like-baldurs-gate-3 : 10 picks + filter, 2027 CRPGs (Dark Heresy countdown, Fable, Shadow of the Road, Exodus), Larian Divinity (no date) / BG4 / PS5+Xbox / Switch 2 / co-op H2s.
+N44. DONE 27 Nov R5 H2 on /after-gta-6.
+N45. OPEN: "games like Palworld", "games like Valorant/Overwatch", "games like Skyrim" (Elder Scrolls VI), "games like Hades"; OpenCritic "Baldur's Gate 3 will return in 2027" single source, check before mentioning; Larian Divinity: add to games.json the day it gets a year from 2 sources (watch TGA 11 Dec).
+
 ## DEMAND RUN 27 Nov 2026 (scheduled, third pass)
 Evidence: "games like animal crossing" (GamesRadar+, ComicBook, Twinfinite "upcoming games like Animal Crossing", Epic Store AC-style list, Vice "games like Pokopia"); "cozy games switch 2" (games.gg upcoming cozy Switch/Switch 2, TechRadar cozy Switch); Epic weekly swap 26 Nov (Kyber's Corner, GameGrin, The Freebie Guy, Out of Games).
 N39. DONE 27 Nov https://getdayonedrop.com/games-like-animal-crossing : 10 picks + platform/taste filter, 2027 cozy games (Witchbrook countdown), "new Animal Crossing?", "cozy Switch 2 2027" and PS5/Xbox/free H2s.
 N40. DONE 27 Nov /epic-free-games rolled forward: Bread & Fred free now until 3 Dec (+ A Tiny Sticker Tale mobile, Firestone bundle). Next week's game not yet confirmed by 2 sources: add on the next run.
-N41. OPEN next games-like: "games like Fortnite", "games like Palworld", "games like Baldur's Gate 3"; Epic holiday mystery games when announced.
+N41. PARTLY DONE 27 Nov (Fortnite + BG3 live, see fourth pass; Palworld still OPEN) next games-like: "games like Fortnite", "games like Palworld", "games like Baldur's Gate 3"; Epic holiday mystery games when announced.
 
 ## DEMAND RUN 27 Nov 2026 (scheduled, demand-first; second pass)
 Evidence: "games like pokemon" (GamesRadar+ US/UK/AU, GameSpot gallery, Game Rant Metacritic list, Insider Gaming, Windows Central, TheGamer, ComicBook "Pokemon rivals 2026"); "upcoming creature collector 2027": Cassette Beasts 2002 March 2027 (Gematsu, RPG Site, VGChartz, Niche Gamer, RPGamer, Automaton); "games like minecraft" (GamesRadar+, PCGamesN, games.gg, Beebom, SVG, ComicBook "Minecraft replacement"); Minecraft Switch 2 native edition 27 Oct 2026 (Windows Central, Neowin, Thurrott).
