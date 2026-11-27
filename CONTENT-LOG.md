@@ -417,3 +417,12 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - REFRESH /delayed-games-2027: auto "Which 2027 release dates changed in November 2026?" section + FAQ from games.json history (competitor gap 3).
 - Links in: footer, tools, games by genre, games like Pokémon, Minecraft, BG3, game pages (Fable, Exodus, Expanse, Cassette Beasts 2002, Winds and Waves, State of Decay 3).
 - IndexNow pending https://getdayonedrop.com/games-like-palworld https://getdayonedrop.com/games-like-skyrim https://getdayonedrop.com/delayed-games-2027
+
+## 2026-11-27 (scheduled demand run, sixth pass)
+- NEW https://getdayonedrop.com/games-like-hades : "games like hades" (GamesRadar+, G2A, Eneba, SummerEngine 2026 lists). 11 picks with platform/taste filter, 2027 roguelites from games.json (Armatus countdown), Rogue Fortune (no date: Gematsu, Niche Gamer), Hades II PS5/Xbox 14 Apr 2026 (Supergiant, Gematsu, RPG Site), Hades 3 status (PC Gamer, GamesRadar+), FAQ.
+- NEW https://getdayonedrop.com/games-like-the-witcher-3 : "games like witcher 3" (GamesRadar+, Eneba, Kinguin, SVG). 10 picks with filter, 2027 RPGs (Fable countdown), Songs of the Past 2027, Witcher 4 targeting 2028, Witcher 3 Remastered + Switch 2 (29 Sep 2026), FAQ.
+- NEW guide https://getdayonedrop.com/games/the-witcher-3-songs-of-the-past : added to games.json (2027 window; PS5/Xbox Series X|S/PC/Switch 2; CDPR press 25 Aug 2026, Gematsu, RPG Site, TechRadar, VGC). Board now 93.
+- REFRESH /game-awards-2026: "Who will win Game of the Year?" opinion H2 + FAQ (GTA 6 favourite per OLBG/Covers/Polymarket coverage), Songs of the Past link in the Witcher 4 answer.
+- Links in: footer, /tools, /games-by-genre-2027, /games-like-skyrim, /games-like-elden-ring, /game-awards-2026, game pages Fable / Exodus / Lords of the Fallen II / Armatus / Everything Is Crab / Mr. Magpie (related).
+- Checked: node --check, preview + live build, seo_audit clean, Playwright 1280/390 (no errors, no overflow, filters work).
+- IndexNow pending https://getdayonedrop.com/games-like-hades https://getdayonedrop.com/games-like-the-witcher-3 https://getdayonedrop.com/games/the-witcher-3-songs-of-the-past https://getdayonedrop.com/game-awards-2026 https://getdayonedrop.com/tools https://getdayonedrop.com/games-by-genre-2027 https://getdayonedrop.com/games-like-skyrim https://getdayonedrop.com/calendar
