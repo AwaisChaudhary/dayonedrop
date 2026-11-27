@@ -1,5 +1,13 @@
 ## COMPETITOR WATCH 27 Nov 2026 (vs Game Informer /2027, GamesRadar release dates (upd. 26 Oct), PC Gamer monthly tables, GameDropRadar date-change feed)
 
+## REVENUE PUSH (Awais 28 Nov: $1,000/month by March; plan doc https://claude.ai/artifact/2qfQi3yzzfVwehKNF4748s)
+Goal: 40,000+ sessions/month by March (Journey ads) + game-store affiliate slots.
+R1. OPEN: weekly evergreen hubs that get searched every week: /new-movies-this-week, /new-tv-shows-this-week, /new-on-netflix, /new-games-this-week, /what-to-watch-this-weekend; refresh each every Monday (dateModified) so they rank for the 'this week' searches.
+R2. OPEN: 'release date' pages for the 30 most-searched upcoming games/films of 2027 (one page each, 2+ sources, a countdown), linked from the calendar.
+R3. OPEN: deal pages: Steam winter sale 2026 dates + best deals, Switch 2 deals, PS Plus/Game Pass monthly games (December 2026, January 2027).
+R4. Every game page gets a 'Where to buy' slot (data-aff) for Green Man Gaming / Fanatical / Humble / Amazon once Awais's affiliate accounts exist.
+
+
 ## EVENING RADAR 27 Nov 2026 (18:40 PKT)
 E1. DONE 27 Nov (N61): 'switch 2 games' autocomplete #1-3 = black friday deals / black friday / on sale. /black-friday-game-sales-2026 exists: make sure it has a Switch 2 section with H2 'Switch 2 Black Friday deals' (today is Black Friday).
 E2. OPEN: 'new movies' -> to stream, in theaters now, on netflix, to watch at home; 'new tv shows' -> this week, out now, tonight. Check the movie/TV pages cover 'this week' and 'to stream' wording in titles.
