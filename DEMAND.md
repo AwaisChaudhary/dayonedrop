@@ -11,6 +11,7 @@
 
 ## NEW CATEGORY EXPANSION (Awais 26 Nov: when traffic plateaus, open new categories backed by Trends/searches; don't wait for input)
 Evidence = Google autocomplete 26 Nov 18:10 PKT. Each is a CATEGORY: build a hub page first, then 1-2 child pages per run. Skip if it already exists.
+- E4 OPEN (27 Nov growth review) The Game Awards 2026 category: hub with date/time, nominees (once announced), voting, our predictions labelled as opinion, and a 'games announced at TGA' tracker for 2027 dates. Autocomplete 'game awards 2026' -> nominees, date, voting, cut off date, time, predictions. Timely: TGA is in December — build the hub NOW.
 - E1 DONE 26 Nov (https://getdayonedrop.com/movies-2027 + movies-december-2026, movies-january-2027) Movies category: /movies-2027 hub, 'movies coming out 2027 in theaters', '... for kids', '... january' month pages (3+ dated films each; studio-confirmed dates).
 - E2 PART-DONE 26 Nov (https://getdayonedrop.com/winter-2027-anime; spring/summer/fall + calendar hub still open) Anime 2027: 'anime 2027 upcoming|lineup|winter|calendar' season hub (winter/spring/summer/fall 2027).
 - E3 OPEN TV shows 2027 hub after E1-E2 prove out. Keep the departures-board look for all.
