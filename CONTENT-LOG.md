@@ -410,3 +410,10 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 ## 2026-11-27 (competitor watch)
 - Added 1 (board now 92): Hark the Ghoul, 21 Jan 2027, PC/PS5/Xbox Series X|S/Switch 2 + Switch, Deep Denizens / Kwalee (Gematsu, RPGamer, Noisy Pixel, 26 Nov). Arthur's Tale 2027 move left out (1 source).
 - Checked: build, Playwright 1280/390 on /months/january-2027 + /calendar (no errors, no overflow).
+
+## 2026-11-27 (scheduled demand run, fifth pass)
+- NEW https://getdayonedrop.com/games-like-palworld : "games like palworld" (GamesRadar+, ComicBook, Gfinity, Player.One lists). 10 picks with platform/taste filter, 2027 creature + survival games, Palworld 1.0 (10 Jul 2026, TechTimes + Insider Gaming), Switch 2 / PS5+Xbox / co-op H2s, FAQ.
+- NEW https://getdayonedrop.com/games-like-skyrim : "games like skyrim" + "elder scrolls 6 release date". 10 picks with filter, 2027 RPGs (Fable countdown), TES6 status (no date; Sentinel reported by The Verge; Schreier "more than 2 years away"), Skyrim on Switch 2 (10 Dec 2025, Gematsu + RPG Site), Avowed PS5 (17 Feb 2026, Gematsu + Windows Central).
+- REFRESH /delayed-games-2027: auto "Which 2027 release dates changed in November 2026?" section + FAQ from games.json history (competitor gap 3).
+- Links in: footer, tools, games by genre, games like Pokémon, Minecraft, BG3, game pages (Fable, Exodus, Expanse, Cassette Beasts 2002, Winds and Waves, State of Decay 3).
+- IndexNow pending https://getdayonedrop.com/games-like-palworld https://getdayonedrop.com/games-like-skyrim https://getdayonedrop.com/delayed-games-2027

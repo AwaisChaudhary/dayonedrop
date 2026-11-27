@@ -2,7 +2,7 @@
 We have 92 tracked games (+1 today), 87 pages.
 1. DONE 27 Nov: Hark the Ghoul 21 Jan 2027 (PC/PS5/Xbox/Switch 2/Switch) added to games.json (Gematsu + RPGamer + Noisy Pixel, 26 Nov).
 2. GAP: Arthur's Tale reported moved to 2027 (GameDropRadar only). Plan: add when a 2nd trusted source confirms.
-3. GAP: GameDropRadar has a 'dates that moved' feed. We have /delayed-games-2027. Plan: add a dated 'Date changes this week' list at the top of /delayed-games-2027 built from games.json history entries (auto, no extra data).
+3. DONE 27 Nov (auto "Which 2027 release dates changed in <month>?" section + FAQ on https://getdayonedrop.com/delayed-games-2027) GAP: GameDropRadar has a 'dates that moved' feed. We have /delayed-games-2027. Plan: add a dated 'Date changes this week' list at the top of /delayed-games-2027 built from games.json history entries (auto, no extra data).
 4. GAP: PC Gamer has swipeable month tables; Game Informer links reviews. Plan: on each month page add 'Reviews' links once games launch (Jan 2027 first).
 5. BETTER-THAN-THEM (own): 'Date watch' - follow any game and get a one-tap .ics that updates when its date moves (calendar subscription feed per game from games.json). Nobody offers a self-updating calendar feed.
 6. The Game Awards 10 Dec: refresh /game-awards-2026 hub before then (E4) - announced 2027 dates go in games.json the same night.
@@ -32,12 +32,19 @@ Tools in this repo: `seo_post.py` (runs at the end of build.py: sitemap = every 
 5. Links: only real editorial links via outreach batches Awais approves; build "linkable assets" (original data, free tools, maps) and list pitch targets in DEMAND for approval.
 6. Monthly: run seo_audit.py on the whole site and fix broken links, orphans, duplicate titles/descriptions, missing schema.
 
+## DEMAND RUN 27 Nov 2026 (scheduled, fifth pass)
+Evidence: "games like palworld" (GamesRadar+ "10 games like Palworld", ComicBook, Gfinity, Player.One/inkl "10 survival crafting games like Palworld 2026", PC Gamer Next Fest Palworld-likes); "games like skyrim" (GamesRadar+ "best games like Skyrim 2026", VGTimes "38 best games like Skyrim 2026", Plarium, gaming.net) + "elder scrolls 6 release date" (GamesRadar+, ScreenRant 4 Nov, GameRant 1 Nov 2026).
+N46. DONE 27 Nov https://getdayonedrop.com/games-like-palworld : 10 picks + platform/taste filter, 6 2027 creature/survival games, Palworld 1.0 / Switch 2 / PS5+Xbox / co-op H2s.
+N47. DONE 27 Nov https://getdayonedrop.com/games-like-skyrim : 10 picks + filter, 2027 RPGs (Fable countdown), TES6 date / PS5 / Skyrim on Switch 2 / co-op H2s.
+N48. DONE 27 Nov competitor gap 3: monthly date-changes section on /delayed-games-2027.
+N49. OPEN next games-like: "games like Hades", "games like Valorant/Overwatch", "games like Red Dead Redemption 2", "games like The Witcher 3". TES6: add to games.json only when Bethesda gives a year.
+
 ## DEMAND RUN 27 Nov 2026 (scheduled, fourth pass)
 Evidence: "games like fortnite" (GamesRadar+ US/UK/AU, GameSpot, Pocket Tactics, Pocket Gamer, GGRecon, VideoGamer, Digital Trends, Eneba, ExitLag 2026 guide; Escapist/G2A/GamesRadar+ battle royale lists); "games like baldur's gate 3" + "upcoming CRPG 2027" (PC Gamer "11 upcoming RPGs...BG3", ComicBook "4 upcoming CRPGs that could rival BG3", TurnBasedLovers "isometric turn-based RPGs 2027"); "larian divinity release date" (PC Gamer, PCGamesN, PSU, Beebom, GameWatcher guides); "can you still play gta 5" (radar R5; TechRadar, GamesRadar+, PCGamesN: Take-Two keeps GTA Online supported after GTA 6).
 N42. DONE 27 Nov https://getdayonedrop.com/games-like-fortnite : 12 picks (10 free) + platform/taste filter, 2027 multiplayer games (Super Battle Golf countdown, Duskbloods, GWYF2), free / Switch 2 / PS5+Xbox / building / kids H2s.
 N43. DONE 27 Nov https://getdayonedrop.com/games-like-baldurs-gate-3 : 10 picks + filter, 2027 CRPGs (Dark Heresy countdown, Fable, Shadow of the Road, Exodus), Larian Divinity (no date) / BG4 / PS5+Xbox / Switch 2 / co-op H2s.
 N44. DONE 27 Nov R5 H2 on /after-gta-6.
-N45. OPEN: "games like Palworld", "games like Valorant/Overwatch", "games like Skyrim" (Elder Scrolls VI), "games like Hades"; OpenCritic "Baldur's Gate 3 will return in 2027" single source, check before mentioning; Larian Divinity: add to games.json the day it gets a year from 2 sources (watch TGA 11 Dec).
+N45. PARTLY DONE 27 Nov (fifth pass: Palworld + Skyrim live, see N46-N47); still OPEN: "games like Valorant/Overwatch", "games like Skyrim" (Elder Scrolls VI), "games like Hades"; OpenCritic "Baldur's Gate 3 will return in 2027" single source, check before mentioning; Larian Divinity: add to games.json the day it gets a year from 2 sources (watch TGA 11 Dec).
 
 ## DEMAND RUN 27 Nov 2026 (scheduled, third pass)
 Evidence: "games like animal crossing" (GamesRadar+, ComicBook, Twinfinite "upcoming games like Animal Crossing", Epic Store AC-style list, Vice "games like Pokopia"); "cozy games switch 2" (games.gg upcoming cozy Switch/Switch 2, TechRadar cozy Switch); Epic weekly swap 26 Nov (Kyber's Corner, GameGrin, The Freebie Guy, Out of Games).
