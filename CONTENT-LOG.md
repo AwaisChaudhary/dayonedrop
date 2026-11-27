@@ -466,3 +466,10 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - Links in: footer, /tools, /games-by-genre-2027, /games-like-elden-ring, game pages (Laufey, Wo Long 2, Tomb Raider, Elta, Muramasa, Stranger Than Heaven).
 - Checked: node --check, preview + live build, seo_audit (only pre-existing preview-only later-2027 relative links), Playwright 1280/390 (no errors, no overflow, filter works, countdown runs).
 - IndexNow pending https://getdayonedrop.com/games-like-god-of-war https://getdayonedrop.com/games/game-of-thrones-war-for-westeros https://getdayonedrop.com/games/god-of-war-laufey https://getdayonedrop.com/games-like-elden-ring https://getdayonedrop.com/tools https://getdayonedrop.com/games-by-genre-2027 https://getdayonedrop.com/months/march-2027
+
+## AUDIT 2026-11-28 (daily technical SEO pass)
+- Found (seo_audit.py + extended checks incl. games/, 100 pages): 5 meta descriptions at 163-165 chars (games like Baldur's Gate 3, Cyberpunk 2077, God of War, Hades, The Witcher 3). No broken links, orphans, weakly linked pages, dup titles/descriptions, long titles, missing breadcrumbs, FAQ JSON-LD mismatches or image attribute gaps. robots.txt + sitemap.xml valid (100 URLs).
+- Fixed at source (build.py): the 5 descriptions trimmed to 143-159 chars. Re-audit clean.
+- Remaining: none.
+- Checked 390px render: /games-like-hades, /games-like-god-of-war: no JS errors, no overflow.
+- IndexNow pending: https://getdayonedrop.com/games-like-baldurs-gate-3 https://getdayonedrop.com/games-like-cyberpunk-2077 https://getdayonedrop.com/games-like-god-of-war https://getdayonedrop.com/games-like-hades https://getdayonedrop.com/games-like-the-witcher-3

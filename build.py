@@ -4475,7 +4475,7 @@ bg_faq = [("What games are like Baldur's Gate 3?", _and([x[0] for x in LIKE_BG])
           ("Will there be a Baldur's Gate 4?", "Larian says it is not making one. No other studio has announced Baldur's Gate 4."),
           ("What CRPGs come out in 2027?", _and([g['title'] + ' (' + nice_date(g) + ')' for g in _bg_soon]) + ".")]
 page("games-like-baldurs-gate-3.html", "Games Like Baldur's Gate 3: CRPG Picks & 2027 RPGs",
-     "Games like Baldur's Gate 3 on PS5, Xbox, Switch 2 and PC: Divinity: Original Sin 2, Rogue Trader, Pathfinder, Expedition 33, plus 2027 CRPGs and Larian's Divinity.",
+     "Games like Baldur's Gate 3 on PS5, Xbox, Switch 2 and PC: Divinity: Original Sin 2, Rogue Trader, Pathfinder, Expedition 33, plus 2027 CRPGs and Divinity.",
      bg_body, 0, bg_faq, crumbs=[("Home", DOMAIN + "/"), ("Every RPG of 2027", canon("rpgs-2027.html")), ("Games like Baldur's Gate 3", canon("games-like-baldurs-gate-3.html"))])
 
 
@@ -4661,7 +4661,7 @@ hd_faq = [("What games are like Hades?", _and([x[0] for x in LIKE_HD]) + "."),
           ("Will there be a Hades 3?", "Not announced. Supergiant says a third game is not preordained and is hiring for its next, unnamed project."),
           ("What roguelites come out in 2027?", _and([g['title'] + ' (' + nice_date(g) + ')' for g in _hd_soon]) + ". Rogue Fortune has no date yet.")]
 page("games-like-hades.html", "Games Like Hades: 11 Roguelite Picks & 2027 Releases",
-     "Games like Hades on Switch 2, PS5, Xbox and PC: Hades II, Dead Cells, Curse of the Dead Gods, Ravenswatch, Cult of the Lamb, plus 2027 roguelites and Hades 3 news.",
+     "Games like Hades on Switch 2, PS5, Xbox and PC: Hades II, Dead Cells, Curse of the Dead Gods, Ravenswatch, Cult of the Lamb, plus 2027 roguelites.",
      hd_body, 0, hd_faq, crumbs=[("Home", DOMAIN + "/"), ("2027 games by genre", canon("games-by-genre-2027.html")), ("Games like Hades", canon("games-like-hades.html"))])
 
 
@@ -4723,7 +4723,7 @@ w3_faq = [("What games are like The Witcher 3?", _and([x[0] for x in LIKE_W3]) +
           ("When does The Witcher 4 come out?", "CD Projekt Red is targeting 2028. No exact date or platforms have been announced."),
           ("Is The Witcher 3 Remastered free?", "Yes for existing owners on qualifying platforms. It launched on 29 September 2026, including on Switch 2.")]
 page("games-like-the-witcher-3.html", "Games Like The Witcher 3: 10 RPGs & Witcher in 2027",
-     "Games like The Witcher 3 on PS5, Xbox, Switch 2 and PC: Blood of Dawnwalker, Cyberpunk 2077, Kingdom Come 2, plus the 2027 Songs of the Past DLC and Witcher 4 date.",
+     "Games like The Witcher 3 on PS5, Xbox, Switch 2 and PC: Blood of Dawnwalker, Cyberpunk 2077, Kingdom Come 2, plus the 2027 Songs of the Past DLC and Witcher 4.",
      w3_body, 0, w3_faq, crumbs=[("Home", DOMAIN + "/"), ("Every RPG of 2027", canon("rpgs-2027.html")), ("Games like The Witcher 3", canon("games-like-the-witcher-3.html"))])
 
 
@@ -4837,7 +4837,7 @@ cp_faq = [("What games are like Cyberpunk 2077?", _and([x[0] for x in LIKE_CP]) 
           ("What is the closest game to Cyberpunk 2077?", "Deus Ex: Mankind Divided for augmentations and hacking, and The Outer Worlds 2 for a first-person RPG with choices."),
           ("What sci-fi RPGs come out in 2027?", _and([g["title"] + " (" + nice_date(g) + ")" for g in _cp_soon]) + ".")]
 page("games-like-cyberpunk-2077.html", "Games Like Cyberpunk 2077: 10 Picks & Cyberpunk 2 Date",
-     "Games like Cyberpunk 2077 on PS5, Xbox, Switch 2 and PC: Deus Ex, The Outer Worlds 2, Ghostrunner 2, plus 2027 sci-fi games like Exodus and the Cyberpunk 2 timeline.",
+     "Games like Cyberpunk 2077 on PS5, Xbox, Switch 2 and PC: Deus Ex, The Outer Worlds 2, Ghostrunner 2, plus 2027 sci-fi like Exodus and the Cyberpunk 2 timeline.",
      cp_body, 0, cp_faq, crumbs=[("Home", DOMAIN + "/"), ("Every RPG of 2027", canon("rpgs-2027.html")), ("Games like Cyberpunk 2077", canon("games-like-cyberpunk-2077.html"))])
 
 # ---------------- GAMES LIKE PERSONA 5 (27 Nov 2026, demand: "games like persona 5", "persona 6 release date", "persona 4 revival release date", DEMAND N54) ----------------
@@ -5196,7 +5196,7 @@ gw_faq = [("What games are like God of War?", _and([x[0] for x in LIKE_GW]) + ".
           ("What should I play before God of War Laufey?", "God of War (2018) and God of War Ragnarök. Laufey's story runs alongside both."),
           ("What action games come out in 2027?", _and([g["title"] + " (" + nice_date(g) + ")" for g in _gw_soon]) + ".")]
 page("games-like-god-of-war.html", "Games Like God of War: 11 Picks & the Laufey Countdown",
-     "Games like God of War on PS5, Xbox, Switch 2 and PC: Ragnarök, Black Myth: Wukong, Hellblade II and more, plus God of War Laufey (20 May 2027) and 2027 action games.",
+     "Games like God of War on PS5, Xbox, Switch 2 and PC: Ragnarök, Black Myth: Wukong, Hellblade II and more, plus God of War Laufey (20 May 2027).",
      gw_body, 0, gw_faq, crumbs=[("Home", DOMAIN + "/"), ("2027 games by genre", canon("games-by-genre-2027.html")), ("Games like God of War", canon("games-like-god-of-war.html"))])
 
 # ---------------- SEO files ----------------
