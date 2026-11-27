@@ -1,5 +1,10 @@
 ## SEO PLAYBOOK — standing rules for every run (Awais 26 Nov 01:35: "do SEO like the best SEO guy in the world for all sites")
 
+## DAILY RADAR 27 Nov 06:45 PKT (Google autocomplete US)
+- R5 OPEN 'after gta 6': 'can you still play gta 5', 'what is rockstar's next game', 'will there be gta 7' (all in autocomplete; 'still play gta 5' 0 pages): one 'What's next after GTA 6' guide.
+- R6 OPEN movies category children: 'movies 2027 kids', 'movies 2027 disney', 'movies 2027 horror' (autocomplete #4/#6/#7; 0 pages) as list pages under /movies-2027 (studio-confirmed dates only).
+- R7 OPEN 'new tv shows this week' (#5): a weekly-updated 'new TV shows this week' page linked from the monthly TV pages.
+
 ## EVENING RADAR 26 Nov 18:45 PKT (Google autocomplete US + Trends past 24h)
 - R1 DONE 26 Nov (H2 on /platforms/switch-2, auto-drops 5 Dec) 'switch 2 games black friday deals' / 'switch 2 games on sale' (autocomplete #1/#3): time-limited H2 on the Switch 2 page linking official store sales (no prices unless 2 sources), remove after Cyber Monday.
 - R2 OPEN 'new movies to stream / in theaters now' (#1/#4) supports the E1 movies category; start with 'movies coming out 2027'.
