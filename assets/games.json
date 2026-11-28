@@ -3845,6 +3845,120 @@
     }
    ],
    "sources": "Ubisoft News, Notebookcheck, God is a Geek, Game Informer"
+  },
+  {
+   "slug": "turok-origins",
+   "title": "Turok: Origins",
+   "date": null,
+   "window": "Spring 2027",
+   "month": 4,
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC",
+    "Switch 2"
+   ],
+   "dev": "Saber Interactive",
+   "genre": "Shooter",
+   "status": "delayed",
+   "page": false,
+   "about": "A new Turok shooter where you fight dinosaurs and an alien threat across the Lost Lands, and steal enemy DNA for suit powers. Playable in first or third person.",
+   "facts": [
+    "Due in spring 2027 on PS5, Xbox Series X|S, Switch 2 and PC (Steam).",
+    "It was delayed from fall 2026, announced with a story trailer at gamescom in August 2026.",
+    "You harvest DNA from enemies to unlock new suit powers.",
+    "Saber Interactive is behind it."
+   ],
+   "history": [
+    {
+     "when": "Aug 2026",
+     "text": "Delayed from fall 2026 to spring 2027."
+    }
+   ],
+   "sources": "Gematsu (25 Aug 2026), Nintendo Life, GamesBeat, Niche Gamer, Famitsu"
+  },
+  {
+   "slug": "clockwork-revolution",
+   "title": "Clockwork Revolution",
+   "date": null,
+   "window": "2027",
+   "month": 12,
+   "platforms": [
+    "Xbox Series X|S",
+    "PC"
+   ],
+   "dev": "inXile Entertainment",
+   "genre": "First-person shooter RPG",
+   "status": "window",
+   "page": false,
+   "about": "inXile's first-person action RPG set in Avalon, a Victorian steampunk city, where you travel back in time and change the past. An Xbox console exclusive.",
+   "facts": [
+    "Coming in 2027 to Xbox Series X|S and PC (Steam and Microsoft Store). Xbox console exclusive.",
+    "Developed by inXile Entertainment (Wasteland), published by Xbox Game Studios.",
+    "You play Morgan Vanette against the villain Lady Ironwood.",
+    "The 2027 window was given at the Xbox Games Showcase on 7 June 2026."
+   ],
+   "history": [
+    {
+     "when": "Jun 2026",
+     "text": "Xbox Games Showcase: set for 2027."
+    }
+   ],
+   "sources": "Gematsu (7 Jun 2026), Xbox Wire, GamesRadar+, Shacknews, RPG Site"
+  },
+  {
+   "slug": "rustown",
+   "title": "Rustown",
+   "date": "2027-06-30",
+   "window": "",
+   "month": 6,
+   "platforms": [
+    "Xbox Series X|S",
+    "PC"
+   ],
+   "dev": "Plotrick",
+   "genre": "Stealth adventure",
+   "status": "dated",
+   "page": false,
+   "about": "A story-driven post-apocalyptic stealth adventure set in a slum of the infected, five years after the 'idiot virus' pandemic, as you search for your missing father.",
+   "facts": [
+    "Out 30 June 2027 on Xbox Series X|S and PC (Steam and Microsoft Store).",
+    "Developed by Plotrick.",
+    "Set five years after a pandemic, in a slum where the infected live."
+   ],
+   "history": [
+    {
+     "when": "Oct 2026",
+     "text": "Dated for 30 June 2027."
+    }
+   ],
+   "sources": "Gematsu (20 Oct 2026), Game Informer 2027 calendar"
+  },
+  {
+   "slug": "ember-and-blade",
+   "title": "Ember and Blade",
+   "date": "2027-01-08",
+   "window": "",
+   "month": 1,
+   "platforms": [
+    "PC"
+   ],
+   "dev": "",
+   "genre": "Action roguelite",
+   "status": "dated",
+   "page": false,
+   "about": "Bullet-heaven combat meets Soulslike boss fights. Launches in Steam Early Access.",
+   "facts": [
+    "Enters Early Access on PC (Steam) on 8 January 2027.",
+    "Mixes bullet-heaven style combat with Soulslike bosses."
+   ],
+   "history": [
+    {
+     "when": "Oct 2026",
+     "text": "Early Access date set for 8 January 2027."
+    }
+   ],
+   "sources": "Gematsu, RPGamer, Final Weapon (Oct 2026)"
   }
  ]
 }
