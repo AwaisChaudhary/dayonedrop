@@ -1,3 +1,12 @@
+## COMPETITOR WATCH 28 Nov 2026 (daily; vs GamesRadar release dates (upd. 27 Nov), Game Informer /2027, Gematsu, RPGamer)
+We have 103 tracked games (60 exact dates, 43 windows), 87 pages. GamesRadar shows ~120 games in "TBC 2027".
+1. GAP: missing games with 2 sources agreeing. Plan: add to games.json next run: Ember and Blade 8 Jan 2027 PC Early Access (Gematsu + RPGamer); Rockbeasts January 2027 PS5/Xbox Series/Switch/PC (Gematsu + RPGamer; store "January", only GamesRadar gives 29 Jan); Rustown 30 Jun 2027 Xbox Series/PC (Gematsu + Game Informer); Turok: Origins Spring 2027 PS5/Xbox/Switch 2/PC (Gematsu + Nintendo Life); Clockwork Revolution 2027 Xbox Series/PC (Gematsu + GamesRadar); The Wolf Among Us 2 2027 (Gematsu + PC Gamer); Virtua Fighter Crossroads 2027 PC/PS5/Xbox (Gematsu + Engadget + Sega); Heroes of Might and Magic III Remake 2027 PC/PS5/Xbox (Ubisoft News + Notebookcheck). Re-check each before adding.
+2. GAP: window-only depth: GamesRadar ~120 TBC 2027, we have 43. Plan: +5 undated 2027 games per run with 2 sources; candidates after #1: Rainbow Six Tactics, Senua, Kena: Scars of Kosmora, Sea of Remnants.
+3. GAP: Game Informer lists small indie/Early Access launches daily; our January misses ~7. Plan: weekly Steam/eShop "coming soon" vs Gematsu/RPGamer check. One-source January dates to recheck: Polyaris, Grindworm, Sovereign Tower, Let's Build a Dungeon, Fool King, ReVamp. Disputed: Calx (GI 21 Jan vs GamesRadar early June) - hold.
+4. GAP: GamesRadar has 2028-2030 sections; we stop at 2027. Plan: start /games-2028 hub; first entry Tomb Raider: Catalyst (moved to 2028 per PC Gamer, VGC, Kotaku; GamesRadar still lists it under 2027 - check our games.json too).
+5. GAP: Game Informer links reviews for released games; we have none. Plan: "reviews" field in games.json shown on month pages from January (item 4 of 27 Nov).
+6. BETTER-THAN-THEM: both lists go stale (GamesRadar wrong on Tomb Raider, GI shows a 19 Jun byline and no updated date). Plan: every row shows "verified <date> · 2 sources" and a "moved to 2028" strikethrough: "the only release list where every date is hand-checked".
+
 ## COMPETITOR WATCH 27 Nov 2026 (vs Game Informer /2027, GamesRadar release dates (upd. 26 Oct), PC Gamer monthly tables, GameDropRadar date-change feed)
 
 ## REVENUE PUSH (Awais 28 Nov: $1,000/month by March; plan doc https://claude.ai/artifact/2qfQi3yzzfVwehKNF4748s)
