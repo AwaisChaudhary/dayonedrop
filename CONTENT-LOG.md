@@ -519,3 +519,11 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - Checked: node --check, preview + live build, seo_audit clean, Playwright 1280/390 on 8 pages (no errors, no overflow, filter + countdowns work).
 - IndexNow pending https://getdayonedrop.com/games-2028 https://getdayonedrop.com/shooter-games-2027 https://getdayonedrop.com/delayed-games-2027 https://getdayonedrop.com/game-pass-2027 https://getdayonedrop.com/games-by-genre-2027 https://getdayonedrop.com/tools https://getdayonedrop.com/months/january-2027 https://getdayonedrop.com/months/june-2027
 - IndexNow FLUSHED 2026-11-28 16:15 PKT (afternoon push, all 200)
+
+## 2026-11-28 (scheduled data check, evening)
+- Checked: Game Rant 2027 calendar (Jan-Apr) against the board, "delayed to 2027" news, Gematsu 2027 announcements, earlier "left out" list (ReVamp, Blood Bowl, Space Marine 2 Switch 2, Calx, Sagas of Lumin, Romancing SaGa 3). No date changes for tracked games.
+- Added 2 (board now 113): Crystals of Irm (delayed from fall 2026 to 21 Jan 2027, PS5/Xbox Series/PC + PS4/Xbox One/Switch 1; Gematsu, RPG Site, RPGamer, VGChartz), Sagas of Lumin (5 Feb 2027, PC; RPG Site, RPGamer, Game Rant).
+- Resolved: Romancing SaGa 3 4 Feb is correct (Square Enix moved it up from 16 Feb on 12 Nov; RPG Site, Final Weapon, Worthplaying). Game Rant/Shacknews still show the old 16 Feb.
+- Fixed: games.json re-sorted by month then date (Calame, Turok, Rustown, Ember and Blade were out of order).
+- Left out: ReVamp (Gematsu 25 Mar vs Rogueliker 27 Mar, still a conflict); Warhammer Blood Bowl (PC Gamer "early 2027" vs God is a Geek "spring 2027"); Space Marine 2 Switch 2 delay (GameWatcher only); Calx console date (Game Informer + Game Rant agree on 21 Jan but neither confirms platforms; Gematsu silent); Crystals of Irm developer name differs (Gematsu: Lots of Stuff, RPG Site: David Schütze, used Lots of Stuff); Game Rant "2027" TBAs (Rainbow Six Tactics, The Wolf Among Us 2, Wind Runners, The Lift, Ardem) not checked against a second source yet.
+- Checked build: node --check, preview + live build, Playwright on index, calendar, PS5, PC, January + February 2027 (no page errors, new games on the right pages).

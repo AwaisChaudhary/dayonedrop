@@ -72,6 +72,32 @@
    ]
   },
   {
+   "slug": "ember-and-blade",
+   "title": "Ember and Blade",
+   "date": "2027-01-08",
+   "window": "",
+   "month": 1,
+   "platforms": [
+    "PC"
+   ],
+   "dev": "",
+   "genre": "Action roguelite",
+   "status": "dated",
+   "page": false,
+   "about": "Bullet-heaven combat meets Soulslike boss fights. Launches in Steam Early Access.",
+   "facts": [
+    "Enters Early Access on PC (Steam) on 8 January 2027.",
+    "Mixes bullet-heaven style combat with Soulslike bosses."
+   ],
+   "history": [
+    {
+     "when": "Oct 2026",
+     "text": "Early Access date set for 8 January 2027."
+    }
+   ],
+   "sources": "Gematsu, RPGamer, Final Weapon (Oct 2026)"
+  },
+  {
    "slug": "danganronpa-2x2",
    "title": "Danganronpa 2x2",
    "platforms": [
@@ -541,6 +567,40 @@
    ],
    "sources": "Gematsu, Game Informer (Oct-Nov 2026)",
    "month": 1
+  },
+  {
+   "slug": "crystals-of-irm",
+   "title": "Crystals of Irm",
+   "date": "2027-01-21",
+   "window": "",
+   "month": 1,
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC"
+   ],
+   "dev": "Lots of Stuff",
+   "genre": "RPG",
+   "status": "delayed",
+   "page": false,
+   "about": "An old-school dungeon-crawling RPG where three heroes travel the land of Irm to recover its lost red, blue and green crystals. Out 21 January 2027 on PS5, Xbox Series X|S and PC.",
+   "facts": [
+    "Published by Deck13 Spotlight.",
+    "Grid-based battles where movement matters, plus dungeon crawling.",
+    "Also coming to PS4, Xbox One and the original Switch on the same day."
+   ],
+   "history": [
+    {
+     "when": "Nov 2026",
+     "text": "Delayed from fall 2026 to 21 January 2027."
+    }
+   ],
+   "sources": "Gematsu, RPG Site, RPGamer, VGChartz (Nov 2026)",
+   "lastgen": [
+    "PS4",
+    "Xbox One",
+    "Switch"
+   ]
   },
   {
    "slug": "forza-horizon-6",
@@ -1020,6 +1080,33 @@
    "lastgen": [
     "Switch"
    ]
+  },
+  {
+   "slug": "sagas-of-lumin",
+   "title": "Sagas of Lumin",
+   "date": "2027-02-05",
+   "window": "",
+   "month": 2,
+   "platforms": [
+    "PC"
+   ],
+   "dev": "Elos Games & Arts",
+   "genre": "Open-world RPG",
+   "status": "dated",
+   "page": false,
+   "about": "An open-world RPG built around fighting from the back of a dragon. Full release on PC (Steam) on 5 February 2027.",
+   "facts": [
+    "Published by GameDev.ist.",
+    "Skipped its planned Steam Early Access and goes straight to a full release.",
+    "PC only (Steam) at launch."
+   ],
+   "history": [
+    {
+     "when": "Aug 2026",
+     "text": "Release date set: 5 February 2027."
+    }
+   ],
+   "sources": "RPG Site, RPGamer, Game Rant (2026)"
   },
   {
    "slug": "outward-2",
@@ -1541,6 +1628,40 @@
    "lastgen": [
     "Switch"
    ]
+  },
+  {
+   "slug": "calame",
+   "title": "Calame",
+   "date": null,
+   "window": "February 2027",
+   "month": 2,
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC"
+   ],
+   "dev": "Nextale Games",
+   "genre": "Tactical RPG",
+   "status": "delayed",
+   "page": false,
+   "about": "Calame is a single-player, turn-based tactical RPG from Nextale Games, based on a French fantasy novel series. It is due in February 2027.",
+   "facts": [
+    "Coming to PS5, Xbox Series X|S and PC (Steam) in February 2027. No exact day yet.",
+    "Its Correction mechanic lets you reshape the battlefield terrain in the middle of a fight.",
+    "Choices at camp and in story events shift the Rebellion's alignment and unlock passive traits.",
+    "A PC demo is available on Steam."
+   ],
+   "history": [
+    {
+     "when": "2026",
+     "text": "Planned for 2026 on PC, with consoles in 2027."
+    },
+    {
+     "when": "Nov 2026",
+     "text": "All versions moved to February 2027."
+    }
+   ],
+   "sources": "Gematsu, RPG Site, RPGamer, Worthplaying"
   },
   {
    "slug": "eternal-anima",
@@ -2606,6 +2727,37 @@
    "sources": "Gematsu, Final Weapon, KeenGamer (Oct-Nov 2026)"
   },
   {
+   "slug": "turok-origins",
+   "title": "Turok: Origins",
+   "date": null,
+   "window": "Spring 2027",
+   "month": 4,
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC",
+    "Switch 2"
+   ],
+   "dev": "Saber Interactive",
+   "genre": "Shooter",
+   "status": "delayed",
+   "page": false,
+   "about": "A new Turok shooter where you fight dinosaurs and an alien threat across the Lost Lands, and steal enemy DNA for suit powers. Playable in first or third person.",
+   "facts": [
+    "Due in spring 2027 on PS5, Xbox Series X|S, Switch 2 and PC (Steam).",
+    "It was delayed from fall 2026, announced with a story trailer at gamescom in August 2026.",
+    "You harvest DNA from enemies to unlock new suit powers.",
+    "Saber Interactive is behind it."
+   ],
+   "history": [
+    {
+     "when": "Aug 2026",
+     "text": "Delayed from fall 2026 to spring 2027."
+    }
+   ],
+   "sources": "Gematsu (25 Aug 2026), Nintendo Life, GamesBeat, Niche Gamer, Famitsu"
+  },
+  {
    "slug": "god-of-war-laufey",
    "title": "God of War: Laufey",
    "date": "2027-05-20",
@@ -2664,6 +2816,34 @@
      "It helps. Laufey's story runs alongside both games, so playing them first gives the most context."
     ]
    ]
+  },
+  {
+   "slug": "rustown",
+   "title": "Rustown",
+   "date": "2027-06-30",
+   "window": "",
+   "month": 6,
+   "platforms": [
+    "Xbox Series X|S",
+    "PC"
+   ],
+   "dev": "Plotrick",
+   "genre": "Stealth adventure",
+   "status": "dated",
+   "page": false,
+   "about": "A story-driven post-apocalyptic stealth adventure set in a slum of the infected, five years after the 'idiot virus' pandemic, as you search for your missing father.",
+   "facts": [
+    "Out 30 June 2027 on Xbox Series X|S and PC (Steam and Microsoft Store).",
+    "Developed by Plotrick.",
+    "Set five years after a pandemic, in a slum where the infected live."
+   ],
+   "history": [
+    {
+     "when": "Oct 2026",
+     "text": "Dated for 30 June 2027."
+    }
+   ],
+   "sources": "Gematsu (20 Oct 2026), Game Informer 2027 calendar"
   },
   {
    "slug": "hunter-the-reckoning-deathwish",
@@ -3635,40 +3815,6 @@
    ]
   },
   {
-   "slug": "calame",
-   "title": "Calame",
-   "date": null,
-   "window": "February 2027",
-   "month": 2,
-   "platforms": [
-    "PS5",
-    "Xbox Series X|S",
-    "PC"
-   ],
-   "dev": "Nextale Games",
-   "genre": "Tactical RPG",
-   "status": "delayed",
-   "page": false,
-   "about": "Calame is a single-player, turn-based tactical RPG from Nextale Games, based on a French fantasy novel series. It is due in February 2027.",
-   "facts": [
-    "Coming to PS5, Xbox Series X|S and PC (Steam) in February 2027. No exact day yet.",
-    "Its Correction mechanic lets you reshape the battlefield terrain in the middle of a fight.",
-    "Choices at camp and in story events shift the Rebellion's alignment and unlock passive traits.",
-    "A PC demo is available on Steam."
-   ],
-   "history": [
-    {
-     "when": "2026",
-     "text": "Planned for 2026 on PC, with consoles in 2027."
-    },
-    {
-     "when": "Nov 2026",
-     "text": "All versions moved to February 2027."
-    }
-   ],
-   "sources": "Gematsu, RPG Site, RPGamer, Worthplaying"
-  },
-  {
    "slug": "kingdom-iii-rising-realms",
    "title": "Kingdom III: Rising Realms",
    "date": null,
@@ -3847,37 +3993,6 @@
    "sources": "Ubisoft News, Notebookcheck, God is a Geek, Game Informer"
   },
   {
-   "slug": "turok-origins",
-   "title": "Turok: Origins",
-   "date": null,
-   "window": "Spring 2027",
-   "month": 4,
-   "platforms": [
-    "PS5",
-    "Xbox Series X|S",
-    "PC",
-    "Switch 2"
-   ],
-   "dev": "Saber Interactive",
-   "genre": "Shooter",
-   "status": "delayed",
-   "page": false,
-   "about": "A new Turok shooter where you fight dinosaurs and an alien threat across the Lost Lands, and steal enemy DNA for suit powers. Playable in first or third person.",
-   "facts": [
-    "Due in spring 2027 on PS5, Xbox Series X|S, Switch 2 and PC (Steam).",
-    "It was delayed from fall 2026, announced with a story trailer at gamescom in August 2026.",
-    "You harvest DNA from enemies to unlock new suit powers.",
-    "Saber Interactive is behind it."
-   ],
-   "history": [
-    {
-     "when": "Aug 2026",
-     "text": "Delayed from fall 2026 to spring 2027."
-    }
-   ],
-   "sources": "Gematsu (25 Aug 2026), Nintendo Life, GamesBeat, Niche Gamer, Famitsu"
-  },
-  {
    "slug": "clockwork-revolution",
    "title": "Clockwork Revolution",
    "date": null,
@@ -3905,60 +4020,6 @@
     }
    ],
    "sources": "Gematsu (7 Jun 2026), Xbox Wire, GamesRadar+, Shacknews, RPG Site"
-  },
-  {
-   "slug": "rustown",
-   "title": "Rustown",
-   "date": "2027-06-30",
-   "window": "",
-   "month": 6,
-   "platforms": [
-    "Xbox Series X|S",
-    "PC"
-   ],
-   "dev": "Plotrick",
-   "genre": "Stealth adventure",
-   "status": "dated",
-   "page": false,
-   "about": "A story-driven post-apocalyptic stealth adventure set in a slum of the infected, five years after the 'idiot virus' pandemic, as you search for your missing father.",
-   "facts": [
-    "Out 30 June 2027 on Xbox Series X|S and PC (Steam and Microsoft Store).",
-    "Developed by Plotrick.",
-    "Set five years after a pandemic, in a slum where the infected live."
-   ],
-   "history": [
-    {
-     "when": "Oct 2026",
-     "text": "Dated for 30 June 2027."
-    }
-   ],
-   "sources": "Gematsu (20 Oct 2026), Game Informer 2027 calendar"
-  },
-  {
-   "slug": "ember-and-blade",
-   "title": "Ember and Blade",
-   "date": "2027-01-08",
-   "window": "",
-   "month": 1,
-   "platforms": [
-    "PC"
-   ],
-   "dev": "",
-   "genre": "Action roguelite",
-   "status": "dated",
-   "page": false,
-   "about": "Bullet-heaven combat meets Soulslike boss fights. Launches in Steam Early Access.",
-   "facts": [
-    "Enters Early Access on PC (Steam) on 8 January 2027.",
-    "Mixes bullet-heaven style combat with Soulslike bosses."
-   ],
-   "history": [
-    {
-     "when": "Oct 2026",
-     "text": "Early Access date set for 8 January 2027."
-    }
-   ],
-   "sources": "Gematsu, RPGamer, Final Weapon (Oct 2026)"
   }
  ]
 }
