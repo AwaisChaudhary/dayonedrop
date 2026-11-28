@@ -514,6 +514,35 @@
    "sources": "Gematsu, RPGamer, Noisy Pixel (26 Nov 2026)"
   },
   {
+   "window": "",
+   "status": "dated",
+   "page": false,
+   "history": [
+    {
+     "when": "Oct 2026",
+     "text": "Release date set: 21 January 2027."
+    }
+   ],
+   "slug": "lelu",
+   "title": "Lelu",
+   "date": "2027-01-21",
+   "platforms": [
+    "Xbox Series X|S",
+    "PC",
+    "Switch 2"
+   ],
+   "dev": "Jamie Rowan",
+   "genre": "Metroidvania",
+   "about": "A black-and-white metroidvania about a clockwork toy that wakes up and tries to escape a maze-like toy factory. Out 21 January 2027 on Xbox Series X|S, Switch 2 and PC.",
+   "facts": [
+    "Published by Super Rare Originals and Electronic Sheep Games.",
+    "Monochrome art style, with puzzles, traps and clockwork boss fights.",
+    "Launches 21 January 2027 on Xbox Series X|S, Switch 2 and PC (Steam)."
+   ],
+   "sources": "Gematsu, Game Informer (Oct-Nov 2026)",
+   "month": 1
+  },
+  {
    "slug": "forza-horizon-6",
    "title": "Forza Horizon 6",
    "platforms": [
@@ -549,18 +578,26 @@
    "slug": "everything-is-crab",
    "title": "Everything is Crab",
    "platforms": [
+    "PS5",
+    "Xbox Series X|S",
     "Switch 2"
    ],
    "dev": "",
    "genre": "Roguelite",
    "page": false,
    "facts": [],
-   "history": [],
+   "history": [
+    {
+     "when": "Nov 2026",
+     "text": "PS5 and Xbox Series X|S versions confirmed for the same 26 January 2027 date as Switch 2."
+    }
+   ],
    "date": "2027-01-26",
    "window": "",
    "month": 1,
    "status": "dated",
-   "about": "An evolution roguelite where every path leads to becoming a crab, coming to Switch 2."
+   "about": "An evolution roguelite where every path leads to becoming a crab. Already out on PC, it comes to PS5, Xbox Series X|S and Switch 2 (plus the original Switch) on 26 January 2027.",
+   "sources": "VGChartz, Game Informer (Nov 2026)"
   },
   {
    "slug": "caladrius-2-dark-element",
@@ -829,6 +866,39 @@
    ]
   },
   {
+   "window": "",
+   "status": "dated",
+   "page": false,
+   "history": [
+    {
+     "when": "Feb 2026",
+     "text": "Nioh 3 launched on PS5 and PC."
+    },
+    {
+     "when": "Nov 2026",
+     "text": "Complete Edition dated for 28 January 2027, including Xbox Series X|S."
+    }
+   ],
+   "slug": "nioh-3-complete-edition",
+   "title": "Nioh 3: Complete Edition",
+   "date": "2027-01-28",
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC"
+   ],
+   "dev": "Team Ninja",
+   "genre": "Action RPG",
+   "about": "Team Ninja's samurai action RPG makes its Xbox debut on 28 January 2027 with a Complete Edition, which also releases on PS5 and PC.",
+   "facts": [
+    "Nioh 3 launched on PS5 and PC in February 2026, with a six-month PS5 console exclusivity window.",
+    "The Complete Edition is the first Nioh 3 release on Xbox Series X|S.",
+    "Published by Koei Tecmo."
+   ],
+   "sources": "Game Informer, God is a Geek (Nov 2026)",
+   "month": 1
+  },
+  {
    "slug": "elta-defy-all-gods",
    "title": "Elta: Defy All Gods",
    "platforms": [
@@ -1018,6 +1088,35 @@
    ]
   },
   {
+   "window": "",
+   "status": "dated",
+   "page": false,
+   "history": [
+    {
+     "when": "Sep 2026",
+     "text": "Announced for the West with an 11 February 2027 date."
+    }
+   ],
+   "slug": "astonishia-story",
+   "title": "Astonishia Story",
+   "date": "2027-02-11",
+   "platforms": [
+    "PS5",
+    "PC",
+    "Switch 2"
+   ],
+   "dev": "Daewon Media / Waycoder",
+   "genre": "Tactical RPG",
+   "about": "An updated release of the 1994 Korean RPG, with grid-based battles and new visuals, published in the West by NIS America on 11 February 2027.",
+   "facts": [
+    "Published by NIS America.",
+    "Grid-based tactical battles with recruitable mercenaries.",
+    "Also on the original Switch; launches 11 February 2027 in Japan, North America and Europe."
+   ],
+   "sources": "Gematsu, RPG Site, Shacknews (Sep-Nov 2026)",
+   "month": 2
+  },
+  {
    "slug": "tomb-raider-legacy-of-atlantis",
    "title": "Tomb Raider: Legacy of Atlantis",
    "date": "2027-02-12",
@@ -1199,6 +1298,40 @@
      "text": "Release date set for 18 February 2027."
     }
    ]
+  },
+  {
+   "window": "",
+   "status": "delayed",
+   "page": false,
+   "history": [
+    {
+     "when": "Oct 2026",
+     "text": "Dated for 3 December 2026."
+    },
+    {
+     "when": "Nov 2026",
+     "text": "Delayed from 3 December 2026 to 19 February 2027."
+    }
+   ],
+   "slug": "the-road-of-dust-and-sorrow",
+   "title": "The Road of Dust and Sorrow",
+   "date": "2027-02-19",
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC",
+    "Switch 2"
+   ],
+   "dev": "Painted Black Games",
+   "genre": "Survival horror",
+   "about": "A story-driven pixel-art horror adventure about a mother and daughter surviving a famine-struck land of feral 'Dusters'. Delayed to 19 February 2027.",
+   "facts": [
+    "Published with Silver Lining Interactive.",
+    "Inspired by classic survival horror, with exploration and puzzles.",
+    "Also on the original Switch; a physical PS5 edition is planned."
+   ],
+   "sources": "Final Weapon, Nintendo Everything, Game Informer (Nov 2026)",
+   "month": 2
   },
   {
    "slug": "fable",
