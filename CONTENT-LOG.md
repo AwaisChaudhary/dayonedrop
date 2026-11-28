@@ -473,3 +473,12 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - Remaining: none.
 - Checked 390px render: /games-like-hades, /games-like-god-of-war: no JS errors, no overflow.
 - IndexNow pending: https://getdayonedrop.com/games-like-baldurs-gate-3 https://getdayonedrop.com/games-like-cyberpunk-2077 https://getdayonedrop.com/games-like-god-of-war https://getdayonedrop.com/games-like-hades https://getdayonedrop.com/games-like-the-witcher-3
+
+## 2026-11-28 (scheduled demand run, third pass)
+- NEW https://getdayonedrop.com/games-like-ghost-of-tsushima : "games like ghost of tsushima" + "ghost of yotei pc release date". 10 picks with platform/taste filter, 6 2027 samurai/sword games from games.json (Wo Long 2 countdown), Ghost of Yotei PC (not announced; Bloomberg Mar 2026 report via Kotaku + Engadget, Sony no comment), AC Hexe late 2027 = reports only, FAQ.
+- NEW https://getdayonedrop.com/games-like-monster-hunter : "games like monster hunter" + "monster hunter wilds expansion release date". 10 picks with filter, 6 2027 hunting/co-op games, Ascendance 2027, Wilds Switch 2 (4 Dec 2026), Monster Hunter 7 not announced, FAQ.
+- NEW guide https://getdayonedrop.com/games/monster-hunter-wilds-ascendance : added to games.json (2027, PS5/Xbox Series X|S/PC; Capcom IR 8 Jun 2026, Gematsu, RPG Site, PC Gamer, GamesRadar+, Shacknews). Board now 96.
+- REFRESH /exclusives-2027: "Will 2027 PS5 exclusives come to PC later?" H2 + FAQ (Bloomberg report). REFRESH /games-like-god-of-war: Laufey PC answer updated with the same report, Ghost link.
+- Links in: footer, /tools, /games-by-genre-2027, /games-like-god-of-war, /exclusives-2027, game pages (Wo Long 2, Muramasa, Stranger Than Heaven, Wandering Sword, Showa American Story, Horizon Steel Frontiers, The Duskbloods, Lords of the Fallen II, Ascendance).
+- Checked: node --check, preview + live build, seo_audit clean, Playwright 1280/390 (no errors, no overflow, filters work).
+- IndexNow pending https://getdayonedrop.com/games-like-ghost-of-tsushima https://getdayonedrop.com/games-like-monster-hunter https://getdayonedrop.com/games/monster-hunter-wilds-ascendance https://getdayonedrop.com/exclusives-2027 https://getdayonedrop.com/games-like-god-of-war https://getdayonedrop.com/tools https://getdayonedrop.com/games-by-genre-2027 https://getdayonedrop.com/later-2027
