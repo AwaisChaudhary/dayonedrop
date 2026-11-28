@@ -2758,6 +2758,39 @@
    "sources": "Gematsu (25 Aug 2026), Nintendo Life, GamesBeat, Niche Gamer, Famitsu"
   },
   {
+   "slug": "everbloom",
+   "title": "Everbloom",
+   "date": null,
+   "window": "Spring 2027",
+   "month": 4,
+   "platforms": [
+    "PC",
+    "Switch 2"
+   ],
+   "dev": "Former Astroneer developers",
+   "genre": "Farming sim",
+   "status": "window",
+   "page": false,
+   "about": "A cozy open-world farming and social sim with animal villagers, from former Astroneer developers. Due in spring 2027 on PC and Switch 2.",
+   "facts": [
+    "A cozy open-world farming and life sim with animal villagers.",
+    "Made by a team of former Astroneer developers.",
+    "Due in spring 2027; no exact day yet.",
+    "Coming to PC (Steam) and Nintendo Switch 2."
+   ],
+   "history": [
+    {
+     "when": "Aug 2024",
+     "text": "Announced for PC."
+    },
+    {
+     "when": "Jun 2026",
+     "text": "Switch 2 version added and a spring 2027 window set."
+    }
+   ],
+   "sources": "Gematsu, Final Weapon, Nintendo Everything (Jun 2026)"
+  },
+  {
    "slug": "god-of-war-laufey",
    "title": "God of War: Laufey",
    "date": "2027-05-20",
@@ -4020,6 +4053,33 @@
     }
    ],
    "sources": "Gematsu (7 Jun 2026), Xbox Wire, GamesRadar+, Shacknews, RPG Site"
+  },
+  {
+   "slug": "dungeons-and-dragons-long-rest-tavern",
+   "title": "Dungeons & Dragons: Long Rest Tavern",
+   "date": null,
+   "window": "2027",
+   "month": 12,
+   "platforms": [
+    "PC"
+   ],
+   "dev": "Dotemu (publisher)",
+   "genre": "Life sim",
+   "status": "window",
+   "page": false,
+   "about": "A cozy tavern management sim set in the D&D Forgotten Realms: build your inn and serve adventurers between quests. Due on PC in 2027.",
+   "facts": [
+    "Cozy tavern-building and management sim in the Dungeons & Dragons world.",
+    "Published by Dotemu.",
+    "Due in 2027 on PC (Steam); no month yet."
+   ],
+   "history": [
+    {
+     "when": "Aug 2026",
+     "text": "Announced for PC in 2027."
+    }
+   ],
+   "sources": "Gematsu, Game Informer, GamesRadar+ (Aug-Sep 2026)"
   }
  ]
 }
