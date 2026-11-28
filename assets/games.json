@@ -3726,6 +3726,125 @@
     }
    ],
    "sources": "Gematsu, PCGamesN, Worthplaying, Niche Gamer"
+  },
+  {
+   "slug": "hitman-classic-trilogy-remastered",
+   "title": "Hitman Classic Trilogy Remastered",
+   "date": null,
+   "window": "2027",
+   "month": 12,
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC"
+   ],
+   "dev": "Saber Interactive",
+   "genre": "Stealth action",
+   "status": "window",
+   "page": false,
+   "about": "A remaster of the first three Hitman games (Codename 47, Silent Assassin and Contracts) by Saber Interactive. Due in 2027 on PS5, Xbox Series X|S and PC.",
+   "facts": [
+    "Bundles the three original Hitman games with improved graphics.",
+    "Made by Saber Interactive.",
+    "Coming in 2027 on PS5, Xbox Series X|S and PC (Steam). No Switch 2 version announced.",
+    "Announced at Summer Game Fest week in June 2026."
+   ],
+   "history": [
+    {
+     "when": "Jun 2026",
+     "text": "Announced for 2027 on PS5, Xbox Series X|S and PC."
+    }
+   ],
+   "sources": "Xbox Wire, Gematsu, VGC, Shacknews, Pure Xbox"
+  },
+  {
+   "slug": "frostpunk-1886",
+   "title": "Frostpunk 1886",
+   "date": null,
+   "window": "2027",
+   "month": 12,
+   "platforms": [
+    "PC"
+   ],
+   "dev": "11 bit studios",
+   "genre": "City builder",
+   "status": "window",
+   "page": false,
+   "about": "11 bit studios' remake of the original Frostpunk in Unreal Engine 5, with new content, laws and mod support. Due in 2027.",
+   "facts": [
+    "A reimagining of the first Frostpunk (2018), not a sequel.",
+    "Rebuilt in Unreal Engine 5 with new content, mechanics and laws.",
+    "Adds mod support.",
+    "11 bit studios has said 2027; PC is confirmed."
+   ],
+   "history": [
+    {
+     "when": "Apr 2025",
+     "text": "Announced for 2027."
+    }
+   ],
+   "sources": "11 bit studios, Gematsu, PC Gamer, Game Informer, GamingBolt"
+  },
+  {
+   "slug": "professor-layton-and-the-curious-village-remake",
+   "title": "Professor Layton and the Curious Village Remake",
+   "date": null,
+   "window": "2027",
+   "month": 12,
+   "platforms": [
+    "PS5",
+    "Switch 2",
+    "PC"
+   ],
+   "lastgen": [
+    "Switch"
+   ],
+   "dev": "Level-5",
+   "genre": "Puzzle adventure",
+   "status": "window",
+   "page": false,
+   "about": "Level-5's remake of the first Professor Layton puzzle adventure from the Nintendo DS. Due in 2027 on PS5, Switch 2, Switch and PC.",
+   "facts": [
+    "A remake of the 2007 Nintendo DS original.",
+    "Coming to PS5, Switch 2, Switch and PC in 2027.",
+    "Announced by Level-5 in September 2026."
+   ],
+   "history": [
+    {
+     "when": "Sep 2026",
+     "text": "Announced for 2027 on PS5, Switch 2, Switch and PC."
+    }
+   ],
+   "sources": "Gematsu, Push Square, Siliconera, Nintendo Wire"
+  },
+  {
+   "slug": "heroes-of-might-and-magic-iii-remake",
+   "title": "Heroes of Might and Magic III Remake",
+   "date": null,
+   "window": "2027",
+   "month": 12,
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC"
+   ],
+   "dev": "Ubisoft",
+   "genre": "Strategy",
+   "status": "window",
+   "page": false,
+   "about": "A full 3D remake of the 1999 turn-based strategy classic. Ubisoft says it returns to Erathia in 2027.",
+   "facts": [
+    "A full 3D remake of Heroes of Might and Magic III (1999).",
+    "Ubisoft announced it on 25 August 2026 for 2027.",
+    "Turn-based strategy: build towns, recruit heroes and armies, fight on hex grids."
+   ],
+   "history": [
+    {
+     "when": "25 Aug 2026",
+     "text": "Announced for 2027."
+    }
+   ],
+   "sources": "Ubisoft News, Notebookcheck, God is a Geek, Game Informer"
   }
  ]
 }

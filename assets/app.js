@@ -420,7 +420,7 @@
       fshown = [];
       frows.forEach(function (r) {
         var ok = !fsel.p || r.getAttribute("data-fplat").split("|").indexOf(fsel.p) > -1;
-        r.hidden = !ok; if (ok) fshown.push(r.getAttribute("data-slug"));
+        r.hidden = !ok; if (ok) fshown.push(r.getAttribute("data-slug") || "");
       });
       $$("[data-fg-p]", fgt).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-fg-p") === fsel.p ? "true" : "false"); });
       fcount.textContent = fshown.length + " " + (fgt.getAttribute("data-noun") || "fighting game") + (fshown.length === 1 ? "" : "s") + (fsel.p ? " on " + fsel.p : "");
@@ -431,7 +431,7 @@
     var fadd = $("#fg-add");
     if (fadd) fadd.addEventListener("click", function () {
       var before = WL.length;
-      WL = Array.from(new Set(WL.concat(fshown))); store.set("dod-watch", WL); syncStars();
+      WL = Array.from(new Set(WL.concat(fshown.filter(function (x) { return x; })))); store.set("dod-watch", WL); syncStars();
       toast((WL.length - before) + " games added to your ★ list");
     });
     drawFg();

@@ -1,6 +1,6 @@
 {
 "about.html": [
-"5eb3797a83c6ebdf",
+"4aad113b2decb91b",
 "2026-11-28"
 ],
 "after-gta-6.html": [
@@ -20,7 +20,7 @@
 "2026-11-28"
 ],
 "calendar.html": [
-"5eb3d26efab8a44b",
+"49bae5e4f0c180bf",
 "2026-11-28"
 ],
 "countdown.html": [
@@ -31,12 +31,16 @@
 "f4e7643d8f732261",
 "2026-11-28"
 ],
+"dlc-2027.html": [
+"114b27ab549276d4",
+"2026-11-28"
+],
 "epic-free-games.html": [
 "48ba2dc54fd71fcd",
 "2026-11-27"
 ],
 "exclusives-2027.html": [
-"e14c4445e1590ae3",
+"3c36e9e6ebaf3476",
 "2026-11-28"
 ],
 "fighting-games-2027.html": [
@@ -48,11 +52,11 @@
 "2026-11-28"
 ],
 "game-pass-2027.html": [
-"ca952e657c5001eb",
+"875d37db0851e7da",
 "2026-11-28"
 ],
 "games-by-genre-2027.html": [
-"40733675d4036a4f",
+"546d27ad1815498c",
 "2026-11-28"
 ],
 "games-december-2026.html": [
@@ -101,6 +105,10 @@
 ],
 "games-like-hades.html": [
 "359bb9e067c3e2a3",
+"2026-11-28"
+],
+"games-like-hitman.html": [
+"8a06ff64bd99bf85",
 "2026-11-28"
 ],
 "games-like-hollow-knight.html": [
@@ -160,15 +168,15 @@
 "2026-11-28"
 ],
 "games-without-release-date-2027.html": [
-"0932b536e614cd72",
+"e48edf6b98404d7a",
 "2026-11-28"
 ],
 "games.html": [
-"dc1d1f941416b0c3",
+"f8c28b4a6914a874",
 "2026-11-28"
 ],
 "games/007-first-light.html": [
-"16e77fc9a3ec0eed",
+"fff0f9440aba61b3",
 "2026-11-28"
 ],
 "games/ananta.html": [
@@ -176,7 +184,7 @@
 "2026-11-28"
 ],
 "games/danganronpa-2x2.html": [
-"41e9018e93575965",
+"3e6d5a3a79a9a386",
 "2026-11-28"
 ],
 "games/exodus.html": [
@@ -188,11 +196,11 @@
 "2026-11-28"
 ],
 "games/final-fantasy-vii-revelation.html": [
-"f4d4c4039fca57e5",
+"a433cf442afa46c6",
 "2026-11-28"
 ],
 "games/final-fantasy-xiv-evercold.html": [
-"f4945552d0631c5d",
+"8636c23113b2a118",
 "2026-11-28"
 ],
 "games/forza-horizon-6.html": [
@@ -200,7 +208,7 @@
 "2026-11-28"
 ],
 "games/game-of-thrones-war-for-westeros.html": [
-"ab721839d06c01a0",
+"7ce37b0c65d6c049",
 "2026-11-28"
 ],
 "games/god-of-war-laufey.html": [
@@ -208,19 +216,19 @@
 "2026-11-28"
 ],
 "games/hyrule-warriors-age-of-calamity-definitive-edition.html": [
-"f1f1337857ab4ff6",
+"77b5d7bc444db4f6",
 "2026-11-28"
 ],
 "games/kingdom-hearts-iv.html": [
-"123897ac72d9679b",
+"800963c85c24c379",
 "2026-11-28"
 ],
 "games/kirby-and-the-world-beyond.html": [
-"578df61964556e22",
+"ecb8ede10ff474ad",
 "2026-11-28"
 ],
 "games/lords-of-the-fallen-ii.html": [
-"d28625513de27c12",
+"04b2f6a739a61101",
 "2026-11-28"
 ],
 "games/metro-2039.html": [
@@ -232,31 +240,31 @@
 "2026-11-28"
 ],
 "games/monster-hunter-wilds-ascendance.html": [
-"0a56fab576656a9d",
+"84b062c7cb0ae1a6",
 "2026-11-28"
 ],
 "games/persona-4-revival.html": [
-"008b55150d37fb36",
+"da6156c921a47de2",
 "2026-11-28"
 ],
 "games/pokemon-winds-and-waves.html": [
-"ba028c523ca0a78f",
+"7caa702d38be7925",
 "2026-11-28"
 ],
 "games/resident-evil-veronica.html": [
-"4deb4708f48e068a",
+"26d7fda403a1d792",
 "2026-11-28"
 ],
 "games/spyro-a-realm-beyond.html": [
-"66f505bc52871db1",
+"3c7314070ca1b4a5",
 "2026-11-28"
 ],
 "games/squadron-42.html": [
-"8e463990ae8c0938",
+"43ba4064999aca59",
 "2026-11-28"
 ],
 "games/state-of-decay-3.html": [
-"8cd1aa59f5fd432c",
+"c23afce073e950a3",
 "2026-11-28"
 ],
 "games/stranger-than-heaven.html": [
@@ -264,11 +272,11 @@
 "2026-11-28"
 ],
 "games/the-duskbloods.html": [
-"e67c8f159e6acb6c",
+"123afe6350eae7c0",
 "2026-11-28"
 ],
 "games/the-witcher-3-songs-of-the-past.html": [
-"c9c5a4068a6ccfa9",
+"e256d8bd9e368d44",
 "2026-11-28"
 ],
 "games/titan-quest-ii.html": [
@@ -276,7 +284,7 @@
 "2026-11-28"
 ],
 "games/tomb-raider-legacy-of-atlantis.html": [
-"faa21e8a8ed8839f",
+"0749032c54d3a75d",
 "2026-11-28"
 ],
 "games/until-dawn-2.html": [
@@ -296,7 +304,7 @@
 "2026-11-28"
 ],
 "games/xenoblade-genesis.html": [
-"6ca87d0c6b5721cc",
+"378127606397bbe4",
 "2026-11-28"
 ],
 "gta-6-pc-release-date.html": [
@@ -308,15 +316,15 @@
 "2026-11-28"
 ],
 "index.html": [
-"ae9b50d946ffa268",
+"ad156748b4120c7d",
 "2026-11-28"
 ],
 "last-gen-games-2027.html": [
-"846ec81a5949d63b",
+"e8b1109e73f25bb2",
 "2026-11-28"
 ],
 "later-2027.html": [
-"23bed3a0cfbc457f",
+"1ad75be6eea003dc",
 "2026-11-28"
 ],
 "months/april-2027.html": [
@@ -364,23 +372,23 @@
 "2026-11-28"
 ],
 "nintendo-direct.html": [
-"28da2b1453e28115",
+"105e7d4bfc314bd5",
 "2026-11-28"
 ],
 "platforms/pc.html": [
-"c7195222c511f8f3",
+"866d042e30ae10a4",
 "2026-11-28"
 ],
 "platforms/ps5.html": [
-"18820dea0b4ef4e3",
+"f601379e2ac4b37e",
 "2026-11-28"
 ],
 "platforms/switch-2.html": [
-"2c30f5f30f463cb6",
+"658954675d2848ca",
 "2026-11-28"
 ],
 "platforms/xbox-series.html": [
-"8c276ab712a028b9",
+"444037649f451953",
 "2026-11-28"
 ],
 "privacy.html": [
@@ -395,6 +403,10 @@
 "edec4be0e54ab6d4",
 "2026-11-28"
 ],
+"remakes-2027.html": [
+"161810e534dce570",
+"2026-11-28"
+],
 "rpgs-2027.html": [
 "13c55b22740f5e0a",
 "2026-11-28"
@@ -404,11 +416,11 @@
 "2026-11-28"
 ],
 "strategy-games-2027.html": [
-"aa693c9b1cbb464a",
+"e5f5f99926915bae",
 "2026-11-28"
 ],
 "tools.html": [
-"51f5e8ddbd586d46",
+"08f05c2b1bdf9007",
 "2026-11-28"
 ],
 "winter-2027-anime.html": [
@@ -416,7 +428,7 @@
 "2026-11-28"
 ],
 "xbox-games-showcase-2027.html": [
-"e9a546f3c8baa357",
+"be84c04248c1ab73",
 "2026-11-28"
 ]
 }
