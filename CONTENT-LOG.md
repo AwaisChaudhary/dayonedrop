@@ -498,3 +498,4 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - Links in: footer, /tools, /games-by-genre-2027, /fighting-games-2027, /games-like-ghost-of-tsushima, game pages (Spyder Agent 8, Stranger Than Heaven, Tomb Raider Legacy of Atlantis, 007 First Light, all strategy/tactical games).
 - Checked: node --check, preview + live build, seo_audit (only pre-existing preview-only later-2027 relative links), Playwright 1280/390 (no errors, no overflow, filters work, countdowns run).
 - IndexNow pending https://getdayonedrop.com/games-like-assassins-creed https://getdayonedrop.com/strategy-games-2027 https://getdayonedrop.com/games/kingdom-hearts-iv https://getdayonedrop.com/platforms/ps5 https://getdayonedrop.com/platforms/xbox-series https://getdayonedrop.com/platforms/pc https://getdayonedrop.com/platforms/switch-2 https://getdayonedrop.com/tools https://getdayonedrop.com/games-by-genre-2027
+- IndexNow FLUSHED 2026-11-28 09:30 PKT (all 200)
