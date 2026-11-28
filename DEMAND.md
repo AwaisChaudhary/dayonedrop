@@ -45,6 +45,13 @@ Tools in this repo: `seo_post.py` (runs at the end of build.py: sitemap = every 
 5. Links: only real editorial links via outreach batches Awais approves; build "linkable assets" (original data, free tools, maps) and list pitch targets in DEMAND for approval.
 6. Monthly: run seo_audit.py on the whole site and fix broken links, orphans, duplicate titles/descriptions, missing schema.
 
+## DEMAND RUN 28 Nov 2026 (scheduled, fourth pass)
+Evidence: "games like assassin's creed" (GamesRadar+ US/UK/AU list, TechRadar ranked AC list) + "assassin's creed hexe release date" (Beebom, ComicBook x2, Wccftech x2, Guru3D, TechPowerUp, PSU, Insider Gaming, MP1st, TweakTown, Instant Gaming: all reports, no Ubisoft date) + "black flag resynced" (Ubisoft News, Gematsu, RPG Site: 9 Jul 2026 PS5/Xbox/PC). "strategy games 2027" (Gematsu Calame/Kingdom III/Humankind II/Beaten Path, Notebookcheck Tropico 7, Insider Gaming War for Westeros, releases.com strategy 2027 filter, Slitherine showcase).
+N75. DONE 28 Nov https://getdayonedrop.com/games-like-assassins-creed (11 picks + platform/taste filter, 7 2027 stealth/action games, Hexe = reports only, Black Flag Resynced H2).
+N76. DONE 28 Nov https://getdayonedrop.com/strategy-games-2027 (7 games from games.json + console filter + countdown, Dawn of War IV 3 Dec 2026, RTS/4X/tactics/Switch 2 H2s). Added to games.json: Calame (Feb 2027), Kingdom III: Rising Realms (2027), Humankind II (2027 PC). Board now 103.
+N77. DONE 28 Nov R8 + R9 (see daily radar). 
+N78. OPEN next: "games like Valorant/Overwatch", "games like Horizon" (Steel Frontiers), "games like Hitman" (007 First Light Switch 2), "city builder games 2027" (fold into strategy page as H2 unless 3+). Single-source to recheck: Beaten Path 2027 (Gematsu only), Kingdom Come II Royal Edition Switch 2 2027 (Gematsu only), Warhammer Blood Bowl window conflict.
+
 ## DEMAND RUN 28 Nov 2026 (scheduled, third pass)
 Evidence: "games like ghost of tsushima" (GamesRadar+ US/UK/AU, Tom's Guide, Beebom, Game Rant, Inverse, Sportskeeda x3, VideoGamer, GamingScan, Eneba); "ghost of yotei pc" (GameWatcher, Gamepressure, Destructoid, Sportskeeda; Bloomberg 4 Mar 2026 via Kotaku + Engadget: no PC port planned, Sony no comment). "games like monster hunter" (Tom's Guide, PCGamesN, Digital Trends, Eneba, G2A Apr 2026, gaming.net, hostedgg 2026); "monster hunter wilds expansion" (Capcom IR 8 Jun 2026: Ascendance 2027 PS5/Xbox/PC; Gematsu, RPG Site, PC Gamer, GamesRadar+, Shacknews). "games like assassin's creed" (GamesRadar+ x3, TheGamer, Fanatical, G2A, One Esports, Prima, SVG) + "assassin's creed hexe release date" (late 2027 reports: Beebom, TechPowerUp, Wccftech, PSU, ComicBook; Ubisoft unconfirmed).
 N71. DONE 28 Nov https://getdayonedrop.com/games-like-ghost-of-tsushima (10 picks + filter, 2027 samurai games, Ghost of Yotei PC H2).
@@ -261,7 +268,7 @@ Seeds: upcoming games 2027, ps5 games 2027, game release dates. Volumes are rang
 
 ## DAILY RADAR 2026-11-28 (06:40 PKT)
 Yesterday built from queues: NC 31, DOD 19, Pitchside 22, Padel 18, Purl 22, ZAWN 10 new pages. Revenue rule: at least half of new pages buying-intent.
-- [OPEN] R8 platforms/ps5: "ps5 games 2027" / "upcoming ps5 games 2027" ~250i combined pos 8-10. Add "Upcoming PS5 games 2027" H1 wording + month jump links.
-- [OPEN] R9 kingdom-hearts-iv: 116i pos 10.9 for "kingdom hearts 4 release date"; add Quick answer + "Kingdom Hearts 4" spelling in title.
+- [DONE 28 Nov: H1 'Upcoming PS5 games 2027' + month jump links on all 4 platform pages, https://getdayonedrop.com/platforms/ps5] R8 platforms/ps5: "ps5 games 2027" / "upcoming ps5 games 2027" ~250i combined pos 8-10. Add "Upcoming PS5 games 2027" H1 wording + month jump links.
+- [DONE 28 Nov: title 'Kingdom Hearts 4 Release Date: Late 2027 (PS5, Xbox, PC)', KH4 spelling in quick answer, 2 FAQs, https://getdayonedrop.com/games/kingdom-hearts-iv] R9 kingdom-hearts-iv: 116i pos 10.9 for "kingdom hearts 4 release date"; add Quick answer + "Kingdom Hearts 4" spelling in title.
 - [OPEN] R10 /games-better-than-gta-6 (autocomplete) buying-intent list with Amazon links.
 - [OPEN] R11 movies 2027 sub-lists: kids / disney / horror (autocomplete ranks 4-7).

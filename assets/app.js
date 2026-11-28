@@ -423,7 +423,7 @@
         r.hidden = !ok; if (ok) fshown.push(r.getAttribute("data-slug"));
       });
       $$("[data-fg-p]", fgt).forEach(function (c) { c.setAttribute("aria-pressed", c.getAttribute("data-fg-p") === fsel.p ? "true" : "false"); });
-      fcount.textContent = fshown.length + " fighting game" + (fshown.length === 1 ? "" : "s") + (fsel.p ? " on " + fsel.p : "");
+      fcount.textContent = fshown.length + " " + (fgt.getAttribute("data-noun") || "fighting game") + (fshown.length === 1 ? "" : "s") + (fsel.p ? " on " + fsel.p : "");
       fnone.hidden = fshown.length > 0;
       store.set("dod-fg", fsel);
     };

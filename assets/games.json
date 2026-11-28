@@ -2902,6 +2902,10 @@
    "sources": "Shacknews, PC Gamer, Kotaku, Beebom",
    "faq": [
     [
+     "What is the Kingdom Hearts 4 release date?",
+     "There is no exact day yet. Square Enix says late 2027 on PS5, Xbox Series X|S, PC and Switch 2, and we will update this page the day a date is announced."
+    ],
+    [
      "Is Kingdom Hearts 4 coming to PS4?",
      "No. It is announced for PS5, Xbox Series X|S, PC and Switch 2 only."
     ],
@@ -2916,9 +2920,14 @@
     [
      "Is Kingdom Hearts 4 on Xbox and Switch 2?",
      "Yes. Xbox Series X|S and Switch 2 versions are announced alongside PS5 and PC."
+    ],
+    [
+     "Will Kingdom Hearts 4 be at The Game Awards 2026?",
+     "Not confirmed. Disney has promised announcements from its games at the show without naming them, so a date reveal is possible but unannounced."
     ]
    ],
-   "seo_title": "Kingdom Hearts 4 Release Date, Platforms and Worlds"
+   "seo_title": "Kingdom Hearts 4 Release Date: Late 2027 (PS5, Xbox, PC)",
+   "qa_note": "Kingdom Hearts 4 (Square Enix writes it as Kingdom Hearts IV) is the next main game in the series, and its directors have said it will not slip out of 2027."
   },
   {
    "slug": "pokemon-winds-and-waves",
@@ -3624,6 +3633,99 @@
      "Capcom has not announced a price."
     ]
    ]
+  },
+  {
+   "slug": "calame",
+   "title": "Calame",
+   "date": null,
+   "window": "February 2027",
+   "month": 2,
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC"
+   ],
+   "dev": "Nextale Games",
+   "genre": "Tactical RPG",
+   "status": "delayed",
+   "page": false,
+   "about": "Calame is a single-player, turn-based tactical RPG from Nextale Games, based on a French fantasy novel series. It is due in February 2027.",
+   "facts": [
+    "Coming to PS5, Xbox Series X|S and PC (Steam) in February 2027. No exact day yet.",
+    "Its Correction mechanic lets you reshape the battlefield terrain in the middle of a fight.",
+    "Choices at camp and in story events shift the Rebellion's alignment and unlock passive traits.",
+    "A PC demo is available on Steam."
+   ],
+   "history": [
+    {
+     "when": "2026",
+     "text": "Planned for 2026 on PC, with consoles in 2027."
+    },
+    {
+     "when": "Nov 2026",
+     "text": "All versions moved to February 2027."
+    }
+   ],
+   "sources": "Gematsu, RPG Site, RPGamer, Worthplaying"
+  },
+  {
+   "slug": "kingdom-iii-rising-realms",
+   "title": "Kingdom III: Rising Realms",
+   "date": null,
+   "window": "2027",
+   "month": 12,
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC",
+    "Switch 2"
+   ],
+   "dev": "Fury Studios / Raw Fury",
+   "genre": "Strategy",
+   "status": "window",
+   "page": false,
+   "about": "The third Kingdom game: a side-scrolling build-and-defend strategy game where you rule from horseback and hold off the Greed at night. Due in 2027.",
+   "facts": [
+    "Coming to PS5, Xbox Series X|S, Switch 2 and PC (Steam) in 2027. No month yet.",
+    "Islands are procedurally generated, so each run's map is new.",
+    "Upgradable Elites are specialist units with their own abilities.",
+    "Announced at Gamescom in August 2026."
+   ],
+   "history": [
+    {
+     "when": "Aug 2026",
+     "text": "Announced for 2027 at Gamescom."
+    }
+   ],
+   "sources": "Gematsu, GamesRadar+, PC Games (DE), Nintendo Everything"
+  },
+  {
+   "slug": "humankind-ii",
+   "title": "Humankind II",
+   "date": null,
+   "window": "2027",
+   "month": 12,
+   "platforms": [
+    "PC"
+   ],
+   "dev": "Amplitude Studios",
+   "genre": "Strategy",
+   "status": "window",
+   "page": false,
+   "about": "Amplitude's historical turn-based 4X sequel, where you lead a people from the ancient era onward and pick a new culture each era. Due on PC in 2027.",
+   "facts": [
+    "Coming to PC (Steam) in 2027. No console versions announced.",
+    "Each era you adopt a culture, which unlocks customs through its own progression tree.",
+    "The climate changes over a campaign and reshapes the map.",
+    "Announced in August 2026."
+   ],
+   "history": [
+    {
+     "when": "Aug 2026",
+     "text": "Announced for PC in 2027."
+    }
+   ],
+   "sources": "Gematsu, PCGamesN, Worthplaying, Niche Gamer"
   }
  ]
 }
