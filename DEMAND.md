@@ -304,3 +304,7 @@ Yesterday built from queues: NC 31, DOD 19, Pitchside 22, Padel 18, Purl 22, ZAW
 - [DONE 28 Nov: title 'Kingdom Hearts 4 Release Date: Late 2027 (PS5, Xbox, PC)', KH4 spelling in quick answer, 2 FAQs, https://getdayonedrop.com/games/kingdom-hearts-iv] R9 kingdom-hearts-iv: 116i pos 10.9 for "kingdom hearts 4 release date"; add Quick answer + "Kingdom Hearts 4" spelling in title.
 - [OPEN] R10 /games-better-than-gta-6 (autocomplete) buying-intent list with Amazon links.
 - [OPEN] R11 movies 2027 sub-lists: kids / disney / horror (autocomplete ranks 4-7).
+
+## EVENING RADAR 2026-11-28 (18:40 PKT)
+- [OPEN] E-R1 BUYING "switch 2 games black friday deals" (autocomplete 'switch 2 games' #1-#3): a Switch 2 games section on /black-friday-game-sales-2026 (today and Cyber Monday only).
+- [NOTE] Trends 1-d "2027 games": only off-topic breakouts (cars, athletics); "games releasing in 2027" +70% (covered).
