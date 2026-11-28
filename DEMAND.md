@@ -258,3 +258,10 @@ Seeds: upcoming games 2027, ps5 games 2027, game release dates. Volumes are rang
 - new xbox releases 1k–10k -> /platforms/xbox-series
 - video game release dates 1k–10k, game release dates 100–1k -> home /games
 - nintendo switch 2 release date 10k–100k (hardware, out of scope)
+
+## DAILY RADAR 2026-11-28 (06:40 PKT)
+Yesterday built from queues: NC 31, DOD 19, Pitchside 22, Padel 18, Purl 22, ZAWN 10 new pages. Revenue rule: at least half of new pages buying-intent.
+- [OPEN] R8 platforms/ps5: "ps5 games 2027" / "upcoming ps5 games 2027" ~250i combined pos 8-10. Add "Upcoming PS5 games 2027" H1 wording + month jump links.
+- [OPEN] R9 kingdom-hearts-iv: 116i pos 10.9 for "kingdom hearts 4 release date"; add Quick answer + "Kingdom Hearts 4" spelling in title.
+- [OPEN] R10 /games-better-than-gta-6 (autocomplete) buying-intent list with Amazon links.
+- [OPEN] R11 movies 2027 sub-lists: kids / disney / horror (autocomplete ranks 4-7).
