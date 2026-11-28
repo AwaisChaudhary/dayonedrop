@@ -536,3 +536,12 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - Links in: footer, /tools, /games-by-genre-2027 cozy H2, /games-like-stardew-valley, /games-like-animal-crossing, /games-like-monster-hunter, /games-like-ghost-of-tsushima, /games-like-skyrim, /strategy-games-2027, cozy + Horizon game pages (related box).
 - Checked: node --check, preview + live build, seo_audit clean, Playwright 1280/390 on 6 pages (no errors, no overflow, filters work).
 - IndexNow pending https://getdayonedrop.com/cozy-games-2027 https://getdayonedrop.com/games-like-horizon https://getdayonedrop.com/strategy-games-2027 https://getdayonedrop.com/games-by-genre-2027 https://getdayonedrop.com/tools https://getdayonedrop.com/games-like-stardew-valley
+
+## 2026-11-28 (scheduled demand run, eighth pass, night)
+- NEW https://getdayonedrop.com/horror-movies-2027 : "horror movies 2027" / "movies 2027 horror" (DEMAND R6/R11). 18 horror films with 2-source dates, sequel/original + month filter, Pendulum countdown, Exorcist: Martyrs / Quiet Place III / Conjuring: First Communion / Blair Witch H2s, unsettled-dates box, month table, FAQ.
+- NEW https://getdayonedrop.com/disney-movies-2027 : "disney movies 2027" (R11). 7 Disney films from MOVIES with studio filter, Frozen 3 / Pixar / Marvel / Star Wars / Bluey / 20th Century H2s, FAQ.
+- NEW https://getdayonedrop.com/kids-movies-2027 : "movies 2027 kids" (R11). 11 family films, animated/live-action + month filter, summer holidays + video game movies H2s, FAQ.
+- DATA: MOVIES +Gatto (Pixar, 5 Mar 2027; The Direct x2 citing Deadline, Newsweek), Flanagan Exorcist retitled The Exorcist: Martyrs; MOVIES now sorted by date in code. Board count unchanged (115 games).
+- Links in: footer, /tools, /movies-2027 (animated + horror H2s, related list), /horror-games-2027 related list, cross-links between the three pages.
+- Checked: node --check, preview + live build, seo_audit clean, Playwright 1280/390 on 4 pages (no errors, no overflow, filters + countdowns work).
+- IndexNow pending https://getdayonedrop.com/horror-movies-2027 https://getdayonedrop.com/disney-movies-2027 https://getdayonedrop.com/kids-movies-2027 https://getdayonedrop.com/movies-2027 https://getdayonedrop.com/horror-games-2027 https://getdayonedrop.com/tools

@@ -33,7 +33,7 @@ We have 92 tracked games (+1 today), 87 pages.
 
 ## DAILY RADAR 27 Nov 06:45 PKT (Google autocomplete US)
 - R5 DONE 27 Nov (H2 + FAQ 'Can you still play GTA 5 and GTA Online after GTA 6?' on https://getdayonedrop.com/after-gta-6 ; GTA 7 + Rockstar next game H2s already there) 'after gta 6': 'can you still play gta 5', 'what is rockstar's next game', 'will there be gta 7' (all in autocomplete; 'still play gta 5' 0 pages): one 'What's next after GTA 6' guide.
-- R6 OPEN movies category children: 'movies 2027 kids', 'movies 2027 disney', 'movies 2027 horror' (autocomplete #4/#6/#7; 0 pages) as list pages under /movies-2027 (studio-confirmed dates only).
+- R6 DONE 28 Nov (see R11, eighth pass) movies category children: 'movies 2027 kids', 'movies 2027 disney', 'movies 2027 horror' (autocomplete #4/#6/#7; 0 pages) as list pages under /movies-2027 (studio-confirmed dates only).
 - R7 OPEN 'new tv shows this week' (#5): a weekly-updated 'new TV shows this week' page linked from the monthly TV pages.
 
 ## EVENING RADAR 26 Nov 18:45 PKT (Google autocomplete US + Trends past 24h)
@@ -55,6 +55,13 @@ Tools in this repo: `seo_post.py` (runs at the end of build.py: sitemap = every 
 4. NEVER: stamp fake lastmod/"updated" dates, change URLs of pages that get traffic (if unavoidable, 301 in _redirects), keyword-stuff, mass-produce thin pages, buy links, swap links, or copy competitors' text/data.
 5. Links: only real editorial links via outreach batches Awais approves; build "linkable assets" (original data, free tools, maps) and list pitch targets in DEMAND for approval.
 6. Monthly: run seo_audit.py on the whole site and fix broken links, orphans, duplicate titles/descriptions, missing schema.
+
+## DEMAND RUN 28 Nov 2026 (scheduled, eighth pass, night)
+Evidence: autocomplete 'movies 2027 kids' / 'movies 2027 disney' / 'movies 2027 horror' (R6/R11, 0 pages). Horror: Fangoria "11 New Horror Movies With Confirmed 2027 Release Dates" (1 Jul 2026), Haunted Attraction Network "Horror Movies 2027: every release date" (26 Nov 2026), Heaven of Horror "Horror Movies 2027: 25+" (20 Nov 2026), Wikipedia Exorcist: Martyrs. Only dates 2+ of them agree on (18). Disney: The Direct "Disney Finalizes Its 2027 Theatrical Slate" (28 Aug 2026) + The Direct 22 Dec 2025 (Gatto moved 18 Jun -> 5 Mar, citing Deadline) + Newsweek 16 Apr 2026. THR slate article did not load.
+N92. DONE 28 Nov https://getdayonedrop.com/horror-movies-2027 (18 films, sequel/original + month filter, countdown, Exorcist: Martyrs / Quiet Place III / Conjuring / Blair Witch H2s, unsettled dates: La Llorona, Paranormal Activity 8, Gremlins 3).
+N93. DONE 28 Nov https://getdayonedrop.com/disney-movies-2027 (7 films, studio filter, Frozen 3 / Pixar Gatto / Marvel / Star Wars / Bluey / 20th Century H2s). DATA: MOVIES +Gatto (5 Mar 2027, Pixar); Exorcist retitled The Exorcist: Martyrs.
+N94. DONE 28 Nov https://getdayonedrop.com/kids-movies-2027 (11 family films from MOVIES, animated/live-action + month filter, summer holidays + game movies H2s).
+N95. OPEN: single-source horror to recheck: Evil Dead Wrath (7 Apr), Crawl 2 (16 Jul), Jason (13 Aug), Sleepover (8 Oct), Seasons (12 Nov); La Llorona date conflict; A New Hope 50th re-release 19 Feb 2027 (The Direct only); Planet of the Apes 2027 (no date). Next: R10 games better than GTA 6 (check overlap with /games-like-gta-6 first), R7 new TV shows this week.
 
 ## DEMAND RUN 28 Nov 2026 (scheduled, seventh pass)
 Evidence: "cozy games 2027" / "upcoming cozy games 2027" (HerCozyGaming "20+ new cozy games to wishlist for 2027", games.gg "best upcoming cozy games on Switch 2", Pocket Tactics cozy release-date feature); Everbloom spring 2027 PC/Switch 2 (Gematsu, Final Weapon, Nintendo Everything); D&D Long Rest Tavern 2027 PC (Gematsu, Game Informer, GamesRadar+). "games like horizon zero dawn / forbidden west" (Game Rant, TheGamer, SVG, G2A, Eneba, GamingScan) + "horizon 3" (GamesRadar+, GamingBolt, KitGuru, NME: not announced, years away) + Steel Frontiers 1H 2027 (Push Square, GamingBolt, GamesRadar+). City builder H2 = N78/N83/N87 ask.
@@ -303,7 +310,7 @@ Yesterday built from queues: NC 31, DOD 19, Pitchside 22, Padel 18, Purl 22, ZAW
 - [DONE 28 Nov: H1 'Upcoming PS5 games 2027' + month jump links on all 4 platform pages, https://getdayonedrop.com/platforms/ps5] R8 platforms/ps5: "ps5 games 2027" / "upcoming ps5 games 2027" ~250i combined pos 8-10. Add "Upcoming PS5 games 2027" H1 wording + month jump links.
 - [DONE 28 Nov: title 'Kingdom Hearts 4 Release Date: Late 2027 (PS5, Xbox, PC)', KH4 spelling in quick answer, 2 FAQs, https://getdayonedrop.com/games/kingdom-hearts-iv] R9 kingdom-hearts-iv: 116i pos 10.9 for "kingdom hearts 4 release date"; add Quick answer + "Kingdom Hearts 4" spelling in title.
 - [OPEN] R10 /games-better-than-gta-6 (autocomplete) buying-intent list with Amazon links.
-- [OPEN] R11 movies 2027 sub-lists: kids / disney / horror (autocomplete ranks 4-7).
+- [DONE 28 Nov: https://getdayonedrop.com/horror-movies-2027 https://getdayonedrop.com/disney-movies-2027 https://getdayonedrop.com/kids-movies-2027] R11 movies 2027 sub-lists: kids / disney / horror (autocomplete ranks 4-7).
 
 ## EVENING RADAR 2026-11-28 (18:40 PKT)
 - [OPEN] E-R1 BUYING "switch 2 games black friday deals" (autocomplete 'switch 2 games' #1-#3): a Switch 2 games section on /black-friday-game-sales-2026 (today and Cyber Monday only).
