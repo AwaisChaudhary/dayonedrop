@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28",
+ "updated": "2026-11-29",
  "games": [
   {
    "slug": "armatus",
@@ -2227,6 +2227,37 @@
    ]
   },
   {
+   "slug": "indycar-racing-the-game",
+   "title": "INDYCAR Racing The Game",
+   "date": null,
+   "window": "Early 2027",
+   "month": 3,
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC"
+   ],
+   "dev": "iRacing Studios",
+   "genre": "Racing",
+   "status": "delayed",
+   "page": true,
+   "about": "The first standalone IndyCar video game in more than 20 years, from the iRacing team: ovals, road courses and street circuits, led by the Indianapolis Motor Speedway.",
+   "facts": [
+    "Due in early 2027 on PS5, Xbox Series X|S and PC (Steam).",
+    "iRacing says it should launch in the run-up to the 2027 Indianapolis 500 (30 May 2027).",
+    "Made by iRacing Studios on its own in-house engine, not Unreal.",
+    "It was first hoped for 2026; the name and the 2027 window were announced on 10 July 2026.",
+    "Features, modes and pre-orders are still to be announced."
+   ],
+   "history": [
+    {
+     "when": "Jul 2026",
+     "text": "Named INDYCAR Racing The Game and set for early 2027 (it was hoped for 2026)."
+    }
+   ],
+   "sources": "iRacing press release (10 Jul 2026), Windows Central (13 Jul 2026), RACER (10 Jul 2026), Car Throttle"
+  },
+  {
    "slug": "exodus",
    "title": "Exodus",
    "date": "2027-04-07",
@@ -2789,6 +2820,37 @@
     }
    ],
    "sources": "Gematsu, Final Weapon, Nintendo Everything (Jun 2026)"
+  },
+  {
+   "slug": "clutch",
+   "title": "Clutch",
+   "date": null,
+   "window": "Spring 2027",
+   "month": 4,
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC"
+   ],
+   "dev": "Maverick Games",
+   "genre": "Racing",
+   "status": "window",
+   "page": true,
+   "about": "An open-world action driving game with a story, from the new studio led by former Forza Horizon creative director Mike Brown.",
+   "facts": [
+    "Due in spring 2027 on PS5, Xbox Series X|S and PC.",
+    "Maverick Games was founded by Mike Brown, former creative director of Forza Horizon.",
+    "The story pits the pro R1K racing series against the underground Midnight Collective.",
+    "It uses Maverick's own physics engine and has deep car customisation.",
+    "Announced at the Xbox Games Showcase in June 2026."
+   ],
+   "history": [
+    {
+     "when": "Jun 2026",
+     "text": "Announced for spring 2027."
+    }
+   ],
+   "sources": "Gematsu (2 Jun 2026), Pure Xbox (2 Jun 2026), Car Throttle"
   },
   {
    "slug": "god-of-war-laufey",
@@ -4080,6 +4142,38 @@
     }
    ],
    "sources": "Gematsu, Game Informer, GamesRadar+ (Aug-Sep 2026)"
+  },
+  {
+   "slug": "crazy-taxi-world-tour",
+   "title": "Crazy Taxi: World Tour",
+   "date": null,
+   "window": "2027",
+   "month": 12,
+   "platforms": [
+    "PS5",
+    "Xbox Series X|S",
+    "PC",
+    "Switch 2"
+   ],
+   "dev": "SEGA",
+   "genre": "Arcade racing",
+   "status": "window",
+   "page": true,
+   "about": "SEGA's return of the arcade taxi game: pick up fares against the clock across five cities, now with online multiplayer.",
+   "facts": [
+    "Due in 2027 on PS5, Xbox Series X|S, Switch 2 and PC (Steam and Microsoft Store). No month yet.",
+    "A World Tour story mode has Axel chase the thieves who stole his taxi across five cities.",
+    "Arcade Mode keeps the classic race against the clock.",
+    "It adds cross-platform multiplayer, which series creator Kenji Kanno says fans asked for back in 1999.",
+    "Revealed at the Xbox Games Showcase on 7 June 2026."
+   ],
+   "history": [
+    {
+     "when": "Jun 2026",
+     "text": "Announced for 2027."
+    }
+   ],
+   "sources": "SEGA (8 Jun 2026), Gematsu (7 Jun 2026), TechRadar, Engadget, Shacknews"
   }
  ]
 }

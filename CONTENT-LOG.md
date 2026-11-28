@@ -545,3 +545,12 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - Links in: footer, /tools, /movies-2027 (animated + horror H2s, related list), /horror-games-2027 related list, cross-links between the three pages.
 - Checked: node --check, preview + live build, seo_audit clean, Playwright 1280/390 on 4 pages (no errors, no overflow, filters + countdowns work).
 - IndexNow pending https://getdayonedrop.com/horror-movies-2027 https://getdayonedrop.com/disney-movies-2027 https://getdayonedrop.com/kids-movies-2027 https://getdayonedrop.com/movies-2027 https://getdayonedrop.com/horror-games-2027 https://getdayonedrop.com/tools
+
+## 2026-11-29 (scheduled demand run, first pass)
+- NEW https://getdayonedrop.com/racing-games-2027 : "racing games 2027" / "upcoming racing games 2027". 5 racers from games.json (Forza Horizon 6 PS5, Road Kings, INDYCAR Racing The Game, Clutch, Crazy Taxi: World Tour) with console filter + add-to-list, FH6 PS5 countdown, IndyCar / Clutch / Crazy Taxi / F1 27 / Gran Turismo-NFS-Mario Kart / Switch 2 H2s, console table, FAQ.
+- NEW https://getdayonedrop.com/games-like-forza-horizon : "games like forza horizon (5/6)". 11 picks with platform + style filter, 2027 racers list, FH6 PS5 countdown, Clutch (ex-FH creative director), Switch 2, PS5/Xbox/PC, Crew Motorfest H2s, FAQ.
+- DATA: +3 (board 118), all with guide pages: INDYCAR Racing The Game (Early 2027; iRacing, Windows Central, RACER), Clutch (Spring 2027; Gematsu, Pure Xbox), Crazy Taxi: World Tour (2027; SEGA, Gematsu, TechRadar, Engadget).
+- REFRESH /games-by-genre-2027: racing paragraph links + related list. Related boxes on every racing game page link to the two new pages.
+- Links in: footer, /tools, /games-by-genre-2027, FH6/Road Kings/new game pages.
+- Checked: node --check, preview + live build, seo_audit clean (live), Playwright 1280/390 on 7 pages (no errors, no overflow, filters work).
+- IndexNow pending https://getdayonedrop.com/racing-games-2027 https://getdayonedrop.com/games-like-forza-horizon https://getdayonedrop.com/games/indycar-racing-the-game https://getdayonedrop.com/games/clutch https://getdayonedrop.com/games/crazy-taxi-world-tour https://getdayonedrop.com/games-by-genre-2027 https://getdayonedrop.com/games/forza-horizon-6 https://getdayonedrop.com/tools
