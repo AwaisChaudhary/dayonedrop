@@ -518,3 +518,4 @@ GSC 28 days: /platforms/ps5 340 impressions at position 8.8 (5 clicks); /games 2
 - Links in: footer, /tools, /games-by-genre-2027, /fighting-games-2027, /games-without-release-date-2027, /delayed-games-2027, every shooter game page (related box).
 - Checked: node --check, preview + live build, seo_audit clean, Playwright 1280/390 on 8 pages (no errors, no overflow, filter + countdowns work).
 - IndexNow pending https://getdayonedrop.com/games-2028 https://getdayonedrop.com/shooter-games-2027 https://getdayonedrop.com/delayed-games-2027 https://getdayonedrop.com/game-pass-2027 https://getdayonedrop.com/games-by-genre-2027 https://getdayonedrop.com/tools https://getdayonedrop.com/months/january-2027 https://getdayonedrop.com/months/june-2027
+- IndexNow FLUSHED 2026-11-28 16:15 PKT (afternoon push, all 200)
